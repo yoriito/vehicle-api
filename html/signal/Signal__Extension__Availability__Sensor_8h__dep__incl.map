@@ -1,0 +1,11 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/chassis/steeringwheel/Signal_Extension_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/chassis/steeringwheel/Signal_Extension_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="138,5,373,75"/>
+<area shape="rect" id="Node000002" href="$Signal__Extension__Availability__Sensor_8cc.html" title=" " alt="" coords="5,123,247,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,86,166,124,162,120,206,82"/>
+<area shape="rect" id="Node000003" href="$SteeringWheel_8h.html" title=" " alt="" coords="271,123,499,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="305,82,348,120,345,124,301,86"/>
+<area shape="rect" id="Node000004" href="$Chassis_8h.html" title=" " alt="" coords="287,240,483,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="387,206,387,240,382,240,382,206"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="287,343,483,397"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="387,308,387,343,382,343,382,308"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/light/domelight/Signal_IsLightOn_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/light/domelight/Signal_IsLightOn_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="149,5,381,75"/>
+<area shape="rect" id="Node000002" href="$DomeLight_8h.html" title=" " alt="" coords="5,130,256,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,86,163,132,160,128,214,82"/>
+<area shape="rect" id="Node000006" href="$cabin_2light_2domelight_2Signal__IsLightOn__Availability__Sensor_8cc.html" title=" " alt="" coords="281,123,519,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="317,81,362,120,359,124,313,85"/>
+<area shape="rect" id="Node000003" href="$Light_8h.html" title=" " alt="" coords="33,240,229,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,199,133,240,128,240,128,199"/>
+<area shape="rect" id="Node000004" href="$Cabin_8h.html" title=" " alt="" coords="33,343,229,397"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="133,308,133,343,128,343,128,308"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="33,445,229,500"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="133,411,133,445,128,445,128,411"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/charging/chargingport/rearmiddle/Signal_IsFlapOpen_Availability_Actuator.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/charging/chargingport/rearmiddle/Signal_IsFlapOpen_Availability_Actuator.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="347,5,589,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,159,72,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="347,84,220,115,85,155,78,157,77,152,83,149,218,110,346,79"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="96,159,173,185"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="347,99,186,155,179,157,177,152,184,149,346,94"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="198,159,266,185"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="370,107,269,156,266,151,368,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="290,152,457,192"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="430,106,400,143,396,140,426,103"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="481,152,647,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="511,103,541,140,537,143,507,106"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="672,159,736,185"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="568,102,670,151,667,156,566,107"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="761,159,831,185"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="591,94,749,149,755,152,754,157,747,155,589,99"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="855,159,958,185"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="590,83,845,149,857,153,855,158,843,155,589,88"/>
+</map>

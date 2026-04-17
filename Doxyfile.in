@@ -1,0 +1,253 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# Copyright 2026 JASPAR
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Doxyfile template for CMake configuration
+# Variables marked with @VAR@ are replaced by CMake's configure_file()
+
+#-----------------------------------------------------------
+# Project related configuration options
+#-----------------------------------------------------------
+
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "@DOXYGEN_PROJECT_NAME@"
+PROJECT_NUMBER         = @DOXYGEN_PROJECT_VERSION@
+PROJECT_BRIEF          = "@DOXYGEN_PROJECT_BRIEF@"
+# TODO: LOGO
+PROJECT_LOGO           =
+OUTPUT_DIRECTORY       = "@DOXYGEN_OUTPUT_DIRECTORY@"
+OUTPUT_LANGUAGE        = English
+ALLOW_UNICODE_NAMES    = YES
+
+#-----------------------------------------------------------
+# Build related configuration options
+#-----------------------------------------------------------
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+CASE_SENSE_NAMES       = YES
+SHOW_HEADERFILE        = YES
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = NO
+SORT_GROUP_NAMES       = NO
+BUILTIN_STL_SUPPORT    = YES
+
+#-----------------------------------------------------------
+# Configuration options for warning and progress messages
+#-----------------------------------------------------------
+
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_IF_INCOMPLETE_DOC = YES
+WARN_NO_PARAMDOC       = NO
+WARN_AS_ERROR          = NO
+WARN_FORMAT            = "$file:$line: $text"
+
+#-----------------------------------------------------------
+# Configuration options for the input files
+#-----------------------------------------------------------
+
+INPUT                  = "@DOXYGEN_INPUT@"
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.c \
+                         *.cc \
+                         *.cpp \
+                         *.h \
+                         *.hpp \
+                         *.md
+RECURSIVE              = YES
+EXCLUDE                =
+EXCLUDE_SYMLINKS       = NO
+EXCLUDE_PATTERNS       = */test/* \
+                         */tests/* \
+                         */test_integration/* \
+                         */build/* \
+                         */docs/html/* \
+                         */.git/*
+EXAMPLE_PATH           =
+EXAMPLE_PATTERNS       = *
+EXAMPLE_RECURSIVE      = NO
+IMAGE_PATH             =
+
+#-----------------------------------------------------------
+# Configuration options for source browsing
+#-----------------------------------------------------------
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+REFERENCES_LINK_SOURCE = YES
+USE_HTAGS              = NO
+VERBATIM_HEADERS       = YES
+
+#-----------------------------------------------------------
+# Configuration options for the alphabetical class index
+#-----------------------------------------------------------
+
+ALPHABETICAL_INDEX     = YES
+IGNORE_PREFIX          =
+
+#-----------------------------------------------------------
+# Configuration options for the HTML output
+#-----------------------------------------------------------
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = .
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            =
+HTML_FOOTER            =
+HTML_STYLESHEET        =
+HTML_EXTRA_STYLESHEET  =
+HTML_EXTRA_FILES       =
+HTML_COLORSTYLE        = TOGGLE
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_DYNAMIC_MENUS     = YES
+HTML_DYNAMIC_SECTIONS  = NO
+HTML_CODE_FOLDING      = YES
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+TREEVIEW_WIDTH         = 280
+ENUM_VALUES_PER_LINE   = 4
+EXT_LINKS_IN_WINDOW    = YES
+OBFUSCATE_EMAILS       = YES
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO
+
+#-----------------------------------------------------------
+# Configuration options for the LaTeX output
+#-----------------------------------------------------------
+
+GENERATE_LATEX         = NO
+
+#-----------------------------------------------------------
+# Configuration options for the RTF output
+#-----------------------------------------------------------
+
+GENERATE_RTF           = NO
+
+#-----------------------------------------------------------
+# Configuration options for the man page output
+#-----------------------------------------------------------
+
+GENERATE_MAN           = NO
+
+#-----------------------------------------------------------
+# Configuration options for the XML output
+#-----------------------------------------------------------
+
+GENERATE_XML           = NO
+
+#-----------------------------------------------------------
+# Configuration options for the DOCBOOK output
+#-----------------------------------------------------------
+
+GENERATE_DOCBOOK       = NO
+
+#-----------------------------------------------------------
+# Configuration options for the AutoGen Definitions output
+#-----------------------------------------------------------
+
+GENERATE_AUTOGEN_DEF   = NO
+
+#-----------------------------------------------------------
+# Configuration options for Sqlite3 output
+#-----------------------------------------------------------
+
+GENERATE_SQLITE3       = NO
+
+#-----------------------------------------------------------
+# Configuration options for the Perl module output
+#-----------------------------------------------------------
+
+GENERATE_PERLMOD       = NO
+
+#-----------------------------------------------------------
+# Configuration options for the preprocessor
+#-----------------------------------------------------------
+
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = NO
+EXPAND_ONLY_PREDEF     = NO
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           =
+INCLUDE_FILE_PATTERNS  =
+PREDEFINED             =
+EXPAND_AS_DEFINED      =
+SKIP_FUNCTION_MACROS   = NO
+
+#-----------------------------------------------------------
+# Configuration options for external references
+#-----------------------------------------------------------
+
+TAGFILES               =
+GENERATE_TAGFILE       =
+ALLEXTERNALS           = NO
+EXTERNAL_GROUPS        = YES
+EXTERNAL_PAGES         = YES
+
+#-----------------------------------------------------------
+# Configuration options for diagram generator tools
+#-----------------------------------------------------------
+
+HIDE_UNDOC_RELATIONS   = YES
+HAVE_DOT               = YES
+DOT_NUM_THREADS        = 0
+CLASS_DIAGRAMS         = YES
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+GROUP_GRAPHS           = YES
+UML_LOOK               = NO
+UML_LIMIT_NUM_FIELDS   = 10
+DOT_UML_DETAILS        = NO
+DOT_WRAP_THRESHOLD     = 17
+TEMPLATE_RELATIONS     = NO
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DIR_GRAPH_MAX_DEPTH    = 2
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+DOT_PATH               =
+DOTFILE_DIRS           =
+DIA_PATH               =
+DIAFILE_DIRS           =
+PLANTUML_JAR_PATH      =
+PLANTUML_CFG_FILE      =
+PLANTUML_INCLUDE_PATH  =
+DOT_GRAPH_MAX_NODES    = 100
+MAX_DOT_GRAPH_DEPTH    = 0
+DOT_MULTI_TARGETS      = YES
+GENERATE_LEGEND        = YES
+DOT_CLEANUP            = YES
+
+#-----------------------------------------------------------
+# Configuration options for parallel processing
+#-----------------------------------------------------------
+
+NUM_PROC_THREADS       = 0

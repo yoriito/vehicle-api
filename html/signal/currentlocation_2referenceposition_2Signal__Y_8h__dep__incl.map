@@ -1,0 +1,11 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/currentlocation/referenceposition/Signal_Y.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/currentlocation/referenceposition/Signal_Y.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="139,5,381,75"/>
+<area shape="rect" id="Node000002" href="$ReferencePosition_8h.html" title=" " alt="" coords="5,123,248,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,86,168,124,164,120,209,82"/>
+<area shape="rect" id="Node000005" href="$currentlocation_2referenceposition_2Signal__Y_8cc.html" title=" " alt="" coords="272,123,515,192"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="311,82,356,120,352,124,308,86"/>
+<area shape="rect" id="Node000003" href="$CurrentLocation_8h.html" title=" " alt="" coords="5,240,248,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,206,129,240,124,240,124,206"/>
+<area shape="rect" id="Node000004" href="$Vehicle_8h.html" title=" " alt="" coords="29,343,225,397"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="129,308,129,343,124,343,124,308"/>
+</map>

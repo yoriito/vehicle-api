@@ -1,0 +1,15 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/lights/fog/rear/Signal_IsOn.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/lights/fog/rear/Signal_IsOn.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="93,5,338,60"/>
+<area shape="rect" id="Node000002" href="$lights_2fog_2rear_2Rear_8h.html" title=" " alt="" coords="5,115,204,170"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,72,134,117,130,113,176,68"/>
+<area shape="rect" id="Node000007" href="$fog_2rear_2Signal__IsOn_8cc.html" title=" " alt="" coords="229,108,426,177"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="255,68,294,106,290,110,251,72"/>
+<area shape="rect" id="Node000003" href="$Fog_8h.html" title=" " alt="" coords="7,225,203,280"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,184,107,225,102,225,102,184"/>
+<area shape="rect" id="Node000004" href="$Lights_8h.html" title=" " alt="" coords="7,328,203,383"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="107,294,107,328,102,328,102,294"/>
+<area shape="rect" id="Node000005" href="$Body_8h.html" title=" " alt="" coords="7,431,203,485"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="107,396,107,431,102,431,102,396"/>
+<area shape="rect" id="Node000006" href="$Vehicle_8h.html" title=" " alt="" coords="7,533,203,588"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="107,499,107,533,102,533,102,499"/>
+</map>

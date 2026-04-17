@@ -1,0 +1,13 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/combustionengine/enginecoolant/Signal_LifeRemaining.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/combustionengine/enginecoolant/Signal_LifeRemaining.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="121,5,395,75"/>
+<area shape="rect" id="Node000002" href="$combustionengine_2enginecoolant_2EngineCoolant_8h.html" title=" " alt="" coords="5,123,233,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,86,162,124,158,120,205,81"/>
+<area shape="rect" id="Node000006" href="$combustionengine_2enginecoolant_2Signal__LifeRemaining_8cc.html" title=" " alt="" coords="257,123,539,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="311,81,359,120,355,124,308,86"/>
+<area shape="rect" id="Node000003" href="$CombustionEngine_8h.html" title=" " alt="" coords="9,240,229,309"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="122,206,122,240,117,240,117,206"/>
+<area shape="rect" id="Node000004" href="$Powertrain_8h.html" title=" " alt="" coords="21,357,217,412"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="122,323,122,357,117,357,117,323"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="21,460,217,515"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="122,426,122,460,117,460,117,426"/>
+</map>

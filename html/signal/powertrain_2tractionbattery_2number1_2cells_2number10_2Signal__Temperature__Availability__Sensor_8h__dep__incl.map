@@ -1,0 +1,17 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/number1/cells/number10/Signal_Temperature_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/number1/cells/number10/Signal_Temperature_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="159,5,412,89"/>
+<area shape="rect" id="Node000002" href="$number1_2cells_2number10_2Number10_8h.html" title=" " alt="" coords="5,145,277,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,101,181,146,177,142,228,97"/>
+<area shape="rect" id="Node000008" href="$powertrain_2tractionbattery_2number1_2cells_2number10_2Signal__Temperature__Availability__Sensor_8cc.html" title=" " alt="" coords="301,137,560,221"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="343,97,386,135,383,139,340,101"/>
+<area shape="rect" id="Node000003" href="$number1_2cells_2Cells_8h.html" title=" " alt="" coords="43,269,240,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,227,144,269,139,269,139,227"/>
+<area shape="rect" id="Node000004" href="$tractionbattery_2number1_2Number1_8h.html" title=" " alt="" coords="43,387,240,456"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="144,353,144,386,139,386,139,353"/>
+<area shape="rect" id="Node000005" href="$TractionBattery_8h.html" title=" " alt="" coords="43,504,240,573"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="144,470,144,504,139,504,139,470"/>
+<area shape="rect" id="Node000006" href="$Powertrain_8h.html" title=" " alt="" coords="43,621,239,676"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="144,587,144,621,139,621,139,587"/>
+<area shape="rect" id="Node000007" href="$Vehicle_8h.html" title=" " alt="" coords="43,724,239,779"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="144,690,144,724,139,724,139,690"/>
+</map>

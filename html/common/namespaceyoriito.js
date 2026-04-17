@@ -1,0 +1,45 @@
+var namespaceyoriito =
+[
+    [ "databroker", "namespaceyoriito_1_1databroker.html", "namespaceyoriito_1_1databroker" ],
+    [ "BaseLogBackend", "classyoriito_1_1BaseLogBackend.html", "classyoriito_1_1BaseLogBackend" ],
+    [ "CommonError", "classyoriito_1_1CommonError.html", "classyoriito_1_1CommonError" ],
+    [ "DltLogBackend", "classyoriito_1_1DltLogBackend.html", "classyoriito_1_1DltLogBackend" ],
+    [ "ErrorType", "classyoriito_1_1ErrorType.html", "classyoriito_1_1ErrorType" ],
+    [ "ILogBackend", "classyoriito_1_1ILogBackend.html", "classyoriito_1_1ILogBackend" ],
+    [ "Log", "classyoriito_1_1Log.html", "classyoriito_1_1Log" ],
+    [ "StdoutLogBackend", "classyoriito_1_1StdoutLogBackend.html", "classyoriito_1_1StdoutLogBackend" ],
+    [ "ValueType", "namespaceyoriito.html#a45b69add6c5c3cb7d17b1cc939f91c31", null ],
+    [ "ErrorCode", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123", [
+      [ "ERROR_PERM", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a7dbbdd8f13b81bab94caf08a553b6a54", null ],
+      [ "ERROR_NOMEM", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a33629f13c2e102777d4c5405e12ef624", null ],
+      [ "ERROR_ACCES", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a556ec05f2c9c046e05bb5d51e4a0e72e", null ],
+      [ "ERROR_INVAL", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a7d1730ba125c2344ca858f628b908ce5", null ],
+      [ "ERROR_NODATA", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a89a0d0280cecba49752e74089dbdc8d8", null ],
+      [ "ERROR_TIMEDOUT", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123aa62a7cf1a6b4e13637018a99e75e1b9a", null ],
+      [ "ERROR_CONNREFUSED", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a41b046c2f6c5f0fb4752a3498d6cc384", null ],
+      [ "ERROR_CANCELED", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123abbca42e751acdd5531feded9733b02a4", null ],
+      [ "ERROR_UNAVAILABLE", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123aa800ee6ccda5735d0719d3a4fab27d3e", null ],
+      [ "ERROR_UNSUBSCRIBE", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a4ae1d554859656e66b99a2d1386f5fdf", null ],
+      [ "ERROR_BAD_REQUEST", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a069ac88c77836056b6cb627c858880aa", null ],
+      [ "ERROR_UNAUTHORIZED", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123af7a5a302b60e7b44ffc83cadc6977f17", null ],
+      [ "ERROR_FORBIDDEN", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a9987bf9e356c92e3db21827a2a49c88b", null ],
+      [ "ERROR_NOT_FOUND", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a55691b79af427f4b226665627e337870", null ],
+      [ "ERROR_REQUEST_TIMEOUT", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123af67394cf56ebc11483e32b8969440cff", null ],
+      [ "ERROR_UNSPECIFIED", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123ab1bb444c4154c9e87f40c06a5e560808", null ],
+      [ "ERROR_TOO_MANY_REQUESTS", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123af6b7089fb28238e665da6d2d7fef0725", null ],
+      [ "ERROR_BAD_GATEWAY", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a1843dfb663333df60e85207394d30f94", null ],
+      [ "ERROR_SERVICE_UNAVAILABLE", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a79d0a158dcfa975063f19552fa4dcb9d", null ],
+      [ "ERROR_GATEWAY_TIMEOUT", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a21a08b33396fe37ea968c9636e879ba2", null ],
+      [ "ERROR_UNKNOWN", "namespaceyoriito.html#ad2360dd029bb59923fa40510c6800123a0a306e577f7923ac78d86a60bee66966", null ]
+    ] ],
+    [ "LogLevel", "namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76", [
+      [ "kFatal", "namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae66f945a3c2423ef09406cf09fa9de26", null ],
+      [ "kError", "namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae3587c730cc1aa530fa4ddc9c4204e97", null ],
+      [ "kWarn", "namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a61a920eb4a24199ec6a36dd90f2a30b7", null ],
+      [ "kInfo", "namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a176a473e63c17ccdac91640c67f149bf", null ],
+      [ "kDebug", "namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76abb53ce21b7c0b7c8a8f7860a41901d29", null ]
+    ] ],
+    [ "string_view_then_copy", "namespaceyoriito.html#a64850bae2e076ef44be933303ed2d5a3", null ],
+    [ "kDefaultDltID", "namespaceyoriito.html#a53e27939a9496534ec01793434642233", null ],
+    [ "kDltIdMaxLength", "namespaceyoriito.html#af6a5b92a631b1f4bad7ad6206d9bebcb", null ]
+];

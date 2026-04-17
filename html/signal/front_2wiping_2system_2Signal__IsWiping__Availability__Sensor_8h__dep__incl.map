@@ -1,0 +1,17 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/windshield/front/wiping/system/Signal_IsWiping_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/windshield/front/wiping/system/Signal_IsWiping_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="136,5,397,89"/>
+<area shape="rect" id="Node000002" href="$front_2wiping_2system_2Signal__IsWiping__Availability__Sensor_8cc.html" title=" " alt="" coords="5,137,267,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,101,179,139,176,135,214,97"/>
+<area shape="rect" id="Node000003" href="$front_2wiping_2system_2System_8h.html" title=" " alt="" coords="291,145,506,214"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="320,97,366,142,362,146,316,101"/>
+<area shape="rect" id="Node000004" href="$front_2wiping_2Wiping_8h.html" title=" " alt="" coords="291,269,506,339"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="401,227,401,269,396,269,396,227"/>
+<area shape="rect" id="Node000005" href="$windshield_2front_2Front_8h.html" title=" " alt="" coords="291,387,507,441"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="401,352,401,386,396,386,396,352"/>
+<area shape="rect" id="Node000006" href="$Windshield_8h.html" title=" " alt="" coords="289,489,509,544"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="401,455,401,489,396,489,396,455"/>
+<area shape="rect" id="Node000007" href="$Body_8h.html" title=" " alt="" coords="301,592,497,647"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="401,558,401,592,396,592,396,558"/>
+<area shape="rect" id="Node000008" href="$Vehicle_8h.html" title=" " alt="" coords="301,695,497,749"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="401,660,401,695,396,695,396,660"/>
+</map>

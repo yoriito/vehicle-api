@@ -1,0 +1,11 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/number4/batteryconditioning/BatteryConditioning.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/number4/batteryconditioning/BatteryConditioning.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,220,89"/>
+<area shape="rect" id="Node000002" href="$tractionbattery_2number4_2Number4_8h.html" title=" " alt="" coords="14,137,211,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,103,115,137,110,137,110,103"/>
+<area shape="rect" id="Node000003" href="$TractionBattery_8h.html" title=" " alt="" coords="14,255,211,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,221,115,254,110,254,110,221"/>
+<area shape="rect" id="Node000004" href="$Powertrain_8h.html" title=" " alt="" coords="15,372,211,427"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="115,338,115,372,110,372,110,338"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="15,475,211,529"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="115,440,115,475,110,475,110,440"/>
+</map>

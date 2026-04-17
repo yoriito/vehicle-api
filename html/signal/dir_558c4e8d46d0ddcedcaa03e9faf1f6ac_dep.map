@@ -1,0 +1,64 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain">
+<area shape="poly" id="edge2" href="dir_000222_000047.html" alt="" coords="1069,84,638,128,542,139,542,134,637,123,1068,78"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000222_000047.html" title="5" alt="" coords="543,137,552,152"/>
+<area shape="poly" id="edge4" href="dir_000222_000079.html" alt="" coords="1078,91,962,128,945,134,944,129,960,123,1077,85"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000222_000079.html" title="9" alt="" coords="947,130,956,145"/>
+<area shape="rect" id="node12" href="dir_ee24b8d08c24d6bd23df1f9affd6fca9.html" title="fuelsystem" alt="" coords="1067,136,1162,161"/>
+<area shape="poly" id="edge5" href="dir_000222_000096.html" alt="" coords="1117,88,1117,122,1112,122,1112,88"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000222_000096.html" title="1" alt="" coords="1118,110,1128,125"/>
+<area shape="poly" id="edge1" href="dir_000222_000298.html" alt="" coords="1161,80,1268,96,1393,123,1414,129,1412,134,1391,128,1267,102,1160,85"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000222_000298.html" title="81" alt="" coords="1403,115,1420,129"/>
+<area shape="rect" id="node21" href="dir_89e32cfb02ff7db394703c0359675a3c.html" title="transmission" alt="" coords="1944,136,2051,161"/>
+<area shape="poly" id="edge3" href="dir_000222_000300.html" alt="" coords="1161,75,1550,88,1775,102,1869,112,1939,123,1960,129,1959,134,1938,128,1868,117,1775,108,1550,93,1161,80"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000222_000300.html" title="1" alt="" coords="1953,114,1963,129"/>
+<area shape="rect" id="node3" href="dir_b2b0c6f24df1291743d1b4e33b5cc9cf.html" title="dieselexhaustfluid" alt="" coords="48,209,189,235"/>
+<area shape="poly" id="edge8" href="dir_000047_000051.html" alt="" coords="403,164,187,209,186,204,402,159"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000047_000051.html" title="1" alt="" coords="188,206,198,221"/>
+<area shape="rect" id="node4" href="dir_4fed07b1aa8eafed264166d05a647bb9.html" title="dieselparticulatefilter" alt="" coords="214,209,375,235"/>
+<area shape="poly" id="edge6" href="dir_000047_000052.html" alt="" coords="432,164,335,206,333,201,430,159"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000047_000052.html" title="1" alt="" coords="337,202,346,217"/>
+<area shape="rect" id="node5" href="dir_cb14120a6fc9ddc343d58208ee767c85.html" title="enginecoolant" alt="" coords="400,209,515,235"/>
+<area shape="poly" id="edge9" href="dir_000047_000080.html" alt="" coords="460,162,460,196,455,196,455,162"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000047_000080.html" title="1" alt="" coords="461,184,470,198"/>
+<area shape="rect" id="node6" href="dir_79e1cfad8ab4c7175224989c77272f0c.html" title="engineoil" alt="" coords="539,209,621,235"/>
+<area shape="poly" id="edge7" href="dir_000047_000085.html" alt="" coords="478,159,550,200,547,205,476,164"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000047_000085.html" title="1" alt="" coords="544,185,553,200"/>
+<area shape="rect" id="node8" href="dir_3a436578a096a805512e885e2393c20b.html" title="number1" alt="" coords="653,209,733,235"/>
+<area shape="poly" id="edge10" href="dir_000079_000151.html" alt="" coords="869,164,741,207,739,202,867,159"/>
+<area shape="rect" id="edge10-headlabel" href="dir_000079_000151.html" title="2" alt="" coords="742,204,752,219"/>
+<area shape="rect" id="node9" href="dir_db1f1485074ebdce545269923d500b9c.html" title="number2" alt="" coords="757,209,837,235"/>
+<area shape="poly" id="edge13" href="dir_000079_000161.html" alt="" coords="886,164,827,203,824,199,883,159"/>
+<area shape="rect" id="edge13-headlabel" href="dir_000079_000161.html" title="2" alt="" coords="829,199,839,213"/>
+<area shape="rect" id="node10" href="dir_535999cbf90582c19a4534b0ca2ceac5.html" title="number3" alt="" coords="861,209,941,235"/>
+<area shape="poly" id="edge12" href="dir_000079_000167.html" alt="" coords="904,162,904,196,899,196,899,162"/>
+<area shape="rect" id="edge12-headlabel" href="dir_000079_000167.html" title="2" alt="" coords="905,184,914,198"/>
+<area shape="rect" id="node11" href="dir_40e17f7d1ceb09a51fa55a7e60d51752.html" title="number4" alt="" coords="965,209,1045,235"/>
+<area shape="poly" id="edge11" href="dir_000079_000173.html" alt="" coords="920,159,978,199,975,203,917,164"/>
+<area shape="rect" id="edge11-headlabel" href="dir_000079_000173.html" title="2" alt="" coords="973,185,983,199"/>
+<area shape="rect" id="node14" href="dir_755d28d37a76c7b6d4cef556a983d12e.html" title="charging" alt="" coords="1185,209,1263,235"/>
+<area shape="poly" id="edge18" href="dir_000298_000044.html" alt="" coords="1420,164,1275,208,1274,203,1418,159"/>
+<area shape="rect" id="edge18-headlabel" href="dir_000298_000044.html" title="14" alt="" coords="1273,205,1290,219"/>
+<area shape="rect" id="node15" href="dir_2fd34887d63ee0d9adf640317333f60b.html" title="dcdc" alt="" coords="1287,209,1339,235"/>
+<area shape="poly" id="edge16" href="dir_000298_000050.html" alt="" coords="1434,164,1350,205,1348,201,1432,159"/>
+<area shape="rect" id="edge16-headlabel" href="dir_000298_000050.html" title="1" alt="" coords="1352,201,1361,216"/>
+<area shape="rect" id="node16" href="dir_3d4745d9e1c17cf472e3b2f1f5d1f4f8.html" title="number1" alt="" coords="1364,209,1444,235"/>
+<area shape="poly" id="edge17" href="dir_000298_000152.html" alt="" coords="1450,163,1423,200,1418,197,1445,160"/>
+<area shape="rect" id="edge17-headlabel" href="dir_000298_000152.html" title="16" alt="" coords="1421,192,1439,207"/>
+<area shape="rect" id="node17" href="dir_964b1da99d2c4447e56a533c3e441110.html" title="number2" alt="" coords="1468,209,1548,235"/>
+<area shape="poly" id="edge19" href="dir_000298_000163.html" alt="" coords="1467,160,1494,197,1489,200,1462,163"/>
+<area shape="rect" id="edge19-headlabel" href="dir_000298_000163.html" title="16" alt="" coords="1487,182,1504,197"/>
+<area shape="rect" id="node18" href="dir_f1920d86351313ef69a3bcfad552dbd8.html" title="number3" alt="" coords="1572,209,1652,235"/>
+<area shape="poly" id="edge20" href="dir_000298_000170.html" alt="" coords="1482,159,1575,201,1573,206,1480,164"/>
+<area shape="rect" id="edge20-headlabel" href="dir_000298_000170.html" title="16" alt="" coords="1565,187,1582,201"/>
+<area shape="rect" id="node19" href="dir_0cc75fbd7014d97c779b3d9c7a573cd1.html" title="number4" alt="" coords="1676,209,1756,235"/>
+<area shape="poly" id="edge15" href="dir_000298_000177.html" alt="" coords="1498,159,1663,204,1662,209,1497,164"/>
+<area shape="rect" id="edge15-headlabel" href="dir_000298_000177.html" title="16" alt="" coords="1652,189,1669,204"/>
+<area shape="rect" id="node20" href="dir_07a4cf6122b6cae404fd8bf8ed519763.html" title="totalstateofcharge" alt="" coords="1781,209,1923,235"/>
+<area shape="poly" id="edge14" href="dir_000298_000297.html" alt="" coords="1516,158,1775,204,1774,210,1515,163"/>
+<area shape="rect" id="edge14-headlabel" href="dir_000298_000297.html" title="1" alt="" coords="1767,190,1776,205"/>
+<area shape="rect" id="clust3" href="dir_5f4675fa772dc65169eacb8baa861b7c.html" alt="" coords="37,125,632,245"/>
+<area shape="rect" id="clust4" href="dir_dea91cc0c62359d1006cb3a9ae09c552.html" alt="" coords="643,125,1056,245"/>
+<area shape="rect" id="clust5" href="dir_5c5bca9c27903030600ab5af590dd271.html" alt="" coords="1173,125,1933,245"/>
+<area shape="rect" id="clust2" href="dir_558c4e8d46d0ddcedcaa03e9faf1f6ac.html" alt="" coords="27,52,2061,256"/>
+<area shape="rect" id="clust1" href="dir_7a55ace4aeba6e11c0edd380c8a601cc.html" title="signal" alt="" coords="16,16,2072,267"/>
+</map>

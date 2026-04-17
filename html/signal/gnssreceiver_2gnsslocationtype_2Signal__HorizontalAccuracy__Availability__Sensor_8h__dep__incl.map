@@ -1,0 +1,13 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/currentlocation/gnssreceiver/gnsslocationtype/Signal_HorizontalAccuracy_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/currentlocation/gnssreceiver/gnsslocationtype/Signal_HorizontalAccuracy_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="144,5,459,89"/>
+<area shape="rect" id="Node000002" href="$GNSSLocationType_8h.html" title=" " alt="" coords="5,145,280,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,100,186,146,182,142,239,96"/>
+<area shape="rect" id="Node000006" href="$gnssreceiver_2gnsslocationtype_2Signal__HorizontalAccuracy__Availability__Sensor_8cc.html" title=" " alt="" coords="304,137,619,221"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="364,96,412,135,409,139,361,100"/>
+<area shape="rect" id="Node000003" href="$GNSSReceiver_8h.html" title=" " alt="" coords="37,269,248,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,227,145,269,140,269,140,227"/>
+<area shape="rect" id="Node000004" href="$CurrentLocation_8h.html" title=" " alt="" coords="21,387,264,441"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="145,352,145,386,140,386,140,352"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="45,489,241,544"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="145,455,145,489,140,489,140,455"/>
+</map>

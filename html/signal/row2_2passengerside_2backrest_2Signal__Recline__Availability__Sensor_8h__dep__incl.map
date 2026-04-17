@@ -1,0 +1,17 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/seat/row2/passengerside/backrest/Signal_Recline_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/seat/row2/passengerside/backrest/Signal_Recline_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="121,5,383,89"/>
+<area shape="rect" id="Node000002" href="$row2_2passengerside_2backrest_2Backrest_8h.html" title=" " alt="" coords="5,145,232,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,101,155,146,152,142,198,97"/>
+<area shape="rect" id="Node000008" href="$row2_2passengerside_2backrest_2Signal__Recline__Availability__Sensor_8cc.html" title=" " alt="" coords="256,137,517,221"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="306,97,346,135,342,139,303,101"/>
+<area shape="rect" id="Node000003" href="$cabin_2seat_2row2_2passengerside_2PassengerSide_8h.html" title=" " alt="" coords="5,269,232,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="121,227,121,269,116,269,116,227"/>
+<area shape="rect" id="Node000004" href="$cabin_2seat_2row2_2Row2_8h.html" title=" " alt="" coords="21,387,217,441"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="121,352,121,386,116,386,116,352"/>
+<area shape="rect" id="Node000005" href="$Seat_8h.html" title=" " alt="" coords="21,489,217,544"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="121,455,121,489,116,489,116,455"/>
+<area shape="rect" id="Node000006" href="$Cabin_8h.html" title=" " alt="" coords="21,592,217,647"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="121,558,121,592,116,592,116,558"/>
+<area shape="rect" id="Node000007" href="$Vehicle_8h.html" title=" " alt="" coords="21,695,217,749"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="121,660,121,695,116,695,116,660"/>
+</map>

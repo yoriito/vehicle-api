@@ -1,0 +1,31 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/windshield/front/washerfluid/WasherFluid.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/windshield/front/washerfluid/WasherFluid.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="281,5,528,75"/>
+<area shape="rect" id="Node000002" href="$body_2windshield_2front_2washerfluid_2Signal__Level_8h.html" title=" " alt="" coords="260,130,376,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="377,77,339,121,335,118,373,73"/>
+<area shape="rect" id="Node000011" href="$body_2windshield_2front_2washerfluid_2Signal__Level__Availability__Sensor_8h.html" title=" " alt="" coords="401,123,585,163"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="436,73,469,110,465,114,432,77"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="227,218,294,243"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="312,157,279,208,274,205,308,154"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="318,218,395,243"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="326,154,348,204,343,206,321,157"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="420,218,488,243"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="338,153,426,208,423,213,335,158"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="512,211,679,251"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="356,153,522,204,521,209,355,158"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="703,211,869,251"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="359,153,389,160,537,185,689,208,689,213,537,191,388,165,358,158"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="894,218,958,243"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="357,153,389,160,464,171,527,176,637,178,746,183,809,192,883,208,891,210,889,216,881,213,808,197,745,188,637,184,527,182,463,176,388,165,356,158"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="5,218,76,243"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="275,158,89,213,83,216,81,211,88,208,274,153"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="100,218,203,243"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="297,158,187,214,185,209,294,153"/>
+<area shape="poly" id="edge11_Node000011_Node000003" title=" " alt="" coords="439,165,307,213,301,215,299,210,305,208,437,160"/>
+<area shape="poly" id="edge12_Node000011_Node000004" title=" " alt="" coords="464,165,388,213,385,208,461,160"/>
+<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="487,164,467,206,463,204,482,162"/>
+<area shape="poly" id="edge14_Node000011_Node000006" title=" " alt="" coords="517,161,564,200,560,204,514,165"/>
+<area shape="poly" id="edge15_Node000011_Node000007" title=" " alt="" coords="558,160,710,204,708,209,556,165"/>
+<area shape="poly" id="edge16_Node000011_Node000008" title=" " alt="" coords="585,151,726,172,805,188,883,208,890,210,888,215,881,213,804,193,726,178,584,156"/>
+<area shape="poly" id="edge17_Node000011_Node000009" title=" " alt="" coords="401,163,389,165,304,177,238,185,172,194,89,213,81,216,79,211,88,208,171,189,237,179,304,172,388,160,400,158"/>
+<area shape="poly" id="edge18_Node000011_Node000010" title=" " alt="" coords="411,165,216,213,203,217,202,212,215,208,409,160"/>
+</map>

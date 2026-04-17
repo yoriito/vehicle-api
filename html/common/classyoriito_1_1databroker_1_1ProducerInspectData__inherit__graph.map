@@ -1,0 +1,5 @@
+<map id="yoriito::databroker::ProducerInspectData" name="yoriito::databroker::ProducerInspectData">
+<area shape="rect" id="Node000001" title="Class representing inspection data for a DataBroker producer." alt="" coords="5,93,171,133"/>
+<area shape="rect" id="Node000002" href="$classyoriito_1_1databroker_1_1BaseInspectData.html" title="Base class for inspecting datapoint metadata in the DataBroker." alt="" coords="17,5,159,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,59,91,93,85,93,85,59"/>
+</map>

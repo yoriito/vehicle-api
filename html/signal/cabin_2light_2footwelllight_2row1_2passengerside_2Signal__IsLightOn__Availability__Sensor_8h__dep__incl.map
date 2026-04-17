@@ -1,0 +1,17 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/light/footwelllight/row1/passengerside/Signal_IsLightOn_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/light/footwelllight/row1/passengerside/Signal_IsLightOn_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="161,5,393,89"/>
+<area shape="rect" id="Node000002" href="$cabin_2light_2footwelllight_2row1_2passengerside_2PassengerSide_8h.html" title=" " alt="" coords="5,145,272,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,101,177,146,173,142,222,97"/>
+<area shape="rect" id="Node000008" href="$cabin_2light_2footwelllight_2row1_2passengerside_2Signal__IsLightOn__Availability__Sensor_8cc.html" title=" " alt="" coords="297,137,535,221"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="333,97,374,135,370,139,329,101"/>
+<area shape="rect" id="Node000003" href="$cabin_2light_2footwelllight_2row1_2Row1_8h.html" title=" " alt="" coords="41,269,237,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="141,227,141,269,136,269,136,227"/>
+<area shape="rect" id="Node000004" href="$FootwellLight_8h.html" title=" " alt="" coords="41,387,237,456"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="141,353,141,386,136,386,136,353"/>
+<area shape="rect" id="Node000005" href="$Light_8h.html" title=" " alt="" coords="41,504,237,559"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="141,470,141,504,136,504,136,470"/>
+<area shape="rect" id="Node000006" href="$Cabin_8h.html" title=" " alt="" coords="41,607,237,661"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="141,572,141,607,136,607,136,572"/>
+<area shape="rect" id="Node000007" href="$Vehicle_8h.html" title=" " alt="" coords="41,709,237,764"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="141,675,141,709,136,709,136,675"/>
+</map>

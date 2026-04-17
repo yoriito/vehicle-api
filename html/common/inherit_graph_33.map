@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classyoriito_1_1ILogBackend.html" title=" " alt="" coords="5,31,160,56"/>
+<area shape="rect" id="Node000001" href="$classyoriito_1_1BaseLogBackend.html" title=" " alt="" coords="208,31,391,56"/>
+<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="174,41,208,41,208,46,174,46"/>
+<area shape="rect" id="Node000002" href="$classyoriito_1_1DltLogBackend.html" title=" " alt="" coords="450,5,619,31"/>
+<area shape="poly" id="edge13_Node000001_Node000002" title=" " alt="" coords="405,29,450,24,450,30,405,35"/>
+<area shape="rect" id="Node000003" href="$classyoriito_1_1StdoutLogBackend.html" title=" " alt="" coords="439,55,631,80"/>
+<area shape="poly" id="edge14_Node000001_Node000003" title=" " alt="" coords="405,51,439,55,438,60,405,57"/>
+</map>

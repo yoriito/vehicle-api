@@ -1,0 +1,22 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/door/row2" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/door/row2">
+<area shape="poly" id="edge2" href="dir_000244_000064.html" alt="" coords="219,90,183,128,180,124,215,87"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000244_000064.html" title="3" alt="" coords="186,121,195,136"/>
+<area shape="poly" id="edge1" href="dir_000244_000209.html" alt="" coords="241,86,277,124,273,128,237,90"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000244_000209.html" title="3" alt="" coords="274,110,283,124"/>
+<area shape="rect" id="node3" href="dir_f9c8b1b398d8980ae8287f2aca54c93c.html" title="shade" alt="" coords="48,209,109,235"/>
+<area shape="poly" id="edge4" href="dir_000064_000267.html" alt="" coords="150,163,104,202,101,198,146,159"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000064_000267.html" title="1" alt="" coords="107,196,116,211"/>
+<area shape="rect" id="node4" href="dir_1b7d62d2dfc817a72e2434a33e6c2137.html" title="window" alt="" coords="133,209,205,235"/>
+<area shape="poly" id="edge3" href="dir_000064_000312.html" alt="" coords="165,161,169,196,164,196,160,162"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000064_000312.html" title="1" alt="" coords="170,183,179,198"/>
+<area shape="rect" id="node6" href="dir_f0e0dcb07cd6fe9c634730c3eedcf345.html" title="shade" alt="" coords="237,209,299,235"/>
+<area shape="poly" id="edge6" href="dir_000209_000268.html" alt="" coords="294,163,280,198,275,196,289,161"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000209_000268.html" title="1" alt="" coords="282,188,292,203"/>
+<area shape="rect" id="node7" href="dir_b8c7e440bcb76fcbfd57031d0823759e.html" title="window" alt="" coords="323,209,395,235"/>
+<area shape="poly" id="edge5" href="dir_000209_000313.html" alt="" coords="308,160,341,197,337,201,304,163"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000209_000313.html" title="1" alt="" coords="338,183,347,197"/>
+<area shape="rect" id="clust3" href="dir_6e03f25bc97490d204e90143770f337b.html" alt="" coords="37,125,216,245"/>
+<area shape="rect" id="clust4" href="dir_053dd2f0792b81f453b402ee78542f6c.html" alt="" coords="227,125,405,245"/>
+<area shape="rect" id="clust2" href="dir_0dda5b0ddb484e59ae4f39c875c41942.html" alt="" coords="27,52,416,256"/>
+<area shape="rect" id="clust1" href="dir_dc2c633c28d79c6b5cde3c5cf1b3d59d.html" title="door" alt="" coords="16,16,427,267"/>
+</map>

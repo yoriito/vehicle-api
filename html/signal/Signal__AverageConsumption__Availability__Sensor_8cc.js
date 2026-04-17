@@ -1,0 +1,7 @@
+var Signal__AverageConsumption__Availability__Sensor_8cc =
+[
+    [ "Get", "Signal__AverageConsumption__Availability__Sensor_8cc.html#a94613ae7258dabbcf4825f9956e32773", null ],
+    [ "Inspect", "Signal__AverageConsumption__Availability__Sensor_8cc.html#a53ed59b2a86686f966c248ee09bb555e", null ],
+    [ "Subscribe", "Signal__AverageConsumption__Availability__Sensor_8cc.html#a39a5a7b9552c9ec6d82936b6b0c6e0e2", null ],
+    [ "UnSubscribe", "Signal__AverageConsumption__Availability__Sensor_8cc.html#a269632b7ec0e5b301402e33e9f1ce001", null ]
+];

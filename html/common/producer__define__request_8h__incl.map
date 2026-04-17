@@ -1,0 +1,30 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/common/databroker/producer_define_request.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/common/databroker/producer_define_request.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="341,5,545,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="527,372,590,397"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="460,74,500,173,543,298,557,358,552,359,537,299,495,175,455,76"/>
+<area shape="rect" id="Node000003" href="$producer__define__entry_8h.html" title=" " alt="" coords="309,123,462,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="426,77,405,112,401,109,421,74"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="406,161,458,220,517,297,550,358,546,361,512,300,454,223,402,165"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,372,64,397"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="309,155,239,171,164,198,128,217,95,240,66,268,42,300,33,329,33,358,28,358,28,328,38,297,62,264,92,236,125,212,162,193,238,166,308,150"/>
+<area shape="rect" id="Node000005" href="$base__inspect__data_8h.html" title=" " alt="" coords="185,211,367,251"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="363,165,313,204,309,200,359,161"/>
+<area shape="poly" id="edge10_Node000005_Node000002" title=" " alt="" coords="368,248,427,267,484,296,519,327,545,359,541,362,515,330,481,301,425,272,366,253"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="186,243,153,251,120,263,89,279,62,301,52,313,45,328,39,359,33,358,40,327,48,311,58,297,86,275,118,258,151,246,184,238"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="72,299,123,324"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="234,253,136,296,134,291,232,248"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="147,299,221,324"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="255,253,210,292,206,287,252,249"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="246,299,306,324"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="279,251,279,285,273,285,273,251"/>
+<area shape="rect" id="Node000009" href="$databroker__type_8h.html" title=" " alt="" coords="330,299,470,324"/>
+<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="307,249,371,289,369,293,305,253"/>
+<area shape="poly" id="edge16_Node000009_Node000002" title=" " alt="" coords="427,322,521,364,519,369,424,326"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="342,327,78,378,77,372,341,321"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="223,372,289,397"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="378,326,293,368,291,363,376,322"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="314,372,411,397"/>
+<area shape="poly" id="edge14_Node000009_Node000011" title=" " alt="" coords="396,326,377,361,373,359,391,323"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="435,372,503,397"/>
+<area shape="poly" id="edge15_Node000009_Node000012" title=" " alt="" coords="413,322,451,360,447,364,410,326"/>
+</map>

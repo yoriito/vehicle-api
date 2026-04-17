@@ -1,0 +1,15 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/lights/directionindicator/left/Signal_IsSignaling_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/lights/directionindicator/left/Signal_IsSignaling_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="113,5,369,89"/>
+<area shape="rect" id="Node000002" href="$body_2lights_2directionindicator_2left_2Left_8h.html" title=" " alt="" coords="5,145,221,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,101,149,146,145,142,189,97"/>
+<area shape="rect" id="Node000007" href="$directionindicator_2left_2Signal__IsSignaling__Availability__Sensor_8cc.html" title=" " alt="" coords="246,137,495,221"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="294,97,331,135,328,139,290,101"/>
+<area shape="rect" id="Node000003" href="$DirectionIndicator_8h.html" title=" " alt="" coords="5,269,221,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,227,116,269,111,269,111,227"/>
+<area shape="rect" id="Node000004" href="$Lights_8h.html" title=" " alt="" coords="15,387,211,441"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="116,352,116,386,111,386,111,352"/>
+<area shape="rect" id="Node000005" href="$Body_8h.html" title=" " alt="" coords="15,489,211,544"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="116,455,116,489,111,489,111,455"/>
+<area shape="rect" id="Node000006" href="$Vehicle_8h.html" title=" " alt="" coords="15,592,211,647"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="116,558,116,592,111,592,111,558"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/lights/parking/Signal_IsOn.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/lights/parking/Signal_IsOn.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="335,5,577,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,115,72,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="335,55,213,78,85,111,77,113,76,108,83,105,212,73,334,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="96,115,173,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="353,63,186,111,178,113,177,108,185,105,352,57"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="197,115,256,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="388,63,269,110,265,112,263,107,267,106,386,58"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="281,115,349,141"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="418,62,345,110,342,106,415,58"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="373,108,539,148"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="459,60,459,94,453,94,453,60"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="563,108,730,148"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="511,58,597,100,595,104,508,62"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="755,115,819,141"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="574,57,658,79,744,105,749,108,748,113,742,111,656,84,572,63"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="843,115,914,141"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="578,50,701,73,831,105,839,108,838,113,830,111,700,78,577,55"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="938,115,1041,141"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="578,46,744,70,927,105,941,109,940,114,926,111,744,76,577,51"/>
+</map>

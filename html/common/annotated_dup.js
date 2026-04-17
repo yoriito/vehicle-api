@@ -1,0 +1,57 @@
+var annotated_dup =
+[
+    [ "yoriito", "namespaceyoriito.html", [
+      [ "databroker", "namespaceyoriito_1_1databroker.html", [
+        [ "filter", "namespaceyoriito_1_1databroker_1_1filter.html", [
+          [ "ChangeFilter", "classyoriito_1_1databroker_1_1filter_1_1ChangeFilter.html", "classyoriito_1_1databroker_1_1filter_1_1ChangeFilter" ],
+          [ "GetFilter", "classyoriito_1_1databroker_1_1filter_1_1GetFilter.html", "classyoriito_1_1databroker_1_1filter_1_1GetFilter" ],
+          [ "InspectFilter", "classyoriito_1_1databroker_1_1filter_1_1InspectFilter.html", "classyoriito_1_1databroker_1_1filter_1_1InspectFilter" ],
+          [ "PathsFilter", "classyoriito_1_1databroker_1_1filter_1_1PathsFilter.html", "classyoriito_1_1databroker_1_1filter_1_1PathsFilter" ],
+          [ "RangeCondition", "classyoriito_1_1databroker_1_1filter_1_1RangeCondition.html", "classyoriito_1_1databroker_1_1filter_1_1RangeCondition" ],
+          [ "RangeConditionArray", "classyoriito_1_1databroker_1_1filter_1_1RangeConditionArray.html", "classyoriito_1_1databroker_1_1filter_1_1RangeConditionArray" ],
+          [ "RangeConditionWithOp", "classyoriito_1_1databroker_1_1filter_1_1RangeConditionWithOp.html", "classyoriito_1_1databroker_1_1filter_1_1RangeConditionWithOp" ],
+          [ "RangeFilter", "classyoriito_1_1databroker_1_1filter_1_1RangeFilter.html", "classyoriito_1_1databroker_1_1filter_1_1RangeFilter" ],
+          [ "SubscribeFilter", "classyoriito_1_1databroker_1_1filter_1_1SubscribeFilter.html", "classyoriito_1_1databroker_1_1filter_1_1SubscribeFilter" ],
+          [ "TimeBasedFilter", "classyoriito_1_1databroker_1_1filter_1_1TimeBasedFilter.html", "classyoriito_1_1databroker_1_1filter_1_1TimeBasedFilter" ]
+        ] ],
+        [ "BaseGetDataPoint", "classyoriito_1_1databroker_1_1BaseGetDataPoint.html", "classyoriito_1_1databroker_1_1BaseGetDataPoint" ],
+        [ "BaseInspectData", "classyoriito_1_1databroker_1_1BaseInspectData.html", "classyoriito_1_1databroker_1_1BaseInspectData" ],
+        [ "BaseSetDataPoint", "classyoriito_1_1databroker_1_1BaseSetDataPoint.html", "classyoriito_1_1databroker_1_1BaseSetDataPoint" ],
+        [ "ConsumerGetDataPoint", "classyoriito_1_1databroker_1_1ConsumerGetDataPoint.html", "classyoriito_1_1databroker_1_1ConsumerGetDataPoint" ],
+        [ "ConsumerGetRequest", "classyoriito_1_1databroker_1_1ConsumerGetRequest.html", "classyoriito_1_1databroker_1_1ConsumerGetRequest" ],
+        [ "ConsumerGetResponse", "classyoriito_1_1databroker_1_1ConsumerGetResponse.html", "classyoriito_1_1databroker_1_1ConsumerGetResponse" ],
+        [ "ConsumerInspectData", "classyoriito_1_1databroker_1_1ConsumerInspectData.html", "classyoriito_1_1databroker_1_1ConsumerInspectData" ],
+        [ "ConsumerInspectRequest", "classyoriito_1_1databroker_1_1ConsumerInspectRequest.html", "classyoriito_1_1databroker_1_1ConsumerInspectRequest" ],
+        [ "ConsumerInspectResponse", "classyoriito_1_1databroker_1_1ConsumerInspectResponse.html", "classyoriito_1_1databroker_1_1ConsumerInspectResponse" ],
+        [ "ConsumerSetDataPoint", "classyoriito_1_1databroker_1_1ConsumerSetDataPoint.html", "classyoriito_1_1databroker_1_1ConsumerSetDataPoint" ],
+        [ "ConsumerSetRequest", "classyoriito_1_1databroker_1_1ConsumerSetRequest.html", "classyoriito_1_1databroker_1_1ConsumerSetRequest" ],
+        [ "ConsumerSubscribeContext", "classyoriito_1_1databroker_1_1ConsumerSubscribeContext.html", "classyoriito_1_1databroker_1_1ConsumerSubscribeContext" ],
+        [ "ConsumerSubscribeRequest", "classyoriito_1_1databroker_1_1ConsumerSubscribeRequest.html", "classyoriito_1_1databroker_1_1ConsumerSubscribeRequest" ],
+        [ "DataBrokerConsumer", "classyoriito_1_1databroker_1_1DataBrokerConsumer.html", "classyoriito_1_1databroker_1_1DataBrokerConsumer" ],
+        [ "DataBrokerConsumerFactory", "classyoriito_1_1databroker_1_1DataBrokerConsumerFactory.html", "classyoriito_1_1databroker_1_1DataBrokerConsumerFactory" ],
+        [ "DataBrokerProducer", "classyoriito_1_1databroker_1_1DataBrokerProducer.html", "classyoriito_1_1databroker_1_1DataBrokerProducer" ],
+        [ "DataBrokerProducerFactory", "classyoriito_1_1databroker_1_1DataBrokerProducerFactory.html", "classyoriito_1_1databroker_1_1DataBrokerProducerFactory" ],
+        [ "ProducerDefineEntry", "classyoriito_1_1databroker_1_1ProducerDefineEntry.html", "classyoriito_1_1databroker_1_1ProducerDefineEntry" ],
+        [ "ProducerDefineRequest", "classyoriito_1_1databroker_1_1ProducerDefineRequest.html", "classyoriito_1_1databroker_1_1ProducerDefineRequest" ],
+        [ "ProducerDeleteRequest", "classyoriito_1_1databroker_1_1ProducerDeleteRequest.html", "classyoriito_1_1databroker_1_1ProducerDeleteRequest" ],
+        [ "ProducerGetDataPoint", "classyoriito_1_1databroker_1_1ProducerGetDataPoint.html", "classyoriito_1_1databroker_1_1ProducerGetDataPoint" ],
+        [ "ProducerGetRequest", "classyoriito_1_1databroker_1_1ProducerGetRequest.html", "classyoriito_1_1databroker_1_1ProducerGetRequest" ],
+        [ "ProducerGetResponse", "classyoriito_1_1databroker_1_1ProducerGetResponse.html", "classyoriito_1_1databroker_1_1ProducerGetResponse" ],
+        [ "ProducerInspectData", "classyoriito_1_1databroker_1_1ProducerInspectData.html", "classyoriito_1_1databroker_1_1ProducerInspectData" ],
+        [ "ProducerInspectRequest", "classyoriito_1_1databroker_1_1ProducerInspectRequest.html", "classyoriito_1_1databroker_1_1ProducerInspectRequest" ],
+        [ "ProducerInspectResponse", "classyoriito_1_1databroker_1_1ProducerInspectResponse.html", "classyoriito_1_1databroker_1_1ProducerInspectResponse" ],
+        [ "ProducerSetDataPoint", "classyoriito_1_1databroker_1_1ProducerSetDataPoint.html", "classyoriito_1_1databroker_1_1ProducerSetDataPoint" ],
+        [ "ProducerSetRequest", "classyoriito_1_1databroker_1_1ProducerSetRequest.html", "classyoriito_1_1databroker_1_1ProducerSetRequest" ],
+        [ "ProducerSubscribeContext", "classyoriito_1_1databroker_1_1ProducerSubscribeContext.html", "classyoriito_1_1databroker_1_1ProducerSubscribeContext" ],
+        [ "ProducerSubscribeRequest", "classyoriito_1_1databroker_1_1ProducerSubscribeRequest.html", "classyoriito_1_1databroker_1_1ProducerSubscribeRequest" ]
+      ] ],
+      [ "BaseLogBackend", "classyoriito_1_1BaseLogBackend.html", "classyoriito_1_1BaseLogBackend" ],
+      [ "CommonError", "classyoriito_1_1CommonError.html", "classyoriito_1_1CommonError" ],
+      [ "DltLogBackend", "classyoriito_1_1DltLogBackend.html", "classyoriito_1_1DltLogBackend" ],
+      [ "ErrorType", "classyoriito_1_1ErrorType.html", "classyoriito_1_1ErrorType" ],
+      [ "ILogBackend", "classyoriito_1_1ILogBackend.html", "classyoriito_1_1ILogBackend" ],
+      [ "Log", "classyoriito_1_1Log.html", "classyoriito_1_1Log" ],
+      [ "StdoutLogBackend", "classyoriito_1_1StdoutLogBackend.html", "classyoriito_1_1StdoutLogBackend" ]
+    ] ],
+    [ "LogLevel", "classLogLevel.html", null ]
+];

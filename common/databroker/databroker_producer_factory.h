@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_DATABROKER_PRODUCER_FACTORY_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_DATABROKER_PRODUCER_FACTORY_H_
+#ifndef COMMON_DATABROKER_DATABROKER_PRODUCER_FACTORY_H_
+#define COMMON_DATABROKER_DATABROKER_PRODUCER_FACTORY_H_
 
-#include "databroker_producer.h"
+#include "databroker/databroker_producer.h"
 
 /**
  * @ingroup common
@@ -51,4 +51,4 @@ class DataBrokerProducerFactory {
 };
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_DATABROKER_PRODUCER_FACTORY_H_
+#endif  // COMMON_DATABROKER_DATABROKER_PRODUCER_FACTORY_H_

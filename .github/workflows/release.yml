@@ -21,6 +21,10 @@ name: Release
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'security-reports/**'
+      - 'quality/assets/**'
+      - 'CHANGELOG.md'
   workflow_dispatch:
     inputs:
       initial-development:
@@ -44,6 +48,10 @@ on:
         default: 'v'
         type: string
 
+env:
+  POLARIS_ACCESS_TOKEN: ${{ secrets.POLARIS_ACCESS_TOKEN }}
+  REPORT_DIR: security-reports/polaris
+  
 permissions:
   contents: write
   packages: write
@@ -62,12 +70,128 @@ jobs:
     secrets: inherit
 
   # ================================================================
+  # Polaris
+  # ================================================================
+  polaris:
+    name: Polaris
+    runs-on: ubuntu-latest
+    needs: build-test
+    if: ${{ vars.IS_POLARIS_ENABLED == 'true' }}
+    outputs:
+      polaris-sha: ${{ steps.capture-sha.outputs.sha }}
+      
+    steps:
+      - name: Generate Github App Token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.RELEASE_BOT_ID }}
+          private-key: ${{ secrets.RELEASE_BOT_KEY }}
+          owner: ${{ github.repository_owner }}
+
+      - uses: actions/checkout@v6
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          fetch-depth: 0
+
+      - name: Polaris Security Scan
+        uses: yoriito/actions/polaris@main
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          polaris_project_name: ${{ vars.POLARIS_PROJECT_NAME }}
+          polaris_branch_name: ${{ github.ref_name }}
+          detect_search_depth: ${{ vars.DETECT_SEARCH_DEPTH }}
+
+      - name: Capture Polaris HEAD
+        id: capture-sha
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "Current HEAD:"
+          git rev-parse HEAD
+
+  # ================================================================
+  # Fuzz
+  # ================================================================
+  fuzz:
+    name: Fuzz
+    needs: polaris
+    if: ${{ vars.IS_POLARIS_ENABLED == 'true' && needs.polaris.result == 'success' }}
+    uses: ./.github/workflows/_fuzz.yml
+    secrets: inherit
+    with:
+      fuzz-duration-sec: 300
+      sync-sha: ${{ needs.polaris.outputs.polaris-sha }}
+
+  # ================================================================
+  # Release Artifacts
+  # (generates the SBOM markdown report, collects the fuzz evidence
+  # uploaded by the fuzz job, then commits and pushes both together
+  # as a single commit)
+  # ================================================================
+  release-artifacts:
+    name: Release Artifacts
+    runs-on: ubuntu-latest
+    needs: [polaris, fuzz]
+    if: ${{ vars.IS_POLARIS_ENABLED == 'true' && needs.polaris.result == 'success' && needs.fuzz.result == 'success' }}
+    outputs:
+      artifacts-sha: ${{ steps.capture-sha.outputs.sha }}
+
+    steps:
+      - name: Generate Github App Token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.RELEASE_BOT_ID }}
+          private-key: ${{ secrets.RELEASE_BOT_KEY }}
+          owner: ${{ github.repository_owner }}
+
+      - uses: actions/checkout@v6
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          fetch-depth: 0
+
+      - name: Sync branch to Polaris commit
+        run: |
+          echo "Polaris SHA: ${{ needs.polaris.outputs.polaris-sha }}"
+          git fetch origin ${{ github.ref_name }}
+          git reset --hard ${{ needs.polaris.outputs.polaris-sha }}
+
+      - name: Generate SPDX Markdown Reports
+        uses: yoriito/actions/sbom_md-report@main
+
+      - name: Download fuzz evidence
+        uses: actions/download-artifact@v4
+        with:
+          name: fuzz-evidence
+          path: quality/assets
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add security-reports quality/assets
+          if ! git diff --cached --quiet; then
+            git commit -m "docs: generate SPDX markdown reports and record fuzz test evidence"
+            git push origin HEAD:${{ github.ref_name }}
+          else
+            echo "No changes"
+          fi
+
+      - name: Capture HEAD
+        id: capture-sha
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "Current HEAD:"
+          git rev-parse HEAD
+
+  # ================================================================
   # Release
   # ================================================================
   release:
     name: Release
     runs-on: ubuntu-latest
-    needs: [lint, build-test]
+    needs: release-artifacts
+    if: ${{ always() && github.ref_name == 'main' }}
     outputs:
       release-created: ${{ steps.release.outputs.release-created }}
       version: ${{ steps.release.outputs.version }}
@@ -89,6 +213,13 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           fetch-depth: 0
           fetch-tags: true
+
+      - name: Sync branch to Release Artifacts commit
+        if: ${{ vars.IS_POLARIS_ENABLED == 'true' }}
+        run: |
+          echo "Release Artifacts SHA: ${{ needs.release-artifacts.outputs.artifacts-sha }}"
+          git fetch origin ${{ github.ref_name }} --tags
+          git reset --hard ${{ needs.release-artifacts.outputs.artifacts-sha }}
 
       # ================================================================
       # RELEASE

@@ -17,144 +17,120 @@
 #include "Signal_Temperature.h"
 
 //-------------------------------------------------------------------------------------
-// VSS Signal: Vehicle.Powertrain.TractionBattery.Number3.Cells.Number9.Temperature
-// Type      : sensor
-// DataType  : float
-// Unit      : celsius
+// VSS Signal:
+// Vehicle.Powertrain.TractionBattery.Number3.Cells.Number9.Temperature Type :
+// sensor DataType  : float Unit      : Celsius
 //-------------------------------------------------------------------------------------
-namespace yoriito::vehicle::powertrain::tractionbattery::number3::cells::
-  number9::temperature {
+// clang-format off
+namespace yoriito::vehicle::powertrain::tractionbattery::number3::cells::number9::temperature {
+// clang-format on
 
-  yoriito::Result<float> Get() {
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Get].");
-    yoriito::databroker::DataBrokerConsumer* consumer =
+yoriito::Result<yoriito::signal::SignalGetDataPoint<float>> Get() {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Get].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
       yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
-    yoriito::databroker::ConsumerGetRequest get_request(
+  yoriito::databroker::ConsumerGetRequest request(
       VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER9_TEMPERATURE);
-    yoriito::Result<yoriito::databroker::ConsumerGetResponse> ret =
-      consumer->Get(get_request);
-    if (!ret.IsOk()) {
-      std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
-      YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
-      return yoriito::Result<float>::Err(std::move(err_ptr));
-    }
-    auto response = ret.TakeOk().value();
-    if (response.GetDataPoints().empty()) {
-      YORIITO_LOG_ERROR("SAPI_SignalAPI",
-                        std::string(yoriito::ErrorType::to_msg(
-                          yoriito::ErrorCode::ERROR_NODATA)));
-      return yoriito::Result<float>::Err(std::make_unique<yoriito::CommonError>(
-        yoriito::ErrorCode::ERROR_NODATA));
-    }
-    const auto& data_point = response.GetDataPoints().front();
-    if (!data_point.IsAvailableSensor()) {
-      YORIITO_LOG_ERROR("SAPI_SignalAPI",
-                        std::string(yoriito::ErrorType::to_msg(
-                          yoriito::ErrorCode::ERROR_UNAVAILABLE)));
-      return yoriito::Result<float>::Err(std::make_unique<yoriito::CommonError>(
-        yoriito::ErrorCode::ERROR_UNAVAILABLE));
-    }
-
-    auto data = data_point.GetData();
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Get].");
-    return yoriito::Result<float>::Ok(std::get<float>(data));
-  }
-
-  yoriito::Result<
-    std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>
-  Subscribe() {
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Subscribe].");
-    yoriito::databroker::DataBrokerConsumer* consumer =
-      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
-    yoriito::databroker::ConsumerGetRequest get_request(
-      VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER9_TEMPERATURE);
-    yoriito::Result<yoriito::databroker::ConsumerGetResponse> get_ret =
-      consumer->Get(get_request);
-    if (!get_ret.IsOk()) {
-      std::unique_ptr<yoriito::ErrorType> err_ptr = get_ret.TakeErr();
-      YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
-      return yoriito::Result<
-        std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
-        Err(std::move(err_ptr));
-    }
-    auto get_response = get_ret.TakeOk().value();
-    if (get_response.GetDataPoints().empty()) {
-      YORIITO_LOG_ERROR("SAPI_SignalAPI",
-                        std::string(yoriito::ErrorType::to_msg(
-                          yoriito::ErrorCode::ERROR_NODATA)));
-      return yoriito::Result<
-        std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
-        Err(std::make_unique<yoriito::CommonError>(
-          yoriito::ErrorCode::ERROR_NODATA));
-    }
-    const auto& data_point = get_response.GetDataPoints().front();
-    if (!data_point.IsAvailableSensor()) {
-      YORIITO_LOG_ERROR("SAPI_SignalAPI",
-                        std::string(yoriito::ErrorType::to_msg(
-                          yoriito::ErrorCode::ERROR_UNAVAILABLE)));
-      return yoriito::Result<
-        std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
-        Err(std::make_unique<yoriito::CommonError>(
-          yoriito::ErrorCode::ERROR_UNAVAILABLE));
-    }
-
-    yoriito::databroker::ConsumerSubscribeRequest subscribe_request(
-      VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER9_TEMPERATURE);
-    auto subscribe_ret = consumer->Subscribe(subscribe_request);
-    if (!subscribe_ret.IsOk()) {
-      std::unique_ptr<yoriito::ErrorType> err_ptr = subscribe_ret.TakeErr();
-      YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
-      return yoriito::Result<
-        std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
-        Err(std::move(err_ptr));
-    }
-    auto subscription_context = subscribe_ret.TakeOk().value();
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Subscribe].");
-    return yoriito::Result<
-      std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
-      Ok(std::move(subscription_context));
-  }
-
-  yoriito::Result<void> UnSubscribe(
-    std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>
-      subscription_context) {
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [UnSubscribe].");
-    yoriito::databroker::DataBrokerConsumer* consumer =
-      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
-    if (!subscription_context) {
-      YORIITO_LOG_ERROR("SAPI_SignalAPI",
-                        std::string(yoriito::ErrorType::to_msg(
-                          yoriito::ErrorCode::ERROR_UNSUBSCRIBE)));
-      return yoriito::Result<void>::Err(std::make_unique<yoriito::CommonError>(
-        yoriito::ErrorCode::ERROR_UNSUBSCRIBE));
-    }
-    auto ret = consumer->UnSubscribe(std::move(subscription_context));
-    if (!ret.IsOk()) {
-      std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
-      YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
-      return yoriito::Result<void>::Err(std::move(err_ptr));
-    }
-    subscription_context.reset();
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [UnSubscribe].");
-    return ret;
-  }
-
-  yoriito::Result<yoriito::databroker::ConsumerInspectResponse> Inspect() {
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Inspect].");
-    yoriito::databroker::DataBrokerConsumer* consumer =
-      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
-    yoriito::databroker::ConsumerInspectRequest inspect_request(
-      VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER9_TEMPERATURE);
-    yoriito::Result<yoriito::databroker::ConsumerInspectResponse> inspect_ret =
-      consumer->Inspect(inspect_request);
-    if (!inspect_ret.IsOk()) {
-      std::unique_ptr<yoriito::ErrorType> err_ptr = inspect_ret.TakeErr();
-      YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
-      return yoriito::Result<yoriito::databroker::ConsumerInspectResponse>::Err(
+  yoriito::Result<yoriito::databroker::ConsumerGetResponse> ret =
+      consumer->Get(request);
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::Result<yoriito::signal::SignalGetDataPoint<float>>::Err(
         std::move(err_ptr));
-    }
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Inspect].");
-    return inspect_ret;
   }
+  auto response = ret.TakeOk().value();
+  if (response.GetDataPoints().empty()) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", std::string(yoriito::ErrorType::to_msg(
+                                            yoriito::ErrorCode::ERROR_NODATA)));
+    return yoriito::Result<yoriito::signal::SignalGetDataPoint<float>>::Err(
+        std::make_unique<yoriito::CommonError>(
+            yoriito::ErrorCode::ERROR_NODATA));
+  }
+  const auto& data_point = response.GetDataPoints().front();
+  if (!std::holds_alternative<float>(data_point.GetData())) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", "Unexpected data type");
+    return yoriito::Result<yoriito::signal::SignalGetDataPoint<float>>::Err(
+        std::make_unique<yoriito::CommonError>(
+            yoriito::ErrorCode::ERROR_BADMSG));
+  }
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Get].");
+  return yoriito::Result<yoriito::signal::SignalGetDataPoint<float>>::Ok(
+      data_point);
+}
 
+yoriito::Result<yoriito::signal::SignalSubscribeContext<float>> Subscribe() {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Subscribe].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
+      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
+  yoriito::databroker::ConsumerSubscribeRequest request(
+      VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER9_TEMPERATURE);
+  auto ret = consumer->Subscribe(request);
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::Result<yoriito::signal::SignalSubscribeContext<float>>::Err(
+        std::move(err_ptr));
+  }
+  auto subscription_context = ret.TakeOk().value();
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Subscribe].");
+  return yoriito::Result<yoriito::signal::SignalSubscribeContext<float>>::Ok(
+      yoriito::signal::SignalSubscribeContext<float>(
+          std::move(subscription_context)));
+}
+
+yoriito::Result<void> UnSubscribe(
+    yoriito::signal::SignalSubscribeContext<float> subscription_context) {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [UnSubscribe].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
+      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
+  auto internal_ctx =
+      yoriito::signal::SubscribeContextAccess::Release(&subscription_context);
+  if (!internal_ctx) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI",
+                      std::string(yoriito::ErrorType::to_msg(
+                          yoriito::ErrorCode::ERROR_UNSUBSCRIBE)));
+    return yoriito::Result<void>::Err(std::make_unique<yoriito::CommonError>(
+        yoriito::ErrorCode::ERROR_UNSUBSCRIBE));
+  }
+  auto ret = consumer->UnSubscribe(std::move(internal_ctx));
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::Result<void>::Err(std::move(err_ptr));
+  }
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [UnSubscribe].");
+  return ret;
+}
+
+yoriito::Result<yoriito::signal::SignalInspectResponse<float>> Inspect() {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Inspect].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
+      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
+  yoriito::databroker::ConsumerInspectRequest request(
+      VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER9_TEMPERATURE);
+  yoriito::Result<yoriito::databroker::ConsumerInspectResponse> ret =
+      consumer->Inspect(request);
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::Result<yoriito::signal::SignalInspectResponse<float>>::Err(
+        std::move(err_ptr));
+  }
+  auto response = ret.TakeOk();
+  if (response.value().GetDataPoints().empty()) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", std::string(yoriito::ErrorType::to_msg(
+                                            yoriito::ErrorCode::ERROR_NODATA)));
+    return yoriito::Result<yoriito::signal::SignalInspectResponse<float>>::Err(
+        std::make_unique<yoriito::CommonError>(
+            yoriito::ErrorCode::ERROR_NODATA));
+  }
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Inspect].");
+  return yoriito::Result<yoriito::signal::SignalInspectResponse<float>>::Ok(
+      yoriito::signal::SignalInspectResponse<float>(
+          std::move(response.value())));
+}
+
+// clang-format off
 }  // namespace yoriito::vehicle::powertrain::tractionbattery::number3::cells::number9::temperature
+// clang-format on

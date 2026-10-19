@@ -1,0 +1,39 @@
+{
+  "spdxVersion" : "SPDX-2.3",
+  "creationInfo" : {
+    "created" : "2026-10-02T09:48:14Z",
+    "creators" : [ "Organization: COMPANY NAME", "Tool: Polaris" ],
+    "licenseListVersion" : "3.13"
+  },
+  "name" : "vehicle-api",
+  "dataLicense" : "CC0-1.0",
+  "hasExtractedLicensingInfos" : [ ],
+  "documentNamespace" : "https://polaris.blackduck.com/portfolio/portfolios/c34dac84-0a10-4310-ab58-6faec20790ec/portfolio-items/42feaaa0-ca0f-4e43-bd5b-76754cfdd7a9/projects/99041ce6-aa45-4157-be41-aeba748cd1ea",
+  "documentDescribes" : [ "SPDXRef-package-99041ce6-aa45-4157-be41-aeba748cd1ea" ],
+  "packages" : [ {
+    "copyrightText" : "NOASSERTION",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "OTHER",
+      "referenceLocator" : "99041ce6-aa45-4157-be41-aeba748cd1ea",
+      "referenceType" : "Polaris-Version"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "NOASSERTION",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "vehicle-api",
+    "originator" : "NOASSERTION",
+    "supplier" : "NOASSERTION",
+    "versionInfo" : "main",
+    "spdxid" : "SPDXRef-package-99041ce6-aa45-4157-be41-aeba748cd1ea",
+    "SPDXID" : "SPDXRef-package-99041ce6-aa45-4157-be41-aeba748cd1ea"
+  } ],
+  "relationships" : [ {
+    "spdxElementId" : "SPDXRef-DOCUMENT",
+    "relatedSpdxElement" : "SPDXRef-package-99041ce6-aa45-4157-be41-aeba748cd1ea",
+    "relationshipType" : "DESCRIBES"
+  } ],
+  "spdxid" : "SPDXRef-DOCUMENT",
+  "SPDXID" : "SPDXRef-DOCUMENT"
+}

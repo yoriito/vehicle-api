@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_INSPECT_DATA_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_INSPECT_DATA_H_
+#ifndef COMMON_DATABROKER_PRODUCER_INSPECT_DATA_H_
+#define COMMON_DATABROKER_PRODUCER_INSPECT_DATA_H_
 
 #include "databroker/base_inspect_data.h"
 
@@ -48,7 +48,7 @@ class ProducerInspectData : public yoriito::databroker::BaseInspectData {
    * @code -
    * @endcode -
    */
-  static ProducerInspectData CreateFromBuilder(Builder& builder) {
+  static ProducerInspectData CreateFromBuilder(const Builder& builder) {
     BaseInspectData base = builder.Build();
     return ProducerInspectData(base);
   }
@@ -69,4 +69,4 @@ class ProducerInspectData : public yoriito::databroker::BaseInspectData {
       : BaseInspectData(base) {}
 };
 }  // namespace yoriito::databroker
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_INSPECT_DATA_H_
+#endif  // COMMON_DATABROKER_PRODUCER_INSPECT_DATA_H_

@@ -16,13 +16,11 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_WINDSHIELD_FRONT_H
-#define VEHICLE_BODY_WINDSHIELD_FRONT_H
+#ifndef SIGNAL_BODY_WINDSHIELD_FRONT_FRONT_H_
+#define SIGNAL_BODY_WINDSHIELD_FRONT_FRONT_H_
 
 #include "Signal_IsHeatingOn.h"
-#include "Signal_IsHeatingOn_Availability_Actuator.h"
-#include "Signal_IsHeatingOn_Availability_Sensor.h"
 #include "washerfluid/WasherFluid.h"
 #include "wiping/Wiping.h"
 
-#endif  // VEHICLE_BODY_WINDSHIELD_FRONT_H
+#endif  // SIGNAL_BODY_WINDSHIELD_FRONT_FRONT_H_

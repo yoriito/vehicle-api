@@ -16,13 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_LIGHTS_BEAM_HIGH_H
-#define VEHICLE_BODY_LIGHTS_BEAM_HIGH_H
+#ifndef SIGNAL_BODY_LIGHTS_BEAM_HIGH_HIGH_H_
+#define SIGNAL_BODY_LIGHTS_BEAM_HIGH_HIGH_H_
 
 #include "Signal_IsDefect.h"
-#include "Signal_IsDefect_Availability_Sensor.h"
 #include "Signal_IsOn.h"
-#include "Signal_IsOn_Availability_Actuator.h"
-#include "Signal_IsOn_Availability_Sensor.h"
 
-#endif  // VEHICLE_BODY_LIGHTS_BEAM_HIGH_H
+#endif  // SIGNAL_BODY_LIGHTS_BEAM_HIGH_HIGH_H_

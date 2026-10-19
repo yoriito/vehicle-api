@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_LIGHTS_FOG_H
-#define VEHICLE_BODY_LIGHTS_FOG_H
+#ifndef SIGNAL_BODY_LIGHTS_FOG_FOG_H_
+#define SIGNAL_BODY_LIGHTS_FOG_FOG_H_
 
 #include "front/Front.h"
 #include "rear/Rear.h"
 
-#endif  // VEHICLE_BODY_LIGHTS_FOG_H
+#endif  // SIGNAL_BODY_LIGHTS_FOG_FOG_H_

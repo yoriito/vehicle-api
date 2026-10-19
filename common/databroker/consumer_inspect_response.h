@@ -16,12 +16,14 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_
+#ifndef COMMON_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_
+#define COMMON_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_
 
 #include <iostream>
+#include <memory>
 #include <optional>
 #include <string>
+#include <unordered_map>
 #include <utility>
 #include <vector>
 
@@ -70,8 +72,29 @@ class ConsumerInspectResponse {
    * @code -
    * @endcode -
    */
-  explicit ConsumerInspectResponse(std::vector<ConsumerInspectData>&& datas)
+  explicit ConsumerInspectResponse(std::vector<ConsumerInspectData> datas)
       : datas_(std::move(datas)) {}
+
+  /**
+   * @ingroup consumer
+   * @fn
+   * ConsumerInspectResponse::ConsumerInspectResponse(std::vector<ConsumerInspectData>&&
+   * datas, std::vector<std::shared_ptr<StructType>>&& struct_types)
+   * @brief Construct a ConsumerInspectResponse object with data points and
+   * struct types.
+   * @deprecated -
+   * @pre -
+   * @param datas Vector of ConsumerInspectData objects.
+   * @param struct_types Vector of shared pointers to StructType objects.
+   * @retval -
+   * @note -
+   * @code -
+   * @endcode -
+   */
+  explicit ConsumerInspectResponse(
+    std::vector<ConsumerInspectData> datas,
+    std::vector<std::shared_ptr<StructType>> struct_types)
+      : datas_(std::move(datas)), struct_types_(std::move(struct_types)) {}
 
   /**
    * @ingroup consumer
@@ -86,14 +109,36 @@ class ConsumerInspectResponse {
    * @code -
    * @endcode -
    */
-  const std::vector<ConsumerInspectData>& GetDataPoints() const {
+  const std::vector<ConsumerInspectData>& GetDataPoints() const& {
     return datas_;
+  }
+  std::vector<ConsumerInspectData> GetDataPoints() const&& { return datas_; }
+
+  /**
+   * @ingroup consumer
+   * @fn const std::vector<std::shared_ptr<StructType>>&
+   * ConsumerInspectResponse::GetStructTypes() const
+   * @brief Get the vector of shared pointers to StructType objects.
+   * @deprecated -
+   * @pre -
+   * @param -
+   * @retval std::vector<std::shared_ptr<StructType>> Vector of struct types
+   * @note -
+   * @code -
+   * @endcode -
+   */
+  const std::vector<std::shared_ptr<StructType>>& GetStructTypes() const& {
+    return struct_types_;
+  }
+  std::vector<std::shared_ptr<StructType>> GetStructTypes() const&& {
+    return struct_types_;
   }
 
  private:
   std::vector<ConsumerInspectData> datas_;
+  std::vector<std::shared_ptr<StructType>> struct_types_;
 };
 
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_
+#endif  // COMMON_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_

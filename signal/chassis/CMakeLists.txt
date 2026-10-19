@@ -15,29 +15,27 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE CHASSIS_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_CHASSIS_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_chassis SHARED ${CHASSIS_SRC})
-target_include_directories(yoriito_vehicle_api_chassis PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_chassis PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_chassis"
+    SOURCES
+        Signal_AxleCount.cc
+        Signal_Wheelbase.cc
+    INSTALL_SUBDIR
+        "signal/chassis"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/chassis"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_chassis LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)
+# ---- subdirectories ----
+add_subdirectory(axle)
+
+add_subdirectory(parkingbrake)
+
+add_subdirectory(steeringwheel)
+
+add_subdirectory(accelerator)
+
+add_subdirectory(brake)
+
+
+

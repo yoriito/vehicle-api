@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_BASE_SET_DATAPOINT_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_BASE_SET_DATAPOINT_H_
+#ifndef COMMON_DATABROKER_BASE_SET_DATAPOINT_H_
+#define COMMON_DATABROKER_BASE_SET_DATAPOINT_H_
 
 #include <string>
 
@@ -36,6 +36,21 @@ namespace yoriito::databroker {
  */
 class BaseSetDataPoint {
  public:
+  BaseSetDataPoint(const BaseSetDataPoint& other)
+      : path_(other.path_), data_(CloneValueType(other.data_)) {}
+
+  BaseSetDataPoint& operator=(const BaseSetDataPoint& other) & {
+    if (this == &other) {
+      return *this;
+    }
+    path_ = other.path_;
+    data_ = CloneValueType(other.data_);
+    return *this;
+  }
+
+  BaseSetDataPoint(BaseSetDataPoint&&) noexcept = default;
+  BaseSetDataPoint& operator=(BaseSetDataPoint&&) noexcept = default;
+
   /**
    * @ingroup common
    * @fn BaseSetDataPoint::BaseSetDataPoint()
@@ -64,7 +79,7 @@ class BaseSetDataPoint {
    * @endcode -
    */
   BaseSetDataPoint(const std::string& path, const ValueType& data)
-      : path_(path), data_(data) {}
+      : path_(path), data_(CloneValueType(data)) {}
 
   /**
    * @ingroup common
@@ -78,7 +93,10 @@ class BaseSetDataPoint {
    * @code -
    * @endcode -
    */
-  const std::string& GetPath() const { return path_; }
+  const std::string& GetPath() const& { return path_; }
+  // Rvalue overloads return by value to avoid a reference dangling past the
+  // temporary's lifetime.
+  std::string GetPath() const&& { return path_; }
 
   /**
    * @ingroup common
@@ -92,7 +110,10 @@ class BaseSetDataPoint {
    * @code -
    * @endcode -
    */
-  const ValueType& GetData() const { return data_; }
+  const ValueType& GetData() const& { return data_; }
+  // ValueType holds a move-only unique_ptr alternative, so clone rather than
+  // copy directly.
+  ValueType GetData() const&& { return CloneValueType(data_); }
 
   /**
    * @ingroup common
@@ -111,12 +132,12 @@ class BaseSetDataPoint {
    */
   friend bool operator==(const BaseSetDataPoint& lhs,
                          const BaseSetDataPoint& rhs) {
-    return lhs.path_ == rhs.path_ && lhs.data_ == rhs.data_;
+    return lhs.path_ == rhs.path_ && ValueTypeEquals(lhs.data_, rhs.data_);
   }
 
- protected:
+ private:
   std::string path_;
   ValueType data_;
 };
 }  // namespace yoriito::databroker
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_BASE_SET_DATAPOINT_H_
+#endif  // COMMON_DATABROKER_BASE_SET_DATAPOINT_H_

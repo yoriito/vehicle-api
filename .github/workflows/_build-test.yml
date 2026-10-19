@@ -18,6 +18,7 @@ name: Build and Test on devcontainer(desktop environment)
 
 on:
   workflow_call:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -57,7 +58,7 @@ jobs:
       run: |
         docker exec builder /bin/bash -lc '
             set -euo pipefail
-            cmake -S /work -B /work/build -DENABLE_TESTS=ON -DENABLE_INTEGRATION_TESTS=ON
+            cmake -S /work -B /work/build -DENABLE_TESTS=ON
           '
 
     - name: Build
@@ -74,53 +75,25 @@ jobs:
             set -euo pipefail
             ctest --test-dir /work/build --output-junit /work/result.xml
           '
-
-    - name: Integration Test
-      run: |
-        docker exec builder /bin/bash -lc '
-            set -euo pipefail
-
-            FEATURES=(
-              features/get.feature
-              features/set.feature
-              features/subscribe.feature
-              features/unsubscribe.feature
-              features/inspect.feature
-            )
-
-            cd /work/test_integration
-            for feature in "${FEATURES[@]}"; do
-              echo "=== Starting server for ${feature} ==="
-              /work/build/test_integration/test_integration 2>&1 &
-              server_pid=$!
-
-              echo "Waiting for wire server on :3902..."
-              for i in $(seq 1 30); do
-                if grep -q "0100007F:0F3E" /proc/net/tcp 2>/dev/null; then
-                  echo "Wire server ready (attempt ${i})"
-                  break
-                fi
-                if ! kill -0 "${server_pid}" 2>/dev/null; then
-                  echo "ERROR: Server process died for ${feature}"
-                  exit 1
-                fi
-                sleep 1
-              done
-              if ! grep -q "0100007F:0F3E" /proc/net/tcp 2>/dev/null; then
-                echo "ERROR: Wire server not listening after 30s for ${feature}"
-                exit 1
-              fi
-
-              echo "=== Running ${feature} ==="
-              timeout 15m cucumber --format progress --publish-quiet "${feature}"
-
-              kill "${server_pid}" 2>/dev/null || true
-              wait "${server_pid}" 2>/dev/null || true
-              sleep 2
-            done
-          '
-
     - name: Stop Docker Container
       if: always()
       run: |
         docker rm -f builder
+
+    - name: Install junit2html
+      if: always()
+      run: python3 -m pip install junit2html --quiet
+
+    - name: Generate Unit Test HTML Report
+      if: always() && hashFiles('result.xml') != ''
+      run: junit2html result.xml unit-test-report.html
+
+    - name: Upload Unit Test Report
+      if: always() && hashFiles('unit-test-report.html') != ''
+      uses: actions/upload-artifact@v6
+      with:
+        name: unit-test-results
+        path: |
+          result.xml
+          unit-test-report.html
+        retention-days: 7

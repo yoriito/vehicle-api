@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_INSPECT_FILTER_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_INSPECT_FILTER_H_
+#ifndef COMMON_DATABROKER_FILTER_INSPECT_FILTER_H_
+#define COMMON_DATABROKER_FILTER_INSPECT_FILTER_H_
 
 #include <string>
 #include <vector>
@@ -73,4 +73,4 @@ class InspectFilter : public GetFilter {
   }
 };
 }  // namespace yoriito::databroker::filter
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_INSPECT_FILTER_H_
+#endif  // COMMON_DATABROKER_FILTER_INSPECT_FILTER_H_

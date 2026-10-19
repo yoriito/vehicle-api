@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_REQUEST_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_REQUEST_H_
+#ifndef COMMON_DATABROKER_CONSUMER_INSPECT_REQUEST_H_
+#define COMMON_DATABROKER_CONSUMER_INSPECT_REQUEST_H_
 
 #include <iostream>
 #include <optional>
@@ -53,7 +53,7 @@ class ConsumerInspectRequest {
    * @code -
    * @endcode -
    */
-  explicit ConsumerInspectRequest(std::string&& path)
+  explicit ConsumerInspectRequest(std::string path)
       : path_(std::move(path)), filter_(std::nullopt) {}
 
   /**
@@ -70,7 +70,7 @@ class ConsumerInspectRequest {
    * @code -
    * @endcode -
    */
-  ConsumerInspectRequest(std::string&& path, filter::InspectFilter&& filter)
+  ConsumerInspectRequest(std::string path, filter::InspectFilter filter)
       : path_(std::move(path)), filter_(std::move(filter)) {}
 
   /**
@@ -85,7 +85,8 @@ class ConsumerInspectRequest {
    * @code -
    * @endcode -
    */
-  const std::string& GetPath() const { return path_; }
+  const std::string& GetPath() const & { return path_; }
+  std::string GetPath() const && { return path_; }
 
   /**
    * @ingroup consumer
@@ -100,9 +101,10 @@ class ConsumerInspectRequest {
    * @code -
    * @endcode -
    */
-  const std::optional<filter::InspectFilter>& GetFilter() const {
+  const std::optional<filter::InspectFilter>& GetFilter() const & {
     return filter_;
   }
+  std::optional<filter::InspectFilter> GetFilter() const && { return filter_; }
 
   /**
    * @ingroup consumer
@@ -131,4 +133,4 @@ class ConsumerInspectRequest {
 
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_REQUEST_H_
+#endif  // COMMON_DATABROKER_CONSUMER_INSPECT_REQUEST_H_

@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CHASSIS_AXLE_ROW1_WHEEL_H
-#define VEHICLE_CHASSIS_AXLE_ROW1_WHEEL_H
+#ifndef SIGNAL_CHASSIS_AXLE_ROW1_WHEEL_WHEEL_H_
+#define SIGNAL_CHASSIS_AXLE_ROW1_WHEEL_WHEEL_H_
 
 #include "left/Left.h"
 #include "right/Right.h"
 
-#endif  // VEHICLE_CHASSIS_AXLE_ROW1_WHEEL_H
+#endif  // SIGNAL_CHASSIS_AXLE_ROW1_WHEEL_WHEEL_H_

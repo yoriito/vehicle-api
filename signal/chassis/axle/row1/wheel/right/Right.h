@@ -16,14 +16,12 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_H
-#define VEHICLE_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_H
+#ifndef SIGNAL_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_RIGHT_H_
+#define SIGNAL_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_RIGHT_H_
 
 #include "Signal_AngularSpeed.h"
-#include "Signal_AngularSpeed_Availability_Sensor.h"
 #include "Signal_Speed.h"
-#include "Signal_Speed_Availability_Sensor.h"
 #include "brake/Brake.h"
 #include "tire/Tire.h"
 
-#endif  // VEHICLE_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_H
+#endif  // SIGNAL_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_RIGHT_H_

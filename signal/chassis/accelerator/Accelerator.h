@@ -16,10 +16,9 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CHASSIS_ACCELERATOR_H
-#define VEHICLE_CHASSIS_ACCELERATOR_H
+#ifndef SIGNAL_CHASSIS_ACCELERATOR_ACCELERATOR_H_
+#define SIGNAL_CHASSIS_ACCELERATOR_ACCELERATOR_H_
 
 #include "Signal_PedalPosition.h"
-#include "Signal_PedalPosition_Availability_Sensor.h"
 
-#endif  // VEHICLE_CHASSIS_ACCELERATOR_H
+#endif  // SIGNAL_CHASSIS_ACCELERATOR_ACCELERATOR_H_

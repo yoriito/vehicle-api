@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_BASE_INSPECT_DATA_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_BASE_INSPECT_DATA_H_
+#ifndef COMMON_DATABROKER_BASE_INSPECT_DATA_H_
+#define COMMON_DATABROKER_BASE_INSPECT_DATA_H_
 
 #include <map>
 #include <optional>
@@ -26,6 +26,9 @@
 #include <vector>
 
 #include "databroker_type.h"
+#include "databroker/data_type.h"
+#include "databroker/types/struct_type.h"
+#include "databroker/types/struct_type_ref.h"
 
 /**
  * @ingroup common
@@ -42,39 +45,12 @@ namespace yoriito::databroker {
 class BaseInspectData {
  public:
   enum class EntryType {
-    ENTRY_TYPE_UNSPECIFIED = 0,
-    ENTRY_TYPE_ATTRIBUTE = 1,
-    ENTRY_TYPE_SENSOR = 2,
-    ENTRY_TYPE_ACTUATOR = 3,
+    ENTRY_TYPE_UNSPECIFIED,
+    ENTRY_TYPE_ATTRIBUTE,
+    ENTRY_TYPE_SENSOR,
+    ENTRY_TYPE_ACTUATOR
   };
-  enum class DataType {
-    DATA_TYPE_UNSPECIFIED = 0,
-    DATA_TYPE_STRING = 1,
-    DATA_TYPE_BOOLEAN = 2,
-    DATA_TYPE_INT8 = 3,
-    DATA_TYPE_INT16 = 4,
-    DATA_TYPE_INT32 = 5,
-    DATA_TYPE_INT64 = 6,
-    DATA_TYPE_UINT8 = 7,
-    DATA_TYPE_UINT16 = 8,
-    DATA_TYPE_UINT32 = 9,
-    DATA_TYPE_UINT64 = 10,
-    DATA_TYPE_FLOAT = 11,
-    DATA_TYPE_DOUBLE = 12,
-    DATA_TYPE_TIMESTAMP = 13,  // Not exist in VSS
-    DATA_TYPE_STRING_ARRAY = 20,
-    DATA_TYPE_BOOLEAN_ARRAY = 21,
-    DATA_TYPE_INT8_ARRAY = 22,
-    DATA_TYPE_INT16_ARRAY = 23,
-    DATA_TYPE_INT32_ARRAY = 24,
-    DATA_TYPE_INT64_ARRAY = 25,
-    DATA_TYPE_UINT8_ARRAY = 26,
-    DATA_TYPE_UINT16_ARRAY = 27,
-    DATA_TYPE_UINT32_ARRAY = 28,
-    DATA_TYPE_UINT64_ARRAY = 29,
-    DATA_TYPE_FLOAT_ARRAY = 30,
-    DATA_TYPE_DOUBLE_ARRAY = 31
-  };
+  using DataType = yoriito::databroker::DataType;
   /**
    * @ingroup common
    * @fn BaseInspectData::BaseInspectData()
@@ -89,12 +65,54 @@ class BaseInspectData {
    */
   BaseInspectData() = delete;
 
+  BaseInspectData(const BaseInspectData& other)
+      : path(other.path),
+        data_type(other.data_type),
+        entry_type(other.entry_type),
+        deprecation(other.deprecation),
+        unit(other.unit),
+        min(CloneValueType(other.min)),
+        max(CloneValueType(other.max)),
+        comment(other.comment),
+        allowed(other.allowed),
+        default_value(CloneValueType(other.default_value)),
+        description(other.description),
+        arraysize(other.arraysize),
+        pattern(other.pattern),
+        custom_attributes(other.custom_attributes),
+        dataTypeRef_(other.dataTypeRef_) {}
+
+  BaseInspectData& operator=(const BaseInspectData& other) & {
+    if (this == &other) {
+      return *this;
+    }
+    path = other.path;
+    data_type = other.data_type;
+    entry_type = other.entry_type;
+    deprecation = other.deprecation;
+    unit = other.unit;
+    min = CloneValueType(other.min);
+    max = CloneValueType(other.max);
+    comment = other.comment;
+    allowed = other.allowed;
+    default_value = CloneValueType(other.default_value);
+    description = other.description;
+    arraysize = other.arraysize;
+    pattern = other.pattern;
+    custom_attributes = other.custom_attributes;
+    dataTypeRef_ = other.dataTypeRef_;
+    return *this;
+  }
+
+  BaseInspectData(BaseInspectData&&) noexcept = default;
+  BaseInspectData& operator=(BaseInspectData&&) noexcept = default;
+
   /**
    * @ingroup common
    * @fn BaseInspectData::BaseInspectData(std::string path, DataType data_type,
    * EntryType entry_type, std::string deprecation, std::string unit, ValueType
    * min, ValueType max, std::string comment, std::vector<std::string> allowed,
-   * ValueType default_value, std::string description, uint32_t arraysize,
+   * ValueType default_value, std::string description, uint64_t arraysize,
    * std::string pattern, std::map<std::string, std::string> custom_attributes)
    * @brief Construct a BaseInspectData object with all attributes.
    * @deprecated -
@@ -118,24 +136,24 @@ class BaseInspectData {
    * @code -
    * @endcode -
    */
-  explicit BaseInspectData(std::string path, DataType data_type,
-                           EntryType entry_type, std::string deprecation,
-                           std::string unit, ValueType min, ValueType max,
-                           std::string comment,
-                           std::vector<std::string> allowed,
-                           ValueType default_value, std::string description,
-                           uint32_t arraysize, std::string pattern,
-                           std::map<std::string, std::string> custom_attributes)
+  explicit BaseInspectData(
+    const std::string& path, DataType data_type, EntryType entry_type,
+    const std::string& deprecation, const std::string& unit, ValueType min,
+    ValueType max, const std::string& comment,
+    const std::vector<std::string>& allowed, ValueType default_value,
+    const std::string& description, uint64_t arraysize,
+    const std::string& pattern,
+    const std::map<std::string, std::string>& custom_attributes)
       : path(path),
         data_type(data_type),
         entry_type(entry_type),
         deprecation(deprecation),
         unit(unit),
-        min(min),
-        max(max),
+        min(CloneValueType(min)),
+        max(CloneValueType(max)),
         comment(comment),
         allowed(allowed),
-        default_value(default_value),
+        default_value(CloneValueType(default_value)),
         description(description),
         arraysize(arraysize),
         pattern(pattern),
@@ -157,37 +175,60 @@ class BaseInspectData {
    */
   friend bool operator==(const BaseInspectData& lhs,
                          const BaseInspectData& rhs) {
-    return lhs.path == rhs.path &&                    //
-           lhs.data_type == rhs.data_type &&          //
-           lhs.entry_type == rhs.entry_type &&        //
-           lhs.arraysize == rhs.arraysize &&          //
-           lhs.min == rhs.min &&                      //
-           lhs.max == rhs.max &&                      //
-           lhs.default_value == rhs.default_value &&  //
-           lhs.unit == rhs.unit &&                    //
-           lhs.deprecation == rhs.deprecation &&      //
-           lhs.comment == rhs.comment &&              //
-           lhs.pattern == rhs.pattern &&              //
-           lhs.description == rhs.description &&      //
-           lhs.allowed == rhs.allowed &&              //
-           lhs.custom_attributes == rhs.custom_attributes;
+    return (lhs.path == rhs.path) && (lhs.data_type == rhs.data_type) &&
+           (lhs.entry_type == rhs.entry_type) &&
+           (lhs.arraysize == rhs.arraysize) &&
+           (ValueTypeEquals(lhs.min, rhs.min)) &&
+           (ValueTypeEquals(lhs.max, rhs.max)) &&
+           (ValueTypeEquals(lhs.default_value, rhs.default_value)) &&
+           (lhs.unit == rhs.unit) && (lhs.deprecation == rhs.deprecation) &&
+           (lhs.comment == rhs.comment) && (lhs.pattern == rhs.pattern) &&
+           (lhs.description == rhs.description) &&
+           (lhs.allowed == rhs.allowed) &&
+           (lhs.custom_attributes == rhs.custom_attributes);
   }
 
   DataType GetDataType() const { return data_type; }
   EntryType GetEntryType() const { return static_cast<EntryType>(entry_type); }
-  const std::string& GetPath() const { return path; }
-  const std::string& GetDescription() const { return description; }
-  const std::string& GetComment() const { return comment; }
-  const std::string& GetDeprecation() const { return deprecation; }
-  const std::string& GetUnit() const { return unit; }
-  const ValueType& GetMin() const { return min; }
-  const ValueType& GetMax() const { return max; }
-  const std::vector<std::string>& GetAllowed() const { return allowed; }
-  const ValueType& GetDefaultValue() const { return default_value; }
-  uint32_t GetArraySize() const { return arraysize; }
-  const std::string& GetPattern() const { return pattern; }
-  const std::map<std::string, std::string>& GetCustomAttributes() const {
+  // Rvalue overloads below return by value (cloning ValueType, which holds a
+  // move-only unique_ptr alternative) to avoid a reference dangling past the
+  // temporary's lifetime.
+  const std::string& GetPath() const& { return path; }
+  std::string GetPath() const&& { return path; }
+  const std::string& GetDescription() const& { return description; }
+  std::string GetDescription() const&& { return description; }
+  const std::string& GetComment() const& { return comment; }
+  std::string GetComment() const&& { return comment; }
+  const std::string& GetDeprecation() const& { return deprecation; }
+  std::string GetDeprecation() const&& { return deprecation; }
+  const std::string& GetUnit() const& { return unit; }
+  std::string GetUnit() const&& { return unit; }
+  const ValueType& GetMin() const& { return min; }
+  ValueType GetMin() const&& { return CloneValueType(min); }
+  const ValueType& GetMax() const& { return max; }
+  ValueType GetMax() const&& { return CloneValueType(max); }
+  const std::vector<std::string>& GetAllowed() const& { return allowed; }
+  std::vector<std::string> GetAllowed() const&& { return allowed; }
+  const ValueType& GetDefaultValue() const& { return default_value; }
+  ValueType GetDefaultValue() const&& { return CloneValueType(default_value); }
+  uint64_t GetArraySize() const { return arraysize; }
+  const std::string& GetPattern() const& { return pattern; }
+  std::string GetPattern() const&& { return pattern; }
+  const std::map<std::string, std::string>& GetCustomAttributes() const& {
     return custom_attributes;
+  }
+  std::map<std::string, std::string> GetCustomAttributes() const&& {
+    return custom_attributes;
+  }
+  const std::optional<yoriito::databroker::StructTypeRef>& GetDataTypeRef()
+    const& {
+    return dataTypeRef_;
+  }
+  std::optional<yoriito::databroker::StructTypeRef> GetDataTypeRef() const&& {
+    return dataTypeRef_;
+  }
+  void SetDataTypeRef(yoriito::databroker::StructTypeRef dataTypeRef) {
+    dataTypeRef_ = std::move(dataTypeRef);
   }
   /**
    * @ingroup common
@@ -203,8 +244,8 @@ class BaseInspectData {
   class Builder {
    private:
     std::string path;
-    DataType data_type;
-    EntryType entry_type;
+    DataType data_type = DataType::DATA_TYPE_UNSPECIFIED;
+    EntryType entry_type = EntryType::ENTRY_TYPE_UNSPECIFIED;
     std::string deprecation;
     std::string unit;
     ValueType min;
@@ -213,7 +254,7 @@ class BaseInspectData {
     std::vector<std::string> allowed;
     ValueType default_value;
     std::string description;
-    uint32_t arraysize;
+    uint64_t arraysize = 0;
     std::string pattern;
     std::map<std::string, std::string> custom_attributes;
 
@@ -233,244 +274,248 @@ class BaseInspectData {
     Builder() = default;
     /**
      * @ingroup common
-     * @fn BaseInspectData::Builder& BaseInspectData::Builder::SetPath(const
-     * std::string& path)
+     * @fn BaseInspectData::Builder&
+     * BaseInspectData::Builder::SetPath(const std::string& new_path)
      * @brief Set the datapoint path.
      * @deprecated -
      * @pre -
-     * @param path Datapoint path.
+     * @param new_path Datapoint path.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetPath(const std::string& path) {
-      this->path = path;
+    Builder& SetPath(const std::string& new_path) & {
+      path = new_path;
       return *this;
     }
     /**
      * @ingroup common
      * @fn BaseInspectData::Builder&
-     * BaseInspectData::Builder::SetDataType(DataType data_type)
+     * BaseInspectData::Builder::SetDataType(DataType new_data_type)
      * @brief Set the data type.
      * @deprecated -
      * @pre -
-     * @param data_type Data type.
+     * @param new_data_type Data type.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetDataType(DataType data_type) {
-      this->data_type = data_type;
+    Builder& SetDataType(DataType new_data_type) & {
+      data_type = new_data_type;
       return *this;
     }
 
     /**
      * @ingroup common
      * @fn BaseInspectData::Builder&
-     * BaseInspectData::Builder::SetEntryType(EntryType entry_type)
+     * BaseInspectData::Builder::SetEntryType(EntryType new_entry_type)
      * @brief Set the entry type.
      * @deprecated -
      * @pre -
-     * @param entry_type Entry type.
+     * @param new_entry_type Entry type.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetEntryType(EntryType entry_type) {
-      this->entry_type = entry_type;
+    Builder& SetEntryType(EntryType new_entry_type) & {
+      entry_type = new_entry_type;
       return *this;
     }
 
     /**
      * @ingroup common
      * @fn BaseInspectData::Builder&
-     * BaseInspectData::Builder::SetDescription(const std::string& description)
+     * BaseInspectData::Builder::SetDescription(const std::string&
+     * new_description)
      * @brief Set the description string.
      * @deprecated -
      * @pre -
-     * @param description Description string.
+     * @param new_description Description string.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetDescription(const std::string& description) {
-      this->description = description;
+    Builder& SetDescription(const std::string& new_description) & {
+      description = new_description;
       return *this;
     }
     /**
      * @ingroup common
-     * @fn BaseInspectData::Builder& BaseInspectData::Builder::SetComment(const
-     * std::string& comment)
+     * @fn BaseInspectData::Builder&
+     * BaseInspectData::Builder::SetComment(const std::string& new_comment)
      * @brief Set the comment string.
      * @deprecated -
      * @pre -
-     * @param comment Comment string.
+     * @param new_comment Comment string.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetComment(const std::string& comment) {
-      this->comment = comment;
+    Builder& SetComment(const std::string& new_comment) & {
+      comment = new_comment;
       return *this;
     }
     /**
      * @ingroup common
      * @fn BaseInspectData::Builder&
-     * BaseInspectData::Builder::SetDeprecation(const std::string& deprecation)
+     * BaseInspectData::Builder::SetDeprecation(const std::string&
+     * new_deprecation)
      * @brief Set the deprecation string.
      * @deprecated -
      * @pre -
-     * @param deprecation Deprecation string.
+     * @param new_deprecation Deprecation string.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetDeprecation(const std::string& deprecation) {
-      this->deprecation = deprecation;
+    Builder& SetDeprecation(const std::string& new_deprecation) & {
+      deprecation = new_deprecation;
       return *this;
     }
     /**
      * @ingroup common
-     * @fn BaseInspectData::Builder& BaseInspectData::Builder::SetUnit(const
-     * std::string& unit)
+     * @fn BaseInspectData::Builder&
+     * BaseInspectData::Builder::SetUnit(conststd::string& new_unit)
      * @brief Set the unit string.
      * @deprecated -
      * @pre -
-     * @param unit Unit string.
+     * @param new_unit Unit string.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetUnit(const std::string& unit) {
-      this->unit = unit;
+    Builder& SetUnit(const std::string& new_unit) & {
+      unit = new_unit;
       return *this;
     }
     /**
      * @ingroup common
-     * @fn BaseInspectData::Builder& BaseInspectData::Builder::SetMin(const
-     * ValueType& min)
+     * @fn BaseInspectData::Builder&
+     * BaseInspectData::Builder::SetMin(constValueType& new_min)
      * @brief Set the minimum value.
      * @deprecated -
      * @pre -
-     * @param min Minimum value.
+     * @param new_min Minimum value.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetMin(const ValueType& min) {
-      this->min = min;
+    Builder& SetMin(const ValueType& new_min) & {
+      min = CloneValueType(new_min);
       return *this;
     }
     /**
      * @ingroup common
-     * @fn BaseInspectData::Builder& BaseInspectData::Builder::SetMax(const
-     * ValueType& max)
+     * @fn BaseInspectData::Builder&
+     * BaseInspectData::Builder::SetMax(const ValueType& new_max)
      * @brief Set the maximum value.
      * @deprecated -
      * @pre -
-     * @param max Maximum value.
+     * @param new_max Maximum value.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetMax(const ValueType& max) {
-      this->max = max;
+    Builder& SetMax(const ValueType& new_max) & {
+      max = CloneValueType(new_max);
       return *this;
     }
     /**
      * @ingroup common
      * @fn BaseInspectData::Builder&
-     * BaseInspectData::Builder::SetAllowed(std::vector<std::string>&& allowed)
+     * BaseInspectData::Builder::SetAllowed(std::vector<std::string>
+     * new_allowed)
      * @brief Set the allowed values.
      * @deprecated -
      * @pre -
-     * @param allowed Allowed values.
+     * @param new_allowed Allowed values.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetAllowed(std::vector<std::string>&& allowed) {
-      this->allowed = std::move(allowed);
+    Builder& SetAllowed(std::vector<std::string> new_allowed) & {
+      allowed = std::move(new_allowed);
       return *this;
     }
     /**
      * @ingroup common
      * @fn BaseInspectData::Builder&
-     * BaseInspectData::Builder::SetDefaultValue(const ValueType& default_value)
+     * BaseInspectData::Builder::SetDefaultValue(const ValueType&
+     * new_default_value)
      * @brief Set the default value.
      * @deprecated -
      * @pre -
-     * @param default_value Default value.
+     * @param new_default_value Default value.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetDefaultValue(const ValueType& default_value) {
-      this->default_value = default_value;
+    Builder& SetDefaultValue(const ValueType& new_default_value) & {
+      default_value = CloneValueType(new_default_value);
       return *this;
     }
     /**
      * @ingroup common
      * @fn BaseInspectData::Builder&
-     * BaseInspectData::Builder::SetArraySize(uint32_t arraysize)
+     * BaseInspectData::Builder::SetArraySize(uint64_t new_arraysize)
      * @brief Set the array size.
      * @deprecated -
      * @pre -
-     * @param arraysize Array size.
+     * @param new_arraysize Array size.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetArraySize(uint32_t arraysize) {
-      this->arraysize = arraysize;
+    Builder& SetArraySize(uint64_t new_arraysize) & {
+      arraysize = new_arraysize;
       return *this;
     }
     /**
      * @ingroup common
-     * @fn BaseInspectData::Builder& BaseInspectData::Builder::SetPattern(const
-     * std::string& pattern)
+     * @fn BaseInspectData::Builder&
+     * BaseInspectData::Builder::SetPattern(const std::string& new_pattern)
      * @brief Set the pattern string.
      * @deprecated -
      * @pre -
-     * @param pattern Pattern string.
+     * @param new_pattern Pattern string.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
-    Builder& SetPattern(const std::string& pattern) {
-      this->pattern = pattern;
+    Builder& SetPattern(const std::string& new_pattern) & {
+      pattern = new_pattern;
       return *this;
     }
     /**
      * @ingroup common
      * @fn BaseInspectData::Builder&
      * BaseInspectData::Builder::SetCustomAttributes(const std::map<std::string,
-     * std::string>& custom_attributes)
+     * std::string>& new_custom_attributes)
      * @brief Set the custom attributes map.
      * @deprecated -
      * @pre -
-     * @param custom_attributes Custom attributes map.
+     * @param new_custom_attributes Custom attributes map.
      * @retval Builder& Reference to this builder
      * @note -
      * @code -
      * @endcode -
      */
     Builder& SetCustomAttributes(
-        const std::map<std::string, std::string>& custom_attributes) {
-      this->custom_attributes = custom_attributes;
+      const std::map<std::string, std::string>& new_custom_attributes) & {
+      custom_attributes = new_custom_attributes;
       return *this;
     }
     /**
@@ -485,16 +530,17 @@ class BaseInspectData {
      * @code -
      * @endcode -
      */
-    BaseInspectData Build() {
-      BaseInspectData data(path, data_type, entry_type, deprecation, unit, min,
-                           max, comment, allowed, default_value, description,
+    BaseInspectData Build() const {
+      BaseInspectData data(path, data_type, entry_type, deprecation, unit,
+                           CloneValueType(min), CloneValueType(max), comment,
+                           allowed, CloneValueType(default_value), description,
                            arraysize, pattern, custom_attributes);
       return data;
     }
   };
   static Builder CreateBuilder() { return Builder(); }
 
- protected:
+ private:
   std::string path;
   DataType data_type;
   EntryType entry_type;
@@ -506,11 +552,12 @@ class BaseInspectData {
   std::vector<std::string> allowed;
   ValueType default_value;
   std::string description;
-  uint32_t arraysize;
+  uint64_t arraysize;
   std::string pattern;
   std::map<std::string, std::string> custom_attributes;
+  std::optional<yoriito::databroker::StructTypeRef> dataTypeRef_;
 };
 
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_BASE_INSPECT_DATA_H_
+#endif  // COMMON_DATABROKER_BASE_INSPECT_DATA_H_

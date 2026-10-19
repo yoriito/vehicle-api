@@ -16,21 +16,14 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_DOOR_ROW2_DRIVERSIDE_H
-#define VEHICLE_CABIN_DOOR_ROW2_DRIVERSIDE_H
+#ifndef SIGNAL_CABIN_DOOR_ROW2_DRIVERSIDE_DRIVERSIDE_H_
+#define SIGNAL_CABIN_DOOR_ROW2_DRIVERSIDE_DRIVERSIDE_H_
 
 #include "Signal_IsChildLockActive.h"
-#include "Signal_IsChildLockActive_Availability_Sensor.h"
 #include "Signal_IsLocked.h"
-#include "Signal_IsLocked_Availability_Actuator.h"
-#include "Signal_IsLocked_Availability_Sensor.h"
 #include "Signal_IsOpen.h"
-#include "Signal_IsOpen_Availability_Actuator.h"
-#include "Signal_IsOpen_Availability_Sensor.h"
 #include "Signal_Position.h"
-#include "Signal_Position_Availability_Actuator.h"
-#include "Signal_Position_Availability_Sensor.h"
 #include "shade/Shade.h"
 #include "window/Window.h"
 
-#endif  // VEHICLE_CABIN_DOOR_ROW2_DRIVERSIDE_H
+#endif  // SIGNAL_CABIN_DOOR_ROW2_DRIVERSIDE_DRIVERSIDE_H_

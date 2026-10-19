@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_OPERATOR_TYPE_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_OPERATOR_TYPE_H_
+#ifndef COMMON_DATABROKER_FILTER_OPERATOR_TYPE_H_
+#define COMMON_DATABROKER_FILTER_OPERATOR_TYPE_H_
 
 /**
  * @ingroup common
@@ -39,13 +39,13 @@ namespace yoriito::databroker::filter {
  * @endcode -
  */
 enum class OperatorType {
-  OPERATOR_UNDEFINED = 0,
-  OPERATOR_EQ = 1,   // equal
-  OPERATOR_NE = 2,   // not equal
-  OPERATOR_GT = 3,   // greater than
-  OPERATOR_GTE = 4,  // greater than or equal
-  OPERATOR_LT = 5,   // less than
-  OPERATOR_LTE = 6   // less than equal
+  OPERATOR_UNDEFINED,
+  OPERATOR_EQ,   // equal
+  OPERATOR_NE,   // not equal
+  OPERATOR_GT,   // greater than
+  OPERATOR_GTE,  // greater than or equal
+  OPERATOR_LT,   // less than
+  OPERATOR_LTE   // less than equal
 };
 
 /**
@@ -61,10 +61,10 @@ enum class OperatorType {
  * @endcode -
  */
 enum class LogicalOperatorType {
-  LOGICAL_OPERATOR_UNDEFINED = 0,
-  LOGICAL_OPERATOR_AND = 1,  // AND
-  LOGICAL_OPERATOR_OR = 2    // OR
+  LOGICAL_OPERATOR_UNDEFINED,
+  LOGICAL_OPERATOR_AND,  // AND
+  LOGICAL_OPERATOR_OR    // OR
 };
 
 }  // namespace yoriito::databroker::filter
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_OPERATOR_TYPE_H_
+#endif  // COMMON_DATABROKER_FILTER_OPERATOR_TYPE_H_

@@ -16,17 +16,11 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_LIGHT_SPOTLIGHT_ROW4_PASSENGERSIDE_H
-#define VEHICLE_CABIN_LIGHT_SPOTLIGHT_ROW4_PASSENGERSIDE_H
+#ifndef SIGNAL_CABIN_LIGHT_SPOTLIGHT_ROW4_PASSENGERSIDE_PASSENGERSIDE_H_
+#define SIGNAL_CABIN_LIGHT_SPOTLIGHT_ROW4_PASSENGERSIDE_PASSENGERSIDE_H_
 
 #include "Signal_Color.h"
-#include "Signal_Color_Availability_Actuator.h"
-#include "Signal_Color_Availability_Sensor.h"
 #include "Signal_Intensity.h"
-#include "Signal_Intensity_Availability_Actuator.h"
-#include "Signal_Intensity_Availability_Sensor.h"
 #include "Signal_IsLightOn.h"
-#include "Signal_IsLightOn_Availability_Actuator.h"
-#include "Signal_IsLightOn_Availability_Sensor.h"
 
-#endif  // VEHICLE_CABIN_LIGHT_SPOTLIGHT_ROW4_PASSENGERSIDE_H
+#endif  // SIGNAL_CABIN_LIGHT_SPOTLIGHT_ROW4_PASSENGERSIDE_PASSENGERSIDE_H_

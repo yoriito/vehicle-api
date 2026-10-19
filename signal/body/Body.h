@@ -16,18 +16,12 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_H
-#define VEHICLE_BODY_H
+#ifndef SIGNAL_BODY_BODY_H_
+#define SIGNAL_BODY_BODY_H_
 
 #include "Signal_IsAutoPowerOptimize.h"
-#include "Signal_IsAutoPowerOptimize_Availability_Actuator.h"
-#include "Signal_IsAutoPowerOptimize_Availability_Sensor.h"
 #include "Signal_PowerOptimizeLevel.h"
-#include "Signal_PowerOptimizeLevel_Availability_Actuator.h"
-#include "Signal_PowerOptimizeLevel_Availability_Sensor.h"
 #include "Signal_RearMainSpoilerPosition.h"
-#include "Signal_RearMainSpoilerPosition_Availability_Actuator.h"
-#include "Signal_RearMainSpoilerPosition_Availability_Sensor.h"
 #include "hood/Hood.h"
 #include "horn/Horn.h"
 #include "lights/Lights.h"
@@ -36,4 +30,4 @@
 #include "trunk/Trunk.h"
 #include "windshield/Windshield.h"
 
-#endif  // VEHICLE_BODY_H
+#endif  // SIGNAL_BODY_BODY_H_

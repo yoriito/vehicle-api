@@ -16,15 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_ADAS_OBSTACLEDETECTION_H
-#define VEHICLE_ADAS_OBSTACLEDETECTION_H
+#ifndef SIGNAL_ADAS_OBSTACLEDETECTION_OBSTACLEDETECTION_H_
+#define SIGNAL_ADAS_OBSTACLEDETECTION_OBSTACLEDETECTION_H_
 
-#include "Signal_DegradationStatus.h"
-#include "Signal_DegradationStatus_Availability_Sensor.h"
-#include "Signal_IsEnabled.h"
-#include "Signal_IsEnabled_Availability_Actuator.h"
-#include "Signal_IsEnabled_Availability_Sensor.h"
-#include "Signal_IsWarning.h"
-#include "Signal_IsWarning_Availability_Sensor.h"
+#include "front/Front.h"
+#include "rear/Rear.h"
 
-#endif  // VEHICLE_ADAS_OBSTACLEDETECTION_H
+#endif  // SIGNAL_ADAS_OBSTACLEDETECTION_OBSTACLEDETECTION_H_

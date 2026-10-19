@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_BASE_GET_DATAPOINT_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_BASE_GET_DATAPOINT_H_
+#ifndef COMMON_DATABROKER_BASE_GET_DATAPOINT_H_
+#define COMMON_DATABROKER_BASE_GET_DATAPOINT_H_
 
 #include <string>
 
@@ -36,6 +36,21 @@ namespace yoriito::databroker {
  */
 class BaseGetDataPoint {
  public:
+  BaseGetDataPoint(const BaseGetDataPoint& other)
+      : path_(other.path_), data_(CloneValueType(other.data_)) {}
+
+  BaseGetDataPoint& operator=(const BaseGetDataPoint& other) & {
+    if (this == &other) {
+      return *this;
+    }
+    path_ = other.path_;
+    data_ = CloneValueType(other.data_);
+    return *this;
+  }
+
+  BaseGetDataPoint(BaseGetDataPoint&&) noexcept = default;
+  BaseGetDataPoint& operator=(BaseGetDataPoint&&) noexcept = default;
+
   /**
    * @ingroup common
    * @fn BaseGetDataPoint::BaseGetDataPoint(const std::string& path, const
@@ -51,7 +66,7 @@ class BaseGetDataPoint {
    * @endcode -
    */
   BaseGetDataPoint(const std::string& path, const ValueType& data)
-      : path_(path), data_(data) {}
+      : path_(path), data_(CloneValueType(data)) {}
   /**
    * @ingroup common
    * @fn BaseGetDataPoint::BaseGetDataPoint()
@@ -77,7 +92,10 @@ class BaseGetDataPoint {
    * @code -
    * @endcode -
    */
-  const std::string& GetPath() const { return path_; }
+  const std::string& GetPath() const& { return path_; }
+  // Rvalue overload returns by value to avoid a reference dangling past the
+  // temporary's lifetime.
+  std::string GetPath() const&& { return path_; }
   /**
    * @ingroup common
    * @fn const ValueType& BaseGetDataPoint::GetData() const
@@ -90,11 +108,14 @@ class BaseGetDataPoint {
    * @code -
    * @endcode -
    */
-  const ValueType& GetData() const { return data_; }
+  const ValueType& GetData() const& { return data_; }
+  // Rvalue overload clones by value (ValueType holds a move-only unique_ptr
+  // alternative) to avoid a reference dangling past the temporary's lifetime.
+  ValueType GetData() const&& { return CloneValueType(data_); }
 
- protected:
+ private:
   std::string path_;
   ValueType data_;
 };
 }  // namespace yoriito::databroker
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_BASE_GET_DATAPOINT_H_
+#endif  // COMMON_DATABROKER_BASE_GET_DATAPOINT_H_

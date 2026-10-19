@@ -16,14 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_TIMER_H
-#define VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_TIMER_H
+#ifndef SIGNAL_POWERTRAIN_TRACTIONBATTERY_CHARGING_TIMER_TIMER_H_
+#define SIGNAL_POWERTRAIN_TRACTIONBATTERY_CHARGING_TIMER_TIMER_H_
 
 #include "Signal_Mode.h"
-#include "Signal_Mode_Availability_Actuator.h"
-#include "Signal_Mode_Availability_Sensor.h"
 #include "Signal_Time.h"
-#include "Signal_Time_Availability_Actuator.h"
-#include "Signal_Time_Availability_Sensor.h"
 
-#endif  // VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_TIMER_H
+#endif  // SIGNAL_POWERTRAIN_TRACTIONBATTERY_CHARGING_TIMER_TIMER_H_

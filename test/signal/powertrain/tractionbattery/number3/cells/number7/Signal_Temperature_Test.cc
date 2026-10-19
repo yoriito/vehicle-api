@@ -28,217 +28,180 @@
 #include "mock_databroker_consumer.h"
 #include "mock_databroker_consumer_factory.h"
 #include "result.h"
-
 namespace vss = yoriito::vehicle::powertrain::tractionbattery::number3::cells::
-  number7::temperature;
+    number7::temperature;
 using ::testing::Return;
 
 namespace {
-  yoriito::databroker::MockDataBrokerConsumer* mock_consumer;
+yoriito::databroker::MockDataBrokerConsumer* mock_consumer;
 
-  class
+class
     GetNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE
-      : public ::testing::TestWithParam<float> {
-    protected:
-      void SetUp() override {
-        mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance =
-          mock_consumer;
-      }
+    : public ::testing::TestWithParam<float> {
+ protected:
+  void SetUp() override {
+    mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance =
+        mock_consumer;
+  }
 
-      void TearDown() override {
-        delete mock_consumer;
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
-      }
-  };
-  class
+  void TearDown() override {
+    delete mock_consumer;
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
+  }
+};
+class
     SubscribeNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE
-      : public ::testing::TestWithParam<float> {
-    protected:
-      void SetUp() override {
-        mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance =
-          mock_consumer;
-      }
+    : public ::testing::TestWithParam<float> {
+ protected:
+  void SetUp() override {
+    mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance =
+        mock_consumer;
+  }
 
-      void TearDown() override {
-        delete mock_consumer;
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
-      }
-  };
-  class
+  void TearDown() override {
+    delete mock_consumer;
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
+  }
+};
+class
     UnSubscribeNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE
-      : public ::testing::TestWithParam<float> {
-    protected:
-      void SetUp() override {
-        mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance =
-          mock_consumer;
-      }
+    : public ::testing::TestWithParam<float> {
+ protected:
+  void SetUp() override {
+    mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance =
+        mock_consumer;
+  }
 
-      void TearDown() override {
-        delete mock_consumer;
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
-      }
-  };
-  class
+  void TearDown() override {
+    delete mock_consumer;
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
+  }
+};
+class
     InspectNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE
-      : public ::testing::Test {
-    protected:
-      void SetUp() override {
-        mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance =
-          mock_consumer;
-      }
+    : public ::testing::Test {
+ protected:
+  void SetUp() override {
+    mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance =
+        mock_consumer;
+  }
 
-      void TearDown() override {
-        delete mock_consumer;
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
-      }
-  };
+  void TearDown() override {
+    delete mock_consumer;
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
+  }
+};
 }  // namespace
 
 TEST_P(
-  GetNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  GetNormalTest_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE) {
+    GetNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    GetNormalTest_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE) {
   float expected_value = GetParam();
 
   // mock request
   std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
-  auto request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
+      vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
+  auto request =
+      yoriito::databroker::ConsumerGetRequest(std::string(current_path));
 
   // mock response
   double timestamp = 0.0;
   bool is_available_sensor = true;
   bool is_available_actuator = true;
+  double produced_timestamp = 1234567890;
+
   auto dp = yoriito::databroker::ConsumerGetDataPoint(
-    current_path, expected_value, is_available_sensor, is_available_actuator,
-    timestamp);
+      current_path, expected_value, is_available_sensor, is_available_actuator,
+      timestamp, produced_timestamp);
+
   std::vector<yoriito::databroker::ConsumerGetDataPoint> dps = {dp};
   auto response = yoriito::databroker::ConsumerGetResponse(std::move(dps));
 
   // setup mock
   EXPECT_CALL(*mock_consumer, Get(request))
-    .WillOnce(Return(
-      yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(response)));
+      .WillOnce(
+          Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(
+              response)));
 
   // execute
   auto result = vss::Get();
 
   // post_condition
   EXPECT_TRUE(result.IsOk());
-  EXPECT_EQ(result.TakeOk(), expected_value);
+  auto get_datapoint = result.TakeOk().value();
+
+  EXPECT_EQ(get_datapoint.GetData(), expected_value);
+
+  EXPECT_EQ(get_datapoint.GetPath(), current_path);
+  EXPECT_EQ(get_datapoint.IsAvailableSensor(), is_available_sensor);
+  EXPECT_EQ(get_datapoint.IsAvailableActuator(), is_available_actuator);
+  EXPECT_EQ(get_datapoint.GetStoredTimestamp(), timestamp);
+  ASSERT_TRUE(get_datapoint.GetProducedTimestamp().has_value());
+  EXPECT_EQ(get_datapoint.GetProducedTimestamp().value(), produced_timestamp);
 };
 
 INSTANTIATE_TEST_SUITE_P(
-  VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE_Sensor,
-  GetNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  ::testing::Values(-127, 127, 0.0));
+    VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE_Sensor,
+    GetNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    ::testing::Values(-127, 127, 0.0));
 
 TEST_P(
-  SubscribeNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  SubscribeNormalTest_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE) {
-  float expected_value = GetParam();
-
+    SubscribeNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    SubscribeNormalTest_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE) {
   // mock request for Subscribe
   std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
+      vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
   auto request = yoriito::databroker::ConsumerSubscribeRequest(current_path);
 
   // mock response for Subscribe
   std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>
-    expect_context =
-      std::make_unique<yoriito::databroker::MockConsumerSubscribeContext>();
-  auto raw_ptr = expect_context.get();
+      expect_context =
+          std::make_unique<yoriito::databroker::MockConsumerSubscribeContext>();
 
   // setup mock for Subscribe
   EXPECT_CALL(*mock_consumer, Subscribe(testing::_))
-    .WillOnce(
-      Return(yoriito::Result<
-             std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
-               Ok(std::move(expect_context))));
-
-  // mock request for Get
-  auto get_request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
-
-  // mock response for Get
-  double timestamp = 0.0;
-  bool is_available_sensor = true;
-  bool is_available_actuator = true;
-  yoriito::ValueType value = expected_value;
-  auto dp = yoriito::databroker::ConsumerGetDataPoint(
-    current_path, std::move(value), is_available_sensor, is_available_actuator,
-    timestamp);
-  std::vector<yoriito::databroker::ConsumerGetDataPoint> dps = {dp};
-  auto get_response = yoriito::databroker::ConsumerGetResponse(std::move(dps));
-
-  // setup mock for Get
-  EXPECT_CALL(*mock_consumer, Get(get_request))
-    .WillOnce(
-      Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(
-        get_response)));
+      .WillOnce(Return(
+          yoriito::Result<
+              std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
+              Ok(std::move(expect_context))));
 
   // execute
   auto result = vss::Subscribe();
 
   // post_condition
   EXPECT_TRUE(result.IsOk());
-  EXPECT_EQ(result.TakeOk().value().get(), raw_ptr);
 }
 
 INSTANTIATE_TEST_SUITE_P(
-  VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE_Sensor,
-  SubscribeNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  ::testing::Values(-127, 127, 0.0));
+    VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE_Sensor,
+    SubscribeNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    ::testing::Values(-127, 127, 0.0));
 
 TEST_P(
-  UnSubscribeNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  UnSubscribeNormalTest_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE) {
-  float expected_value = GetParam();
-
+    UnSubscribeNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    UnSubscribeNormalTest_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE) {
   // mock request for Subscribe
   std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
+      vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
   auto request = yoriito::databroker::ConsumerSubscribeRequest(current_path);
 
   // mock response for Subscribe
   std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>
-    expect_context =
-      std::make_unique<yoriito::databroker::MockConsumerSubscribeContext>();
-  auto raw_ptr = expect_context.get();
+      expect_context =
+          std::make_unique<yoriito::databroker::MockConsumerSubscribeContext>();
 
   // setup mock for Subscribe and UnSubscribe
   EXPECT_CALL(*mock_consumer, Subscribe(testing::_))
-    .WillOnce(
-      Return(yoriito::Result<
-             std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
-               Ok(std::move(expect_context))));
+      .WillOnce(Return(
+          yoriito::Result<
+              std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
+              Ok(std::move(expect_context))));
   EXPECT_CALL(*mock_consumer, UnSubscribe(testing::_))
-    .WillOnce(Return(yoriito::Result<void>::Ok()));
-
-  // mock request for Get
-  auto get_request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
-
-  // mock response for Get
-  double timestamp = 0.0;
-  bool is_available_sensor = true;
-  bool is_available_actuator = true;
-  yoriito::ValueType value = expected_value;
-  auto dp = yoriito::databroker::ConsumerGetDataPoint(
-    current_path, std::move(value), is_available_sensor, is_available_actuator,
-    timestamp);
-  std::vector<yoriito::databroker::ConsumerGetDataPoint> dps = {dp};
-  auto get_response = yoriito::databroker::ConsumerGetResponse(std::move(dps));
-
-  // setup mock for Get
-  EXPECT_CALL(*mock_consumer, Get(get_request))
-    .WillOnce(
-      Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(
-        get_response)));
+      .WillOnce(Return(yoriito::Result<void>::Ok()));
 
   // execute
   auto subscribe_ret = vss::Subscribe();
@@ -246,7 +209,6 @@ TEST_P(
   // post_condition
   EXPECT_TRUE(subscribe_ret.IsOk());
   auto context = subscribe_ret.TakeOk().value();
-  EXPECT_EQ(context.get(), raw_ptr);
 
   // execute
   auto result = vss::UnSubscribe(std::move(context));
@@ -254,32 +216,32 @@ TEST_P(
 }
 
 INSTANTIATE_TEST_SUITE_P(
-  VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE_Sensor,
-  UnSubscribeNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  ::testing::Values(-127, 127, 0.0));
+    VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE_Sensor,
+    UnSubscribeNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    ::testing::Values(-127, 127, 0.0));
 
 TEST_F(
-  InspectNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  InspectNormalTest_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE) {
+    InspectNormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    InspectNormalTest_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE) {
   // mock request for Inspect
   std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
+      vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
   auto inspect_request =
-    yoriito::databroker::ConsumerInspectRequest(std::move(current_path));
+      yoriito::databroker::ConsumerInspectRequest(std::move(current_path));
 
   // mock response for Inspect
   auto builder = yoriito::databroker::ConsumerInspectData::CreateBuilder();
   auto data =
-    yoriito::databroker::ConsumerInspectData::CreateFromBuilder(builder);
+      yoriito::databroker::ConsumerInspectData::CreateFromBuilder(builder);
   std::vector<yoriito::databroker::ConsumerInspectData> data_ = {data};
   auto inspect_response =
-    yoriito::databroker::ConsumerInspectResponse(std::move(data_));
+      yoriito::databroker::ConsumerInspectResponse(std::move(data_));
 
   // setup mock for Inspect
   EXPECT_CALL(*mock_consumer, Inspect(inspect_request))
-    .WillOnce(
-      Return(yoriito::Result<yoriito::databroker::ConsumerInspectResponse>::Ok(
-        inspect_response)));
+      .WillOnce(Return(
+          yoriito::Result<yoriito::databroker::ConsumerInspectResponse>::Ok(
+              inspect_response)));
 
   // execute
   auto inspect_ret = vss::Inspect();
@@ -291,308 +253,185 @@ TEST_F(
 // Abnormal Test
 // Fixture
 namespace {
-  class
+class
     GetAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE
-      : public ::testing::Test {
-    protected:
-      void SetUp() override {
-        mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance =
-          mock_consumer;
-      }
-      void TearDown() override {
-        delete mock_consumer;
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
-      }
-  };
-  class
+    : public ::testing::Test {
+ protected:
+  void SetUp() override {
+    mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance =
+        mock_consumer;
+  }
+  void TearDown() override {
+    delete mock_consumer;
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
+  }
+};
+class
     SubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE
-      : public ::testing::Test {
-    protected:
-      void SetUp() override {
-        mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance =
-          mock_consumer;
-      }
-      void TearDown() override {
-        delete mock_consumer;
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
-      }
-  };
-  class
+    : public ::testing::Test {
+ protected:
+  void SetUp() override {
+    mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance =
+        mock_consumer;
+  }
+  void TearDown() override {
+    delete mock_consumer;
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
+  }
+};
+class
     UnSubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE
-      : public ::testing::Test {
-    protected:
-      void SetUp() override {
-        mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance =
-          mock_consumer;
-      }
-      void TearDown() override {
-        delete mock_consumer;
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
-      }
-  };
-  class
+    : public ::testing::Test {
+ protected:
+  void SetUp() override {
+    mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance =
+        mock_consumer;
+  }
+  void TearDown() override {
+    delete mock_consumer;
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
+  }
+};
+class
     InspectAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE
-      : public ::testing::Test {
-    protected:
-      void SetUp() override {
-        mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance =
-          mock_consumer;
-      }
-      void TearDown() override {
-        delete mock_consumer;
-        yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
-      }
-  };
+    : public ::testing::Test {
+ protected:
+  void SetUp() override {
+    mock_consumer = new yoriito::databroker::MockDataBrokerConsumer();
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance =
+        mock_consumer;
+  }
+  void TearDown() override {
+    delete mock_consumer;
+    yoriito::databroker::MockDataBrokerConsumerFactory::instance = nullptr;
+  }
+};
 }  // namespace
-// Get
+   // Get
 TEST_F(
-  GetAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  Get_ReturnsErr_WhenConsumerGetFails) {
+    GetAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    Get_ReturnsErr_WhenConsumerGetFails) {
   // mock request
   std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
-  auto request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
+      vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
+  auto request =
+      yoriito::databroker::ConsumerGetRequest(std::string(current_path));
   // setup mock
   EXPECT_CALL(*mock_consumer, Get(request))
-    .WillOnce(
-      Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Err(
-        std::make_unique<yoriito::CommonError>(
-          yoriito::ErrorCode::ERROR_UNKNOWN))));
+      .WillOnce(
+          Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Err(
+              std::make_unique<yoriito::CommonError>(
+                  yoriito::ErrorCode::ERROR_UNKNOWN))));
   // execute
   auto result = vss::Get();
   // post_condition
   EXPECT_TRUE(result.IsErr());
 }
 TEST_F(
-  GetAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  Get_ReturnsErr_WhenDataPointsEmpty) {
+    GetAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    Get_ReturnsErr_WhenDataPointsEmpty) {
   // mock request
   std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
-  auto request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
+      vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
+  auto request =
+      yoriito::databroker::ConsumerGetRequest(std::string(current_path));
   std::vector<yoriito::databroker::ConsumerGetDataPoint> dps;
   auto response = yoriito::databroker::ConsumerGetResponse(std::move(dps));
   // setup mock
   EXPECT_CALL(*mock_consumer, Get(request))
-    .WillOnce(Return(
-      yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(response)));
+      .WillOnce(
+          Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(
+              response)));
   // execute
   auto result = vss::Get();
   // post_condition
-  EXPECT_TRUE(result.IsErr());
-}
-TEST_F(
-  GetAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  Get_ReturnsErr_WhenSensorUnavailable) {
-  std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
-  auto request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
-  double timestamp = 0.0;
-  bool is_available_sensor = false;
-  bool is_available_actuator = true;
-  int8_t value = 1;
-  auto dp = yoriito::databroker::ConsumerGetDataPoint(
-    current_path, value, is_available_sensor, is_available_actuator, timestamp);
-  std::vector<yoriito::databroker::ConsumerGetDataPoint> dps = {dp};
-  auto response = yoriito::databroker::ConsumerGetResponse(std::move(dps));
-  EXPECT_CALL(*mock_consumer, Get(request))
-    .WillOnce(Return(
-      yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(response)));
-  auto result = vss::Get();
   EXPECT_TRUE(result.IsErr());
 }
 
 // Subscribe
 TEST_F(
-  SubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  Subscribe_ReturnsErr_WhenPreGetFails) {
-  std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
-  auto get_request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
-  EXPECT_CALL(*mock_consumer, Get(get_request))
-    .WillOnce(
-      Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Err(
-        std::make_unique<yoriito::CommonError>(
-          yoriito::ErrorCode::ERROR_UNKNOWN))));
-  auto result = vss::Subscribe();
-  EXPECT_TRUE(result.IsErr());
-}
-TEST_F(
-  SubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  Subscribe_ReturnsErr_WhenDataPointsEmpty) {
-  std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
-  auto get_request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
-  std::vector<yoriito::databroker::ConsumerGetDataPoint> dps;  // empty
-  auto get_response = yoriito::databroker::ConsumerGetResponse(std::move(dps));
-  EXPECT_CALL(*mock_consumer, Get(get_request))
-    .WillOnce(
-      Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(
-        get_response)));
-  auto result = vss::Subscribe();
-  EXPECT_TRUE(result.IsErr());
-}
-TEST_F(
-  SubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  Subscribe_ReturnsErr_WhenSensorUnavailable) {
-  std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
-  auto get_request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
-  double timestamp = 0.0;
-  bool is_available_sensor = false;
-  bool is_available_actuator = true;
-  int8_t value = 1;
-  auto dp = yoriito::databroker::ConsumerGetDataPoint(
-    current_path, value, is_available_sensor, is_available_actuator, timestamp);
-  std::vector<yoriito::databroker::ConsumerGetDataPoint> dps = {dp};
-  auto get_response = yoriito::databroker::ConsumerGetResponse(std::move(dps));
-  EXPECT_CALL(*mock_consumer, Get(get_request))
-    .WillOnce(
-      Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(
-        get_response)));
-  auto result = vss::Subscribe();
-  EXPECT_TRUE(result.IsErr());
-}
-TEST_F(
-  SubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  Subscribe_ReturnsErr_WhenConsumerSubscribeFails) {
-  std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
-  // Pre Get Failed
-  auto get_request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
-  double timestamp = 0.0;
-  bool is_available_sensor = true;
-  bool is_available_actuator = true;
-  int8_t value = 10;
-  auto dp = yoriito::databroker::ConsumerGetDataPoint(
-    current_path, value, is_available_sensor, is_available_actuator, timestamp);
-  std::vector<yoriito::databroker::ConsumerGetDataPoint> dps = {dp};
-  auto get_response = yoriito::databroker::ConsumerGetResponse(std::move(dps));
-  EXPECT_CALL(*mock_consumer, Get(get_request))
-    .WillOnce(
-      Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(
-        get_response)));
+    SubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    Subscribe_ReturnsErr_WhenConsumerSubscribeFails) {
   // Subscribe Failed
   EXPECT_CALL(*mock_consumer, Subscribe(testing::_))
-    .WillOnce(
-      Return(yoriito::Result<
-             std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
-               Err(std::make_unique<yoriito::CommonError>(
-                 yoriito::ErrorCode::ERROR_UNAVAILABLE))));
+      .WillOnce(Return(
+          yoriito::Result<
+              std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
+              Err(std::make_unique<yoriito::CommonError>(
+                  yoriito::ErrorCode::ERROR_UNAVAILABLE))));
   auto result = vss::Subscribe();
   EXPECT_TRUE(result.IsErr());
 }
 // Unsubscribe
 TEST_F(
-  UnSubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  UnSubscribe_ReturnsErr_WhenContextIsNull) {
-  std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext> null_ctx;
+    UnSubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    UnSubscribe_ReturnsErr_WhenContextIsNull) {
+  yoriito::signal::SignalSubscribeContext<float> null_ctx;
   auto result = vss::UnSubscribe(std::move(null_ctx));
   EXPECT_TRUE(result.IsErr());
 }
 TEST_F(
-  UnSubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  UnSubscribe_ReturnsErr_WhenConsumerUnsubscribeFails) {
-  std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
-
-  auto get_request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
-  double timestamp = 0.0;
-  bool is_available_sensor = true;
-  bool is_available_actuator = true;
-  int8_t value = -1;
-  auto dp = yoriito::databroker::ConsumerGetDataPoint(
-    current_path, value, is_available_sensor, is_available_actuator, timestamp);
-  std::vector<yoriito::databroker::ConsumerGetDataPoint> dps = {dp};
-  auto get_response = yoriito::databroker::ConsumerGetResponse(std::move(dps));
-  EXPECT_CALL(*mock_consumer, Get(get_request))
-    .WillOnce(
-      Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(
-        get_response)));
+    UnSubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    UnSubscribe_ReturnsErr_WhenConsumerUnsubscribeFails) {
   std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>
-    expect_context =
-      std::make_unique<yoriito::databroker::MockConsumerSubscribeContext>();
+      expect_context =
+          std::make_unique<yoriito::databroker::MockConsumerSubscribeContext>();
   EXPECT_CALL(*mock_consumer, Subscribe(testing::_))
-    .WillOnce(
-      Return(yoriito::Result<
-             std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
-               Ok(std::move(expect_context))));
+      .WillOnce(Return(
+          yoriito::Result<
+              std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
+              Ok(std::move(expect_context))));
   auto sub_ret = vss::Subscribe();
   ASSERT_TRUE(sub_ret.IsOk());
   auto ctx = sub_ret.TakeOk().value();
   // UnSubscribe Failed
   EXPECT_CALL(*mock_consumer, UnSubscribe(testing::_))
-    .WillOnce(
-      Return(yoriito::Result<void>::Err(std::make_unique<yoriito::CommonError>(
-        yoriito::ErrorCode::ERROR_UNSUBSCRIBE))));
+      .WillOnce(Return(
+          yoriito::Result<void>::Err(std::make_unique<yoriito::CommonError>(
+              yoriito::ErrorCode::ERROR_UNSUBSCRIBE))));
   auto result = vss::UnSubscribe(std::move(ctx));
   EXPECT_TRUE(result.IsErr());
 }
 TEST_F(
-  UnSubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  UnSubscribe_ReturnsErr_WhenCalledTwice) {
-  std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
-  auto get_request = yoriito::databroker::ConsumerGetRequest(
-    std::move(std::string(current_path)));
-  double timestamp = 0.0;
-  bool is_available_sensor = true;
-  bool is_available_actuator = true;
-  int8_t value = 0;
-  auto dp = yoriito::databroker::ConsumerGetDataPoint(
-    current_path, value, is_available_sensor, is_available_actuator, timestamp);
-  std::vector<yoriito::databroker::ConsumerGetDataPoint> dps = {dp};
-  auto get_response = yoriito::databroker::ConsumerGetResponse(std::move(dps));
-  EXPECT_CALL(*mock_consumer, Get(get_request))
-    .WillOnce(
-      Return(yoriito::Result<yoriito::databroker::ConsumerGetResponse>::Ok(
-        get_response)));
+    UnSubscribeAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    UnSubscribe_ReturnsErr_WhenCalledTwice) {
   std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>
-    expect_context =
-      std::make_unique<yoriito::databroker::MockConsumerSubscribeContext>();
+      expect_context =
+          std::make_unique<yoriito::databroker::MockConsumerSubscribeContext>();
   EXPECT_CALL(*mock_consumer, Subscribe(testing::_))
-    .WillOnce(
-      Return(yoriito::Result<
-             std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
-               Ok(std::move(expect_context))));
+      .WillOnce(Return(
+          yoriito::Result<
+              std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>::
+              Ok(std::move(expect_context))));
   auto sub_ret = vss::Subscribe();
   ASSERT_TRUE(sub_ret.IsOk());
   auto ctx = sub_ret.TakeOk().value();
   EXPECT_CALL(*mock_consumer, UnSubscribe(testing::_))
-    .WillOnce(Return(yoriito::Result<void>::Ok()));
+      .WillOnce(Return(yoriito::Result<void>::Ok()));
   auto first = vss::UnSubscribe(std::move(ctx));
   EXPECT_TRUE(first.IsOk());
-  std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext> empty;
+  yoriito::signal::SignalSubscribeContext<float> empty;
   auto second = vss::UnSubscribe(std::move(empty));
   EXPECT_TRUE(second.IsErr());
 }
 
 // Inspect
 TEST_F(
-  InspectAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
-  Inspect_ReturnsErr_WhenBrokerReturnsErr) {
+    InspectAbnormalTestFixture_VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE,
+    Inspect_ReturnsErr_WhenBrokerReturnsErr) {
   std::string current_path =
-    vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
+      vss::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLS_NUMBER7_TEMPERATURE;
   yoriito::databroker::ConsumerInspectRequest inspect_request(
-    std::move(current_path));
+      std::move(current_path));
   auto broker_err =
-    std::make_unique<yoriito::CommonError>(yoriito::ErrorCode::ERROR_UNKNOWN);
+      std::make_unique<yoriito::CommonError>(yoriito::ErrorCode::ERROR_UNKNOWN);
   EXPECT_CALL(*mock_consumer, Inspect(inspect_request))
-    .WillOnce(
-      Return(yoriito::Result<yoriito::databroker::ConsumerInspectResponse>::Err(
-        std::move(broker_err))));
+      .WillOnce(Return(
+          yoriito::Result<yoriito::databroker::ConsumerInspectResponse>::Err(
+              std::move(broker_err))));
   auto ret = vss::Inspect();
   EXPECT_TRUE(ret.IsErr());
 }

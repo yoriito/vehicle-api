@@ -16,24 +16,14 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_BATTERYCONDITIONING_H
-#define VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_BATTERYCONDITIONING_H
+#ifndef SIGNAL_POWERTRAIN_TRACTIONBATTERY_NUMBER3_BATTERYCONDITIONING_BATTERYCONDITIONING_H_
+#define SIGNAL_POWERTRAIN_TRACTIONBATTERY_NUMBER3_BATTERYCONDITIONING_BATTERYCONDITIONING_H_
 
 #include "Signal_IsActive.h"
-#include "Signal_IsActive_Availability_Sensor.h"
 #include "Signal_IsOngoing.h"
-#include "Signal_IsOngoing_Availability_Sensor.h"
 #include "Signal_RequestedMode.h"
-#include "Signal_RequestedMode_Availability_Actuator.h"
-#include "Signal_RequestedMode_Availability_Sensor.h"
 #include "Signal_StartTime.h"
-#include "Signal_StartTime_Availability_Actuator.h"
-#include "Signal_StartTime_Availability_Sensor.h"
 #include "Signal_TargetTemperature.h"
-#include "Signal_TargetTemperature_Availability_Actuator.h"
-#include "Signal_TargetTemperature_Availability_Sensor.h"
 #include "Signal_TargetTime.h"
-#include "Signal_TargetTime_Availability_Actuator.h"
-#include "Signal_TargetTime_Availability_Sensor.h"
 
-#endif  // VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_BATTERYCONDITIONING_H
+#endif  // SIGNAL_POWERTRAIN_TRACTIONBATTERY_NUMBER3_BATTERYCONDITIONING_BATTERYCONDITIONING_H_

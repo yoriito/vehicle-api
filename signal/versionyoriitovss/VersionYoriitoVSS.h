@@ -16,12 +16,12 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_VERSIONYORIITOVSS_H
-#define VEHICLE_VERSIONYORIITOVSS_H
+#ifndef SIGNAL_VERSIONYORIITOVSS_VERSIONYORIITOVSS_H_
+#define SIGNAL_VERSIONYORIITOVSS_VERSIONYORIITOVSS_H_
 
 #include "Signal_Label.h"
 #include "Signal_Major.h"
 #include "Signal_Minor.h"
 #include "Signal_Patch.h"
 
-#endif  // VEHICLE_VERSIONYORIITOVSS_H
+#endif  // SIGNAL_VERSIONYORIITOVSS_VERSIONYORIITOVSS_H_

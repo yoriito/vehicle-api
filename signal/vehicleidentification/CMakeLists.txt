@@ -15,29 +15,33 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE VEHICLEIDENTIFICATION_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_VEHICLEIDENTIFICATION_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_vehicleidentification SHARED ${VEHICLEIDENTIFICATION_SRC})
-target_include_directories(yoriito_vehicle_api_vehicleidentification PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_vehicleidentification PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_vehicleidentification"
+    SOURCES
+        Signal_AcrissCode.cc
+        Signal_BodyType.cc
+        Signal_Brand.cc
+        Signal_DateVehicleFirstRegistered.cc
+        Signal_KnownVehicleDamages.cc
+        Signal_LicensePlate.cc
+        Signal_MeetsEmissionStandard.cc
+        Signal_Model.cc
+        Signal_OptionalExtras.cc
+        Signal_ProductionDate.cc
+        Signal_PurchaseDate.cc
+        Signal_VIN.cc
+        Signal_VehicleConfiguration.cc
+        Signal_VehicleExteriorColor.cc
+        Signal_VehicleInteriorColor.cc
+        Signal_VehicleInteriorType.cc
+        Signal_VehicleModelDate.cc
+        Signal_VehicleSeatingCapacity.cc
+        Signal_VehicleSpecialUsage.cc
+        Signal_WMI.cc
+        Signal_Year.cc
+    INSTALL_SUBDIR
+        "signal/vehicleidentification"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/vehicleidentification"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_vehicleidentification LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)

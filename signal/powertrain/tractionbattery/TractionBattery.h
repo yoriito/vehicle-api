@@ -16,24 +16,18 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_POWERTRAIN_TRACTIONBATTERY_H
-#define VEHICLE_POWERTRAIN_TRACTIONBATTERY_H
+#ifndef SIGNAL_POWERTRAIN_TRACTIONBATTERY_TRACTIONBATTERY_H_
+#define SIGNAL_POWERTRAIN_TRACTIONBATTERY_TRACTIONBATTERY_H_
 
+#include "Signal_EnergyConsumption.h"
 #include "Signal_MaxVoltage.h"
 #include "Signal_NominalVoltage.h"
 #include "Signal_Range.h"
-#include "Signal_Range_Availability_Sensor.h"
 #include "Signal_TimeRemaining.h"
-#include "Signal_TimeRemaining_Availability_Sensor.h"
-#include "Signal_TotalCurrentCurrent.h"
-#include "Signal_TotalCurrentCurrent_Availability_Sensor.h"
 #include "Signal_TotalCurrentPower.h"
-#include "Signal_TotalCurrentPower_Availability_Sensor.h"
-#include "Signal_TotalCurrentVoltage.h"
-#include "Signal_TotalCurrentVoltage_Availability_Sensor.h"
+#include "Signal_TotalElectricity.h"
 #include "Signal_TotalGrossCapacity.h"
 #include "Signal_TotalNetCapacity.h"
-#include "Signal_TotalNetCapacity_Availability_Sensor.h"
 #include "charging/Charging.h"
 #include "dcdc/DCDC.h"
 #include "number1/Number1.h"
@@ -42,4 +36,4 @@
 #include "number4/Number4.h"
 #include "totalstateofcharge/TotalStateOfCharge.h"
 
-#endif  // VEHICLE_POWERTRAIN_TRACTIONBATTERY_H
+#endif  // SIGNAL_POWERTRAIN_TRACTIONBATTERY_TRACTIONBATTERY_H_

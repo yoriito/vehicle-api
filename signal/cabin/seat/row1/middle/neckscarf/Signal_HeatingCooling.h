@@ -1,0 +1,161 @@
+/*
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Copyright 2026 JASPAR
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#ifndef SIGNAL_CABIN_SEAT_ROW1_MIDDLE_NECKSCARF_SIGNAL_HEATINGCOOLING_H_
+#define SIGNAL_CABIN_SEAT_ROW1_MIDDLE_NECKSCARF_SIGNAL_HEATINGCOOLING_H_
+
+#include <cstdint>
+#include <memory>
+#include <string>
+#include <variant>
+
+#include "databroker/databroker_consumer.h"
+#include "databroker/databroker_consumer_factory.h"
+#include "error.h"
+#include "result.h"
+#include "signal/signal_get_datapoint.h"
+#include "signal/signal_inspect_data.h"
+#include "signal/signal_inspect_response.h"
+#include "signal/signal_subscribe_context.h"
+#include "yoriito_log.h"
+
+/**
+ * @ingroup Cabin
+ * @namespace
+ * yoriito::vehicle::cabin::seat::row1::middle::neckscarf::heatingcooling
+ * @brief Indicates the Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling
+ * signal.
+ * @deprecated -
+ * @version main
+ */
+// clang-format off
+namespace yoriito::vehicle::cabin::seat::row1::middle::neckscarf::heatingcooling {
+// clang-format on
+
+constexpr const char* VEHICLE_CABIN_SEAT_ROW1_MIDDLE_NECKSCARF_HEATINGCOOLING =
+    "Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling";
+
+/**
+ * @ingroup Get
+ * @fn yoriito::Result<yoriito::signal::SignalGetDataPoint<int8_t>> Get()
+ * @brief Retrieves the datapoint for
+ * Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling
+ * @deprecated -
+ * @pre Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling is capable.
+ * @param -
+ * @retval Ok(yoriito::signal::SignalGetDataPoint<int8_t>): The result indicates
+ * success.
+ * @retval Err(UnsetValueError): The result indicates the value has been not
+ * set.
+ * @retval Err(UnknownError): The result indicates an unknown error.
+ * @note Thread safe.
+ * @code
+ * -
+ * @endcode
+ */
+yoriito::Result<yoriito::signal::SignalGetDataPoint<int8_t>> Get();
+
+/**
+ * @ingroup Set
+ * @fn yoriito::Result<void> Set(const int8_t& value)
+ * @brief Sets the target value for
+ * Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling.
+ * @deprecated -
+ * @pre Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling is available.
+ * @param value: The value to set.
+ * @retval Ok(): The result indicates success.
+ * @retval Err(ParameterError): The result indicates a parameter error.
+ * @retval Err(InvalidValueError): The result indicates an invalid value.
+ * @retval Err(NotAvailableError): The result indicates an unavailable value.
+ * @retval Err(UnknownError): The result indicates an unknown error.
+ * @note Thread safe. Last-come, first-served.
+ * @code
+ * -
+ * @endcode
+ */
+yoriito::Result<void> Set(const int8_t& value);
+
+/**
+ * @ingroup Subscribe
+ * @fn yoriito::Result<yoriito::signal::SignalSubscribeContext<int8_t>
+ * Subscribe()
+ * @brief Subscribes to changes in the datapoint for
+ * Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling.
+ * @deprecated -
+ * @pre Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling is capable.
+ * @param -
+ * @retval Ok(yoriito::signal::SignalSubscribeContext<int8_t>): The result
+ * containing a subscription context.
+ * @retval Err(UnknownError): The result indicates an unknown error.
+ * @note Thread safe.
+ * @code
+ * -
+ * @endcode
+ */
+yoriito::Result<yoriito::signal::SignalSubscribeContext<int8_t>> Subscribe();
+
+/**
+ * @ingroup UnSubscribe
+ * @fn yoriito::Result<void>
+ * UnSubscribe(yoriito::signal::SignalSubscribeContext<int8_t
+ * subscription_context)
+ * @brief UnSubscribes from the datapoint for
+ * Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling.
+ * @deprecated -
+ * @pre The subscription to
+ * Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling has already been
+ * called.
+ * @param -
+ * @retval Ok(): The result indicates success.
+ * @retval Err(NotSubscribeError): The result indicates that it has not been
+ * subscribed.
+ * @retval Err(UnknownError): The result indicates an unknown error.
+ * @note Thread safe.
+ * @code
+ * -
+ * @endcode
+ */
+yoriito::Result<void> UnSubscribe(
+    yoriito::signal::SignalSubscribeContext<int8_t> subscription_context);
+
+/**
+ * @ingroup Inspect
+ * @fn yoriito::Result<yoriito::signal::SignalInspecResponse<int8_t>> Inspect()
+ * @brief Retrieves the metadata for
+ * Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling
+ * @deprecated -
+ * @pre Vehicle.Cabin.Seat.Row1.Middle.NeckScarf.HeatingCooling is capable.
+ * @param -
+ * @retval Ok(yoriito::signal::SignalInspectResponse<int8_t>): The result
+ * indicates success and the inspect response.
+ * @retval Err(UnsetValueError): The result indicates the value has been not
+ * set.
+ * @retval Err(UnknownError): The result indicates an unknown error.
+ * @note Thread safe.
+ * @code
+ * yoriito::Result<yoriito::signal::SignalInspectResponse<int8_t>> ret =
+ * Inspect(); yoriito::signal::SignalInspectResponse<int8_t> metadata =
+ * ret.TakeOk().value();
+ * @endcode
+ */
+yoriito::Result<yoriito::signal::SignalInspectResponse<int8_t>> Inspect();
+
+// clang-format off
+}  // namespace yoriito::vehicle::cabin::seat::row1::middle::neckscarf::heatingcooling
+// clang-format on
+#endif  // SIGNAL_CABIN_SEAT_ROW1_MIDDLE_NECKSCARF_SIGNAL_HEATINGCOOLING_H_

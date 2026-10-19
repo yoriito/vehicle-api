@@ -16,29 +16,16 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_HVAC_H
-#define VEHICLE_CABIN_HVAC_H
+#ifndef SIGNAL_CABIN_HVAC_HVAC_H_
+#define SIGNAL_CABIN_HVAC_HVAC_H_
 
 #include "Signal_AmbientAirTemperature.h"
-#include "Signal_AmbientAirTemperature_Availability_Sensor.h"
 #include "Signal_IsAirConditioningActive.h"
-#include "Signal_IsAirConditioningActive_Availability_Actuator.h"
-#include "Signal_IsAirConditioningActive_Availability_Sensor.h"
 #include "Signal_IsAutoPowerOptimize.h"
-#include "Signal_IsAutoPowerOptimize_Availability_Actuator.h"
-#include "Signal_IsAutoPowerOptimize_Availability_Sensor.h"
 #include "Signal_IsFrontDefrosterActive.h"
-#include "Signal_IsFrontDefrosterActive_Availability_Actuator.h"
-#include "Signal_IsFrontDefrosterActive_Availability_Sensor.h"
 #include "Signal_IsRearDefrosterActive.h"
-#include "Signal_IsRearDefrosterActive_Availability_Actuator.h"
-#include "Signal_IsRearDefrosterActive_Availability_Sensor.h"
 #include "Signal_IsRecirculationActive.h"
-#include "Signal_IsRecirculationActive_Availability_Actuator.h"
-#include "Signal_IsRecirculationActive_Availability_Sensor.h"
 #include "Signal_PowerOptimizeLevel.h"
-#include "Signal_PowerOptimizeLevel_Availability_Actuator.h"
-#include "Signal_PowerOptimizeLevel_Availability_Sensor.h"
 #include "station/Station.h"
 
-#endif  // VEHICLE_CABIN_HVAC_H
+#endif  // SIGNAL_CABIN_HVAC_HVAC_H_

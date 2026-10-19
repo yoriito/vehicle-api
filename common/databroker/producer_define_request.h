@@ -16,8 +16,9 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_DEFINE_REQUEST_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_DEFINE_REQUEST_H_
+#ifndef COMMON_DATABROKER_PRODUCER_DEFINE_REQUEST_H_
+#define COMMON_DATABROKER_PRODUCER_DEFINE_REQUEST_H_
+
 #include <vector>
 
 #include "databroker/producer_define_entry.h"
@@ -66,7 +67,29 @@ class ProducerDefineRequest {
    */
   explicit ProducerDefineRequest(
       std::vector<yoriito::databroker::ProducerDefineEntry>&& define_entries)
-      : define_entries_(define_entries) {}
+      : define_entries_(std::move(define_entries)) {}
+
+  /**
+   * @ingroup producer
+   * @fn
+   * ProducerDefineRequest::ProducerDefineRequest(std::vector<yoriito::databroker::ProducerDefineEntry>&&
+   * define_entries, std::vector<std::shared_ptr<StructType>>&& struct_types)
+   * @brief Construct a ProducerDefineRequest object with define entries and
+   * struct types.
+   * @deprecated -
+   * @pre -
+   * @param define_entries Vector of ProducerDefineEntry objects.
+   * @param struct_types Vector of shared pointers to StructType objects.
+   * @retval -
+   * @note -
+   * @code -
+   * @endcode -
+   */
+  explicit ProducerDefineRequest(
+      std::vector<yoriito::databroker::ProducerDefineEntry>&& define_entries,
+      std::vector<std::shared_ptr<StructType>>&& struct_types)
+      : define_entries_(std::move(define_entries)),
+        struct_types_(std::move(struct_types)) {}
 
   /**
    * @ingroup producer
@@ -88,6 +111,24 @@ class ProducerDefineRequest {
 
   /**
    * @ingroup producer
+   * @fn const std::vector<std::shared_ptr<StructType>>&
+   * ProducerDefineRequest::GetStructTypes() const
+   * @brief Get the vector of shared pointers to StructType objects.
+   * @deprecated -
+   * @pre -
+   * @param -
+   * @retval std::vector<std::shared_ptr<StructType>> Vector of shared pointers
+   * to StructType objects
+   * @note -
+   * @code -
+   * @endcode -
+   */
+  const std::vector<std::shared_ptr<StructType>>& GetStructTypes() const {
+    return struct_types_;
+  }
+
+  /**
+   * @ingroup producer
    * @fn bool operator==(const ProducerDefineRequest& lhs, const
    * ProducerDefineRequest& rhs)
    * @brief Compare two ProducerDefineRequest objects for equality.
@@ -103,12 +144,14 @@ class ProducerDefineRequest {
    */
   friend bool operator==(const ProducerDefineRequest& lhs,
                          const ProducerDefineRequest& rhs) {
-    return lhs.define_entries_ == rhs.define_entries_;
+    return (lhs.define_entries_ == rhs.define_entries_ &&
+            lhs.struct_types_ == rhs.struct_types_);
   }
 
  private:
   std::vector<ProducerDefineEntry> define_entries_;
+  std::vector<std::shared_ptr<StructType>> struct_types_;
 };
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_DEFINE_REQUEST_H_
+#endif  // COMMON_DATABROKER_PRODUCER_DEFINE_REQUEST_H_

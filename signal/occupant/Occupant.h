@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_OCCUPANT_H
-#define VEHICLE_OCCUPANT_H
+#ifndef SIGNAL_OCCUPANT_OCCUPANT_H_
+#define SIGNAL_OCCUPANT_OCCUPANT_H_
 
 #include "row1/Row1.h"
 #include "row2/Row2.h"
 
-#endif  // VEHICLE_OCCUPANT_H
+#endif  // SIGNAL_OCCUPANT_OCCUPANT_H_

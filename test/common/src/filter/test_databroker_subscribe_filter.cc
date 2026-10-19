@@ -46,8 +46,8 @@ TEST(TestSubscribeFilter_Misc_Range, Normal) {
 
 TEST(TestSubscribeFilter_Misc_Range_Array, Normal) {
   std::vector<RangeConditionWithOp> temp_conditions = {
-      RangeConditionWithOp(OperatorType::OPERATOR_LT, 0.0, std::nullopt),
-      RangeConditionWithOp(OperatorType::OPERATOR_GT, 40.0,
+      RangeConditionWithOp(OperatorType::OPERATOR_LT, 0, std::nullopt),
+      RangeConditionWithOp(OperatorType::OPERATOR_GT, 40,
                            LogicalOperatorType::LOGICAL_OPERATOR_OR)};
 
   RangeFilter temp_filter(temp_conditions);

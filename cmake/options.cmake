@@ -41,8 +41,55 @@ if(ENABLE_TESTS AND NOT BUILD_SIGNAL)
           "ENABLE_TESTS requires BUILD_SIGNAL=ON, but, this flag is disabled.")
 endif()
 
-# For Integration Tests
-# Integration tests require an additional dependency to kura-client.
-# So, this cannot be built in a normal build because kura-client depends on our common library.
-# To avoid circular dependencies, we disable integration tests by default.
-option(ENABLE_INTEGRATION_TESTS "Enable building integration tests" OFF)
+# For Division Build
+set(_YORIITO_API_DOMAINS
+    ADAS
+    BODY
+    CABIN
+    CHASSIS
+    CURRENTLOCATION
+    DRIVER
+    EXTERIOR
+    LOWVOLTAGEBATTERY
+    MOTIONMANAGEMENT
+    OCCUPANT
+    POWERTRAIN
+    TRAILER
+    TRIPMETER
+    VEHICLEIDENTIFICATION
+    VERSIONVSS
+    VERSIONYORIITOVSS
+)
+
+set(_ANY_DOMAIN_SPECIFIED OFF)
+foreach(_domain IN LISTS _YORIITO_API_DOMAINS)
+  if(ENABLE_${_domain})
+    set(_ANY_DOMAIN_SPECIFIED ON)
+    break()
+  endif()
+endforeach()
+
+if(NOT _ANY_DOMAIN_SPECIFIED)
+  message(STATUS "No domain specified. Enabling all domains.")
+  foreach(_domain IN LISTS _YORIITO_API_DOMAINS)
+    set(ENABLE_${_domain} ON)
+  endforeach()
+endif()
+
+# For Fuzz Tests (AFL++ + AddressSanitizer)
+option(ENABLE_FUZZ_TESTS "Enable building fuzz test harnesses" OFF)
+if(ENABLE_FUZZ_TESTS AND NOT BUILD_SIGNAL)
+  message(FATAL_ERROR
+          "ENABLE_FUZZ_TESTS requires BUILD_SIGNAL=ON, but, this flag is disabled.")
+endif()
+
+if(ENABLE_FUZZ_TESTS)
+  if(NOT CMAKE_CXX_COMPILER MATCHES "afl-clang-fast\\+\\+" AND
+     NOT CMAKE_CXX_COMPILER MATCHES "afl-g\\+\\+(-fast)?" AND
+     NOT CMAKE_CXX_COMPILER MATCHES "afl-gcc-fast\\+\\+")
+    message(FATAL_ERROR
+            "ENABLE_FUZZ_TESTS requires an AFL++ C++ compiler wrapper (e.g. afl-clang-fast++ or afl-g++[-fast]) "
+            "(got: ${CMAKE_CXX_COMPILER}).")
+  endif()
+endif()
+

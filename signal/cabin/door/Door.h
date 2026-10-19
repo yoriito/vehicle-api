@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_DOOR_H
-#define VEHICLE_CABIN_DOOR_H
+#ifndef SIGNAL_CABIN_DOOR_DOOR_H_
+#define SIGNAL_CABIN_DOOR_DOOR_H_
 
 #include "row1/Row1.h"
 #include "row2/Row2.h"
 
-#endif  // VEHICLE_CABIN_DOOR_H
+#endif  // SIGNAL_CABIN_DOOR_DOOR_H_

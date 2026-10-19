@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_OCCUPANT_ROW2_MIDDLE_H
-#define VEHICLE_OCCUPANT_ROW2_MIDDLE_H
+#ifndef SIGNAL_OCCUPANT_ROW2_MIDDLE_MIDDLE_H_
+#define SIGNAL_OCCUPANT_ROW2_MIDDLE_MIDDLE_H_
 
-#include "headposition/HeadPosition.h"
+#include "Signal_HeadPosition.h"
+#include "Signal_MidEyeGaze.h"
 #include "identifier/Identifier.h"
-#include "mideyegaze/MidEyeGaze.h"
 
-#endif  // VEHICLE_OCCUPANT_ROW2_MIDDLE_H
+#endif  // SIGNAL_OCCUPANT_ROW2_MIDDLE_MIDDLE_H_

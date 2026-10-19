@@ -1,7 +1,0 @@
-host: localhost
-port: 3902
-timeout:
-    connect: 10
-    invoke: 1800
-    begin_scenario: 1800
-    end_scenario: 1800

@@ -15,29 +15,16 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE VERSIONVSS_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_VERSIONVSS_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_versionvss SHARED ${VERSIONVSS_SRC})
-target_include_directories(yoriito_vehicle_api_versionvss PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_versionvss PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_versionvss"
+    SOURCES
+        Signal_Label.cc
+        Signal_Major.cc
+        Signal_Minor.cc
+        Signal_Patch.cc
+    INSTALL_SUBDIR
+        "signal/versionvss"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/versionvss"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_versionvss LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)

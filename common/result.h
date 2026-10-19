@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_RESULT_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_RESULT_H_
+#ifndef COMMON_RESULT_H_
+#define COMMON_RESULT_H_
 
 #include <memory>
 #include <optional>
@@ -27,7 +27,6 @@
 #include <variant>
 
 #include "error.h"
-
 
 /**
  * @ingroup common
@@ -47,7 +46,7 @@ class Result {
 
   /**
    * @ingroup common
-   * @fn static Result<T>::Ok(T val)
+   * @fn static Result<T>::Ok(U&& val)
    * @brief Create a Result object containing an Ok value.
    * @deprecated -
    * @pre -
@@ -56,7 +55,11 @@ class Result {
    * @note -
    * @code -
    */
-  static Result Ok(T val) { return Result(std::move(val)); }
+  template <typename U>
+  static Result Ok(U&& val) {
+    // Direct-initialize T so explicit single-argument constructors still apply.
+    return Result(T(std::forward<U>(val)));
+  }
 
   /**
    * @ingroup common
@@ -98,7 +101,6 @@ class Result {
    * @code -
    */
   bool IsErr() const { return std::holds_alternative<ErrorPtr>(value_); }
-
 
   /**
    * @ingroup common
@@ -180,8 +182,9 @@ class Result {
 /**
  * @ingroup common
  * @class Result<void>
- * @brief A specialization of the Result type for void, holding either an Ok or an Err value.
-*/
+ * @brief A specialization of the Result type for void, holding either an Ok or
+ * an Err value.
+ */
 
 template <>
 class Result<void> final {
@@ -207,7 +210,8 @@ class Result<void> final {
   /**
    * @ingroup common
    * @fn static Result<void>::Err(ErrorPtr err)
-   * @brief Create a Result object containing an Err value (void specialization).
+   * @brief Create a Result object containing an Err value (void
+   * specialization).
    * @deprecated -
    * @pre -
    * @param err The error to store in Err. Move semantics are used.
@@ -247,7 +251,8 @@ class Result<void> final {
   /**
    * @ingroup common
    * @fn std::optional<T> Result<void>::TakeOk()
-   * @brief Return the contained Ok value, or std::nullopt if the value is Err (void specialization).
+   * @brief Return the contained Ok value, or std::nullopt if the value is Err
+   * (void specialization).
    * @deprecated -
    * @pre -
    * @param -
@@ -263,12 +268,11 @@ class Result<void> final {
     return std::nullopt;
   }
 
-
-
   /**
    * @ingroup common
    * @fn ErrorPtr Result<void>::TakeErr()
-   * @brief Return the contained Err value, or nullptr if the value is Ok (void specialization).
+   * @brief Return the contained Err value, or nullptr if the value is Ok (void
+   * specialization).
    * @deprecated -
    * @pre -
    * @param -
@@ -307,7 +311,7 @@ class Result<void> final {
    * @note -
    * @code -
    */
-  explicit Result(Dummy val) : value_(std::move(val)) {}
+  explicit Result(Dummy val) : value_(val) {}
   /**
    * @ingroup common
    * @fn Result<void>::Result(ErrorPtr err)
@@ -324,4 +328,4 @@ class Result<void> final {
 
 }  // namespace yoriito
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_RESULT_H_
+#endif  // COMMON_RESULT_H_

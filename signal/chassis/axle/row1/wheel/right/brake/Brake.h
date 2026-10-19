@@ -16,16 +16,12 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_BRAKE_H
-#define VEHICLE_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_BRAKE_H
+#ifndef SIGNAL_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_BRAKE_BRAKE_H_
+#define SIGNAL_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_BRAKE_BRAKE_H_
 
 #include "Signal_FluidLevel.h"
-#include "Signal_FluidLevel_Availability_Sensor.h"
 #include "Signal_IsBrakesWorn.h"
-#include "Signal_IsBrakesWorn_Availability_Sensor.h"
 #include "Signal_IsFluidLevelLow.h"
-#include "Signal_IsFluidLevelLow_Availability_Sensor.h"
 #include "Signal_PadWear.h"
-#include "Signal_PadWear_Availability_Sensor.h"
 
-#endif  // VEHICLE_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_BRAKE_H
+#endif  // SIGNAL_CHASSIS_AXLE_ROW1_WHEEL_RIGHT_BRAKE_BRAKE_H_

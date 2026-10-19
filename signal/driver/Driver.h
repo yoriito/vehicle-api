@@ -16,18 +16,13 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_DRIVER_H
-#define VEHICLE_DRIVER_H
+#ifndef SIGNAL_DRIVER_DRIVER_H_
+#define SIGNAL_DRIVER_DRIVER_H_
 
 #include "Signal_DistractionLevel.h"
-#include "Signal_DistractionLevel_Availability_Sensor.h"
 #include "Signal_FatigueLevel.h"
-#include "Signal_FatigueLevel_Availability_Sensor.h"
 #include "Signal_HeartRate.h"
-#include "Signal_HeartRate_Availability_Sensor.h"
 #include "Signal_IsEyesOnRoad.h"
-#include "Signal_IsEyesOnRoad_Availability_Sensor.h"
 #include "Signal_IsHandsOnWheel.h"
-#include "Signal_IsHandsOnWheel_Availability_Sensor.h"
 
-#endif  // VEHICLE_DRIVER_H
+#endif  // SIGNAL_DRIVER_DRIVER_H_

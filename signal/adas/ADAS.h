@@ -16,20 +16,15 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_ADAS_H
-#define VEHICLE_ADAS_H
+#ifndef SIGNAL_ADAS_ADAS_H_
+#define SIGNAL_ADAS_ADAS_H_
 
 #include "Signal_ActiveAutonomyLevel.h"
-#include "Signal_ActiveAutonomyLevel_Availability_Sensor.h"
 #include "Signal_IsAutoPowerOptimize.h"
-#include "Signal_IsAutoPowerOptimize_Availability_Actuator.h"
-#include "Signal_IsAutoPowerOptimize_Availability_Sensor.h"
 #include "Signal_PowerOptimizeLevel.h"
-#include "Signal_PowerOptimizeLevel_Availability_Actuator.h"
-#include "Signal_PowerOptimizeLevel_Availability_Sensor.h"
 #include "Signal_SupportedAutonomyLevel.h"
 #include "abs/ABS.h"
-#include "adaptivecruisecontrol/AdaptiveCruiseControl.h"
+#include "cruisecontrol/CruiseControl.h"
 #include "dms/DMS.h"
 #include "eba/EBA.h"
 #include "ebd/EBD.h"
@@ -38,4 +33,4 @@
 #include "obstacledetection/ObstacleDetection.h"
 #include "tcs/TCS.h"
 
-#endif  // VEHICLE_ADAS_H
+#endif  // SIGNAL_ADAS_ADAS_H_

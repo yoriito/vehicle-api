@@ -19,6 +19,7 @@ project(yoriito_vehicle_api)
 
 include("${CMAKE_SOURCE_DIR}/cmake/yoriito_common.cmake")
 include("${CMAKE_SOURCE_DIR}/cmake/options.cmake")
+include("${CMAKE_SOURCE_DIR}/cmake/yoriito_utl.cmake")
 
 if(BUILD_COMMON)
   add_subdirectory(common)
@@ -31,33 +32,35 @@ if(BUILD_SIGNAL)
   add_library(yoriito::api ALIAS yoriito_vehicle_api)
 
   target_include_directories(yoriito_vehicle_api INTERFACE
-      ${INTERFACE_INCLUDE_DIR}/databroker
       ${INTERFACE_INCLUDE_DIR}
+      ${INTERFACE_INCLUDE_DIR}/databroker
+      ${INTERFACE_INCLUDE_DIR}/signal
+      ${CMAKE_CURRENT_SOURCE_DIR}
       ${CMAKE_CURRENT_SOURCE_DIR}/common
       ${CMAKE_CURRENT_SOURCE_DIR}/common/databroker
+      ${CMAKE_CURRENT_SOURCE_DIR}/common/signal
   )
 
   target_link_libraries(yoriito_vehicle_api INTERFACE
-      yoriito_vehicle_api_vehicle
-      yoriito_vehicle_api_powertrain
-      yoriito_vehicle_api_body
-      yoriito_vehicle_api_cabin
-      yoriito_vehicle_api_adas
-      yoriito_vehicle_api_chassis
-      yoriito_vehicle_api_driver
-      yoriito_vehicle_api_occupant
-      yoriito_vehicle_api_exterior
-      yoriito_vehicle_api_versionvss
-      yoriito_vehicle_api_vehicleidentification
-      yoriito_vehicle_api_lowvoltagebattery
-      yoriito_vehicle_api_acceleration
-      yoriito_vehicle_api_angularvelocity
-      yoriito_vehicle_api_trailer
-      yoriito_vehicle_api_currentlocation
-      yoriito_vehicle_api_versionyoriitovss
-      logger
+        yoriito_vehicle_api_vehicle
   )
-endif()
+  
+  foreach(_domain IN LISTS _YORIITO_API_DOMAINS)
+    if(ENABLE_${_domain})
+      string(TOLOWER "${_domain}" _domain_lower)
+      target_link_libraries(yoriito_vehicle_api INTERFACE
+        yoriito_vehicle_api_${_domain_lower}
+      )
+    endif()
+  endforeach()
+
+  target_link_libraries(yoriito_vehicle_api INTERFACE
+        logger
+  )
+  if(TARGET yoriito_vehicle_api_struct)
+    target_link_libraries(yoriito_vehicle_api INTERFACE yoriito_vehicle_api_struct)
+  endif()
+endif() 
 
 if(ENABLE_DOCS)
   add_subdirectory(docs)
@@ -65,10 +68,24 @@ endif()
 
 if(ENABLE_TESTS)
   enable_testing()
+  include(FetchContent)
+
+  FetchContent_Declare(
+    googletest
+    URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+  )
+
+  # For Windows: Prevent overriding the parent project's compiler/linker settings
+  set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+
+  get_directory_property(_yoriito_compile_options COMPILE_OPTIONS)
+  set_directory_properties(PROPERTIES COMPILE_OPTIONS "")
+  FetchContent_MakeAvailable(googletest)
+  set_directory_properties(PROPERTIES COMPILE_OPTIONS "${_yoriito_compile_options}")
+
   add_subdirectory(test)
 endif()
 
-if(ENABLE_INTEGRATION_TESTS)
-  enable_testing()
-  add_subdirectory(test_integration)
+if(ENABLE_FUZZ_TESTS)
+  add_subdirectory(test_fuzz)
 endif()

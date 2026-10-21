@@ -16,8 +16,9 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_PATHS_FILTER_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_PATHS_FILTER_H_
+#ifndef COMMON_DATABROKER_FILTER_PATHS_FILTER_H_
+#define COMMON_DATABROKER_FILTER_PATHS_FILTER_H_
+
 #include <string>
 #include <utility>
 #include <vector>
@@ -54,21 +55,7 @@ class PathsFilter {
 
   /**
    * @ingroup common
-   * @fn PathsFilter(std::initializer_list<std::string> paths)
-   * @brief Constructs a PathsFilter with an initializer list of paths.
-   * @deprecated -
-   * @pre -
-   * @param paths The initializer list of datapoint paths.
-   * @retval -
-   * @note -
-   * @code -
-   * @endcode -
-   */
-  PathsFilter(std::initializer_list<std::string> paths) : paths_(paths) {}
-
-  /**
-   * @ingroup common
-   * @fn const std::vector<std::string>& GetPaths() const
+   * @fn const std::vector<std::string>& GetPaths() const &
    * @brief Gets the datapoint paths contained in this filter.
    * @deprecated -
    * @pre -
@@ -78,7 +65,21 @@ class PathsFilter {
    * @code -
    * @endcode -
    */
-  const std::vector<std::string>& GetPaths() const { return paths_; }
+  const std::vector<std::string>& GetPaths() const & { return paths_; }
+
+  /**
+   * @ingroup common
+   * @fn std::vector<std::string> GetPaths() const &&
+   * @brief Gets the datapoint paths contained in this filter.
+   * @deprecated -
+   * @pre -
+   * @param -
+   * @retval Copy of the vector of datapoint paths.
+   * @note -
+   * @code -
+   * @endcode -
+   */
+  std::vector<std::string> GetPaths() const && { return paths_; }
 
   /**
    * @ingroup common
@@ -101,4 +102,4 @@ class PathsFilter {
   std::vector<std::string> paths_;
 };
 }  // namespace yoriito::databroker::filter
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_PATHS_FILTER_H_
+#endif  // COMMON_DATABROKER_FILTER_PATHS_FILTER_H_

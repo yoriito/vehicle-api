@@ -16,9 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_COMMON_YORIITO_LOG_H_
-#define YORIITO_VEHICLE_API_UTILITY_COMMON_YORIITO_LOG_H_
+#ifndef COMMON_YORIITO_LOG_H_
+#define COMMON_YORIITO_LOG_H_
 
+#include <cstdint>
 #include <string_view>
 
 /**
@@ -32,7 +33,7 @@ namespace yoriito {
  * @ingroup common
  * @class LogLevel
  */
-enum class LogLevel : int {
+enum class LogLevel : int32_t {
   /**
    * @brief Fatal error. Should be extremely rare.
    */
@@ -55,20 +56,21 @@ enum class LogLevel : int {
   kDebug
 };
 
-
 /**
  * @ingroup common
  * @class Log
  */
 class Log final {
-public:
+ public:
   /**
    * @ingroup common
    * @fn Log::Initialize
-   * @brief Declare the start of using the YORIITO logging system for the process. Logging output will be enabled from this point.
+   * @brief Declare the start of using the YORIITO logging system for the
+   * process. Logging output will be enabled from this point.
    * @deprecated -
    * @pre -
-   * @param name Process identifier name. Any string with at least one character.
+   * @param name Process identifier name. Any string with at least one
+   * character.
    * @retval void
    * @note If name is an empty string, "----" will be used as the DLT APID.
    * @code
@@ -80,7 +82,8 @@ public:
   /**
    * @ingroup common
    * @fn Log::Finalize
-   * @brief Declare the end of using the YORIITO logging system for the process. Logging output will be disabled from this point.
+   * @brief Declare the end of using the YORIITO logging system for the process.
+   * Logging output will be disabled from this point.
    * @deprecated -
    * @pre -
    * @param -
@@ -107,12 +110,14 @@ public:
    * -
    * @endcode
    */
-  static void Output(std::string_view tag, std::string_view msg, LogLevel level);
+  static void Output(std::string_view tag, std::string_view msg,
+                     LogLevel level);
 
   /**
    * @ingroup common
    * @fn Log::SetLogLevel
-   * @brief Set the current log level. If not set, the default current log level is "INFO".
+   * @brief Set the current log level. If not set, the default current log level
+   * is "INFO".
    * @deprecated -
    * @pre Effective between Initialize and Finalize
    * @param level Log level to set
@@ -124,14 +129,12 @@ public:
    */
   static void SetLogLevel(LogLevel level);
 
-private:
-
+ private:
   struct LoggerBackendManager;
   static LoggerBackendManager& BackendManager();
 };
 
 }  // namespace yoriito
-
 
 /**
  * @ingroup common
@@ -147,7 +150,10 @@ private:
  * -
  * @endcode
  */
-#define YORIITO_LOG_FATAL(tag, msg) do{::yoriito::Log::Output((tag), (msg), yoriito::LogLevel::kFatal);}while(0)
+#define YORIITO_LOG_FATAL(tag, msg)                                  \
+  do {                                                               \
+    ::yoriito::Log::Output((tag), (msg), yoriito::LogLevel::kFatal); \
+  } while (false)
 
 /**
  * @ingroup common
@@ -163,7 +169,10 @@ private:
  * -
  * @endcode
  */
-#define YORIITO_LOG_ERROR(tag, msg) do{::yoriito::Log::Output((tag), (msg), yoriito::LogLevel::kError);}while(0)
+#define YORIITO_LOG_ERROR(tag, msg)                                  \
+  do {                                                               \
+    ::yoriito::Log::Output((tag), (msg), yoriito::LogLevel::kError); \
+  } while (false)
 
 /**
  * @ingroup common
@@ -179,7 +188,10 @@ private:
  * -
  * @endcode
  */
-#define YORIITO_LOG_WARN(tag, msg) do{::yoriito::Log::Output((tag), (msg), yoriito::LogLevel::kWarn);}while(0)
+#define YORIITO_LOG_WARN(tag, msg)                                  \
+  do {                                                              \
+    ::yoriito::Log::Output((tag), (msg), yoriito::LogLevel::kWarn); \
+  } while (false)
 
 /**
  * @ingroup common
@@ -195,7 +207,10 @@ private:
  * -
  * @endcode
  */
-#define YORIITO_LOG_INFO(tag, msg) do{::yoriito::Log::Output((tag), (msg), yoriito::LogLevel::kInfo);}while(0)
+#define YORIITO_LOG_INFO(tag, msg)                                  \
+  do {                                                              \
+    ::yoriito::Log::Output((tag), (msg), yoriito::LogLevel::kInfo); \
+  } while (false)
 
 /**
  * @ingroup common
@@ -211,27 +226,36 @@ private:
  * -
  * @endcode
  */
-#define YORIITO_LOG_DEBUG(tag, msg) do{::yoriito::Log::Output((tag), (msg), yoriito::LogLevel::kDebug);}while(0)
+#define YORIITO_LOG_DEBUG(tag, msg)                                  \
+  do {                                                               \
+    ::yoriito::Log::Output((tag), (msg), yoriito::LogLevel::kDebug); \
+  } while (false)
 
 /**
  * @ingroup common
  * @fn Log::Initialize
- * @brief Declare the start of using the YORIITO logging system for the process. Logging output will be enabled from this point.
+ * @brief Declare the start of using the YORIITO logging system for the process.
+ * Logging output will be enabled from this point.
  * @deprecated -
  * @pre -
  * @param name Process identifier name. Any string with at least one character.
  * @retval void
- * @note If name is an empty string, "----" will be used as the DLT Application ID.
+ * @note If name is an empty string, "----" will be used as the DLT Application
+ * ID.
  * @code
  * -
  * @endcode
  */
-#define YORIITO_LOG_INITIALIZE(name) do{::yoriito::Log::Initialize((name));}while(0)
+#define YORIITO_LOG_INITIALIZE(name)    \
+  do {                                  \
+    ::yoriito::Log::Initialize((name)); \
+  } while (false)
 
 /**
  * @ingroup common
  * @fn Log::Finalize
- * @brief Declare the end of using the YORIITO logging system for the process. Logging output will be disabled from this point.
+ * @brief Declare the end of using the YORIITO logging system for the process.
+ * Logging output will be disabled from this point.
  * @deprecated -
  * @pre -
  * @param -
@@ -241,11 +265,15 @@ private:
  * -
  * @endcode
  */
-#define YORIITO_LOG_FINALIZE() do{::yoriito::Log::Finalize();}while(0)
+#define YORIITO_LOG_FINALIZE()  \
+  do {                          \
+    ::yoriito::Log::Finalize(); \
+  } while (false)
 
 /**
  * @def YORIITO_LOG_SET_LEVEL
- * @brief Set the current log level. If not set, the default current log level is "INFO".
+ * @brief Set the current log level. If not set, the default current log level
+ * is "INFO".
  * @deprecated -
  * @pre  Effective between Initialize and Finalize
  * @param level Log level to set
@@ -255,6 +283,9 @@ private:
  * -
  * @endcode
  */
-#define YORIITO_LOG_SET_LEVEL(level) do{::yoriito::Log::SetLogLevel((level));}while(0)
+#define YORIITO_LOG_SET_LEVEL(level)      \
+  do {                                    \
+    ::yoriito::Log::SetLogLevel((level)); \
+  } while (false)
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_COMMON_YORIITO_LOG_H_
+#endif  // COMMON_YORIITO_LOG_H_

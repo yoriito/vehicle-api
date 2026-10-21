@@ -78,7 +78,6 @@ EXCLUDE                =
 EXCLUDE_SYMLINKS       = NO
 EXCLUDE_PATTERNS       = */test/* \
                          */tests/* \
-                         */test_integration/* \
                          */build/* \
                          */docs/html/* \
                          */.git/*

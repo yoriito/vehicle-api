@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CURRENTLOCATION_H
-#define VEHICLE_CURRENTLOCATION_H
+#ifndef SIGNAL_CURRENTLOCATION_CURRENTLOCATION_H_
+#define SIGNAL_CURRENTLOCATION_CURRENTLOCATION_H_
 
+#include "Signal_VehicleLocation.h"
 #include "gnssreceiver/GNSSReceiver.h"
 #include "referenceposition/ReferencePosition.h"
-#include "vehiclelocationtype/VehicleLocationType.h"
 
-#endif  // VEHICLE_CURRENTLOCATION_H
+#endif  // SIGNAL_CURRENTLOCATION_CURRENTLOCATION_H_

@@ -15,29 +15,38 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE CABIN_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_CABIN_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_cabin SHARED ${CABIN_SRC})
-target_include_directories(yoriito_vehicle_api_cabin PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_cabin PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_cabin"
+    SOURCES
+        Signal_DoorCount.cc
+        Signal_DriverPosition.cc
+        Signal_IsAutoPowerOptimize.cc
+        Signal_IsWindowChildLockEngaged.cc
+        Signal_PowerOptimizeLevel.cc
+        Signal_SeatPosCount.cc
+        Signal_SeatRowCount.cc
+    INSTALL_SUBDIR
+        "signal/cabin"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/cabin"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_cabin LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)
+# ---- subdirectories ----
+add_subdirectory(rearshade)
+
+add_subdirectory(hvac)
+
+add_subdirectory(sunroof)
+
+add_subdirectory(rearviewmirror)
+
+add_subdirectory(light)
+
+add_subdirectory(door)
+
+add_subdirectory(seat)
+
+add_subdirectory(convertible)
+
+
+

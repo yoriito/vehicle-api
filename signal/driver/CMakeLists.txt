@@ -15,29 +15,17 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE DRIVER_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_DRIVER_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_driver SHARED ${DRIVER_SRC})
-target_include_directories(yoriito_vehicle_api_driver PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_driver PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_driver"
+    SOURCES
+        Signal_DistractionLevel.cc
+        Signal_FatigueLevel.cc
+        Signal_HeartRate.cc
+        Signal_IsEyesOnRoad.cc
+        Signal_IsHandsOnWheel.cc
+    INSTALL_SUBDIR
+        "signal/driver"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/driver"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_driver LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)

@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CHASSIS_H
-#define VEHICLE_CHASSIS_H
+#ifndef SIGNAL_CHASSIS_CHASSIS_H_
+#define SIGNAL_CHASSIS_CHASSIS_H_
 
 #include "Signal_AxleCount.h"
 #include "Signal_Wheelbase.h"
@@ -27,4 +27,4 @@
 #include "parkingbrake/ParkingBrake.h"
 #include "steeringwheel/SteeringWheel.h"
 
-#endif  // VEHICLE_CHASSIS_H
+#endif  // SIGNAL_CHASSIS_CHASSIS_H_

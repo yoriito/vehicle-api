@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_LIGHTS_BEAM_H
-#define VEHICLE_BODY_LIGHTS_BEAM_H
+#ifndef SIGNAL_BODY_LIGHTS_BEAM_BEAM_H_
+#define SIGNAL_BODY_LIGHTS_BEAM_BEAM_H_
 
 #include "high/High.h"
 #include "low/Low.h"
 
-#endif  // VEHICLE_BODY_LIGHTS_BEAM_H
+#endif  // SIGNAL_BODY_LIGHTS_BEAM_BEAM_H_

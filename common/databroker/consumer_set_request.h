@@ -16,16 +16,17 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_SET_REQUEST_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_SET_REQUEST_H_
+#ifndef COMMON_DATABROKER_CONSUMER_SET_REQUEST_H_
+#define COMMON_DATABROKER_CONSUMER_SET_REQUEST_H_
+
 #include <string>
 #include <string_view>
 #include <utility>
 #include <variant>
 #include <vector>
 
-#include "databroker/consumer_set_datapoint.h"
 #include "databroker_type.h"
+#include "databroker/consumer_set_datapoint.h"
 
 /**
  * @ingroup common
@@ -71,27 +72,8 @@ class ConsumerSetRequest {
    * @endcode -
    */
   explicit ConsumerSetRequest(
-      std::vector<yoriito::databroker::ConsumerSetDataPoint>&& data_points)
+    std::vector<yoriito::databroker::ConsumerSetDataPoint> data_points)
       : data_points_(std::move(data_points)) {}
-
-  /**
-   * @ingroup consumer
-   * @fn
-   * ConsumerSetRequest::ConsumerSetRequest(std::initializer_list<yoriito::databroker::ConsumerSetDataPoint>
-   * data_points)
-   * @brief Construct a ConsumerSetRequest object from an initializer list.
-   * @deprecated -
-   * @pre -
-   * @param data_points Initializer list of ConsumerSetDataPoint objects.
-   * @retval -
-   * @note -
-   * @code -
-   * @endcode -
-   */
-  ConsumerSetRequest(
-      std::initializer_list<yoriito::databroker::ConsumerSetDataPoint>
-          data_points)
-      : data_points_(data_points) {}
 
   /**
    * @ingroup consumer
@@ -107,7 +89,11 @@ class ConsumerSetRequest {
    * @endcode -
    */
   const std::vector<yoriito::databroker::ConsumerSetDataPoint>& GetDataPoints()
-      const {
+    const& {
+    return data_points_;
+  }
+  std::vector<yoriito::databroker::ConsumerSetDataPoint> GetDataPoints()
+    const&& {
     return data_points_;
   }
 
@@ -137,4 +123,4 @@ class ConsumerSetRequest {
 
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_SET_REQUEST_H_
+#endif  // COMMON_DATABROKER_CONSUMER_SET_REQUEST_H_

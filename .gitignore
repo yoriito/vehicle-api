@@ -1,4 +1,6 @@
 build/*
+build_fuzz/*
+findings/*
 *.bk
 docs/CMakeFiles/
 docs/Doxyfile.docs_common
@@ -7,3 +9,4 @@ docs/Makefile
 docs/cmake_install.cmake
 
 .vscode/
+out/

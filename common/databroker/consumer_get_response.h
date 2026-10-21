@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_RESPONSE_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_RESPONSE_H_
+#ifndef COMMON_DATABROKER_CONSUMER_GET_RESPONSE_H_
+#define COMMON_DATABROKER_CONSUMER_GET_RESPONSE_H_
 
 #include <iostream>
 #include <optional>
@@ -71,7 +71,7 @@ class ConsumerGetResponse {
    * @endcode -
    */
   explicit ConsumerGetResponse(
-      std::vector<yoriito::databroker::ConsumerGetDataPoint>&& data_points)
+    std::vector<yoriito::databroker::ConsumerGetDataPoint> data_points)
       : data_points_(std::move(data_points)) {}
 
   /**
@@ -87,7 +87,10 @@ class ConsumerGetResponse {
    * @code -
    * @endcode -
    */
-  const std::vector<ConsumerGetDataPoint>& GetDataPoints() const {
+  const std::vector<ConsumerGetDataPoint>& GetDataPoints() const& {
+    return data_points_;
+  }
+  std::vector<ConsumerGetDataPoint> GetDataPoints() const&& {
     return data_points_;
   }
 
@@ -97,4 +100,4 @@ class ConsumerGetResponse {
 
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_RESPONSE_H_
+#endif  // COMMON_DATABROKER_CONSUMER_GET_RESPONSE_H_

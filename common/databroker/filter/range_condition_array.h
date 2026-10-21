@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_CONDITION_ARRAY_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_CONDITION_ARRAY_H_
+#ifndef COMMON_DATABROKER_FILTER_RANGE_CONDITION_ARRAY_H_
+#define COMMON_DATABROKER_FILTER_RANGE_CONDITION_ARRAY_H_
 
 #include <optional>
 #include <vector>
@@ -53,7 +53,7 @@ class RangeConditionArray {
    * @endcode -
    */
   explicit RangeConditionArray(
-      const std::vector<RangeConditionWithOp>& conditions)
+    const std::vector<RangeConditionWithOp>& conditions)
       : conditions_(conditions) {}
 
   /**
@@ -138,7 +138,10 @@ class RangeConditionArray {
    * @code -
    * @endcode -
    */
-  const std::vector<RangeConditionWithOp>& GetConditions() const {
+  const std::vector<RangeConditionWithOp>& GetConditions() const& {
+    return conditions_;
+  }
+  std::vector<RangeConditionWithOp> GetConditions() const&& {
     return conditions_;
   }
 
@@ -195,4 +198,4 @@ class RangeConditionArray {
 
 }  // namespace yoriito::databroker::filter
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_CONDITION_ARRAY_H_
+#endif  // COMMON_DATABROKER_FILTER_RANGE_CONDITION_ARRAY_H_

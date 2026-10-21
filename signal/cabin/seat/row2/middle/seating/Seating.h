@@ -16,11 +16,13 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_SEAT_ROW2_MIDDLE_SEATING_H
-#define VEHICLE_CABIN_SEAT_ROW2_MIDDLE_SEATING_H
+#ifndef SIGNAL_CABIN_SEAT_ROW2_MIDDLE_SEATING_SEATING_H_
+#define SIGNAL_CABIN_SEAT_ROW2_MIDDLE_SEATING_SEATING_H_
 
+#include "Signal_HeatingCooling.h"
 #include "Signal_Length.h"
-#include "Signal_Length_Availability_Actuator.h"
-#include "Signal_Length_Availability_Sensor.h"
+#include "Signal_SideBolsterSupportLeft.h"
+#include "Signal_SideBolsterSupportRight.h"
+#include "Signal_Ventilator.h"
 
-#endif  // VEHICLE_CABIN_SEAT_ROW2_MIDDLE_SEATING_H
+#endif  // SIGNAL_CABIN_SEAT_ROW2_MIDDLE_SEATING_SEATING_H_

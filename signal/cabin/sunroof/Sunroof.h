@@ -16,15 +16,11 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_SUNROOF_H
-#define VEHICLE_CABIN_SUNROOF_H
+#ifndef SIGNAL_CABIN_SUNROOF_SUNROOF_H_
+#define SIGNAL_CABIN_SUNROOF_SUNROOF_H_
 
 #include "Signal_Slide.h"
-#include "Signal_Slide_Availability_Actuator.h"
-#include "Signal_Slide_Availability_Sensor.h"
 #include "Signal_Tilt.h"
-#include "Signal_Tilt_Availability_Actuator.h"
-#include "Signal_Tilt_Availability_Sensor.h"
 #include "shade/Shade.h"
 
-#endif  // VEHICLE_CABIN_SUNROOF_H
+#endif  // SIGNAL_CABIN_SUNROOF_SUNROOF_H_

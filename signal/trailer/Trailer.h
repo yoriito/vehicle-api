@@ -16,10 +16,9 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_TRAILER_H
-#define VEHICLE_TRAILER_H
+#ifndef SIGNAL_TRAILER_TRAILER_H_
+#define SIGNAL_TRAILER_TRAILER_H_
 
 #include "Signal_IsConnected.h"
-#include "Signal_IsConnected_Availability_Sensor.h"
 
-#endif  // VEHICLE_TRAILER_H
+#endif  // SIGNAL_TRAILER_TRAILER_H_

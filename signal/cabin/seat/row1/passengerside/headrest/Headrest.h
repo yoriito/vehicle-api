@@ -16,14 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_SEAT_ROW1_PASSENGERSIDE_HEADREST_H
-#define VEHICLE_CABIN_SEAT_ROW1_PASSENGERSIDE_HEADREST_H
+#ifndef SIGNAL_CABIN_SEAT_ROW1_PASSENGERSIDE_HEADREST_HEADREST_H_
+#define SIGNAL_CABIN_SEAT_ROW1_PASSENGERSIDE_HEADREST_HEADREST_H_
 
 #include "Signal_Angle.h"
-#include "Signal_Angle_Availability_Actuator.h"
-#include "Signal_Angle_Availability_Sensor.h"
 #include "Signal_Height.h"
-#include "Signal_Height_Availability_Actuator.h"
-#include "Signal_Height_Availability_Sensor.h"
 
-#endif  // VEHICLE_CABIN_SEAT_ROW1_PASSENGERSIDE_HEADREST_H
+#endif  // SIGNAL_CABIN_SEAT_ROW1_PASSENGERSIDE_HEADREST_HEADREST_H_

@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_GET_DATAPOINT_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_GET_DATAPOINT_H_
+#ifndef COMMON_DATABROKER_PRODUCER_GET_DATAPOINT_H_
+#define COMMON_DATABROKER_PRODUCER_GET_DATAPOINT_H_
 
 #include <iostream>
 #include <optional>
@@ -60,4 +60,4 @@ class ProducerGetDataPoint : public BaseGetDataPoint {
 
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_GET_DATAPOINT_H_
+#endif  // COMMON_DATABROKER_PRODUCER_GET_DATAPOINT_H_

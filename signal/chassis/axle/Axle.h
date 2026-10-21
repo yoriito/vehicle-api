@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CHASSIS_AXLE_H
-#define VEHICLE_CHASSIS_AXLE_H
+#ifndef SIGNAL_CHASSIS_AXLE_AXLE_H_
+#define SIGNAL_CHASSIS_AXLE_AXLE_H_
 
 #include "row1/Row1.h"
 #include "row2/Row2.h"
 
-#endif  // VEHICLE_CHASSIS_AXLE_H
+#endif  // SIGNAL_CHASSIS_AXLE_AXLE_H_

@@ -16,13 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_ADAS_ABS_H
-#define VEHICLE_ADAS_ABS_H
+#ifndef SIGNAL_ADAS_ABS_ABS_H_
+#define SIGNAL_ADAS_ABS_ABS_H_
 
 #include "Signal_IsEnabled.h"
-#include "Signal_IsEnabled_Availability_Actuator.h"
-#include "Signal_IsEnabled_Availability_Sensor.h"
 #include "Signal_IsEngaged.h"
-#include "Signal_IsEngaged_Availability_Sensor.h"
 
-#endif  // VEHICLE_ADAS_ABS_H
+#endif  // SIGNAL_ADAS_ABS_ABS_H_

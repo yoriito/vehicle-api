@@ -16,12 +16,12 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_POWERTRAIN_ELECTRICMOTOR_H
-#define VEHICLE_POWERTRAIN_ELECTRICMOTOR_H
+#ifndef SIGNAL_POWERTRAIN_ELECTRICMOTOR_ELECTRICMOTOR_H_
+#define SIGNAL_POWERTRAIN_ELECTRICMOTOR_ELECTRICMOTOR_H_
 
 #include "number1/Number1.h"
 #include "number2/Number2.h"
 #include "number3/Number3.h"
 #include "number4/Number4.h"
 
-#endif  // VEHICLE_POWERTRAIN_ELECTRICMOTOR_H
+#endif  // SIGNAL_POWERTRAIN_ELECTRICMOTOR_ELECTRICMOTOR_H_

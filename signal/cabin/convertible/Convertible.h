@@ -16,14 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_CONVERTIBLE_H
-#define VEHICLE_CABIN_CONVERTIBLE_H
+#ifndef SIGNAL_CABIN_CONVERTIBLE_CONVERTIBLE_H_
+#define SIGNAL_CABIN_CONVERTIBLE_CONVERTIBLE_H_
 
 #include "Signal_IsOpen.h"
-#include "Signal_IsOpen_Availability_Actuator.h"
-#include "Signal_IsOpen_Availability_Sensor.h"
 #include "Signal_Position.h"
-#include "Signal_Position_Availability_Actuator.h"
-#include "Signal_Position_Availability_Sensor.h"
 
-#endif  // VEHICLE_CABIN_CONVERTIBLE_H
+#endif  // SIGNAL_CABIN_CONVERTIBLE_CONVERTIBLE_H_

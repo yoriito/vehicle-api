@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_CONDITION_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_CONDITION_H_
+#ifndef COMMON_DATABROKER_FILTER_RANGE_CONDITION_H_
+#define COMMON_DATABROKER_FILTER_RANGE_CONDITION_H_
 
 #include "databroker/filter/operator_type.h"
 
@@ -37,19 +37,19 @@ class RangeCondition {
  public:
   /**
    * @ingroup common
-   * @fn explicit RangeCondition(OperatorType boundary_op, double boundary)
+   * @fn explicit RangeCondition(OperatorType boundary_op, int32_t boundary)
    * @brief Constructs a RangeCondition with the specified boundary operator and
    * value.
    * @deprecated -
    * @pre -
    * @param boundary_op The boundary operator type.
-   * @param boundary The boundary value (double).
+   * @param boundary The boundary value (int32_t).
    * @retval -
    * @note -
    * @code -
    * @endcode -
    */
-  explicit RangeCondition(OperatorType boundary_op, double boundary)
+  explicit RangeCondition(OperatorType boundary_op, int32_t boundary)
       : boundary_op_(boundary_op), boundary_(boundary) {}
 
   /**
@@ -68,17 +68,17 @@ class RangeCondition {
 
   /**
    * @ingroup common
-   * @fn double GetBoundary() const
+   * @fn int32_t GetBoundary() const
    * @brief Gets the boundary value for this condition.
    * @deprecated -
    * @pre -
    * @param -
-   * @retval The boundary value (double).
+   * @retval The boundary value (int32_t).
    * @note -
    * @code -
    * @endcode -
    */
-  double GetBoundary() const { return boundary_; }
+  int32_t GetBoundary() const { return boundary_; }
 
   /**
    * @ingroup common
@@ -109,15 +109,15 @@ class RangeCondition {
    * @endcode -
    */
   friend bool operator==(const RangeCondition& lhs, const RangeCondition& rhs) {
-    return lhs.boundary_op_ == rhs.boundary_op_ &&
-           lhs.boundary_ == rhs.boundary_;
+    return (lhs.boundary_op_ == rhs.boundary_op_) &&
+           (lhs.boundary_ == rhs.boundary_);
   }
 
  private:
   OperatorType boundary_op_;
-  double boundary_;
+  int32_t boundary_;
 };
 
 }  // namespace yoriito::databroker::filter
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_CONDITION_H_
+#endif  // COMMON_DATABROKER_FILTER_RANGE_CONDITION_H_

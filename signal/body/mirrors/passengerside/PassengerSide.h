@@ -16,23 +16,13 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_MIRRORS_PASSENGERSIDE_H
-#define VEHICLE_BODY_MIRRORS_PASSENGERSIDE_H
+#ifndef SIGNAL_BODY_MIRRORS_PASSENGERSIDE_PASSENGERSIDE_H_
+#define SIGNAL_BODY_MIRRORS_PASSENGERSIDE_PASSENGERSIDE_H_
 
 #include "Signal_IsFolded.h"
-#include "Signal_IsFolded_Availability_Actuator.h"
-#include "Signal_IsFolded_Availability_Sensor.h"
 #include "Signal_IsHeatingOn.h"
-#include "Signal_IsHeatingOn_Availability_Actuator.h"
-#include "Signal_IsHeatingOn_Availability_Sensor.h"
 #include "Signal_IsLocked.h"
-#include "Signal_IsLocked_Availability_Actuator.h"
-#include "Signal_IsLocked_Availability_Sensor.h"
-#include "Signal_Pan.h"
-#include "Signal_Pan_Availability_Actuator.h"
-#include "Signal_Pan_Availability_Sensor.h"
 #include "Signal_Tilt.h"
-#include "Signal_Tilt_Availability_Actuator.h"
-#include "Signal_Tilt_Availability_Sensor.h"
+#include "Signal_Yaw.h"
 
-#endif  // VEHICLE_BODY_MIRRORS_PASSENGERSIDE_H
+#endif  // SIGNAL_BODY_MIRRORS_PASSENGERSIDE_PASSENGERSIDE_H_

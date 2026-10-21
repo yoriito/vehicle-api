@@ -22,59 +22,72 @@
 // DataType  : float
 // Unit      : mm
 //-------------------------------------------------------------------------------------
+// clang-format off
 namespace yoriito::vehicle::powertrain::combustionengine::strokelength {
+// clang-format on
 
-  yoriito::Result<float> Get() {
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Get].");
-    yoriito::databroker::DataBrokerConsumer* consumer =
+yoriito::Result<yoriito::signal::SignalGetDataPoint<float>> Get() {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Get].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
       yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
-    yoriito::databroker::ConsumerGetRequest get_request(
+  yoriito::databroker::ConsumerGetRequest request(
       VEHICLE_POWERTRAIN_COMBUSTIONENGINE_STROKELENGTH);
-    yoriito::Result<yoriito::databroker::ConsumerGetResponse> ret =
-      consumer->Get(get_request);
-    if (!ret.IsOk()) {
-      std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
-      YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
-      return yoriito::Result<float>::Err(std::move(err_ptr));
-    }
-    auto response = ret.TakeOk().value();
-    if (response.GetDataPoints().empty()) {
-      YORIITO_LOG_ERROR("SAPI_SignalAPI",
-                        std::string(yoriito::ErrorType::to_msg(
-                          yoriito::ErrorCode::ERROR_NODATA)));
-      return yoriito::Result<float>::Err(std::make_unique<yoriito::CommonError>(
-        yoriito::ErrorCode::ERROR_NODATA));
-    }
-    const auto& data_point = response.GetDataPoints().front();
-    if (!data_point.IsAvailableSensor()) {
-      YORIITO_LOG_ERROR("SAPI_SignalAPI",
-                        std::string(yoriito::ErrorType::to_msg(
-                          yoriito::ErrorCode::ERROR_UNAVAILABLE)));
-      return yoriito::Result<float>::Err(std::make_unique<yoriito::CommonError>(
-        yoriito::ErrorCode::ERROR_UNAVAILABLE));
-    }
-
-    auto data = data_point.GetData();
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Get].");
-    return yoriito::Result<float>::Ok(std::get<float>(data));
-  }
-
-  yoriito::Result<yoriito::databroker::ConsumerInspectResponse> Inspect() {
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Inspect].");
-    yoriito::databroker::DataBrokerConsumer* consumer =
-      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
-    yoriito::databroker::ConsumerInspectRequest inspect_request(
-      VEHICLE_POWERTRAIN_COMBUSTIONENGINE_STROKELENGTH);
-    yoriito::Result<yoriito::databroker::ConsumerInspectResponse> inspect_ret =
-      consumer->Inspect(inspect_request);
-    if (!inspect_ret.IsOk()) {
-      std::unique_ptr<yoriito::ErrorType> err_ptr = inspect_ret.TakeErr();
-      YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
-      return yoriito::Result<yoriito::databroker::ConsumerInspectResponse>::Err(
+  yoriito::Result<yoriito::databroker::ConsumerGetResponse> ret =
+      consumer->Get(request);
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::Result<yoriito::signal::SignalGetDataPoint<float>>::Err(
         std::move(err_ptr));
-    }
-    YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Inspect].");
-    return inspect_ret;
   }
+  auto response = ret.TakeOk().value();
+  if (response.GetDataPoints().empty()) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", std::string(yoriito::ErrorType::to_msg(
+                                            yoriito::ErrorCode::ERROR_NODATA)));
+    return yoriito::Result<yoriito::signal::SignalGetDataPoint<float>>::Err(
+        std::make_unique<yoriito::CommonError>(
+            yoriito::ErrorCode::ERROR_NODATA));
+  }
+  const auto& data_point = response.GetDataPoints().front();
+  if (!std::holds_alternative<float>(data_point.GetData())) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", "Unexpected data type");
+    return yoriito::Result<yoriito::signal::SignalGetDataPoint<float>>::Err(
+        std::make_unique<yoriito::CommonError>(
+            yoriito::ErrorCode::ERROR_BADMSG));
+  }
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Get].");
+  return yoriito::Result<yoriito::signal::SignalGetDataPoint<float>>::Ok(
+      data_point);
+}
 
+yoriito::Result<yoriito::signal::SignalInspectResponse<float>> Inspect() {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Inspect].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
+      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
+  yoriito::databroker::ConsumerInspectRequest request(
+      VEHICLE_POWERTRAIN_COMBUSTIONENGINE_STROKELENGTH);
+  yoriito::Result<yoriito::databroker::ConsumerInspectResponse> ret =
+      consumer->Inspect(request);
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::Result<yoriito::signal::SignalInspectResponse<float>>::Err(
+        std::move(err_ptr));
+  }
+  auto response = ret.TakeOk();
+  if (response.value().GetDataPoints().empty()) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", std::string(yoriito::ErrorType::to_msg(
+                                            yoriito::ErrorCode::ERROR_NODATA)));
+    return yoriito::Result<yoriito::signal::SignalInspectResponse<float>>::Err(
+        std::make_unique<yoriito::CommonError>(
+            yoriito::ErrorCode::ERROR_NODATA));
+  }
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Inspect].");
+  return yoriito::Result<yoriito::signal::SignalInspectResponse<float>>::Ok(
+      yoriito::signal::SignalInspectResponse<float>(
+          std::move(response.value())));
+}
+
+// clang-format off
 }  // namespace yoriito::vehicle::powertrain::combustionengine::strokelength
+// clang-format on

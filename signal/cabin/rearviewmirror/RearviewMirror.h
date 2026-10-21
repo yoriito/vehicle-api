@@ -16,11 +16,9 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_REARVIEWMIRROR_H
-#define VEHICLE_CABIN_REARVIEWMIRROR_H
+#ifndef SIGNAL_CABIN_REARVIEWMIRROR_REARVIEWMIRROR_H_
+#define SIGNAL_CABIN_REARVIEWMIRROR_REARVIEWMIRROR_H_
 
 #include "Signal_DimmingLevel.h"
-#include "Signal_DimmingLevel_Availability_Actuator.h"
-#include "Signal_DimmingLevel_Availability_Sensor.h"
 
-#endif  // VEHICLE_CABIN_REARVIEWMIRROR_H
+#endif  // SIGNAL_CABIN_REARVIEWMIRROR_REARVIEWMIRROR_H_

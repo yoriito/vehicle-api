@@ -14,78 +14,40 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.28)
-set(EXECUTABLE_NAME "test_powertrain_tractionbattery_charging")
 
-set(YORIITO "yoriito")
 
-set(LOCAL_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/inc)
-file(GLOB SRC_FILES LIST_DIRECTORIES false ${CMAKE_CURRENT_SOURCE_DIR}/*.cc  )
-
-include(FetchContent)
-
-FetchContent_Declare(
-    googletest
-    URL https://github.com/google/googletest/archive/refs/heads/main.zip
+yoriito_add_test(
+    NAME
+        test_powertrain_tractionbattery_charging
+    LIBS
+        yoriito_vehicle_api_powertrain
+    SOURCES
+        Signal_AveragePower_Test.cc
+        Signal_ChargeLimit_Test.cc
+        Signal_ChargeRate_Test.cc
+        Signal_EvseId_Test.cc
+        Signal_IsCharging_Test.cc
+        Signal_IsDischarging_Test.cc
+        Signal_Location_Test.cc
+        Signal_MaxPower_Test.cc
+        Signal_PowerLoss_Test.cc
+        Signal_StartStopCharging_Test.cc
+        Signal_Temperature_Test.cc
+        Signal_TimeToComplete_Test.cc
 )
 
-# For Windows: Prevent overriding the parent project's compiler/linker settings
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
-FetchContent_MakeAvailable(googletest)
 
-enable_testing()
-
-add_executable(
-  ${EXECUTABLE_NAME}
-  ${SRC_FILES}
-  ${PROJECT_SOURCE_DIR}/mock/databroker/src/mock_databroker_consumer_factory.cc
-)
-
-FetchContent_MakeAvailable(googletest)
-enable_testing()
-
-target_compile_options(${EXECUTABLE_NAME} PRIVATE -fno-pie)
-target_link_options(${EXECUTABLE_NAME} PRIVATE -no-pie)
-if(CCACHE_PROGRAM)
-  set_property(
-    TARGET ${EXECUTABLE_NAME}
-    PROPERTY RULE_LAUNCH_COMPILE
-    "CCACHE_SLOPPINESS=pch_defines,time_macros ${CCACHE_PROGRAM}"
-  )
-endif()
-
-target_link_libraries(${EXECUTABLE_NAME}
-  GTest::gtest_main
-  gmock
-  yoriito_vehicle_api
-)
-
-target_link_directories(${EXECUTABLE_NAME}
-  PRIVATE ${INTERFACE_LIBRARY_DIR}
-)
-
-target_include_directories(
-    ${EXECUTABLE_NAME} AFTER
-    PRIVATE ${CMAKE_CURRENT_BINARY_DIR}
-    ${PROJECT_SOURCE_DIR}
-    ${PROJECT_SOURCE_DIR}/inc
-    ${PROJECT_SOURCE_DIR}/mock/databroker/inc
-)
-
-include(GoogleTest)
-#gtest_discover_tests(${EXECUTABLE_NAME})
-add_test(
-  NAME test_powertrain_tractionbattery_charging
-  COMMAND ${CMAKE_CURRENT_BINARY_DIR}/test_powertrain_tractionbattery_charging
-)
-
-message(STATUS "SRC_FILES = ${SRC_FILES}")
-
+# ---- subdomains ----
 add_subdirectory(chargingport)
+
 add_subdirectory(maximumchargingcurrent)
+
 add_subdirectory(chargecurrent)
+
 add_subdirectory(chargevoltage)
-add_subdirectory(location)
+
 add_subdirectory(timer)
+
+
 

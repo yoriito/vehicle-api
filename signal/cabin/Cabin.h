@@ -16,20 +16,14 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_H
-#define VEHICLE_CABIN_H
+#ifndef SIGNAL_CABIN_CABIN_H_
+#define SIGNAL_CABIN_CABIN_H_
 
 #include "Signal_DoorCount.h"
 #include "Signal_DriverPosition.h"
 #include "Signal_IsAutoPowerOptimize.h"
-#include "Signal_IsAutoPowerOptimize_Availability_Actuator.h"
-#include "Signal_IsAutoPowerOptimize_Availability_Sensor.h"
 #include "Signal_IsWindowChildLockEngaged.h"
-#include "Signal_IsWindowChildLockEngaged_Availability_Actuator.h"
-#include "Signal_IsWindowChildLockEngaged_Availability_Sensor.h"
 #include "Signal_PowerOptimizeLevel.h"
-#include "Signal_PowerOptimizeLevel_Availability_Actuator.h"
-#include "Signal_PowerOptimizeLevel_Availability_Sensor.h"
 #include "Signal_SeatPosCount.h"
 #include "Signal_SeatRowCount.h"
 #include "convertible/Convertible.h"
@@ -41,4 +35,4 @@
 #include "seat/Seat.h"
 #include "sunroof/Sunroof.h"
 
-#endif  // VEHICLE_CABIN_H
+#endif  // SIGNAL_CABIN_CABIN_H_

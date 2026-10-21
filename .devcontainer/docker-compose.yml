@@ -3,7 +3,7 @@ services:
     pull_policy: always
     image: ${YORIITO_DEVCONTAINER}:${YORIITO_VERSION}
     command: sleep infinity
+    cap_drop:
+     - NET_RAW
     volumes:
       - ${ROOT_DIR}:/work
-    cap_add:
-      - NET_ADMIN

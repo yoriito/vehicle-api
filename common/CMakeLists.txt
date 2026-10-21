@@ -17,11 +17,10 @@
 include("${CMAKE_SOURCE_DIR}/cmake/yoriito_common.cmake")
 
 file(GLOB PUBLIC_HEADERS LIST_DIRECTORIES false *.h)
-file(GLOB PUBLIC_DATABROKER_HEADERS LIST_DIRECTORIES false databroker/*.h)
-file(GLOB PUBLIC_DATABROKER_FILTER_HEADERS LIST_DIRECTORIES false databroker/filter/*.h)
 
+add_subdirectory(databroker)
 add_subdirectory(logger)
+add_subdirectory(signal)
+
 # install
 install(FILES ${PUBLIC_HEADERS} DESTINATION ${INCLUDE_INSTALL_DIR})
-install(FILES ${PUBLIC_DATABROKER_HEADERS} DESTINATION ${INCLUDE_INSTALL_DIR}/databroker)
-install(FILES ${PUBLIC_DATABROKER_FILTER_HEADERS} DESTINATION ${INCLUDE_INSTALL_DIR}/databroker/filter)

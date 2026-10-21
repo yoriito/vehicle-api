@@ -33,7 +33,7 @@ jobs:
       - name: Run cpplint
         run: |
           pip install cpplint
-          cpplint --recursive --exclude=test --exclude=build --exclude=mock --root=. .  2> cpplint.log || true
+          cpplint --recursive --exclude=build --exclude=cmake --exclude=mock --exclude=test --exclude=test_fuzz --root=. .  2> cpplint.log || true
 
       - name: Parse cpplint results
         run: |

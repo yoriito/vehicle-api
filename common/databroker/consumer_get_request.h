@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_REQUEST_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_REQUEST_H_
+#ifndef COMMON_DATABROKER_CONSUMER_GET_REQUEST_H_
+#define COMMON_DATABROKER_CONSUMER_GET_REQUEST_H_
 
 #include <optional>
 #include <string>
@@ -53,7 +53,7 @@ class ConsumerGetRequest {
    * @code -
    * @endcode -
    */
-  explicit ConsumerGetRequest(std::string&& path)
+  explicit ConsumerGetRequest(std::string path)
       : path_(std::move(path)), filter_(std::nullopt) {}
 
   /**
@@ -70,7 +70,7 @@ class ConsumerGetRequest {
    * @code -
    * @endcode -
    */
-  explicit ConsumerGetRequest(std::string&& path, filter::GetFilter&& filter)
+  explicit ConsumerGetRequest(std::string path, filter::GetFilter filter)
       : path_(std::move(path)), filter_(std::move(filter)) {}
 
   /**
@@ -85,7 +85,8 @@ class ConsumerGetRequest {
    * @code -
    * @endcode -
    */
-  const std::string& GetPath() const { return path_; }
+  const std::string& GetPath() const& { return path_; }
+  std::string GetPath() const&& { return path_; }
 
   /**
    * @ingroup consumer
@@ -99,7 +100,8 @@ class ConsumerGetRequest {
    * @code -
    * @endcode -
    */
-  const std::optional<filter::GetFilter>& GetFilter() const { return filter_; }
+  const std::optional<filter::GetFilter>& GetFilter() const& { return filter_; }
+  std::optional<filter::GetFilter> GetFilter() const&& { return filter_; }
 
   /**
    * @ingroup consumer
@@ -127,4 +129,4 @@ class ConsumerGetRequest {
 
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_REQUEST_H_
+#endif  // COMMON_DATABROKER_CONSUMER_GET_REQUEST_H_

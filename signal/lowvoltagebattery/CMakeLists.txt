@@ -15,29 +15,15 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE LOWVOLTAGEBATTERY_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_LOWVOLTAGEBATTERY_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_lowvoltagebattery SHARED ${LOWVOLTAGEBATTERY_SRC})
-target_include_directories(yoriito_vehicle_api_lowvoltagebattery PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_lowvoltagebattery PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_lowvoltagebattery"
+    SOURCES
+        Signal_CurrentElectricity.cc
+        Signal_NominalCapacity.cc
+        Signal_NominalVoltage.cc
+    INSTALL_SUBDIR
+        "signal/lowvoltagebattery"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/lowvoltagebattery"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_lowvoltagebattery LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)

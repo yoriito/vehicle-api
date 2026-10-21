@@ -15,29 +15,13 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE TRAILER_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_TRAILER_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_trailer SHARED ${TRAILER_SRC})
-target_include_directories(yoriito_vehicle_api_trailer PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_trailer PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_trailer"
+    SOURCES
+        Signal_IsConnected.cc
+    INSTALL_SUBDIR
+        "signal/trailer"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/trailer"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_trailer LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)

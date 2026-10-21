@@ -16,31 +16,18 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_WINDSHIELD_REAR_WIPING_SYSTEM_H
-#define VEHICLE_BODY_WINDSHIELD_REAR_WIPING_SYSTEM_H
+#ifndef SIGNAL_BODY_WINDSHIELD_REAR_WIPING_SYSTEM_SYSTEM_H_
+#define SIGNAL_BODY_WINDSHIELD_REAR_WIPING_SYSTEM_SYSTEM_H_
 
 #include "Signal_DriveCurrent.h"
-#include "Signal_DriveCurrent_Availability_Sensor.h"
 #include "Signal_Frequency.h"
-#include "Signal_Frequency_Availability_Actuator.h"
-#include "Signal_Frequency_Availability_Sensor.h"
 #include "Signal_IsBlocked.h"
-#include "Signal_IsBlocked_Availability_Sensor.h"
 #include "Signal_IsEndingWipeCycle.h"
-#include "Signal_IsEndingWipeCycle_Availability_Sensor.h"
 #include "Signal_IsOverheated.h"
-#include "Signal_IsOverheated_Availability_Sensor.h"
 #include "Signal_IsPositionReached.h"
-#include "Signal_IsPositionReached_Availability_Sensor.h"
 #include "Signal_IsWiperError.h"
-#include "Signal_IsWiperError_Availability_Sensor.h"
 #include "Signal_IsWiping.h"
-#include "Signal_IsWiping_Availability_Sensor.h"
 #include "Signal_Mode.h"
-#include "Signal_Mode_Availability_Actuator.h"
-#include "Signal_Mode_Availability_Sensor.h"
 #include "Signal_Position.h"
-#include "Signal_Position_Availability_Actuator.h"
-#include "Signal_Position_Availability_Sensor.h"
 
-#endif  // VEHICLE_BODY_WINDSHIELD_REAR_WIPING_SYSTEM_H
+#endif  // SIGNAL_BODY_WINDSHIELD_REAR_WIPING_SYSTEM_SYSTEM_H_

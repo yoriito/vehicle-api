@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_SEAT_ROW1_DRIVERSIDE_AIRBAG_H
-#define VEHICLE_CABIN_SEAT_ROW1_DRIVERSIDE_AIRBAG_H
+#ifndef SIGNAL_CABIN_SEAT_ROW1_DRIVERSIDE_AIRBAG_AIRBAG_H_
+#define SIGNAL_CABIN_SEAT_ROW1_DRIVERSIDE_AIRBAG_AIRBAG_H_
 
 #include "Signal_IsDeployed.h"
-#include "Signal_IsDeployed_Availability_Sensor.h"
+#include "Signal_IsEnabled.h"
 
-#endif  // VEHICLE_CABIN_SEAT_ROW1_DRIVERSIDE_AIRBAG_H
+#endif  // SIGNAL_CABIN_SEAT_ROW1_DRIVERSIDE_AIRBAG_AIRBAG_H_

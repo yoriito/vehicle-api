@@ -16,20 +16,12 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_TRUNK_FRONT_H
-#define VEHICLE_BODY_TRUNK_FRONT_H
+#ifndef SIGNAL_BODY_TRUNK_FRONT_FRONT_H_
+#define SIGNAL_BODY_TRUNK_FRONT_FRONT_H_
 
 #include "Signal_IsLightOn.h"
-#include "Signal_IsLightOn_Availability_Actuator.h"
-#include "Signal_IsLightOn_Availability_Sensor.h"
 #include "Signal_IsLocked.h"
-#include "Signal_IsLocked_Availability_Actuator.h"
-#include "Signal_IsLocked_Availability_Sensor.h"
 #include "Signal_IsOpen.h"
-#include "Signal_IsOpen_Availability_Actuator.h"
-#include "Signal_IsOpen_Availability_Sensor.h"
 #include "Signal_Position.h"
-#include "Signal_Position_Availability_Actuator.h"
-#include "Signal_Position_Availability_Sensor.h"
 
-#endif  // VEHICLE_BODY_TRUNK_FRONT_H
+#endif  // SIGNAL_BODY_TRUNK_FRONT_FRONT_H_

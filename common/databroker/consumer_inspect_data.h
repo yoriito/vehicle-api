@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_DATA_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_DATA_H_
+#ifndef COMMON_DATABROKER_CONSUMER_INSPECT_DATA_H_
+#define COMMON_DATABROKER_CONSUMER_INSPECT_DATA_H_
 
 #include "databroker/base_inspect_data.h"
 
@@ -62,7 +62,7 @@ class ConsumerInspectData : public yoriito::databroker::BaseInspectData {
    * @code -
    * @endcode -
    */
-  static ConsumerInspectData CreateFromBuilder(Builder& builder) {
+  static ConsumerInspectData CreateFromBuilder(const Builder& builder) {
     BaseInspectData base = builder.Build();
     return ConsumerInspectData(base);
   }
@@ -84,4 +84,4 @@ class ConsumerInspectData : public yoriito::databroker::BaseInspectData {
 };
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_DATA_H_
+#endif  // COMMON_DATABROKER_CONSUMER_INSPECT_DATA_H_

@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_DATABROKER_PRODUCER_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_DATABROKER_PRODUCER_H_
+#ifndef COMMON_DATABROKER_DATABROKER_PRODUCER_H_
+#define COMMON_DATABROKER_DATABROKER_PRODUCER_H_
 
 #include <memory>
 #include <string>
@@ -167,4 +167,4 @@ class DataBrokerProducer {
       const yoriito::databroker::ProducerDeleteRequest& data) = 0;
 };
 }  // namespace yoriito::databroker
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_DATABROKER_PRODUCER_H_
+#endif  // COMMON_DATABROKER_DATABROKER_PRODUCER_H_

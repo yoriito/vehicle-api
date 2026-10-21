@@ -16,14 +16,11 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_EXTERIOR_H
-#define VEHICLE_EXTERIOR_H
+#ifndef SIGNAL_EXTERIOR_EXTERIOR_H_
+#define SIGNAL_EXTERIOR_EXTERIOR_H_
 
 #include "Signal_AirTemperature.h"
-#include "Signal_AirTemperature_Availability_Sensor.h"
 #include "Signal_Humidity.h"
-#include "Signal_Humidity_Availability_Sensor.h"
 #include "Signal_LightIntensity.h"
-#include "Signal_LightIntensity_Availability_Sensor.h"
 
-#endif  // VEHICLE_EXTERIOR_H
+#endif  // SIGNAL_EXTERIOR_EXTERIOR_H_

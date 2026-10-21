@@ -16,66 +16,127 @@
 
 
 # ---- Common include settings for all signal-domain libraries ----
-add_library(yoriito_vehicle_api_includes INTERFACE)
-
-target_include_directories(yoriito_vehicle_api_includes INTERFACE ${PROJECT_SOURCE_DIR}/common)
+include(CMakePackageConfigHelpers)
 
 # ---- vehicle (signal root) library ----
-file(GLOB VEHICLE_SRC CONFIGURE_DEPENDS "*.cc")
-
-add_library(yoriito_vehicle_api_vehicle SHARED ${VEHICLE_SRC})
-target_include_directories(yoriito_vehicle_api_vehicle PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}")
-target_link_libraries(yoriito_vehicle_api_vehicle PRIVATE yoriito_vehicle_api_includes)
-install(
-  TARGETS yoriito_vehicle_api_vehicle LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_vehicle"
+    SOURCES
+        Signal_Acceleration.cc
+        Signal_AngularVelocity.cc
+        Signal_AverageSpeed.cc
+        Signal_CargoVolume.cc
+        Signal_CurbWeight.cc
+        Signal_CurrentOverallWeight.cc
+        Signal_EmissionsCO2.cc
+        Signal_GrossWeight.cc
+        Signal_Height.cc
+        Signal_IsAutoPowerOptimize.cc
+        Signal_IsBrokenDown.cc
+        Signal_IsMoving.cc
+        Signal_Length.cc
+        Signal_LowVoltageSystemState.cc
+        Signal_MaxTowBallWeight.cc
+        Signal_MaxTowWeight.cc
+        Signal_PowerOptimizeLevel.cc
+        Signal_RoofLoad.cc
+        Signal_Speed.cc
+        Signal_StartTime.cc
+        Signal_TraveledDistance.cc
+        Signal_TraveledDistanceSinceStart.cc
+        Signal_TripDuration.cc
+        Signal_TurningDiameter.cc
+        Signal_WidthExcludingMirrors.cc
+        Signal_WidthFoldedMirrors.cc
+        Signal_WidthIncludingMirrors.cc
+    INSTALL_SUBDIR
+        "signal"
 )
 
 # ---- subdomains ----
-add_subdirectory(powertrain)
-add_subdirectory(body)
-add_subdirectory(cabin)
-add_subdirectory(adas)
-add_subdirectory(chassis)
-add_subdirectory(driver)
-add_subdirectory(occupant)
-add_subdirectory(exterior)
-add_subdirectory(versionvss)
-add_subdirectory(vehicleidentification)
-add_subdirectory(lowvoltagebattery)
-add_subdirectory(acceleration)
-add_subdirectory(angularvelocity)
-add_subdirectory(trailer)
-add_subdirectory(currentlocation)
-add_subdirectory(versionyoriitovss)
+if (ENABLE_POWERTRAIN)
+    add_subdirectory(powertrain)
+endif()
 
-# Link common include dirs to all domain targets (created in subdirectories)
-set(YORIITO_VEHICLE_API_DOMAIN_TARGETS
-yoriito_vehicle_api_powertrain
-yoriito_vehicle_api_body
-yoriito_vehicle_api_cabin
-yoriito_vehicle_api_adas
-yoriito_vehicle_api_chassis
-yoriito_vehicle_api_driver
-yoriito_vehicle_api_occupant
-yoriito_vehicle_api_exterior
-yoriito_vehicle_api_versionvss
-yoriito_vehicle_api_vehicleidentification
-yoriito_vehicle_api_lowvoltagebattery
-yoriito_vehicle_api_acceleration
-yoriito_vehicle_api_angularvelocity
-yoriito_vehicle_api_trailer
-yoriito_vehicle_api_currentlocation
-yoriito_vehicle_api_versionyoriitovss
+if (ENABLE_BODY)
+    add_subdirectory(body)
+endif()
+
+if (ENABLE_CABIN)
+    add_subdirectory(cabin)
+endif()
+
+if (ENABLE_ADAS)
+    add_subdirectory(adas)
+endif()
+
+if (ENABLE_CHASSIS)
+    add_subdirectory(chassis)
+endif()
+
+if (ENABLE_DRIVER)
+    add_subdirectory(driver)
+endif()
+
+if (ENABLE_OCCUPANT)
+    add_subdirectory(occupant)
+endif()
+
+if (ENABLE_EXTERIOR)
+    add_subdirectory(exterior)
+endif()
+
+if (ENABLE_VERSIONVSS)
+    add_subdirectory(versionvss)
+endif()
+
+if (ENABLE_VEHICLEIDENTIFICATION)
+    add_subdirectory(vehicleidentification)
+endif()
+
+if (ENABLE_LOWVOLTAGEBATTERY)
+    add_subdirectory(lowvoltagebattery)
+endif()
+
+if (ENABLE_TRAILER)
+    add_subdirectory(trailer)
+endif()
+
+if (ENABLE_CURRENTLOCATION)
+    add_subdirectory(currentlocation)
+endif()
+
+if (ENABLE_MOTIONMANAGEMENT)
+    add_subdirectory(motionmanagement)
+endif()
+
+if (ENABLE_VERSIONYORIITOVSS)
+    add_subdirectory(versionyoriitovss)
+endif()
+
+if (ENABLE_TRIPMETER)
+    add_subdirectory(tripmeter)
+endif()
+
+# ---- structs ----
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/types)
+  add_subdirectory(types)
+  target_link_libraries(yoriito_vehicle_api_struct PRIVATE yoriito_vehicle_api_includes)
+endif()
+
+configure_package_config_file(
+	"${CMAKE_SOURCE_DIR}/cmake/yoriito_vehicle_apiConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/yoriito_vehicle_apiConfig.cmake"
+    INSTALL_DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/yoriito_vehicle_api
 )
 
-foreach(t IN LISTS YORIITO_VEHICLE_API_DOMAIN_TARGETS)
-  if(TARGET ${t})
-    target_link_libraries(${t} PRIVATE yoriito_vehicle_api_includes)
-  endif()
-endforeach()
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/yoriito_vehicle_apiConfig.cmake"
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/yoriito_vehicle_api
+)
 
-# ---- install headers (keep directory structure) ----
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
-  DESTINATION "${INCLUDE_INSTALL_DIR}/signal"
-  FILES_MATCHING PATTERN "*.h"
+install(EXPORT yoriito_vehicle_apiTargets
+  FILE yoriito_vehicle_apiTargets.cmake
+  NAMESPACE yoriito::
+  DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/yoriito_vehicle_api
 )

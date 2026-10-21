@@ -16,14 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CHASSIS_PARKINGBRAKE_H
-#define VEHICLE_CHASSIS_PARKINGBRAKE_H
+#ifndef SIGNAL_CHASSIS_PARKINGBRAKE_PARKINGBRAKE_H_
+#define SIGNAL_CHASSIS_PARKINGBRAKE_PARKINGBRAKE_H_
 
 #include "Signal_IsAutoApplyEnabled.h"
-#include "Signal_IsAutoApplyEnabled_Availability_Actuator.h"
-#include "Signal_IsAutoApplyEnabled_Availability_Sensor.h"
 #include "Signal_IsEngaged.h"
-#include "Signal_IsEngaged_Availability_Actuator.h"
-#include "Signal_IsEngaged_Availability_Sensor.h"
 
-#endif  // VEHICLE_CHASSIS_PARKINGBRAKE_H
+#endif  // SIGNAL_CHASSIS_PARKINGBRAKE_PARKINGBRAKE_H_

@@ -16,19 +16,12 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CHASSIS_STEERINGWHEEL_H
-#define VEHICLE_CHASSIS_STEERINGWHEEL_H
+#ifndef SIGNAL_CHASSIS_STEERINGWHEEL_STEERINGWHEEL_H_
+#define SIGNAL_CHASSIS_STEERINGWHEEL_STEERINGWHEEL_H_
 
 #include "Signal_Angle.h"
-#include "Signal_Angle_Availability_Sensor.h"
 #include "Signal_Extension.h"
-#include "Signal_Extension_Availability_Actuator.h"
-#include "Signal_Extension_Availability_Sensor.h"
 #include "Signal_Heating.h"
-#include "Signal_Heating_Availability_Actuator.h"
-#include "Signal_Heating_Availability_Sensor.h"
 #include "Signal_Tilt.h"
-#include "Signal_Tilt_Availability_Actuator.h"
-#include "Signal_Tilt_Availability_Sensor.h"
 
-#endif  // VEHICLE_CHASSIS_STEERINGWHEEL_H
+#endif  // SIGNAL_CHASSIS_STEERINGWHEEL_STEERINGWHEEL_H_

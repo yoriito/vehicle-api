@@ -16,32 +16,27 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_POWERTRAIN_FUELSYSTEM_H
-#define VEHICLE_POWERTRAIN_FUELSYSTEM_H
+#ifndef SIGNAL_POWERTRAIN_FUELSYSTEM_FUELSYSTEM_H_
+#define SIGNAL_POWERTRAIN_FUELSYSTEM_FUELSYSTEM_H_
 
 #include "Signal_AbsoluteLevel.h"
-#include "Signal_AbsoluteLevel_Availability_Sensor.h"
+#include "Signal_AfterRefuelingFuelEconomy.h"
 #include "Signal_AverageConsumption.h"
-#include "Signal_AverageConsumption_Availability_Sensor.h"
+#include "Signal_ConsumptionSinceLastRefuel.h"
 #include "Signal_ConsumptionSinceStart.h"
-#include "Signal_ConsumptionSinceStart_Availability_Sensor.h"
+#include "Signal_CumulativeFuelEconomy.h"
+#include "Signal_DriveFuelEconomy.h"
 #include "Signal_InstantConsumption.h"
-#include "Signal_InstantConsumption_Availability_Sensor.h"
+#include "Signal_InstantFuelEconomy.h"
 #include "Signal_IsEngineStopStartEnabled.h"
-#include "Signal_IsEngineStopStartEnabled_Availability_Sensor.h"
+#include "Signal_IsFuelLevelEmpty.h"
 #include "Signal_IsFuelLevelLow.h"
-#include "Signal_IsFuelLevelLow_Availability_Sensor.h"
 #include "Signal_IsFuelPortFlapOpen.h"
-#include "Signal_IsFuelPortFlapOpen_Availability_Actuator.h"
-#include "Signal_IsFuelPortFlapOpen_Availability_Sensor.h"
 #include "Signal_Range.h"
-#include "Signal_Range_Availability_Sensor.h"
 #include "Signal_RefuelPortPosition.h"
 #include "Signal_RelativeLevel.h"
-#include "Signal_RelativeLevel_Availability_Sensor.h"
 #include "Signal_SupportedFuel.h"
 #include "Signal_TankCapacity.h"
 #include "Signal_TimeRemaining.h"
-#include "Signal_TimeRemaining_Availability_Sensor.h"
 
-#endif  // VEHICLE_POWERTRAIN_FUELSYSTEM_H
+#endif  // SIGNAL_POWERTRAIN_FUELSYSTEM_FUELSYSTEM_H_

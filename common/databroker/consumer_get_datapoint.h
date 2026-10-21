@@ -16,15 +16,15 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_DATAPOINT_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_DATAPOINT_H_
+#ifndef COMMON_DATABROKER_CONSUMER_GET_DATAPOINT_H_
+#define COMMON_DATABROKER_CONSUMER_GET_DATAPOINT_H_
 
 #include <optional>
 #include <string>
 #include <vector>
 //
-#include "databroker/base_get_datapoint.h"
 #include "databroker_type.h"
+#include "databroker/base_get_datapoint.h"
 
 /**
  * @ingroup common
@@ -61,9 +61,9 @@ class ConsumerGetDataPoint : public BaseGetDataPoint {
    * @endcode -
    */
   ConsumerGetDataPoint(
-      const std::string& path, const ValueType& data, bool is_available_sensor,
-      bool is_available_actuator, int64_t stored_timestamp,
-      const std::optional<int64_t>& produced_timestamp = std::nullopt)
+    const std::string& path, const ValueType& data, bool is_available_sensor,
+    bool is_available_actuator, int64_t stored_timestamp,
+    const std::optional<int64_t>& produced_timestamp = std::nullopt)
       : BaseGetDataPoint(path, data),
         is_available_sensor_(is_available_sensor),
         is_available_actuator_(is_available_actuator),
@@ -126,7 +126,10 @@ class ConsumerGetDataPoint : public BaseGetDataPoint {
    * @code -
    * @endcode -
    */
-  const std::optional<int64_t>& GetProducedTimestamp() const {
+  const std::optional<int64_t>& GetProducedTimestamp() const& {
+    return produced_timestamp_;
+  }
+  std::optional<int64_t> GetProducedTimestamp() const&& {
     return produced_timestamp_;
   }
 
@@ -139,4 +142,4 @@ class ConsumerGetDataPoint : public BaseGetDataPoint {
 
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_DATAPOINT_H_
+#endif  // COMMON_DATABROKER_CONSUMER_GET_DATAPOINT_H_

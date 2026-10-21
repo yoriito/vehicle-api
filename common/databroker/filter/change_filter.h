@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_CHANGE_FILTER_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_CHANGE_FILTER_H_
+#ifndef COMMON_DATABROKER_FILTER_CHANGE_FILTER_H_
+#define COMMON_DATABROKER_FILTER_CHANGE_FILTER_H_
 
 #include "databroker/filter/operator_type.h"
 
@@ -96,7 +96,7 @@ class ChangeFilter {
    * @endcode -
    */
   friend bool operator==(const ChangeFilter& lhs, const ChangeFilter& rhs) {
-    return lhs.logic_op_ == rhs.logic_op_ && lhs.diff_ == rhs.diff_;
+    return (lhs.logic_op_ == rhs.logic_op_) && (lhs.diff_ == rhs.diff_);
   }
 
  private:
@@ -104,4 +104,4 @@ class ChangeFilter {
   int32_t diff_;
 };
 }  // namespace yoriito::databroker::filter
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_CHANGE_FILTER_H_
+#endif  // COMMON_DATABROKER_FILTER_CHANGE_FILTER_H_

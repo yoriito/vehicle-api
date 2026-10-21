@@ -15,29 +15,20 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE CURRENTLOCATION_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_CURRENTLOCATION_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_currentlocation SHARED ${CURRENTLOCATION_SRC})
-target_include_directories(yoriito_vehicle_api_currentlocation PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_currentlocation PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_currentlocation"
+    SOURCES
+        Signal_VehicleLocation.cc
+    INSTALL_SUBDIR
+        "signal/currentlocation"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/currentlocation"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_currentlocation LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)
+# ---- subdirectories ----
+add_subdirectory(gnssreceiver)
+
+add_subdirectory(referenceposition)
+
+
+

@@ -1,5 +1,5 @@
 {
-  "name": "devcontainer",
+  "name": "yoriito dev container",
   "dockerComposeFile": "./docker-compose.yml",
   "service": "dev",
   "workspaceFolder": "/work",
@@ -8,7 +8,8 @@
       "extensions": [
         "ms-vscode.cpptools",
         "xaver.clang-format",
-        "llvm-vs-code-extensions.vscode-clangd"
+        "llvm-vs-code-extensions.vscode-clangd",
+        "ms-vscode.cmake-tools"
       ]
     },
     "settings": {

@@ -16,19 +16,13 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_WINDSHIELD_REAR_WIPING_H
-#define VEHICLE_BODY_WINDSHIELD_REAR_WIPING_H
+#ifndef SIGNAL_BODY_WINDSHIELD_REAR_WIPING_WIPING_H_
+#define SIGNAL_BODY_WINDSHIELD_REAR_WIPING_WIPING_H_
 
 #include "Signal_Intensity.h"
-#include "Signal_Intensity_Availability_Actuator.h"
-#include "Signal_Intensity_Availability_Sensor.h"
-#include "Signal_IsWiperWorn_Availability_Sensor.h"
 #include "Signal_IsWipersWorn.h"
 #include "Signal_Mode.h"
-#include "Signal_Mode_Availability_Actuator.h"
-#include "Signal_Mode_Availability_Sensor.h"
 #include "Signal_WiperWear.h"
-#include "Signal_WiperWear_Availability_Sensor.h"
 #include "system/System.h"
 
-#endif  // VEHICLE_BODY_WINDSHIELD_REAR_WIPING_H
+#endif  // SIGNAL_BODY_WINDSHIELD_REAR_WIPING_WIPING_H_

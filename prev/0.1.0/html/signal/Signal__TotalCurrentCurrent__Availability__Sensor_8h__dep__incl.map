@@ -1,0 +1,11 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/Signal_TotalCurrentCurrent_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/Signal_TotalCurrentCurrent_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="116,5,316,89"/>
+<area shape="rect" id="Node000002" href="$Signal__TotalCurrentCurrent__Availability__Sensor_8cc.html" title=" " alt="" coords="5,137,205,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,101,143,139,138,135,170,98"/>
+<area shape="rect" id="Node000003" href="$TractionBattery_8h.html" title=" " alt="" coords="229,145,427,214"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,98,301,143,297,146,258,101"/>
+<area shape="rect" id="Node000004" href="$Powertrain_8h.html" title=" " alt="" coords="230,269,426,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="331,228,331,269,325,269,325,228"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="230,372,426,427"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="331,338,331,372,325,372,325,338"/>
+</map>

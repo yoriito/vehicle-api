@@ -1,0 +1,15 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/charging/timer/Signal_Time.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/charging/timer/Signal_Time.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="125,5,343,75"/>
+<area shape="rect" id="Node000002" href="$Signal__Time_8cc.html" title=" " alt="" coords="5,123,228,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,86,153,124,149,121,188,83"/>
+<area shape="rect" id="Node000003" href="$Timer_8h.html" title=" " alt="" coords="253,123,450,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="280,83,319,121,315,124,276,86"/>
+<area shape="rect" id="Node000004" href="$Charging_8h.html" title=" " alt="" coords="253,240,450,309"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="354,206,354,240,349,240,349,206"/>
+<area shape="rect" id="Node000005" href="$TractionBattery_8h.html" title=" " alt="" coords="253,357,450,427"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="354,323,354,357,349,357,349,323"/>
+<area shape="rect" id="Node000006" href="$Powertrain_8h.html" title=" " alt="" coords="253,475,449,529"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="354,440,354,474,349,474,349,440"/>
+<area shape="rect" id="Node000007" href="$Vehicle_8h.html" title=" " alt="" coords="253,577,449,632"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="354,543,354,577,349,577,349,543"/>
+</map>

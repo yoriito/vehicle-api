@@ -1,0 +1,21 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/adas/Signal_PowerOptimizeLevel_Availability_Actuator.cc" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/adas/Signal_PowerOptimizeLevel_Availability_Actuator.cc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="347,5,589,75"/>
+<area shape="rect" id="Node000002" href="$adas_2Signal__PowerOptimizeLevel__Availability__Actuator_8h.html" title=" " alt="" coords="367,123,569,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="471,75,471,108,465,108,465,75"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,218,72,243"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="367,158,232,179,157,195,85,213,77,216,76,211,83,208,156,189,231,174,366,153"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="96,218,173,243"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="377,165,284,187,186,213,177,216,176,211,185,208,283,182,376,160"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="198,218,266,243"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="413,165,278,213,273,215,271,210,276,208,411,160"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="290,211,457,251"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="449,165,406,203,403,199,445,161"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="481,211,647,251"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="491,161,534,199,531,203,488,165"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="672,218,736,243"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="526,160,661,208,667,210,665,215,659,213,524,165"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="761,218,831,243"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="562,160,653,181,749,208,756,211,755,216,747,213,651,187,560,165"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="855,218,958,243"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="570,156,701,178,845,208,859,212,857,217,843,213,700,184,569,161"/>
+</map>

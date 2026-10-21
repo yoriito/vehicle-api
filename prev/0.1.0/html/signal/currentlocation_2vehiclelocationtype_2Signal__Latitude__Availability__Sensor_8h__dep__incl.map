@@ -1,0 +1,11 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/currentlocation/vehiclelocationtype/Signal_Latitude_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/currentlocation/vehiclelocationtype/Signal_Latitude_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="153,5,421,75"/>
+<area shape="rect" id="Node000002" href="$currentlocation_2vehiclelocationtype_2Signal__Latitude__Availability__Sensor_8cc.html" title=" " alt="" coords="5,123,280,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,86,187,124,183,120,232,81"/>
+<area shape="rect" id="Node000003" href="$VehicleLocationType_8h.html" title=" " alt="" coords="304,123,560,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="341,81,391,120,388,124,338,85"/>
+<area shape="rect" id="Node000004" href="$CurrentLocation_8h.html" title=" " alt="" coords="311,240,553,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="435,206,435,240,429,240,429,206"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="334,343,530,397"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="435,308,435,343,429,343,429,308"/>
+</map>

@@ -1,0 +1,22 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/windshield" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/windshield">
+<area shape="poly" id="edge1" href="dir_000314_000092.html" alt="" coords="253,90,223,127,219,123,248,87"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000314_000092.html" title="4" alt="" coords="225,120,235,134"/>
+<area shape="poly" id="edge2" href="dir_000314_000226.html" alt="" coords="272,87,301,123,297,127,267,90"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000314_000226.html" title="4" alt="" coords="299,109,308,124"/>
+<area shape="rect" id="node3" href="dir_d38f9a50ced8dffa82b2658916af5333.html" title="washerfluid" alt="" coords="49,209,146,235"/>
+<area shape="poly" id="edge4" href="dir_000092_000306.html" alt="" coords="187,164,127,204,124,199,184,159"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000092_000306.html" title="1" alt="" coords="130,199,139,213"/>
+<area shape="rect" id="node4" href="dir_47fbb2eeeecb103512a9253a8b521f36.html" title="wiping" alt="" coords="170,209,235,235"/>
+<area shape="poly" id="edge3" href="dir_000092_000315.html" alt="" coords="205,162,205,196,200,196,200,162"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000092_000315.html" title="2" alt="" coords="206,184,216,198"/>
+<area shape="rect" id="node6" href="dir_889e56bdc96becadc4770be78d96d712.html" title="washerfluid" alt="" coords="269,209,366,235"/>
+<area shape="poly" id="edge6" href="dir_000226_000307.html" alt="" coords="320,162,320,196,315,196,315,162"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000226_000307.html" title="1" alt="" coords="321,184,330,198"/>
+<area shape="rect" id="node7" href="dir_413f6cd2f9f737ec59cecc25b20aef5c.html" title="wiping" alt="" coords="390,209,455,235"/>
+<area shape="poly" id="edge5" href="dir_000226_000316.html" alt="" coords="336,159,396,199,393,204,333,164"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000226_000316.html" title="2" alt="" coords="390,185,400,199"/>
+<area shape="rect" id="clust3" href="dir_c36fee107ef4aac2aae6a45f2d72ee56.html" alt="" coords="37,125,247,245"/>
+<area shape="rect" id="clust4" href="dir_fd8949ac4283fc43c400b521964b0749.html" alt="" coords="257,125,467,245"/>
+<area shape="rect" id="clust2" href="dir_4331c7fdd4128370d7fef898655d0b49.html" alt="" coords="27,52,477,256"/>
+<area shape="rect" id="clust1" href="dir_effe9d450a5ca9ed8b0dfc47f582aba3.html" title="body" alt="" coords="16,16,488,267"/>
+</map>

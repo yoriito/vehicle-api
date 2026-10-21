@@ -1,0 +1,11 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/adas/adaptivecruisecontrol/Signal_DegradationStatus.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/adas/adaptivecruisecontrol/Signal_DegradationStatus.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="119,5,326,75"/>
+<area shape="rect" id="Node000002" href="$AdaptiveCruiseControl_8h.html" title=" " alt="" coords="5,123,208,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,86,142,124,139,121,177,83"/>
+<area shape="rect" id="Node000005" href="$adaptivecruisecontrol_2Signal__DegradationStatus_8cc.html" title=" " alt="" coords="233,123,445,192"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="268,83,307,121,303,124,264,86"/>
+<area shape="rect" id="Node000003" href="$ADAS_8h.html" title=" " alt="" coords="9,240,205,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,206,109,240,104,240,104,206"/>
+<area shape="rect" id="Node000004" href="$Vehicle_8h.html" title=" " alt="" coords="9,343,205,397"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="109,308,109,343,104,343,104,308"/>
+</map>

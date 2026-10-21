@@ -1,0 +1,13 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/lights/hazard/Signal_IsDefect.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/lights/hazard/Signal_IsDefect.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="125,5,321,75"/>
+<area shape="rect" id="Node000002" href="$Hazard_8h.html" title=" " alt="" coords="5,130,213,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,87,137,132,133,128,178,83"/>
+<area shape="rect" id="Node000006" href="$hazard_2Signal__IsDefect_8cc.html" title=" " alt="" coords="238,123,434,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="268,83,305,121,301,124,264,87"/>
+<area shape="rect" id="Node000003" href="$Lights_8h.html" title=" " alt="" coords="11,240,207,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="112,199,112,240,107,240,107,199"/>
+<area shape="rect" id="Node000004" href="$Body_8h.html" title=" " alt="" coords="11,343,207,397"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="112,308,112,343,107,343,107,308"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="11,445,207,500"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="112,411,112,445,107,445,107,411"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/combustionengine/Signal_CompressionRatio.cc" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/combustionengine/Signal_CompressionRatio.cc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="346,5,566,75"/>
+<area shape="rect" id="Node000002" href="$Signal__CompressionRatio_8h.html" title=" " alt="" coords="356,123,556,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="459,75,459,109,453,109,453,75"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,203,72,229"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="356,149,226,168,155,181,85,199,77,201,76,196,83,193,153,176,225,162,356,144"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="96,203,173,229"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="393,151,295,171,186,199,177,201,175,196,185,193,294,166,392,145"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="197,203,256,229"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="416,151,269,199,264,200,262,195,267,193,414,145"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="281,203,349,229"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="436,151,349,199,346,194,434,146"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="373,196,539,236"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="459,148,459,182,453,182,453,148"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="563,196,730,236"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="485,146,589,188,587,193,483,150"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="755,203,819,229"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="532,145,633,165,743,193,750,196,749,201,742,199,632,170,531,151"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="843,203,914,229"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="557,144,688,163,831,193,840,196,839,201,830,199,687,168,556,149"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="938,203,1041,229"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="557,142,730,161,829,175,927,193,942,197,941,202,926,199,829,181,730,166,556,147"/>
+</map>

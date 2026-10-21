@@ -1,0 +1,11 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/transmission/Signal_CurrentPhysicalGear.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/transmission/Signal_CurrentPhysicalGear.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="124,5,341,75"/>
+<area shape="rect" id="Node000002" href="$Signal__CurrentPhysicalGear_8cc.html" title=" " alt="" coords="5,123,228,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,86,152,124,149,121,187,83"/>
+<area shape="rect" id="Node000003" href="$Transmission_8h.html" title=" " alt="" coords="252,123,448,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="279,83,318,121,314,124,275,86"/>
+<area shape="rect" id="Node000004" href="$Powertrain_8h.html" title=" " alt="" coords="252,240,448,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="353,206,353,240,347,240,347,206"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="252,343,448,397"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="353,308,353,343,347,343,347,308"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/number3/cellvoltage/Signal_Max_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/number3/cellvoltage/Signal_Max_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="154,5,358,89"/>
+<area shape="rect" id="Node000002" href="$number3_2cellvoltage_2CellVoltage_8h.html" title=" " alt="" coords="5,145,256,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,101,165,146,161,142,205,97"/>
+<area shape="rect" id="Node000007" href="$number3_2cellvoltage_2Signal__Max__Availability__Sensor_8cc.html" title=" " alt="" coords="280,137,485,221"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="308,98,344,135,341,139,304,101"/>
+<area shape="rect" id="Node000003" href="$tractionbattery_2number3_2Number3_8h.html" title=" " alt="" coords="32,269,229,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,227,133,269,128,269,128,227"/>
+<area shape="rect" id="Node000004" href="$TractionBattery_8h.html" title=" " alt="" coords="32,387,229,456"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="133,353,133,386,128,386,128,353"/>
+<area shape="rect" id="Node000005" href="$Powertrain_8h.html" title=" " alt="" coords="33,504,229,559"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="133,470,133,504,128,504,128,470"/>
+<area shape="rect" id="Node000006" href="$Vehicle_8h.html" title=" " alt="" coords="33,607,229,661"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="133,572,133,607,128,607,128,572"/>
+</map>

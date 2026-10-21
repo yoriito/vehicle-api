@@ -1,0 +1,22 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/door" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/door">
+<area shape="poly" id="edge2" href="dir_000056_000237.html" alt="" coords="275,90,239,128,236,124,271,87"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000056_000237.html" title="7" alt="" coords="242,121,251,136"/>
+<area shape="poly" id="edge1" href="dir_000056_000244.html" alt="" coords="297,86,333,124,329,128,293,90"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000056_000244.html" title="7" alt="" coords="330,110,339,124"/>
+<area shape="rect" id="node3" href="dir_a9dac15b09bc9f7377cc24fec537c2de.html" title="driverside" alt="" coords="49,209,135,235"/>
+<area shape="poly" id="edge4" href="dir_000237_000063.html" alt="" coords="199,164,126,205,123,200,196,159"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000237_000063.html" title="3" alt="" coords="128,200,137,215"/>
+<area shape="rect" id="node4" href="dir_23e1b57b08b2b57b5c15ade7bb9d7e75.html" title="passengerside" alt="" coords="159,209,275,235"/>
+<area shape="poly" id="edge3" href="dir_000237_000208.html" alt="" coords="220,162,220,196,215,196,215,162"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000237_000208.html" title="3" alt="" coords="221,184,230,198"/>
+<area shape="rect" id="node6" href="dir_6e03f25bc97490d204e90143770f337b.html" title="driverside" alt="" coords="309,209,395,235"/>
+<area shape="poly" id="edge6" href="dir_000244_000064.html" alt="" coords="355,162,355,196,349,196,349,162"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000244_000064.html" title="3" alt="" coords="356,184,365,198"/>
+<area shape="rect" id="node7" href="dir_053dd2f0792b81f453b402ee78542f6c.html" title="passengerside" alt="" coords="419,209,535,235"/>
+<area shape="poly" id="edge5" href="dir_000244_000209.html" alt="" coords="373,159,446,200,444,205,371,164"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000244_000209.html" title="3" alt="" coords="441,186,450,200"/>
+<area shape="rect" id="clust3" href="dir_f7d66210b94f85b0287d60ba18cf45ac.html" alt="" coords="37,125,287,245"/>
+<area shape="rect" id="clust4" href="dir_0dda5b0ddb484e59ae4f39c875c41942.html" alt="" coords="297,125,547,245"/>
+<area shape="rect" id="clust2" href="dir_dc2c633c28d79c6b5cde3c5cf1b3d59d.html" alt="" coords="27,52,557,256"/>
+<area shape="rect" id="clust1" href="dir_b5d29ba8edcaab16158b51e1b8055f0b.html" title="cabin" alt="" coords="16,16,568,267"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/hvac/station/row4/driver/Signal_FanSpeed_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/hvac/station/row4/driver/Signal_FanSpeed_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="119,5,376,89"/>
+<area shape="rect" id="Node000002" href="$cabin_2hvac_2station_2row4_2driver_2Driver_8h.html" title=" " alt="" coords="24,145,220,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,101,157,146,153,142,196,97"/>
+<area shape="rect" id="Node000008" href="$row4_2driver_2Signal__FanSpeed__Availability__Sensor_8cc.html" title=" " alt="" coords="244,137,501,221"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="298,98,335,135,331,139,295,101"/>
+<area shape="rect" id="Node000003" href="$hvac_2station_2row4_2Row4_8h.html" title=" " alt="" coords="5,269,239,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,228,125,269,119,269,119,228"/>
+<area shape="rect" id="Node000004" href="$Station_8h.html" title=" " alt="" coords="19,372,225,427"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="125,338,125,372,119,372,119,338"/>
+<area shape="rect" id="Node000005" href="$HVAC_8h.html" title=" " alt="" coords="24,475,220,529"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="125,440,125,475,119,475,119,440"/>
+<area shape="rect" id="Node000006" href="$Cabin_8h.html" title=" " alt="" coords="24,577,220,632"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="125,543,125,577,119,577,119,543"/>
+<area shape="rect" id="Node000007" href="$Vehicle_8h.html" title=" " alt="" coords="24,680,220,735"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="125,646,125,680,119,680,119,646"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/trunk/rear/Signal_Position_Availability_Actuator.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/body/trunk/rear/Signal_Position_Availability_Actuator.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="107,5,342,75"/>
+<area shape="rect" id="Node000002" href="$trunk_2rear_2Rear_8h.html" title=" " alt="" coords="5,130,201,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,86,133,132,129,128,177,82"/>
+<area shape="rect" id="Node000006" href="$body_2trunk_2rear_2Signal__Position__Availability__Actuator_8cc.html" title=" " alt="" coords="226,123,466,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="272,83,312,121,309,124,269,86"/>
+<area shape="rect" id="Node000003" href="$Trunk_8h.html" title=" " alt="" coords="5,240,201,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,199,106,240,101,240,101,199"/>
+<area shape="rect" id="Node000004" href="$Body_8h.html" title=" " alt="" coords="5,343,201,397"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="106,308,106,343,101,343,101,308"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="5,445,201,500"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="106,411,106,445,101,445,101,411"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/number1/Signal_AccumulatedChargedThroughput_Availability_Sensor.cc" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/tractionbattery/number1/Signal_AccumulatedChargedThroughput_Availability_Sensor.cc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="294,5,642,89"/>
+<area shape="rect" id="Node000002" href="$number1_2Signal__AccumulatedChargedThroughput__Availability__Sensor_8h.html" title=" " alt="" coords="364,137,572,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="471,89,471,124,465,124,465,89"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,247,72,273"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,183,230,207,85,243,77,245,76,240,83,237,229,202,363,178"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="96,247,173,273"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="365,193,186,243,177,245,176,240,185,237,363,188"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="198,247,266,273"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="401,195,278,242,273,245,271,240,276,238,399,190"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="290,240,457,280"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="443,194,404,232,400,228,439,190"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="481,240,647,280"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="497,190,536,228,533,232,493,194"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="672,247,736,273"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="539,190,661,238,666,240,664,244,659,242,537,195"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="761,247,831,273"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="573,188,749,237,756,240,755,245,747,243,572,193"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="855,247,958,273"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="573,181,703,206,845,237,858,241,857,246,843,243,702,211,572,186"/>
+</map>

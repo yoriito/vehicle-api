@@ -1,0 +1,9 @@
+<map id="yoriito::ILogBackend" name="yoriito::ILogBackend">
+<area shape="rect" id="Node000001" title=" " alt="" coords="115,5,270,31"/>
+<area shape="rect" id="Node000002" href="$classyoriito_1_1BaseLogBackend.html" title=" " alt="" coords="101,79,284,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,44,195,79,190,79,190,44"/>
+<area shape="rect" id="Node000003" href="$classyoriito_1_1DltLogBackend.html" title=" " alt="" coords="5,152,175,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="166,114,108,154,105,150,163,110"/>
+<area shape="rect" id="Node000004" href="$classyoriito_1_1StdoutLogBackend.html" title=" " alt="" coords="199,152,391,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="222,110,280,150,277,154,219,114"/>
+</map>

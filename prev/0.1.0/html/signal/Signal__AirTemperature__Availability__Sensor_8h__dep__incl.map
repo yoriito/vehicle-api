@@ -1,0 +1,9 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/exterior/Signal_AirTemperature_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/exterior/Signal_AirTemperature_Availability_Sensor.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="107,5,335,75"/>
+<area shape="rect" id="Node000002" href="$Exterior_8h.html" title=" " alt="" coords="5,130,201,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,87,132,132,128,128,174,83"/>
+<area shape="rect" id="Node000004" href="$Signal__AirTemperature__Availability__Sensor_8cc.html" title=" " alt="" coords="225,123,453,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="267,83,306,121,303,124,263,86"/>
+<area shape="rect" id="Node000003" href="$Vehicle_8h.html" title=" " alt="" coords="5,240,201,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,199,106,240,101,240,101,199"/>
+</map>

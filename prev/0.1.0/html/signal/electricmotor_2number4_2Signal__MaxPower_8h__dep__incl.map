@@ -1,0 +1,13 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/electricmotor/number4/Signal_MaxPower.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/electricmotor/number4/Signal_MaxPower.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="112,5,327,75"/>
+<area shape="rect" id="Node000002" href="$electricmotor_2number4_2Number4_8h.html" title=" " alt="" coords="5,123,201,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,86,139,124,135,121,174,83"/>
+<area shape="rect" id="Node000006" href="$electricmotor_2number4_2Signal__MaxPower_8cc.html" title=" " alt="" coords="225,123,445,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="265,83,303,121,300,124,261,86"/>
+<area shape="rect" id="Node000003" href="$ElectricMotor_8h.html" title=" " alt="" coords="5,240,201,309"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,206,106,240,101,240,101,206"/>
+<area shape="rect" id="Node000004" href="$Powertrain_8h.html" title=" " alt="" coords="5,357,201,412"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="106,323,106,357,101,357,101,323"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="5,460,201,515"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="106,426,106,460,101,460,101,426"/>
+</map>

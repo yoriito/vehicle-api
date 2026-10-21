@@ -1,0 +1,11 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/transmission/Signal_GearChangeMode_Availability_Actuator.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/powertrain/transmission/Signal_GearChangeMode_Availability_Actuator.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="133,5,403,89"/>
+<area shape="rect" id="Node000002" href="$Signal__GearChangeMode__Availability__Actuator_8cc.html" title=" " alt="" coords="5,137,275,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,101,183,139,179,135,216,97"/>
+<area shape="rect" id="Node000003" href="$Transmission_8h.html" title=" " alt="" coords="299,145,495,214"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="321,97,365,142,362,146,317,101"/>
+<area shape="rect" id="Node000004" href="$Powertrain_8h.html" title=" " alt="" coords="299,269,495,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="400,228,400,269,395,269,395,228"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="299,372,495,427"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="400,338,400,372,395,372,395,338"/>
+</map>

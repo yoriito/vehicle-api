@@ -1,0 +1,11 @@
+<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/adas/tcs/Signal_IsEnabled_Availability_Actuator.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/adas/tcs/Signal_IsEnabled_Availability_Actuator.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="115,5,311,75"/>
+<area shape="rect" id="Node000002" href="$tcs_2Signal__IsEnabled__Availability__Actuator_8cc.html" title=" " alt="" coords="5,123,201,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,87,137,124,133,121,169,83"/>
+<area shape="rect" id="Node000003" href="$TCS_8h.html" title=" " alt="" coords="225,130,421,185"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,83,300,128,296,132,253,87"/>
+<area shape="rect" id="Node000004" href="$ADAS_8h.html" title=" " alt="" coords="225,240,421,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="326,199,326,240,321,240,321,199"/>
+<area shape="rect" id="Node000005" href="$Vehicle_8h.html" title=" " alt="" coords="225,343,421,397"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="326,308,326,343,321,343,321,308"/>
+</map>

@@ -1,9 +1,0 @@
-<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/currentlocation/gnssreceiver/mountingposition/MountingPosition.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/currentlocation/gnssreceiver/mountingposition/MountingPosition.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,275,75"/>
-<area shape="rect" id="Node000002" href="$GNSSReceiver_8h.html" title=" " alt="" coords="35,123,245,192"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,89,143,122,137,122,137,89"/>
-<area shape="rect" id="Node000003" href="$CurrentLocation_8h.html" title=" " alt="" coords="19,240,261,295"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="143,206,143,240,137,240,137,206"/>
-<area shape="rect" id="Node000004" href="$Vehicle_8h.html" title=" " alt="" coords="42,343,238,397"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="143,308,143,343,137,343,137,308"/>
-</map>

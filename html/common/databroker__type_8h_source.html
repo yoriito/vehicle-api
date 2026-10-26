@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - common: /home/runner/work/vehicle-api/vehicle-api/common/databroker_type.h Source File</title>
+<title>Yoriito Vehicle API - common: /work/common/databroker_type.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,62 +117,269 @@ $(document).ready(function(){initNavTree('databroker__type_8h_source.html',''); 
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_TYPE_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_TYPE_H_</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;variant&gt;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito.html">yoriito</a> {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespaceyoriito.html#a45b69add6c5c3cb7d17b1cc939f91c31">   34</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceyoriito.html#a45b69add6c5c3cb7d17b1cc939f91c31">ValueType</a> = std::variant&lt;std::monostate,            <span class="comment">//</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                               std::string,               <span class="comment">//</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                               std::string_view,          <span class="comment">//</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                               bool,                      <span class="comment">//</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                               int8_t,                    <span class="comment">//</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                               int16_t,                   <span class="comment">//</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                               int32_t,                   <span class="comment">//</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                               int64_t,                   <span class="comment">//</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                               uint8_t,                   <span class="comment">//</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                               uint16_t,                  <span class="comment">//</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                               uint32_t,                  <span class="comment">//</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                               uint64_t,                  <span class="comment">//</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                               float,                     <span class="comment">//</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                               double,                    <span class="comment">//</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                               std::vector&lt;std::string&gt;,  <span class="comment">//</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                               std::vector&lt;bool&gt;,         <span class="comment">//</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                               std::vector&lt;int8_t&gt;,       <span class="comment">//</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                               std::vector&lt;int16_t&gt;,      <span class="comment">//</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                               std::vector&lt;int32_t&gt;,      <span class="comment">//</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                               std::vector&lt;int64_t&gt;,      <span class="comment">//</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                               std::vector&lt;uint8_t&gt;,      <span class="comment">//</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                               std::vector&lt;uint16_t&gt;,     <span class="comment">//</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                               std::vector&lt;uint32_t&gt;,     <span class="comment">//</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                               std::vector&lt;uint64_t&gt;,     <span class="comment">//</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                               std::vector&lt;float&gt;,        <span class="comment">//</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                               std::vector&lt;double&gt;        <span class="comment">//</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                               &gt;;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="namespaceyoriito.html#a64850bae2e076ef44be933303ed2d5a3">   62</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceyoriito.html#a45b69add6c5c3cb7d17b1cc939f91c31">ValueType</a> <a class="code hl_function" href="namespaceyoriito.html#a64850bae2e076ef44be933303ed2d5a3">string_view_then_copy</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceyoriito.html#a45b69add6c5c3cb7d17b1cc939f91c31">ValueType</a>&amp; v) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="comment">// string_view is just a view to a real string.</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">// So, it should be stored as string.</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordflow">if</span> (std::holds_alternative&lt;std::string_view&gt;(v)) {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> std::string(std::get&lt;std::string_view&gt;(v));</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> v;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
-</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef COMMON_DATABROKER_TYPE_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define COMMON_DATABROKER_TYPE_H_</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;variant&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito.html">yoriito</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">class </span>StructData;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespaceyoriito.html#a716fc18835252e6cfadf5f4cc99edf20">   40</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceyoriito.html#a716fc18835252e6cfadf5f4cc99edf20">StructDataPtr</a> = std::unique_ptr&lt;StructData&gt;;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespaceyoriito.html#a783443fe928f337b3fe8a15b0dee5243">   41</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceyoriito.html#a783443fe928f337b3fe8a15b0dee5243">StructDataArray</a> = std::vector&lt;StructDataPtr&gt;;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">   43</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> = std::variant&lt;std::monostate,            <span class="comment">//</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                               std::string,               <span class="comment">//</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                               std::string_view,          <span class="comment">//</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                               bool,                      <span class="comment">//</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                               int8_t,                    <span class="comment">//</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                               int16_t,                   <span class="comment">//</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                               int32_t,                   <span class="comment">//</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                               int64_t,                   <span class="comment">//</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                               uint8_t,                   <span class="comment">//</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                               uint16_t,                  <span class="comment">//</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                               uint32_t,                  <span class="comment">//</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                               uint64_t,                  <span class="comment">//</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                               float,                     <span class="comment">//</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                               double,                    <span class="comment">//</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                               std::vector&lt;std::string&gt;,  <span class="comment">//</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                               std::vector&lt;bool&gt;,         <span class="comment">//</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                               std::vector&lt;int8_t&gt;,       <span class="comment">//</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                               std::vector&lt;int16_t&gt;,      <span class="comment">//</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                               std::vector&lt;int32_t&gt;,      <span class="comment">//</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                               std::vector&lt;int64_t&gt;,      <span class="comment">//</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                               std::vector&lt;uint8_t&gt;,      <span class="comment">//</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                               std::vector&lt;uint16_t&gt;,     <span class="comment">//</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                               std::vector&lt;uint32_t&gt;,     <span class="comment">//</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                               std::vector&lt;uint64_t&gt;,     <span class="comment">//</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                               std::vector&lt;float&gt;,        <span class="comment">//</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                               std::vector&lt;double&gt;,       <span class="comment">//</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                               <a class="code hl_typedef" href="namespaceyoriito.html#a716fc18835252e6cfadf5f4cc99edf20">StructDataPtr</a>,             <span class="comment">//</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                               <a class="code hl_typedef" href="namespaceyoriito.html#a783443fe928f337b3fe8a15b0dee5243">StructDataArray</a>&gt;;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}  <span class="comment">// namespace yoriito</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif  </span><span class="comment">// YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_TYPE_H_</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> <a class="code hl_function" href="namespaceyoriito.html#ab728f1b5de548d0bf29214005ed8293b">CloneValueType</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a>&amp; v);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceyoriito.html#aef560bbccabb7fce5a7832503d52d713">ValueTypeEquals</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a>&amp; lhs, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a>&amp; rhs);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="};">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData.html">   82</a></span><span class="keyword">class </span><a class="code hl_class" href="classyoriito_1_1StructData.html">StructData</a> {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="};">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData_1_1PropertiesView.html">   91</a></span>  <span class="keyword">class </span><a class="code hl_class" href="classyoriito_1_1StructData_1_1PropertiesView.html">PropertiesView</a> {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>   <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData_1_1PropertiesView.html#aaa234db4c0da92315d8a8a9b5026826b">   93</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classyoriito_1_1StructData_1_1PropertiesView.html#aaa234db4c0da92315d8a8a9b5026826b">MapType</a> = std::unordered_map&lt;std::string, ValueType&gt;;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData_1_1PropertiesView.html#a0dbb7c6c4c31bd83ca5414d85ef25a83">   94</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classyoriito_1_1StructData_1_1PropertiesView.html#a0dbb7c6c4c31bd83ca5414d85ef25a83">const_iterator</a> = MapType::const_iterator;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData_1_1PropertiesView.html#aaf648457b89b5b8d54064cd9b7c802d4">   95</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classyoriito_1_1StructData_1_1PropertiesView.html#aaf648457b89b5b8d54064cd9b7c802d4">size_type</a> = MapType::size_type;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData_1_1PropertiesView.html#a0d4a95b50202ac16c0ef524184e9753e">  109</a></span>    <a class="code hl_typedef" href="classyoriito_1_1StructData_1_1PropertiesView.html#a0dbb7c6c4c31bd83ca5414d85ef25a83">const_iterator</a> <a class="code hl_function" href="classyoriito_1_1StructData_1_1PropertiesView.html#a0d4a95b50202ac16c0ef524184e9753e">begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> map_-&gt;begin(); }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData_1_1PropertiesView.html#a7e768f81c78f7661e208969d22755e89">  123</a></span>    <a class="code hl_typedef" href="classyoriito_1_1StructData_1_1PropertiesView.html#a0dbb7c6c4c31bd83ca5414d85ef25a83">const_iterator</a> <a class="code hl_function" href="classyoriito_1_1StructData_1_1PropertiesView.html#a7e768f81c78f7661e208969d22755e89">end</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> map_-&gt;end(); }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData_1_1PropertiesView.html#a9dbb4dae3bba91c2aa45b34a9b926385">  137</a></span>    <a class="code hl_typedef" href="classyoriito_1_1StructData_1_1PropertiesView.html#aaf648457b89b5b8d54064cd9b7c802d4">size_type</a> <a class="code hl_function" href="classyoriito_1_1StructData_1_1PropertiesView.html#a9dbb4dae3bba91c2aa45b34a9b926385">size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> map_-&gt;size(); }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData_1_1PropertiesView.html#a01fbe79bd2a660b822a8c00e87905768">  151</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classyoriito_1_1StructData_1_1PropertiesView.html#a01fbe79bd2a660b822a8c00e87905768">empty</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> map_-&gt;empty(); }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="foldopen" id="foldopen00167" data-start="{" data-end="}">
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData_1_1PropertiesView.html#aae79b50209740712cf4867aecb360b7d">  167</a></span>    <a class="code hl_typedef" href="classyoriito_1_1StructData_1_1PropertiesView.html#a0dbb7c6c4c31bd83ca5414d85ef25a83">const_iterator</a> <a class="code hl_function" href="classyoriito_1_1StructData_1_1PropertiesView.html#aae79b50209740712cf4867aecb360b7d">find</a>(<span class="keyword">const</span> std::string&amp; key)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>      <span class="keywordflow">return</span> map_-&gt;find(key);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
+</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData_1_1PropertiesView.html#a158c7fd06342416c930e73db40639bb0">  184</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a>&amp; <a class="code hl_function" href="classyoriito_1_1StructData_1_1PropertiesView.html#a158c7fd06342416c930e73db40639bb0">at</a>(<span class="keyword">const</span> std::string&amp; key)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> map_-&gt;at(key); }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>   <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData_1_1PropertiesView.html#ae46b6d0f76c95720e99d0a99ab5bf44c">  187</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classyoriito_1_1StructData.html">StructData</a>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classyoriito_1_1StructData_1_1PropertiesView.html">PropertiesView</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="classyoriito_1_1StructData_1_1PropertiesView.html#aaa234db4c0da92315d8a8a9b5026826b">MapType</a>&amp; map) : map_(&amp;map) {}</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="classyoriito_1_1StructData_1_1PropertiesView.html#aaa234db4c0da92315d8a8a9b5026826b">MapType</a>* map_;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  };</div>
+</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData.html#a160da6af63c31b1f6bd956d1eb38096a">  207</a></span>  <a class="code hl_function" href="classyoriito_1_1StructData.html#a160da6af63c31b1f6bd956d1eb38096a">StructData</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="foldopen" id="foldopen00209" data-start="{" data-end="}">
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData.html#a5d88ae38356fbe042de4e768351e84e1">  209</a></span>  <a class="code hl_function" href="classyoriito_1_1StructData.html#a5d88ae38356fbe042de4e768351e84e1">StructData</a>(<span class="keyword">const</span> <a class="code hl_class" href="classyoriito_1_1StructData.html">StructData</a>&amp; other) {</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [key, value] : other.properties_) {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>      <span class="comment">// suppress unused return value warning (MISRA C++-2023 Rule 0.1.2) by</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      <span class="comment">// casting to void</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span><span class="keyword">&gt;</span>(properties_.emplace(key, <a class="code hl_function" href="namespaceyoriito.html#ab728f1b5de548d0bf29214005ed8293b">CloneValueType</a>(value)));</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  }</div>
+</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData.html#a924847ce34d8d9788a654a2cb9a90390">  217</a></span>  <a class="code hl_function" href="classyoriito_1_1StructData.html#a924847ce34d8d9788a654a2cb9a90390">StructData</a>(<a class="code hl_class" href="classyoriito_1_1StructData.html">StructData</a>&amp;&amp;) noexcept = default;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData.html#a8cbc9d724a2442d09c1f7a2c1717e175">  218</a></span>  <a class="code hl_class" href="classyoriito_1_1StructData.html">StructData</a>&amp; operator=(<a class="code hl_class" href="classyoriito_1_1StructData.html">StructData</a>&amp;&amp;) noexcept = default;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="foldopen" id="foldopen00236" data-start="{" data-end="}">
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData.html#a2201f92cfc246f085c5ea0f30b70dab8">  236</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1StructData.html#a2201f92cfc246f085c5ea0f30b70dab8">SetProperty</a>(std::<span class="keywordtype">string</span> key, <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> value) {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="comment">// suppress unused return value warning (MISRA C++-2023 Rule 0.1.2) by</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="comment">// casting to void</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span><span class="keyword">&gt;</span>(</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      properties_.insert_or_assign(std::move(key), std::move(value)));</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  }</div>
+</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData.html#a3710323556da4c8a5266727dbb295e34">  256</a></span>  <a class="code hl_class" href="classyoriito_1_1StructData_1_1PropertiesView.html">PropertiesView</a> <a class="code hl_function" href="classyoriito_1_1StructData.html#a3710323556da4c8a5266727dbb295e34">GetProperties</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_class" href="classyoriito_1_1StructData_1_1PropertiesView.html">PropertiesView</a>(properties_); }</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="foldopen" id="foldopen00272" data-start="{" data-end="};">
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData.html#a05a6e83d98db00eee425162acdebc9b4">  272</a></span>  <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code hl_friend" href="classyoriito_1_1StructData.html#a05a6e83d98db00eee425162acdebc9b4">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classyoriito_1_1StructData.html">StructData</a>&amp; lhs, <span class="keyword">const</span> <a class="code hl_class" href="classyoriito_1_1StructData.html">StructData</a>&amp; rhs) {</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keywordflow">if</span> (lhs.properties_.size() != rhs.properties_.size()) {</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    }</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordflow">return</span> std::all_of(lhs.properties_.begin(), lhs.properties_.end(),</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                       [&amp;rhs](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; pair) {</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                         auto it = rhs.properties_.find(pair.first);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                         return it != rhs.properties_.end() &amp;&amp;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                                ValueTypeEquals(it-&gt;second, pair.second);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                       });</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  }</div>
+</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="foldopen" id="foldopen00299" data-start="{" data-end="};">
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno"><a class="line" href="classyoriito_1_1StructData.html#ac5d874e2fd5b65d85d2fac97671474b0">  299</a></span>  <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code hl_friend" href="classyoriito_1_1StructData.html#ac5d874e2fd5b65d85d2fac97671474b0">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classyoriito_1_1StructData.html">StructData</a>&amp; lhs, <span class="keyword">const</span> <a class="code hl_class" href="classyoriito_1_1StructData.html">StructData</a>&amp; rhs) {</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <span class="keywordflow">return</span> !(lhs == rhs);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  }</div>
+</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  std::unordered_map&lt;std::string, ValueType&gt; properties_;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>};</div>
+</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="foldopen" id="foldopen00307" data-start="{" data-end="}">
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1detail.html">  307</a></span><span class="keyword">namespace </span>detail {</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="keyword">struct </span>CloneVisitor {</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> operator()(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceyoriito.html#a716fc18835252e6cfadf5f4cc99edf20">StructDataPtr</a>&amp; arg)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordflow">if</span> (!arg) {</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespaceyoriito.html#a716fc18835252e6cfadf5f4cc99edf20">StructDataPtr</a>{};</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    }</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="keywordflow">return</span> std::make_unique&lt;StructData&gt;(*arg);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  }</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> operator()(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceyoriito.html#a783443fe928f337b3fe8a15b0dee5243">StructDataArray</a>&amp; arg)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    <a class="code hl_typedef" href="namespaceyoriito.html#a783443fe928f337b3fe8a15b0dee5243">StructDataArray</a> cloned;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    cloned.reserve(arg.size());</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elem : arg) {</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>      <span class="keywordflow">if</span> (!elem) {</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        cloned.push_back(<a class="code hl_typedef" href="namespaceyoriito.html#a716fc18835252e6cfadf5f4cc99edf20">StructDataPtr</a>{});</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        cloned.push_back(std::make_unique&lt;StructData&gt;(*elem));</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>      }</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="keywordflow">return</span> cloned;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  }</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> operator()(<span class="keyword">const</span> T&amp; arg)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="keywordflow">return</span> arg;</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  }</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>};</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>}  <span class="comment">// namespace detail</span></div>
+</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="foldopen" id="foldopen00339" data-start="{" data-end="}">
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="namespaceyoriito.html#ab728f1b5de548d0bf29214005ed8293b">  339</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> <a class="code hl_function" href="namespaceyoriito.html#ab728f1b5de548d0bf29214005ed8293b">CloneValueType</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a>&amp; v) {</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  <span class="keywordflow">return</span> std::visit(detail::CloneVisitor{}, v);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>}</div>
+</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
+<div class="foldopen" id="foldopen00343" data-start="{" data-end="}">
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="namespaceyoriito.html#aef560bbccabb7fce5a7832503d52d713">  343</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceyoriito.html#aef560bbccabb7fce5a7832503d52d713">ValueTypeEquals</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a>&amp; lhs, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a>&amp; rhs) {</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keywordflow">if</span> (lhs.index() != rhs.index()) {</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  }</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  <span class="keywordflow">if</span> (std::holds_alternative&lt;StructDataPtr&gt;(lhs)) {</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; left_ptr = std::get&lt;StructDataPtr&gt;(lhs);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; right_ptr = std::get&lt;StructDataPtr&gt;(rhs);</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <span class="keywordflow">if</span> (!left_ptr || !right_ptr) {</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>      <span class="keywordflow">return</span> !left_ptr &amp;&amp; !right_ptr;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    }</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    <span class="keywordflow">return</span> *left_ptr == *right_ptr;</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  }</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  <span class="keywordflow">if</span> (std::holds_alternative&lt;StructDataArray&gt;(lhs)) {</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; left_array = std::get&lt;StructDataArray&gt;(lhs);</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; right_array = std::get&lt;StructDataArray&gt;(rhs);</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="keywordflow">if</span> (left_array.size() != right_array.size()) {</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    }</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> array_size = left_array.size();</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; array_size; ++i) {</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; left_ptr = left_array[i];</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; right_ptr = right_array[i];</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>      <span class="keywordflow">if</span> (!left_ptr || !right_ptr) {</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        <span class="keywordflow">if</span> (left_ptr || right_ptr) {</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        }</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>      }</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>      <span class="keywordflow">if</span> (*left_ptr != *right_ptr) {</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>      }</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    }</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>  }</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>  <span class="keywordflow">return</span> lhs == rhs;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>}</div>
+</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
+<div class="foldopen" id="foldopen00386" data-start="{" data-end="}">
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno"><a class="line" href="namespaceyoriito.html#acb501b779790fa8089644612cf0681c6">  386</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> <a class="code hl_function" href="namespaceyoriito.html#acb501b779790fa8089644612cf0681c6">string_view_then_copy</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a>&amp; v) {</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>  <span class="comment">// string_view is just a view to a real string.</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>  <span class="comment">// So, it should be stored as string.</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  <span class="keywordflow">if</span> (std::holds_alternative&lt;std::string_view&gt;(v)) {</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="keywordflow">return</span> std::string(std::get&lt;std::string_view&gt;(v));</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceyoriito.html#ab728f1b5de548d0bf29214005ed8293b">CloneValueType</a>(v);</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>  }</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>}</div>
+</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>}  <span class="comment">// namespace yoriito</span></div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="preprocessor">#endif  </span><span class="comment">// COMMON_DATABROKER_TYPE_H_</span></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_1_1PropertiesView_html"><div class="ttname"><a href="classyoriito_1_1StructData_1_1PropertiesView.html">yoriito::StructData::PropertiesView</a></div><div class="ttdoc">Read-only properties view with STL container-compatible interface.</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00091">databroker_type.h:91</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_1_1PropertiesView_html_a01fbe79bd2a660b822a8c00e87905768"><div class="ttname"><a href="classyoriito_1_1StructData_1_1PropertiesView.html#a01fbe79bd2a660b822a8c00e87905768">yoriito::StructData::PropertiesView::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdoc">Checks whether the properties are empty.</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00151">databroker_type.h:151</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_1_1PropertiesView_html_a0d4a95b50202ac16c0ef524184e9753e"><div class="ttname"><a href="classyoriito_1_1StructData_1_1PropertiesView.html#a0d4a95b50202ac16c0ef524184e9753e">yoriito::StructData::PropertiesView::begin</a></div><div class="ttdeci">const_iterator begin() const</div><div class="ttdoc">Returns an iterator to the beginning of the properties.</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00109">databroker_type.h:109</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_1_1PropertiesView_html_a0dbb7c6c4c31bd83ca5414d85ef25a83"><div class="ttname"><a href="classyoriito_1_1StructData_1_1PropertiesView.html#a0dbb7c6c4c31bd83ca5414d85ef25a83">yoriito::StructData::PropertiesView::const_iterator</a></div><div class="ttdeci">MapType::const_iterator const_iterator</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00094">databroker_type.h:94</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_1_1PropertiesView_html_a158c7fd06342416c930e73db40639bb0"><div class="ttname"><a href="classyoriito_1_1StructData_1_1PropertiesView.html#a158c7fd06342416c930e73db40639bb0">yoriito::StructData::PropertiesView::at</a></div><div class="ttdeci">const ValueType &amp; at(const std::string &amp;key) const</div><div class="ttdoc">Retrieves the value of a property by key.</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00184">databroker_type.h:184</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_1_1PropertiesView_html_a7e768f81c78f7661e208969d22755e89"><div class="ttname"><a href="classyoriito_1_1StructData_1_1PropertiesView.html#a7e768f81c78f7661e208969d22755e89">yoriito::StructData::PropertiesView::end</a></div><div class="ttdeci">const_iterator end() const</div><div class="ttdoc">Returns an iterator to the end of the properties.</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00123">databroker_type.h:123</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_1_1PropertiesView_html_a9dbb4dae3bba91c2aa45b34a9b926385"><div class="ttname"><a href="classyoriito_1_1StructData_1_1PropertiesView.html#a9dbb4dae3bba91c2aa45b34a9b926385">yoriito::StructData::PropertiesView::size</a></div><div class="ttdeci">size_type size() const</div><div class="ttdoc">Returns the number of stored properties.</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00137">databroker_type.h:137</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_1_1PropertiesView_html_aaa234db4c0da92315d8a8a9b5026826b"><div class="ttname"><a href="classyoriito_1_1StructData_1_1PropertiesView.html#aaa234db4c0da92315d8a8a9b5026826b">yoriito::StructData::PropertiesView::MapType</a></div><div class="ttdeci">std::unordered_map&lt; std::string, ValueType &gt; MapType</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00093">databroker_type.h:93</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_1_1PropertiesView_html_aae79b50209740712cf4867aecb360b7d"><div class="ttname"><a href="classyoriito_1_1StructData_1_1PropertiesView.html#aae79b50209740712cf4867aecb360b7d">yoriito::StructData::PropertiesView::find</a></div><div class="ttdeci">const_iterator find(const std::string &amp;key) const</div><div class="ttdoc">Finds a property by key.</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00167">databroker_type.h:167</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_1_1PropertiesView_html_aaf648457b89b5b8d54064cd9b7c802d4"><div class="ttname"><a href="classyoriito_1_1StructData_1_1PropertiesView.html#aaf648457b89b5b8d54064cd9b7c802d4">yoriito::StructData::PropertiesView::size_type</a></div><div class="ttdeci">MapType::size_type size_type</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00095">databroker_type.h:95</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_html"><div class="ttname"><a href="classyoriito_1_1StructData.html">yoriito::StructData</a></div><div class="ttdoc">Property container for structured data.</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00082">databroker_type.h:82</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_html_a05a6e83d98db00eee425162acdebc9b4"><div class="ttname"><a href="classyoriito_1_1StructData.html#a05a6e83d98db00eee425162acdebc9b4">yoriito::StructData::operator==</a></div><div class="ttdeci">friend bool operator==(const StructData &amp;lhs, const StructData &amp;rhs)</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00272">databroker_type.h:272</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_html_a160da6af63c31b1f6bd956d1eb38096a"><div class="ttname"><a href="classyoriito_1_1StructData.html#a160da6af63c31b1f6bd956d1eb38096a">yoriito::StructData::StructData</a></div><div class="ttdeci">StructData()=default</div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_html_a2201f92cfc246f085c5ea0f30b70dab8"><div class="ttname"><a href="classyoriito_1_1StructData.html#a2201f92cfc246f085c5ea0f30b70dab8">yoriito::StructData::SetProperty</a></div><div class="ttdeci">void SetProperty(std::string key, ValueType value)</div><div class="ttdoc">Sets a property in the structured data.</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00236">databroker_type.h:236</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_html_a3710323556da4c8a5266727dbb295e34"><div class="ttname"><a href="classyoriito_1_1StructData.html#a3710323556da4c8a5266727dbb295e34">yoriito::StructData::GetProperties</a></div><div class="ttdeci">PropertiesView GetProperties() const</div><div class="ttdoc">Retrieves all properties in the structured data.</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00256">databroker_type.h:256</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_html_a5d88ae38356fbe042de4e768351e84e1"><div class="ttname"><a href="classyoriito_1_1StructData.html#a5d88ae38356fbe042de4e768351e84e1">yoriito::StructData::StructData</a></div><div class="ttdeci">StructData(const StructData &amp;other)</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00209">databroker_type.h:209</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_html_a924847ce34d8d9788a654a2cb9a90390"><div class="ttname"><a href="classyoriito_1_1StructData.html#a924847ce34d8d9788a654a2cb9a90390">yoriito::StructData::StructData</a></div><div class="ttdeci">StructData(StructData &amp;&amp;) noexcept=default</div></div>
+<div class="ttc" id="aclassyoriito_1_1StructData_html_ac5d874e2fd5b65d85d2fac97671474b0"><div class="ttname"><a href="classyoriito_1_1StructData.html#ac5d874e2fd5b65d85d2fac97671474b0">yoriito::StructData::operator!=</a></div><div class="ttdeci">friend bool operator!=(const StructData &amp;lhs, const StructData &amp;rhs)</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00299">databroker_type.h:299</a></div></div>
 <div class="ttc" id="anamespaceyoriito_html"><div class="ttname"><a href="namespaceyoriito.html">yoriito</a></div><div class="ttdoc">Namespace for yoriito common interfaces and types.</div></div>
-<div class="ttc" id="anamespaceyoriito_html_a45b69add6c5c3cb7d17b1cc939f91c31"><div class="ttname"><a href="namespaceyoriito.html#a45b69add6c5c3cb7d17b1cc939f91c31">yoriito::ValueType</a></div><div class="ttdeci">std::variant&lt; std::monostate, std::string, std::string_view, bool, int8_t, int16_t, int32_t, int64_t, uint8_t, uint16_t, uint32_t, uint64_t, float, double, std::vector&lt; std::string &gt;, std::vector&lt; bool &gt;, std::vector&lt; int8_t &gt;, std::vector&lt; int16_t &gt;, std::vector&lt; int32_t &gt;, std::vector&lt; int64_t &gt;, std::vector&lt; uint8_t &gt;, std::vector&lt; uint16_t &gt;, std::vector&lt; uint32_t &gt;, std::vector&lt; uint64_t &gt;, std::vector&lt; float &gt;, std::vector&lt; double &gt; &gt; ValueType</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00034">databroker_type.h:60</a></div></div>
-<div class="ttc" id="anamespaceyoriito_html_a64850bae2e076ef44be933303ed2d5a3"><div class="ttname"><a href="namespaceyoriito.html#a64850bae2e076ef44be933303ed2d5a3">yoriito::string_view_then_copy</a></div><div class="ttdeci">static ValueType string_view_then_copy(const ValueType &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00062">databroker_type.h:62</a></div></div>
+<div class="ttc" id="anamespaceyoriito_html_a5c9a1b83e14d9b003b865a8f40201e0a"><div class="ttname"><a href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">yoriito::ValueType</a></div><div class="ttdeci">std::variant&lt; std::monostate, std::string, std::string_view, bool, int8_t, int16_t, int32_t, int64_t, uint8_t, uint16_t, uint32_t, uint64_t, float, double, std::vector&lt; std::string &gt;, std::vector&lt; bool &gt;, std::vector&lt; int8_t &gt;, std::vector&lt; int16_t &gt;, std::vector&lt; int32_t &gt;, std::vector&lt; int64_t &gt;, std::vector&lt; uint8_t &gt;, std::vector&lt; uint16_t &gt;, std::vector&lt; uint32_t &gt;, std::vector&lt; uint64_t &gt;, std::vector&lt; float &gt;, std::vector&lt; double &gt;, StructDataPtr, StructDataArray &gt; ValueType</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00043">databroker_type.h:70</a></div></div>
+<div class="ttc" id="anamespaceyoriito_html_a716fc18835252e6cfadf5f4cc99edf20"><div class="ttname"><a href="namespaceyoriito.html#a716fc18835252e6cfadf5f4cc99edf20">yoriito::StructDataPtr</a></div><div class="ttdeci">std::unique_ptr&lt; StructData &gt; StructDataPtr</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00040">databroker_type.h:40</a></div></div>
+<div class="ttc" id="anamespaceyoriito_html_a783443fe928f337b3fe8a15b0dee5243"><div class="ttname"><a href="namespaceyoriito.html#a783443fe928f337b3fe8a15b0dee5243">yoriito::StructDataArray</a></div><div class="ttdeci">std::vector&lt; StructDataPtr &gt; StructDataArray</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00041">databroker_type.h:41</a></div></div>
+<div class="ttc" id="anamespaceyoriito_html_ab728f1b5de548d0bf29214005ed8293b"><div class="ttname"><a href="namespaceyoriito.html#ab728f1b5de548d0bf29214005ed8293b">yoriito::CloneValueType</a></div><div class="ttdeci">ValueType CloneValueType(const ValueType &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00339">databroker_type.h:339</a></div></div>
+<div class="ttc" id="anamespaceyoriito_html_acb501b779790fa8089644612cf0681c6"><div class="ttname"><a href="namespaceyoriito.html#acb501b779790fa8089644612cf0681c6">yoriito::string_view_then_copy</a></div><div class="ttdeci">ValueType string_view_then_copy(const ValueType &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00386">databroker_type.h:386</a></div></div>
+<div class="ttc" id="anamespaceyoriito_html_aef560bbccabb7fce5a7832503d52d713"><div class="ttname"><a href="namespaceyoriito.html#aef560bbccabb7fce5a7832503d52d713">yoriito::ValueTypeEquals</a></div><div class="ttdeci">bool ValueTypeEquals(const ValueType &amp;lhs, const ValueType &amp;rhs)</div><div class="ttdef"><b>Definition</b> <a href="databroker__type_8h_source.html#l00343">databroker_type.h:343</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/chassis/axle/row2/wheel/left/brake/Signal_IsFluidLevelLow.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/chassis/axle/row2/wheel/left/brake/Signal_IsFluidLevelLow.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('row2_2wheel_2left_2brake_2Signal__IsFl
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsFluidLevelLow.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="row2_2wheel_2left_2brake_2Signal__IsFluidLevelLow_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="row2_2wheel_2left_2brake_2Signal__IsFluidLevelLow_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="row2_2wheel_2left_2brake_2Signal__IsFluidLevelLow_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow" id="r_namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow.html">yoriito::vehicle::chassis::axle::row2::wheel::left::brake::isfluidlevellow</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Chassis.Axle.Row2.Wheel.Left.Brake.IsFluidLevelLow signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -140,24 +141,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake" id="r_namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake.html">yoriito::vehicle::chassis::axle::row2::wheel::left::brake</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1_01isfluidlevellow" id="r_namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1_01isfluidlevellow"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1_01isfluidlevellow.html">yoriito::vehicle::chassis::axle::row2::wheel::left::brake:: isfluidlevellow</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow" id="r_namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow.html">yoriito::vehicle::chassis::axle::row2::wheel::left::brake::isfluidlevellow</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4b799f643dccd57e63e8f696d46ba47c" id="r_a4b799f643dccd57e63e8f696d46ba47c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1_01isfluidlevellow.html#a4b799f643dccd57e63e8f696d46ba47c">yoriito::vehicle::chassis::axle::row2::wheel::left::brake:: isfluidlevellow::Get</a> ()</td></tr>
-<tr class="separator:a4b799f643dccd57e63e8f696d46ba47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefd19726706b65e9d1fbb56520e5e88b" id="r_aefd19726706b65e9d1fbb56520e5e88b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1_01isfluidlevellow.html#aefd19726706b65e9d1fbb56520e5e88b">yoriito::vehicle::chassis::axle::row2::wheel::left::brake:: isfluidlevellow::Subscribe</a> ()</td></tr>
-<tr class="separator:aefd19726706b65e9d1fbb56520e5e88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed3bce63b629de15fb61c6c3ba618a4e" id="r_aed3bce63b629de15fb61c6c3ba618a4e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1_01isfluidlevellow.html#aed3bce63b629de15fb61c6c3ba618a4e">yoriito::vehicle::chassis::axle::row2::wheel::left::brake:: isfluidlevellow::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:aed3bce63b629de15fb61c6c3ba618a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac648da781ce6093e67df22d37488a0" id="r_aaac648da781ce6093e67df22d37488a0"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1_01isfluidlevellow.html#aaac648da781ce6093e67df22d37488a0">yoriito::vehicle::chassis::axle::row2::wheel::left::brake:: isfluidlevellow::Inspect</a> ()</td></tr>
-<tr class="separator:aaac648da781ce6093e67df22d37488a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c83abef408a87df9dea8a6645892b15" id="r_a4c83abef408a87df9dea8a6645892b15"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow.html#a4c83abef408a87df9dea8a6645892b15">yoriito::vehicle::chassis::axle::row2::wheel::left::brake::isfluidlevellow::Get</a> ()</td></tr>
+<tr class="separator:a4c83abef408a87df9dea8a6645892b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4e480ccad60c349add36080b33ffa6" id="r_aab4e480ccad60c349add36080b33ffa6"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow.html#aab4e480ccad60c349add36080b33ffa6">yoriito::vehicle::chassis::axle::row2::wheel::left::brake::isfluidlevellow::Subscribe</a> ()</td></tr>
+<tr class="separator:aab4e480ccad60c349add36080b33ffa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba06d4afc841fa3feb678e13ca3a1299" id="r_aba06d4afc841fa3feb678e13ca3a1299"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow.html#aba06d4afc841fa3feb678e13ca3a1299">yoriito::vehicle::chassis::axle::row2::wheel::left::brake::isfluidlevellow::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:aba06d4afc841fa3feb678e13ca3a1299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415797e23b7945dc97fae8ed23b4ee4f" id="r_a415797e23b7945dc97fae8ed23b4ee4f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow.html#a415797e23b7945dc97fae8ed23b4ee4f">yoriito::vehicle::chassis::axle::row2::wheel::left::brake::isfluidlevellow::Inspect</a> ()</td></tr>
+<tr class="separator:a415797e23b7945dc97fae8ed23b4ee4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a6099fd9d78715bfdf48554a2f57b3967" id="r_a6099fd9d78715bfdf48554a2f57b3967"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1_01isfluidlevellow.html#a6099fd9d78715bfdf48554a2f57b3967">yoriito::vehicle::chassis::axle::row2::wheel::left::brake:: isfluidlevellow::VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_LEFT_BRAKE_ISFLUIDLEVELLOW</a></td></tr>
-<tr class="separator:a6099fd9d78715bfdf48554a2f57b3967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7437745d1d9f8fb944b9e0161ae7e664" id="r_a7437745d1d9f8fb944b9e0161ae7e664"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1brake_1_1isfluidlevellow.html#a7437745d1d9f8fb944b9e0161ae7e664">yoriito::vehicle::chassis::axle::row2::wheel::left::brake::isfluidlevellow::VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_LEFT_BRAKE_ISFLUIDLEVELLOW</a></td></tr>
+<tr class="separator:a7437745d1d9f8fb944b9e0161ae7e664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

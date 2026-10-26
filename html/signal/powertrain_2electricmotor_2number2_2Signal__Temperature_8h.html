@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/electricmotor/number2/Signal_Temperature.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/electricmotor/number2/Signal_Temperature.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('powertrain_2electricmotor_2number2_2Si
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Temperature.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="powertrain_2electricmotor_2number2_2Signal__Temperature_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="powertrain_2electricmotor_2number2_2Signal__Temperature_8h__dep__incl.svg" width="467" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="powertrain_2electricmotor_2number2_2Signal__Temperature_8h_source.html">Go to the source code of this file.</a></p>
@@ -137,14 +141,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a603b6e07b2e54a44682c45bf64212a88" id="r_a603b6e07b2e54a44682c45bf64212a88"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1temperature.html#a603b6e07b2e54a44682c45bf64212a88">yoriito::vehicle::powertrain::electricmotor::number2::temperature::Get</a> ()</td></tr>
-<tr class="separator:a603b6e07b2e54a44682c45bf64212a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c610ad598f999d2497abd8737ecd45" id="r_a58c610ad598f999d2497abd8737ecd45"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1temperature.html#a58c610ad598f999d2497abd8737ecd45">yoriito::vehicle::powertrain::electricmotor::number2::temperature::Subscribe</a> ()</td></tr>
-<tr class="separator:a58c610ad598f999d2497abd8737ecd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad405f9265b80c63879818ac2dd410851" id="r_ad405f9265b80c63879818ac2dd410851"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1temperature.html#ad405f9265b80c63879818ac2dd410851">yoriito::vehicle::powertrain::electricmotor::number2::temperature::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:ad405f9265b80c63879818ac2dd410851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f56b43551559d13950251e15da2e6e7" id="r_a6f56b43551559d13950251e15da2e6e7"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1temperature.html#a6f56b43551559d13950251e15da2e6e7">yoriito::vehicle::powertrain::electricmotor::number2::temperature::Inspect</a> ()</td></tr>
-<tr class="separator:a6f56b43551559d13950251e15da2e6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54d0e7374b453846d8362c8358ac8ba" id="r_ab54d0e7374b453846d8362c8358ac8ba"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1temperature.html#ab54d0e7374b453846d8362c8358ac8ba">yoriito::vehicle::powertrain::electricmotor::number2::temperature::Get</a> ()</td></tr>
+<tr class="separator:ab54d0e7374b453846d8362c8358ac8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be52672bdf0e8c92c66d9e446ac4f56" id="r_a3be52672bdf0e8c92c66d9e446ac4f56"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1temperature.html#a3be52672bdf0e8c92c66d9e446ac4f56">yoriito::vehicle::powertrain::electricmotor::number2::temperature::Subscribe</a> ()</td></tr>
+<tr class="separator:a3be52672bdf0e8c92c66d9e446ac4f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa885be3c5729316bda9e995d8bf54b5c" id="r_aa885be3c5729316bda9e995d8bf54b5c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1temperature.html#aa885be3c5729316bda9e995d8bf54b5c">yoriito::vehicle::powertrain::electricmotor::number2::temperature::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:aa885be3c5729316bda9e995d8bf54b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2c5968f01b12a9205ca0da4372bd68" id="r_a3a2c5968f01b12a9205ca0da4372bd68"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1temperature.html#a3a2c5968f01b12a9205ca0da4372bd68">yoriito::vehicle::powertrain::electricmotor::number2::temperature::Inspect</a> ()</td></tr>
+<tr class="separator:a3a2c5968f01b12a9205ca0da4372bd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

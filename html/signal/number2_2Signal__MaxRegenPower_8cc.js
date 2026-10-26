@@ -1,5 +1,5 @@
 var number2_2Signal__MaxRegenPower_8cc =
 [
-    [ "Get", "number2_2Signal__MaxRegenPower_8cc.html#a36a0285ae41ac910a0cf1ad220cef6b4", null ],
-    [ "Inspect", "number2_2Signal__MaxRegenPower_8cc.html#af0d29dd86f187cebea82b942029f8a0c", null ]
+    [ "Get", "number2_2Signal__MaxRegenPower_8cc.html#a35784ab57ea7a43c6fc9beee65e71ce2", null ],
+    [ "Inspect", "number2_2Signal__MaxRegenPower_8cc.html#a09d4f6fab704ffa61dea2ef6f089accd", null ]
 ];

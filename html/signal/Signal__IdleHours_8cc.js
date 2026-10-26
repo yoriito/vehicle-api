@@ -1,7 +1,7 @@
 var Signal__IdleHours_8cc =
 [
-    [ "Get", "Signal__IdleHours_8cc.html#ab09ea79bbdefbb340376fd77df30503e", null ],
-    [ "Inspect", "Signal__IdleHours_8cc.html#adc1b2608c3e8921770f7289802fcae17", null ],
-    [ "Subscribe", "Signal__IdleHours_8cc.html#ae76563dd9b9a82f0fc53e4e53f21d1b2", null ],
-    [ "UnSubscribe", "Signal__IdleHours_8cc.html#ab5ba7f676181017861d745c31065fb54", null ]
+    [ "Get", "Signal__IdleHours_8cc.html#af7beb7aa424c973c8a7dcfc06379e89f", null ],
+    [ "Inspect", "Signal__IdleHours_8cc.html#a6a6b9bfff6f572281717f526d5a81f07", null ],
+    [ "Subscribe", "Signal__IdleHours_8cc.html#a08b81f1b7ba7ac3803f121bec711cb0b", null ],
+    [ "UnSubscribe", "Signal__IdleHours_8cc.html#a9c52a30707e0decb2962966f988b6a84", null ]
 ];

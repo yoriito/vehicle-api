@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - common: /home/runner/work/vehicle-api/vehicle-api/common/databroker/consumer_get_response.h Source File</title>
+<title>Yoriito Vehicle API - common: /work/common/databroker/consumer_get_response.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('consumer__get__response_8h_source.html
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_RESPONSE_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_RESPONSE_H_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef COMMON_DATABROKER_CONSUMER_GET_RESPONSE_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define COMMON_DATABROKER_CONSUMER_GET_RESPONSE_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
@@ -136,29 +136,35 @@ $(document).ready(function(){initNavTree('consumer__get__response_8h_source.html
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a70224c99b53ff29b568bf5bbae1205c0">   57</a></span>  <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a70224c99b53ff29b568bf5bbae1205c0">ConsumerGetResponse</a>() = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a3ca48d194740427240c39ec704d1a18a">   73</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a3ca48d194740427240c39ec704d1a18a">ConsumerGetResponse</a>(</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      std::vector&lt;yoriito::databroker::ConsumerGetDataPoint&gt;&amp;&amp; data_points)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#afb0565b67f340f12e43e3ee5c4d356c6">   73</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#afb0565b67f340f12e43e3ee5c4d356c6">ConsumerGetResponse</a>(</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    std::vector&lt;yoriito::databroker::ConsumerGetDataPoint&gt; data_points)</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      : data_points_(std::move(data_points)) {}</div>
 </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="foldopen" id="foldopen00090" data-start="{" data-end="}">
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a9ccfa0e213ca7e0094a8b9948f0a3ae7">   90</a></span>  <span class="keyword">const</span> std::vector&lt;ConsumerGetDataPoint&gt;&amp; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a9ccfa0e213ca7e0094a8b9948f0a3ae7">GetDataPoints</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a0d1c55ebed8a03565b20655bb9c71322">   90</a></span>  <span class="keyword">const</span> std::vector&lt;ConsumerGetDataPoint&gt;&amp; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a0d1c55ebed8a03565b20655bb9c71322">GetDataPoints</a>() const&amp; {</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">return</span> data_points_;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  }</div>
 </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  std::vector&lt;ConsumerGetDataPoint&gt; data_points_;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#aefaae30cd9a9c1e01c28c7fb10f323df">   93</a></span>  std::vector&lt;ConsumerGetDataPoint&gt; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#aefaae30cd9a9c1e01c28c7fb10f323df">GetDataPoints</a>() const&amp;&amp; {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">return</span> data_points_;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  }</div>
 </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}  <span class="comment">// namespace yoriito::databroker</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif  </span><span class="comment">// YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_GET_RESPONSE_H_</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  std::vector&lt;ConsumerGetDataPoint&gt; data_points_;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>};</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}  <span class="comment">// namespace yoriito::databroker</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif  </span><span class="comment">// COMMON_DATABROKER_CONSUMER_GET_RESPONSE_H_</span></div>
 <div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerGetResponse_html"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html">yoriito::databroker::ConsumerGetResponse</a></div><div class="ttdoc">Class representing a response containing datapoints retrieved by a DataBroker consumer.</div><div class="ttdef"><b>Definition</b> <a href="consumer__get__response_8h_source.html#l00043">consumer_get_response.h:43</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerGetResponse_html_a3ca48d194740427240c39ec704d1a18a"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a3ca48d194740427240c39ec704d1a18a">yoriito::databroker::ConsumerGetResponse::ConsumerGetResponse</a></div><div class="ttdeci">ConsumerGetResponse(std::vector&lt; yoriito::databroker::ConsumerGetDataPoint &gt; &amp;&amp;data_points)</div><div class="ttdef"><b>Definition</b> <a href="consumer__get__response_8h_source.html#l00073">consumer_get_response.h:73</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerGetResponse_html_a0d1c55ebed8a03565b20655bb9c71322"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a0d1c55ebed8a03565b20655bb9c71322">yoriito::databroker::ConsumerGetResponse::GetDataPoints</a></div><div class="ttdeci">const std::vector&lt; ConsumerGetDataPoint &gt; &amp; GetDataPoints() const &amp;</div><div class="ttdef"><b>Definition</b> <a href="consumer__get__response_8h_source.html#l00090">consumer_get_response.h:90</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerGetResponse_html_a70224c99b53ff29b568bf5bbae1205c0"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a70224c99b53ff29b568bf5bbae1205c0">yoriito::databroker::ConsumerGetResponse::ConsumerGetResponse</a></div><div class="ttdeci">ConsumerGetResponse()=delete</div><div class="ttdoc">Deleted default constructor.</div></div>
-<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerGetResponse_html_a9ccfa0e213ca7e0094a8b9948f0a3ae7"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#a9ccfa0e213ca7e0094a8b9948f0a3ae7">yoriito::databroker::ConsumerGetResponse::GetDataPoints</a></div><div class="ttdeci">const std::vector&lt; ConsumerGetDataPoint &gt; &amp; GetDataPoints() const</div><div class="ttdef"><b>Definition</b> <a href="consumer__get__response_8h_source.html#l00090">consumer_get_response.h:90</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerGetResponse_html_aefaae30cd9a9c1e01c28c7fb10f323df"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#aefaae30cd9a9c1e01c28c7fb10f323df">yoriito::databroker::ConsumerGetResponse::GetDataPoints</a></div><div class="ttdeci">std::vector&lt; ConsumerGetDataPoint &gt; GetDataPoints() const &amp;&amp;</div><div class="ttdef"><b>Definition</b> <a href="consumer__get__response_8h_source.html#l00093">consumer_get_response.h:93</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerGetResponse_html_afb0565b67f340f12e43e3ee5c4d356c6"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerGetResponse.html#afb0565b67f340f12e43e3ee5c4d356c6">yoriito::databroker::ConsumerGetResponse::ConsumerGetResponse</a></div><div class="ttdeci">ConsumerGetResponse(std::vector&lt; yoriito::databroker::ConsumerGetDataPoint &gt; data_points)</div><div class="ttdef"><b>Definition</b> <a href="consumer__get__response_8h_source.html#l00073">consumer_get_response.h:73</a></div></div>
 <div class="ttc" id="aconsumer__get__datapoint_8h_html"><div class="ttname"><a href="consumer__get__datapoint_8h.html">consumer_get_datapoint.h</a></div></div>
 <div class="ttc" id="anamespaceyoriito_1_1databroker_html"><div class="ttname"><a href="namespaceyoriito_1_1databroker.html">yoriito::databroker</a></div><div class="ttdoc">Namespace for DataBroker common interfaces and types.</div></div>
 </div><!-- fragment --></div><!-- contents -->

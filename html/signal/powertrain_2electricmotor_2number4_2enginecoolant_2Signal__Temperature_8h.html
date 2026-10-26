@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/electricmotor/number4/enginecoolant/Signal_Temperature.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/electricmotor/number4/enginecoolant/Signal_Temperature.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('powertrain_2electricmotor_2number4_2en
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Temperature.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="powertrain_2electricmotor_2number4_2enginecoolant_2Signal__Temperature_8h__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="powertrain_2electricmotor_2number4_2enginecoolant_2Signal__Temperature_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="powertrain_2electricmotor_2number4_2enginecoolant_2Signal__Temperature_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature.html">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::temperature</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.ElectricMotor.Number4.EngineCoolant.Temperature signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -136,24 +137,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant.html">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01temperature" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01temperature"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01temperature.html">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant:: temperature</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature.html">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::temperature</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5e43e439e21ac2c7d24b7862b6cd485e" id="r_a5e43e439e21ac2c7d24b7862b6cd485e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01temperature.html#a5e43e439e21ac2c7d24b7862b6cd485e">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant:: temperature::Get</a> ()</td></tr>
-<tr class="separator:a5e43e439e21ac2c7d24b7862b6cd485e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade626dd448a7eda6fe362ba6343bb7dc" id="r_ade626dd448a7eda6fe362ba6343bb7dc"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01temperature.html#ade626dd448a7eda6fe362ba6343bb7dc">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant:: temperature::Subscribe</a> ()</td></tr>
-<tr class="separator:ade626dd448a7eda6fe362ba6343bb7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0092ae03b8e90b5e81c56bbe393c891" id="r_af0092ae03b8e90b5e81c56bbe393c891"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01temperature.html#af0092ae03b8e90b5e81c56bbe393c891">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant:: temperature::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:af0092ae03b8e90b5e81c56bbe393c891"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8febfcdd0f36e72d78e79804fa7ffd69" id="r_a8febfcdd0f36e72d78e79804fa7ffd69"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01temperature.html#a8febfcdd0f36e72d78e79804fa7ffd69">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant:: temperature::Inspect</a> ()</td></tr>
-<tr class="separator:a8febfcdd0f36e72d78e79804fa7ffd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc13035a0507b4ccf6ee428056face7" id="r_a2cc13035a0507b4ccf6ee428056face7"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature.html#a2cc13035a0507b4ccf6ee428056face7">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::temperature::Get</a> ()</td></tr>
+<tr class="separator:a2cc13035a0507b4ccf6ee428056face7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92dba8833e6cf0a805d265a1f248d62f" id="r_a92dba8833e6cf0a805d265a1f248d62f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature.html#a92dba8833e6cf0a805d265a1f248d62f">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::temperature::Subscribe</a> ()</td></tr>
+<tr class="separator:a92dba8833e6cf0a805d265a1f248d62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680426226cb1735611db3cfa05f83999" id="r_a680426226cb1735611db3cfa05f83999"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature.html#a680426226cb1735611db3cfa05f83999">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::temperature::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:a680426226cb1735611db3cfa05f83999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ffc1879c3497bc636ef834531aa99c" id="r_a50ffc1879c3497bc636ef834531aa99c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature.html#a50ffc1879c3497bc636ef834531aa99c">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::temperature::Inspect</a> ()</td></tr>
+<tr class="separator:a50ffc1879c3497bc636ef834531aa99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a833a756ffabb7cd7c1c6f3f11aaf3da5" id="r_a833a756ffabb7cd7c1c6f3f11aaf3da5"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01temperature.html#a833a756ffabb7cd7c1c6f3f11aaf3da5">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant:: temperature::VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER4_ENGINECOOLANT_TEMPERATURE</a></td></tr>
-<tr class="separator:a833a756ffabb7cd7c1c6f3f11aaf3da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf39799542ba6f0e213c44c09ca3202" id="r_a3bf39799542ba6f0e213c44c09ca3202"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1temperature.html#a3bf39799542ba6f0e213c44c09ca3202">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::temperature::VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER4_ENGINECOOLANT_TEMPERATURE</a></td></tr>
+<tr class="separator:a3bf39799542ba6f0e213c44c09ca3202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

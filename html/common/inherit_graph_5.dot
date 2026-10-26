@@ -1,0 +1,16 @@
+digraph "Graphical Class Hierarchy"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="yoriito::databroker\l::BaseInspectData",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classyoriito_1_1databroker_1_1BaseInspectData.html",tooltip="Base class for inspecting datapoint metadata in the DataBroker."];
+  Node0 -> Node1 [id="edge7_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="yoriito::databroker\l::ConsumerInspectData",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classyoriito_1_1databroker_1_1ConsumerInspectData.html",tooltip="Class representing inspection data for a DataBroker consumer."];
+  Node0 -> Node2 [id="edge8_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="yoriito::databroker\l::ProducerDefineEntry",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classyoriito_1_1databroker_1_1ProducerDefineEntry.html",tooltip="Class representing a datapoint definition entry for a DataBroker producer."];
+  Node0 -> Node3 [id="edge9_Node000000_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="yoriito::databroker\l::ProducerInspectData",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classyoriito_1_1databroker_1_1ProducerInspectData.html",tooltip="Class representing inspection data for a DataBroker producer."];
+}

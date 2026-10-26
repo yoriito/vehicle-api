@@ -1,7 +1,7 @@
 var maximumchargingcurrent_2Signal__DC_8cc =
 [
-    [ "Get", "maximumchargingcurrent_2Signal__DC_8cc.html#ab1990b6648847d9d423fb2e842b0856c", null ],
-    [ "Inspect", "maximumchargingcurrent_2Signal__DC_8cc.html#ad5ab06ea62eceb700248e16bfdc9d386", null ],
-    [ "Subscribe", "maximumchargingcurrent_2Signal__DC_8cc.html#a793f8f2eebff0bd1dad126a7fdf4e3ec", null ],
-    [ "UnSubscribe", "maximumchargingcurrent_2Signal__DC_8cc.html#a4860f2c4132162eeee2b5ce2d1511bdd", null ]
+    [ "Get", "maximumchargingcurrent_2Signal__DC_8cc.html#a666c51bdfb55c1aa979c090ca8ed3c47", null ],
+    [ "Inspect", "maximumchargingcurrent_2Signal__DC_8cc.html#a8ccd18a41a7dacb2ed2d6a6c806002b6", null ],
+    [ "Subscribe", "maximumchargingcurrent_2Signal__DC_8cc.html#aeb860e25c2d6d40ddd000c2084f08a23", null ],
+    [ "UnSubscribe", "maximumchargingcurrent_2Signal__DC_8cc.html#a69e3603b8c9f97199b7a2e70945efa51", null ]
 ];

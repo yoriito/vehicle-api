@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/body/mirrors/passengerside/Signal_Tilt.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/body/mirrors/passengerside/Signal_Tilt.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,16 +106,20 @@ $(document).ready(function(){initNavTree('body_2mirrors_2passengerside_2Signal__
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Tilt.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="body_2mirrors_2passengerside_2Signal__Tilt_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="body_2mirrors_2passengerside_2Signal__Tilt_8h__dep__incl.svg" width="448" height="506"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="body_2mirrors_2passengerside_2Signal__Tilt_8h_source.html">Go to the source code of this file.</a></p>
@@ -138,16 +142,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa39ded580bb08effd102aec4d72eb849" id="r_aa39ded580bb08effd102aec4d72eb849"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; int8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1mirrors_1_1passengerside_1_1tilt.html#aa39ded580bb08effd102aec4d72eb849">yoriito::vehicle::body::mirrors::passengerside::tilt::Get</a> ()</td></tr>
-<tr class="separator:aa39ded580bb08effd102aec4d72eb849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4b7b5c825185e3363e916bb262ff85" id="r_afd4b7b5c825185e3363e916bb262ff85"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; int8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1mirrors_1_1passengerside_1_1tilt.html#afd4b7b5c825185e3363e916bb262ff85">yoriito::vehicle::body::mirrors::passengerside::tilt::Get</a> ()</td></tr>
+<tr class="separator:afd4b7b5c825185e3363e916bb262ff85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56ba385fead0385b6fdbcf7258b2aebb" id="r_a56ba385fead0385b6fdbcf7258b2aebb"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1mirrors_1_1passengerside_1_1tilt.html#a56ba385fead0385b6fdbcf7258b2aebb">yoriito::vehicle::body::mirrors::passengerside::tilt::Set</a> (const int8_t &amp;value)</td></tr>
 <tr class="separator:a56ba385fead0385b6fdbcf7258b2aebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0814c39d67019813e8be9c4366a7a6" id="r_a4b0814c39d67019813e8be9c4366a7a6"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1mirrors_1_1passengerside_1_1tilt.html#a4b0814c39d67019813e8be9c4366a7a6">yoriito::vehicle::body::mirrors::passengerside::tilt::Subscribe</a> ()</td></tr>
-<tr class="separator:a4b0814c39d67019813e8be9c4366a7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01b8ebb3085b65c93f8a3087b0411d7a" id="r_a01b8ebb3085b65c93f8a3087b0411d7a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1mirrors_1_1passengerside_1_1tilt.html#a01b8ebb3085b65c93f8a3087b0411d7a">yoriito::vehicle::body::mirrors::passengerside::tilt::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a01b8ebb3085b65c93f8a3087b0411d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ea376e407786b62ed83898f7fb8918d" id="r_a2ea376e407786b62ed83898f7fb8918d"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1mirrors_1_1passengerside_1_1tilt.html#a2ea376e407786b62ed83898f7fb8918d">yoriito::vehicle::body::mirrors::passengerside::tilt::Inspect</a> ()</td></tr>
-<tr class="separator:a2ea376e407786b62ed83898f7fb8918d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cfc8938573358528b40f57a98baf61" id="r_a59cfc8938573358528b40f57a98baf61"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; int8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1mirrors_1_1passengerside_1_1tilt.html#a59cfc8938573358528b40f57a98baf61">yoriito::vehicle::body::mirrors::passengerside::tilt::Subscribe</a> ()</td></tr>
+<tr class="separator:a59cfc8938573358528b40f57a98baf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e05064062a522cdb0a402a8175373f" id="r_a92e05064062a522cdb0a402a8175373f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1mirrors_1_1passengerside_1_1tilt.html#a92e05064062a522cdb0a402a8175373f">yoriito::vehicle::body::mirrors::passengerside::tilt::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; int8_t &gt; subscription_context)</td></tr>
+<tr class="separator:a92e05064062a522cdb0a402a8175373f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932152a968ea63b632e4d5592076e8e9" id="r_a932152a968ea63b632e4d5592076e8e9"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; int8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1mirrors_1_1passengerside_1_1tilt.html#a932152a968ea63b632e4d5592076e8e9">yoriito::vehicle::body::mirrors::passengerside::tilt::Inspect</a> ()</td></tr>
+<tr class="separator:a932152a968ea63b632e4d5592076e8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

@@ -1,17 +1,10 @@
 var namespaceyoriito_1_1vehicle_1_1body_1_1raindetection =
 [
     [ "intensity", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity.html#a593721b5549e5a7a41eb227002cfa214", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity.html#a1aee07259c8f43b3423366157006bc4b", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity.html#a02f62161a76e89529919470a2b2be7c4", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity.html#adb8eeb456f77ebb8f70e282f175fa642", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity.html#ab475501fe878e84ac5a3eb14b4c5e834", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity.html#a7452e3fbd9067d5e82fe835cb8dc3d02", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity.html#a68e26633f547efbd84c842ec19db28bb", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity.html#a41a4d62cae0555a867e41e7b46c0d27c", null ],
       [ "VEHICLE_BODY_RAINDETECTION_INTENSITY", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity.html#a5f7d6fa215cc4fc564cacad936d15880", null ]
-    ] ],
-    [ "intensity_availability_sensor", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity__availability__sensor.html#a3bce988a14a0ff8df88f847ce0192fc6", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity__availability__sensor.html#a4ce8cf7c4ec925b8b92c8dc8712891b8", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity__availability__sensor.html#a81315d299bec9480e5e57f63d66eabd1", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity__availability__sensor.html#ad0ce64f88286959ba440a16e6cada14d", null ],
-      [ "VEHICLE_BODY_RAINDETECTION_INTENSITY_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1body_1_1raindetection_1_1intensity__availability__sensor.html#aef143c298bb384ac83f62dfdc81a1625", null ]
     ] ]
 ];

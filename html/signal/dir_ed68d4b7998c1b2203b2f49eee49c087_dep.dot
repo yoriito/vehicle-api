@@ -1,0 +1,13 @@
+digraph "/work/signal/powertrain/tractionbattery/number1/cells/number3"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_befad03967cd671c6985cb64c845763c {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="cells", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_befad03967cd671c6985cb64c845763c.html",tooltip=""]
+  dir_ed68d4b7998c1b2203b2f49eee49c087 [label="number3", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_ed68d4b7998c1b2203b2f49eee49c087.html",tooltip=""];
+  }
+}

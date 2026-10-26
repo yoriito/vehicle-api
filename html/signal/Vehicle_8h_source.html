@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/Vehicle.h Source File</title>
+<title>Yoriito Vehicle API - signal: /work/signal/Vehicle.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,121 +117,94 @@ $(document).ready(function(){initNavTree('Vehicle_8h_source.html',''); initResiz
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef VEHICLE_H</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define VEHICLE_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef SIGNAL_VEHICLE_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define SIGNAL_VEHICLE_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__AverageSpeed_8h.html">Signal_AverageSpeed.h</a>&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__AverageSpeed__Availability__Sensor_8h.html">Signal_AverageSpeed_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__CargoVolume_8h.html">Signal_CargoVolume.h</a>&quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__CurbWeight_8h.html">Signal_CurbWeight.h</a>&quot;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__CurrentOverallWeight_8h.html">Signal_CurrentOverallWeight.h</a>&quot;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__CurrentOverallWeight__Availability__Sensor_8h.html">Signal_CurrentOverallWeight_Availability_Sensor.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__Acceleration_8h.html">Signal_Acceleration.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__AngularVelocity_8h.html">Signal_AngularVelocity.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__AverageSpeed_8h.html">Signal_AverageSpeed.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__CargoVolume_8h.html">Signal_CargoVolume.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__CurbWeight_8h.html">Signal_CurbWeight.h</a>&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__CurrentOverallWeight_8h.html">Signal_CurrentOverallWeight.h</a>&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__EmissionsCO2_8h.html">Signal_EmissionsCO2.h</a>&quot;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__GrossWeight_8h.html">Signal_GrossWeight.h</a>&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__Height_8h.html">Signal_Height.h</a>&quot;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsAutoPowerOptimize_8h.html">Signal_IsAutoPowerOptimize.h</a>&quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsAutoPowerOptimize__Availability__Actuator_8h.html">Signal_IsAutoPowerOptimize_Availability_Actuator.h</a>&quot;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsAutoPowerOptimize__Availability__Sensor_8h.html">Signal_IsAutoPowerOptimize_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsBrokenDown_8h.html">Signal_IsBrokenDown.h</a>&quot;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsBrokenDown__Availability__Sensor_8h.html">Signal_IsBrokenDown_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsMoving_8h.html">Signal_IsMoving.h</a>&quot;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsMoving__Availability__Sensor_8h.html">Signal_IsMoving_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__Length_8h.html">Signal_Length.h</a>&quot;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__LowVoltageSystemState_8h.html">Signal_LowVoltageSystemState.h</a>&quot;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__LowVoltageSystemState__Availability__Sensor_8h.html">Signal_LowVoltageSystemState_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__MaxTowBallWeight_8h.html">Signal_MaxTowBallWeight.h</a>&quot;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__MaxTowWeight_8h.html">Signal_MaxTowWeight.h</a>&quot;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__PowerOptimizeLevel_8h.html">Signal_PowerOptimizeLevel.h</a>&quot;</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__PowerOptimizeLevel__Availability__Actuator_8h.html">Signal_PowerOptimizeLevel_Availability_Actuator.h</a>&quot;</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__PowerOptimizeLevel__Availability__Sensor_8h.html">Signal_PowerOptimizeLevel_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__RoofLoad_8h.html">Signal_RoofLoad.h</a>&quot;</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__Speed_8h.html">Signal_Speed.h</a>&quot;</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__Speed__Availability__Sensor_8h.html">Signal_Speed_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__StartTime_8h.html">Signal_StartTime.h</a>&quot;</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TraveledDistance_8h.html">Signal_TraveledDistance.h</a>&quot;</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TraveledDistanceSinceStart_8h.html">Signal_TraveledDistanceSinceStart.h</a>&quot;</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TraveledDistanceSinceStart__Availability__Sensor_8h.html">Signal_TraveledDistanceSinceStart_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TraveledDistance__Availability__Sensor_8h.html">Signal_TraveledDistance_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TripDuration_8h.html">Signal_TripDuration.h</a>&quot;</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TripDuration__Availability__Sensor_8h.html">Signal_TripDuration_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TripMeterReading_8h.html">Signal_TripMeterReading.h</a>&quot;</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TripMeterReading__Availability__Actuator_8h.html">Signal_TripMeterReading_Availability_Actuator.h</a>&quot;</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TripMeterReading__Availability__Sensor_8h.html">Signal_TripMeterReading_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TurningDiameter_8h.html">Signal_TurningDiameter.h</a>&quot;</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__WidthExcludingMirrors_8h.html">Signal_WidthExcludingMirrors.h</a>&quot;</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__WidthFoldedMirrors_8h.html">Signal_WidthFoldedMirrors.h</a>&quot;</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__WidthIncludingMirrors_8h.html">Signal_WidthIncludingMirrors.h</a>&quot;</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#include &quot;<a class="code" href="Acceleration_8h.html">acceleration/Acceleration.h</a>&quot;</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#include &quot;<a class="code" href="ADAS_8h.html">adas/ADAS.h</a>&quot;</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#include &quot;<a class="code" href="AngularVelocity_8h.html">angularvelocity/AngularVelocity.h</a>&quot;</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#include &quot;<a class="code" href="Body_8h.html">body/Body.h</a>&quot;</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#include &quot;<a class="code" href="Cabin_8h.html">cabin/Cabin.h</a>&quot;</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#include &quot;<a class="code" href="Chassis_8h.html">chassis/Chassis.h</a>&quot;</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#include &quot;<a class="code" href="CurrentLocation_8h.html">currentlocation/CurrentLocation.h</a>&quot;</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#include &quot;driver/Driver.h&quot;</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#include &quot;<a class="code" href="Exterior_8h.html">exterior/Exterior.h</a>&quot;</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#include &quot;<a class="code" href="LowVoltageBattery_8h.html">lowvoltagebattery/LowVoltageBattery.h</a>&quot;</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#include &quot;<a class="code" href="Occupant_8h.html">occupant/Occupant.h</a>&quot;</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#include &quot;<a class="code" href="Powertrain_8h.html">powertrain/Powertrain.h</a>&quot;</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#include &quot;<a class="code" href="Trailer_8h.html">trailer/Trailer.h</a>&quot;</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#include &quot;<a class="code" href="VehicleIdentification_8h.html">vehicleidentification/VehicleIdentification.h</a>&quot;</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#include &quot;<a class="code" href="VersionYoriitoVSS_8h.html">versionyoriitovss/VersionYoriitoVSS.h</a>&quot;</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#include &quot;<a class="code" href="VersionVSS_8h.html">versionvss/VersionVSS.h</a>&quot;</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif  </span><span class="comment">// VEHICLE_H</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsBrokenDown_8h.html">Signal_IsBrokenDown.h</a>&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsMoving_8h.html">Signal_IsMoving.h</a>&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__Length_8h.html">Signal_Length.h</a>&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__LowVoltageSystemState_8h.html">Signal_LowVoltageSystemState.h</a>&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__MaxTowBallWeight_8h.html">Signal_MaxTowBallWeight.h</a>&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__MaxTowWeight_8h.html">Signal_MaxTowWeight.h</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__PowerOptimizeLevel_8h.html">Signal_PowerOptimizeLevel.h</a>&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__RoofLoad_8h.html">Signal_RoofLoad.h</a>&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__Speed_8h.html">Signal_Speed.h</a>&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__StartTime_8h.html">Signal_StartTime.h</a>&quot;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TraveledDistance_8h.html">Signal_TraveledDistance.h</a>&quot;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TraveledDistanceSinceStart_8h.html">Signal_TraveledDistanceSinceStart.h</a>&quot;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TripDuration_8h.html">Signal_TripDuration.h</a>&quot;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TurningDiameter_8h.html">Signal_TurningDiameter.h</a>&quot;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__WidthExcludingMirrors_8h.html">Signal_WidthExcludingMirrors.h</a>&quot;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__WidthFoldedMirrors_8h.html">Signal_WidthFoldedMirrors.h</a>&quot;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__WidthIncludingMirrors_8h.html">Signal_WidthIncludingMirrors.h</a>&quot;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#include &quot;<a class="code" href="ADAS_8h.html">adas/ADAS.h</a>&quot;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#include &quot;<a class="code" href="Body_8h.html">body/Body.h</a>&quot;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#include &quot;<a class="code" href="Cabin_8h.html">cabin/Cabin.h</a>&quot;</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#include &quot;<a class="code" href="Chassis_8h.html">chassis/Chassis.h</a>&quot;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#include &quot;<a class="code" href="CurrentLocation_8h.html">currentlocation/CurrentLocation.h</a>&quot;</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#include &quot;<a class="code" href="Driver_8h.html">driver/Driver.h</a>&quot;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#include &quot;<a class="code" href="Exterior_8h.html">exterior/Exterior.h</a>&quot;</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#include &quot;<a class="code" href="LowVoltageBattery_8h.html">lowvoltagebattery/LowVoltageBattery.h</a>&quot;</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#include &quot;<a class="code" href="MotionManagement_8h.html">motionmanagement/MotionManagement.h</a>&quot;</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#include &quot;<a class="code" href="Occupant_8h.html">occupant/Occupant.h</a>&quot;</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#include &quot;<a class="code" href="Powertrain_8h.html">powertrain/Powertrain.h</a>&quot;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#include &quot;<a class="code" href="Trailer_8h.html">trailer/Trailer.h</a>&quot;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#include &quot;<a class="code" href="TripMeter_8h.html">tripmeter/TripMeter.h</a>&quot;</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#include &quot;<a class="code" href="VehicleIdentification_8h.html">vehicleidentification/VehicleIdentification.h</a>&quot;</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#include &quot;<a class="code" href="VersionVSS_8h.html">versionvss/VersionVSS.h</a>&quot;</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#include &quot;<a class="code" href="VersionYoriitoVSS_8h.html">versionyoriitovss/VersionYoriitoVSS.h</a>&quot;</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif  </span><span class="comment">// SIGNAL_VEHICLE_H_</span></div>
 <div class="ttc" id="aADAS_8h_html"><div class="ttname"><a href="ADAS_8h.html">ADAS.h</a></div></div>
-<div class="ttc" id="aAcceleration_8h_html"><div class="ttname"><a href="Acceleration_8h.html">Acceleration.h</a></div></div>
-<div class="ttc" id="aAngularVelocity_8h_html"><div class="ttname"><a href="AngularVelocity_8h.html">AngularVelocity.h</a></div></div>
 <div class="ttc" id="aBody_8h_html"><div class="ttname"><a href="Body_8h.html">Body.h</a></div></div>
 <div class="ttc" id="aCabin_8h_html"><div class="ttname"><a href="Cabin_8h.html">Cabin.h</a></div></div>
 <div class="ttc" id="aChassis_8h_html"><div class="ttname"><a href="Chassis_8h.html">Chassis.h</a></div></div>
 <div class="ttc" id="aCurrentLocation_8h_html"><div class="ttname"><a href="CurrentLocation_8h.html">CurrentLocation.h</a></div></div>
+<div class="ttc" id="aDriver_8h_html"><div class="ttname"><a href="Driver_8h.html">Driver.h</a></div></div>
 <div class="ttc" id="aExterior_8h_html"><div class="ttname"><a href="Exterior_8h.html">Exterior.h</a></div></div>
 <div class="ttc" id="aLowVoltageBattery_8h_html"><div class="ttname"><a href="LowVoltageBattery_8h.html">LowVoltageBattery.h</a></div></div>
+<div class="ttc" id="aMotionManagement_8h_html"><div class="ttname"><a href="MotionManagement_8h.html">MotionManagement.h</a></div></div>
 <div class="ttc" id="aOccupant_8h_html"><div class="ttname"><a href="Occupant_8h.html">Occupant.h</a></div></div>
 <div class="ttc" id="aPowertrain_8h_html"><div class="ttname"><a href="Powertrain_8h.html">Powertrain.h</a></div></div>
+<div class="ttc" id="aSignal__Acceleration_8h_html"><div class="ttname"><a href="Signal__Acceleration_8h.html">Signal_Acceleration.h</a></div></div>
+<div class="ttc" id="aSignal__AngularVelocity_8h_html"><div class="ttname"><a href="Signal__AngularVelocity_8h.html">Signal_AngularVelocity.h</a></div></div>
 <div class="ttc" id="aSignal__AverageSpeed_8h_html"><div class="ttname"><a href="Signal__AverageSpeed_8h.html">Signal_AverageSpeed.h</a></div></div>
-<div class="ttc" id="aSignal__AverageSpeed__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__AverageSpeed__Availability__Sensor_8h.html">Signal_AverageSpeed_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__CargoVolume_8h_html"><div class="ttname"><a href="Signal__CargoVolume_8h.html">Signal_CargoVolume.h</a></div></div>
 <div class="ttc" id="aSignal__CurbWeight_8h_html"><div class="ttname"><a href="Signal__CurbWeight_8h.html">Signal_CurbWeight.h</a></div></div>
 <div class="ttc" id="aSignal__CurrentOverallWeight_8h_html"><div class="ttname"><a href="Signal__CurrentOverallWeight_8h.html">Signal_CurrentOverallWeight.h</a></div></div>
-<div class="ttc" id="aSignal__CurrentOverallWeight__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__CurrentOverallWeight__Availability__Sensor_8h.html">Signal_CurrentOverallWeight_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__EmissionsCO2_8h_html"><div class="ttname"><a href="Signal__EmissionsCO2_8h.html">Signal_EmissionsCO2.h</a></div></div>
 <div class="ttc" id="aSignal__GrossWeight_8h_html"><div class="ttname"><a href="Signal__GrossWeight_8h.html">Signal_GrossWeight.h</a></div></div>
 <div class="ttc" id="aSignal__Height_8h_html"><div class="ttname"><a href="Signal__Height_8h.html">Signal_Height.h</a></div></div>
 <div class="ttc" id="aSignal__IsAutoPowerOptimize_8h_html"><div class="ttname"><a href="Signal__IsAutoPowerOptimize_8h.html">Signal_IsAutoPowerOptimize.h</a></div></div>
-<div class="ttc" id="aSignal__IsAutoPowerOptimize__Availability__Actuator_8h_html"><div class="ttname"><a href="Signal__IsAutoPowerOptimize__Availability__Actuator_8h.html">Signal_IsAutoPowerOptimize_Availability_Actuator.h</a></div></div>
-<div class="ttc" id="aSignal__IsAutoPowerOptimize__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__IsAutoPowerOptimize__Availability__Sensor_8h.html">Signal_IsAutoPowerOptimize_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__IsBrokenDown_8h_html"><div class="ttname"><a href="Signal__IsBrokenDown_8h.html">Signal_IsBrokenDown.h</a></div></div>
-<div class="ttc" id="aSignal__IsBrokenDown__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__IsBrokenDown__Availability__Sensor_8h.html">Signal_IsBrokenDown_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__IsMoving_8h_html"><div class="ttname"><a href="Signal__IsMoving_8h.html">Signal_IsMoving.h</a></div></div>
-<div class="ttc" id="aSignal__IsMoving__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__IsMoving__Availability__Sensor_8h.html">Signal_IsMoving_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__Length_8h_html"><div class="ttname"><a href="Signal__Length_8h.html">Signal_Length.h</a></div></div>
 <div class="ttc" id="aSignal__LowVoltageSystemState_8h_html"><div class="ttname"><a href="Signal__LowVoltageSystemState_8h.html">Signal_LowVoltageSystemState.h</a></div></div>
-<div class="ttc" id="aSignal__LowVoltageSystemState__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__LowVoltageSystemState__Availability__Sensor_8h.html">Signal_LowVoltageSystemState_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__MaxTowBallWeight_8h_html"><div class="ttname"><a href="Signal__MaxTowBallWeight_8h.html">Signal_MaxTowBallWeight.h</a></div></div>
 <div class="ttc" id="aSignal__MaxTowWeight_8h_html"><div class="ttname"><a href="Signal__MaxTowWeight_8h.html">Signal_MaxTowWeight.h</a></div></div>
 <div class="ttc" id="aSignal__PowerOptimizeLevel_8h_html"><div class="ttname"><a href="Signal__PowerOptimizeLevel_8h.html">Signal_PowerOptimizeLevel.h</a></div></div>
-<div class="ttc" id="aSignal__PowerOptimizeLevel__Availability__Actuator_8h_html"><div class="ttname"><a href="Signal__PowerOptimizeLevel__Availability__Actuator_8h.html">Signal_PowerOptimizeLevel_Availability_Actuator.h</a></div></div>
-<div class="ttc" id="aSignal__PowerOptimizeLevel__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__PowerOptimizeLevel__Availability__Sensor_8h.html">Signal_PowerOptimizeLevel_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__RoofLoad_8h_html"><div class="ttname"><a href="Signal__RoofLoad_8h.html">Signal_RoofLoad.h</a></div></div>
 <div class="ttc" id="aSignal__Speed_8h_html"><div class="ttname"><a href="Signal__Speed_8h.html">Signal_Speed.h</a></div></div>
-<div class="ttc" id="aSignal__Speed__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__Speed__Availability__Sensor_8h.html">Signal_Speed_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__StartTime_8h_html"><div class="ttname"><a href="Signal__StartTime_8h.html">Signal_StartTime.h</a></div></div>
 <div class="ttc" id="aSignal__TraveledDistanceSinceStart_8h_html"><div class="ttname"><a href="Signal__TraveledDistanceSinceStart_8h.html">Signal_TraveledDistanceSinceStart.h</a></div></div>
-<div class="ttc" id="aSignal__TraveledDistanceSinceStart__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__TraveledDistanceSinceStart__Availability__Sensor_8h.html">Signal_TraveledDistanceSinceStart_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__TraveledDistance_8h_html"><div class="ttname"><a href="Signal__TraveledDistance_8h.html">Signal_TraveledDistance.h</a></div></div>
-<div class="ttc" id="aSignal__TraveledDistance__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__TraveledDistance__Availability__Sensor_8h.html">Signal_TraveledDistance_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__TripDuration_8h_html"><div class="ttname"><a href="Signal__TripDuration_8h.html">Signal_TripDuration.h</a></div></div>
-<div class="ttc" id="aSignal__TripDuration__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__TripDuration__Availability__Sensor_8h.html">Signal_TripDuration_Availability_Sensor.h</a></div></div>
-<div class="ttc" id="aSignal__TripMeterReading_8h_html"><div class="ttname"><a href="Signal__TripMeterReading_8h.html">Signal_TripMeterReading.h</a></div></div>
-<div class="ttc" id="aSignal__TripMeterReading__Availability__Actuator_8h_html"><div class="ttname"><a href="Signal__TripMeterReading__Availability__Actuator_8h.html">Signal_TripMeterReading_Availability_Actuator.h</a></div></div>
-<div class="ttc" id="aSignal__TripMeterReading__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__TripMeterReading__Availability__Sensor_8h.html">Signal_TripMeterReading_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__TurningDiameter_8h_html"><div class="ttname"><a href="Signal__TurningDiameter_8h.html">Signal_TurningDiameter.h</a></div></div>
 <div class="ttc" id="aSignal__WidthExcludingMirrors_8h_html"><div class="ttname"><a href="Signal__WidthExcludingMirrors_8h.html">Signal_WidthExcludingMirrors.h</a></div></div>
 <div class="ttc" id="aSignal__WidthFoldedMirrors_8h_html"><div class="ttname"><a href="Signal__WidthFoldedMirrors_8h.html">Signal_WidthFoldedMirrors.h</a></div></div>
 <div class="ttc" id="aSignal__WidthIncludingMirrors_8h_html"><div class="ttname"><a href="Signal__WidthIncludingMirrors_8h.html">Signal_WidthIncludingMirrors.h</a></div></div>
 <div class="ttc" id="aTrailer_8h_html"><div class="ttname"><a href="Trailer_8h.html">Trailer.h</a></div></div>
+<div class="ttc" id="aTripMeter_8h_html"><div class="ttname"><a href="TripMeter_8h.html">TripMeter.h</a></div></div>
 <div class="ttc" id="aVehicleIdentification_8h_html"><div class="ttname"><a href="VehicleIdentification_8h.html">VehicleIdentification.h</a></div></div>
 <div class="ttc" id="aVersionVSS_8h_html"><div class="ttname"><a href="VersionVSS_8h.html">VersionVSS.h</a></div></div>
 <div class="ttc" id="aVersionYoriitoVSS_8h_html"><div class="ttname"><a href="VersionYoriitoVSS_8h.html">VersionYoriitoVSS.h</a></div></div>

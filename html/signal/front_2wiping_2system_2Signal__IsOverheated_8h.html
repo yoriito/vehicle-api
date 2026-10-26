@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/body/windshield/front/wiping/system/Signal_IsOverheated.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/body/windshield/front/wiping/system/Signal_IsOverheated.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('front_2wiping_2system_2Signal__IsOverh
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsOverheated.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="front_2wiping_2system_2Signal__IsOverheated_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="front_2wiping_2system_2Signal__IsOverheated_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="front_2wiping_2system_2Signal__IsOverheated_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated.html">yoriito::vehicle::body::windshield::front::wiping::system::isoverheated</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Body.Windshield.Front.Wiping.System.IsOverheated signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -138,24 +139,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system.html">yoriito::vehicle::body::windshield::front::wiping::system</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01isoverheated" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01isoverheated"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01isoverheated.html">yoriito::vehicle::body::windshield::front::wiping::system:: isoverheated</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated.html">yoriito::vehicle::body::windshield::front::wiping::system::isoverheated</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac473206711c0d8a2fdb6b3b08fa6a8a5" id="r_ac473206711c0d8a2fdb6b3b08fa6a8a5"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01isoverheated.html#ac473206711c0d8a2fdb6b3b08fa6a8a5">yoriito::vehicle::body::windshield::front::wiping::system:: isoverheated::Get</a> ()</td></tr>
-<tr class="separator:ac473206711c0d8a2fdb6b3b08fa6a8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aa13d1088fc7e3e91df5618ca9da5be" id="r_a8aa13d1088fc7e3e91df5618ca9da5be"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01isoverheated.html#a8aa13d1088fc7e3e91df5618ca9da5be">yoriito::vehicle::body::windshield::front::wiping::system:: isoverheated::Subscribe</a> ()</td></tr>
-<tr class="separator:a8aa13d1088fc7e3e91df5618ca9da5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15585b1666263b821fbacada04614579" id="r_a15585b1666263b821fbacada04614579"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01isoverheated.html#a15585b1666263b821fbacada04614579">yoriito::vehicle::body::windshield::front::wiping::system:: isoverheated::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a15585b1666263b821fbacada04614579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefaf55aa2ea31fc8a3412c42cdd93251" id="r_aefaf55aa2ea31fc8a3412c42cdd93251"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01isoverheated.html#aefaf55aa2ea31fc8a3412c42cdd93251">yoriito::vehicle::body::windshield::front::wiping::system:: isoverheated::Inspect</a> ()</td></tr>
-<tr class="separator:aefaf55aa2ea31fc8a3412c42cdd93251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace4b3ef9d49d241a0d5b9b7da5c9fedf" id="r_ace4b3ef9d49d241a0d5b9b7da5c9fedf"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated.html#ace4b3ef9d49d241a0d5b9b7da5c9fedf">yoriito::vehicle::body::windshield::front::wiping::system::isoverheated::Get</a> ()</td></tr>
+<tr class="separator:ace4b3ef9d49d241a0d5b9b7da5c9fedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada87c3955ae9ce8438bc8d6875160dff" id="r_ada87c3955ae9ce8438bc8d6875160dff"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated.html#ada87c3955ae9ce8438bc8d6875160dff">yoriito::vehicle::body::windshield::front::wiping::system::isoverheated::Subscribe</a> ()</td></tr>
+<tr class="separator:ada87c3955ae9ce8438bc8d6875160dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b8357140ff5d641af698c392194e7a" id="r_a76b8357140ff5d641af698c392194e7a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated.html#a76b8357140ff5d641af698c392194e7a">yoriito::vehicle::body::windshield::front::wiping::system::isoverheated::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:a76b8357140ff5d641af698c392194e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e6101807f36c5c0bdfd0c269568b65" id="r_a19e6101807f36c5c0bdfd0c269568b65"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated.html#a19e6101807f36c5c0bdfd0c269568b65">yoriito::vehicle::body::windshield::front::wiping::system::isoverheated::Inspect</a> ()</td></tr>
+<tr class="separator:a19e6101807f36c5c0bdfd0c269568b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a65d5b93316aa17bd3d94ffbd4bcb28db" id="r_a65d5b93316aa17bd3d94ffbd4bcb28db"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01isoverheated.html#a65d5b93316aa17bd3d94ffbd4bcb28db">yoriito::vehicle::body::windshield::front::wiping::system:: isoverheated::VEHICLE_BODY_WINDSHIELD_FRONT_WIPING_SYSTEM_ISOVERHEATED</a></td></tr>
-<tr class="separator:a65d5b93316aa17bd3d94ffbd4bcb28db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6bdab6d9357f703cc7c044db538436" id="r_afd6bdab6d9357f703cc7c044db538436"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1isoverheated.html#afd6bdab6d9357f703cc7c044db538436">yoriito::vehicle::body::windshield::front::wiping::system::isoverheated::VEHICLE_BODY_WINDSHIELD_FRONT_WIPING_SYSTEM_ISOVERHEATED</a></td></tr>
+<tr class="separator:afd6bdab6d9357f703cc7c044db538436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

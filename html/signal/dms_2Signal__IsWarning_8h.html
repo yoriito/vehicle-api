@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/adas/dms/Signal_IsWarning.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/adas/dms/Signal_IsWarning.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('dms_2Signal__IsWarning_8h.html',''); i
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsWarning.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dms_2Signal__IsWarning_8h__incl.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="dms_2Signal__IsWarning_8h__dep__incl.svg" width="454" height="374"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="dms_2Signal__IsWarning_8h_source.html">Go to the source code of this file.</a></p>
@@ -135,18 +139,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8d7fbc53c2651dbcda512bb7594488e4" id="r_a8d7fbc53c2651dbcda512bb7594488e4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1dms_1_1iswarning.html#a8d7fbc53c2651dbcda512bb7594488e4">yoriito::vehicle::adas::dms::iswarning::Get</a> ()</td></tr>
-<tr class="separator:a8d7fbc53c2651dbcda512bb7594488e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76f196ecfa76bb07048fa515e12be36f" id="r_a76f196ecfa76bb07048fa515e12be36f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1dms_1_1iswarning.html#a76f196ecfa76bb07048fa515e12be36f">yoriito::vehicle::adas::dms::iswarning::Subscribe</a> ()</td></tr>
-<tr class="separator:a76f196ecfa76bb07048fa515e12be36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c46774823aa97347cdbceafaae0662f" id="r_a0c46774823aa97347cdbceafaae0662f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1dms_1_1iswarning.html#a0c46774823aa97347cdbceafaae0662f">yoriito::vehicle::adas::dms::iswarning::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a0c46774823aa97347cdbceafaae0662f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d2326d603c4d6915dd5f7727ce004f2" id="r_a0d2326d603c4d6915dd5f7727ce004f2"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1dms_1_1iswarning.html#a0d2326d603c4d6915dd5f7727ce004f2">yoriito::vehicle::adas::dms::iswarning::Inspect</a> ()</td></tr>
-<tr class="separator:a0d2326d603c4d6915dd5f7727ce004f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b9b647d02a5acfef906b3a029f539f" id="r_a48b9b647d02a5acfef906b3a029f539f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1dms_1_1iswarning.html#a48b9b647d02a5acfef906b3a029f539f">yoriito::vehicle::adas::dms::iswarning::Get</a> ()</td></tr>
+<tr class="separator:a48b9b647d02a5acfef906b3a029f539f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fdb2150044c969b54ee37ec3342b319" id="r_a8fdb2150044c969b54ee37ec3342b319"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1dms_1_1iswarning.html#a8fdb2150044c969b54ee37ec3342b319">yoriito::vehicle::adas::dms::iswarning::Subscribe</a> ()</td></tr>
+<tr class="separator:a8fdb2150044c969b54ee37ec3342b319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a9911821d372c148ab0f7481cb92ec" id="r_ac9a9911821d372c148ab0f7481cb92ec"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1dms_1_1iswarning.html#ac9a9911821d372c148ab0f7481cb92ec">yoriito::vehicle::adas::dms::iswarning::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:ac9a9911821d372c148ab0f7481cb92ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97cb2fa7f82d3b7ee05de77f69025641" id="r_a97cb2fa7f82d3b7ee05de77f69025641"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1dms_1_1iswarning.html#a97cb2fa7f82d3b7ee05de77f69025641">yoriito::vehicle::adas::dms::iswarning::Inspect</a> ()</td></tr>
+<tr class="separator:a97cb2fa7f82d3b7ee05de77f69025641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a6ca936b2ffd9353c13c34a0db1d2a301" id="r_a6ca936b2ffd9353c13c34a0db1d2a301"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1dms_1_1iswarning.html#a6ca936b2ffd9353c13c34a0db1d2a301">yoriito::vehicle::adas::dms::iswarning::VEHICLE_ADAS_DMS_ISWARNING</a></td></tr>
+<tr class="memitem:a6ca936b2ffd9353c13c34a0db1d2a301" id="r_a6ca936b2ffd9353c13c34a0db1d2a301"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1dms_1_1iswarning.html#a6ca936b2ffd9353c13c34a0db1d2a301">yoriito::vehicle::adas::dms::iswarning::VEHICLE_ADAS_DMS_ISWARNING</a> = &quot;Vehicle.ADAS.DMS.IsWarning&quot;</td></tr>
 <tr class="separator:a6ca936b2ffd9353c13c34a0db1d2a301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

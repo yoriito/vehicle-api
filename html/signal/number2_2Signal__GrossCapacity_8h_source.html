@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/number2/Signal_GrossCapacity.h Source File</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/number2/Signal_GrossCapacity.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('number2_2Signal__GrossCapacity_8h_sour
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_GROSSCAPACITY_H</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_GROSSCAPACITY_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef SIGNAL_POWERTRAIN_TRACTIONBATTERY_NUMBER2_SIGNAL_GROSSCAPACITY_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define SIGNAL_POWERTRAIN_TRACTIONBATTERY_NUMBER2_SIGNAL_GROSSCAPACITY_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
@@ -128,24 +128,32 @@ $(document).ready(function(){initNavTree('number2_2Signal__GrossCapacity_8h_sour
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;databroker/databroker_consumer_factory.h&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;error.h&quot;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;result.h&quot;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;yoriito_log.h&quot;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2.html">yoriito::vehicle::powertrain::tractionbattery::number2</a>::</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  grosscapacity {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01grosscapacity.html#a567571941563f03d99ab9fb5f4e8b1a5">   43</a></span>    <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01grosscapacity.html#a567571941563f03d99ab9fb5f4e8b1a5">VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_GROSSCAPACITY</a> =</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="stringliteral">&quot;Vehicle.Powertrain.TractionBattery.Number2.GrossCapacity&quot;</span>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  yoriito::Result&lt;uint16_t&gt; Get();</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  yoriito::Result&lt;yoriito::databroker::ConsumerInspectResponse&gt; Inspect();</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}  <span class="comment">// namespace yoriito::vehicle::powertrain::tractionbattery::number2::grosscapacity</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">#endif  </span><span class="comment">// VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_GROSSCAPACITY_H</span></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01grosscapacity_html_a567571941563f03d99ab9fb5f4e8b1a5"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01grosscapacity.html#a567571941563f03d99ab9fb5f4e8b1a5">yoriito::vehicle::powertrain::tractionbattery::number2:: grosscapacity::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_GROSSCAPACITY</a></div><div class="ttdeci">constexpr const char * VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_GROSSCAPACITY</div><div class="ttdef"><b>Definition</b> <a href="number2_2Signal__GrossCapacity_8h_source.html#l00043">Signal_GrossCapacity.h:43</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_html"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2.html">yoriito::vehicle::powertrain::tractionbattery::number2</a></div><div class="ttdef"><b>Definition</b> <a href="powertrain_2tractionbattery_2number2_2batteryconditioning_2Signal__IsActive_8cc_source.html#l00025">Signal_IsActive.cc:26</a></div></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;signal/signal_get_datapoint.h&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;signal/signal_inspect_data.h&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;signal/signal_inspect_response.h&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;signal/signal_subscribe_context.h&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;yoriito_log.h&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity.html">yoriito::vehicle::powertrain::tractionbattery::number2::grosscapacity</a> {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity.html#ace334faec2a744fbdc76091085f31152">   49</a></span><span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity.html#ace334faec2a744fbdc76091085f31152">VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_GROSSCAPACITY</a> =</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="stringliteral">&quot;Vehicle.Powertrain.TractionBattery.Number2.GrossCapacity&quot;</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>yoriito::Result&lt;yoriito::signal::SignalGetDataPoint&lt;uint16_t&gt;&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity.html#a81ea8c59180d7b81ac727e1e7d78f6d0">Get</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>yoriito::Result&lt;yoriito::signal::SignalInspectResponse&lt;uint16_t&gt;&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity.html#acbf9994d8ba33431abbb6d4fe6572bc3">Inspect</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}  <span class="comment">// namespace yoriito::vehicle::powertrain::tractionbattery::number2::grosscapacity</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#endif  </span><span class="comment">// SIGNAL_POWERTRAIN_TRACTIONBATTERY_NUMBER2_SIGNAL_GROSSCAPACITY_H_</span></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity_html"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity.html">yoriito::vehicle::powertrain::tractionbattery::number2::grosscapacity</a></div><div class="ttdef"><b>Definition</b> <a href="number2_2Signal__GrossCapacity_8cc_source.html#l00026">Signal_GrossCapacity.cc:26</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity_html_a81ea8c59180d7b81ac727e1e7d78f6d0"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity.html#a81ea8c59180d7b81ac727e1e7d78f6d0">yoriito::vehicle::powertrain::tractionbattery::number2::grosscapacity::Get</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint16_t &gt; &gt; Get()</div><div class="ttdef"><b>Definition</b> <a href="number2_2Signal__GrossCapacity_8cc_source.html#l00029">Signal_GrossCapacity.cc:29</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity_html_acbf9994d8ba33431abbb6d4fe6572bc3"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity.html#acbf9994d8ba33431abbb6d4fe6572bc3">yoriito::vehicle::powertrain::tractionbattery::number2::grosscapacity::Inspect</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint16_t &gt; &gt; Inspect()</div><div class="ttdef"><b>Definition</b> <a href="number2_2Signal__GrossCapacity_8cc_source.html#l00063">Signal_GrossCapacity.cc:63</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity_html_ace334faec2a744fbdc76091085f31152"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1grosscapacity.html#ace334faec2a744fbdc76091085f31152">yoriito::vehicle::powertrain::tractionbattery::number2::grosscapacity::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_GROSSCAPACITY</a></div><div class="ttdeci">constexpr const char * VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_GROSSCAPACITY</div><div class="ttdef"><b>Definition</b> <a href="number2_2Signal__GrossCapacity_8h_source.html#l00049">Signal_GrossCapacity.h:49</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

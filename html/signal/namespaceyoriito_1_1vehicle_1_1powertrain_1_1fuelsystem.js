@@ -1,176 +1,131 @@
 var namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem =
 [
-    [ " absolutelevel_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01absolutelevel__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01absolutelevel__availability__sensor.html#af76c9c37015a57cc599d7688d9f4dff5", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01absolutelevel__availability__sensor.html#ad79cb07db8a62100630e6069033ed6a5", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01absolutelevel__availability__sensor.html#a88e3405655d54d8dd3747c0ec45d622e", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01absolutelevel__availability__sensor.html#a3eaaeea1107ef4c7828c197f0cd10ec7", null ],
-      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_ABSOLUTELEVEL_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01absolutelevel__availability__sensor.html#ac65c88428d0a2907f6872b6e037aa822", null ]
-    ] ],
-    [ " averageconsumption_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01averageconsumption__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01averageconsumption__availability__sensor.html#a94613ae7258dabbcf4825f9956e32773", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01averageconsumption__availability__sensor.html#a53ed59b2a86686f966c248ee09bb555e", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01averageconsumption__availability__sensor.html#a39a5a7b9552c9ec6d82936b6b0c6e0e2", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01averageconsumption__availability__sensor.html#a269632b7ec0e5b301402e33e9f1ce001", null ],
-      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_AVERAGECONSUMPTION_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01averageconsumption__availability__sensor.html#a11829a73c0d581be0219716c752e506a", null ]
-    ] ],
-    [ " consumptionsincestart_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01consumptionsincestart__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01consumptionsincestart__availability__sensor.html#aa34fc166309006a985a0cb3098fb6765", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01consumptionsincestart__availability__sensor.html#a8d636b56b9f3293927adc88f61cb1cfe", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01consumptionsincestart__availability__sensor.html#a2cf9bb1e4e10d1b6229d7f0728d0e764", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01consumptionsincestart__availability__sensor.html#adb89be5500793ed87e7b72d790c83e1c", null ],
-      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_CONSUMPTIONSINCESTART_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01consumptionsincestart__availability__sensor.html#aad46c4044eefe1d13e7d964138417c42", null ]
-    ] ],
-    [ " instantconsumption_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01instantconsumption__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01instantconsumption__availability__sensor.html#a9891ddfdb7c126a7a571514c572eb049", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01instantconsumption__availability__sensor.html#a167f6a1b5487990ab9b06953877c66f0", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01instantconsumption__availability__sensor.html#a35330d773bcc5b2f693ca14996bffc7e", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01instantconsumption__availability__sensor.html#a187f155d02712574ec9411d5345efa54", null ],
-      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_INSTANTCONSUMPTION_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01instantconsumption__availability__sensor.html#a6ff152f481533d7c9a12cffcbc2709a0", null ]
-    ] ],
-    [ " isenginestopstartenabled_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isenginestopstartenabled__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isenginestopstartenabled__availability__sensor.html#a52bcb26f7815d69fb8191dcb54658c23", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isenginestopstartenabled__availability__sensor.html#a83fb2950c1b0caa541737533454a9cfe", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isenginestopstartenabled__availability__sensor.html#a532a632252ac3ab5bb6d9afefe562691", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isenginestopstartenabled__availability__sensor.html#ac91355d4137afdf97d1ebff1e8ee4a74", null ],
-      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_ISENGINESTOPSTARTENABLED_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isenginestopstartenabled__availability__sensor.html#ab0310e9459e574f4daae50e27c2c4f1f", null ]
-    ] ],
-    [ " isfuellevellow_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuellevellow__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuellevellow__availability__sensor.html#ae1cfbb177fd23fe2c0d8291a6e7bc8b1", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuellevellow__availability__sensor.html#aa7f1c9367cd997f723a6dca0112f165d", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuellevellow__availability__sensor.html#a178c233620c5670fea23754fffd82c80", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuellevellow__availability__sensor.html#afdc62afc5212359f666860078f6dc38a", null ],
-      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_ISFUELLEVELLOW_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuellevellow__availability__sensor.html#ad9fead07c78cbb9539a7959e58529a0a", null ]
-    ] ],
-    [ " isfuelportflapopen_availability_actuator", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__actuator.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__actuator.html#a4c5c8e7557462795f56336eeeb0a52d5", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__actuator.html#a0cd722a20d7280686e54c363ea8d6450", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__actuator.html#a80679cb35811b84757208b1b0de3404e", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__actuator.html#ad1789a20671f5b782a031d0c2b7b885b", null ],
-      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_ISFUELPORTFLAPOPEN_AVAILABILITY_ACTUATOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__actuator.html#a2cba3cd38768e213c4ff2e968004cdc0", null ]
-    ] ],
-    [ " isfuelportflapopen_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__sensor.html#a32be7eddce1f51d77fa436eaa7f395b9", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__sensor.html#ae24a6fb0e487afd793d4e56afb1afecd", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__sensor.html#aea2ceedc2d0735496326df1074ca7591", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__sensor.html#ae98ffb741f3452764373214c676bbe30", null ],
-      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_ISFUELPORTFLAPOPEN_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01isfuelportflapopen__availability__sensor.html#a8ebddf7870ba3298bad8a590f46e0abd", null ]
-    ] ],
-    [ " relativelevel_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01relativelevel__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01relativelevel__availability__sensor.html#aacad3fec0dbeab874f47f82e31105688", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01relativelevel__availability__sensor.html#ae547d4f766bdf843f0cf270b9bec09cc", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01relativelevel__availability__sensor.html#a6310f9c03bbadcc1da7308aa8858245f", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01relativelevel__availability__sensor.html#a3fbf0a8b0fb873f7da05de8db0abffb6", null ],
-      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_RELATIVELEVEL_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01relativelevel__availability__sensor.html#a32841156ec9ec9ae6ba852962b71468c", null ]
-    ] ],
-    [ " timeremaining_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01timeremaining__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01timeremaining__availability__sensor.html#aa1bd5d1b17aac8e439b3c0db1518a125", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01timeremaining__availability__sensor.html#a41ec6c82d6794598b4e1182baf72a7c3", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01timeremaining__availability__sensor.html#a0f2d9296be5166e30f5ff325c871612a", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01timeremaining__availability__sensor.html#adea60f3a4f54ad9f0c67c6207e0f1b38", null ],
-      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_TIMEREMAINING_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1_01timeremaining__availability__sensor.html#a50e3fe6ece4ab08702b9bbd0708e0c24", null ]
-    ] ],
     [ "absolutelevel", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1absolutelevel.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1absolutelevel.html#aeab443fe4c86c403be58548bbb1b0e85", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1absolutelevel.html#adff2ef58eabf48d23f230ca50227f617", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1absolutelevel.html#a2009f45c6166be8cc4a3e8330d12f727", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1absolutelevel.html#ab3bf7b465e2720b85ea46092e0ec3e57", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1absolutelevel.html#a0ee2d9bcf1bc9420484b9d996a7bb68f", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1absolutelevel.html#a85bb1f95d47cef881dcf7bba3436f9a6", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1absolutelevel.html#a1ff3f7053c47809b322445c542fd7d09", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1absolutelevel.html#a4cac79fbc20a9c4974f21151ff625367", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_ABSOLUTELEVEL", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1absolutelevel.html#a858a499b5d5be8bc2f119c1d3aaa33c0", null ]
     ] ],
-    [ "absolutelevel_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1absolutelevel__availability__sensor.html", null ],
+    [ "afterrefuelingfueleconomy", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1afterrefuelingfueleconomy.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1afterrefuelingfueleconomy.html#a207cf61174e9ff58c1d08709aa87ebb7", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1afterrefuelingfueleconomy.html#a375a1b8a76d56995665e6ad37138ae32", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1afterrefuelingfueleconomy.html#a37ae3d43de64dc95b75fe631d64f01dd", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1afterrefuelingfueleconomy.html#a4bc4dcd38dc5455e83c02dd769cd44a7", null ],
+      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_AFTERREFUELINGFUELECONOMY", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1afterrefuelingfueleconomy.html#a690f8d803ff8db0794cd803e3c41e454", null ]
+    ] ],
     [ "averageconsumption", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#a66a3fab329dcabb847ce75eba962e47c", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#a87fb53fa77832507f7762e521d2b35a3", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#af44cbbd1264efc994d0824ec5f1ddaea", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#ab9fdc1d9cb94f2dd3959467aa5be401a", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#a6629fcff3efc52a73133dec343d33825", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#a890168674fef607466212ea02702bebe", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#aeb517dbc0371321a37710e2747f67354", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#a2ddd0d129ea35c3d6d27509370ba57fc", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_AVERAGECONSUMPTION", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#ad30facbf050baf440f239f6e0ae13bea", null ]
     ] ],
-    [ "averageconsumption_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption__availability__sensor.html", null ],
+    [ "consumptionsincelastrefuel", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincelastrefuel.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincelastrefuel.html#ab0e4091e4f1b0f765aa5149f504531bd", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincelastrefuel.html#a4a280fab9ee48de6c1e82c860e4e6755", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincelastrefuel.html#a6d60d1faea5e7f54366e4a9c41d04879", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincelastrefuel.html#ae1d41682cc05f619ef3e35a10b5edb56", null ],
+      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_CONSUMPTIONSINCELASTREFUEL", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincelastrefuel.html#a9d9c324e21f7ee81603320902de0dda6", null ]
+    ] ],
     [ "consumptionsincestart", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincestart.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincestart.html#a4dc9292f7c06642a8b6da9092edf7781", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincestart.html#aac390f8e7aa6bcbcc713b19257abc21b", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincestart.html#a01e243bbb6cf67911079e68be3f2730b", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincestart.html#afce17ee52c5323f9ac5b5d62fa4f74b7", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincestart.html#aef44f425d242f5558fb23f90c93b3be7", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincestart.html#abdc4fc683f772dfada9a0a30cbdce034", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincestart.html#a6414311906c0bf23843385ef28bc03a1", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincestart.html#aebecf6b0d35a7a3a9e7c3d4a3633d4cd", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_CONSUMPTIONSINCESTART", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincestart.html#ac079e4bc215b55373ac4af3d036f6f8a", null ]
     ] ],
-    [ "consumptionsincestart_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1consumptionsincestart__availability__sensor.html", null ],
+    [ "cumulativefueleconomy", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1cumulativefueleconomy.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1cumulativefueleconomy.html#ab51fb9996f01b88c621bd6b1f771501e", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1cumulativefueleconomy.html#a1cde9ed31d9541f7d24b0fa408bae2da", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1cumulativefueleconomy.html#ac0ac1e5f1f16746daf2c14f06d9d9070", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1cumulativefueleconomy.html#a247cb9c6d301680ef4b6ecd61dc7d3f6", null ],
+      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_CUMULATIVEFUELECONOMY", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1cumulativefueleconomy.html#a52168521a7f6a87739f6a1d5c680a70a", null ]
+    ] ],
+    [ "drivefueleconomy", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1drivefueleconomy.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1drivefueleconomy.html#a08f7dfeb98a696016f33c97f9b6ba19a", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1drivefueleconomy.html#ad428d712966e22ae53da62bef87f64b3", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1drivefueleconomy.html#ac6cf8a2e540af6d572565556fdc38db0", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1drivefueleconomy.html#a847eb37db8bdc99690788069b9f90606", null ],
+      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_DRIVEFUELECONOMY", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1drivefueleconomy.html#a2f8d83c07dda8ae16b17a65d5859f597", null ]
+    ] ],
     [ "instantconsumption", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantconsumption.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantconsumption.html#ad861b33a4d5f3d132574ce6bf6a2e3fc", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantconsumption.html#a95212e4fe76e989aa1bed069a7747228", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantconsumption.html#a128c6479d40097939dbb0a0bbd6a5cf8", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantconsumption.html#aa6be67835cb9b45de95fe9a2d1200da5", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantconsumption.html#a59c1ec7363ff128cb05e82d453a05496", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantconsumption.html#ae4ae9196e1b4acbbea1c8c87ec066922", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantconsumption.html#a101228ac4ca9702f51b0f8b288cf2a76", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantconsumption.html#a7b7b9eaf680ade69582ab63f979b026c", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_INSTANTCONSUMPTION", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantconsumption.html#a32610416a8099280ceaed126bef24250", null ]
     ] ],
-    [ "instantconsumption_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantconsumption__availability__sensor.html", null ],
+    [ "instantfueleconomy", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantfueleconomy.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantfueleconomy.html#a768011e6a5c0d24de828a0cc9d405615", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantfueleconomy.html#a47bbfa9cd5e240eb368b8edd7c30e132", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantfueleconomy.html#a6a7e35d7e160754f2af89763f302ca7f", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantfueleconomy.html#ac9fc0d900b5f152d05f69ca93bb90c59", null ],
+      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_INSTANTFUELECONOMY", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1instantfueleconomy.html#aa2c14974768c5ce348c7623039cf9d46", null ]
+    ] ],
     [ "isenginestopstartenabled", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isenginestopstartenabled.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isenginestopstartenabled.html#a32dfd285df41a53b509d2b0fb4a80eea", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isenginestopstartenabled.html#a3bbf9dd1429b4bf18999c96a3c6eb0bc", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isenginestopstartenabled.html#a0589b7d23b349137e14fc365ffab9b7a", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isenginestopstartenabled.html#a616db7464172ea6e301e39fc7b18cab4", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isenginestopstartenabled.html#a0dd9f925b07b42b7bd1c55b6ba8c9e70", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isenginestopstartenabled.html#a28e7340a93da3893baf6a4fed19e266f", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isenginestopstartenabled.html#a49ff28f1644da54ffcb0db4c7ad0dbd5", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isenginestopstartenabled.html#a424650218a59d8c63aba27c4179ec8f2", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_ISENGINESTOPSTARTENABLED", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isenginestopstartenabled.html#a054ab371ab13b9e504a84f409994766e", null ]
     ] ],
-    [ "isenginestopstartenabled_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isenginestopstartenabled__availability__sensor.html", null ],
+    [ "isfuellevelempty", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevelempty.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevelempty.html#a38aa8c34bb76a5dd6a8512ec3c4b6a76", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevelempty.html#a1076ad17970285912f775b80636474e8", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevelempty.html#a68633f1e5155e6313ff01052c5be1736", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevelempty.html#ac60519a3057f1597ba0370ce6a6017bc", null ],
+      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_ISFUELLEVELEMPTY", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevelempty.html#a330b310e98969c4735b2f054234250a3", null ]
+    ] ],
     [ "isfuellevellow", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#a8c0386c8e2a411eecd7a4dd4285923bb", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#a19b42a5f161325e015e8271e9b3cb751", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#a032510676405dfeb09716ab2527472ab", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#a312a45071e297e84704d4d3b08fa7abf", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#ab6f14f87078329c677dd8b7aed57d24f", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#aba7da947c247170a853e8500f70e0921", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#a55c48227cca1e44c908df7d49e333f8c", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#abcbc8072c85170f655186b195cbfd675", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_ISFUELLEVELLOW", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#a5e3710a3938bae74e9868cf4b315000a", null ]
     ] ],
-    [ "isfuellevellow_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow__availability__sensor.html", null ],
     [ "isfuelportflapopen", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen.html#ab1a89527f953c6aa52f952b52eac8255", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen.html#a35d204dda25248da446aff6fb741e6ba", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen.html#afbdfe4dbfc847f03337d357e5be3c43b", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen.html#a54322b56e7fa7e9e9dc8f034468163c1", null ],
       [ "Set", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen.html#a9e225e50504e64a96266c403d136c6a1", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen.html#afd5ef3166dddc3c8da500e1ea3903079", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen.html#a03bb83ea0cb331c4b86289eba3bd5058", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen.html#ac78fe5096f050ec82ba7606c89af481f", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen.html#a549d317a6f1fdfd390c1e5451ca83273", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_ISFUELPORTFLAPOPEN", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen.html#aa1bd8fefef46f5d99bd5ac9756a1c55c", null ]
     ] ],
-    [ "isfuelportflapopen_availability_actuator", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen__availability__actuator.html", null ],
-    [ "isfuelportflapopen_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuelportflapopen__availability__sensor.html", null ],
     [ "range", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range.html#a3f0b34e369c944dd10fb3f7b0a5c6b4c", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range.html#a325c7380890503d6c61d90266cf42665", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range.html#a9e1251f9facecdeb719e87021be6486a", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range.html#a399226694ae6648c55f7aeb7b66690ad", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range.html#a19a27d36235d56ec9a00bc96b8210236", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range.html#aaf2339e68cde22a54869b513f9038eb3", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range.html#ad2b305056fcd57dc2d2408ba8c177940", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range.html#a205b465e2ad8ccc83f2229907028f028", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_RANGE", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range.html#a9c482c4f58d8ff6bbef1e627dc1f62e8", null ]
     ] ],
-    [ "range_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range__availability__sensor.html#a13fb544b722a7c98f8819e36c78a640c", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range__availability__sensor.html#a9c517bf1a47d1bf1af3e1fc9cae104cb", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range__availability__sensor.html#acb2350f92460fb43a2cce38fe9aa26f3", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range__availability__sensor.html#ac718c3be817eea772eb5052a2382a722", null ],
-      [ "VEHICLE_POWERTRAIN_FUELSYSTEM_RANGE_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1range__availability__sensor.html#a6df6287b5c59c442a16a79ccccaf8a5c", null ]
-    ] ],
     [ "refuelportposition", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1refuelportposition.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1refuelportposition.html#ab86795cd0b244bfd0824dfda70cfa646", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1refuelportposition.html#a2775defd0759b34b24bfcb7a3053355d", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1refuelportposition.html#ad392948d92cbf436fe66862553184076", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1refuelportposition.html#aaf12a60a4b9e964852c073c7ff0b99d3", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_REFUELPORTPOSITION", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1refuelportposition.html#a8ea78bca8de0f9a79c8291c0ff7cdadd", null ]
     ] ],
     [ "relativelevel", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1relativelevel.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1relativelevel.html#a56d93b8054d91efc26a6dd51f327fb8a", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1relativelevel.html#ad5c06b6bdfe24b614bca8c145673da51", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1relativelevel.html#af40df2ecbd6ddccb468dbddf4fe9abf1", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1relativelevel.html#aade9adf18fdfacde879f2b5e602eaa57", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1relativelevel.html#af7dbaaeb37171bdd00fbe5b4ab292037", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1relativelevel.html#a914392d38a317d6802d9110786f9a070", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1relativelevel.html#a416314566cb95bba27baf46bece6ef37", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1relativelevel.html#a8f22423fadce8cc7abb2b44c0ed79c21", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_RELATIVELEVEL", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1relativelevel.html#a64ef5b0c07b76cd98f3e77070dcc47cd", null ]
     ] ],
-    [ "relativelevel_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1relativelevel__availability__sensor.html", null ],
     [ "supportedfuel", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1supportedfuel.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1supportedfuel.html#a84985676e35c62f4c11ac25893c2d70b", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1supportedfuel.html#aebc48f585f4de471e9b278aadef81a18", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1supportedfuel.html#a9c88f6a63086382bc346ffcf313d8507", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1supportedfuel.html#a37e8861fc870ccc268d7cc03f5fbf62e", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_SUPPORTEDFUEL", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1supportedfuel.html#a95af112a239cb45fe4c6b11f01b09f30", null ]
     ] ],
     [ "tankcapacity", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1tankcapacity.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1tankcapacity.html#a38a6ea692d874d3dc6932439eadc94b0", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1tankcapacity.html#ad842d33008823eb2659ff51fd1078e75", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1tankcapacity.html#a4ee495769b8627550d9b5913f4829b91", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1tankcapacity.html#abd04c9f92e9224c46dabdd819af039e0", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_TANKCAPACITY", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1tankcapacity.html#ade1949e0ea3c55412f1534db1ab77db5", null ]
     ] ],
     [ "timeremaining", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1timeremaining.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1timeremaining.html#a08ed4d0af4c08812d77897d665969a27", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1timeremaining.html#a5e1eaafdb1b36c6676ec87377997d1ff", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1timeremaining.html#a44f2d7edec6584dcd54ed2d5efe16435", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1timeremaining.html#a28a6e0480ad082f9857e3312d363c5b7", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1timeremaining.html#a50c7ee16068577b2e79910313ae56046", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1timeremaining.html#a0ab1313e3ea538fc1e5e8976189a6072", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1timeremaining.html#a5ca2a0b032bbba5cd31a8212bd9ca801", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1timeremaining.html#a656c8a76907bb4487a4373897e7a6cd3", null ],
       [ "VEHICLE_POWERTRAIN_FUELSYSTEM_TIMEREMAINING", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1timeremaining.html#a8dca910aa5daa02efa294a6d8ff6e157", null ]
-    ] ],
-    [ "timeremaining_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1timeremaining__availability__sensor.html", null ]
+    ] ]
 ];

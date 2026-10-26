@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/adas/esc/Signal_IsEngaged.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/adas/esc/Signal_IsEngaged.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('adas_2esc_2Signal__IsEngaged_8h.html',
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsEngaged.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="adas_2esc_2Signal__IsEngaged_8h__incl.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="adas_2esc_2Signal__IsEngaged_8h__dep__incl.svg" width="451" height="374"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="adas_2esc_2Signal__IsEngaged_8h_source.html">Go to the source code of this file.</a></p>
@@ -135,18 +139,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a38ab42cacc93f20accfff6d07841c53a" id="r_a38ab42cacc93f20accfff6d07841c53a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isengaged.html#a38ab42cacc93f20accfff6d07841c53a">yoriito::vehicle::adas::esc::isengaged::Get</a> ()</td></tr>
-<tr class="separator:a38ab42cacc93f20accfff6d07841c53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af459410c3f86c9ea064eea15d6e28ae7" id="r_af459410c3f86c9ea064eea15d6e28ae7"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isengaged.html#af459410c3f86c9ea064eea15d6e28ae7">yoriito::vehicle::adas::esc::isengaged::Subscribe</a> ()</td></tr>
-<tr class="separator:af459410c3f86c9ea064eea15d6e28ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4de4a67db38647240f40c820451dee7e" id="r_a4de4a67db38647240f40c820451dee7e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isengaged.html#a4de4a67db38647240f40c820451dee7e">yoriito::vehicle::adas::esc::isengaged::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a4de4a67db38647240f40c820451dee7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5453db40f49419b187159ddbd739eb85" id="r_a5453db40f49419b187159ddbd739eb85"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isengaged.html#a5453db40f49419b187159ddbd739eb85">yoriito::vehicle::adas::esc::isengaged::Inspect</a> ()</td></tr>
-<tr class="separator:a5453db40f49419b187159ddbd739eb85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f494208f9cbfb34a56b7abe5938d7e" id="r_ac8f494208f9cbfb34a56b7abe5938d7e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isengaged.html#ac8f494208f9cbfb34a56b7abe5938d7e">yoriito::vehicle::adas::esc::isengaged::Get</a> ()</td></tr>
+<tr class="separator:ac8f494208f9cbfb34a56b7abe5938d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48b14ba428363cc2c3f971826dd9df8" id="r_ab48b14ba428363cc2c3f971826dd9df8"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isengaged.html#ab48b14ba428363cc2c3f971826dd9df8">yoriito::vehicle::adas::esc::isengaged::Subscribe</a> ()</td></tr>
+<tr class="separator:ab48b14ba428363cc2c3f971826dd9df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dfbac735ac95ca28c2e90b58920977c" id="r_a6dfbac735ac95ca28c2e90b58920977c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isengaged.html#a6dfbac735ac95ca28c2e90b58920977c">yoriito::vehicle::adas::esc::isengaged::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:a6dfbac735ac95ca28c2e90b58920977c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1a3ef20e8e4167cc4c031322db18d8" id="r_a4c1a3ef20e8e4167cc4c031322db18d8"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isengaged.html#a4c1a3ef20e8e4167cc4c031322db18d8">yoriito::vehicle::adas::esc::isengaged::Inspect</a> ()</td></tr>
+<tr class="separator:a4c1a3ef20e8e4167cc4c031322db18d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a586f120898edf9060c938d40ceaf0f4c" id="r_a586f120898edf9060c938d40ceaf0f4c"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isengaged.html#a586f120898edf9060c938d40ceaf0f4c">yoriito::vehicle::adas::esc::isengaged::VEHICLE_ADAS_ESC_ISENGAGED</a></td></tr>
+<tr class="memitem:a586f120898edf9060c938d40ceaf0f4c" id="r_a586f120898edf9060c938d40ceaf0f4c"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isengaged.html#a586f120898edf9060c938d40ceaf0f4c">yoriito::vehicle::adas::esc::isengaged::VEHICLE_ADAS_ESC_ISENGAGED</a> = &quot;Vehicle.ADAS.ESC.IsEngaged&quot;</td></tr>
 <tr class="separator:a586f120898edf9060c938d40ceaf0f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

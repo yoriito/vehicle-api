@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/number2/Signal_ErrorCodes.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/number2/Signal_ErrorCodes.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('number2_2Signal__ErrorCodes_8h.html','
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_ErrorCodes.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="number2_2Signal__ErrorCodes_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="number2_2Signal__ErrorCodes_8h__dep__incl.svg" width="456" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="number2_2Signal__ErrorCodes_8h_source.html">Go to the source code of this file.</a></p>
@@ -137,14 +141,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a47fdb45495a88feed335940a18425cc0" id="r_a47fdb45495a88feed335940a18425cc0"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1errorcodes.html#a47fdb45495a88feed335940a18425cc0">yoriito::vehicle::powertrain::tractionbattery::number2::errorcodes::Get</a> ()</td></tr>
-<tr class="separator:a47fdb45495a88feed335940a18425cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a024a73dea54d8dee4d37c4457dd7b239" id="r_a024a73dea54d8dee4d37c4457dd7b239"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1errorcodes.html#a024a73dea54d8dee4d37c4457dd7b239">yoriito::vehicle::powertrain::tractionbattery::number2::errorcodes::Subscribe</a> ()</td></tr>
-<tr class="separator:a024a73dea54d8dee4d37c4457dd7b239"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ff4b81e97b311c5c48226e444921938" id="r_a2ff4b81e97b311c5c48226e444921938"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1errorcodes.html#a2ff4b81e97b311c5c48226e444921938">yoriito::vehicle::powertrain::tractionbattery::number2::errorcodes::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a2ff4b81e97b311c5c48226e444921938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8507256f2ab062511718d212fd3c1738" id="r_a8507256f2ab062511718d212fd3c1738"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1errorcodes.html#a8507256f2ab062511718d212fd3c1738">yoriito::vehicle::powertrain::tractionbattery::number2::errorcodes::Inspect</a> ()</td></tr>
-<tr class="separator:a8507256f2ab062511718d212fd3c1738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a538e42c9ac2d73756b74ac515f68e" id="r_a57a538e42c9ac2d73756b74ac515f68e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; std::vector&lt; std::string &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1errorcodes.html#a57a538e42c9ac2d73756b74ac515f68e">yoriito::vehicle::powertrain::tractionbattery::number2::errorcodes::Get</a> ()</td></tr>
+<tr class="separator:a57a538e42c9ac2d73756b74ac515f68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbd16c028c9ebc0074cd2b271250572" id="r_a6dbd16c028c9ebc0074cd2b271250572"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; std::vector&lt; std::string &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1errorcodes.html#a6dbd16c028c9ebc0074cd2b271250572">yoriito::vehicle::powertrain::tractionbattery::number2::errorcodes::Subscribe</a> ()</td></tr>
+<tr class="separator:a6dbd16c028c9ebc0074cd2b271250572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d0cdf790dafee208dd84a9cdf478f1" id="r_a68d0cdf790dafee208dd84a9cdf478f1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1errorcodes.html#a68d0cdf790dafee208dd84a9cdf478f1">yoriito::vehicle::powertrain::tractionbattery::number2::errorcodes::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; std::vector&lt; std::string &gt; &gt; subscription_context)</td></tr>
+<tr class="separator:a68d0cdf790dafee208dd84a9cdf478f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f401b88995e4dee67fbc0d9383cc72f" id="r_a4f401b88995e4dee67fbc0d9383cc72f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; std::vector&lt; std::string &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1errorcodes.html#a4f401b88995e4dee67fbc0d9383cc72f">yoriito::vehicle::powertrain::tractionbattery::number2::errorcodes::Inspect</a> ()</td></tr>
+<tr class="separator:a4f401b88995e4dee67fbc0d9383cc72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

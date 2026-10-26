@@ -6,8 +6,6 @@ var dir_7fc7218d20325ad047156313fc51b435 =
     [ "Signal_AxleWidth.h", "row1_2Signal__AxleWidth_8h.html", "row1_2Signal__AxleWidth_8h" ],
     [ "Signal_SteeringAngle.cc", "row1_2Signal__SteeringAngle_8cc.html", "row1_2Signal__SteeringAngle_8cc" ],
     [ "Signal_SteeringAngle.h", "row1_2Signal__SteeringAngle_8h.html", "row1_2Signal__SteeringAngle_8h" ],
-    [ "Signal_SteeringAngle_Availability_Sensor.cc", "row1_2Signal__SteeringAngle__Availability__Sensor_8cc.html", "row1_2Signal__SteeringAngle__Availability__Sensor_8cc" ],
-    [ "Signal_SteeringAngle_Availability_Sensor.h", "row1_2Signal__SteeringAngle__Availability__Sensor_8h.html", "row1_2Signal__SteeringAngle__Availability__Sensor_8h" ],
     [ "Signal_TireAspectRatio.cc", "row1_2Signal__TireAspectRatio_8cc.html", "row1_2Signal__TireAspectRatio_8cc" ],
     [ "Signal_TireAspectRatio.h", "row1_2Signal__TireAspectRatio_8h.html", "row1_2Signal__TireAspectRatio_8h" ],
     [ "Signal_TireWidth.cc", "row1_2Signal__TireWidth_8cc.html", "row1_2Signal__TireWidth_8cc" ],

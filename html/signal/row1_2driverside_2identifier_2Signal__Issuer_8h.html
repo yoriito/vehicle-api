@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/occupant/row1/driverside/identifier/Signal_Issuer.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/occupant/row1/driverside/identifier/Signal_Issuer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,16 +106,20 @@ $(document).ready(function(){initNavTree('row1_2driverside_2identifier_2Signal__
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Issuer.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="row1_2driverside_2identifier_2Signal__Issuer_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="row1_2driverside_2identifier_2Signal__Issuer_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="row1_2driverside_2identifier_2Signal__Issuer_8h_source.html">Go to the source code of this file.</a></p>
@@ -140,14 +144,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab81992469fdcc8790853a652377ffde4" id="r_ab81992469fdcc8790853a652377ffde4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1occupant_1_1row1_1_1driverside_1_1identifier_1_1issuer.html#ab81992469fdcc8790853a652377ffde4">yoriito::vehicle::occupant::row1::driverside::identifier::issuer::Get</a> ()</td></tr>
-<tr class="separator:ab81992469fdcc8790853a652377ffde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53f61790eea3b084117e55107364eb2e" id="r_a53f61790eea3b084117e55107364eb2e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1occupant_1_1row1_1_1driverside_1_1identifier_1_1issuer.html#a53f61790eea3b084117e55107364eb2e">yoriito::vehicle::occupant::row1::driverside::identifier::issuer::Subscribe</a> ()</td></tr>
-<tr class="separator:a53f61790eea3b084117e55107364eb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7828f44a8bbd9a2c9dc370e1c34268fa" id="r_a7828f44a8bbd9a2c9dc370e1c34268fa"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1occupant_1_1row1_1_1driverside_1_1identifier_1_1issuer.html#a7828f44a8bbd9a2c9dc370e1c34268fa">yoriito::vehicle::occupant::row1::driverside::identifier::issuer::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a7828f44a8bbd9a2c9dc370e1c34268fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79611e6cfd63d291309d1975165de0de" id="r_a79611e6cfd63d291309d1975165de0de"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1occupant_1_1row1_1_1driverside_1_1identifier_1_1issuer.html#a79611e6cfd63d291309d1975165de0de">yoriito::vehicle::occupant::row1::driverside::identifier::issuer::Inspect</a> ()</td></tr>
-<tr class="separator:a79611e6cfd63d291309d1975165de0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8e44770ef1bac9926ef317b216fdba" id="r_a4c8e44770ef1bac9926ef317b216fdba"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1occupant_1_1row1_1_1driverside_1_1identifier_1_1issuer.html#a4c8e44770ef1bac9926ef317b216fdba">yoriito::vehicle::occupant::row1::driverside::identifier::issuer::Get</a> ()</td></tr>
+<tr class="separator:a4c8e44770ef1bac9926ef317b216fdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d39009801c474b4d4c00c3882eefdde" id="r_a0d39009801c474b4d4c00c3882eefdde"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1occupant_1_1row1_1_1driverside_1_1identifier_1_1issuer.html#a0d39009801c474b4d4c00c3882eefdde">yoriito::vehicle::occupant::row1::driverside::identifier::issuer::Subscribe</a> ()</td></tr>
+<tr class="separator:a0d39009801c474b4d4c00c3882eefdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd77c3f03a78dd2926bdc2099e50e58" id="r_acdd77c3f03a78dd2926bdc2099e50e58"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1occupant_1_1row1_1_1driverside_1_1identifier_1_1issuer.html#acdd77c3f03a78dd2926bdc2099e50e58">yoriito::vehicle::occupant::row1::driverside::identifier::issuer::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; std::string &gt; subscription_context)</td></tr>
+<tr class="separator:acdd77c3f03a78dd2926bdc2099e50e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bd3a1909440d3ff3fa2a2dbe813210" id="r_a44bd3a1909440d3ff3fa2a2dbe813210"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1occupant_1_1row1_1_1driverside_1_1identifier_1_1issuer.html#a44bd3a1909440d3ff3fa2a2dbe813210">yoriito::vehicle::occupant::row1::driverside::identifier::issuer::Inspect</a> ()</td></tr>
+<tr class="separator:a44bd3a1909440d3ff3fa2a2dbe813210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

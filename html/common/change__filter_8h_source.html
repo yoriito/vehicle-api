@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - common: /home/runner/work/vehicle-api/vehicle-api/common/databroker/filter/change_filter.h Source File</title>
+<title>Yoriito Vehicle API - common: /work/common/databroker/filter/change_filter.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('change__filter_8h_source.html',''); in
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_CHANGE_FILTER_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_CHANGE_FILTER_H_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef COMMON_DATABROKER_FILTER_CHANGE_FILTER_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define COMMON_DATABROKER_FILTER_CHANGE_FILTER_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="operator__type_8h.html">databroker/filter/operator_type.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('change__filter_8h_source.html',''); in
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="foldopen" id="foldopen00098" data-start="{" data-end="};">
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1filter_1_1ChangeFilter.html#a9b359b0c278bc7e3643487cf78425655">   98</a></span>  <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code hl_friend" href="classyoriito_1_1databroker_1_1filter_1_1ChangeFilter.html#a9b359b0c278bc7e3643487cf78425655">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classyoriito_1_1databroker_1_1filter_1_1ChangeFilter.html">ChangeFilter</a>&amp; lhs, <span class="keyword">const</span> <a class="code hl_class" href="classyoriito_1_1databroker_1_1filter_1_1ChangeFilter.html">ChangeFilter</a>&amp; rhs) {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">return</span> lhs.logic_op_ == rhs.logic_op_ &amp;&amp; lhs.diff_ == rhs.diff_;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">return</span> (lhs.logic_op_ == rhs.logic_op_) &amp;&amp; (lhs.diff_ == rhs.diff_);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  }</div>
 </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('change__filter_8h_source.html',''); in
 </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}  <span class="comment">// namespace yoriito::databroker::filter</span></div>
 </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#endif  </span><span class="comment">// YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_CHANGE_FILTER_H_</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#endif  </span><span class="comment">// COMMON_DATABROKER_FILTER_CHANGE_FILTER_H_</span></div>
 <div class="ttc" id="aclassyoriito_1_1databroker_1_1filter_1_1ChangeFilter_html"><div class="ttname"><a href="classyoriito_1_1databroker_1_1filter_1_1ChangeFilter.html">yoriito::databroker::filter::ChangeFilter</a></div><div class="ttdoc">Class representing a change filter for datapoints in the DataBroker.</div><div class="ttdef"><b>Definition</b> <a href="change__filter_8h_source.html#l00035">change_filter.h:35</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1databroker_1_1filter_1_1ChangeFilter_html_a443013344d6559b7c4efe7dc8732b83e"><div class="ttname"><a href="classyoriito_1_1databroker_1_1filter_1_1ChangeFilter.html#a443013344d6559b7c4efe7dc8732b83e">yoriito::databroker::filter::ChangeFilter::ChangeFilter</a></div><div class="ttdeci">ChangeFilter(const OperatorType logic_op, const int32_t diff)</div><div class="ttdoc">Constructs a ChangeFilter with the specified operator and difference value.</div><div class="ttdef"><b>Definition</b> <a href="change__filter_8h_source.html#l00053">change_filter.h:53</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1databroker_1_1filter_1_1ChangeFilter_html_a4495b56fe7265024ddef698d09f69dc8"><div class="ttname"><a href="classyoriito_1_1databroker_1_1filter_1_1ChangeFilter.html#a4495b56fe7265024ddef698d09f69dc8">yoriito::databroker::filter::ChangeFilter::GetLogicOperator</a></div><div class="ttdeci">OperatorType GetLogicOperator() const</div><div class="ttdoc">Gets the logical operator type used in this filter.</div><div class="ttdef"><b>Definition</b> <a href="change__filter_8h_source.html#l00068">change_filter.h:68</a></div></div>

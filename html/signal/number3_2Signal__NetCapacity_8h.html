@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/number3/Signal_NetCapacity.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/number3/Signal_NetCapacity.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('number3_2Signal__NetCapacity_8h.html',
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_NetCapacity.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="number3_2Signal__NetCapacity_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="number3_2Signal__NetCapacity_8h__dep__incl.svg" width="464" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="number3_2Signal__NetCapacity_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity.html">yoriito::vehicle::powertrain::tractionbattery::number3::netcapacity</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.TractionBattery.Number3.NetCapacity signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -134,17 +135,19 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3.html">yoriito::vehicle::powertrain::tractionbattery::number3</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity.html">yoriito::vehicle::powertrain::tractionbattery::number3::netcapacity</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a00cbfa81b3d4f7820555681206acaa88" id="r_a00cbfa81b3d4f7820555681206acaa88"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity.html#a00cbfa81b3d4f7820555681206acaa88">yoriito::vehicle::powertrain::tractionbattery::number3::netcapacity::Get</a> ()</td></tr>
-<tr class="separator:a00cbfa81b3d4f7820555681206acaa88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef8c7500fc69b4ae4c4dac9a4522763a" id="r_aef8c7500fc69b4ae4c4dac9a4522763a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity.html#aef8c7500fc69b4ae4c4dac9a4522763a">yoriito::vehicle::powertrain::tractionbattery::number3::netcapacity::Subscribe</a> ()</td></tr>
-<tr class="separator:aef8c7500fc69b4ae4c4dac9a4522763a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acadd840cd14f331e74aec575a569919a" id="r_acadd840cd14f331e74aec575a569919a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity.html#acadd840cd14f331e74aec575a569919a">yoriito::vehicle::powertrain::tractionbattery::number3::netcapacity::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:acadd840cd14f331e74aec575a569919a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1606fbfe1063fb0c88b244f9e65abd9" id="r_af1606fbfe1063fb0c88b244f9e65abd9"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity.html#af1606fbfe1063fb0c88b244f9e65abd9">yoriito::vehicle::powertrain::tractionbattery::number3::netcapacity::Inspect</a> ()</td></tr>
-<tr class="separator:af1606fbfe1063fb0c88b244f9e65abd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11db8ac430769028d81ab47e9ff73b7a" id="r_a11db8ac430769028d81ab47e9ff73b7a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint16_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity.html#a11db8ac430769028d81ab47e9ff73b7a">yoriito::vehicle::powertrain::tractionbattery::number3::netcapacity::Get</a> ()</td></tr>
+<tr class="separator:a11db8ac430769028d81ab47e9ff73b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347b2c4ba1ca1e3e1d0176269072aebe" id="r_a347b2c4ba1ca1e3e1d0176269072aebe"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; uint16_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity.html#a347b2c4ba1ca1e3e1d0176269072aebe">yoriito::vehicle::powertrain::tractionbattery::number3::netcapacity::Subscribe</a> ()</td></tr>
+<tr class="separator:a347b2c4ba1ca1e3e1d0176269072aebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec38e3eb639e88d045bd54a173d3421" id="r_acec38e3eb639e88d045bd54a173d3421"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity.html#acec38e3eb639e88d045bd54a173d3421">yoriito::vehicle::powertrain::tractionbattery::number3::netcapacity::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; uint16_t &gt; subscription_context)</td></tr>
+<tr class="separator:acec38e3eb639e88d045bd54a173d3421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2a1f9ea05a3896430808588d8190a2" id="r_a0e2a1f9ea05a3896430808588d8190a2"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint16_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1netcapacity.html#a0e2a1f9ea05a3896430808588d8190a2">yoriito::vehicle::powertrain::tractionbattery::number3::netcapacity::Inspect</a> ()</td></tr>
+<tr class="separator:a0e2a1f9ea05a3896430808588d8190a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

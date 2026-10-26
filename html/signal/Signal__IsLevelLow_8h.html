@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/combustionengine/dieselexhaustfluid/Signal_IsLevelLow.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/combustionengine/dieselexhaustfluid/Signal_IsLevelLow.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('Signal__IsLevelLow_8h.html',''); initR
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsLevelLow.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__IsLevelLow_8h__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__IsLevelLow_8h__dep__incl.svg" width="542" height="550"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__IsLevelLow_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow.html">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid::islevellow</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.CombustionEngine.DieselExhaustFluid.IsLevelLow signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -134,24 +135,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid.html">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1_01islevellow" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1_01islevellow"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1_01islevellow.html">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid:: islevellow</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow.html">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid::islevellow</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6a39a9311726a5802b637a6c53ba1091" id="r_a6a39a9311726a5802b637a6c53ba1091"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1_01islevellow.html#a6a39a9311726a5802b637a6c53ba1091">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid:: islevellow::Get</a> ()</td></tr>
-<tr class="separator:a6a39a9311726a5802b637a6c53ba1091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d6fc0c942c83e6f2d6f6443db78769" id="r_ac5d6fc0c942c83e6f2d6f6443db78769"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1_01islevellow.html#ac5d6fc0c942c83e6f2d6f6443db78769">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid:: islevellow::Subscribe</a> ()</td></tr>
-<tr class="separator:ac5d6fc0c942c83e6f2d6f6443db78769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56df31f6cd543bcac80e09f959a8c8a5" id="r_a56df31f6cd543bcac80e09f959a8c8a5"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1_01islevellow.html#a56df31f6cd543bcac80e09f959a8c8a5">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid:: islevellow::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a56df31f6cd543bcac80e09f959a8c8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a637a2c0a5103f5c50db998b9375be0ba" id="r_a637a2c0a5103f5c50db998b9375be0ba"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1_01islevellow.html#a637a2c0a5103f5c50db998b9375be0ba">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid:: islevellow::Inspect</a> ()</td></tr>
-<tr class="separator:a637a2c0a5103f5c50db998b9375be0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb19703cf59bde27d9b6ef966516ef4" id="r_abeb19703cf59bde27d9b6ef966516ef4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow.html#abeb19703cf59bde27d9b6ef966516ef4">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid::islevellow::Get</a> ()</td></tr>
+<tr class="separator:abeb19703cf59bde27d9b6ef966516ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930acc2287c1fc5d3a280c54c0e56657" id="r_a930acc2287c1fc5d3a280c54c0e56657"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow.html#a930acc2287c1fc5d3a280c54c0e56657">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid::islevellow::Subscribe</a> ()</td></tr>
+<tr class="separator:a930acc2287c1fc5d3a280c54c0e56657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39eb1a851672bdf2dfac8ef85366605c" id="r_a39eb1a851672bdf2dfac8ef85366605c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow.html#a39eb1a851672bdf2dfac8ef85366605c">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid::islevellow::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:a39eb1a851672bdf2dfac8ef85366605c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c0096ff035aaae2dd71aac60c98d5f" id="r_a17c0096ff035aaae2dd71aac60c98d5f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow.html#a17c0096ff035aaae2dd71aac60c98d5f">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid::islevellow::Inspect</a> ()</td></tr>
+<tr class="separator:a17c0096ff035aaae2dd71aac60c98d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a05feab18b8d738e4e57951f8280451f0" id="r_a05feab18b8d738e4e57951f8280451f0"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1_01islevellow.html#a05feab18b8d738e4e57951f8280451f0">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid:: islevellow::VEHICLE_POWERTRAIN_COMBUSTIONENGINE_DIESELEXHAUSTFLUID_ISLEVELLOW</a></td></tr>
-<tr class="separator:a05feab18b8d738e4e57951f8280451f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7bbcc51f17cdbe9426a219eef6700e8" id="r_af7bbcc51f17cdbe9426a219eef6700e8"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselexhaustfluid_1_1islevellow.html#af7bbcc51f17cdbe9426a219eef6700e8">yoriito::vehicle::powertrain::combustionengine::dieselexhaustfluid::islevellow::VEHICLE_POWERTRAIN_COMBUSTIONENGINE_DIESELEXHAUSTFLUID_ISLEVELLOW</a></td></tr>
+<tr class="separator:af7bbcc51f17cdbe9426a219eef6700e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

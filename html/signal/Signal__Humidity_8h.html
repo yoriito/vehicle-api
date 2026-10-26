@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/exterior/Signal_Humidity.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/exterior/Signal_Humidity.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('Signal__Humidity_8h.html',''); initRes
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Humidity.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__Humidity_8h__incl.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__Humidity_8h__dep__incl.svg" width="435" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__Humidity_8h_source.html">Go to the source code of this file.</a></p>
@@ -133,14 +137,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3fe47be3fa7b265b993f4e9237f6096e" id="r_a3fe47be3fa7b265b993f4e9237f6096e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1exterior_1_1humidity.html#a3fe47be3fa7b265b993f4e9237f6096e">yoriito::vehicle::exterior::humidity::Get</a> ()</td></tr>
-<tr class="separator:a3fe47be3fa7b265b993f4e9237f6096e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35b322b3bf8cf39a0184e6d8c915a8db" id="r_a35b322b3bf8cf39a0184e6d8c915a8db"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1exterior_1_1humidity.html#a35b322b3bf8cf39a0184e6d8c915a8db">yoriito::vehicle::exterior::humidity::Subscribe</a> ()</td></tr>
-<tr class="separator:a35b322b3bf8cf39a0184e6d8c915a8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a322cc8719ebdaf78cafc2bf59e04d70a" id="r_a322cc8719ebdaf78cafc2bf59e04d70a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1exterior_1_1humidity.html#a322cc8719ebdaf78cafc2bf59e04d70a">yoriito::vehicle::exterior::humidity::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a322cc8719ebdaf78cafc2bf59e04d70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a696cf98115bead101aff987274d43f78" id="r_a696cf98115bead101aff987274d43f78"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1exterior_1_1humidity.html#a696cf98115bead101aff987274d43f78">yoriito::vehicle::exterior::humidity::Inspect</a> ()</td></tr>
-<tr class="separator:a696cf98115bead101aff987274d43f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f2a295165087002cdfd909a898d4802" id="r_a4f2a295165087002cdfd909a898d4802"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1exterior_1_1humidity.html#a4f2a295165087002cdfd909a898d4802">yoriito::vehicle::exterior::humidity::Get</a> ()</td></tr>
+<tr class="separator:a4f2a295165087002cdfd909a898d4802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafc34e5c5855b60b3874add1203d3b0" id="r_abafc34e5c5855b60b3874add1203d3b0"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1exterior_1_1humidity.html#abafc34e5c5855b60b3874add1203d3b0">yoriito::vehicle::exterior::humidity::Subscribe</a> ()</td></tr>
+<tr class="separator:abafc34e5c5855b60b3874add1203d3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4481076fea33602025dfd3b87f7d3cb" id="r_ab4481076fea33602025dfd3b87f7d3cb"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1exterior_1_1humidity.html#ab4481076fea33602025dfd3b87f7d3cb">yoriito::vehicle::exterior::humidity::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:ab4481076fea33602025dfd3b87f7d3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20bd59c37e8c20e149933a36af52b17" id="r_aa20bd59c37e8c20e149933a36af52b17"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1exterior_1_1humidity.html#aa20bd59c37e8c20e149933a36af52b17">yoriito::vehicle::exterior::humidity::Inspect</a> ()</td></tr>
+<tr class="separator:aa20bd59c37e8c20e149933a36af52b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

@@ -5,10 +5,6 @@ var dir_32940909f4172b18062b27acb59df8a9 =
     [ "Right.h", "chassis_2axle_2row2_2wheel_2right_2Right_8h.html", null ],
     [ "Signal_AngularSpeed.cc", "row2_2wheel_2right_2Signal__AngularSpeed_8cc.html", "row2_2wheel_2right_2Signal__AngularSpeed_8cc" ],
     [ "Signal_AngularSpeed.h", "row2_2wheel_2right_2Signal__AngularSpeed_8h.html", "row2_2wheel_2right_2Signal__AngularSpeed_8h" ],
-    [ "Signal_AngularSpeed_Availability_Sensor.cc", "row2_2wheel_2right_2Signal__AngularSpeed__Availability__Sensor_8cc.html", "row2_2wheel_2right_2Signal__AngularSpeed__Availability__Sensor_8cc" ],
-    [ "Signal_AngularSpeed_Availability_Sensor.h", "row2_2wheel_2right_2Signal__AngularSpeed__Availability__Sensor_8h.html", "row2_2wheel_2right_2Signal__AngularSpeed__Availability__Sensor_8h" ],
     [ "Signal_Speed.cc", "chassis_2axle_2row2_2wheel_2right_2Signal__Speed_8cc.html", "chassis_2axle_2row2_2wheel_2right_2Signal__Speed_8cc" ],
-    [ "Signal_Speed.h", "chassis_2axle_2row2_2wheel_2right_2Signal__Speed_8h.html", "chassis_2axle_2row2_2wheel_2right_2Signal__Speed_8h" ],
-    [ "Signal_Speed_Availability_Sensor.cc", "chassis_2axle_2row2_2wheel_2right_2Signal__Speed__Availability__Sensor_8cc.html", "chassis_2axle_2row2_2wheel_2right_2Signal__Speed__Availability__Sensor_8cc" ],
-    [ "Signal_Speed_Availability_Sensor.h", "chassis_2axle_2row2_2wheel_2right_2Signal__Speed__Availability__Sensor_8h.html", "chassis_2axle_2row2_2wheel_2right_2Signal__Speed__Availability__Sensor_8h" ]
+    [ "Signal_Speed.h", "chassis_2axle_2row2_2wheel_2right_2Signal__Speed_8h.html", "chassis_2axle_2row2_2wheel_2right_2Signal__Speed_8h" ]
 ];

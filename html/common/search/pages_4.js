@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vehicle_20api_20logging_20system_0',['Yoriito Vehicle API Logging System',['../md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html',1,'']]]
+  ['vehicle_20api_20logging_20system_0',['Yoriito Vehicle API Logging System',['../md__2work_2common_2logger_2README.html',1,'']]]
 ];

@@ -1,0 +1,4 @@
+var structyoriito_1_1types_1_1internal_1_1StructUtilityTraits_3_01yoriito_1_1types_1_1GNSSLocation_01_4 =
+[
+    [ "Utility", "structyoriito_1_1types_1_1internal_1_1StructUtilityTraits_3_01yoriito_1_1types_1_1GNSSLocation_01_4.html#af30c812c9de50c83cf80859e68b0c785", null ]
+];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/combustionengine/dieselparticulatefilter/Signal_OutletTemperature.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/combustionengine/dieselparticulatefilter/Signal_OutletTemperature.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('Signal__OutletTemperature_8h.html','')
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_OutletTemperature.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__OutletTemperature_8h__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__OutletTemperature_8h__dep__incl.svg" width="534" height="550"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__OutletTemperature_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature.html">yoriito::vehicle::powertrain::combustionengine::dieselparticulatefilter::outlettemperature</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.CombustionEngine.DieselParticulateFilter.OutletTemperature signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -132,26 +133,26 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine.html">yoriito::vehicle::powertrain::combustionengine</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1_01dieselparticulatefilter" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1_01dieselparticulatefilter"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1_01dieselparticulatefilter.html">yoriito::vehicle::powertrain::combustionengine:: dieselparticulatefilter</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter.html">yoriito::vehicle::powertrain::combustionengine::dieselparticulatefilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1_01dieselparticulatefilter_1_1outlettemperature" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1_01dieselparticulatefilter_1_1outlettemperature"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1_01dieselparticulatefilter_1_1outlettemperature.html">yoriito::vehicle::powertrain::combustionengine:: dieselparticulatefilter::outlettemperature</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature.html">yoriito::vehicle::powertrain::combustionengine::dieselparticulatefilter::outlettemperature</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8223a7f9ddd2ea3ca3c2ffa3ca943420" id="r_a8223a7f9ddd2ea3ca3c2ffa3ca943420"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1_01dieselparticulatefilter_1_1outlettemperature.html#a8223a7f9ddd2ea3ca3c2ffa3ca943420">yoriito::vehicle::powertrain::combustionengine:: dieselparticulatefilter::outlettemperature::Get</a> ()</td></tr>
-<tr class="separator:a8223a7f9ddd2ea3ca3c2ffa3ca943420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e78a57fa310ed7ad3df23f57298be62" id="r_a2e78a57fa310ed7ad3df23f57298be62"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1_01dieselparticulatefilter_1_1outlettemperature.html#a2e78a57fa310ed7ad3df23f57298be62">yoriito::vehicle::powertrain::combustionengine:: dieselparticulatefilter::outlettemperature::Subscribe</a> ()</td></tr>
-<tr class="separator:a2e78a57fa310ed7ad3df23f57298be62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed3782bb9591b1a43029dd9876cbd21" id="r_a5ed3782bb9591b1a43029dd9876cbd21"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1_01dieselparticulatefilter_1_1outlettemperature.html#a5ed3782bb9591b1a43029dd9876cbd21">yoriito::vehicle::powertrain::combustionengine:: dieselparticulatefilter::outlettemperature::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a5ed3782bb9591b1a43029dd9876cbd21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2464fcf1489f34f1bff90c3860f8653a" id="r_a2464fcf1489f34f1bff90c3860f8653a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1_01dieselparticulatefilter_1_1outlettemperature.html#a2464fcf1489f34f1bff90c3860f8653a">yoriito::vehicle::powertrain::combustionengine:: dieselparticulatefilter::outlettemperature::Inspect</a> ()</td></tr>
-<tr class="separator:a2464fcf1489f34f1bff90c3860f8653a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c1e00a4f50ecbb25a32ed1b7aa631a" id="r_a15c1e00a4f50ecbb25a32ed1b7aa631a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature.html#a15c1e00a4f50ecbb25a32ed1b7aa631a">yoriito::vehicle::powertrain::combustionengine::dieselparticulatefilter::outlettemperature::Get</a> ()</td></tr>
+<tr class="separator:a15c1e00a4f50ecbb25a32ed1b7aa631a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa32b95386e950adad4b0831253528a" id="r_acaa32b95386e950adad4b0831253528a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature.html#acaa32b95386e950adad4b0831253528a">yoriito::vehicle::powertrain::combustionengine::dieselparticulatefilter::outlettemperature::Subscribe</a> ()</td></tr>
+<tr class="separator:acaa32b95386e950adad4b0831253528a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436f5d2875d59503e949d0e4e3ec1ba1" id="r_a436f5d2875d59503e949d0e4e3ec1ba1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature.html#a436f5d2875d59503e949d0e4e3ec1ba1">yoriito::vehicle::powertrain::combustionengine::dieselparticulatefilter::outlettemperature::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:a436f5d2875d59503e949d0e4e3ec1ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6746c1e992f0114bb47e1f1539a4b58e" id="r_a6746c1e992f0114bb47e1f1539a4b58e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature.html#a6746c1e992f0114bb47e1f1539a4b58e">yoriito::vehicle::powertrain::combustionengine::dieselparticulatefilter::outlettemperature::Inspect</a> ()</td></tr>
+<tr class="separator:a6746c1e992f0114bb47e1f1539a4b58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a423986ed7b180063662cbf39086aee0b" id="r_a423986ed7b180063662cbf39086aee0b"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1_01dieselparticulatefilter_1_1outlettemperature.html#a423986ed7b180063662cbf39086aee0b">yoriito::vehicle::powertrain::combustionengine:: dieselparticulatefilter::outlettemperature::VEHICLE_POWERTRAIN_COMBUSTIONENGINE_DIESELPARTICULATEFILTER_OUTLETTEMPERATURE</a></td></tr>
-<tr class="separator:a423986ed7b180063662cbf39086aee0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61fbcd02dda480e809e7de6c5cbd262e" id="r_a61fbcd02dda480e809e7de6c5cbd262e"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1dieselparticulatefilter_1_1outlettemperature.html#a61fbcd02dda480e809e7de6c5cbd262e">yoriito::vehicle::powertrain::combustionengine::dieselparticulatefilter::outlettemperature::VEHICLE_POWERTRAIN_COMBUSTIONENGINE_DIESELPARTICULATEFILTER_OUTLETTEMPERATURE</a></td></tr>
+<tr class="separator:a61fbcd02dda480e809e7de6c5cbd262e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

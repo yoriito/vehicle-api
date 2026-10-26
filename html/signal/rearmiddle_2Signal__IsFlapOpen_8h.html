@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/charging/chargingport/rearmiddle/Signal_IsFlapOpen.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/charging/chargingport/rearmiddle/Signal_IsFlapOpen.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,25 +106,26 @@ $(document).ready(function(){initNavTree('rearmiddle_2Signal__IsFlapOpen_8h.html
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsFlapOpen.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="rearmiddle_2Signal__IsFlapOpen_8h__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="rearmiddle_2Signal__IsFlapOpen_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="rearmiddle_2Signal__IsFlapOpen_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen.html">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::rearmiddle::isflapopen</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.TractionBattery.Charging.ChargingPort.RearMiddle.IsFlapOpen signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -135,30 +136,30 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging.html">yoriito::vehicle::powertrain::tractionbattery::charging</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport.html">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport.html">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle.html">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::rearmiddle</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle.html">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::rearmiddle</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle_1_1isflapopen" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle_1_1isflapopen"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle_1_1isflapopen.html">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::rearmiddle::isflapopen</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen.html">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::rearmiddle::isflapopen</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abf777abac284e362626147dbfc8f0b77" id="r_abf777abac284e362626147dbfc8f0b77"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle_1_1isflapopen.html#abf777abac284e362626147dbfc8f0b77">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::rearmiddle::isflapopen::Get</a> ()</td></tr>
-<tr class="separator:abf777abac284e362626147dbfc8f0b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c2eb171aa7bbf6c932e889e0c03fb4" id="r_a47c2eb171aa7bbf6c932e889e0c03fb4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle_1_1isflapopen.html#a47c2eb171aa7bbf6c932e889e0c03fb4">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::rearmiddle::isflapopen::Set</a> (const bool &amp;value)</td></tr>
-<tr class="separator:a47c2eb171aa7bbf6c932e889e0c03fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa60197e13209af2bfb2f9d48959342f8" id="r_aa60197e13209af2bfb2f9d48959342f8"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle_1_1isflapopen.html#aa60197e13209af2bfb2f9d48959342f8">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::rearmiddle::isflapopen::Subscribe</a> ()</td></tr>
-<tr class="separator:aa60197e13209af2bfb2f9d48959342f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e7a13250d8eb99b41dceb224c30125b" id="r_a9e7a13250d8eb99b41dceb224c30125b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle_1_1isflapopen.html#a9e7a13250d8eb99b41dceb224c30125b">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::rearmiddle::isflapopen::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a9e7a13250d8eb99b41dceb224c30125b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ddbd6dcb3f1cc38a95f55eee038719f" id="r_a4ddbd6dcb3f1cc38a95f55eee038719f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle_1_1isflapopen.html#a4ddbd6dcb3f1cc38a95f55eee038719f">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::rearmiddle::isflapopen::Inspect</a> ()</td></tr>
-<tr class="separator:a4ddbd6dcb3f1cc38a95f55eee038719f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb92f33b08be2a93953f844b359a10b" id="r_a7cb92f33b08be2a93953f844b359a10b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen.html#a7cb92f33b08be2a93953f844b359a10b">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::rearmiddle::isflapopen::Get</a> ()</td></tr>
+<tr class="separator:a7cb92f33b08be2a93953f844b359a10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad19c8851ad24f2d34c04ff74b708452e" id="r_ad19c8851ad24f2d34c04ff74b708452e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen.html#ad19c8851ad24f2d34c04ff74b708452e">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::rearmiddle::isflapopen::Set</a> (const bool &amp;value)</td></tr>
+<tr class="separator:ad19c8851ad24f2d34c04ff74b708452e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f04033197ec6193479aba6fee62631" id="r_a36f04033197ec6193479aba6fee62631"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen.html#a36f04033197ec6193479aba6fee62631">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::rearmiddle::isflapopen::Subscribe</a> ()</td></tr>
+<tr class="separator:a36f04033197ec6193479aba6fee62631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b20b3d9f6a4879880bd6096c50f2da" id="r_ab7b20b3d9f6a4879880bd6096c50f2da"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen.html#ab7b20b3d9f6a4879880bd6096c50f2da">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::rearmiddle::isflapopen::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:ab7b20b3d9f6a4879880bd6096c50f2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c66692711443931a91f2dc06f4d363" id="r_a32c66692711443931a91f2dc06f4d363"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen.html#a32c66692711443931a91f2dc06f4d363">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::rearmiddle::isflapopen::Inspect</a> ()</td></tr>
+<tr class="separator:a32c66692711443931a91f2dc06f4d363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:af8becadad79e7e399eb1611c8bf56be7" id="r_af8becadad79e7e399eb1611c8bf56be7"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1rearmiddle_1_1isflapopen.html#af8becadad79e7e399eb1611c8bf56be7">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::rearmiddle::isflapopen::VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGINGPORT_REARMIDDLE_ISFLAPOPEN</a></td></tr>
-<tr class="separator:af8becadad79e7e399eb1611c8bf56be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2987aec5ab0e3eb25e43b89f1004cc" id="r_a0c2987aec5ab0e3eb25e43b89f1004cc"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1rearmiddle_1_1isflapopen.html#a0c2987aec5ab0e3eb25e43b89f1004cc">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::rearmiddle::isflapopen::VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGINGPORT_REARMIDDLE_ISFLAPOPEN</a></td></tr>
+<tr class="separator:a0c2987aec5ab0e3eb25e43b89f1004cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

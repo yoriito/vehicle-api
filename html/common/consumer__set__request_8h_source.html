@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - common: /home/runner/work/vehicle-api/vehicle-api/common/databroker/consumer_set_request.h Source File</title>
+<title>Yoriito Vehicle API - common: /work/common/databroker/consumer_set_request.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,65 +117,65 @@ $(document).ready(function(){initNavTree('consumer__set__request_8h_source.html'
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_SET_REQUEST_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_SET_REQUEST_H_</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;variant&gt;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="consumer__set__datapoint_8h.html">databroker/consumer_set_datapoint.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef COMMON_DATABROKER_CONSUMER_SET_REQUEST_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define COMMON_DATABROKER_CONSUMER_SET_REQUEST_H_</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;variant&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="databroker__type_8h.html">databroker_type.h</a>&quot;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1databroker.html">yoriito::databroker</a> {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html">   43</a></span><span class="keyword">class </span><a class="code hl_class" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html">ConsumerSetRequest</a> {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#ab188f31dbe82b6a46cf33ae0ad143175">   57</a></span>  <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#ab188f31dbe82b6a46cf33ae0ad143175">ConsumerSetRequest</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a0e8d1bf8861ff30063e57419ca1055e6">   73</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a0e8d1bf8861ff30063e57419ca1055e6">ConsumerSetRequest</a>(</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      std::vector&lt;yoriito::databroker::ConsumerSetDataPoint&gt;&amp;&amp; data_points)</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      : data_points_(std::move(data_points)) {}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="consumer__set__datapoint_8h.html">databroker/consumer_set_datapoint.h</a>&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1databroker.html">yoriito::databroker</a> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html">ConsumerSetRequest</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#ab188f31dbe82b6a46cf33ae0ad143175">   58</a></span>  <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#ab188f31dbe82b6a46cf33ae0ad143175">ConsumerSetRequest</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a11cd6a8203dd5e8557ba0f7c52d29e5c">   74</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a11cd6a8203dd5e8557ba0f7c52d29e5c">ConsumerSetRequest</a>(</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    std::vector&lt;yoriito::databroker::ConsumerSetDataPoint&gt; data_points)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      : data_points_(std::move(data_points)) {}</div>
 </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a517424c60efc5447a3aa4f5034315dc6">   91</a></span>  <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a517424c60efc5447a3aa4f5034315dc6">ConsumerSetRequest</a>(</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      std::initializer_list&lt;yoriito::databroker::ConsumerSetDataPoint&gt;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          data_points)</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      : data_points_(data_points) {}</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a357ff203c622b05bb98161d34debfc8e">   91</a></span>  <span class="keyword">const</span> std::vector&lt;yoriito::databroker::ConsumerSetDataPoint&gt;&amp; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a357ff203c622b05bb98161d34debfc8e">GetDataPoints</a>()</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    const&amp; {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> data_points_;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
 </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a28a07af9305f021c359489ca1dc035fb">  109</a></span>  <span class="keyword">const</span> std::vector&lt;yoriito::databroker::ConsumerSetDataPoint&gt;&amp; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a28a07af9305f021c359489ca1dc035fb">GetDataPoints</a>()<span class="keyword"></span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">      const </span>{</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordflow">return</span> data_points_;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  }</div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#aba56f7b7421bb891b14b50fc80cf0d18">   95</a></span>  std::vector&lt;yoriito::databroker::ConsumerSetDataPoint&gt; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#aba56f7b7421bb891b14b50fc80cf0d18">GetDataPoints</a>()</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    const&amp;&amp; {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">return</span> data_points_;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  }</div>
 </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="foldopen" id="foldopen00129" data-start="{" data-end="};">
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a1c5c7332006c29104be376bb1348639f">  129</a></span>  <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code hl_friend" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a1c5c7332006c29104be376bb1348639f">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html">ConsumerSetRequest</a>&amp; lhs,</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                         <span class="keyword">const</span> <a class="code hl_class" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html">ConsumerSetRequest</a>&amp; rhs) {</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">return</span> lhs.data_points_ == rhs.data_points_;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" id="foldopen00115" data-start="{" data-end="};">
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a1c5c7332006c29104be376bb1348639f">  115</a></span>  <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code hl_friend" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a1c5c7332006c29104be376bb1348639f">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html">ConsumerSetRequest</a>&amp; lhs,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                         <span class="keyword">const</span> <a class="code hl_class" href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html">ConsumerSetRequest</a>&amp; rhs) {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">return</span> lhs.data_points_ == rhs.data_points_;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  }</div>
 </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  std::vector&lt;yoriito::databroker::ConsumerSetDataPoint&gt; data_points_;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>};</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  std::vector&lt;yoriito::databroker::ConsumerSetDataPoint&gt; data_points_;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>};</div>
 </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}  <span class="comment">// namespace yoriito::databroker</span></div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="preprocessor">#endif  </span><span class="comment">// YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_SET_REQUEST_H_</span></div>
-<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerSetRequest_html"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html">yoriito::databroker::ConsumerSetRequest</a></div><div class="ttdoc">Class representing a request to set datapoints by a DataBroker consumer.</div><div class="ttdef"><b>Definition</b> <a href="consumer__set__request_8h_source.html#l00043">consumer_set_request.h:43</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerSetRequest_html_a0e8d1bf8861ff30063e57419ca1055e6"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a0e8d1bf8861ff30063e57419ca1055e6">yoriito::databroker::ConsumerSetRequest::ConsumerSetRequest</a></div><div class="ttdeci">ConsumerSetRequest(std::vector&lt; yoriito::databroker::ConsumerSetDataPoint &gt; &amp;&amp;data_points)</div><div class="ttdef"><b>Definition</b> <a href="consumer__set__request_8h_source.html#l00073">consumer_set_request.h:73</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerSetRequest_html_a1c5c7332006c29104be376bb1348639f"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a1c5c7332006c29104be376bb1348639f">yoriito::databroker::ConsumerSetRequest::operator==</a></div><div class="ttdeci">friend bool operator==(const ConsumerSetRequest &amp;lhs, const ConsumerSetRequest &amp;rhs)</div><div class="ttdoc">Compare two ConsumerSetRequest objects for equality.</div><div class="ttdef"><b>Definition</b> <a href="consumer__set__request_8h_source.html#l00129">consumer_set_request.h:129</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerSetRequest_html_a28a07af9305f021c359489ca1dc035fb"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a28a07af9305f021c359489ca1dc035fb">yoriito::databroker::ConsumerSetRequest::GetDataPoints</a></div><div class="ttdeci">const std::vector&lt; yoriito::databroker::ConsumerSetDataPoint &gt; &amp; GetDataPoints() const</div><div class="ttdef"><b>Definition</b> <a href="consumer__set__request_8h_source.html#l00109">consumer_set_request.h:109</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerSetRequest_html_a517424c60efc5447a3aa4f5034315dc6"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a517424c60efc5447a3aa4f5034315dc6">yoriito::databroker::ConsumerSetRequest::ConsumerSetRequest</a></div><div class="ttdeci">ConsumerSetRequest(std::initializer_list&lt; yoriito::databroker::ConsumerSetDataPoint &gt; data_points)</div><div class="ttdef"><b>Definition</b> <a href="consumer__set__request_8h_source.html#l00091">consumer_set_request.h:91</a></div></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}  <span class="comment">// namespace yoriito::databroker</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif  </span><span class="comment">// COMMON_DATABROKER_CONSUMER_SET_REQUEST_H_</span></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerSetRequest_html"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html">yoriito::databroker::ConsumerSetRequest</a></div><div class="ttdoc">Class representing a request to set datapoints by a DataBroker consumer.</div><div class="ttdef"><b>Definition</b> <a href="consumer__set__request_8h_source.html#l00044">consumer_set_request.h:44</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerSetRequest_html_a11cd6a8203dd5e8557ba0f7c52d29e5c"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a11cd6a8203dd5e8557ba0f7c52d29e5c">yoriito::databroker::ConsumerSetRequest::ConsumerSetRequest</a></div><div class="ttdeci">ConsumerSetRequest(std::vector&lt; yoriito::databroker::ConsumerSetDataPoint &gt; data_points)</div><div class="ttdef"><b>Definition</b> <a href="consumer__set__request_8h_source.html#l00074">consumer_set_request.h:74</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerSetRequest_html_a1c5c7332006c29104be376bb1348639f"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a1c5c7332006c29104be376bb1348639f">yoriito::databroker::ConsumerSetRequest::operator==</a></div><div class="ttdeci">friend bool operator==(const ConsumerSetRequest &amp;lhs, const ConsumerSetRequest &amp;rhs)</div><div class="ttdoc">Compare two ConsumerSetRequest objects for equality.</div><div class="ttdef"><b>Definition</b> <a href="consumer__set__request_8h_source.html#l00115">consumer_set_request.h:115</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerSetRequest_html_a357ff203c622b05bb98161d34debfc8e"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#a357ff203c622b05bb98161d34debfc8e">yoriito::databroker::ConsumerSetRequest::GetDataPoints</a></div><div class="ttdeci">const std::vector&lt; yoriito::databroker::ConsumerSetDataPoint &gt; &amp; GetDataPoints() const &amp;</div><div class="ttdef"><b>Definition</b> <a href="consumer__set__request_8h_source.html#l00091">consumer_set_request.h:91</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerSetRequest_html_ab188f31dbe82b6a46cf33ae0ad143175"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#ab188f31dbe82b6a46cf33ae0ad143175">yoriito::databroker::ConsumerSetRequest::ConsumerSetRequest</a></div><div class="ttdeci">ConsumerSetRequest()=delete</div><div class="ttdoc">Deleted default constructor.</div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerSetRequest_html_aba56f7b7421bb891b14b50fc80cf0d18"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerSetRequest.html#aba56f7b7421bb891b14b50fc80cf0d18">yoriito::databroker::ConsumerSetRequest::GetDataPoints</a></div><div class="ttdeci">std::vector&lt; yoriito::databroker::ConsumerSetDataPoint &gt; GetDataPoints() const &amp;&amp;</div><div class="ttdef"><b>Definition</b> <a href="consumer__set__request_8h_source.html#l00095">consumer_set_request.h:95</a></div></div>
 <div class="ttc" id="aconsumer__set__datapoint_8h_html"><div class="ttname"><a href="consumer__set__datapoint_8h.html">consumer_set_datapoint.h</a></div></div>
 <div class="ttc" id="adatabroker__type_8h_html"><div class="ttname"><a href="databroker__type_8h.html">databroker_type.h</a></div></div>
 <div class="ttc" id="anamespaceyoriito_1_1databroker_html"><div class="ttname"><a href="namespaceyoriito_1_1databroker.html">yoriito::databroker</a></div><div class="ttdoc">Namespace for DataBroker common interfaces and types.</div></div>

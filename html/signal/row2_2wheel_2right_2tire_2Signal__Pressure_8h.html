@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/chassis/axle/row2/wheel/right/tire/Signal_Pressure.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/chassis/axle/row2/wheel/right/tire/Signal_Pressure.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('row2_2wheel_2right_2tire_2Signal__Pres
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Pressure.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="row2_2wheel_2right_2tire_2Signal__Pressure_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="row2_2wheel_2right_2tire_2Signal__Pressure_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="row2_2wheel_2right_2tire_2Signal__Pressure_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure" id="r_namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure.html">yoriito::vehicle::chassis::axle::row2::wheel::right::tire::pressure</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Chassis.Axle.Row2.Wheel.Right.Tire.Pressure signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -140,17 +141,19 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire" id="r_namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire.html">yoriito::vehicle::chassis::axle::row2::wheel::right::tire</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure" id="r_namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure.html">yoriito::vehicle::chassis::axle::row2::wheel::right::tire::pressure</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa6c15d4ae8f4c227b64527df37b50a9c" id="r_aa6c15d4ae8f4c227b64527df37b50a9c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure.html#aa6c15d4ae8f4c227b64527df37b50a9c">yoriito::vehicle::chassis::axle::row2::wheel::right::tire::pressure::Get</a> ()</td></tr>
-<tr class="separator:aa6c15d4ae8f4c227b64527df37b50a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abde350e691268c198498c933fc5b1c00" id="r_abde350e691268c198498c933fc5b1c00"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure.html#abde350e691268c198498c933fc5b1c00">yoriito::vehicle::chassis::axle::row2::wheel::right::tire::pressure::Subscribe</a> ()</td></tr>
-<tr class="separator:abde350e691268c198498c933fc5b1c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fb3e9659b619e41a19f2bccd02af02a" id="r_a0fb3e9659b619e41a19f2bccd02af02a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure.html#a0fb3e9659b619e41a19f2bccd02af02a">yoriito::vehicle::chassis::axle::row2::wheel::right::tire::pressure::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a0fb3e9659b619e41a19f2bccd02af02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23c29eefd5cc752d9a0cf46917f3c6c3" id="r_a23c29eefd5cc752d9a0cf46917f3c6c3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure.html#a23c29eefd5cc752d9a0cf46917f3c6c3">yoriito::vehicle::chassis::axle::row2::wheel::right::tire::pressure::Inspect</a> ()</td></tr>
-<tr class="separator:a23c29eefd5cc752d9a0cf46917f3c6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8725e5ebf3006b3264178040bcd033" id="r_a3f8725e5ebf3006b3264178040bcd033"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint16_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure.html#a3f8725e5ebf3006b3264178040bcd033">yoriito::vehicle::chassis::axle::row2::wheel::right::tire::pressure::Get</a> ()</td></tr>
+<tr class="separator:a3f8725e5ebf3006b3264178040bcd033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd86cdc81ea61bc8e0c15f10a0e1ff3" id="r_accd86cdc81ea61bc8e0c15f10a0e1ff3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; uint16_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure.html#accd86cdc81ea61bc8e0c15f10a0e1ff3">yoriito::vehicle::chassis::axle::row2::wheel::right::tire::pressure::Subscribe</a> ()</td></tr>
+<tr class="separator:accd86cdc81ea61bc8e0c15f10a0e1ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1bf2f58698aa02df4d73e1f7e8b5a84" id="r_ac1bf2f58698aa02df4d73e1f7e8b5a84"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure.html#ac1bf2f58698aa02df4d73e1f7e8b5a84">yoriito::vehicle::chassis::axle::row2::wheel::right::tire::pressure::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; uint16_t &gt; subscription_context)</td></tr>
+<tr class="separator:ac1bf2f58698aa02df4d73e1f7e8b5a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0f9ba7e1a64de43bd8e3146de12164" id="r_a0d0f9ba7e1a64de43bd8e3146de12164"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint16_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1right_1_1tire_1_1pressure.html#a0d0f9ba7e1a64de43bd8e3146de12164">yoriito::vehicle::chassis::axle::row2::wheel::right::tire::pressure::Inspect</a> ()</td></tr>
+<tr class="separator:a0d0f9ba7e1a64de43bd8e3146de12164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

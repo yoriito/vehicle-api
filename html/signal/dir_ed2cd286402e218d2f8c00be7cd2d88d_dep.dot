@@ -1,0 +1,20 @@
+digraph "/work/signal/cabin/hvac/station/row3"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_38ed40925a05d5b98ea0b1b07bedba6c {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="station", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_38ed40925a05d5b98ea0b1b07bedba6c.html",tooltip=""]
+  subgraph clusterdir_ed2cd286402e218d2f8c00be7cd2d88d {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_ed2cd286402e218d2f8c00be7cd2d88d.html",tooltip=""]
+    dir_ed2cd286402e218d2f8c00be7cd2d88d [shape=plaintext, label="row3"];
+  dir_aa01864d187504d09397b3bc7b307859 [label="driverside", fillcolor="#c8d2e7", color="grey25", style="filled", URL="dir_aa01864d187504d09397b3bc7b307859.html",tooltip=""];
+  dir_d9189576b58c8136a254944ee3a1e68f [label="passengerside", fillcolor="#c8d2e7", color="grey25", style="filled", URL="dir_d9189576b58c8136a254944ee3a1e68f.html",tooltip=""];
+  }
+  }
+  dir_ed2cd286402e218d2f8c00be7cd2d88d->dir_aa01864d187504d09397b3bc7b307859 [headlabel="1", labeldistance=1.5 headhref="dir_000276_000069.html" href="dir_000276_000069.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_ed2cd286402e218d2f8c00be7cd2d88d->dir_d9189576b58c8136a254944ee3a1e68f [headlabel="1", labeldistance=1.5 headhref="dir_000276_000218.html" href="dir_000276_000218.html" color="steelblue1" fontcolor="steelblue1"];
+}

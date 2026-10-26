@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/number2/Signal_AccumulatedConsumedThroughput.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/number2/Signal_AccumulatedConsumedThroughput.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('number2_2Signal__AccumulatedConsumedTh
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_AccumulatedConsumedThroughput.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="number2_2Signal__AccumulatedConsumedThroughput_8h__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="number2_2Signal__AccumulatedConsumedThroughput_8h__dep__incl.svg" width="523" height="550"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="number2_2Signal__AccumulatedConsumedThroughput_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput.html">yoriito::vehicle::powertrain::tractionbattery::number2::accumulatedconsumedthroughput</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.TractionBattery.Number2.AccumulatedConsumedThroughput signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -134,24 +135,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2.html">yoriito::vehicle::powertrain::tractionbattery::number2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01accumulatedconsumedthroughput" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01accumulatedconsumedthroughput"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01accumulatedconsumedthroughput.html">yoriito::vehicle::powertrain::tractionbattery::number2:: accumulatedconsumedthroughput</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput.html">yoriito::vehicle::powertrain::tractionbattery::number2::accumulatedconsumedthroughput</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6af99f7275ba4bab171106304cc9aa79" id="r_a6af99f7275ba4bab171106304cc9aa79"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01accumulatedconsumedthroughput.html#a6af99f7275ba4bab171106304cc9aa79">yoriito::vehicle::powertrain::tractionbattery::number2:: accumulatedconsumedthroughput::Get</a> ()</td></tr>
-<tr class="separator:a6af99f7275ba4bab171106304cc9aa79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f83ca42fd8a14c59a992032616dc67e" id="r_a0f83ca42fd8a14c59a992032616dc67e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01accumulatedconsumedthroughput.html#a0f83ca42fd8a14c59a992032616dc67e">yoriito::vehicle::powertrain::tractionbattery::number2:: accumulatedconsumedthroughput::Subscribe</a> ()</td></tr>
-<tr class="separator:a0f83ca42fd8a14c59a992032616dc67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4819ce03824c316920cf72300f541440" id="r_a4819ce03824c316920cf72300f541440"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01accumulatedconsumedthroughput.html#a4819ce03824c316920cf72300f541440">yoriito::vehicle::powertrain::tractionbattery::number2:: accumulatedconsumedthroughput::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a4819ce03824c316920cf72300f541440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2d088ad2a9b3b2de42c3f0aed91bd6f" id="r_ae2d088ad2a9b3b2de42c3f0aed91bd6f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01accumulatedconsumedthroughput.html#ae2d088ad2a9b3b2de42c3f0aed91bd6f">yoriito::vehicle::powertrain::tractionbattery::number2:: accumulatedconsumedthroughput::Inspect</a> ()</td></tr>
-<tr class="separator:ae2d088ad2a9b3b2de42c3f0aed91bd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4db673999746b656dbe697f0da8c55" id="r_a9a4db673999746b656dbe697f0da8c55"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput.html#a9a4db673999746b656dbe697f0da8c55">yoriito::vehicle::powertrain::tractionbattery::number2::accumulatedconsumedthroughput::Get</a> ()</td></tr>
+<tr class="separator:a9a4db673999746b656dbe697f0da8c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f94bd7acd5f2190c567167730708f0a" id="r_a6f94bd7acd5f2190c567167730708f0a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput.html#a6f94bd7acd5f2190c567167730708f0a">yoriito::vehicle::powertrain::tractionbattery::number2::accumulatedconsumedthroughput::Subscribe</a> ()</td></tr>
+<tr class="separator:a6f94bd7acd5f2190c567167730708f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf16a35830ab951560aaafa98169a08b" id="r_adf16a35830ab951560aaafa98169a08b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput.html#adf16a35830ab951560aaafa98169a08b">yoriito::vehicle::powertrain::tractionbattery::number2::accumulatedconsumedthroughput::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:adf16a35830ab951560aaafa98169a08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f2c845ff4e21b6ea4af95c955541b1" id="r_ab6f2c845ff4e21b6ea4af95c955541b1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput.html#ab6f2c845ff4e21b6ea4af95c955541b1">yoriito::vehicle::powertrain::tractionbattery::number2::accumulatedconsumedthroughput::Inspect</a> ()</td></tr>
+<tr class="separator:ab6f2c845ff4e21b6ea4af95c955541b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad87c20916ae8a80dd7bda4ff2aa628b6" id="r_ad87c20916ae8a80dd7bda4ff2aa628b6"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1_01accumulatedconsumedthroughput.html#ad87c20916ae8a80dd7bda4ff2aa628b6">yoriito::vehicle::powertrain::tractionbattery::number2:: accumulatedconsumedthroughput::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_ACCUMULATEDCONSUMEDTHROUGHPUT</a></td></tr>
-<tr class="separator:ad87c20916ae8a80dd7bda4ff2aa628b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685884b394be100ab0a9508b3efc8ba5" id="r_a685884b394be100ab0a9508b3efc8ba5"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1accumulatedconsumedthroughput.html#a685884b394be100ab0a9508b3efc8ba5">yoriito::vehicle::powertrain::tractionbattery::number2::accumulatedconsumedthroughput::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_ACCUMULATEDCONSUMEDTHROUGHPUT</a></td></tr>
+<tr class="separator:a685884b394be100ab0a9508b3efc8ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

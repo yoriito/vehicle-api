@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/transmission/Signal_ClutchWear.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/transmission/Signal_ClutchWear.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('Signal__ClutchWear_8h.html',''); initR
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_ClutchWear.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__ClutchWear_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__ClutchWear_8h__dep__incl.svg" width="427" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__ClutchWear_8h_source.html">Go to the source code of this file.</a></p>
@@ -135,14 +139,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7c43505162bd19200a73731c66f8ee3c" id="r_a7c43505162bd19200a73731c66f8ee3c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1clutchwear.html#a7c43505162bd19200a73731c66f8ee3c">yoriito::vehicle::powertrain::transmission::clutchwear::Get</a> ()</td></tr>
-<tr class="separator:a7c43505162bd19200a73731c66f8ee3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f7e31552f0d1d5c042830891b12d0cb" id="r_a6f7e31552f0d1d5c042830891b12d0cb"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1clutchwear.html#a6f7e31552f0d1d5c042830891b12d0cb">yoriito::vehicle::powertrain::transmission::clutchwear::Subscribe</a> ()</td></tr>
-<tr class="separator:a6f7e31552f0d1d5c042830891b12d0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07ef0333ae4b2ec2a2a589d22c11f029" id="r_a07ef0333ae4b2ec2a2a589d22c11f029"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1clutchwear.html#a07ef0333ae4b2ec2a2a589d22c11f029">yoriito::vehicle::powertrain::transmission::clutchwear::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a07ef0333ae4b2ec2a2a589d22c11f029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37ed90ad101c1d6484c07986dc999b45" id="r_a37ed90ad101c1d6484c07986dc999b45"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1clutchwear.html#a37ed90ad101c1d6484c07986dc999b45">yoriito::vehicle::powertrain::transmission::clutchwear::Inspect</a> ()</td></tr>
-<tr class="separator:a37ed90ad101c1d6484c07986dc999b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a96c1211c5a83b79b1c6068d80c531" id="r_a11a96c1211c5a83b79b1c6068d80c531"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1clutchwear.html#a11a96c1211c5a83b79b1c6068d80c531">yoriito::vehicle::powertrain::transmission::clutchwear::Get</a> ()</td></tr>
+<tr class="separator:a11a96c1211c5a83b79b1c6068d80c531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7221eb9f83c6dfc05598e2e860ca543" id="r_ab7221eb9f83c6dfc05598e2e860ca543"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1clutchwear.html#ab7221eb9f83c6dfc05598e2e860ca543">yoriito::vehicle::powertrain::transmission::clutchwear::Subscribe</a> ()</td></tr>
+<tr class="separator:ab7221eb9f83c6dfc05598e2e860ca543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a26bbbc4ffbac29f1041110dffb1bab" id="r_a9a26bbbc4ffbac29f1041110dffb1bab"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1clutchwear.html#a9a26bbbc4ffbac29f1041110dffb1bab">yoriito::vehicle::powertrain::transmission::clutchwear::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; uint8_t &gt; subscription_context)</td></tr>
+<tr class="separator:a9a26bbbc4ffbac29f1041110dffb1bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27399622099ebbd35580a7cb146ea826" id="r_a27399622099ebbd35580a7cb146ea826"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1clutchwear.html#a27399622099ebbd35580a7cb146ea826">yoriito::vehicle::powertrain::transmission::clutchwear::Inspect</a> ()</td></tr>
+<tr class="separator:a27399622099ebbd35580a7cb146ea826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

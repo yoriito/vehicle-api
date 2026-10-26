@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - common: /home/runner/work/vehicle-api/vehicle-api/common/databroker_type.h File Reference</title>
+<title>Yoriito Vehicle API - common: /work/common/databroker_type.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -92,45 +92,69 @@ $(document).ready(function(){initNavTree('databroker__type_8h.html',''); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">databroker_type.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;string_view&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;variant&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for databroker_type.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="databroker__type_8h__incl.svg" width="462" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="databroker__type_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="databroker__type_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoriito_1_1StructData.html">yoriito::StructData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property container for structured data.  <a href="classyoriito_1_1StructData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoriito_1_1StructData_1_1PropertiesView.html">yoriito::StructData::PropertiesView</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only properties view with STL container-compatible interface.  <a href="classyoriito_1_1StructData_1_1PropertiesView.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="memdesc:namespaceyoriito"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for yoriito common interfaces and types. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceyoriito_1_1detail" id="r_namespaceyoriito_1_1detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1detail.html">yoriito::detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a45b69add6c5c3cb7d17b1cc939f91c31" id="r_a45b69add6c5c3cb7d17b1cc939f91c31"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html#a45b69add6c5c3cb7d17b1cc939f91c31">yoriito::ValueType</a> = std::variant&lt; std::monostate, std::string, std::string_view, bool, int8_t, int16_t, int32_t, int64_t, uint8_t, uint16_t, uint32_t, uint64_t, float, double, std::vector&lt; std::string &gt;, std::vector&lt; bool &gt;, std::vector&lt; int8_t &gt;, std::vector&lt; int16_t &gt;, std::vector&lt; int32_t &gt;, std::vector&lt; int64_t &gt;, std::vector&lt; uint8_t &gt;, std::vector&lt; uint16_t &gt;, std::vector&lt; uint32_t &gt;, std::vector&lt; uint64_t &gt;, std::vector&lt; float &gt;, std::vector&lt; double &gt; &gt;</td></tr>
-<tr class="separator:a45b69add6c5c3cb7d17b1cc939f91c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716fc18835252e6cfadf5f4cc99edf20" id="r_a716fc18835252e6cfadf5f4cc99edf20"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html#a716fc18835252e6cfadf5f4cc99edf20">yoriito::StructDataPtr</a> = std::unique_ptr&lt; <a class="el" href="classyoriito_1_1StructData.html">StructData</a> &gt;</td></tr>
+<tr class="separator:a716fc18835252e6cfadf5f4cc99edf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a783443fe928f337b3fe8a15b0dee5243" id="r_a783443fe928f337b3fe8a15b0dee5243"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html#a783443fe928f337b3fe8a15b0dee5243">yoriito::StructDataArray</a> = std::vector&lt; <a class="el" href="namespaceyoriito.html#a716fc18835252e6cfadf5f4cc99edf20">StructDataPtr</a> &gt;</td></tr>
+<tr class="separator:a783443fe928f337b3fe8a15b0dee5243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9a1b83e14d9b003b865a8f40201e0a" id="r_a5c9a1b83e14d9b003b865a8f40201e0a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">yoriito::ValueType</a> = std::variant&lt; std::monostate, std::string, std::string_view, bool, int8_t, int16_t, int32_t, int64_t, uint8_t, uint16_t, uint32_t, uint64_t, float, double, std::vector&lt; std::string &gt;, std::vector&lt; bool &gt;, std::vector&lt; int8_t &gt;, std::vector&lt; int16_t &gt;, std::vector&lt; int32_t &gt;, std::vector&lt; int64_t &gt;, std::vector&lt; uint8_t &gt;, std::vector&lt; uint16_t &gt;, std::vector&lt; uint32_t &gt;, std::vector&lt; uint64_t &gt;, std::vector&lt; float &gt;, std::vector&lt; double &gt;, <a class="el" href="namespaceyoriito.html#a716fc18835252e6cfadf5f4cc99edf20">StructDataPtr</a>, <a class="el" href="namespaceyoriito.html#a783443fe928f337b3fe8a15b0dee5243">StructDataArray</a> &gt;</td></tr>
+<tr class="separator:a5c9a1b83e14d9b003b865a8f40201e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a64850bae2e076ef44be933303ed2d5a3" id="r_a64850bae2e076ef44be933303ed2d5a3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceyoriito.html#a45b69add6c5c3cb7d17b1cc939f91c31">ValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html#a64850bae2e076ef44be933303ed2d5a3">yoriito::string_view_then_copy</a> (const <a class="el" href="namespaceyoriito.html#a45b69add6c5c3cb7d17b1cc939f91c31">ValueType</a> &amp;v)</td></tr>
-<tr class="separator:a64850bae2e076ef44be933303ed2d5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab728f1b5de548d0bf29214005ed8293b" id="r_ab728f1b5de548d0bf29214005ed8293b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html#ab728f1b5de548d0bf29214005ed8293b">yoriito::CloneValueType</a> (const <a class="el" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> &amp;v)</td></tr>
+<tr class="separator:ab728f1b5de548d0bf29214005ed8293b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef560bbccabb7fce5a7832503d52d713" id="r_aef560bbccabb7fce5a7832503d52d713"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html#aef560bbccabb7fce5a7832503d52d713">yoriito::ValueTypeEquals</a> (const <a class="el" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> &amp;lhs, const <a class="el" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> &amp;rhs)</td></tr>
+<tr class="separator:aef560bbccabb7fce5a7832503d52d713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb501b779790fa8089644612cf0681c6" id="r_acb501b779790fa8089644612cf0681c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html#acb501b779790fa8089644612cf0681c6">yoriito::string_view_then_copy</a> (const <a class="el" href="namespaceyoriito.html#a5c9a1b83e14d9b003b865a8f40201e0a">ValueType</a> &amp;v)</td></tr>
+<tr class="separator:acb501b779790fa8089644612cf0681c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

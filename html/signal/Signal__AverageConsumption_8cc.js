@@ -1,7 +1,7 @@
 var Signal__AverageConsumption_8cc =
 [
-    [ "Get", "Signal__AverageConsumption_8cc.html#a66a3fab329dcabb847ce75eba962e47c", null ],
-    [ "Inspect", "Signal__AverageConsumption_8cc.html#a87fb53fa77832507f7762e521d2b35a3", null ],
-    [ "Subscribe", "Signal__AverageConsumption_8cc.html#af44cbbd1264efc994d0824ec5f1ddaea", null ],
-    [ "UnSubscribe", "Signal__AverageConsumption_8cc.html#ab9fdc1d9cb94f2dd3959467aa5be401a", null ]
+    [ "Get", "Signal__AverageConsumption_8cc.html#a6629fcff3efc52a73133dec343d33825", null ],
+    [ "Inspect", "Signal__AverageConsumption_8cc.html#a890168674fef607466212ea02702bebe", null ],
+    [ "Subscribe", "Signal__AverageConsumption_8cc.html#aeb517dbc0371321a37710e2747f67354", null ],
+    [ "UnSubscribe", "Signal__AverageConsumption_8cc.html#a2ddd0d129ea35c3d6d27509370ba57fc", null ]
 ];

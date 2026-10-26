@@ -1,67 +1,31 @@
 var namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage =
 [
-    [ " idmax", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax.html#af56fb56b98beaa779026b1b556044074", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax.html#ab02f6b95271a2453f71c334092075240", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax.html#af2e29d2e7791f0e880710c39bb504dc9", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax.html#a3fccc7635040806bf8db0f8d4d050046", null ],
-      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_IDMAX", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax.html#a50fbc621450a392e14411dfe9c5ae0f8", null ]
+    [ "idmax", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmax.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmax.html#a8a4fe168b456bb99663cc425f9068032", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmax.html#a4a275db87125bfc6ff9d2043acd537db", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmax.html#a1b79f304934adbd557900dd201283a27", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmax.html#a7d46ffa91abdabe59fd9a65b2acf70db", null ],
+      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_IDMAX", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmax.html#af3aa608e9a8293c4996990428cd865b7", null ]
     ] ],
-    [ " idmax_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax__availability__sensor.html#a817fda53152933972f50982a878a8cbf", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax__availability__sensor.html#aef9c103eca58753b19966a311d6a50f8", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax__availability__sensor.html#a47409eaba555421f1e502399fe8f257a", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax__availability__sensor.html#a90db1a9fe907d78ea0f6e7b93e458898", null ],
-      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_IDMAX_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmax__availability__sensor.html#a217a907c4f89aedc74c8e80a66a8a4e5", null ]
+    [ "idmin", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmin.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmin.html#a29b31e70a447a49f056818fe2de499b2", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmin.html#ab7c1be8b95a9197a89ab0fd454af5ef0", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmin.html#ac5876c5a088b145c238655c238b0a23b", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmin.html#ad0882fe9a618a91c60d3bfde74ec1338", null ],
+      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_IDMIN", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmin.html#a3043e319c10067bccd9f69b23338bb1c", null ]
     ] ],
-    [ " idmin", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin.html#a8c40b3849167814649535f3176d9e72f", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin.html#a16f6ca1b85f78c441835116e06167c8b", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin.html#a85f4b0778f947a1eb1b7aafaf8982f3b", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin.html#a037e0ba43b8ee3146febbe357f648770", null ],
-      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_IDMIN", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin.html#acdf621aabb2844b76d1fb820ea783e02", null ]
+    [ "max", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1max.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1max.html#a0aa2bb40e3d22a2faf2c678c6b40a05f", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1max.html#a57f1738dde8e11c22f4fcbb09ea8a9bd", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1max.html#a9d71f70c73c1452e1c08dac3eefee95f", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1max.html#ac2004500f0e0ab6f49b021572bfe6c7b", null ],
+      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_MAX", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1max.html#a23cac2626508f0b4ce8ecbe0ca5fa4ac", null ]
     ] ],
-    [ " idmin_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin__availability__sensor.html#aff93bae86ad821b683df1af9531d275f", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin__availability__sensor.html#a74227c14eae1fae389a7a4caff14f137", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin__availability__sensor.html#ab7ff7b03e1e588e32c2939d7cdf0b7cc", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin__availability__sensor.html#afe32e5125abf4c92700c992a89c6711f", null ],
-      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_IDMIN_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01idmin__availability__sensor.html#a91667348c7c3f6fe77495652248ca835", null ]
-    ] ],
-    [ " max", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max.html#ac47db223270bc75eec56a11c6a684e45", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max.html#ace2d5248fa9d074a7dfdd44e4b891351", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max.html#af7b868eff8345cdfd7ce3e2870a24a8a", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max.html#a9e9a9dfc0bcf44997407448598d8637f", null ],
-      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_MAX", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max.html#a757df76e8a9520d0174737ac9e280743", null ]
-    ] ],
-    [ " max_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max__availability__sensor.html#aaadf91a06e45202716e45876813fac3d", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max__availability__sensor.html#a47f4c19ffe333f4193cf4b584e81ff69", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max__availability__sensor.html#a0b17fbed9b8d2f3bdbf0cd9679c9b956", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max__availability__sensor.html#a352967b9d963b7f5170e902dda9eb329", null ],
-      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_MAX_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01max__availability__sensor.html#aaf2e4b231608e9b068236ecf92ae3e8d", null ]
-    ] ],
-    [ " min", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min.html#a32fc0f955d55e5c80fc2a76c4f897d17", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min.html#a8cca3f02e0140e27332f2c93c6c21853", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min.html#aec752a76a9e3a9c8073bcc47d46d1307", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min.html#a5b862b92c944ce335914fb960e940e83", null ],
-      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_MIN", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min.html#a5efd66dfa438946fd42a0cac3f9124d0", null ]
-    ] ],
-    [ " min_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min__availability__sensor.html#afb15179401eede4f6d35aa140fb61114", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min__availability__sensor.html#a5d225e2df9a8ec5deed777df49d1cab9", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min__availability__sensor.html#a1fe66dcf80b15594afe47cb5f71f9672", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min__availability__sensor.html#a6d7d16c2c6af6a5704928bbae8633a2d", null ],
-      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_MIN_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1_01min__availability__sensor.html#af73f6f7da3c71a1ac77758d1e9496b8e", null ]
-    ] ],
-    [ "idmax", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmax.html", null ],
-    [ "idmax_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmax__availability__sensor.html", null ],
-    [ "idmin", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmin.html", null ],
-    [ "idmin_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1idmin__availability__sensor.html", null ],
-    [ "max", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1max.html", null ],
-    [ "max_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1max__availability__sensor.html", null ],
-    [ "min", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1min.html", null ],
-    [ "min_availability_sensor", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1min__availability__sensor.html", null ]
+    [ "min", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1min.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1min.html#a22b281487c767456d05f795b72fcc789", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1min.html#affbe1c9565f1b40dd690b93be8e9225c", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1min.html#aed28f97cae374a9666180b2ade8f101f", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1min.html#a20f2b09e11c36e7777c1a278f354b548", null ],
+      [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER2_CELLVOLTAGE_MIN", "namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number2_1_1cellvoltage_1_1min.html#ad85db950b5fac10515616863d2b1b341", null ]
+    ] ]
 ];

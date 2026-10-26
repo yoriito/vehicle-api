@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/versionyoriitovss/Signal_Patch.h Source File</title>
+<title>Yoriito Vehicle API - signal: /work/signal/versionyoriitovss/Signal_Patch.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('versionyoriitovss_2Signal__Patch_8h_so
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef VEHICLE_VERSIONYORIITOVSS_PATCH_H</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define VEHICLE_VERSIONYORIITOVSS_PATCH_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef SIGNAL_VERSIONYORIITOVSS_SIGNAL_PATCH_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define SIGNAL_VERSIONYORIITOVSS_SIGNAL_PATCH_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
@@ -128,24 +128,32 @@ $(document).ready(function(){initNavTree('versionyoriitovss_2Signal__Patch_8h_so
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;databroker/databroker_consumer_factory.h&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;error.h&quot;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;result.h&quot;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;yoriito_log.h&quot;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html">yoriito::vehicle::versionyoriitovss::patch</a> {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#af8eb676890ceffe2c589788c2f66b49b">   41</a></span>  <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#af8eb676890ceffe2c589788c2f66b49b">VEHICLE_VERSIONYORIITOVSS_PATCH</a> =</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="stringliteral">&quot;Vehicle.VersionYoriitoVSS.Patch&quot;</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  yoriito::Result&lt;uint32_t&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#ac6902f1cfcf4e3f094c09750a0d9bb36">Get</a>();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  yoriito::Result&lt;yoriito::databroker::ConsumerInspectResponse&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#abf540984b89d48611d8670a32b8644a6">Inspect</a>();</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}  <span class="comment">// namespace yoriito::vehicle::versionyoriitovss::patch</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#endif  </span><span class="comment">// VEHICLE_VERSIONYORIITOVSS_PATCH_H</span></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch_html"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html">yoriito::vehicle::versionyoriitovss::patch</a></div><div class="ttdoc">Indicates the Vehicle.VersionYoriitoVSS.Patch signal.</div><div class="ttdef"><b>Definition</b> <a href="versionyoriitovss_2Signal__Patch_8cc_source.html#l00025">Signal_Patch.cc:25</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch_html_abf540984b89d48611d8670a32b8644a6"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#abf540984b89d48611d8670a32b8644a6">yoriito::vehicle::versionyoriitovss::patch::Inspect</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt; Inspect()</div><div class="ttdef"><b>Definition</b> <a href="versionyoriitovss_2Signal__Patch_8cc_source.html#l00064">Signal_Patch.cc:64</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch_html_ac6902f1cfcf4e3f094c09750a0d9bb36"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#ac6902f1cfcf4e3f094c09750a0d9bb36">yoriito::vehicle::versionyoriitovss::patch::Get</a></div><div class="ttdeci">yoriito::Result&lt; uint32_t &gt; Get()</div><div class="ttdef"><b>Definition</b> <a href="versionyoriitovss_2Signal__Patch_8cc_source.html#l00027">Signal_Patch.cc:27</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch_html_af8eb676890ceffe2c589788c2f66b49b"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#af8eb676890ceffe2c589788c2f66b49b">yoriito::vehicle::versionyoriitovss::patch::VEHICLE_VERSIONYORIITOVSS_PATCH</a></div><div class="ttdeci">constexpr const char * VEHICLE_VERSIONYORIITOVSS_PATCH</div><div class="ttdef"><b>Definition</b> <a href="versionyoriitovss_2Signal__Patch_8h_source.html#l00041">Signal_Patch.h:41</a></div></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;signal/signal_get_datapoint.h&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;signal/signal_inspect_data.h&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;signal/signal_inspect_response.h&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;signal/signal_subscribe_context.h&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;yoriito_log.h&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html">yoriito::vehicle::versionyoriitovss::patch</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#af8eb676890ceffe2c589788c2f66b49b">   47</a></span><span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#af8eb676890ceffe2c589788c2f66b49b">VEHICLE_VERSIONYORIITOVSS_PATCH</a> =</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="stringliteral">&quot;Vehicle.VersionYoriitoVSS.Patch&quot;</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>yoriito::Result&lt;yoriito::signal::SignalGetDataPoint&lt;uint32_t&gt;&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#afd7b52e1107ceed0346ed4bdb14d11e7">Get</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>yoriito::Result&lt;yoriito::signal::SignalInspectResponse&lt;uint32_t&gt;&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#af660a0fdd7236b90005ab048327d4fdd">Inspect</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}  <span class="comment">// namespace yoriito::vehicle::versionyoriitovss::patch</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif  </span><span class="comment">// SIGNAL_VERSIONYORIITOVSS_SIGNAL_PATCH_H_</span></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch_html"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html">yoriito::vehicle::versionyoriitovss::patch</a></div><div class="ttdoc">Indicates the Vehicle.VersionYoriitoVSS.Patch signal.</div><div class="ttdef"><b>Definition</b> <a href="versionyoriitovss_2Signal__Patch_8cc_source.html#l00026">Signal_Patch.cc:26</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch_html_af660a0fdd7236b90005ab048327d4fdd"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#af660a0fdd7236b90005ab048327d4fdd">yoriito::vehicle::versionyoriitovss::patch::Inspect</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint32_t &gt; &gt; Inspect()</div><div class="ttdef"><b>Definition</b> <a href="versionyoriitovss_2Signal__Patch_8cc_source.html#l00063">Signal_Patch.cc:63</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch_html_af8eb676890ceffe2c589788c2f66b49b"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#af8eb676890ceffe2c589788c2f66b49b">yoriito::vehicle::versionyoriitovss::patch::VEHICLE_VERSIONYORIITOVSS_PATCH</a></div><div class="ttdeci">constexpr const char * VEHICLE_VERSIONYORIITOVSS_PATCH</div><div class="ttdef"><b>Definition</b> <a href="versionyoriitovss_2Signal__Patch_8h_source.html#l00047">Signal_Patch.h:47</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch_html_afd7b52e1107ceed0346ed4bdb14d11e7"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1versionyoriitovss_1_1patch.html#afd7b52e1107ceed0346ed4bdb14d11e7">yoriito::vehicle::versionyoriitovss::patch::Get</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint32_t &gt; &gt; Get()</div><div class="ttdef"><b>Definition</b> <a href="versionyoriitovss_2Signal__Patch_8cc_source.html#l00029">Signal_Patch.cc:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

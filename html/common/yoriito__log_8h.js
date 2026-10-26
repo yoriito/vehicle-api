@@ -9,11 +9,11 @@ var yoriito__log_8h =
     [ "YORIITO_LOG_INITIALIZE", "yoriito__log_8h.html#a02752b1d1f48c8821ddebbadf97ec917", null ],
     [ "YORIITO_LOG_SET_LEVEL", "yoriito__log_8h.html#aaf83a91aff025475379dd22da39a7126", null ],
     [ "YORIITO_LOG_WARN", "yoriito__log_8h.html#a4872a9aade38e132064f82b336e99473", null ],
-    [ "LogLevel", "yoriito__log_8h.html#a71d40fb3f6c31965ebc14965f33e4f76", [
-      [ "kFatal", "yoriito__log_8h.html#a71d40fb3f6c31965ebc14965f33e4f76ae66f945a3c2423ef09406cf09fa9de26", null ],
-      [ "kError", "yoriito__log_8h.html#a71d40fb3f6c31965ebc14965f33e4f76ae3587c730cc1aa530fa4ddc9c4204e97", null ],
-      [ "kWarn", "yoriito__log_8h.html#a71d40fb3f6c31965ebc14965f33e4f76a61a920eb4a24199ec6a36dd90f2a30b7", null ],
-      [ "kInfo", "yoriito__log_8h.html#a71d40fb3f6c31965ebc14965f33e4f76a176a473e63c17ccdac91640c67f149bf", null ],
-      [ "kDebug", "yoriito__log_8h.html#a71d40fb3f6c31965ebc14965f33e4f76abb53ce21b7c0b7c8a8f7860a41901d29", null ]
+    [ "LogLevel", "yoriito__log_8h.html#ab216c265caacab238c33c00f5b042eca", [
+      [ "kFatal", "yoriito__log_8h.html#ab216c265caacab238c33c00f5b042ecaae66f945a3c2423ef09406cf09fa9de26", null ],
+      [ "kError", "yoriito__log_8h.html#ab216c265caacab238c33c00f5b042ecaae3587c730cc1aa530fa4ddc9c4204e97", null ],
+      [ "kWarn", "yoriito__log_8h.html#ab216c265caacab238c33c00f5b042ecaa61a920eb4a24199ec6a36dd90f2a30b7", null ],
+      [ "kInfo", "yoriito__log_8h.html#ab216c265caacab238c33c00f5b042ecaa176a473e63c17ccdac91640c67f149bf", null ],
+      [ "kDebug", "yoriito__log_8h.html#ab216c265caacab238c33c00f5b042ecaabb53ce21b7c0b7c8a8f7860a41901d29", null ]
     ] ]
 ];

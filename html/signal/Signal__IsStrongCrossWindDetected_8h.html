@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/adas/esc/Signal_IsStrongCrossWindDetected.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/adas/esc/Signal_IsStrongCrossWindDetected.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('Signal__IsStrongCrossWindDetected_8h.h
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsStrongCrossWindDetected.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__IsStrongCrossWindDetected_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__IsStrongCrossWindDetected_8h__dep__incl.svg" width="488" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__IsStrongCrossWindDetected_8h_source.html">Go to the source code of this file.</a></p>
@@ -135,14 +139,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a380f20e0e429f133698370c79335c741" id="r_a380f20e0e429f133698370c79335c741"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isstrongcrosswinddetected.html#a380f20e0e429f133698370c79335c741">yoriito::vehicle::adas::esc::isstrongcrosswinddetected::Get</a> ()</td></tr>
-<tr class="separator:a380f20e0e429f133698370c79335c741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2de38019dfe870c4e606de978878655" id="r_ae2de38019dfe870c4e606de978878655"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isstrongcrosswinddetected.html#ae2de38019dfe870c4e606de978878655">yoriito::vehicle::adas::esc::isstrongcrosswinddetected::Subscribe</a> ()</td></tr>
-<tr class="separator:ae2de38019dfe870c4e606de978878655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87fe6edf0a3db09877a8ac6e37ceb3e3" id="r_a87fe6edf0a3db09877a8ac6e37ceb3e3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isstrongcrosswinddetected.html#a87fe6edf0a3db09877a8ac6e37ceb3e3">yoriito::vehicle::adas::esc::isstrongcrosswinddetected::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a87fe6edf0a3db09877a8ac6e37ceb3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2321f0c15a9a4085a0bbfa96520e717" id="r_ad2321f0c15a9a4085a0bbfa96520e717"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isstrongcrosswinddetected.html#ad2321f0c15a9a4085a0bbfa96520e717">yoriito::vehicle::adas::esc::isstrongcrosswinddetected::Inspect</a> ()</td></tr>
-<tr class="separator:ad2321f0c15a9a4085a0bbfa96520e717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add10956523090f3bdfd87274f2e33969" id="r_add10956523090f3bdfd87274f2e33969"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isstrongcrosswinddetected.html#add10956523090f3bdfd87274f2e33969">yoriito::vehicle::adas::esc::isstrongcrosswinddetected::Get</a> ()</td></tr>
+<tr class="separator:add10956523090f3bdfd87274f2e33969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a3e3ac577ea8be931ec07a70f61b42" id="r_aa6a3e3ac577ea8be931ec07a70f61b42"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isstrongcrosswinddetected.html#aa6a3e3ac577ea8be931ec07a70f61b42">yoriito::vehicle::adas::esc::isstrongcrosswinddetected::Subscribe</a> ()</td></tr>
+<tr class="separator:aa6a3e3ac577ea8be931ec07a70f61b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1af931307dcfb2efd4618f364db1216" id="r_af1af931307dcfb2efd4618f364db1216"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isstrongcrosswinddetected.html#af1af931307dcfb2efd4618f364db1216">yoriito::vehicle::adas::esc::isstrongcrosswinddetected::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:af1af931307dcfb2efd4618f364db1216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116aebf5e3c8ab37dcd39138fe8c6df2" id="r_a116aebf5e3c8ab37dcd39138fe8c6df2"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1esc_1_1isstrongcrosswinddetected.html#a116aebf5e3c8ab37dcd39138fe8c6df2">yoriito::vehicle::adas::esc::isstrongcrosswinddetected::Inspect</a> ()</td></tr>
+<tr class="separator:a116aebf5e3c8ab37dcd39138fe8c6df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

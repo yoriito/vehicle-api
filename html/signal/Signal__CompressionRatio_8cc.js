@@ -1,5 +1,5 @@
 var Signal__CompressionRatio_8cc =
 [
-    [ "Get", "Signal__CompressionRatio_8cc.html#af519e80d2cbd4b2097c21ecc1c4087a9", null ],
-    [ "Inspect", "Signal__CompressionRatio_8cc.html#a88ab83b5f9ea2bfa43a8c51f6ab9df89", null ]
+    [ "Get", "Signal__CompressionRatio_8cc.html#a70042b1caa5c4ce13389c03de5816768", null ],
+    [ "Inspect", "Signal__CompressionRatio_8cc.html#a541f18c61e6a9626ab194dd0119ae229", null ]
 ];

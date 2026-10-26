@@ -1,0 +1,4 @@
+var structyoriito_1_1types_1_1internal_1_1StructUtilityTraits_3_01yoriito_1_1types_1_1PointingDirection_01_4 =
+[
+    [ "Utility", "structyoriito_1_1types_1_1internal_1_1StructUtilityTraits_3_01yoriito_1_1types_1_1PointingDirection_01_4.html#aabb773ef89e620cbf5baa54d97721e05", null ]
+];

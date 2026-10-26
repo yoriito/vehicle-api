@@ -1,8 +1,8 @@
 var Signal__TimeToComplete_8h =
 [
-    [ "Get", "Signal__TimeToComplete_8h.html#a067f5f11365b110f0607bbb18df5b981", null ],
-    [ "Inspect", "Signal__TimeToComplete_8h.html#abc4fbfe7095156a405b8e4a9fa391d5b", null ],
-    [ "Subscribe", "Signal__TimeToComplete_8h.html#a1f76b8dfb464a21d6992ab9a02feca07", null ],
-    [ "UnSubscribe", "Signal__TimeToComplete_8h.html#a851b2fdb3168982c4a9430a486cdcda8", null ],
-    [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_TIMETOCOMPLETE", "Signal__TimeToComplete_8h.html#a9189ecb6863ec52c85640fbe0e2ae5eb", null ]
+    [ "Get", "Signal__TimeToComplete_8h.html#ab169932cef36b3e830cd5abaccd9a396", null ],
+    [ "Inspect", "Signal__TimeToComplete_8h.html#a1a442cd10d20f06ded3eefa98a72f81f", null ],
+    [ "Subscribe", "Signal__TimeToComplete_8h.html#a48bb341e741a26e9f7f60a45dc49696b", null ],
+    [ "UnSubscribe", "Signal__TimeToComplete_8h.html#a35cd68480b8a0561106c7ba68f6be484", null ],
+    [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_TIMETOCOMPLETE", "Signal__TimeToComplete_8h.html#ac049c4ebd3881460bb32c22bd1860069", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/charging/Signal_PowerLoss.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/charging/Signal_PowerLoss.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('charging_2Signal__PowerLoss_8h.html','
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_PowerLoss.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="charging_2Signal__PowerLoss_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="charging_2Signal__PowerLoss_8h__dep__incl.svg" width="454" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="charging_2Signal__PowerLoss_8h_source.html">Go to the source code of this file.</a></p>
@@ -137,14 +141,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa1c6888aee3f1365578da2db2ad44acc" id="r_aa1c6888aee3f1365578da2db2ad44acc"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1powerloss.html#aa1c6888aee3f1365578da2db2ad44acc">yoriito::vehicle::powertrain::tractionbattery::charging::powerloss::Get</a> ()</td></tr>
-<tr class="separator:aa1c6888aee3f1365578da2db2ad44acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af415f0c75fb4bd5ac1afcc60f2e45a3e" id="r_af415f0c75fb4bd5ac1afcc60f2e45a3e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1powerloss.html#af415f0c75fb4bd5ac1afcc60f2e45a3e">yoriito::vehicle::powertrain::tractionbattery::charging::powerloss::Subscribe</a> ()</td></tr>
-<tr class="separator:af415f0c75fb4bd5ac1afcc60f2e45a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf7fd4b656b782da3681c06e8747f5ac" id="r_abf7fd4b656b782da3681c06e8747f5ac"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1powerloss.html#abf7fd4b656b782da3681c06e8747f5ac">yoriito::vehicle::powertrain::tractionbattery::charging::powerloss::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:abf7fd4b656b782da3681c06e8747f5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab022167aa4ef90dc576bbc29166d7d09" id="r_ab022167aa4ef90dc576bbc29166d7d09"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1powerloss.html#ab022167aa4ef90dc576bbc29166d7d09">yoriito::vehicle::powertrain::tractionbattery::charging::powerloss::Inspect</a> ()</td></tr>
-<tr class="separator:ab022167aa4ef90dc576bbc29166d7d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea4a1376031c2510aac60fb02385620" id="r_a1ea4a1376031c2510aac60fb02385620"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1powerloss.html#a1ea4a1376031c2510aac60fb02385620">yoriito::vehicle::powertrain::tractionbattery::charging::powerloss::Get</a> ()</td></tr>
+<tr class="separator:a1ea4a1376031c2510aac60fb02385620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d34958f582649d899b7b6ce83bdd75" id="r_a60d34958f582649d899b7b6ce83bdd75"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1powerloss.html#a60d34958f582649d899b7b6ce83bdd75">yoriito::vehicle::powertrain::tractionbattery::charging::powerloss::Subscribe</a> ()</td></tr>
+<tr class="separator:a60d34958f582649d899b7b6ce83bdd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ea5fb09e3b7e5f85d6f395b4bd62bc" id="r_a55ea5fb09e3b7e5f85d6f395b4bd62bc"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1powerloss.html#a55ea5fb09e3b7e5f85d6f395b4bd62bc">yoriito::vehicle::powertrain::tractionbattery::charging::powerloss::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:a55ea5fb09e3b7e5f85d6f395b4bd62bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182c09c273989f389e893591811c825a" id="r_a182c09c273989f389e893591811c825a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1powerloss.html#a182c09c273989f389e893591811c825a">yoriito::vehicle::powertrain::tractionbattery::charging::powerloss::Inspect</a> ()</td></tr>
+<tr class="separator:a182c09c273989f389e893591811c825a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

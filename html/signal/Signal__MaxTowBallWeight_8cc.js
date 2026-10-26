@@ -1,5 +1,5 @@
 var Signal__MaxTowBallWeight_8cc =
 [
-    [ "Get", "Signal__MaxTowBallWeight_8cc.html#adc8bca43773bd97e8de4fce29156172b", null ],
-    [ "Inspect", "Signal__MaxTowBallWeight_8cc.html#a48ed8817514cb879398a4f4f92ab8f44", null ]
+    [ "Get", "Signal__MaxTowBallWeight_8cc.html#a8dd0bc7e25a1678f3f6c2fec7e9e43df", null ],
+    [ "Inspect", "Signal__MaxTowBallWeight_8cc.html#ab6f3baa4fe73525f6e674a4ff285ea75", null ]
 ];

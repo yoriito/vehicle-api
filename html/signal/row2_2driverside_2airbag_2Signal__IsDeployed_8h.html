@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/cabin/seat/row2/driverside/airbag/Signal_IsDeployed.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/cabin/seat/row2/driverside/airbag/Signal_IsDeployed.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('row2_2driverside_2airbag_2Signal__IsDe
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsDeployed.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="row2_2driverside_2airbag_2Signal__IsDeployed_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="row2_2driverside_2airbag_2Signal__IsDeployed_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="row2_2driverside_2airbag_2Signal__IsDeployed_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed" id="r_namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html">yoriito::vehicle::cabin::seat::row2::driverside::airbag::isdeployed</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Cabin.Seat.Row2.DriverSide.Airbag.IsDeployed signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -138,17 +139,19 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag" id="r_namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag.html">yoriito::vehicle::cabin::seat::row2::driverside::airbag</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed" id="r_namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html">yoriito::vehicle::cabin::seat::row2::driverside::airbag::isdeployed</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af51877e12dfb6ced0aa1eb65cfa32e8c" id="r_af51877e12dfb6ced0aa1eb65cfa32e8c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#af51877e12dfb6ced0aa1eb65cfa32e8c">yoriito::vehicle::cabin::seat::row2::driverside::airbag::isdeployed::Get</a> ()</td></tr>
-<tr class="separator:af51877e12dfb6ced0aa1eb65cfa32e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3135c303bf5732703598515cef86e8c9" id="r_a3135c303bf5732703598515cef86e8c9"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#a3135c303bf5732703598515cef86e8c9">yoriito::vehicle::cabin::seat::row2::driverside::airbag::isdeployed::Subscribe</a> ()</td></tr>
-<tr class="separator:a3135c303bf5732703598515cef86e8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdbb4dae033845f6580af84172f37160" id="r_abdbb4dae033845f6580af84172f37160"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#abdbb4dae033845f6580af84172f37160">yoriito::vehicle::cabin::seat::row2::driverside::airbag::isdeployed::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:abdbb4dae033845f6580af84172f37160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa057e163541ac28bed58af3e34a947f7" id="r_aa057e163541ac28bed58af3e34a947f7"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#aa057e163541ac28bed58af3e34a947f7">yoriito::vehicle::cabin::seat::row2::driverside::airbag::isdeployed::Inspect</a> ()</td></tr>
-<tr class="separator:aa057e163541ac28bed58af3e34a947f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08826949c7ae2ea517460b6f063aa85b" id="r_a08826949c7ae2ea517460b6f063aa85b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#a08826949c7ae2ea517460b6f063aa85b">yoriito::vehicle::cabin::seat::row2::driverside::airbag::isdeployed::Get</a> ()</td></tr>
+<tr class="separator:a08826949c7ae2ea517460b6f063aa85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb4af43b956973964fe1552fa539618" id="r_aecb4af43b956973964fe1552fa539618"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#aecb4af43b956973964fe1552fa539618">yoriito::vehicle::cabin::seat::row2::driverside::airbag::isdeployed::Subscribe</a> ()</td></tr>
+<tr class="separator:aecb4af43b956973964fe1552fa539618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d44febb9b21ee71d1ec55b732743bc4" id="r_a8d44febb9b21ee71d1ec55b732743bc4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#a8d44febb9b21ee71d1ec55b732743bc4">yoriito::vehicle::cabin::seat::row2::driverside::airbag::isdeployed::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:a8d44febb9b21ee71d1ec55b732743bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfb1ff60246c9567632f2383dbe5ed9" id="r_a3cfb1ff60246c9567632f2383dbe5ed9"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#a3cfb1ff60246c9567632f2383dbe5ed9">yoriito::vehicle::cabin::seat::row2::driverside::airbag::isdeployed::Inspect</a> ()</td></tr>
+<tr class="separator:a3cfb1ff60246c9567632f2383dbe5ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

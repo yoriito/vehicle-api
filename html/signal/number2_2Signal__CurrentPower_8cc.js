@@ -1,7 +1,7 @@
 var number2_2Signal__CurrentPower_8cc =
 [
-    [ "Get", "number2_2Signal__CurrentPower_8cc.html#adaf8f168e65c7bb7607f68650d89682f", null ],
-    [ "Inspect", "number2_2Signal__CurrentPower_8cc.html#ad1b9e158368392a31020f3c972b43470", null ],
-    [ "Subscribe", "number2_2Signal__CurrentPower_8cc.html#a7cf479157398da2e521965b380bdf6bb", null ],
-    [ "UnSubscribe", "number2_2Signal__CurrentPower_8cc.html#a8d6f2cc652239536170fdef549c732f2", null ]
+    [ "Get", "number2_2Signal__CurrentPower_8cc.html#a2dcdf2caccd343c04bc7354e9acee8ff", null ],
+    [ "Inspect", "number2_2Signal__CurrentPower_8cc.html#a6c0fd5b440303784273b455221865a29", null ],
+    [ "Subscribe", "number2_2Signal__CurrentPower_8cc.html#a59555c8b4aae012aaed025f1e0d37cfc", null ],
+    [ "UnSubscribe", "number2_2Signal__CurrentPower_8cc.html#aec2fbe29935f8de0e7198a0c3fe1164d", null ]
 ];

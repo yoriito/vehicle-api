@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/body/lights/beam/high/Signal_IsDefect.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/body/lights/beam/high/Signal_IsDefect.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('beam_2high_2Signal__IsDefect_8h.html',
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsDefect.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="beam_2high_2Signal__IsDefect_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="beam_2high_2Signal__IsDefect_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="beam_2high_2Signal__IsDefect_8h_source.html">Go to the source code of this file.</a></p>
@@ -139,14 +143,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7d420bbe81fd9fcee1fd868c5c8e5695" id="r_a7d420bbe81fd9fcee1fd868c5c8e5695"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1beam_1_1high_1_1isdefect.html#a7d420bbe81fd9fcee1fd868c5c8e5695">yoriito::vehicle::body::lights::beam::high::isdefect::Get</a> ()</td></tr>
-<tr class="separator:a7d420bbe81fd9fcee1fd868c5c8e5695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afacefa55a27f31436012dc9efe29f02e" id="r_afacefa55a27f31436012dc9efe29f02e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1beam_1_1high_1_1isdefect.html#afacefa55a27f31436012dc9efe29f02e">yoriito::vehicle::body::lights::beam::high::isdefect::Subscribe</a> ()</td></tr>
-<tr class="separator:afacefa55a27f31436012dc9efe29f02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a2c586202adaefa67d58cbc25d9804c" id="r_a8a2c586202adaefa67d58cbc25d9804c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1beam_1_1high_1_1isdefect.html#a8a2c586202adaefa67d58cbc25d9804c">yoriito::vehicle::body::lights::beam::high::isdefect::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a8a2c586202adaefa67d58cbc25d9804c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b8c6f1fb4cb36a383871e1a2443545b" id="r_a6b8c6f1fb4cb36a383871e1a2443545b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1beam_1_1high_1_1isdefect.html#a6b8c6f1fb4cb36a383871e1a2443545b">yoriito::vehicle::body::lights::beam::high::isdefect::Inspect</a> ()</td></tr>
-<tr class="separator:a6b8c6f1fb4cb36a383871e1a2443545b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3b879f92ce22733f8da3a30732f45b" id="r_a2d3b879f92ce22733f8da3a30732f45b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1beam_1_1high_1_1isdefect.html#a2d3b879f92ce22733f8da3a30732f45b">yoriito::vehicle::body::lights::beam::high::isdefect::Get</a> ()</td></tr>
+<tr class="separator:a2d3b879f92ce22733f8da3a30732f45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9d3ca1e1280ffb41ccbcae1eabd7a1" id="r_a5a9d3ca1e1280ffb41ccbcae1eabd7a1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1beam_1_1high_1_1isdefect.html#a5a9d3ca1e1280ffb41ccbcae1eabd7a1">yoriito::vehicle::body::lights::beam::high::isdefect::Subscribe</a> ()</td></tr>
+<tr class="separator:a5a9d3ca1e1280ffb41ccbcae1eabd7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50a945061f16c82dd37c672db54effd" id="r_aa50a945061f16c82dd37c672db54effd"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1beam_1_1high_1_1isdefect.html#aa50a945061f16c82dd37c672db54effd">yoriito::vehicle::body::lights::beam::high::isdefect::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:aa50a945061f16c82dd37c672db54effd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed964c9e83b638022dae553ac96a01da" id="r_aed964c9e83b638022dae553ac96a01da"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1beam_1_1high_1_1isdefect.html#aed964c9e83b638022dae553ac96a01da">yoriito::vehicle::body::lights::beam::high::isdefect::Inspect</a> ()</td></tr>
+<tr class="separator:aed964c9e83b638022dae553ac96a01da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

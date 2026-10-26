@@ -1,9 +1,0 @@
-<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/trailer/Signal_IsConnected.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/trailer/Signal_IsConnected.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="123,5,331,60"/>
-<area shape="rect" id="Node000002" href="$Signal__IsConnected_8cc.html" title=" " alt="" coords="5,108,220,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,71,144,110,141,106,185,67"/>
-<area shape="rect" id="Node000003" href="$Trailer_8h.html" title=" " alt="" coords="244,108,440,163"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="269,67,314,106,310,110,266,71"/>
-<area shape="rect" id="Node000004" href="$Vehicle_8h.html" title=" " alt="" coords="244,211,440,265"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="345,176,345,211,339,211,339,176"/>
-</map>

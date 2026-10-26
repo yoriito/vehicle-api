@@ -1,9 +1,0 @@
-<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/acceleration/Signal_Vertical_Availability_Sensor.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/acceleration/Signal_Vertical_Availability_Sensor.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="118,5,325,75"/>
-<area shape="rect" id="Node000002" href="$Acceleration_8h.html" title=" " alt="" coords="5,130,208,185"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,87,135,132,131,128,176,83"/>
-<area shape="rect" id="Node000004" href="$Signal__Vertical__Availability__Sensor_8cc.html" title=" " alt="" coords="233,123,439,192"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="267,83,304,121,301,124,263,87"/>
-<area shape="rect" id="Node000003" href="$Vehicle_8h.html" title=" " alt="" coords="9,240,205,295"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,199,109,240,104,240,104,199"/>
-</map>

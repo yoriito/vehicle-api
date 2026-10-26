@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - common: /home/runner/work/vehicle-api/vehicle-api/common/logger/base_logbackend.cc Source File</title>
+<title>Yoriito Vehicle API - common: /work/common/logger/base_logbackend.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -145,51 +145,57 @@ $(document).ready(function(){initNavTree('base__logbackend_8cc_source.html','');
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classyoriito_1_1BaseLogBackend.html#aa52b512f926cfbc27ee525d8671eba92">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#aa52b512f926cfbc27ee525d8671eba92">BaseLogBackend::Initialize</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name) {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">if</span> (initialized_) <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a6a74a9bf3d16dbc357c1c19e52b085e5">DoInitialize</a>(name);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  initialized_ = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">if</span> (initialized_) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a6a74a9bf3d16dbc357c1c19e52b085e5">DoInitialize</a>(name);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  initialized_ = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classyoriito_1_1BaseLogBackend.html#a7bf42adb1c51a5d8d8ff19bfece4d52d">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a7bf42adb1c51a5d8d8ff19bfece4d52d">BaseLogBackend::Finalize</a>() {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordflow">if</span> (!initialized_) <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a62e778523a70c8063e94bcb5c708c1bc">DoFinalize</a>();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  initialized_ = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classyoriito_1_1BaseLogBackend.html#a7bf42adb1c51a5d8d8ff19bfece4d52d">   51</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a7bf42adb1c51a5d8d8ff19bfece4d52d">BaseLogBackend::Finalize</a>() {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordflow">if</span> (!initialized_) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a62e778523a70c8063e94bcb5c708c1bc">DoFinalize</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  initialized_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classyoriito_1_1BaseLogBackend.html#afc368f54bfe509d930a2010d7039a191">   55</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#afc368f54bfe509d930a2010d7039a191">BaseLogBackend::Output</a>(std::string_view tag, std::string_view msg, <a class="code hl_class" href="classLogLevel.html">LogLevel</a> level) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordflow">if</span> (!initialized_) <span class="keywordflow">return</span>;  <span class="comment">// Do not output log if not initialized</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a2f34523694421c0f510685fe772dbe74">DoOutput</a>(tag, msg, level);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classyoriito_1_1BaseLogBackend.html#afc368f54bfe509d930a2010d7039a191">   59</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#afc368f54bfe509d930a2010d7039a191">BaseLogBackend::Output</a>(std::string_view tag, std::string_view msg,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                            <a class="code hl_class" href="classLogLevel.html">LogLevel</a> level) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">if</span> (!initialized_) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span>;  <span class="comment">// Do not output log if not initialized</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a2f34523694421c0f510685fe772dbe74">DoOutput</a>(tag, msg, level);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
 </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classyoriito_1_1BaseLogBackend.html#a789fddd3215d9fc88b208c78fa7e3740">   60</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a789fddd3215d9fc88b208c78fa7e3740">BaseLogBackend::IsInitialized</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">return</span> initialized_;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classyoriito_1_1BaseLogBackend.html#a789fddd3215d9fc88b208c78fa7e3740">   67</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a789fddd3215d9fc88b208c78fa7e3740">BaseLogBackend::IsInitialized</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> initialized_; }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classyoriito_1_1BaseLogBackend.html#a6af786afd09ea352882061d64de9819a">   69</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a6af786afd09ea352882061d64de9819a">BaseLogBackend::SetLogLevel</a>(<a class="code hl_class" href="classLogLevel.html">LogLevel</a> level) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordflow">if</span> (!initialized_) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">return</span>;  <span class="comment">// Do not set log level if not initialized</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  log_level_threshold_ = level;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a635dd4dbd49af3bc037da999b3139208">DoSetLogLevel</a>(level);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
 </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classyoriito_1_1BaseLogBackend.html#a6af786afd09ea352882061d64de9819a">   64</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a6af786afd09ea352882061d64de9819a">BaseLogBackend::SetLogLevel</a>(<a class="code hl_class" href="classLogLevel.html">LogLevel</a> level) {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordflow">if</span> (!initialized_) <span class="keywordflow">return</span>;  <span class="comment">// Do not set log level if not initialized</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#a635dd4dbd49af3bc037da999b3139208">DoSetLogLevel</a>(level);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
-</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}  <span class="comment">// namespace yoriito</span></div>
 <div class="ttc" id="abase__logbackend_8h_html"><div class="ttname"><a href="base__logbackend_8h.html">base_logbackend.h</a></div></div>
 <div class="ttc" id="aclassLogLevel_html"><div class="ttname"><a href="classLogLevel.html">LogLevel</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a2f34523694421c0f510685fe772dbe74"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a2f34523694421c0f510685fe772dbe74">yoriito::BaseLogBackend::DoOutput</a></div><div class="ttdeci">virtual void DoOutput(std::string_view tag, std::string_view msg, LogLevel level)=0</div></div>
 <div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a62e778523a70c8063e94bcb5c708c1bc"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a62e778523a70c8063e94bcb5c708c1bc">yoriito::BaseLogBackend::DoFinalize</a></div><div class="ttdeci">virtual void DoFinalize()=0</div></div>
 <div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a635dd4dbd49af3bc037da999b3139208"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a635dd4dbd49af3bc037da999b3139208">yoriito::BaseLogBackend::DoSetLogLevel</a></div><div class="ttdeci">virtual void DoSetLogLevel(LogLevel level)=0</div></div>
 <div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a6a74a9bf3d16dbc357c1c19e52b085e5"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a6a74a9bf3d16dbc357c1c19e52b085e5">yoriito::BaseLogBackend::DoInitialize</a></div><div class="ttdeci">virtual void DoInitialize(const char *name)=0</div></div>
-<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a6af786afd09ea352882061d64de9819a"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a6af786afd09ea352882061d64de9819a">yoriito::BaseLogBackend::SetLogLevel</a></div><div class="ttdeci">void SetLogLevel(LogLevel level) final</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00064">base_logbackend.cc:64</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a789fddd3215d9fc88b208c78fa7e3740"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a789fddd3215d9fc88b208c78fa7e3740">yoriito::BaseLogBackend::IsInitialized</a></div><div class="ttdeci">bool IsInitialized() const final</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00060">base_logbackend.cc:60</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a7bf42adb1c51a5d8d8ff19bfece4d52d"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a7bf42adb1c51a5d8d8ff19bfece4d52d">yoriito::BaseLogBackend::Finalize</a></div><div class="ttdeci">void Finalize() final</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00049">base_logbackend.cc:49</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a6af786afd09ea352882061d64de9819a"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a6af786afd09ea352882061d64de9819a">yoriito::BaseLogBackend::SetLogLevel</a></div><div class="ttdeci">void SetLogLevel(LogLevel level) final</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00069">base_logbackend.cc:69</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a789fddd3215d9fc88b208c78fa7e3740"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a789fddd3215d9fc88b208c78fa7e3740">yoriito::BaseLogBackend::IsInitialized</a></div><div class="ttdeci">bool IsInitialized() const final</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00067">base_logbackend.cc:67</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a7bf42adb1c51a5d8d8ff19bfece4d52d"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a7bf42adb1c51a5d8d8ff19bfece4d52d">yoriito::BaseLogBackend::Finalize</a></div><div class="ttdeci">void Finalize() final</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00051">base_logbackend.cc:51</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_aa52b512f926cfbc27ee525d8671eba92"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#aa52b512f926cfbc27ee525d8671eba92">yoriito::BaseLogBackend::Initialize</a></div><div class="ttdeci">void Initialize(const char *name) final</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00043">base_logbackend.cc:43</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_afc368f54bfe509d930a2010d7039a191"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#afc368f54bfe509d930a2010d7039a191">yoriito::BaseLogBackend::Output</a></div><div class="ttdeci">void Output(std::string_view tag, std::string_view msg, LogLevel level) final</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00055">base_logbackend.cc:55</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_afc368f54bfe509d930a2010d7039a191"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#afc368f54bfe509d930a2010d7039a191">yoriito::BaseLogBackend::Output</a></div><div class="ttdeci">void Output(std::string_view tag, std::string_view msg, LogLevel level) final</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00059">base_logbackend.cc:59</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1ILogBackend_html_a9836205054815dbae670b6e9ad79025d"><div class="ttname"><a href="classyoriito_1_1ILogBackend.html#a9836205054815dbae670b6e9ad79025d">yoriito::ILogBackend::GetLogBackend</a></div><div class="ttdeci">static std::shared_ptr&lt; ILogBackend &gt; GetLogBackend()</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00031">base_logbackend.cc:31</a></div></div>
 <div class="ttc" id="adlt__logbackend_8h_html"><div class="ttname"><a href="dlt__logbackend_8h.html">dlt_logbackend.h</a></div></div>
 <div class="ttc" id="anamespaceyoriito_html"><div class="ttname"><a href="namespaceyoriito.html">yoriito</a></div><div class="ttdoc">Namespace for yoriito common interfaces and types.</div></div>

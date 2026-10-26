@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/body/windshield/front/wiping/system/Signal_DriveCurrent.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/body/windshield/front/wiping/system/Signal_DriveCurrent.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('front_2wiping_2system_2Signal__DriveCu
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_DriveCurrent.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="front_2wiping_2system_2Signal__DriveCurrent_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="front_2wiping_2system_2Signal__DriveCurrent_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="front_2wiping_2system_2Signal__DriveCurrent_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent.html">yoriito::vehicle::body::windshield::front::wiping::system::drivecurrent</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Body.Windshield.Front.Wiping.System.DriveCurrent signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -138,24 +139,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system.html">yoriito::vehicle::body::windshield::front::wiping::system</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01drivecurrent" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01drivecurrent"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01drivecurrent.html">yoriito::vehicle::body::windshield::front::wiping::system:: drivecurrent</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent.html">yoriito::vehicle::body::windshield::front::wiping::system::drivecurrent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad8dfdb4beb6d13ce2db2a9fe09606ae4" id="r_ad8dfdb4beb6d13ce2db2a9fe09606ae4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01drivecurrent.html#ad8dfdb4beb6d13ce2db2a9fe09606ae4">yoriito::vehicle::body::windshield::front::wiping::system:: drivecurrent::Get</a> ()</td></tr>
-<tr class="separator:ad8dfdb4beb6d13ce2db2a9fe09606ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae443d849f0d6f120b79acf8e4014531a" id="r_ae443d849f0d6f120b79acf8e4014531a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01drivecurrent.html#ae443d849f0d6f120b79acf8e4014531a">yoriito::vehicle::body::windshield::front::wiping::system:: drivecurrent::Subscribe</a> ()</td></tr>
-<tr class="separator:ae443d849f0d6f120b79acf8e4014531a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77b6bd55cacac35f74c00ba027288270" id="r_a77b6bd55cacac35f74c00ba027288270"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01drivecurrent.html#a77b6bd55cacac35f74c00ba027288270">yoriito::vehicle::body::windshield::front::wiping::system:: drivecurrent::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a77b6bd55cacac35f74c00ba027288270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f8d0258aa6b2fe3def0cf672fb684e" id="r_a19f8d0258aa6b2fe3def0cf672fb684e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01drivecurrent.html#a19f8d0258aa6b2fe3def0cf672fb684e">yoriito::vehicle::body::windshield::front::wiping::system:: drivecurrent::Inspect</a> ()</td></tr>
-<tr class="separator:a19f8d0258aa6b2fe3def0cf672fb684e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888fc1b38dd01d94028df52a3ee5aec6" id="r_a888fc1b38dd01d94028df52a3ee5aec6"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent.html#a888fc1b38dd01d94028df52a3ee5aec6">yoriito::vehicle::body::windshield::front::wiping::system::drivecurrent::Get</a> ()</td></tr>
+<tr class="separator:a888fc1b38dd01d94028df52a3ee5aec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adefefb6863b632748f73030de156db11" id="r_adefefb6863b632748f73030de156db11"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent.html#adefefb6863b632748f73030de156db11">yoriito::vehicle::body::windshield::front::wiping::system::drivecurrent::Subscribe</a> ()</td></tr>
+<tr class="separator:adefefb6863b632748f73030de156db11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668af66e197596fd176cb427e4ba54d2" id="r_a668af66e197596fd176cb427e4ba54d2"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent.html#a668af66e197596fd176cb427e4ba54d2">yoriito::vehicle::body::windshield::front::wiping::system::drivecurrent::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:a668af66e197596fd176cb427e4ba54d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4ea184d91cb4611d700f79e9fb9a5b" id="r_abe4ea184d91cb4611d700f79e9fb9a5b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent.html#abe4ea184d91cb4611d700f79e9fb9a5b">yoriito::vehicle::body::windshield::front::wiping::system::drivecurrent::Inspect</a> ()</td></tr>
+<tr class="separator:abe4ea184d91cb4611d700f79e9fb9a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aedcf952307e0720b00432e1c7cb9f80a" id="r_aedcf952307e0720b00432e1c7cb9f80a"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01drivecurrent.html#aedcf952307e0720b00432e1c7cb9f80a">yoriito::vehicle::body::windshield::front::wiping::system:: drivecurrent::VEHICLE_BODY_WINDSHIELD_FRONT_WIPING_SYSTEM_DRIVECURRENT</a></td></tr>
-<tr class="separator:aedcf952307e0720b00432e1c7cb9f80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80bde421f4f8ce0b3febc69f1e81aff7" id="r_a80bde421f4f8ce0b3febc69f1e81aff7"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1drivecurrent.html#a80bde421f4f8ce0b3febc69f1e81aff7">yoriito::vehicle::body::windshield::front::wiping::system::drivecurrent::VEHICLE_BODY_WINDSHIELD_FRONT_WIPING_SYSTEM_DRIVECURRENT</a></td></tr>
+<tr class="separator:a80bde421f4f8ce0b3febc69f1e81aff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

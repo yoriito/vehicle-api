@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/charging/Signal_IsDischarging.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/charging/Signal_IsDischarging.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('Signal__IsDischarging_8h.html',''); in
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsDischarging.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__IsDischarging_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__IsDischarging_8h__dep__incl.svg" width="472" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__IsDischarging_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging.html">yoriito::vehicle::powertrain::tractionbattery::charging::isdischarging</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.TractionBattery.Charging.IsDischarging signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -134,24 +135,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging.html">yoriito::vehicle::powertrain::tractionbattery::charging</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01isdischarging" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01isdischarging"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01isdischarging.html">yoriito::vehicle::powertrain::tractionbattery::charging:: isdischarging</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging.html">yoriito::vehicle::powertrain::tractionbattery::charging::isdischarging</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a508a3663a8fc5f07a4690e0813f87e88" id="r_a508a3663a8fc5f07a4690e0813f87e88"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01isdischarging.html#a508a3663a8fc5f07a4690e0813f87e88">yoriito::vehicle::powertrain::tractionbattery::charging:: isdischarging::Get</a> ()</td></tr>
-<tr class="separator:a508a3663a8fc5f07a4690e0813f87e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5491cb12ee5f444468b846c68c8fa2b9" id="r_a5491cb12ee5f444468b846c68c8fa2b9"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01isdischarging.html#a5491cb12ee5f444468b846c68c8fa2b9">yoriito::vehicle::powertrain::tractionbattery::charging:: isdischarging::Subscribe</a> ()</td></tr>
-<tr class="separator:a5491cb12ee5f444468b846c68c8fa2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a243f1e0fa270f14a7bedc5096a12c2f9" id="r_a243f1e0fa270f14a7bedc5096a12c2f9"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01isdischarging.html#a243f1e0fa270f14a7bedc5096a12c2f9">yoriito::vehicle::powertrain::tractionbattery::charging:: isdischarging::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a243f1e0fa270f14a7bedc5096a12c2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39f2c1e5a653f7d8aa82fb77794cb000" id="r_a39f2c1e5a653f7d8aa82fb77794cb000"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01isdischarging.html#a39f2c1e5a653f7d8aa82fb77794cb000">yoriito::vehicle::powertrain::tractionbattery::charging:: isdischarging::Inspect</a> ()</td></tr>
-<tr class="separator:a39f2c1e5a653f7d8aa82fb77794cb000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a5ae3227e6de3258ffd0da6010e55d" id="r_a34a5ae3227e6de3258ffd0da6010e55d"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging.html#a34a5ae3227e6de3258ffd0da6010e55d">yoriito::vehicle::powertrain::tractionbattery::charging::isdischarging::Get</a> ()</td></tr>
+<tr class="separator:a34a5ae3227e6de3258ffd0da6010e55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ccde64857ad5f1b4259b6cfc40c1d0d" id="r_a6ccde64857ad5f1b4259b6cfc40c1d0d"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging.html#a6ccde64857ad5f1b4259b6cfc40c1d0d">yoriito::vehicle::powertrain::tractionbattery::charging::isdischarging::Subscribe</a> ()</td></tr>
+<tr class="separator:a6ccde64857ad5f1b4259b6cfc40c1d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07bf36ddf0d9d2276a1cca6e00c4dc69" id="r_a07bf36ddf0d9d2276a1cca6e00c4dc69"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging.html#a07bf36ddf0d9d2276a1cca6e00c4dc69">yoriito::vehicle::powertrain::tractionbattery::charging::isdischarging::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:a07bf36ddf0d9d2276a1cca6e00c4dc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03affb46be94b2f526b8a1f17c86286" id="r_ad03affb46be94b2f526b8a1f17c86286"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging.html#ad03affb46be94b2f526b8a1f17c86286">yoriito::vehicle::powertrain::tractionbattery::charging::isdischarging::Inspect</a> ()</td></tr>
+<tr class="separator:ad03affb46be94b2f526b8a1f17c86286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a45cd01dcb4c8769e81e58c9d8f50e03f" id="r_a45cd01dcb4c8769e81e58c9d8f50e03f"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01isdischarging.html#a45cd01dcb4c8769e81e58c9d8f50e03f">yoriito::vehicle::powertrain::tractionbattery::charging:: isdischarging::VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_ISDISCHARGING</a></td></tr>
-<tr class="separator:a45cd01dcb4c8769e81e58c9d8f50e03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9b92e722f67f94ca4d7f27b05590d4" id="r_a5b9b92e722f67f94ca4d7f27b05590d4"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1isdischarging.html#a5b9b92e722f67f94ca4d7f27b05590d4">yoriito::vehicle::powertrain::tractionbattery::charging::isdischarging::VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_ISDISCHARGING</a></td></tr>
+<tr class="separator:a5b9b92e722f67f94ca4d7f27b05590d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

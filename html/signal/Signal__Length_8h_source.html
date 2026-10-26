@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/Signal_Length.h Source File</title>
+<title>Yoriito Vehicle API - signal: /work/signal/Signal_Length.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('Signal__Length_8h_source.html',''); in
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef VEHICLE_LENGTH_H</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define VEHICLE_LENGTH_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef SIGNAL_SIGNAL_LENGTH_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define SIGNAL_SIGNAL_LENGTH_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
@@ -128,23 +128,31 @@ $(document).ready(function(){initNavTree('Signal__Length_8h_source.html',''); in
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;databroker/databroker_consumer_factory.h&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;error.h&quot;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;result.h&quot;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;yoriito_log.h&quot;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1vehicle_1_1length.html">yoriito::vehicle::length</a> {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1length.html#a5ee7cf8d98652b94f04d61f935aeb5b1">   41</a></span>  <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1length.html#a5ee7cf8d98652b94f04d61f935aeb5b1">VEHICLE_LENGTH</a> = <span class="stringliteral">&quot;Vehicle.Length&quot;</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  yoriito::Result&lt;uint16_t&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1length.html#acccc480c6aa42851161dce71daea07b7">Get</a>();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  yoriito::Result&lt;yoriito::databroker::ConsumerInspectResponse&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1length.html#a6e8c57e8cb76fd9326d2f130f1db8f6f">Inspect</a>();</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}  <span class="comment">// namespace yoriito::vehicle::length</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif  </span><span class="comment">// VEHICLE_LENGTH_H</span></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1length_html"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1length.html">yoriito::vehicle::length</a></div><div class="ttdoc">Indicates the Vehicle.Length signal.</div><div class="ttdef"><b>Definition</b> <a href="Signal__Length_8cc_source.html#l00025">Signal_Length.cc:25</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1length_html_a5ee7cf8d98652b94f04d61f935aeb5b1"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1length.html#a5ee7cf8d98652b94f04d61f935aeb5b1">yoriito::vehicle::length::VEHICLE_LENGTH</a></div><div class="ttdeci">constexpr const char * VEHICLE_LENGTH</div><div class="ttdef"><b>Definition</b> <a href="Signal__Length_8h_source.html#l00041">Signal_Length.h:41</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1length_html_a6e8c57e8cb76fd9326d2f130f1db8f6f"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1length.html#a6e8c57e8cb76fd9326d2f130f1db8f6f">yoriito::vehicle::length::Inspect</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt; Inspect()</div><div class="ttdef"><b>Definition</b> <a href="Signal__Length_8cc_source.html#l00063">Signal_Length.cc:63</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1length_html_acccc480c6aa42851161dce71daea07b7"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1length.html#acccc480c6aa42851161dce71daea07b7">yoriito::vehicle::length::Get</a></div><div class="ttdeci">yoriito::Result&lt; uint16_t &gt; Get()</div><div class="ttdef"><b>Definition</b> <a href="Signal__Length_8cc_source.html#l00027">Signal_Length.cc:27</a></div></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;signal/signal_get_datapoint.h&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;signal/signal_inspect_data.h&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;signal/signal_inspect_response.h&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;signal/signal_subscribe_context.h&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;yoriito_log.h&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1vehicle_1_1length.html">yoriito::vehicle::length</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1length.html#a5ee7cf8d98652b94f04d61f935aeb5b1">   47</a></span><span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1length.html#a5ee7cf8d98652b94f04d61f935aeb5b1">VEHICLE_LENGTH</a> = <span class="stringliteral">&quot;Vehicle.Length&quot;</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>yoriito::Result&lt;yoriito::signal::SignalGetDataPoint&lt;uint16_t&gt;&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1length.html#a50869df205d6ed44154a30194f7b518a">Get</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>yoriito::Result&lt;yoriito::signal::SignalInspectResponse&lt;uint16_t&gt;&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1length.html#a4272ea24f62bec55af0c92de33fb9bac">Inspect</a>();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}  <span class="comment">// namespace yoriito::vehicle::length</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#endif  </span><span class="comment">// SIGNAL_SIGNAL_LENGTH_H_</span></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1length_html"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1length.html">yoriito::vehicle::length</a></div><div class="ttdoc">Indicates the Vehicle.Length signal.</div><div class="ttdef"><b>Definition</b> <a href="Signal__Length_8cc_source.html#l00026">Signal_Length.cc:26</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1length_html_a4272ea24f62bec55af0c92de33fb9bac"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1length.html#a4272ea24f62bec55af0c92de33fb9bac">yoriito::vehicle::length::Inspect</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint16_t &gt; &gt; Inspect()</div><div class="ttdef"><b>Definition</b> <a href="Signal__Length_8cc_source.html#l00062">Signal_Length.cc:62</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1length_html_a50869df205d6ed44154a30194f7b518a"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1length.html#a50869df205d6ed44154a30194f7b518a">yoriito::vehicle::length::Get</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint16_t &gt; &gt; Get()</div><div class="ttdef"><b>Definition</b> <a href="Signal__Length_8cc_source.html#l00029">Signal_Length.cc:29</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1length_html_a5ee7cf8d98652b94f04d61f935aeb5b1"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1length.html#a5ee7cf8d98652b94f04d61f935aeb5b1">yoriito::vehicle::length::VEHICLE_LENGTH</a></div><div class="ttdeci">constexpr const char * VEHICLE_LENGTH</div><div class="ttdef"><b>Definition</b> <a href="Signal__Length_8h_source.html#l00047">Signal_Length.h:47</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

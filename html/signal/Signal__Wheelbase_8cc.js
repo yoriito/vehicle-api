@@ -1,5 +1,5 @@
 var Signal__Wheelbase_8cc =
 [
-    [ "Get", "Signal__Wheelbase_8cc.html#ae248e97c8a0951f31df090e0a765ecb4", null ],
-    [ "Inspect", "Signal__Wheelbase_8cc.html#a97aff407e647a6f10cfa974f922452fe", null ]
+    [ "Get", "Signal__Wheelbase_8cc.html#aa39a5bbf3b0bf295d923c09a823fe8d3", null ],
+    [ "Inspect", "Signal__Wheelbase_8cc.html#a8a937d46c5e361297b05ca361e80e82b", null ]
 ];

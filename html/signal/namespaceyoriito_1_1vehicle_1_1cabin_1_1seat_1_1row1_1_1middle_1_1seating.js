@@ -1,27 +1,43 @@
 var namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating =
 [
-    [ " length_availability_actuator", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__actuator.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__actuator.html#a768c877f2085bc8e6cc11aad7f3d87d9", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__actuator.html#adca1e1d262658212166de6a6746e36ed", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__actuator.html#a3c7683629207b8f2a99f2db8e7e92a6d", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__actuator.html#a5eeb7e294a3a03782786eea44de21f2b", null ],
-      [ "VEHICLE_CABIN_SEAT_ROW1_MIDDLE_SEATING_LENGTH_AVAILABILITY_ACTUATOR", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__actuator.html#a9fd2a98af0daacf537fd9a061a0d9602", null ]
-    ] ],
-    [ " length_availability_sensor", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__sensor.html#a6ce0840017f31c9ce445057c40744009", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__sensor.html#af8ec8ca70004197c0074dc5e8b29c11a", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__sensor.html#a442c9136b7463145642d1c27f8579076", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__sensor.html#a654c43b29363d4a0597617c80677b9aa", null ],
-      [ "VEHICLE_CABIN_SEAT_ROW1_MIDDLE_SEATING_LENGTH_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1_01length__availability__sensor.html#a659c182d0ffd800bc1e70bb10d5bf167", null ]
+    [ "heatingcooling", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1heatingcooling.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1heatingcooling.html#a1fa6d383082db6addc3aa53c95a9101f", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1heatingcooling.html#a0581d15ad536f163be02d1e5f660be98", null ],
+      [ "Set", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1heatingcooling.html#a172d97ffe93d4114fa0dbd36daa7ad86", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1heatingcooling.html#a81116799e1ac814bbe62a69200106800", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1heatingcooling.html#a75df61a337c50c6c9837d36742f2dd57", null ],
+      [ "VEHICLE_CABIN_SEAT_ROW1_MIDDLE_SEATING_HEATINGCOOLING", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1heatingcooling.html#a60ca41df22d2e540ecb36c4497609758", null ]
     ] ],
     [ "length", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length.html#a457aca528908248460b52e266b2dafbe", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length.html#a50cbef86c36b41f0989d29a57bb760d0", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length.html#aef16c7223d0567adf8fb5dc9b5b7297b", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length.html#a2e654ddfb7ae08b250f4dfb571edf4de", null ],
       [ "Set", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length.html#a2da46d5b02a6f4489538c470799a92fa", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length.html#ab67c079f4d50a21fa4cfb95aaf0f2fe3", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length.html#af31076fc2eb85d5cb1d979d08762c0dd", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length.html#a2e2d57a891e869793794a1dceb81298d", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length.html#a8e63d9c2ea93ae0463b8e5ceeb384d91", null ],
       [ "VEHICLE_CABIN_SEAT_ROW1_MIDDLE_SEATING_LENGTH", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length.html#a9ba52890aa66a7d0ce842b96c0359709", null ]
     ] ],
-    [ "length_availability_actuator", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length__availability__actuator.html", null ],
-    [ "length_availability_sensor", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1length__availability__sensor.html", null ]
+    [ "sidebolstersupportleft", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportleft.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportleft.html#a9e05f2f0812c721a5754a0f8f261521e", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportleft.html#a80362e500a4eeac77119c96e1e2480a2", null ],
+      [ "Set", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportleft.html#a56c21129c1f20a94f256ff672bd38e03", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportleft.html#aae3310f529967c2d240c12b7425a3bf3", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportleft.html#a7c0c36c060765fb0e1931d8a2f5879ef", null ],
+      [ "VEHICLE_CABIN_SEAT_ROW1_MIDDLE_SEATING_SIDEBOLSTERSUPPORTLEFT", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportleft.html#ae4c443e3b794de47fa7126848fccfe13", null ]
+    ] ],
+    [ "sidebolstersupportright", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportright.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportright.html#a6e20221c955aa388207788dd41445d6a", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportright.html#a7d2731ae4767faff420a4fdd991c3444", null ],
+      [ "Set", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportright.html#a3a7a82c65359321227b3b4bbe8e1a849", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportright.html#a7df3480457e0ed62743e609b2ff89045", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportright.html#a6970783124ab2864a91fabd848282aff", null ],
+      [ "VEHICLE_CABIN_SEAT_ROW1_MIDDLE_SEATING_SIDEBOLSTERSUPPORTRIGHT", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1sidebolstersupportright.html#ae0253a81c85b9885288a7aed7ab00281", null ]
+    ] ],
+    [ "ventilator", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1ventilator.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1ventilator.html#a1e142a52fbd72aec485612bd1cd76085", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1ventilator.html#a7a054f286ed7c4e58a1633bc0e5944b8", null ],
+      [ "Set", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1ventilator.html#a099a73218b3a58b87458cf4ff34b41ea", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1ventilator.html#ae848205a078a48b7486587f865e4a124", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1ventilator.html#a06752f1770c179d481ca0a283fef08b3", null ],
+      [ "VEHICLE_CABIN_SEAT_ROW1_MIDDLE_SEATING_VENTILATOR", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row1_1_1middle_1_1seating_1_1ventilator.html#a012587f85f4e350d9abd53fd240dd53f", null ]
+    ] ]
 ];

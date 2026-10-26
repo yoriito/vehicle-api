@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/cabin/hvac/Signal_PowerOptimizeLevel.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/cabin/hvac/Signal_PowerOptimizeLevel.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,16 +106,20 @@ $(document).ready(function(){initNavTree('cabin_2hvac_2Signal__PowerOptimizeLeve
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_PowerOptimizeLevel.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="cabin_2hvac_2Signal__PowerOptimizeLevel_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="cabin_2hvac_2Signal__PowerOptimizeLevel_8h__dep__incl.svg" width="478" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="cabin_2hvac_2Signal__PowerOptimizeLevel_8h_source.html">Go to the source code of this file.</a></p>
@@ -136,16 +140,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abef5695f10ddafc5520e6ce0ab998e5f" id="r_abef5695f10ddafc5520e6ce0ab998e5f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1poweroptimizelevel.html#abef5695f10ddafc5520e6ce0ab998e5f">yoriito::vehicle::cabin::hvac::poweroptimizelevel::Get</a> ()</td></tr>
-<tr class="separator:abef5695f10ddafc5520e6ce0ab998e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2aa36d30883325d605ae7cb6aea2396" id="r_ae2aa36d30883325d605ae7cb6aea2396"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1poweroptimizelevel.html#ae2aa36d30883325d605ae7cb6aea2396">yoriito::vehicle::cabin::hvac::poweroptimizelevel::Get</a> ()</td></tr>
+<tr class="separator:ae2aa36d30883325d605ae7cb6aea2396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09f3c0b9eea5fccb74e581637d020ce9" id="r_a09f3c0b9eea5fccb74e581637d020ce9"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1poweroptimizelevel.html#a09f3c0b9eea5fccb74e581637d020ce9">yoriito::vehicle::cabin::hvac::poweroptimizelevel::Set</a> (const uint8_t &amp;value)</td></tr>
 <tr class="separator:a09f3c0b9eea5fccb74e581637d020ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa10f0fb96432898e7ff015aea153bc6" id="r_aaa10f0fb96432898e7ff015aea153bc6"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1poweroptimizelevel.html#aaa10f0fb96432898e7ff015aea153bc6">yoriito::vehicle::cabin::hvac::poweroptimizelevel::Subscribe</a> ()</td></tr>
-<tr class="separator:aaa10f0fb96432898e7ff015aea153bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9085e633f8312ed8b4aaf7202193c592" id="r_a9085e633f8312ed8b4aaf7202193c592"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1poweroptimizelevel.html#a9085e633f8312ed8b4aaf7202193c592">yoriito::vehicle::cabin::hvac::poweroptimizelevel::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a9085e633f8312ed8b4aaf7202193c592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48b001a3462a12538cddefbcd42fe21a" id="r_a48b001a3462a12538cddefbcd42fe21a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1poweroptimizelevel.html#a48b001a3462a12538cddefbcd42fe21a">yoriito::vehicle::cabin::hvac::poweroptimizelevel::Inspect</a> ()</td></tr>
-<tr class="separator:a48b001a3462a12538cddefbcd42fe21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9500f538949132416238bbccad10f342" id="r_a9500f538949132416238bbccad10f342"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1poweroptimizelevel.html#a9500f538949132416238bbccad10f342">yoriito::vehicle::cabin::hvac::poweroptimizelevel::Subscribe</a> ()</td></tr>
+<tr class="separator:a9500f538949132416238bbccad10f342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc9337ea98909f152f766e8279b23d0" id="r_a6fc9337ea98909f152f766e8279b23d0"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1poweroptimizelevel.html#a6fc9337ea98909f152f766e8279b23d0">yoriito::vehicle::cabin::hvac::poweroptimizelevel::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; uint8_t &gt; subscription_context)</td></tr>
+<tr class="separator:a6fc9337ea98909f152f766e8279b23d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf32e7ecc55d4d1c645bf25eedd65f72" id="r_acf32e7ecc55d4d1c645bf25eedd65f72"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1poweroptimizelevel.html#acf32e7ecc55d4d1c645bf25eedd65f72">yoriito::vehicle::cabin::hvac::poweroptimizelevel::Inspect</a> ()</td></tr>
+<tr class="separator:acf32e7ecc55d4d1c645bf25eedd65f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

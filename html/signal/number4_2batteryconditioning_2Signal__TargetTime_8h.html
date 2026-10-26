@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/number4/batteryconditioning/Signal_TargetTime.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/number4/batteryconditioning/Signal_TargetTime.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,25 +108,26 @@ $(document).ready(function(){initNavTree('number4_2batteryconditioning_2Signal__
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_TargetTime.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="number4_2batteryconditioning_2Signal__TargetTime_8h__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="number4_2batteryconditioning_2Signal__TargetTime_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="number4_2batteryconditioning_2Signal__TargetTime_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime.html">yoriito::vehicle::powertrain::tractionbattery::number4::batteryconditioning::targettime</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.TractionBattery.Number4.BatteryConditioning.TargetTime signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -137,28 +138,28 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4.html">yoriito::vehicle::powertrain::tractionbattery::number4</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning.html">yoriito::vehicle::powertrain::tractionbattery::number4:: batteryconditioning</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning.html">yoriito::vehicle::powertrain::tractionbattery::number4::batteryconditioning</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning_1_1targettime" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning_1_1targettime"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning_1_1targettime.html">yoriito::vehicle::powertrain::tractionbattery::number4:: batteryconditioning::targettime</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime.html">yoriito::vehicle::powertrain::tractionbattery::number4::batteryconditioning::targettime</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab883f0b877848a7131370e5b01466f88" id="r_ab883f0b877848a7131370e5b01466f88"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning_1_1targettime.html#ab883f0b877848a7131370e5b01466f88">yoriito::vehicle::powertrain::tractionbattery::number4:: batteryconditioning::targettime::Get</a> ()</td></tr>
-<tr class="separator:ab883f0b877848a7131370e5b01466f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa3576f882cc3444d000ecd723441e06" id="r_aaa3576f882cc3444d000ecd723441e06"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning_1_1targettime.html#aaa3576f882cc3444d000ecd723441e06">yoriito::vehicle::powertrain::tractionbattery::number4:: batteryconditioning::targettime::Set</a> (const std::string &amp;value)</td></tr>
-<tr class="separator:aaa3576f882cc3444d000ecd723441e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dec89d442d2b9b14c95a5cd8c0a3ef0" id="r_a2dec89d442d2b9b14c95a5cd8c0a3ef0"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning_1_1targettime.html#a2dec89d442d2b9b14c95a5cd8c0a3ef0">yoriito::vehicle::powertrain::tractionbattery::number4:: batteryconditioning::targettime::Subscribe</a> ()</td></tr>
-<tr class="separator:a2dec89d442d2b9b14c95a5cd8c0a3ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6b583b424126fbf670cd8a2291e8e75" id="r_ab6b583b424126fbf670cd8a2291e8e75"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning_1_1targettime.html#ab6b583b424126fbf670cd8a2291e8e75">yoriito::vehicle::powertrain::tractionbattery::number4:: batteryconditioning::targettime::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:ab6b583b424126fbf670cd8a2291e8e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d843360ecd4169532a5d44b6b21d789" id="r_a8d843360ecd4169532a5d44b6b21d789"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning_1_1targettime.html#a8d843360ecd4169532a5d44b6b21d789">yoriito::vehicle::powertrain::tractionbattery::number4:: batteryconditioning::targettime::Inspect</a> ()</td></tr>
-<tr class="separator:a8d843360ecd4169532a5d44b6b21d789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9656dc4209768edbefd7a6f079839091" id="r_a9656dc4209768edbefd7a6f079839091"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime.html#a9656dc4209768edbefd7a6f079839091">yoriito::vehicle::powertrain::tractionbattery::number4::batteryconditioning::targettime::Get</a> ()</td></tr>
+<tr class="separator:a9656dc4209768edbefd7a6f079839091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f9da5be6cba6cae5c9aa3fa8708e64" id="r_a87f9da5be6cba6cae5c9aa3fa8708e64"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime.html#a87f9da5be6cba6cae5c9aa3fa8708e64">yoriito::vehicle::powertrain::tractionbattery::number4::batteryconditioning::targettime::Set</a> (const std::string &amp;value)</td></tr>
+<tr class="separator:a87f9da5be6cba6cae5c9aa3fa8708e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d26fb1768cee8605738a270e13f6433" id="r_a9d26fb1768cee8605738a270e13f6433"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime.html#a9d26fb1768cee8605738a270e13f6433">yoriito::vehicle::powertrain::tractionbattery::number4::batteryconditioning::targettime::Subscribe</a> ()</td></tr>
+<tr class="separator:a9d26fb1768cee8605738a270e13f6433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec6192add13a3b1a24a357aea6ac6f3" id="r_a2ec6192add13a3b1a24a357aea6ac6f3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime.html#a2ec6192add13a3b1a24a357aea6ac6f3">yoriito::vehicle::powertrain::tractionbattery::number4::batteryconditioning::targettime::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; std::string &gt; subscription_context)</td></tr>
+<tr class="separator:a2ec6192add13a3b1a24a357aea6ac6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49135b572d4e58b76d14ce53aac58f52" id="r_a49135b572d4e58b76d14ce53aac58f52"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime.html#a49135b572d4e58b76d14ce53aac58f52">yoriito::vehicle::powertrain::tractionbattery::number4::batteryconditioning::targettime::Inspect</a> ()</td></tr>
+<tr class="separator:a49135b572d4e58b76d14ce53aac58f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a635098f26f5e93cfed0ee73feecadab9" id="r_a635098f26f5e93cfed0ee73feecadab9"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01batteryconditioning_1_1targettime.html#a635098f26f5e93cfed0ee73feecadab9">yoriito::vehicle::powertrain::tractionbattery::number4:: batteryconditioning::targettime::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER4_BATTERYCONDITIONING_TARGETTIME</a></td></tr>
-<tr class="separator:a635098f26f5e93cfed0ee73feecadab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9907b01990c12b97ec25c6819f6618b4" id="r_a9907b01990c12b97ec25c6819f6618b4"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1batteryconditioning_1_1targettime.html#a9907b01990c12b97ec25c6819f6618b4">yoriito::vehicle::powertrain::tractionbattery::number4::batteryconditioning::targettime::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER4_BATTERYCONDITIONING_TARGETTIME</a></td></tr>
+<tr class="separator:a9907b01990c12b97ec25c6819f6618b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

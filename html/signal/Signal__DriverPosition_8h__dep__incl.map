@@ -1,9 +1,0 @@
-<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/Signal_DriverPosition.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/Signal_DriverPosition.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="111,5,327,60"/>
-<area shape="rect" id="Node000002" href="$Cabin_8h.html" title=" " alt="" coords="5,108,201,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,71,135,110,132,106,177,67"/>
-<area shape="rect" id="Node000004" href="$Signal__DriverPosition_8cc.html" title=" " alt="" coords="225,108,448,163"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="262,67,308,106,304,110,259,71"/>
-<area shape="rect" id="Node000003" href="$Vehicle_8h.html" title=" " alt="" coords="5,211,201,265"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,176,106,211,101,211,101,176"/>
-</map>

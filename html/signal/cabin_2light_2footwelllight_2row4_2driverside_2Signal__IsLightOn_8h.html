@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/cabin/light/footwelllight/row4/driverside/Signal_IsLightOn.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/cabin/light/footwelllight/row4/driverside/Signal_IsLightOn.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,25 +106,26 @@ $(document).ready(function(){initNavTree('cabin_2light_2footwelllight_2row4_2dri
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsLightOn.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="cabin_2light_2footwelllight_2row4_2driverside_2Signal__IsLightOn_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="cabin_2light_2footwelllight_2row4_2driverside_2Signal__IsLightOn_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="cabin_2light_2footwelllight_2row4_2driverside_2Signal__IsLightOn_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton" id="r_namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton.html">yoriito::vehicle::cabin::light::footwelllight::row4::driverside::islighton</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Cabin.Light.FootwellLight.Row4.DriverSide.IsLightOn signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -139,26 +140,26 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside" id="r_namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside.html">yoriito::vehicle::cabin::light::footwelllight::row4::driverside</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1_01islighton" id="r_namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1_01islighton"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1_01islighton.html">yoriito::vehicle::cabin::light::footwelllight::row4::driverside:: islighton</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton" id="r_namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton.html">yoriito::vehicle::cabin::light::footwelllight::row4::driverside::islighton</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8f0a46aa550b8a000e407d8f6d47a150" id="r_a8f0a46aa550b8a000e407d8f6d47a150"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1_01islighton.html#a8f0a46aa550b8a000e407d8f6d47a150">yoriito::vehicle::cabin::light::footwelllight::row4::driverside:: islighton::Get</a> ()</td></tr>
-<tr class="separator:a8f0a46aa550b8a000e407d8f6d47a150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22234c9275c692065dffa63921a0b6b8" id="r_a22234c9275c692065dffa63921a0b6b8"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1_01islighton.html#a22234c9275c692065dffa63921a0b6b8">yoriito::vehicle::cabin::light::footwelllight::row4::driverside:: islighton::Set</a> (const bool &amp;value)</td></tr>
-<tr class="separator:a22234c9275c692065dffa63921a0b6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b14cca066848a174291fee59d563bb3" id="r_a5b14cca066848a174291fee59d563bb3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1_01islighton.html#a5b14cca066848a174291fee59d563bb3">yoriito::vehicle::cabin::light::footwelllight::row4::driverside:: islighton::Subscribe</a> ()</td></tr>
-<tr class="separator:a5b14cca066848a174291fee59d563bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b37116873f6cd882dd989bbeffa1499" id="r_a5b37116873f6cd882dd989bbeffa1499"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1_01islighton.html#a5b37116873f6cd882dd989bbeffa1499">yoriito::vehicle::cabin::light::footwelllight::row4::driverside:: islighton::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a5b37116873f6cd882dd989bbeffa1499"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89353005c447d90bce8e9d133af565fd" id="r_a89353005c447d90bce8e9d133af565fd"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1_01islighton.html#a89353005c447d90bce8e9d133af565fd">yoriito::vehicle::cabin::light::footwelllight::row4::driverside:: islighton::Inspect</a> ()</td></tr>
-<tr class="separator:a89353005c447d90bce8e9d133af565fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12fd112624212e5936750d2090adf831" id="r_a12fd112624212e5936750d2090adf831"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton.html#a12fd112624212e5936750d2090adf831">yoriito::vehicle::cabin::light::footwelllight::row4::driverside::islighton::Get</a> ()</td></tr>
+<tr class="separator:a12fd112624212e5936750d2090adf831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cff18e57b86019fcfe6c1b406c286cd" id="r_a7cff18e57b86019fcfe6c1b406c286cd"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton.html#a7cff18e57b86019fcfe6c1b406c286cd">yoriito::vehicle::cabin::light::footwelllight::row4::driverside::islighton::Set</a> (const bool &amp;value)</td></tr>
+<tr class="separator:a7cff18e57b86019fcfe6c1b406c286cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97359d805f8fdf050c868a3e703c9fbe" id="r_a97359d805f8fdf050c868a3e703c9fbe"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton.html#a97359d805f8fdf050c868a3e703c9fbe">yoriito::vehicle::cabin::light::footwelllight::row4::driverside::islighton::Subscribe</a> ()</td></tr>
+<tr class="separator:a97359d805f8fdf050c868a3e703c9fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f0271bbedfc5fcaa0fb904ea6e95c7" id="r_aa8f0271bbedfc5fcaa0fb904ea6e95c7"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton.html#aa8f0271bbedfc5fcaa0fb904ea6e95c7">yoriito::vehicle::cabin::light::footwelllight::row4::driverside::islighton::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:aa8f0271bbedfc5fcaa0fb904ea6e95c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c636435dff3930203cd2c1575d7f2e3" id="r_a4c636435dff3930203cd2c1575d7f2e3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton.html#a4c636435dff3930203cd2c1575d7f2e3">yoriito::vehicle::cabin::light::footwelllight::row4::driverside::islighton::Inspect</a> ()</td></tr>
+<tr class="separator:a4c636435dff3930203cd2c1575d7f2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a9839c66ff0dafcde37769bd1328ba78d" id="r_a9839c66ff0dafcde37769bd1328ba78d"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1_01islighton.html#a9839c66ff0dafcde37769bd1328ba78d">yoriito::vehicle::cabin::light::footwelllight::row4::driverside:: islighton::VEHICLE_CABIN_LIGHT_FOOTWELLLIGHT_ROW4_DRIVERSIDE_ISLIGHTON</a></td></tr>
-<tr class="separator:a9839c66ff0dafcde37769bd1328ba78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527724d87b2dfdde77530a8610ce3da2" id="r_a527724d87b2dfdde77530a8610ce3da2"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1light_1_1footwelllight_1_1row4_1_1driverside_1_1islighton.html#a527724d87b2dfdde77530a8610ce3da2">yoriito::vehicle::cabin::light::footwelllight::row4::driverside::islighton::VEHICLE_CABIN_LIGHT_FOOTWELLLIGHT_ROW4_DRIVERSIDE_ISLIGHTON</a></td></tr>
+<tr class="separator:a527724d87b2dfdde77530a8610ce3da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

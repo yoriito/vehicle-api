@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - common: /home/runner/work/vehicle-api/vehicle-api/common/databroker/producer_inspect_response.h Source File</title>
+<title>Yoriito Vehicle API - common: /work/common/databroker/producer_inspect_response.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('producer__inspect__response_8h_source.
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_INSPECT_RESPONSE_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_INSPECT_RESPONSE_H_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef COMMON_DATABROKER_PRODUCER_INSPECT_RESPONSE_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define COMMON_DATABROKER_PRODUCER_INSPECT_RESPONSE_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
@@ -138,24 +138,40 @@ $(document).ready(function(){initNavTree('producer__inspect__response_8h_source.
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      : datas_(std::move(datas)) {}</div>
 </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#a74a6905c34325a93506a5552a2a6c40b">   73</a></span>  <span class="keyword">const</span> std::vector&lt;ProducerInspectData&gt;&amp; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#a74a6905c34325a93506a5552a2a6c40b">GetDataPoints</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> datas_;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  }</div>
-</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  std::vector&lt;ProducerInspectData&gt; datas_;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#ac91f325b4d63dfaa41c961efce3453d9">   76</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#ac91f325b4d63dfaa41c961efce3453d9">ProducerInspectResponse</a>(</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      std::vector&lt;ProducerInspectData&gt;&amp;&amp; datas,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      std::vector&lt;std::shared_ptr&lt;StructType&gt;&gt;&amp;&amp; struct_types)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      : datas_(std::move(datas)), struct_types_(std::move(struct_types)) {}</div>
 </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}  <span class="comment">// namespace yoriito::databroker</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif  </span><span class="comment">// YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_INSPECT_RESPONSE_H_</span></div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#a74a6905c34325a93506a5552a2a6c40b">   93</a></span>  <span class="keyword">const</span> std::vector&lt;ProducerInspectData&gt;&amp; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#a74a6905c34325a93506a5552a2a6c40b">GetDataPoints</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">return</span> datas_;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#afb4e8dd8c9b9077c34fc790a32201667">  109</a></span>  <span class="keyword">const</span> std::vector&lt;std::shared_ptr&lt;StructType&gt;&gt;&amp; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#afb4e8dd8c9b9077c34fc790a32201667">GetStructTypes</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">return</span> struct_types_;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  }</div>
+</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  std::vector&lt;ProducerInspectData&gt; datas_;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  std::vector&lt;std::shared_ptr&lt;StructType&gt;&gt; struct_types_;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>};</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}  <span class="comment">// namespace yoriito::databroker</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#endif  </span><span class="comment">// COMMON_DATABROKER_PRODUCER_INSPECT_RESPONSE_H_</span></div>
 <div class="ttc" id="aclassyoriito_1_1databroker_1_1ProducerInspectResponse_html"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html">yoriito::databroker::ProducerInspectResponse</a></div><div class="ttdoc">Response class for inspecting datapoint metadata in the DataBroker.</div><div class="ttdef"><b>Definition</b> <a href="producer__inspect__response_8h_source.html#l00041">producer_inspect_response.h:41</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1databroker_1_1ProducerInspectResponse_html_a1c0dc2bcd52414a1e66a9cb7105d8cbc"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#a1c0dc2bcd52414a1e66a9cb7105d8cbc">yoriito::databroker::ProducerInspectResponse::ProducerInspectResponse</a></div><div class="ttdeci">ProducerInspectResponse(std::vector&lt; ProducerInspectData &gt; &amp;&amp;datas)</div><div class="ttdoc">Constructs a ProducerInspectResponse with the given datapoint metadata.</div><div class="ttdef"><b>Definition</b> <a href="producer__inspect__response_8h_source.html#l00058">producer_inspect_response.h:58</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1databroker_1_1ProducerInspectResponse_html_a74a6905c34325a93506a5552a2a6c40b"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#a74a6905c34325a93506a5552a2a6c40b">yoriito::databroker::ProducerInspectResponse::GetDataPoints</a></div><div class="ttdeci">const std::vector&lt; ProducerInspectData &gt; &amp; GetDataPoints() const</div><div class="ttdoc">Gets the datapoint metadata contained in this response.</div><div class="ttdef"><b>Definition</b> <a href="producer__inspect__response_8h_source.html#l00073">producer_inspect_response.h:73</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ProducerInspectResponse_html_a74a6905c34325a93506a5552a2a6c40b"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#a74a6905c34325a93506a5552a2a6c40b">yoriito::databroker::ProducerInspectResponse::GetDataPoints</a></div><div class="ttdeci">const std::vector&lt; ProducerInspectData &gt; &amp; GetDataPoints() const</div><div class="ttdoc">Gets the datapoint metadata contained in this response.</div><div class="ttdef"><b>Definition</b> <a href="producer__inspect__response_8h_source.html#l00093">producer_inspect_response.h:93</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1databroker_1_1ProducerInspectResponse_html_a9bd8f3deb356ee55b9d52b9255ea2ade"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#a9bd8f3deb356ee55b9d52b9255ea2ade">yoriito::databroker::ProducerInspectResponse::ProducerInspectResponse</a></div><div class="ttdeci">ProducerInspectResponse()=delete</div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ProducerInspectResponse_html_ac91f325b4d63dfaa41c961efce3453d9"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#ac91f325b4d63dfaa41c961efce3453d9">yoriito::databroker::ProducerInspectResponse::ProducerInspectResponse</a></div><div class="ttdeci">ProducerInspectResponse(std::vector&lt; ProducerInspectData &gt; &amp;&amp;datas, std::vector&lt; std::shared_ptr&lt; StructType &gt; &gt; &amp;&amp;struct_types)</div><div class="ttdoc">Constructs a ProducerInspectResponse with the given datapoint metadata and struct types.</div><div class="ttdef"><b>Definition</b> <a href="producer__inspect__response_8h_source.html#l00076">producer_inspect_response.h:76</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ProducerInspectResponse_html_afb4e8dd8c9b9077c34fc790a32201667"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ProducerInspectResponse.html#afb4e8dd8c9b9077c34fc790a32201667">yoriito::databroker::ProducerInspectResponse::GetStructTypes</a></div><div class="ttdeci">const std::vector&lt; std::shared_ptr&lt; StructType &gt; &gt; &amp; GetStructTypes() const</div><div class="ttdoc">Gets the struct types contained in this response.</div><div class="ttdef"><b>Definition</b> <a href="producer__inspect__response_8h_source.html#l00109">producer_inspect_response.h:109</a></div></div>
 <div class="ttc" id="anamespaceyoriito_1_1databroker_html"><div class="ttname"><a href="namespaceyoriito_1_1databroker.html">yoriito::databroker</a></div><div class="ttdoc">Namespace for DataBroker common interfaces and types.</div></div>
 <div class="ttc" id="aproducer__inspect__data_8h_html"><div class="ttname"><a href="producer__inspect__data_8h.html">producer_inspect_data.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

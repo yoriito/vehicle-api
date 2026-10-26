@@ -43,7 +43,24 @@ var annotated_dup =
         [ "ProducerSetDataPoint", "classyoriito_1_1databroker_1_1ProducerSetDataPoint.html", "classyoriito_1_1databroker_1_1ProducerSetDataPoint" ],
         [ "ProducerSetRequest", "classyoriito_1_1databroker_1_1ProducerSetRequest.html", "classyoriito_1_1databroker_1_1ProducerSetRequest" ],
         [ "ProducerSubscribeContext", "classyoriito_1_1databroker_1_1ProducerSubscribeContext.html", "classyoriito_1_1databroker_1_1ProducerSubscribeContext" ],
-        [ "ProducerSubscribeRequest", "classyoriito_1_1databroker_1_1ProducerSubscribeRequest.html", "classyoriito_1_1databroker_1_1ProducerSubscribeRequest" ]
+        [ "ProducerSubscribeRequest", "classyoriito_1_1databroker_1_1ProducerSubscribeRequest.html", "classyoriito_1_1databroker_1_1ProducerSubscribeRequest" ],
+        [ "PropertyType", "classyoriito_1_1databroker_1_1PropertyType.html", "classyoriito_1_1databroker_1_1PropertyType" ],
+        [ "StructType", "classyoriito_1_1databroker_1_1StructType.html", "classyoriito_1_1databroker_1_1StructType" ],
+        [ "StructTypeRef", "classyoriito_1_1databroker_1_1StructTypeRef.html", "classyoriito_1_1databroker_1_1StructTypeRef" ]
+      ] ],
+      [ "signal", "namespaceyoriito_1_1signal.html", [
+        [ "IsCustomStruct", "structyoriito_1_1signal_1_1IsCustomStruct.html", null ],
+        [ "IsCustomStruct< T, std::void_t< StructUtilityOf< T > > >", "structyoriito_1_1signal_1_1IsCustomStruct_3_01T_00_01std_1_1void__t_3_01StructUtilityOf_3_01T_01_4_01_4_01_4.html", null ],
+        [ "IsVariantAlternative", "structyoriito_1_1signal_1_1IsVariantAlternative.html", null ],
+        [ "IsVariantAlternative< U, std::variant< Ts... > >", "structyoriito_1_1signal_1_1IsVariantAlternative_3_01U_00_01std_1_1variant_3_01Ts_8_8_8_01_4_01_4.html", null ],
+        [ "SignalGetDataPoint", "classyoriito_1_1signal_1_1SignalGetDataPoint.html", "classyoriito_1_1signal_1_1SignalGetDataPoint" ],
+        [ "SignalInspectAccess", "classyoriito_1_1signal_1_1SignalInspectAccess.html", "classyoriito_1_1signal_1_1SignalInspectAccess" ],
+        [ "SignalInspectData", "classyoriito_1_1signal_1_1SignalInspectData.html", "classyoriito_1_1signal_1_1SignalInspectData" ],
+        [ "SignalInspectResponse", "classyoriito_1_1signal_1_1SignalInspectResponse.html", "classyoriito_1_1signal_1_1SignalInspectResponse" ],
+        [ "SignalPropertyType", "classyoriito_1_1signal_1_1SignalPropertyType.html", "classyoriito_1_1signal_1_1SignalPropertyType" ],
+        [ "SignalStructType", "classyoriito_1_1signal_1_1SignalStructType.html", "classyoriito_1_1signal_1_1SignalStructType" ],
+        [ "SignalSubscribeContext", "classyoriito_1_1signal_1_1SignalSubscribeContext.html", "classyoriito_1_1signal_1_1SignalSubscribeContext" ],
+        [ "SubscribeContextAccess", "classyoriito_1_1signal_1_1SubscribeContextAccess.html", "classyoriito_1_1signal_1_1SubscribeContextAccess" ]
       ] ],
       [ "BaseLogBackend", "classyoriito_1_1BaseLogBackend.html", "classyoriito_1_1BaseLogBackend" ],
       [ "CommonError", "classyoriito_1_1CommonError.html", "classyoriito_1_1CommonError" ],
@@ -51,7 +68,8 @@ var annotated_dup =
       [ "ErrorType", "classyoriito_1_1ErrorType.html", "classyoriito_1_1ErrorType" ],
       [ "ILogBackend", "classyoriito_1_1ILogBackend.html", "classyoriito_1_1ILogBackend" ],
       [ "Log", "classyoriito_1_1Log.html", "classyoriito_1_1Log" ],
-      [ "StdoutLogBackend", "classyoriito_1_1StdoutLogBackend.html", "classyoriito_1_1StdoutLogBackend" ]
+      [ "StdoutLogBackend", "classyoriito_1_1StdoutLogBackend.html", "classyoriito_1_1StdoutLogBackend" ],
+      [ "StructData", "classyoriito_1_1StructData.html", "classyoriito_1_1StructData" ]
     ] ],
     [ "LogLevel", "classLogLevel.html", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/body/windshield/rear/wiping/Signal_WiperWear.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/body/windshield/rear/wiping/Signal_WiperWear.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('rear_2wiping_2Signal__WiperWear_8h.htm
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_WiperWear.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="rear_2wiping_2Signal__WiperWear_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="rear_2wiping_2Signal__WiperWear_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="rear_2wiping_2Signal__WiperWear_8h_source.html">Go to the source code of this file.</a></p>
@@ -139,14 +143,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afb067c148850de1b15867d403ab62472" id="r_afb067c148850de1b15867d403ab62472"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1wiperwear.html#afb067c148850de1b15867d403ab62472">yoriito::vehicle::body::windshield::rear::wiping::wiperwear::Get</a> ()</td></tr>
-<tr class="separator:afb067c148850de1b15867d403ab62472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3298704997f5d5ffca4d95ccfd07bc43" id="r_a3298704997f5d5ffca4d95ccfd07bc43"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1wiperwear.html#a3298704997f5d5ffca4d95ccfd07bc43">yoriito::vehicle::body::windshield::rear::wiping::wiperwear::Subscribe</a> ()</td></tr>
-<tr class="separator:a3298704997f5d5ffca4d95ccfd07bc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a457f5d62cadc70da040248a4a65baa39" id="r_a457f5d62cadc70da040248a4a65baa39"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1wiperwear.html#a457f5d62cadc70da040248a4a65baa39">yoriito::vehicle::body::windshield::rear::wiping::wiperwear::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a457f5d62cadc70da040248a4a65baa39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dbf7ae6d0f78cb052a8f243f4ecd52a" id="r_a3dbf7ae6d0f78cb052a8f243f4ecd52a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1wiperwear.html#a3dbf7ae6d0f78cb052a8f243f4ecd52a">yoriito::vehicle::body::windshield::rear::wiping::wiperwear::Inspect</a> ()</td></tr>
-<tr class="separator:a3dbf7ae6d0f78cb052a8f243f4ecd52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0daf4510354db8d07984f021cd3a6ebe" id="r_a0daf4510354db8d07984f021cd3a6ebe"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1wiperwear.html#a0daf4510354db8d07984f021cd3a6ebe">yoriito::vehicle::body::windshield::rear::wiping::wiperwear::Get</a> ()</td></tr>
+<tr class="separator:a0daf4510354db8d07984f021cd3a6ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57023e965bb5468060099562aba3a1fb" id="r_a57023e965bb5468060099562aba3a1fb"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1wiperwear.html#a57023e965bb5468060099562aba3a1fb">yoriito::vehicle::body::windshield::rear::wiping::wiperwear::Subscribe</a> ()</td></tr>
+<tr class="separator:a57023e965bb5468060099562aba3a1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b84667dbe512d9efd8aa3be64be71d" id="r_a92b84667dbe512d9efd8aa3be64be71d"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1wiperwear.html#a92b84667dbe512d9efd8aa3be64be71d">yoriito::vehicle::body::windshield::rear::wiping::wiperwear::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; uint8_t &gt; subscription_context)</td></tr>
+<tr class="separator:a92b84667dbe512d9efd8aa3be64be71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eae0324bbf21fe2057cee03a91c4a1a" id="r_a2eae0324bbf21fe2057cee03a91c4a1a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1wiperwear.html#a2eae0324bbf21fe2057cee03a91c4a1a">yoriito::vehicle::body::windshield::rear::wiping::wiperwear::Inspect</a> ()</td></tr>
+<tr class="separator:a2eae0324bbf21fe2057cee03a91c4a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

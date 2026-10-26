@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/combustionengine/enginecoolant/Signal_Level.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/combustionengine/enginecoolant/Signal_Level.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,25 +106,26 @@ $(document).ready(function(){initNavTree('powertrain_2combustionengine_2engineco
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Level.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="powertrain_2combustionengine_2enginecoolant_2Signal__Level_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="powertrain_2combustionengine_2enginecoolant_2Signal__Level_8h__dep__incl.svg" width="486" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="powertrain_2combustionengine_2enginecoolant_2Signal__Level_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level.html">yoriito::vehicle::powertrain::combustionengine::enginecoolant::level</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.CombustionEngine.EngineCoolant.Level signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -135,17 +136,19 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant.html">yoriito::vehicle::powertrain::combustionengine::enginecoolant</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level.html">yoriito::vehicle::powertrain::combustionengine::enginecoolant::level</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a508866bb4850e6d5aa0f69c37016d673" id="r_a508866bb4850e6d5aa0f69c37016d673"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level.html#a508866bb4850e6d5aa0f69c37016d673">yoriito::vehicle::powertrain::combustionengine::enginecoolant::level::Get</a> ()</td></tr>
-<tr class="separator:a508866bb4850e6d5aa0f69c37016d673"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad106eedae63468850c168822804f2ed1" id="r_ad106eedae63468850c168822804f2ed1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level.html#ad106eedae63468850c168822804f2ed1">yoriito::vehicle::powertrain::combustionengine::enginecoolant::level::Subscribe</a> ()</td></tr>
-<tr class="separator:ad106eedae63468850c168822804f2ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefe0c5e98d1fda9b1fa6dd3e42f32a11" id="r_aefe0c5e98d1fda9b1fa6dd3e42f32a11"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level.html#aefe0c5e98d1fda9b1fa6dd3e42f32a11">yoriito::vehicle::powertrain::combustionengine::enginecoolant::level::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:aefe0c5e98d1fda9b1fa6dd3e42f32a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0454dc3d4ecfd52d7b42c331fe5dde0f" id="r_a0454dc3d4ecfd52d7b42c331fe5dde0f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level.html#a0454dc3d4ecfd52d7b42c331fe5dde0f">yoriito::vehicle::powertrain::combustionengine::enginecoolant::level::Inspect</a> ()</td></tr>
-<tr class="separator:a0454dc3d4ecfd52d7b42c331fe5dde0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106539f5b5e7e41fa67439b615b7613a" id="r_a106539f5b5e7e41fa67439b615b7613a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level.html#a106539f5b5e7e41fa67439b615b7613a">yoriito::vehicle::powertrain::combustionengine::enginecoolant::level::Get</a> ()</td></tr>
+<tr class="separator:a106539f5b5e7e41fa67439b615b7613a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4737453ded93ea5fa943e90bcdce36cd" id="r_a4737453ded93ea5fa943e90bcdce36cd"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level.html#a4737453ded93ea5fa943e90bcdce36cd">yoriito::vehicle::powertrain::combustionengine::enginecoolant::level::Subscribe</a> ()</td></tr>
+<tr class="separator:a4737453ded93ea5fa943e90bcdce36cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11afa2fb31afbb8e1b12cf9d5eeea34e" id="r_a11afa2fb31afbb8e1b12cf9d5eeea34e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level.html#a11afa2fb31afbb8e1b12cf9d5eeea34e">yoriito::vehicle::powertrain::combustionengine::enginecoolant::level::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; std::string &gt; subscription_context)</td></tr>
+<tr class="separator:a11afa2fb31afbb8e1b12cf9d5eeea34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9294aaf7595457478c648e7ff6e530" id="r_a4e9294aaf7595457478c648e7ff6e530"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1enginecoolant_1_1level.html#a4e9294aaf7595457478c648e7ff6e530">yoriito::vehicle::powertrain::combustionengine::enginecoolant::level::Inspect</a> ()</td></tr>
+<tr class="separator:a4e9294aaf7595457478c648e7ff6e530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

@@ -13,5 +13,7 @@ var searchData=
   ['producersetdatapoint_10',['ProducerSetDataPoint',['../classyoriito_1_1databroker_1_1ProducerSetDataPoint.html',1,'yoriito::databroker']]],
   ['producersetrequest_11',['ProducerSetRequest',['../classyoriito_1_1databroker_1_1ProducerSetRequest.html',1,'yoriito::databroker']]],
   ['producersubscribecontext_12',['ProducerSubscribeContext',['../classyoriito_1_1databroker_1_1ProducerSubscribeContext.html',1,'yoriito::databroker']]],
-  ['producersubscriberequest_13',['ProducerSubscribeRequest',['../classyoriito_1_1databroker_1_1ProducerSubscribeRequest.html',1,'yoriito::databroker']]]
+  ['producersubscriberequest_13',['ProducerSubscribeRequest',['../classyoriito_1_1databroker_1_1ProducerSubscribeRequest.html',1,'yoriito::databroker']]],
+  ['propertiesview_14',['propertiesview',['../classyoriito_1_1databroker_1_1StructType_1_1PropertiesView.html',1,'yoriito::databroker::StructType::PropertiesView'],['../classyoriito_1_1StructData_1_1PropertiesView.html',1,'yoriito::StructData::PropertiesView']]],
+  ['propertytype_15',['PropertyType',['../classyoriito_1_1databroker_1_1PropertyType.html',1,'yoriito::databroker']]]
 ];

@@ -1,5 +1,5 @@
 var combustionengine_2Signal__MaxTorque_8cc =
 [
-    [ "Get", "combustionengine_2Signal__MaxTorque_8cc.html#aee50c0cb89882758f18ffaae9b641499", null ],
-    [ "Inspect", "combustionengine_2Signal__MaxTorque_8cc.html#a0e135e01f277db7da0302920873c910c", null ]
+    [ "Get", "combustionengine_2Signal__MaxTorque_8cc.html#a6da6286faa14112d82beee2c2b0072a4", null ],
+    [ "Inspect", "combustionengine_2Signal__MaxTorque_8cc.html#a844a08c97aced569a1213afaad5420af", null ]
 ];

@@ -10,20 +10,8 @@ var dir_effe9d450a5ca9ed8b0dfc47f582aba3 =
     [ "Body.h", "Body_8h.html", null ],
     [ "Signal_IsAutoPowerOptimize.cc", "body_2Signal__IsAutoPowerOptimize_8cc.html", "body_2Signal__IsAutoPowerOptimize_8cc" ],
     [ "Signal_IsAutoPowerOptimize.h", "body_2Signal__IsAutoPowerOptimize_8h.html", "body_2Signal__IsAutoPowerOptimize_8h" ],
-    [ "Signal_IsAutoPowerOptimize_Availability_Actuator.cc", "body_2Signal__IsAutoPowerOptimize__Availability__Actuator_8cc.html", "body_2Signal__IsAutoPowerOptimize__Availability__Actuator_8cc" ],
-    [ "Signal_IsAutoPowerOptimize_Availability_Actuator.h", "body_2Signal__IsAutoPowerOptimize__Availability__Actuator_8h.html", "body_2Signal__IsAutoPowerOptimize__Availability__Actuator_8h" ],
-    [ "Signal_IsAutoPowerOptimize_Availability_Sensor.cc", "body_2Signal__IsAutoPowerOptimize__Availability__Sensor_8cc.html", "body_2Signal__IsAutoPowerOptimize__Availability__Sensor_8cc" ],
-    [ "Signal_IsAutoPowerOptimize_Availability_Sensor.h", "body_2Signal__IsAutoPowerOptimize__Availability__Sensor_8h.html", "body_2Signal__IsAutoPowerOptimize__Availability__Sensor_8h" ],
     [ "Signal_PowerOptimizeLevel.cc", "body_2Signal__PowerOptimizeLevel_8cc.html", "body_2Signal__PowerOptimizeLevel_8cc" ],
     [ "Signal_PowerOptimizeLevel.h", "body_2Signal__PowerOptimizeLevel_8h.html", "body_2Signal__PowerOptimizeLevel_8h" ],
-    [ "Signal_PowerOptimizeLevel_Availability_Actuator.cc", "body_2Signal__PowerOptimizeLevel__Availability__Actuator_8cc.html", "body_2Signal__PowerOptimizeLevel__Availability__Actuator_8cc" ],
-    [ "Signal_PowerOptimizeLevel_Availability_Actuator.h", "body_2Signal__PowerOptimizeLevel__Availability__Actuator_8h.html", "body_2Signal__PowerOptimizeLevel__Availability__Actuator_8h" ],
-    [ "Signal_PowerOptimizeLevel_Availability_Sensor.cc", "body_2Signal__PowerOptimizeLevel__Availability__Sensor_8cc.html", "body_2Signal__PowerOptimizeLevel__Availability__Sensor_8cc" ],
-    [ "Signal_PowerOptimizeLevel_Availability_Sensor.h", "body_2Signal__PowerOptimizeLevel__Availability__Sensor_8h.html", "body_2Signal__PowerOptimizeLevel__Availability__Sensor_8h" ],
     [ "Signal_RearMainSpoilerPosition.cc", "Signal__RearMainSpoilerPosition_8cc.html", "Signal__RearMainSpoilerPosition_8cc" ],
-    [ "Signal_RearMainSpoilerPosition.h", "Signal__RearMainSpoilerPosition_8h.html", "Signal__RearMainSpoilerPosition_8h" ],
-    [ "Signal_RearMainSpoilerPosition_Availability_Actuator.cc", "Signal__RearMainSpoilerPosition__Availability__Actuator_8cc.html", "Signal__RearMainSpoilerPosition__Availability__Actuator_8cc" ],
-    [ "Signal_RearMainSpoilerPosition_Availability_Actuator.h", "Signal__RearMainSpoilerPosition__Availability__Actuator_8h.html", "Signal__RearMainSpoilerPosition__Availability__Actuator_8h" ],
-    [ "Signal_RearMainSpoilerPosition_Availability_Sensor.cc", "Signal__RearMainSpoilerPosition__Availability__Sensor_8cc.html", "Signal__RearMainSpoilerPosition__Availability__Sensor_8cc" ],
-    [ "Signal_RearMainSpoilerPosition_Availability_Sensor.h", "Signal__RearMainSpoilerPosition__Availability__Sensor_8h.html", "Signal__RearMainSpoilerPosition__Availability__Sensor_8h" ]
+    [ "Signal_RearMainSpoilerPosition.h", "Signal__RearMainSpoilerPosition_8h.html", "Signal__RearMainSpoilerPosition_8h" ]
 ];

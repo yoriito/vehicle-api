@@ -1,7 +1,7 @@
 var Signal__TripDuration_8cc =
 [
-    [ "Get", "Signal__TripDuration_8cc.html#a0f9f0c8983104b017acc65fd9aa18e52", null ],
-    [ "Inspect", "Signal__TripDuration_8cc.html#add51a2f537e62af36d501cb43c3da457", null ],
-    [ "Subscribe", "Signal__TripDuration_8cc.html#a529c7b2af74c5c78bb9eb6d9cd574e1b", null ],
-    [ "UnSubscribe", "Signal__TripDuration_8cc.html#a60a0174ab657069e64deef5c17936dd1", null ]
+    [ "Get", "Signal__TripDuration_8cc.html#a0dbb7565eae26f9d5642c2cc6e5753c5", null ],
+    [ "Inspect", "Signal__TripDuration_8cc.html#a7d6a36305752d1ed4398fb7452a61dee", null ],
+    [ "Subscribe", "Signal__TripDuration_8cc.html#a51fbbbf5d02de588a9bac3e24f190dcb", null ],
+    [ "UnSubscribe", "Signal__TripDuration_8cc.html#a94caa23997744cb067f984de49b261de", null ]
 ];

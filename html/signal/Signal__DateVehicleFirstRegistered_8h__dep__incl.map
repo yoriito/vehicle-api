@@ -1,9 +1,0 @@
-<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/vehicleidentification/Signal_DateVehicleFirstRegistered.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/vehicleidentification/Signal_DateVehicleFirstRegistered.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="152,5,369,75"/>
-<area shape="rect" id="Node000002" href="$Signal__DateVehicleFirstRegistered_8cc.html" title=" " alt="" coords="5,123,228,192"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,86,161,124,157,120,206,81"/>
-<area shape="rect" id="Node000003" href="$VehicleIdentification_8h.html" title=" " alt="" coords="251,130,558,185"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="315,81,374,128,370,132,312,85"/>
-<area shape="rect" id="Node000004" href="$Vehicle_8h.html" title=" " alt="" coords="307,240,503,295"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="407,199,407,240,402,240,402,199"/>
-</map>

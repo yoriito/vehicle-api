@@ -1,5 +1,5 @@
 var number4_2Signal__MaxRegenTorque_8cc =
 [
-    [ "Get", "number4_2Signal__MaxRegenTorque_8cc.html#a0091886d196919b04a48121b4cadb293", null ],
-    [ "Inspect", "number4_2Signal__MaxRegenTorque_8cc.html#a012da8bd2ba16f55e3abbbff307187ec", null ]
+    [ "Get", "number4_2Signal__MaxRegenTorque_8cc.html#af774f2ab54be5065136f548d077dc54c", null ],
+    [ "Inspect", "number4_2Signal__MaxRegenTorque_8cc.html#a18e04c687cbffbd7ad695a4339634bb2", null ]
 ];

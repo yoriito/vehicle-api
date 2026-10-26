@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/transmission/Signal_TorqueDistribution.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/transmission/Signal_TorqueDistribution.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,16 +106,20 @@ $(document).ready(function(){initNavTree('Signal__TorqueDistribution_8h.html',''
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_TorqueDistribution.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__TorqueDistribution_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__TorqueDistribution_8h__dep__incl.svg" width="443" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__TorqueDistribution_8h_source.html">Go to the source code of this file.</a></p>
@@ -136,16 +140,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6cfdfca3a16d554768dbdc91b6fef67e" id="r_a6cfdfca3a16d554768dbdc91b6fef67e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1torquedistribution.html#a6cfdfca3a16d554768dbdc91b6fef67e">yoriito::vehicle::powertrain::transmission::torquedistribution::Get</a> ()</td></tr>
-<tr class="separator:a6cfdfca3a16d554768dbdc91b6fef67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09aa5c2bebddacea9d5db9c19625102" id="r_ae09aa5c2bebddacea9d5db9c19625102"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1torquedistribution.html#ae09aa5c2bebddacea9d5db9c19625102">yoriito::vehicle::powertrain::transmission::torquedistribution::Get</a> ()</td></tr>
+<tr class="separator:ae09aa5c2bebddacea9d5db9c19625102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dc47941eb7e789a2ab4ba9ea261c71f" id="r_a4dc47941eb7e789a2ab4ba9ea261c71f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1torquedistribution.html#a4dc47941eb7e789a2ab4ba9ea261c71f">yoriito::vehicle::powertrain::transmission::torquedistribution::Set</a> (const float &amp;value)</td></tr>
 <tr class="separator:a4dc47941eb7e789a2ab4ba9ea261c71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b7e79945c1e50644876021064f4645c" id="r_a3b7e79945c1e50644876021064f4645c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1torquedistribution.html#a3b7e79945c1e50644876021064f4645c">yoriito::vehicle::powertrain::transmission::torquedistribution::Subscribe</a> ()</td></tr>
-<tr class="separator:a3b7e79945c1e50644876021064f4645c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a9075056e33a41ba08e3f0c30253843" id="r_a7a9075056e33a41ba08e3f0c30253843"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1torquedistribution.html#a7a9075056e33a41ba08e3f0c30253843">yoriito::vehicle::powertrain::transmission::torquedistribution::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a7a9075056e33a41ba08e3f0c30253843"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a955ed1ef5d071f737f3c4ed762c1907c" id="r_a955ed1ef5d071f737f3c4ed762c1907c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1torquedistribution.html#a955ed1ef5d071f737f3c4ed762c1907c">yoriito::vehicle::powertrain::transmission::torquedistribution::Inspect</a> ()</td></tr>
-<tr class="separator:a955ed1ef5d071f737f3c4ed762c1907c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab360476430c8d16e06a230d8e1c29984" id="r_ab360476430c8d16e06a230d8e1c29984"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1torquedistribution.html#ab360476430c8d16e06a230d8e1c29984">yoriito::vehicle::powertrain::transmission::torquedistribution::Subscribe</a> ()</td></tr>
+<tr class="separator:ab360476430c8d16e06a230d8e1c29984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d3f8ff48dc6e596063edc24df9c5f5" id="r_ac1d3f8ff48dc6e596063edc24df9c5f5"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1torquedistribution.html#ac1d3f8ff48dc6e596063edc24df9c5f5">yoriito::vehicle::powertrain::transmission::torquedistribution::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:ac1d3f8ff48dc6e596063edc24df9c5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8bd80d2cb243f713e0c8edf16a0bf21" id="r_ad8bd80d2cb243f713e0c8edf16a0bf21"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1torquedistribution.html#ad8bd80d2cb243f713e0c8edf16a0bf21">yoriito::vehicle::powertrain::transmission::torquedistribution::Inspect</a> ()</td></tr>
+<tr class="separator:ad8bd80d2cb243f713e0c8edf16a0bf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

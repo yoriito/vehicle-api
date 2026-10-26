@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - common: /home/runner/work/vehicle-api/vehicle-api/common/logger/stdout_logbackend.h Source File</title>
+<title>Yoriito Vehicle API - common: /work/common/logger/stdout_logbackend.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('stdout__logbackend_8h_source.html','')
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef YORIITO_VEHICLE_API_UTILITY_COMMON_LOGGER_STDOUT_LOGBACKEND_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define YORIITO_VEHICLE_API_UTILITY_COMMON_LOGGER_STDOUT_LOGBACKEND_H_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef COMMON_LOGGER_STDOUT_LOGBACKEND_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define COMMON_LOGGER_STDOUT_LOGBACKEND_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('stdout__logbackend_8h_source.html','')
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// Backend that outputs logs to stdout.</span></div>
 <div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classyoriito_1_1StdoutLogBackend.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="classyoriito_1_1StdoutLogBackend.html">StdoutLogBackend</a> final : <span class="keyword">public</span> <a class="code hl_class" href="classyoriito_1_1BaseLogBackend.html">BaseLogBackend</a> {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classyoriito_1_1StdoutLogBackend.html#a838e80738843cae59adf1952d1c01d25">   37</a></span>  <a class="code hl_function" href="classyoriito_1_1StdoutLogBackend.html#a838e80738843cae59adf1952d1c01d25">StdoutLogBackend</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
@@ -151,103 +151,94 @@ $(document).ready(function(){initNavTree('stdout__logbackend_8h_source.html','')
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  }</div>
 </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> <span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classyoriito_1_1StdoutLogBackend.html#aea61ca4e5afbf0f32ace94ca4065184c">   51</a></span>  std::string <a class="code hl_variable" href="classyoriito_1_1StdoutLogBackend.html#aea61ca4e5afbf0f32ace94ca4065184c">name_</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="comment">// In STDOUT_BACKEND, DoInitialize() just stores the name</span></div>
-<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classyoriito_1_1StdoutLogBackend.html#a66a61f9a8b80a48f78447ecf9bf464d3">   53</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1StdoutLogBackend.html#a66a61f9a8b80a48f78447ecf9bf464d3">DoInitialize</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_variable" href="classyoriito_1_1StdoutLogBackend.html#aea61ca4e5afbf0f32ace94ca4065184c">name_</a> = name ? name : <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classyoriito_1_1StdoutLogBackend.html#a66a61f9a8b80a48f78447ecf9bf464d3">   53</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1StdoutLogBackend.html#a66a61f9a8b80a48f78447ecf9bf464d3">DoInitialize</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name)<span class="keyword"> override </span>{ <a class="code hl_variable" href="classyoriito_1_1StdoutLogBackend.html#aea61ca4e5afbf0f32ace94ca4065184c">name_</a> = name ? name : <span class="stringliteral">&quot;&quot;</span>; }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// In STDOUT_BACKEND, DoFinalize() does nothing</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classyoriito_1_1StdoutLogBackend.html#a1da6c1cfe4206f15741a507c9de3ead1">   56</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1StdoutLogBackend.html#a1da6c1cfe4206f15741a507c9de3ead1">DoFinalize</a>()<span class="keyword"> override </span>{ <a class="code hl_variable" href="classyoriito_1_1StdoutLogBackend.html#aea61ca4e5afbf0f32ace94ca4065184c">name_</a> = <span class="stringliteral">&quot;&quot;</span>; }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="comment">// DoOutput received log as a single line to stdout</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="comment">// Format: yyyy-MM-ddTHH:mm:ss.SSSZ,PID,TID,LEVEL,name,TAG,msg</span></div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classyoriito_1_1StdoutLogBackend.html#aa11942e2e3b8ef17a1b8dc86fd65817f">   60</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1StdoutLogBackend.html#aa11942e2e3b8ef17a1b8dc86fd65817f">DoOutput</a>(std::string_view tag, std::string_view msg,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <a class="code hl_class" href="classLogLevel.html">LogLevel</a> level)<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// Do not output logs below the minimum log level</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">if</span> (level &gt; <a class="code hl_function" href="classyoriito_1_1BaseLogBackend.html#acae2b5df326c9a6c9fb534b8007d18a0">GetLogLevelThreshold</a>()) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// Initialization check is performed by BaseLogBackend::Output before</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// calling DoOutput.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    std::cout &lt;&lt; Timestamp() &lt;&lt; <span class="charliteral">&#39;,&#39;</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    std::cout &lt;&lt; getpid() &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; std::this_thread::get_id() &lt;&lt; <span class="stringliteral">&quot;,&quot;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>              &lt;&lt; LevelToString(level) &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; <a class="code hl_variable" href="classyoriito_1_1StdoutLogBackend.html#aea61ca4e5afbf0f32ace94ca4065184c">name_</a> &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; tag &lt;&lt; <span class="stringliteral">&quot;,&quot;</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>              &lt;&lt; msg &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  }</div>
 </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="comment">// In STDOUT_BACKEND, DoFinalize() does nothing</span></div>
-<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classyoriito_1_1StdoutLogBackend.html#a1da6c1cfe4206f15741a507c9de3ead1">   58</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1StdoutLogBackend.html#a1da6c1cfe4206f15741a507c9de3ead1">DoFinalize</a>()<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_variable" href="classyoriito_1_1StdoutLogBackend.html#aea61ca4e5afbf0f32ace94ca4065184c">name_</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classyoriito_1_1StdoutLogBackend.html#a037c19e3a54ab5acaa0db84f50fc6d2a">   73</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1StdoutLogBackend.html#a037c19e3a54ab5acaa0db84f50fc6d2a">DoSetLogLevel</a>(<a class="code hl_class" href="classLogLevel.html">LogLevel</a>)<span class="keyword"> override </span>{}</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="comment">// Convert LogLevel to string</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* LevelToString(<a class="code hl_class" href="classLogLevel.html">LogLevel</a> level) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">switch</span> (level) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaae66f945a3c2423ef09406cf09fa9de26">LogLevel::kFatal</a>:</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;FATAL&quot;</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaae3587c730cc1aa530fa4ddc9c4204e97">LogLevel::kError</a>:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;ERROR&quot;</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaa61a920eb4a24199ec6a36dd90f2a30b7">LogLevel::kWarn</a>:</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;WARN&quot;</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaa176a473e63c17ccdac91640c67f149bf">LogLevel::kInfo</a>:</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;INFO&quot;</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaabb53ce21b7c0b7c8a8f7860a41901d29">LogLevel::kDebug</a>:</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DEBUG&quot;</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;UNKNOWN&quot;</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="comment">// Simple timestamp (utc time): &quot;yyyy-MM-ddTHH:mm:ss.SSSZ&quot;</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  std::string Timestamp()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">auto</span> now = std::chrono::system_clock::now();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    std::time_t epochtime = std::chrono::system_clock::to_time_t(now);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">auto</span> ms = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                now.time_since_epoch()) %</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>              1000;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    std::tm tm{};</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    gmtime_r(&amp;epochtime, &amp;tm);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">char</span> buffer[<span class="keyword">sizeof</span>(<span class="stringliteral">&quot;yyyy-MM-ddTHH:mm:ss.SSSZ&quot;</span>)];</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordtype">int</span> len =</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>      snprintf(buffer, <span class="keyword">sizeof</span>(buffer), <span class="stringliteral">&quot;%04d-%02d-%02dT%02d:%02d:%02d.%03dZ&quot;</span>,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>               tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>               tm.tm_min, tm.tm_sec, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ms.count()));</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">return</span> std::string(buffer, len);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>};</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="comment">// DoOutput received log as a single line to stdout</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="comment">// Format: yyyy-MM-ddTHH:mm:ss.SSSZ,PID,TID,LEVEL,name,TAG,msg</span></div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classyoriito_1_1StdoutLogBackend.html#aa11942e2e3b8ef17a1b8dc86fd65817f">   64</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1StdoutLogBackend.html#aa11942e2e3b8ef17a1b8dc86fd65817f">DoOutput</a>(std::string_view tag, std::string_view msg, <a class="code hl_class" href="classLogLevel.html">LogLevel</a> level)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// Do not output logs below the minimum log level</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">if</span> (level &gt; <a class="code hl_variable" href="classyoriito_1_1BaseLogBackend.html#a965ccc33c12d2f2401578766b24b77d5">log_level_threshold_</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// Initialization check is performed by BaseLogBackend::Output before calling DoOutput.</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    std::cout &lt;&lt; Timestamp() &lt;&lt; <span class="charliteral">&#39;,&#39;</span>;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    std::cout &lt;&lt; getpid() &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; std::this_thread::get_id() &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; LevelToString(level)</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>          &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; <a class="code hl_variable" href="classyoriito_1_1StdoutLogBackend.html#aea61ca4e5afbf0f32ace94ca4065184c">name_</a> &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; tag &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; msg &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  }</div>
-</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classyoriito_1_1StdoutLogBackend.html#aa48e3a15a4edc24a95abf24674e0bd19">   74</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classyoriito_1_1StdoutLogBackend.html#aa48e3a15a4edc24a95abf24674e0bd19">DoSetLogLevel</a>(<a class="code hl_class" href="classLogLevel.html">LogLevel</a> level)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_variable" href="classyoriito_1_1BaseLogBackend.html#a965ccc33c12d2f2401578766b24b77d5">log_level_threshold_</a> = level;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  }</div>
-</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="comment">// Convert LogLevel to string</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* LevelToString(<a class="code hl_class" href="classLogLevel.html">LogLevel</a> level) {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">switch</span> (level) {</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae66f945a3c2423ef09406cf09fa9de26">LogLevel::kFatal</a>:</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;FATAL&quot;</span>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae3587c730cc1aa530fa4ddc9c4204e97">LogLevel::kError</a>:</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;ERROR&quot;</span>;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a61a920eb4a24199ec6a36dd90f2a30b7">LogLevel::kWarn</a>:</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;WARN&quot;</span>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a176a473e63c17ccdac91640c67f149bf">LogLevel::kInfo</a>:</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;INFO&quot;</span>;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76abb53ce21b7c0b7c8a8f7860a41901d29">LogLevel::kDebug</a>:</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;DEBUG&quot;</span>;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;UNKNOWN&quot;</span>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  }</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="comment">// Simple timestamp (utc time): &quot;yyyy-MM-ddTHH:mm:ss.SSSZ&quot;</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  std::string Timestamp()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">auto</span> now = std::chrono::system_clock::now();</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    std::time_t epochtime = std::chrono::system_clock::to_time_t(now);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">auto</span> ms = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                now.time_since_epoch()) % 1000;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    std::tm tm{};</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    gmtime_r(&amp;epochtime, &amp;tm);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">char</span> buffer[<span class="keyword">sizeof</span>(<span class="stringliteral">&quot;yyyy-MM-ddTHH:mm:ss.SSSZ&quot;</span>)];</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">int</span> len =</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        snprintf(buffer, <span class="keyword">sizeof</span>(buffer), <span class="stringliteral">&quot;%04d-%02d-%02dT%02d:%02d:%02d.%03dZ&quot;</span>,</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour,</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                tm.tm_min, tm.tm_sec, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ms.count()));</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">return</span> std::string(buffer, len);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
-</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}  <span class="comment">// namespace yoriito</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#endif  </span><span class="comment">// YORIITO_VEHICLE_API_UTILITY_COMMON_LOGGER_STDOUT_LOGBACKEND_H_</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}  <span class="comment">// namespace yoriito</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#endif  </span><span class="comment">// COMMON_LOGGER_STDOUT_LOGBACKEND_H_</span></div>
 <div class="ttc" id="abase__logbackend_8h_html"><div class="ttname"><a href="base__logbackend_8h.html">base_logbackend.h</a></div></div>
 <div class="ttc" id="aclassLogLevel_html"><div class="ttname"><a href="classLogLevel.html">LogLevel</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html">yoriito::BaseLogBackend</a></div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8h_source.html#l00041">base_logbackend.h:41</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a789fddd3215d9fc88b208c78fa7e3740"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a789fddd3215d9fc88b208c78fa7e3740">yoriito::BaseLogBackend::IsInitialized</a></div><div class="ttdeci">bool IsInitialized() const final</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00060">base_logbackend.cc:60</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a965ccc33c12d2f2401578766b24b77d5"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a965ccc33c12d2f2401578766b24b77d5">yoriito::BaseLogBackend::log_level_threshold_</a></div><div class="ttdeci">LogLevel log_level_threshold_</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8h_source.html#l00058">base_logbackend.h:58</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html">yoriito::BaseLogBackend</a></div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8h_source.html#l00048">base_logbackend.h:48</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_a789fddd3215d9fc88b208c78fa7e3740"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#a789fddd3215d9fc88b208c78fa7e3740">yoriito::BaseLogBackend::IsInitialized</a></div><div class="ttdeci">bool IsInitialized() const final</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8cc_source.html#l00067">base_logbackend.cc:67</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1BaseLogBackend_html_acae2b5df326c9a6c9fb534b8007d18a0"><div class="ttname"><a href="classyoriito_1_1BaseLogBackend.html#acae2b5df326c9a6c9fb534b8007d18a0">yoriito::BaseLogBackend::GetLogLevelThreshold</a></div><div class="ttdeci">LogLevel GetLogLevelThreshold() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="base__logbackend_8h_source.html#l00065">base_logbackend.h:65</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1StdoutLogBackend_html"><div class="ttname"><a href="classyoriito_1_1StdoutLogBackend.html">yoriito::StdoutLogBackend</a></div><div class="ttdef"><b>Definition</b> <a href="stdout__logbackend_8h_source.html#l00035">stdout_logbackend.h:35</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1StdoutLogBackend_html_a1da6c1cfe4206f15741a507c9de3ead1"><div class="ttname"><a href="classyoriito_1_1StdoutLogBackend.html#a1da6c1cfe4206f15741a507c9de3ead1">yoriito::StdoutLogBackend::DoFinalize</a></div><div class="ttdeci">void DoFinalize() override</div><div class="ttdef"><b>Definition</b> <a href="stdout__logbackend_8h_source.html#l00058">stdout_logbackend.h:58</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StdoutLogBackend_html_a037c19e3a54ab5acaa0db84f50fc6d2a"><div class="ttname"><a href="classyoriito_1_1StdoutLogBackend.html#a037c19e3a54ab5acaa0db84f50fc6d2a">yoriito::StdoutLogBackend::DoSetLogLevel</a></div><div class="ttdeci">void DoSetLogLevel(LogLevel) override</div><div class="ttdef"><b>Definition</b> <a href="stdout__logbackend_8h_source.html#l00073">stdout_logbackend.h:73</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StdoutLogBackend_html_a1da6c1cfe4206f15741a507c9de3ead1"><div class="ttname"><a href="classyoriito_1_1StdoutLogBackend.html#a1da6c1cfe4206f15741a507c9de3ead1">yoriito::StdoutLogBackend::DoFinalize</a></div><div class="ttdeci">void DoFinalize() override</div><div class="ttdef"><b>Definition</b> <a href="stdout__logbackend_8h_source.html#l00056">stdout_logbackend.h:56</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1StdoutLogBackend_html_a66a61f9a8b80a48f78447ecf9bf464d3"><div class="ttname"><a href="classyoriito_1_1StdoutLogBackend.html#a66a61f9a8b80a48f78447ecf9bf464d3">yoriito::StdoutLogBackend::DoInitialize</a></div><div class="ttdeci">void DoInitialize(const char *name) override</div><div class="ttdef"><b>Definition</b> <a href="stdout__logbackend_8h_source.html#l00053">stdout_logbackend.h:53</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1StdoutLogBackend_html_a838e80738843cae59adf1952d1c01d25"><div class="ttname"><a href="classyoriito_1_1StdoutLogBackend.html#a838e80738843cae59adf1952d1c01d25">yoriito::StdoutLogBackend::StdoutLogBackend</a></div><div class="ttdeci">StdoutLogBackend()=default</div></div>
 <div class="ttc" id="aclassyoriito_1_1StdoutLogBackend_html_a9465e2f1d49c0ae686e4188c298195a2"><div class="ttname"><a href="classyoriito_1_1StdoutLogBackend.html#a9465e2f1d49c0ae686e4188c298195a2">yoriito::StdoutLogBackend::~StdoutLogBackend</a></div><div class="ttdeci">~StdoutLogBackend()</div><div class="ttdef"><b>Definition</b> <a href="stdout__logbackend_8h_source.html#l00039">stdout_logbackend.h:39</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1StdoutLogBackend_html_aa11942e2e3b8ef17a1b8dc86fd65817f"><div class="ttname"><a href="classyoriito_1_1StdoutLogBackend.html#aa11942e2e3b8ef17a1b8dc86fd65817f">yoriito::StdoutLogBackend::DoOutput</a></div><div class="ttdeci">void DoOutput(std::string_view tag, std::string_view msg, LogLevel level) override</div><div class="ttdef"><b>Definition</b> <a href="stdout__logbackend_8h_source.html#l00064">stdout_logbackend.h:64</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1StdoutLogBackend_html_aa48e3a15a4edc24a95abf24674e0bd19"><div class="ttname"><a href="classyoriito_1_1StdoutLogBackend.html#aa48e3a15a4edc24a95abf24674e0bd19">yoriito::StdoutLogBackend::DoSetLogLevel</a></div><div class="ttdeci">void DoSetLogLevel(LogLevel level) override</div><div class="ttdef"><b>Definition</b> <a href="stdout__logbackend_8h_source.html#l00074">stdout_logbackend.h:74</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1StdoutLogBackend_html_aa11942e2e3b8ef17a1b8dc86fd65817f"><div class="ttname"><a href="classyoriito_1_1StdoutLogBackend.html#aa11942e2e3b8ef17a1b8dc86fd65817f">yoriito::StdoutLogBackend::DoOutput</a></div><div class="ttdeci">void DoOutput(std::string_view tag, std::string_view msg, LogLevel level) override</div><div class="ttdef"><b>Definition</b> <a href="stdout__logbackend_8h_source.html#l00060">stdout_logbackend.h:60</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1StdoutLogBackend_html_aea61ca4e5afbf0f32ace94ca4065184c"><div class="ttname"><a href="classyoriito_1_1StdoutLogBackend.html#aea61ca4e5afbf0f32ace94ca4065184c">yoriito::StdoutLogBackend::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdef"><b>Definition</b> <a href="stdout__logbackend_8h_source.html#l00051">stdout_logbackend.h:51</a></div></div>
 <div class="ttc" id="anamespaceyoriito_html"><div class="ttname"><a href="namespaceyoriito.html">yoriito</a></div><div class="ttdoc">Namespace for yoriito common interfaces and types.</div></div>
-<div class="ttc" id="anamespaceyoriito_html_a71d40fb3f6c31965ebc14965f33e4f76a176a473e63c17ccdac91640c67f149bf"><div class="ttname"><a href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a176a473e63c17ccdac91640c67f149bf">yoriito::LogLevel::kInfo</a></div><div class="ttdeci">@ kInfo</div><div class="ttdoc">Important information to help overall understanding.</div></div>
-<div class="ttc" id="anamespaceyoriito_html_a71d40fb3f6c31965ebc14965f33e4f76a61a920eb4a24199ec6a36dd90f2a30b7"><div class="ttname"><a href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a61a920eb4a24199ec6a36dd90f2a30b7">yoriito::LogLevel::kWarn</a></div><div class="ttdeci">@ kWarn</div><div class="ttdoc">Warning when correct operation cannot be guaranteed.</div></div>
-<div class="ttc" id="anamespaceyoriito_html_a71d40fb3f6c31965ebc14965f33e4f76abb53ce21b7c0b7c8a8f7860a41901d29"><div class="ttname"><a href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76abb53ce21b7c0b7c8a8f7860a41901d29">yoriito::LogLevel::kDebug</a></div><div class="ttdeci">@ kDebug</div><div class="ttdoc">Detailed debug information for programmers.</div></div>
-<div class="ttc" id="anamespaceyoriito_html_a71d40fb3f6c31965ebc14965f33e4f76ae3587c730cc1aa530fa4ddc9c4204e97"><div class="ttname"><a href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae3587c730cc1aa530fa4ddc9c4204e97">yoriito::LogLevel::kError</a></div><div class="ttdeci">@ kError</div><div class="ttdoc">Error affecting correct functionality.</div></div>
-<div class="ttc" id="anamespaceyoriito_html_a71d40fb3f6c31965ebc14965f33e4f76ae66f945a3c2423ef09406cf09fa9de26"><div class="ttname"><a href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae66f945a3c2423ef09406cf09fa9de26">yoriito::LogLevel::kFatal</a></div><div class="ttdeci">@ kFatal</div><div class="ttdoc">Fatal error. Should be extremely rare.</div></div>
+<div class="ttc" id="anamespaceyoriito_html_ab216c265caacab238c33c00f5b042ecaa176a473e63c17ccdac91640c67f149bf"><div class="ttname"><a href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaa176a473e63c17ccdac91640c67f149bf">yoriito::LogLevel::kInfo</a></div><div class="ttdeci">@ kInfo</div><div class="ttdoc">Important information to help overall understanding.</div></div>
+<div class="ttc" id="anamespaceyoriito_html_ab216c265caacab238c33c00f5b042ecaa61a920eb4a24199ec6a36dd90f2a30b7"><div class="ttname"><a href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaa61a920eb4a24199ec6a36dd90f2a30b7">yoriito::LogLevel::kWarn</a></div><div class="ttdeci">@ kWarn</div><div class="ttdoc">Warning when correct operation cannot be guaranteed.</div></div>
+<div class="ttc" id="anamespaceyoriito_html_ab216c265caacab238c33c00f5b042ecaabb53ce21b7c0b7c8a8f7860a41901d29"><div class="ttname"><a href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaabb53ce21b7c0b7c8a8f7860a41901d29">yoriito::LogLevel::kDebug</a></div><div class="ttdeci">@ kDebug</div><div class="ttdoc">Detailed debug information for programmers.</div></div>
+<div class="ttc" id="anamespaceyoriito_html_ab216c265caacab238c33c00f5b042ecaae3587c730cc1aa530fa4ddc9c4204e97"><div class="ttname"><a href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaae3587c730cc1aa530fa4ddc9c4204e97">yoriito::LogLevel::kError</a></div><div class="ttdeci">@ kError</div><div class="ttdoc">Error affecting correct functionality.</div></div>
+<div class="ttc" id="anamespaceyoriito_html_ab216c265caacab238c33c00f5b042ecaae66f945a3c2423ef09406cf09fa9de26"><div class="ttname"><a href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaae66f945a3c2423ef09406cf09fa9de26">yoriito::LogLevel::kFatal</a></div><div class="ttdeci">@ kFatal</div><div class="ttdoc">Fatal error. Should be extremely rare.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

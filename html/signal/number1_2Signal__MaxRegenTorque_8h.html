@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/electricmotor/number1/Signal_MaxRegenTorque.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/electricmotor/number1/Signal_MaxRegenTorque.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('number1_2Signal__MaxRegenTorque_8h.htm
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_MaxRegenTorque.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="number1_2Signal__MaxRegenTorque_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="number1_2Signal__MaxRegenTorque_8h__dep__incl.svg" width="496" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="number1_2Signal__MaxRegenTorque_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1_1_1maxregentorque" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1_1_1maxregentorque"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1_1_1maxregentorque.html">yoriito::vehicle::powertrain::electricmotor::number1::maxregentorque</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1_1_1maxregentorque"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.ElectricMotor.Number1.MaxRegenTorque signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -134,13 +135,15 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1.html">yoriito::vehicle::powertrain::electricmotor::number1</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1_1_1maxregentorque" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1_1_1maxregentorque"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1_1_1maxregentorque.html">yoriito::vehicle::powertrain::electricmotor::number1::maxregentorque</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2e18ad319536a8337d43be0994dfd0f5" id="r_a2e18ad319536a8337d43be0994dfd0f5"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1_1_1maxregentorque.html#a2e18ad319536a8337d43be0994dfd0f5">yoriito::vehicle::powertrain::electricmotor::number1::maxregentorque::Get</a> ()</td></tr>
-<tr class="separator:a2e18ad319536a8337d43be0994dfd0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac78aab6f55e5b43dde59da6a305b3097" id="r_ac78aab6f55e5b43dde59da6a305b3097"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1_1_1maxregentorque.html#ac78aab6f55e5b43dde59da6a305b3097">yoriito::vehicle::powertrain::electricmotor::number1::maxregentorque::Inspect</a> ()</td></tr>
-<tr class="separator:ac78aab6f55e5b43dde59da6a305b3097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f936236b2f984b5e1e581cef7eb8f1" id="r_a42f936236b2f984b5e1e581cef7eb8f1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint16_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1_1_1maxregentorque.html#a42f936236b2f984b5e1e581cef7eb8f1">yoriito::vehicle::powertrain::electricmotor::number1::maxregentorque::Get</a> ()</td></tr>
+<tr class="separator:a42f936236b2f984b5e1e581cef7eb8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2ccba5d197814167b1ceecb1184ac9" id="r_a5b2ccba5d197814167b1ceecb1184ac9"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint16_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number1_1_1maxregentorque.html#a5b2ccba5d197814167b1ceecb1184ac9">yoriito::vehicle::powertrain::electricmotor::number1::maxregentorque::Inspect</a> ()</td></tr>
+<tr class="separator:a5b2ccba5d197814167b1ceecb1184ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

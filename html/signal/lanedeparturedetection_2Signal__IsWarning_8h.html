@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/adas/lanedeparturedetection/Signal_IsWarning.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/adas/lanedeparturedetection/Signal_IsWarning.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('lanedeparturedetection_2Signal__IsWarn
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsWarning.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="lanedeparturedetection_2Signal__IsWarning_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="lanedeparturedetection_2Signal__IsWarning_8h__dep__incl.svg" width="462" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="lanedeparturedetection_2Signal__IsWarning_8h_source.html">Go to the source code of this file.</a></p>
@@ -135,14 +139,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad2ccc0e4684826a18eb887cef9ec3bab" id="r_ad2ccc0e4684826a18eb887cef9ec3bab"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1lanedeparturedetection_1_1iswarning.html#ad2ccc0e4684826a18eb887cef9ec3bab">yoriito::vehicle::adas::lanedeparturedetection::iswarning::Get</a> ()</td></tr>
-<tr class="separator:ad2ccc0e4684826a18eb887cef9ec3bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae768814c80380fe6887e40dcad9f7454" id="r_ae768814c80380fe6887e40dcad9f7454"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1lanedeparturedetection_1_1iswarning.html#ae768814c80380fe6887e40dcad9f7454">yoriito::vehicle::adas::lanedeparturedetection::iswarning::Subscribe</a> ()</td></tr>
-<tr class="separator:ae768814c80380fe6887e40dcad9f7454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cbcb8d0338877cd65ecb1409f44b911" id="r_a0cbcb8d0338877cd65ecb1409f44b911"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1lanedeparturedetection_1_1iswarning.html#a0cbcb8d0338877cd65ecb1409f44b911">yoriito::vehicle::adas::lanedeparturedetection::iswarning::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a0cbcb8d0338877cd65ecb1409f44b911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a489e63a5133550e16692b595531fa8" id="r_a5a489e63a5133550e16692b595531fa8"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1lanedeparturedetection_1_1iswarning.html#a5a489e63a5133550e16692b595531fa8">yoriito::vehicle::adas::lanedeparturedetection::iswarning::Inspect</a> ()</td></tr>
-<tr class="separator:a5a489e63a5133550e16692b595531fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5e72f268427dd39d8bd3e36fd93723" id="r_a6e5e72f268427dd39d8bd3e36fd93723"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1lanedeparturedetection_1_1iswarning.html#a6e5e72f268427dd39d8bd3e36fd93723">yoriito::vehicle::adas::lanedeparturedetection::iswarning::Get</a> ()</td></tr>
+<tr class="separator:a6e5e72f268427dd39d8bd3e36fd93723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4809a47488e8f5c0c899cacf97b364e4" id="r_a4809a47488e8f5c0c899cacf97b364e4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1lanedeparturedetection_1_1iswarning.html#a4809a47488e8f5c0c899cacf97b364e4">yoriito::vehicle::adas::lanedeparturedetection::iswarning::Subscribe</a> ()</td></tr>
+<tr class="separator:a4809a47488e8f5c0c899cacf97b364e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f50c806af8d783c524c36dde0a1d325" id="r_a9f50c806af8d783c524c36dde0a1d325"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1lanedeparturedetection_1_1iswarning.html#a9f50c806af8d783c524c36dde0a1d325">yoriito::vehicle::adas::lanedeparturedetection::iswarning::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:a9f50c806af8d783c524c36dde0a1d325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70951fb863714fd346a8f1100d74f6d" id="r_ad70951fb863714fd346a8f1100d74f6d"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1lanedeparturedetection_1_1iswarning.html#ad70951fb863714fd346a8f1100d74f6d">yoriito::vehicle::adas::lanedeparturedetection::iswarning::Inspect</a> ()</td></tr>
+<tr class="separator:ad70951fb863714fd346a8f1100d74f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

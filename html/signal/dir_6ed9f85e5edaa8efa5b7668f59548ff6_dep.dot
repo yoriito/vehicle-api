@@ -1,0 +1,20 @@
+digraph "/work/signal/tripmeter"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_7a55ace4aeba6e11c0edd380c8a601cc {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="signal", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_7a55ace4aeba6e11c0edd380c8a601cc.html",tooltip=""]
+  subgraph clusterdir_6ed9f85e5edaa8efa5b7668f59548ff6 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_6ed9f85e5edaa8efa5b7668f59548ff6.html",tooltip=""]
+    dir_6ed9f85e5edaa8efa5b7668f59548ff6 [shape=plaintext, label="tripmeter"];
+  dir_220ef89d3305204043071b214bb917a0 [label="number1", fillcolor="#c8d2e7", color="grey25", style="filled", URL="dir_220ef89d3305204043071b214bb917a0.html",tooltip=""];
+  dir_f512876ec121a395ea4ac24b06d9d9de [label="number2", fillcolor="#c8d2e7", color="grey25", style="filled", URL="dir_f512876ec121a395ea4ac24b06d9d9de.html",tooltip=""];
+  }
+  }
+  dir_6ed9f85e5edaa8efa5b7668f59548ff6->dir_220ef89d3305204043071b214bb917a0 [headlabel="1", labeldistance=1.5 headhref="dir_000323_000165.html" href="dir_000323_000165.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_6ed9f85e5edaa8efa5b7668f59548ff6->dir_f512876ec121a395ea4ac24b06d9d9de [headlabel="1", labeldistance=1.5 headhref="dir_000323_000176.html" href="dir_000323_000176.html" color="steelblue1" fontcolor="steelblue1"];
+}

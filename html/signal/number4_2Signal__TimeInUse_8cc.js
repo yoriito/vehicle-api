@@ -1,7 +1,7 @@
 var number4_2Signal__TimeInUse_8cc =
 [
-    [ "Get", "number4_2Signal__TimeInUse_8cc.html#aa65573922a3f79409df556a93d5ac6ea", null ],
-    [ "Inspect", "number4_2Signal__TimeInUse_8cc.html#acfd6915fe4fcefa6df925a8c460ba35d", null ],
-    [ "Subscribe", "number4_2Signal__TimeInUse_8cc.html#a905682632e9785d8a20c4cbd2db22666", null ],
-    [ "UnSubscribe", "number4_2Signal__TimeInUse_8cc.html#a2dd38fa91a1fa4d76a7115f7c1bb2a71", null ]
+    [ "Get", "number4_2Signal__TimeInUse_8cc.html#aa63c2d547bffdf31db4bc762cb81f49d", null ],
+    [ "Inspect", "number4_2Signal__TimeInUse_8cc.html#ad54cff9c5a7a2be075a9db85972a4211", null ],
+    [ "Subscribe", "number4_2Signal__TimeInUse_8cc.html#a8f758eab6157460e3ed8e46c43a018c7", null ],
+    [ "UnSubscribe", "number4_2Signal__TimeInUse_8cc.html#a55fae1ab8c1fa6abd939cb0ddbf377f4", null ]
 ];

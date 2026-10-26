@@ -1,5 +1,5 @@
 var Signal__Year_8cc =
 [
-    [ "Get", "Signal__Year_8cc.html#aa2ed43fced2a54d9f7d9e3408a6dc4be", null ],
-    [ "Inspect", "Signal__Year_8cc.html#a91d95e25353de2c3fb0dae1f4d857bcd", null ]
+    [ "Get", "Signal__Year_8cc.html#a5739526e0255673eb567011ddc7feb7b", null ],
+    [ "Inspect", "Signal__Year_8cc.html#aa85e6fc7b78a258826a51eec573b8887", null ]
 ];

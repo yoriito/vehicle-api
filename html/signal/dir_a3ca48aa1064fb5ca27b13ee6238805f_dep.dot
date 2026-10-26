@@ -1,0 +1,20 @@
+digraph "/work/signal/motionmanagement/brake/axle/row1/wheel"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_c7246bc2a3260947314b64714e73e0b4 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="row1", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_c7246bc2a3260947314b64714e73e0b4.html",tooltip=""]
+  subgraph clusterdir_a3ca48aa1064fb5ca27b13ee6238805f {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_a3ca48aa1064fb5ca27b13ee6238805f.html",tooltip=""]
+    dir_a3ca48aa1064fb5ca27b13ee6238805f [shape=plaintext, label="wheel"];
+  dir_491738dbb927785d1f007af0e7bae120 [label="left", fillcolor="#c8d2e7", color="grey25", style="filled", URL="dir_491738dbb927785d1f007af0e7bae120.html",tooltip=""];
+  dir_bc4b8a9e71ee83d747600fe8c5b956fb [label="right", fillcolor="#c8d2e7", color="grey25", style="filled", URL="dir_bc4b8a9e71ee83d747600fe8c5b956fb.html",tooltip=""];
+  }
+  }
+  dir_a3ca48aa1064fb5ca27b13ee6238805f->dir_491738dbb927785d1f007af0e7bae120 [headlabel="1", labeldistance=1.5 headhref="dir_000333_000130.html" href="dir_000333_000130.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_a3ca48aa1064fb5ca27b13ee6238805f->dir_bc4b8a9e71ee83d747600fe8c5b956fb [headlabel="1", labeldistance=1.5 headhref="dir_000333_000250.html" href="dir_000333_000250.html" color="steelblue1" fontcolor="steelblue1"];
+}

@@ -1,7 +1,7 @@
 var number4_2Signal__StateOfHealth_8cc =
 [
-    [ "Get", "number4_2Signal__StateOfHealth_8cc.html#a462b62922c723a68bf28223e70da0606", null ],
-    [ "Inspect", "number4_2Signal__StateOfHealth_8cc.html#a097da7afcbd3e613cd3b16548b5a0759", null ],
-    [ "Subscribe", "number4_2Signal__StateOfHealth_8cc.html#a0403c1d8d6d25cb42e2d8d228cd81a6e", null ],
-    [ "UnSubscribe", "number4_2Signal__StateOfHealth_8cc.html#a557980fa10b9d3887c3ee091d12ef092", null ]
+    [ "Get", "number4_2Signal__StateOfHealth_8cc.html#a842c401332856946f0cfcd8b8e7c6c2e", null ],
+    [ "Inspect", "number4_2Signal__StateOfHealth_8cc.html#afc6f8a59999fc6c4ea9a67047c5c7897", null ],
+    [ "Subscribe", "number4_2Signal__StateOfHealth_8cc.html#a7efdc6e349ac303525eb1b16c07f9dc5", null ],
+    [ "UnSubscribe", "number4_2Signal__StateOfHealth_8cc.html#a0ffc53057a2d85f9f2304aa62d1c4b34", null ]
 ];

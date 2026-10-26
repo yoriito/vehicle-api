@@ -1,5 +1,5 @@
 var Signal__NumberOfCylinders_8cc =
 [
-    [ "Get", "Signal__NumberOfCylinders_8cc.html#afaf3e2d38acf7df9d47198d7a027c3b5", null ],
-    [ "Inspect", "Signal__NumberOfCylinders_8cc.html#abfd5c965c6a615f2fd8be2915ae19218", null ]
+    [ "Get", "Signal__NumberOfCylinders_8cc.html#ad1307938e622487e11388e4d97495735", null ],
+    [ "Inspect", "Signal__NumberOfCylinders_8cc.html#a5e7556b0bc4b8c2b4e7ad8e0f70c5f2b", null ]
 ];

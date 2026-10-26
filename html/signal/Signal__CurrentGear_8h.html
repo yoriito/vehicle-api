@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/transmission/Signal_CurrentGear.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/transmission/Signal_CurrentGear.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('Signal__CurrentGear_8h.html',''); init
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_CurrentGear.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__CurrentGear_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__CurrentGear_8h__dep__incl.svg" width="427" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__CurrentGear_8h_source.html">Go to the source code of this file.</a></p>
@@ -135,14 +139,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1f99d911866e48175dafb3fa235b1912" id="r_a1f99d911866e48175dafb3fa235b1912"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; int8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1currentgear.html#a1f99d911866e48175dafb3fa235b1912">yoriito::vehicle::powertrain::transmission::currentgear::Get</a> ()</td></tr>
-<tr class="separator:a1f99d911866e48175dafb3fa235b1912"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f39e1f55b8f9cf47691ad716d062790" id="r_a1f39e1f55b8f9cf47691ad716d062790"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1currentgear.html#a1f39e1f55b8f9cf47691ad716d062790">yoriito::vehicle::powertrain::transmission::currentgear::Subscribe</a> ()</td></tr>
-<tr class="separator:a1f39e1f55b8f9cf47691ad716d062790"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6a918c136be23297ae8b7462c049a38" id="r_af6a918c136be23297ae8b7462c049a38"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1currentgear.html#af6a918c136be23297ae8b7462c049a38">yoriito::vehicle::powertrain::transmission::currentgear::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:af6a918c136be23297ae8b7462c049a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d3bc9663f8c476b80578fe2c0e1c7ed" id="r_a7d3bc9663f8c476b80578fe2c0e1c7ed"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1currentgear.html#a7d3bc9663f8c476b80578fe2c0e1c7ed">yoriito::vehicle::powertrain::transmission::currentgear::Inspect</a> ()</td></tr>
-<tr class="separator:a7d3bc9663f8c476b80578fe2c0e1c7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277facd650de54c17bbd039274359169" id="r_a277facd650de54c17bbd039274359169"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; int8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1currentgear.html#a277facd650de54c17bbd039274359169">yoriito::vehicle::powertrain::transmission::currentgear::Get</a> ()</td></tr>
+<tr class="separator:a277facd650de54c17bbd039274359169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ac817256fbd33b200359c99f6eda03" id="r_a10ac817256fbd33b200359c99f6eda03"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; int8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1currentgear.html#a10ac817256fbd33b200359c99f6eda03">yoriito::vehicle::powertrain::transmission::currentgear::Subscribe</a> ()</td></tr>
+<tr class="separator:a10ac817256fbd33b200359c99f6eda03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556a75fd55316f8c0b037d083a2fcbb1" id="r_a556a75fd55316f8c0b037d083a2fcbb1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1currentgear.html#a556a75fd55316f8c0b037d083a2fcbb1">yoriito::vehicle::powertrain::transmission::currentgear::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; int8_t &gt; subscription_context)</td></tr>
+<tr class="separator:a556a75fd55316f8c0b037d083a2fcbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b440d8d2f01e8284c5c959e635aeca1" id="r_a2b440d8d2f01e8284c5c959e635aeca1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; int8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1currentgear.html#a2b440d8d2f01e8284c5c959e635aeca1">yoriito::vehicle::powertrain::transmission::currentgear::Inspect</a> ()</td></tr>
+<tr class="separator:a2b440d8d2f01e8284c5c959e635aeca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

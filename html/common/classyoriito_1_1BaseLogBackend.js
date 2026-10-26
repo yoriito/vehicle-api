@@ -5,9 +5,9 @@ var classyoriito_1_1BaseLogBackend =
     [ "DoOutput", "classyoriito_1_1BaseLogBackend.html#a2f34523694421c0f510685fe772dbe74", null ],
     [ "DoSetLogLevel", "classyoriito_1_1BaseLogBackend.html#a635dd4dbd49af3bc037da999b3139208", null ],
     [ "Finalize", "classyoriito_1_1BaseLogBackend.html#a7bf42adb1c51a5d8d8ff19bfece4d52d", null ],
+    [ "GetLogLevelThreshold", "classyoriito_1_1BaseLogBackend.html#acae2b5df326c9a6c9fb534b8007d18a0", null ],
     [ "Initialize", "classyoriito_1_1BaseLogBackend.html#aa52b512f926cfbc27ee525d8671eba92", null ],
     [ "IsInitialized", "classyoriito_1_1BaseLogBackend.html#a789fddd3215d9fc88b208c78fa7e3740", null ],
     [ "Output", "classyoriito_1_1BaseLogBackend.html#afc368f54bfe509d930a2010d7039a191", null ],
-    [ "SetLogLevel", "classyoriito_1_1BaseLogBackend.html#a6af786afd09ea352882061d64de9819a", null ],
-    [ "log_level_threshold_", "classyoriito_1_1BaseLogBackend.html#a965ccc33c12d2f2401578766b24b77d5", null ]
+    [ "SetLogLevel", "classyoriito_1_1BaseLogBackend.html#a6af786afd09ea352882061d64de9819a", null ]
 ];

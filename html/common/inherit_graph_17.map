@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classyoriito_1_1databroker_1_1filter_1_1PathsFilter.html" title="Class representing a filter based on multiple datapoint paths in the DataBroker." alt="" coords="5,5,148,45"/>
-<area shape="rect" id="Node000001" href="$classyoriito_1_1databroker_1_1filter_1_1GetFilter.html" title="Class representing a get filter for datapoints in the DataBroker." alt="" coords="196,5,339,45"/>
-<area shape="poly" id="edge8_Node000000_Node000001" title=" " alt="" coords="161,23,196,23,196,28,161,28"/>
-<area shape="rect" id="Node000002" href="$classyoriito_1_1databroker_1_1filter_1_1InspectFilter.html" title="Class representing an inspect filter for datapoints in the DataBroker." alt="" coords="387,5,535,45"/>
-<area shape="poly" id="edge9_Node000001_Node000002" title=" " alt="" coords="353,23,387,23,387,28,353,28"/>
-</map>

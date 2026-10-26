@@ -1,0 +1,45 @@
+var signal__data__type_8h =
+[
+    [ "yoriito::signal::IsVariantAlternative< U, Variant >", "structyoriito_1_1signal_1_1IsVariantAlternative.html", null ],
+    [ "yoriito::signal::IsVariantAlternative< U, std::variant< Ts... > >", "structyoriito_1_1signal_1_1IsVariantAlternative_3_01U_00_01std_1_1variant_3_01Ts_8_8_8_01_4_01_4.html", null ],
+    [ "SignalDataType", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7", [
+      [ "SIGNAL_DATA_TYPE_UNSPECIFIED", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7af53f8d48d0324ad9dbcdffb8db5a1181", null ],
+      [ "SIGNAL_DATA_TYPE_STRING", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7ab4a070c8afb1b9d4acd6df44d90b9be3", null ],
+      [ "SIGNAL_DATA_TYPE_BOOLEAN", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7aa6764bd9d9895d78e41872aa4c1ee4f9", null ],
+      [ "SIGNAL_DATA_TYPE_INT8", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a4bd703c58fe01f5a4a11f732a5e73a9d", null ],
+      [ "SIGNAL_DATA_TYPE_INT16", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a84ae7ec0344fe80b1406c9bbcc60c2ce", null ],
+      [ "SIGNAL_DATA_TYPE_INT32", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7ad0311b5c186464a5c4848c3bb2bab87e", null ],
+      [ "SIGNAL_DATA_TYPE_INT64", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a75d7c59f895487faf6333fac6df1f9e1", null ],
+      [ "SIGNAL_DATA_TYPE_UINT8", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a5453463f35728e144857a7381df5647c", null ],
+      [ "SIGNAL_DATA_TYPE_UINT16", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a5e93ce4d9d3596a48dab9fafb25f54b0", null ],
+      [ "SIGNAL_DATA_TYPE_UINT32", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7af23920c460b89b07e5fb2fbf78997632", null ],
+      [ "SIGNAL_DATA_TYPE_UINT64", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a113c73b43da50dfe10563142c8a949c7", null ],
+      [ "SIGNAL_DATA_TYPE_FLOAT", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7aeb2a191ef4e948341ea4381150489927", null ],
+      [ "SIGNAL_DATA_TYPE_DOUBLE", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7acd35d52230cbf295d00cb1004d611e18", null ],
+      [ "SIGNAL_DATA_TYPE_TIMESTAMP", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a8fd9133164ebd6654005b78a3d2241be", null ],
+      [ "SIGNAL_DATA_TYPE_STRING_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a7e895baf9f8ccefe3931b74a91076286", null ],
+      [ "SIGNAL_DATA_TYPE_BOOLEAN_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7af3b6626e7260448a3d437037419b6f61", null ],
+      [ "SIGNAL_DATA_TYPE_INT8_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a2a86c94dd1c0fce05d29930f5015f7e6", null ],
+      [ "SIGNAL_DATA_TYPE_INT16_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a9e947095fc063531a5e86d75661d9f47", null ],
+      [ "SIGNAL_DATA_TYPE_INT32_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7ac73bb026c1a99ecdaf305e58750e2f29", null ],
+      [ "SIGNAL_DATA_TYPE_INT64_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a9fd0edb023e1683a4514d64b756b7dc6", null ],
+      [ "SIGNAL_DATA_TYPE_UINT8_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a14139edd37f2c64af59dd47454cf01d0", null ],
+      [ "SIGNAL_DATA_TYPE_UINT16_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a27246893b98605f23aa4cbd622273d72", null ],
+      [ "SIGNAL_DATA_TYPE_UINT32_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a69b97eb174a43b5f7c4ec8ecb7f91afd", null ],
+      [ "SIGNAL_DATA_TYPE_UINT64_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7aa10af7f2f13c3e673a1d5f699809074b", null ],
+      [ "SIGNAL_DATA_TYPE_FLOAT_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7add857d3888edb685314af34312dc7688", null ],
+      [ "SIGNAL_DATA_TYPE_DOUBLE_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a520d677426187fc2d292bcaf012e88a1", null ],
+      [ "SIGNAL_DATA_TYPE_STRUCT", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a379d7fb3190d1c6e58b509a4f5d54774", null ],
+      [ "SIGNAL_DATA_TYPE_STRUCT_ARRAY", "signal__data__type_8h.html#a29ee99273a06b1584473b887e39c46b7a42af5c3d288f9f084ea212ca1b64bd17", null ]
+    ] ],
+    [ "SignalEntryType", "signal__data__type_8h.html#ab645d6c68aa1e9c9df9c880db74c02d2", [
+      [ "SIGNAL_ENTRY_TYPE_UNSPECIFIED", "signal__data__type_8h.html#ab645d6c68aa1e9c9df9c880db74c02d2a5297e15c6f1701cc87a6a177318e7bc6", null ],
+      [ "SIGNAL_ENTRY_TYPE_ATTRIBUTE", "signal__data__type_8h.html#ab645d6c68aa1e9c9df9c880db74c02d2a223e7518bd183a72896b67407fae0f08", null ],
+      [ "SIGNAL_ENTRY_TYPE_SENSOR", "signal__data__type_8h.html#ab645d6c68aa1e9c9df9c880db74c02d2a50802e1be3e5f493d64e22abcf2da959", null ],
+      [ "SIGNAL_ENTRY_TYPE_ACTUATOR", "signal__data__type_8h.html#ab645d6c68aa1e9c9df9c880db74c02d2a3f422ace16fb6d4baf7fd68f47fc4a9c", null ]
+    ] ],
+    [ "ConvertToSignalDataType", "signal__data__type_8h.html#a5a171bcaa50e48ef6eef133cb4e8bf38", null ],
+    [ "ConvertToSignalEntryType", "signal__data__type_8h.html#a171a457ba1169d30b36093710fe68674", null ],
+    [ "ExtractValue", "signal__data__type_8h.html#a94a9c3823c71ccb3b72f85c32e5bc0b9", null ],
+    [ "IsVariantAlternative_v", "signal__data__type_8h.html#a821008abb01d3823567f6e7461200e20", null ]
+];

@@ -1,5 +1,5 @@
 var versionvss_2Signal__Patch_8cc =
 [
-    [ "Get", "versionvss_2Signal__Patch_8cc.html#a8db1d45231acb324f65a6d988c05a2f5", null ],
-    [ "Inspect", "versionvss_2Signal__Patch_8cc.html#afa559222475e2625c51f763a09579b35", null ]
+    [ "Get", "versionvss_2Signal__Patch_8cc.html#a8a84af5e2dfed2bd3f0cf5b3ec56abc3", null ],
+    [ "Inspect", "versionvss_2Signal__Patch_8cc.html#a33d44241ccbe417ce3f4999a23e9b3ef", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/electricmotor/number4/enginecoolant/Signal_Capacity.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/electricmotor/number4/enginecoolant/Signal_Capacity.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('electricmotor_2number4_2enginecoolant_
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Capacity.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="electricmotor_2number4_2enginecoolant_2Signal__Capacity_8h__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="electricmotor_2number4_2enginecoolant_2Signal__Capacity_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="electricmotor_2number4_2enginecoolant_2Signal__Capacity_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1capacity" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1capacity"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1capacity.html">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::capacity</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1capacity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.ElectricMotor.Number4.EngineCoolant.Capacity signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -136,20 +137,20 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant.html">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01capacity" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01capacity"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01capacity.html">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant:: capacity</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1capacity" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1capacity"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1capacity.html">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::capacity</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac799c2d48fe7b7c2c5648736d5b27016" id="r_ac799c2d48fe7b7c2c5648736d5b27016"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01capacity.html#ac799c2d48fe7b7c2c5648736d5b27016">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant:: capacity::Get</a> ()</td></tr>
-<tr class="separator:ac799c2d48fe7b7c2c5648736d5b27016"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2fc62fd996d982479f061f744e0ed9c" id="r_aa2fc62fd996d982479f061f744e0ed9c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01capacity.html#aa2fc62fd996d982479f061f744e0ed9c">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant:: capacity::Inspect</a> ()</td></tr>
-<tr class="separator:aa2fc62fd996d982479f061f744e0ed9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac056eaeab1d2ec471a931f6602ca35" id="r_aeac056eaeab1d2ec471a931f6602ca35"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1capacity.html#aeac056eaeab1d2ec471a931f6602ca35">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::capacity::Get</a> ()</td></tr>
+<tr class="separator:aeac056eaeab1d2ec471a931f6602ca35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f74d5ace64aeea62a4e356f711a01d8" id="r_a5f74d5ace64aeea62a4e356f711a01d8"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1capacity.html#a5f74d5ace64aeea62a4e356f711a01d8">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::capacity::Inspect</a> ()</td></tr>
+<tr class="separator:a5f74d5ace64aeea62a4e356f711a01d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:af4e14ff65dfa275cc7f0686d4032fcbd" id="r_af4e14ff65dfa275cc7f0686d4032fcbd"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1_01capacity.html#af4e14ff65dfa275cc7f0686d4032fcbd">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant:: capacity::VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER4_ENGINECOOLANT_CAPACITY</a></td></tr>
-<tr class="separator:af4e14ff65dfa275cc7f0686d4032fcbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4c0e09278083bf9eae491a8fa28ab0" id="r_a2e4c0e09278083bf9eae491a8fa28ab0"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number4_1_1enginecoolant_1_1capacity.html#a2e4c0e09278083bf9eae491a8fa28ab0">yoriito::vehicle::powertrain::electricmotor::number4::enginecoolant::capacity::VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER4_ENGINECOOLANT_CAPACITY</a></td></tr>
+<tr class="separator:a2e4c0e09278083bf9eae491a8fa28ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

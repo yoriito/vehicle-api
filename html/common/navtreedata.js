@@ -25,28 +25,28 @@
 var NAVTREE =
 [
   [ "Yoriito Vehicle API - common", "index.html", [
-    [ "Yoriito Vehicle API Logging System", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html", [
-      [ "Overview", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md1", null ],
-      [ "Getting started", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md2", [
-        [ "Prerequisites", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md3", null ],
-        [ "Build and install", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md4", [
-          [ "Case 1: For configurations using COVESA DLT", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md5", null ],
-          [ "Case 2: For configurations that do not use COVESA DLT", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md6", null ]
+    [ "Yoriito Vehicle API Logging System", "md__2work_2common_2logger_2README.html", [
+      [ "Overview", "md__2work_2common_2logger_2README.html#autotoc_md1", null ],
+      [ "Getting started", "md__2work_2common_2logger_2README.html#autotoc_md2", [
+        [ "Prerequisites", "md__2work_2common_2logger_2README.html#autotoc_md3", null ],
+        [ "Build and install", "md__2work_2common_2logger_2README.html#autotoc_md4", [
+          [ "Case 1: For configurations using COVESA DLT", "md__2work_2common_2logger_2README.html#autotoc_md5", null ],
+          [ "Case 2: For configurations that do not use COVESA DLT", "md__2work_2common_2logger_2README.html#autotoc_md6", null ]
         ] ],
-        [ "Run example application", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md7", [
-          [ "Case 1: For configurations using COVESA DLT", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md8", null ],
-          [ "Case 2: For configurations that do not use COVESA DLT", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md9", null ]
+        [ "Run example application", "md__2work_2common_2logger_2README.html#autotoc_md7", [
+          [ "Case 1: For configurations using COVESA DLT", "md__2work_2common_2logger_2README.html#autotoc_md8", null ],
+          [ "Case 2: For configurations that do not use COVESA DLT", "md__2work_2common_2logger_2README.html#autotoc_md9", null ]
         ] ],
-        [ "CMake build options", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md10", null ]
+        [ "CMake build options", "md__2work_2common_2logger_2README.html#autotoc_md10", null ]
       ] ],
-      [ "Implementation example", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md11", null ],
-      [ "Learn more", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md12", [
-        [ "API References", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md13", [
-          [ "Macros", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md14", null ]
+      [ "Implementation example", "md__2work_2common_2logger_2README.html#autotoc_md11", null ],
+      [ "Learn more", "md__2work_2common_2logger_2README.html#autotoc_md12", [
+        [ "API References", "md__2work_2common_2logger_2README.html#autotoc_md13", [
+          [ "Macros", "md__2work_2common_2logger_2README.html#autotoc_md14", null ]
         ] ],
-        [ "Viewer Tools", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md15", null ]
+        [ "Viewer Tools", "md__2work_2common_2logger_2README.html#autotoc_md15", null ]
       ] ],
-      [ "Licenses", "md__2home_2runner_2work_2vehicle-api_2vehicle-api_2common_2logger_2README.html#autotoc_md16", null ]
+      [ "Licenses", "md__2work_2common_2logger_2README.html#autotoc_md16", null ]
     ] ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", "namespaces.html", [
@@ -67,6 +67,7 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Related Symbols", "functions_rela.html", null ]
       ] ]
@@ -84,10 +85,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classyoriito_1_1databroker_1_1BaseInspectData.html#ae81db2bb0e4c0849c547df9cf9088155",
-"classyoriito_1_1databroker_1_1ProducerGetRequest.html#a4efabeafadafa37742775aef89000a03",
-"consumer__set__datapoint_8h_source.html",
-"yoriito__log_8h.html#a739a0356036546345fba75ebeff75aec"
+"classyoriito_1_1databroker_1_1BaseInspectData.html#aac47f78d6786458ab5f9d98542dfac94",
+"classyoriito_1_1databroker_1_1DataBrokerProducer.html#a827c78d06ecdefd2f997c009a4d9cdc7",
+"classyoriito_1_1databroker_1_1PropertyType.html#aeca0ce06b0fab1064832a217b49b6564",
+"classyoriito_1_1signal_1_1SignalGetDataPoint.html#ac3efec1a22382fe292c6c882066ee769",
+"error_8h.html#ad2360dd029bb59923fa40510c6800123af67394cf56ebc11483e32b8969440cff",
+"range__condition__array_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/charging/chargingport/frontmiddle/Signal_IsChargingCableConnected.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/charging/chargingport/frontmiddle/Signal_IsChargingCableConnected.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('frontmiddle_2Signal__IsChargingCableCo
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsChargingCableConnected.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="frontmiddle_2Signal__IsChargingCableConnected_8h__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="frontmiddle_2Signal__IsChargingCableConnected_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="frontmiddle_2Signal__IsChargingCableConnected_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c.html">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::frontmiddle::ischargingcableconnected</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.TractionBattery.Charging.ChargingPort.FrontMiddle.IsChargingCableConnected signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -134,28 +135,28 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging.html">yoriito::vehicle::powertrain::tractionbattery::charging</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport.html">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport.html">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1frontmiddle" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1frontmiddle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1frontmiddle.html">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::frontmiddle</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1frontmiddle" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1frontmiddle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1frontmiddle.html">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::frontmiddle</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1fffa130dab0673459e3d24506be424d23" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1fffa130dab0673459e3d24506be424d23"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1fffa130dab0673459e3d24506be424d23.html">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::frontmiddle::ischargingcableconnected</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c.html">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::frontmiddle::ischargingcableconnected</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aef0d60d97d17abf1b70cd0640510deb8" id="r_aef0d60d97d17abf1b70cd0640510deb8"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1fffa130dab0673459e3d24506be424d23.html#aef0d60d97d17abf1b70cd0640510deb8">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::frontmiddle::ischargingcableconnected::Get</a> ()</td></tr>
-<tr class="separator:aef0d60d97d17abf1b70cd0640510deb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef26de4e31b8beb2e9d4829c9b46ea65" id="r_aef26de4e31b8beb2e9d4829c9b46ea65"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1fffa130dab0673459e3d24506be424d23.html#aef26de4e31b8beb2e9d4829c9b46ea65">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::frontmiddle::ischargingcableconnected::Subscribe</a> ()</td></tr>
-<tr class="separator:aef26de4e31b8beb2e9d4829c9b46ea65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe03c7c7eab85b48c888d161df3a36e6" id="r_abe03c7c7eab85b48c888d161df3a36e6"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1fffa130dab0673459e3d24506be424d23.html#abe03c7c7eab85b48c888d161df3a36e6">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::frontmiddle::ischargingcableconnected::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:abe03c7c7eab85b48c888d161df3a36e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa138cd84799585ac96c3073079baa6bb" id="r_aa138cd84799585ac96c3073079baa6bb"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1fffa130dab0673459e3d24506be424d23.html#aa138cd84799585ac96c3073079baa6bb">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::frontmiddle::ischargingcableconnected::Inspect</a> ()</td></tr>
-<tr class="separator:aa138cd84799585ac96c3073079baa6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0df6f71fa4e8fbc52cc8f474385d67" id="r_ada0df6f71fa4e8fbc52cc8f474385d67"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c.html#ada0df6f71fa4e8fbc52cc8f474385d67">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::frontmiddle::ischargingcableconnected::Get</a> ()</td></tr>
+<tr class="separator:ada0df6f71fa4e8fbc52cc8f474385d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52a27d2d9b5f5c8e25afe424155ed8b" id="r_ac52a27d2d9b5f5c8e25afe424155ed8b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c.html#ac52a27d2d9b5f5c8e25afe424155ed8b">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::frontmiddle::ischargingcableconnected::Subscribe</a> ()</td></tr>
+<tr class="separator:ac52a27d2d9b5f5c8e25afe424155ed8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8edc5f8c658c73d5b578597cce4c2dc3" id="r_a8edc5f8c658c73d5b578597cce4c2dc3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c.html#a8edc5f8c658c73d5b578597cce4c2dc3">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::frontmiddle::ischargingcableconnected::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:a8edc5f8c658c73d5b578597cce4c2dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93576b9b721b09eed2713ced1d9187d" id="r_ad93576b9b721b09eed2713ced1d9187d"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c.html#ad93576b9b721b09eed2713ced1d9187d">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::frontmiddle::ischargingcableconnected::Inspect</a> ()</td></tr>
+<tr class="separator:ad93576b9b721b09eed2713ced1d9187d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aaa5471feb91b7ede4b6db88f09f15289" id="r_aaa5471feb91b7ede4b6db88f09f15289"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1_01chargingport_1_1fffa130dab0673459e3d24506be424d23.html#aaa5471feb91b7ede4b6db88f09f15289">yoriito::vehicle::powertrain::tractionbattery::charging:: chargingport::frontmiddle::ischargingcableconnected::VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGINGPORT_FRONTMIDDLE_ISCHARGINGCABLECONNECTED</a></td></tr>
-<tr class="separator:aaa5471feb91b7ede4b6db88f09f15289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a37e1d60503d4816ff9c6d20b41a346" id="r_a1a37e1d60503d4816ff9c6d20b41a346"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1chargingport_1_1fronb75f68804472dac8c6ff4c03a0492e7c.html#a1a37e1d60503d4816ff9c6d20b41a346">yoriito::vehicle::powertrain::tractionbattery::charging::chargingport::frontmiddle::ischargingcableconnected::VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGINGPORT_FRONTMIDDLE_ISCHARGINGCABLECONNECTED</a></td></tr>
+<tr class="separator:a1a37e1d60503d4816ff9c6d20b41a346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

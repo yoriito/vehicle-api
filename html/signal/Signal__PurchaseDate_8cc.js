@@ -1,5 +1,5 @@
 var Signal__PurchaseDate_8cc =
 [
-    [ "Get", "Signal__PurchaseDate_8cc.html#aa71c2d3e7933481036057abc205aa481", null ],
-    [ "Inspect", "Signal__PurchaseDate_8cc.html#aede82b6124935133d1467169d549cb1c", null ]
+    [ "Get", "Signal__PurchaseDate_8cc.html#a5a648ae8a7724fcc3a83c3e3d62abec6", null ],
+    [ "Inspect", "Signal__PurchaseDate_8cc.html#aa525fd8571503623fcbe0a2b0de352b8", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/transmission/Signal_DriveType.h Source File</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/transmission/Signal_DriveType.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('Signal__DriveType_8h_source.html','');
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef VEHICLE_POWERTRAIN_TRANSMISSION_DRIVETYPE_H</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define VEHICLE_POWERTRAIN_TRANSMISSION_DRIVETYPE_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef SIGNAL_POWERTRAIN_TRANSMISSION_SIGNAL_DRIVETYPE_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define SIGNAL_POWERTRAIN_TRANSMISSION_SIGNAL_DRIVETYPE_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
@@ -129,24 +129,32 @@ $(document).ready(function(){initNavTree('Signal__DriveType_8h_source.html','');
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;databroker/databroker_consumer_factory.h&quot;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;error.h&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;result.h&quot;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;yoriito_log.h&quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html">yoriito::vehicle::powertrain::transmission::drivetype</a> {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#a8fb935131b4eed6d22049efbfd8cf654">   42</a></span>  <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#a8fb935131b4eed6d22049efbfd8cf654">VEHICLE_POWERTRAIN_TRANSMISSION_DRIVETYPE</a> =</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="stringliteral">&quot;Vehicle.Powertrain.Transmission.DriveType&quot;</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  yoriito::Result&lt;std::string&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#a0297f759725c8df3c712209b6379b766">Get</a>();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  yoriito::Result&lt;yoriito::databroker::ConsumerInspectResponse&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#ae280dfe557f77af29ccbc6821716251d">Inspect</a>();</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}  <span class="comment">// namespace yoriito::vehicle::powertrain::transmission::drivetype</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#endif  </span><span class="comment">// VEHICLE_POWERTRAIN_TRANSMISSION_DRIVETYPE_H</span></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype_html"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html">yoriito::vehicle::powertrain::transmission::drivetype</a></div><div class="ttdoc">Indicates the Vehicle.Powertrain.Transmission.DriveType signal.</div><div class="ttdef"><b>Definition</b> <a href="Signal__DriveType_8cc_source.html#l00025">Signal_DriveType.cc:25</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype_html_a0297f759725c8df3c712209b6379b766"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#a0297f759725c8df3c712209b6379b766">yoriito::vehicle::powertrain::transmission::drivetype::Get</a></div><div class="ttdeci">yoriito::Result&lt; std::string &gt; Get()</div><div class="ttdef"><b>Definition</b> <a href="Signal__DriveType_8cc_source.html#l00027">Signal_DriveType.cc:27</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype_html_a8fb935131b4eed6d22049efbfd8cf654"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#a8fb935131b4eed6d22049efbfd8cf654">yoriito::vehicle::powertrain::transmission::drivetype::VEHICLE_POWERTRAIN_TRANSMISSION_DRIVETYPE</a></div><div class="ttdeci">constexpr const char * VEHICLE_POWERTRAIN_TRANSMISSION_DRIVETYPE</div><div class="ttdef"><b>Definition</b> <a href="Signal__DriveType_8h_source.html#l00042">Signal_DriveType.h:42</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype_html_ae280dfe557f77af29ccbc6821716251d"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#ae280dfe557f77af29ccbc6821716251d">yoriito::vehicle::powertrain::transmission::drivetype::Inspect</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt; Inspect()</div><div class="ttdef"><b>Definition</b> <a href="Signal__DriveType_8cc_source.html#l00064">Signal_DriveType.cc:64</a></div></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;signal/signal_get_datapoint.h&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;signal/signal_inspect_data.h&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;signal/signal_inspect_response.h&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;signal/signal_subscribe_context.h&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;yoriito_log.h&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html">yoriito::vehicle::powertrain::transmission::drivetype</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#a8fb935131b4eed6d22049efbfd8cf654">   48</a></span><span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#a8fb935131b4eed6d22049efbfd8cf654">VEHICLE_POWERTRAIN_TRANSMISSION_DRIVETYPE</a> =</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="stringliteral">&quot;Vehicle.Powertrain.Transmission.DriveType&quot;</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>yoriito::Result&lt;yoriito::signal::SignalGetDataPoint&lt;std::string&gt;&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#af845d401468b40ebc1f47d2a50002c49">Get</a>();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>yoriito::Result&lt;yoriito::signal::SignalInspectResponse&lt;std::string&gt;&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#af80320be3febe3e51094907bfd80f24c">Inspect</a>();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}  <span class="comment">// namespace yoriito::vehicle::powertrain::transmission::drivetype</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#endif  </span><span class="comment">// SIGNAL_POWERTRAIN_TRANSMISSION_SIGNAL_DRIVETYPE_H_</span></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype_html"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html">yoriito::vehicle::powertrain::transmission::drivetype</a></div><div class="ttdoc">Indicates the Vehicle.Powertrain.Transmission.DriveType signal.</div><div class="ttdef"><b>Definition</b> <a href="Signal__DriveType_8cc_source.html#l00026">Signal_DriveType.cc:26</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype_html_a8fb935131b4eed6d22049efbfd8cf654"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#a8fb935131b4eed6d22049efbfd8cf654">yoriito::vehicle::powertrain::transmission::drivetype::VEHICLE_POWERTRAIN_TRANSMISSION_DRIVETYPE</a></div><div class="ttdeci">constexpr const char * VEHICLE_POWERTRAIN_TRANSMISSION_DRIVETYPE</div><div class="ttdef"><b>Definition</b> <a href="Signal__DriveType_8h_source.html#l00048">Signal_DriveType.h:48</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype_html_af80320be3febe3e51094907bfd80f24c"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#af80320be3febe3e51094907bfd80f24c">yoriito::vehicle::powertrain::transmission::drivetype::Inspect</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; std::string &gt; &gt; Inspect()</div><div class="ttdef"><b>Definition</b> <a href="Signal__DriveType_8cc_source.html#l00063">Signal_DriveType.cc:63</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype_html_af845d401468b40ebc1f47d2a50002c49"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1transmission_1_1drivetype.html#af845d401468b40ebc1f47d2a50002c49">yoriito::vehicle::powertrain::transmission::drivetype::Get</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; std::string &gt; &gt; Get()</div><div class="ttdef"><b>Definition</b> <a href="Signal__DriveType_8cc_source.html#l00029">Signal_DriveType.cc:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

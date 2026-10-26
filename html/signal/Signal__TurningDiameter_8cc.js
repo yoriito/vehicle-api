@@ -1,5 +1,5 @@
 var Signal__TurningDiameter_8cc =
 [
-    [ "Get", "Signal__TurningDiameter_8cc.html#a6c5851436af32cf6d2e6b84375bb1e26", null ],
-    [ "Inspect", "Signal__TurningDiameter_8cc.html#ac50645aa07219c00f3cb06c28ed00313", null ]
+    [ "Get", "Signal__TurningDiameter_8cc.html#a4e28486c21678f1e6c2ce20510687b1f", null ],
+    [ "Inspect", "Signal__TurningDiameter_8cc.html#a9a722b125859c2046c4882f6447e3151", null ]
 ];

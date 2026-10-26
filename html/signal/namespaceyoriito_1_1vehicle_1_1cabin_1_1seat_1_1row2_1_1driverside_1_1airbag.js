@@ -1,18 +1,18 @@
 var namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag =
 [
-    [ " isdeployed_availability_sensor", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1_01isdeployed__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1_01isdeployed__availability__sensor.html#af9e5cc4ecf5509d269854035211fb442", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1_01isdeployed__availability__sensor.html#a2a377cb42ecc8d3c0a5667176f5f5c64", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1_01isdeployed__availability__sensor.html#a8abcf74bdf13918e060bee50dbbb9851", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1_01isdeployed__availability__sensor.html#a3a3c0084fee08780dbea481f6bac93fd", null ],
-      [ "VEHICLE_CABIN_SEAT_ROW2_DRIVERSIDE_AIRBAG_ISDEPLOYED_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1_01isdeployed__availability__sensor.html#ac4042c9b2b8b1a581db76121834e68df", null ]
-    ] ],
     [ "isdeployed", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#af51877e12dfb6ced0aa1eb65cfa32e8c", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#aa057e163541ac28bed58af3e34a947f7", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#a3135c303bf5732703598515cef86e8c9", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#abdbb4dae033845f6580af84172f37160", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#a08826949c7ae2ea517460b6f063aa85b", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#a3cfb1ff60246c9567632f2383dbe5ed9", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#aecb4af43b956973964fe1552fa539618", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#a8d44febb9b21ee71d1ec55b732743bc4", null ],
       [ "VEHICLE_CABIN_SEAT_ROW2_DRIVERSIDE_AIRBAG_ISDEPLOYED", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed.html#af319c150c5a06c9ed9df54d9beacbf27", null ]
     ] ],
-    [ "isdeployed_availability_sensor", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isdeployed__availability__sensor.html", null ]
+    [ "isenabled", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isenabled.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isenabled.html#ae72be27cd306ff13bb19faa7719c5fbb", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isenabled.html#a96998120eccab24da87f99a79ef3c499", null ],
+      [ "Set", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isenabled.html#a1dfc2f341e409e3ea44c86939b66448f", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isenabled.html#af7df8934d21a486a152397294491b44f", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isenabled.html#abd11002de4d11a629eab5e7da4158d49", null ],
+      [ "VEHICLE_CABIN_SEAT_ROW2_DRIVERSIDE_AIRBAG_ISENABLED", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1driverside_1_1airbag_1_1isenabled.html#a8231461a1958ef0d03bb493a3211cd18", null ]
+    ] ]
 ];

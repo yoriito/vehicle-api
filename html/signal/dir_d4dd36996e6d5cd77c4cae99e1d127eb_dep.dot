@@ -1,0 +1,13 @@
+digraph "/work/signal/types/internal"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_d63077a8b27dff0a3b88de716be34c38 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="types", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_d63077a8b27dff0a3b88de716be34c38.html",tooltip=""]
+  dir_d4dd36996e6d5cd77c4cae99e1d127eb [label="internal", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_d4dd36996e6d5cd77c4cae99e1d127eb.html",tooltip=""];
+  }
+}

@@ -1,7 +1,7 @@
 var Signal__HeartRate_8cc =
 [
-    [ "Get", "Signal__HeartRate_8cc.html#a6467b66f7559009826bbc36785b18e86", null ],
-    [ "Inspect", "Signal__HeartRate_8cc.html#a09125d72dab9a8a74bf04069062070c7", null ],
-    [ "Subscribe", "Signal__HeartRate_8cc.html#a03bd08ef7f79e3b872f262b20ee48b17", null ],
-    [ "UnSubscribe", "Signal__HeartRate_8cc.html#a1f359018d0bfa4b75e8e2dfd4076f018", null ]
+    [ "Get", "Signal__HeartRate_8cc.html#adbbc480438266941ccda1f2ffad81ea1", null ],
+    [ "Inspect", "Signal__HeartRate_8cc.html#a68767b08a008832afc5ae53dbd575251", null ],
+    [ "Subscribe", "Signal__HeartRate_8cc.html#a6de0f5e13628f05a712ec0fd2c5a2b57", null ],
+    [ "UnSubscribe", "Signal__HeartRate_8cc.html#ac9eb13be3cceb8f549c128ea59dc81ca", null ]
 ];

@@ -1,9 +1,0 @@
-<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/vehicleidentification/Signal_VIN.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/vehicleidentification/Signal_VIN.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="159,5,403,60"/>
-<area shape="rect" id="Node000002" href="$Signal__VIN_8cc.html" title=" " alt="" coords="5,108,256,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,70,172,110,169,106,229,65"/>
-<area shape="rect" id="Node000003" href="$VehicleIdentification_8h.html" title=" " alt="" coords="280,108,587,163"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="334,65,395,106,392,110,331,70"/>
-<area shape="rect" id="Node000004" href="$Vehicle_8h.html" title=" " alt="" coords="335,211,531,265"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="436,176,436,211,431,211,431,176"/>
-</map>

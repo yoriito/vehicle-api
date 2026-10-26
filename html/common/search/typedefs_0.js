@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['miscfiltervariant_0',['MiscFilterVariant',['../namespaceyoriito_1_1databroker_1_1filter.html#a3407a43b9096c34bef696a2208740dfd',1,'yoriito::databroker::filter']]]
+  ['const_5fiterator_0',['const_iterator',['../classyoriito_1_1StructData_1_1PropertiesView.html#a0dbb7c6c4c31bd83ca5414d85ef25a83',1,'yoriito::StructData::PropertiesView']]]
 ];

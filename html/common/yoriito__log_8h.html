@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - common: /home/runner/work/vehicle-api/vehicle-api/common/yoriito_log.h File Reference</title>
+<title>Yoriito Vehicle API - common: /work/common/yoriito_log.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,16 +99,17 @@ $(document).ready(function(){initNavTree('yoriito__log_8h.html',''); initResizab
   <div class="headertitle"><div class="title">yoriito_log.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string_view&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for yoriito_log.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="yoriito__log_8h__incl.svg" width="207" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="yoriito__log_8h__dep__incl.svg" width="100%" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="yoriito__log_8h_source.html">Go to the source code of this file.</a></p>
@@ -126,36 +127,36 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a739a0356036546345fba75ebeff75aec" id="r_a739a0356036546345fba75ebeff75aec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#a739a0356036546345fba75ebeff75aec">YORIITO_LOG_FATAL</a>(tag,  msg)&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7ca3d43e8cab3fca1e3e14404faf67b4">::yoriito::Log::Output</a>((tag), (msg), <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae66f945a3c2423ef09406cf09fa9de26">yoriito::LogLevel::kFatal</a>);}while(0)</td></tr>
+<tr class="memitem:a739a0356036546345fba75ebeff75aec" id="r_a739a0356036546345fba75ebeff75aec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#a739a0356036546345fba75ebeff75aec">YORIITO_LOG_FATAL</a>(tag,  msg)</td></tr>
 <tr class="separator:a739a0356036546345fba75ebeff75aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae52b89ca9a47009982fd0d21e0198c62" id="r_ae52b89ca9a47009982fd0d21e0198c62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#ae52b89ca9a47009982fd0d21e0198c62">YORIITO_LOG_ERROR</a>(tag,  msg)&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7ca3d43e8cab3fca1e3e14404faf67b4">::yoriito::Log::Output</a>((tag), (msg), <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae3587c730cc1aa530fa4ddc9c4204e97">yoriito::LogLevel::kError</a>);}while(0)</td></tr>
+<tr class="memitem:ae52b89ca9a47009982fd0d21e0198c62" id="r_ae52b89ca9a47009982fd0d21e0198c62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#ae52b89ca9a47009982fd0d21e0198c62">YORIITO_LOG_ERROR</a>(tag,  msg)</td></tr>
 <tr class="separator:ae52b89ca9a47009982fd0d21e0198c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4872a9aade38e132064f82b336e99473" id="r_a4872a9aade38e132064f82b336e99473"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#a4872a9aade38e132064f82b336e99473">YORIITO_LOG_WARN</a>(tag,  msg)&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7ca3d43e8cab3fca1e3e14404faf67b4">::yoriito::Log::Output</a>((tag), (msg), <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a61a920eb4a24199ec6a36dd90f2a30b7">yoriito::LogLevel::kWarn</a>);}while(0)</td></tr>
+<tr class="memitem:a4872a9aade38e132064f82b336e99473" id="r_a4872a9aade38e132064f82b336e99473"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#a4872a9aade38e132064f82b336e99473">YORIITO_LOG_WARN</a>(tag,  msg)</td></tr>
 <tr class="separator:a4872a9aade38e132064f82b336e99473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3ad93770126dc42685166a2725281fe" id="r_ae3ad93770126dc42685166a2725281fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#ae3ad93770126dc42685166a2725281fe">YORIITO_LOG_INFO</a>(tag,  msg)&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7ca3d43e8cab3fca1e3e14404faf67b4">::yoriito::Log::Output</a>((tag), (msg), <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a176a473e63c17ccdac91640c67f149bf">yoriito::LogLevel::kInfo</a>);}while(0)</td></tr>
+<tr class="memitem:ae3ad93770126dc42685166a2725281fe" id="r_ae3ad93770126dc42685166a2725281fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#ae3ad93770126dc42685166a2725281fe">YORIITO_LOG_INFO</a>(tag,  msg)</td></tr>
 <tr class="separator:ae3ad93770126dc42685166a2725281fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66a24499e20d2041966f46b376702cc7" id="r_a66a24499e20d2041966f46b376702cc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#a66a24499e20d2041966f46b376702cc7">YORIITO_LOG_DEBUG</a>(tag,  msg)&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7ca3d43e8cab3fca1e3e14404faf67b4">::yoriito::Log::Output</a>((tag), (msg), <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76abb53ce21b7c0b7c8a8f7860a41901d29">yoriito::LogLevel::kDebug</a>);}while(0)</td></tr>
+<tr class="memitem:a66a24499e20d2041966f46b376702cc7" id="r_a66a24499e20d2041966f46b376702cc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#a66a24499e20d2041966f46b376702cc7">YORIITO_LOG_DEBUG</a>(tag,  msg)</td></tr>
 <tr class="separator:a66a24499e20d2041966f46b376702cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02752b1d1f48c8821ddebbadf97ec917" id="r_a02752b1d1f48c8821ddebbadf97ec917"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#a02752b1d1f48c8821ddebbadf97ec917">YORIITO_LOG_INITIALIZE</a>(name)&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a23959211e944b13894bb17dfea3bce08">::yoriito::Log::Initialize</a>((name));}while(0)</td></tr>
+<tr class="memitem:a02752b1d1f48c8821ddebbadf97ec917" id="r_a02752b1d1f48c8821ddebbadf97ec917"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#a02752b1d1f48c8821ddebbadf97ec917">YORIITO_LOG_INITIALIZE</a>(name)</td></tr>
 <tr class="separator:a02752b1d1f48c8821ddebbadf97ec917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a748bb26fb31d900fa4f4f3c345e88dd7" id="r_a748bb26fb31d900fa4f4f3c345e88dd7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#a748bb26fb31d900fa4f4f3c345e88dd7">YORIITO_LOG_FINALIZE</a>()&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7174fd9c699aee4220f3a8375e35e225">::yoriito::Log::Finalize</a>();}while(0)</td></tr>
+<tr class="memitem:a748bb26fb31d900fa4f4f3c345e88dd7" id="r_a748bb26fb31d900fa4f4f3c345e88dd7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#a748bb26fb31d900fa4f4f3c345e88dd7">YORIITO_LOG_FINALIZE</a>()</td></tr>
 <tr class="separator:a748bb26fb31d900fa4f4f3c345e88dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf83a91aff025475379dd22da39a7126" id="r_aaf83a91aff025475379dd22da39a7126"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#aaf83a91aff025475379dd22da39a7126">YORIITO_LOG_SET_LEVEL</a>(level)&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a01a738825eea8939297175ce8e868d87">::yoriito::Log::SetLogLevel</a>((level));}while(0)</td></tr>
+<tr class="memitem:aaf83a91aff025475379dd22da39a7126" id="r_aaf83a91aff025475379dd22da39a7126"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yoriito__log_8h.html#aaf83a91aff025475379dd22da39a7126">YORIITO_LOG_SET_LEVEL</a>(level)</td></tr>
 <tr class="memdesc:aaf83a91aff025475379dd22da39a7126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current log level. If not set, the default current log level is "INFO".  <br /></td></tr>
 <tr class="separator:aaf83a91aff025475379dd22da39a7126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a71d40fb3f6c31965ebc14965f33e4f76" id="r_a71d40fb3f6c31965ebc14965f33e4f76"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76">yoriito::LogLevel</a> : int { <br />
-&#160;&#160;<a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae66f945a3c2423ef09406cf09fa9de26">yoriito::kFatal</a>
-, <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae3587c730cc1aa530fa4ddc9c4204e97">yoriito::kError</a>
-, <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a61a920eb4a24199ec6a36dd90f2a30b7">yoriito::kWarn</a>
-, <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a176a473e63c17ccdac91640c67f149bf">yoriito::kInfo</a>
+<tr class="memitem:ab216c265caacab238c33c00f5b042eca" id="r_ab216c265caacab238c33c00f5b042eca"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042eca">yoriito::LogLevel</a> : int32_t { <br />
+&#160;&#160;<a class="el" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaae66f945a3c2423ef09406cf09fa9de26">yoriito::kFatal</a>
+, <a class="el" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaae3587c730cc1aa530fa4ddc9c4204e97">yoriito::kError</a>
+, <a class="el" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaa61a920eb4a24199ec6a36dd90f2a30b7">yoriito::kWarn</a>
+, <a class="el" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaa176a473e63c17ccdac91640c67f149bf">yoriito::kInfo</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76abb53ce21b7c0b7c8a8f7860a41901d29">yoriito::kDebug</a>
+&#160;&#160;<a class="el" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaabb53ce21b7c0b7c8a8f7860a41901d29">yoriito::kDebug</a>
 <br />
  }</td></tr>
-<tr class="separator:a71d40fb3f6c31965ebc14965f33e4f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab216c265caacab238c33c00f5b042eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a66a24499e20d2041966f46b376702cc7" name="a66a24499e20d2041966f46b376702cc7"></a>
@@ -179,12 +180,16 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7ca3d43e8cab3fca1e3e14404faf67b4">::yoriito::Log::Output</a>((tag), (msg), <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76abb53ce21b7c0b7c8a8f7860a41901d29">yoriito::LogLevel::kDebug</a>);}while(0)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00214">214</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                               \</div>
+<div class="line">    ::yoriito::Log::Output((tag), (msg), <a class="code hl_enumvalue" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaabb53ce21b7c0b7c8a8f7860a41901d29">yoriito::LogLevel::kDebug</a>); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+<div class="ttc" id="anamespaceyoriito_html_ab216c265caacab238c33c00f5b042ecaabb53ce21b7c0b7c8a8f7860a41901d29"><div class="ttname"><a href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaabb53ce21b7c0b7c8a8f7860a41901d29">yoriito::LogLevel::kDebug</a></div><div class="ttdeci">@ kDebug</div><div class="ttdoc">Detailed debug information for programmers.</div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00229">229</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
 
 </div>
 </div>
@@ -209,12 +214,16 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7ca3d43e8cab3fca1e3e14404faf67b4">::yoriito::Log::Output</a>((tag), (msg), <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae3587c730cc1aa530fa4ddc9c4204e97">yoriito::LogLevel::kError</a>);}while(0)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00166">166</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                               \</div>
+<div class="line">    ::yoriito::Log::Output((tag), (msg), <a class="code hl_enumvalue" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaae3587c730cc1aa530fa4ddc9c4204e97">yoriito::LogLevel::kError</a>); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+<div class="ttc" id="anamespaceyoriito_html_ab216c265caacab238c33c00f5b042ecaae3587c730cc1aa530fa4ddc9c4204e97"><div class="ttname"><a href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaae3587c730cc1aa530fa4ddc9c4204e97">yoriito::LogLevel::kError</a></div><div class="ttdeci">@ kError</div><div class="ttdoc">Error affecting correct functionality.</div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00172">172</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
 
 </div>
 </div>
@@ -239,12 +248,16 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7ca3d43e8cab3fca1e3e14404faf67b4">::yoriito::Log::Output</a>((tag), (msg), <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76ae66f945a3c2423ef09406cf09fa9de26">yoriito::LogLevel::kFatal</a>);}while(0)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00150">150</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                               \</div>
+<div class="line">    ::yoriito::Log::Output((tag), (msg), <a class="code hl_enumvalue" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaae66f945a3c2423ef09406cf09fa9de26">yoriito::LogLevel::kFatal</a>); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+<div class="ttc" id="anamespaceyoriito_html_ab216c265caacab238c33c00f5b042ecaae66f945a3c2423ef09406cf09fa9de26"><div class="ttname"><a href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaae66f945a3c2423ef09406cf09fa9de26">yoriito::LogLevel::kFatal</a></div><div class="ttdeci">@ kFatal</div><div class="ttdoc">Fatal error. Should be extremely rare.</div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00153">153</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
 
 </div>
 </div>
@@ -258,12 +271,15 @@ Enumerations</h2></td></tr>
           <td class="memname">#define YORIITO_LOG_FINALIZE</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7174fd9c699aee4220f3a8375e35e225">::yoriito::Log::Finalize</a>();}while(0)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00244">244</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                          \</div>
+<div class="line">    ::yoriito::Log::Finalize(); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00268">268</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
 
 </div>
 </div>
@@ -288,12 +304,16 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7ca3d43e8cab3fca1e3e14404faf67b4">::yoriito::Log::Output</a>((tag), (msg), <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a176a473e63c17ccdac91640c67f149bf">yoriito::LogLevel::kInfo</a>);}while(0)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00198">198</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                              \</div>
+<div class="line">    ::yoriito::Log::Output((tag), (msg), <a class="code hl_enumvalue" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaa176a473e63c17ccdac91640c67f149bf">yoriito::LogLevel::kInfo</a>); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+<div class="ttc" id="anamespaceyoriito_html_ab216c265caacab238c33c00f5b042ecaa176a473e63c17ccdac91640c67f149bf"><div class="ttname"><a href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaa176a473e63c17ccdac91640c67f149bf">yoriito::LogLevel::kInfo</a></div><div class="ttdeci">@ kInfo</div><div class="ttdoc">Important information to help overall understanding.</div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00210">210</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
 
 </div>
 </div>
@@ -308,12 +328,15 @@ Enumerations</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a23959211e944b13894bb17dfea3bce08">::yoriito::Log::Initialize</a>((name));}while(0)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00229">229</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                  \</div>
+<div class="line">    ::yoriito::Log::Initialize((name)); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00249">249</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
 
 </div>
 </div>
@@ -328,13 +351,16 @@ Enumerations</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">level</td><td>)</td>
-          <td>&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a01a738825eea8939297175ce8e868d87">::yoriito::Log::SetLogLevel</a>((level));}while(0)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                    \</div>
+<div class="line">    ::yoriito::Log::SetLogLevel((level)); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+</div><!-- fragment -->
 <p>Set the current log level. If not set, the default current log level is "INFO". </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000191">Deprecated:</a></b></dt><dd><ul>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000302">Deprecated:</a></b></dt><dd><ul>
 <li></li>
 </ul>
 </dd></dl>
@@ -354,7 +380,7 @@ Enumerations</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>- <div class="fragment"><div class="line">-</div>
 </div><!-- fragment --> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00258">258</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00286">286</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
 
 </div>
 </div>
@@ -379,12 +405,16 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;do{<a class="el" href="classyoriito_1_1Log.html#a7ca3d43e8cab3fca1e3e14404faf67b4">::yoriito::Log::Output</a>((tag), (msg), <a class="el" href="namespaceyoriito.html#a71d40fb3f6c31965ebc14965f33e4f76a61a920eb4a24199ec6a36dd90f2a30b7">yoriito::LogLevel::kWarn</a>);}while(0)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00182">182</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                              \</div>
+<div class="line">    ::yoriito::Log::Output((tag), (msg), <a class="code hl_enumvalue" href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaa61a920eb4a24199ec6a36dd90f2a30b7">yoriito::LogLevel::kWarn</a>); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+<div class="ttc" id="anamespaceyoriito_html_ab216c265caacab238c33c00f5b042ecaa61a920eb4a24199ec6a36dd90f2a30b7"><div class="ttname"><a href="namespaceyoriito.html#ab216c265caacab238c33c00f5b042ecaa61a920eb4a24199ec6a36dd90f2a30b7">yoriito::LogLevel::kWarn</a></div><div class="ttdeci">@ kWarn</div><div class="ttdoc">Warning when correct operation cannot be guaranteed.</div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="yoriito__log_8h_source.html#l00191">191</a> of file <a class="el" href="yoriito__log_8h_source.html">yoriito_log.h</a>.</p>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/body/lights/parking/Signal_IsDefect.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/body/lights/parking/Signal_IsDefect.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('parking_2Signal__IsDefect_8h.html','')
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsDefect.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="parking_2Signal__IsDefect_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="parking_2Signal__IsDefect_8h__dep__incl.svg" width="446" height="506"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="parking_2Signal__IsDefect_8h_source.html">Go to the source code of this file.</a></p>
@@ -137,14 +141,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aae7e2a0ffcce13817fa73cc6075e2990" id="r_aae7e2a0ffcce13817fa73cc6075e2990"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1parking_1_1isdefect.html#aae7e2a0ffcce13817fa73cc6075e2990">yoriito::vehicle::body::lights::parking::isdefect::Get</a> ()</td></tr>
-<tr class="separator:aae7e2a0ffcce13817fa73cc6075e2990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e23bdbe7e5b09a48ff10f3fa07a330" id="r_ab3e23bdbe7e5b09a48ff10f3fa07a330"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1parking_1_1isdefect.html#ab3e23bdbe7e5b09a48ff10f3fa07a330">yoriito::vehicle::body::lights::parking::isdefect::Subscribe</a> ()</td></tr>
-<tr class="separator:ab3e23bdbe7e5b09a48ff10f3fa07a330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b1826e0c7f7715016cb209168d14e11" id="r_a9b1826e0c7f7715016cb209168d14e11"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1parking_1_1isdefect.html#a9b1826e0c7f7715016cb209168d14e11">yoriito::vehicle::body::lights::parking::isdefect::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a9b1826e0c7f7715016cb209168d14e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade769bbd7946afd01a8ac84b31de88ba" id="r_ade769bbd7946afd01a8ac84b31de88ba"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1parking_1_1isdefect.html#ade769bbd7946afd01a8ac84b31de88ba">yoriito::vehicle::body::lights::parking::isdefect::Inspect</a> ()</td></tr>
-<tr class="separator:ade769bbd7946afd01a8ac84b31de88ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa26697b3e01b779d576c0fb37ccd76" id="r_a5aa26697b3e01b779d576c0fb37ccd76"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1parking_1_1isdefect.html#a5aa26697b3e01b779d576c0fb37ccd76">yoriito::vehicle::body::lights::parking::isdefect::Get</a> ()</td></tr>
+<tr class="separator:a5aa26697b3e01b779d576c0fb37ccd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328302d77e0f687d77da3d03bb2ca683" id="r_a328302d77e0f687d77da3d03bb2ca683"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1parking_1_1isdefect.html#a328302d77e0f687d77da3d03bb2ca683">yoriito::vehicle::body::lights::parking::isdefect::Subscribe</a> ()</td></tr>
+<tr class="separator:a328302d77e0f687d77da3d03bb2ca683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefbf36487f2e0c2a0003d39455b836e9" id="r_aefbf36487f2e0c2a0003d39455b836e9"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1parking_1_1isdefect.html#aefbf36487f2e0c2a0003d39455b836e9">yoriito::vehicle::body::lights::parking::isdefect::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:aefbf36487f2e0c2a0003d39455b836e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385336d81e2128de494815a85867a96f" id="r_a385336d81e2128de494815a85867a96f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1lights_1_1parking_1_1isdefect.html#a385336d81e2128de494815a85867a96f">yoriito::vehicle::body::lights::parking::isdefect::Inspect</a> ()</td></tr>
+<tr class="separator:a385336d81e2128de494815a85867a96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

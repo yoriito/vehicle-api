@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/adas/Signal_PowerOptimizeLevel.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/adas/Signal_PowerOptimizeLevel.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,16 +106,20 @@ $(document).ready(function(){initNavTree('adas_2Signal__PowerOptimizeLevel_8h.ht
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_PowerOptimizeLevel.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="adas_2Signal__PowerOptimizeLevel_8h__incl.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="adas_2Signal__PowerOptimizeLevel_8h__dep__incl.svg" width="491" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="adas_2Signal__PowerOptimizeLevel_8h_source.html">Go to the source code of this file.</a></p>
@@ -134,16 +138,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a70f110106b178e77cebc52fd537ef0f0" id="r_a70f110106b178e77cebc52fd537ef0f0"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1poweroptimizelevel.html#a70f110106b178e77cebc52fd537ef0f0">yoriito::vehicle::adas::poweroptimizelevel::Get</a> ()</td></tr>
-<tr class="separator:a70f110106b178e77cebc52fd537ef0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98fe077e45b693a4e275b1ab14bbbd8" id="r_aa98fe077e45b693a4e275b1ab14bbbd8"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1poweroptimizelevel.html#aa98fe077e45b693a4e275b1ab14bbbd8">yoriito::vehicle::adas::poweroptimizelevel::Get</a> ()</td></tr>
+<tr class="separator:aa98fe077e45b693a4e275b1ab14bbbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79325843cb8369e2461fe5992636287a" id="r_a79325843cb8369e2461fe5992636287a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1poweroptimizelevel.html#a79325843cb8369e2461fe5992636287a">yoriito::vehicle::adas::poweroptimizelevel::Set</a> (const uint8_t &amp;value)</td></tr>
 <tr class="separator:a79325843cb8369e2461fe5992636287a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acea606a7610319438ee66ee66b1bffbb" id="r_acea606a7610319438ee66ee66b1bffbb"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1poweroptimizelevel.html#acea606a7610319438ee66ee66b1bffbb">yoriito::vehicle::adas::poweroptimizelevel::Subscribe</a> ()</td></tr>
-<tr class="separator:acea606a7610319438ee66ee66b1bffbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad874a8e603f1647265544bb8947f434a" id="r_ad874a8e603f1647265544bb8947f434a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1poweroptimizelevel.html#ad874a8e603f1647265544bb8947f434a">yoriito::vehicle::adas::poweroptimizelevel::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:ad874a8e603f1647265544bb8947f434a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c02f8be2608c1f5ba4b95c51c219b7" id="r_af2c02f8be2608c1f5ba4b95c51c219b7"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1poweroptimizelevel.html#af2c02f8be2608c1f5ba4b95c51c219b7">yoriito::vehicle::adas::poweroptimizelevel::Inspect</a> ()</td></tr>
-<tr class="separator:af2c02f8be2608c1f5ba4b95c51c219b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e6e9232efbf4e42ef0db7964223cc4" id="r_a76e6e9232efbf4e42ef0db7964223cc4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1poweroptimizelevel.html#a76e6e9232efbf4e42ef0db7964223cc4">yoriito::vehicle::adas::poweroptimizelevel::Subscribe</a> ()</td></tr>
+<tr class="separator:a76e6e9232efbf4e42ef0db7964223cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac818e6187af38e6648cd2d34f430b4ad" id="r_ac818e6187af38e6648cd2d34f430b4ad"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1poweroptimizelevel.html#ac818e6187af38e6648cd2d34f430b4ad">yoriito::vehicle::adas::poweroptimizelevel::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; uint8_t &gt; subscription_context)</td></tr>
+<tr class="separator:ac818e6187af38e6648cd2d34f430b4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef48296ceda6aebbe542eb7f267fed9" id="r_aaef48296ceda6aebbe542eb7f267fed9"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1poweroptimizelevel.html#aaef48296ceda6aebbe542eb7f267fed9">yoriito::vehicle::adas::poweroptimizelevel::Inspect</a> ()</td></tr>
+<tr class="separator:aaef48296ceda6aebbe542eb7f267fed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

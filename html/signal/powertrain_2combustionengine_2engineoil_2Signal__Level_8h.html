@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/combustionengine/engineoil/Signal_Level.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/combustionengine/engineoil/Signal_Level.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,16 +106,20 @@ $(document).ready(function(){initNavTree('powertrain_2combustionengine_2engineoi
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Level.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="powertrain_2combustionengine_2engineoil_2Signal__Level_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="powertrain_2combustionengine_2engineoil_2Signal__Level_8h__dep__incl.svg" width="475" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="powertrain_2combustionengine_2engineoil_2Signal__Level_8h_source.html">Go to the source code of this file.</a></p>
@@ -138,14 +142,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a629e2addc6362a0431d56a68c03fe223" id="r_a629e2addc6362a0431d56a68c03fe223"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1engineoil_1_1level.html#a629e2addc6362a0431d56a68c03fe223">yoriito::vehicle::powertrain::combustionengine::engineoil::level::Get</a> ()</td></tr>
-<tr class="separator:a629e2addc6362a0431d56a68c03fe223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae51ed42f60881a38ea76e23fde88e279" id="r_ae51ed42f60881a38ea76e23fde88e279"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1engineoil_1_1level.html#ae51ed42f60881a38ea76e23fde88e279">yoriito::vehicle::powertrain::combustionengine::engineoil::level::Subscribe</a> ()</td></tr>
-<tr class="separator:ae51ed42f60881a38ea76e23fde88e279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1de7d76890b5c5ee8ffe03144ce473f3" id="r_a1de7d76890b5c5ee8ffe03144ce473f3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1engineoil_1_1level.html#a1de7d76890b5c5ee8ffe03144ce473f3">yoriito::vehicle::powertrain::combustionengine::engineoil::level::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a1de7d76890b5c5ee8ffe03144ce473f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d1f2b81cd1c035c8edb08cc7469544e" id="r_a7d1f2b81cd1c035c8edb08cc7469544e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1engineoil_1_1level.html#a7d1f2b81cd1c035c8edb08cc7469544e">yoriito::vehicle::powertrain::combustionengine::engineoil::level::Inspect</a> ()</td></tr>
-<tr class="separator:a7d1f2b81cd1c035c8edb08cc7469544e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe1856a75ab3b17380f52b28d3bc63d0" id="r_abe1856a75ab3b17380f52b28d3bc63d0"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1engineoil_1_1level.html#abe1856a75ab3b17380f52b28d3bc63d0">yoriito::vehicle::powertrain::combustionengine::engineoil::level::Get</a> ()</td></tr>
+<tr class="separator:abe1856a75ab3b17380f52b28d3bc63d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ef5a75743facfad47dce23287433fa" id="r_a19ef5a75743facfad47dce23287433fa"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1engineoil_1_1level.html#a19ef5a75743facfad47dce23287433fa">yoriito::vehicle::powertrain::combustionengine::engineoil::level::Subscribe</a> ()</td></tr>
+<tr class="separator:a19ef5a75743facfad47dce23287433fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf3db78b5f58da9664c2bc4623358983" id="r_abf3db78b5f58da9664c2bc4623358983"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1engineoil_1_1level.html#abf3db78b5f58da9664c2bc4623358983">yoriito::vehicle::powertrain::combustionengine::engineoil::level::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; std::string &gt; subscription_context)</td></tr>
+<tr class="separator:abf3db78b5f58da9664c2bc4623358983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f9db9d926c49e553657fc0d5571660f" id="r_a4f9db9d926c49e553657fc0d5571660f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1combustionengine_1_1engineoil_1_1level.html#a4f9db9d926c49e553657fc0d5571660f">yoriito::vehicle::powertrain::combustionengine::engineoil::level::Inspect</a> ()</td></tr>
+<tr class="separator:a4f9db9d926c49e553657fc0d5571660f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

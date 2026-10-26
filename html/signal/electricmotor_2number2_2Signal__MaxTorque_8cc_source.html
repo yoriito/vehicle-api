@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/electricmotor/number2/Signal_MaxTorque.cc Source File</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/electricmotor/number2/Signal_MaxTorque.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -123,75 +123,86 @@ $(document).ready(function(){initNavTree('electricmotor_2number2_2Signal__MaxTor
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// DataType  : uint16</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Unit      : Nm</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">//-------------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html">   25</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html">yoriito::vehicle::powertrain::electricmotor::number2::maxtorque</a> {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a237e564af97e083458b09b0bd05fa18e">   27</a></span>  yoriito::Result&lt;uint16_t&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a237e564af97e083458b09b0bd05fa18e">Get</a>() {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    YORIITO_LOG_DEBUG(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, <span class="stringliteral">&quot;Entering function [Get].&quot;</span>);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    yoriito::databroker::DataBrokerConsumer* consumer =</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    yoriito::databroker::ConsumerGetRequest get_request(</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a09ae084c3a71f0cc2d686e1993f241d4">VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER2_MAXTORQUE</a>);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    yoriito::Result&lt;yoriito::databroker::ConsumerGetResponse&gt; ret =</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      consumer-&gt;Get(get_request);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">if</span> (!ret.IsOk()) {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      std::unique_ptr&lt;yoriito::ErrorType&gt; err_ptr = ret.TakeErr();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      YORIITO_LOG_ERROR(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, err_ptr-&gt;Message());</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="keywordflow">return</span> yoriito::Result&lt;uint16_t&gt;::Err(std::move(err_ptr));</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">auto</span> response = ret.TakeOk().value();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">if</span> (response.GetDataPoints().empty()) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      YORIITO_LOG_ERROR(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        std::string(yoriito::ErrorType::to_msg(</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                          yoriito::ErrorCode::ERROR_NODATA)));</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keywordflow">return</span> yoriito::Result&lt;uint16_t&gt;::Err(</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        std::make_unique&lt;yoriito::CommonError&gt;(</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>          yoriito::ErrorCode::ERROR_NODATA));</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; data_point = response.GetDataPoints().front();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">if</span> (!data_point.IsAvailableSensor()) {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      YORIITO_LOG_ERROR(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>,</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        std::string(yoriito::ErrorType::to_msg(</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                          yoriito::ErrorCode::ERROR_UNAVAILABLE)));</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="keywordflow">return</span> yoriito::Result&lt;uint16_t&gt;::Err(</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// clang-format off</span></div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html">   26</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html">yoriito::vehicle::powertrain::electricmotor::number2::maxtorque</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#ad7ab36d9466d38b6f0ac69462c58f87c">   29</a></span>yoriito::Result&lt;yoriito::signal::SignalGetDataPoint&lt;uint16_t&gt;&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#ad7ab36d9466d38b6f0ac69462c58f87c">Get</a>() {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  YORIITO_LOG_DEBUG(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, <span class="stringliteral">&quot;Entering function [Get].&quot;</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  yoriito::databroker::DataBrokerConsumer* consumer =</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  yoriito::databroker::ConsumerGetRequest request(</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a09ae084c3a71f0cc2d686e1993f241d4">VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER2_MAXTORQUE</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  yoriito::Result&lt;yoriito::databroker::ConsumerGetResponse&gt; ret =</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      consumer-&gt;Get(request);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordflow">if</span> (!ret.IsOk()) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    std::unique_ptr&lt;yoriito::ErrorType&gt; err_ptr = ret.TakeErr();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    YORIITO_LOG_ERROR(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, err_ptr-&gt;Message());</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> yoriito::Result&lt;yoriito::signal::SignalGetDataPoint&lt;uint16_t&gt;&gt;::Err(</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        std::move(err_ptr));</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">auto</span> response = ret.TakeOk().value();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">if</span> (response.GetDataPoints().empty()) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    YORIITO_LOG_ERROR(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, std::string(yoriito::ErrorType::to_msg(</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                                            yoriito::ErrorCode::ERROR_NODATA)));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> yoriito::Result&lt;yoriito::signal::SignalGetDataPoint&lt;uint16_t&gt;&gt;::Err(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        std::make_unique&lt;yoriito::CommonError&gt;(</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            yoriito::ErrorCode::ERROR_NODATA));</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; data_point = response.GetDataPoints().front();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordflow">if</span> (!std::holds_alternative&lt;uint16_t&gt;(data_point.GetData())) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    YORIITO_LOG_ERROR(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, <span class="stringliteral">&quot;Unexpected data type&quot;</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> yoriito::Result&lt;yoriito::signal::SignalGetDataPoint&lt;uint16_t&gt;&gt;::Err(</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        std::make_unique&lt;yoriito::CommonError&gt;(</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>          yoriito::ErrorCode::ERROR_UNAVAILABLE));</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">auto</span> data = data_point.GetData();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    YORIITO_LOG_DEBUG(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, <span class="stringliteral">&quot;Exiting function [Get].&quot;</span>);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> yoriito::Result&lt;uint16_t&gt;::Ok(std::get&lt;uint16_t&gt;(data));</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            yoriito::ErrorCode::ERROR_BADMSG));</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  YORIITO_LOG_DEBUG(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, <span class="stringliteral">&quot;Exiting function [Get].&quot;</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordflow">return</span> yoriito::Result&lt;yoriito::signal::SignalGetDataPoint&lt;uint16_t&gt;&gt;::Ok(</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      data_point);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a84cd4ae511ce125ac7b08b9b5bbc640b">   64</a></span>  yoriito::Result&lt;yoriito::databroker::ConsumerInspectResponse&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a84cd4ae511ce125ac7b08b9b5bbc640b">Inspect</a>() {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    YORIITO_LOG_DEBUG(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, <span class="stringliteral">&quot;Entering function [Inspect].&quot;</span>);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    yoriito::databroker::DataBrokerConsumer* consumer =</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    yoriito::databroker::ConsumerInspectRequest inspect_request(</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a09ae084c3a71f0cc2d686e1993f241d4">VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER2_MAXTORQUE</a>);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    yoriito::Result&lt;yoriito::databroker::ConsumerInspectResponse&gt; inspect_ret =</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      consumer-&gt;Inspect(inspect_request);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span> (!inspect_ret.IsOk()) {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      std::unique_ptr&lt;yoriito::ErrorType&gt; err_ptr = inspect_ret.TakeErr();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      YORIITO_LOG_ERROR(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, err_ptr-&gt;Message());</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      <span class="keywordflow">return</span> yoriito::Result&lt;yoriito::databroker::ConsumerInspectResponse&gt;::Err(</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        std::move(err_ptr));</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    YORIITO_LOG_DEBUG(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, <span class="stringliteral">&quot;Exiting function [Inspect].&quot;</span>);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> inspect_ret;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#ae14091fd0ef5e367c96eb6b1093eed5c">   63</a></span>yoriito::Result&lt;yoriito::signal::SignalInspectResponse&lt;uint16_t&gt;&gt; <a class="code hl_function" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#ae14091fd0ef5e367c96eb6b1093eed5c">Inspect</a>() {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  YORIITO_LOG_DEBUG(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, <span class="stringliteral">&quot;Entering function [Inspect].&quot;</span>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  yoriito::databroker::DataBrokerConsumer* consumer =</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  yoriito::databroker::ConsumerInspectRequest request(</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <a class="code hl_variable" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a09ae084c3a71f0cc2d686e1993f241d4">VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER2_MAXTORQUE</a>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  yoriito::Result&lt;yoriito::databroker::ConsumerInspectResponse&gt; ret =</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      consumer-&gt;Inspect(request);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">if</span> (!ret.IsOk()) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    std::unique_ptr&lt;yoriito::ErrorType&gt; err_ptr = ret.TakeErr();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    YORIITO_LOG_ERROR(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, err_ptr-&gt;Message());</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> yoriito::Result&lt;yoriito::signal::SignalInspectResponse&lt;uint16_t&gt;&gt;::</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        Err(std::move(err_ptr));</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keyword">auto</span> response = ret.TakeOk();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordflow">if</span> (response.value().GetDataPoints().empty()) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    YORIITO_LOG_ERROR(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, std::string(yoriito::ErrorType::to_msg(</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                                            yoriito::ErrorCode::ERROR_NODATA)));</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span> yoriito::Result&lt;yoriito::signal::SignalInspectResponse&lt;uint16_t&gt;&gt;::</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        Err(std::make_unique&lt;yoriito::CommonError&gt;(</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            yoriito::ErrorCode::ERROR_NODATA));</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  YORIITO_LOG_DEBUG(<span class="stringliteral">&quot;SAPI_SignalAPI&quot;</span>, <span class="stringliteral">&quot;Exiting function [Inspect].&quot;</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordflow">return</span> yoriito::Result&lt;yoriito::signal::SignalInspectResponse&lt;uint16_t&gt;&gt;::Ok(</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      yoriito::signal::SignalInspectResponse&lt;uint16_t&gt;(</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>          std::move(response.value())));</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
 </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}  <span class="comment">// namespace yoriito::vehicle::powertrain::electricmotor::number2::maxtorque</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}  <span class="comment">// namespace yoriito::vehicle::powertrain::electricmotor::number2::maxtorque</span></div>
 </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">// clang-format on</span></div>
 <div class="ttc" id="aelectricmotor_2number4_2Signal__MaxTorque_8h_html"><div class="ttname"><a href="electricmotor_2number4_2Signal__MaxTorque_8h.html">Signal_MaxTorque.h</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque_html"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html">yoriito::vehicle::powertrain::electricmotor::number2::maxtorque</a></div><div class="ttdoc">Indicates the Vehicle.Powertrain.ElectricMotor.Number2.MaxTorque signal.</div><div class="ttdef"><b>Definition</b> <a href="electricmotor_2number2_2Signal__MaxTorque_8cc_source.html#l00025">Signal_MaxTorque.cc:25</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque_html_a09ae084c3a71f0cc2d686e1993f241d4"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a09ae084c3a71f0cc2d686e1993f241d4">yoriito::vehicle::powertrain::electricmotor::number2::maxtorque::VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER2_MAXTORQUE</a></div><div class="ttdeci">constexpr const char * VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER2_MAXTORQUE</div><div class="ttdef"><b>Definition</b> <a href="electricmotor_2number2_2Signal__MaxTorque_8h_source.html#l00041">Signal_MaxTorque.h:41</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque_html_a237e564af97e083458b09b0bd05fa18e"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a237e564af97e083458b09b0bd05fa18e">yoriito::vehicle::powertrain::electricmotor::number2::maxtorque::Get</a></div><div class="ttdeci">yoriito::Result&lt; uint16_t &gt; Get()</div><div class="ttdef"><b>Definition</b> <a href="electricmotor_2number2_2Signal__MaxTorque_8cc_source.html#l00027">Signal_MaxTorque.cc:27</a></div></div>
-<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque_html_a84cd4ae511ce125ac7b08b9b5bbc640b"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a84cd4ae511ce125ac7b08b9b5bbc640b">yoriito::vehicle::powertrain::electricmotor::number2::maxtorque::Inspect</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt; Inspect()</div><div class="ttdef"><b>Definition</b> <a href="electricmotor_2number2_2Signal__MaxTorque_8cc_source.html#l00064">Signal_MaxTorque.cc:64</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque_html"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html">yoriito::vehicle::powertrain::electricmotor::number2::maxtorque</a></div><div class="ttdoc">Indicates the Vehicle.Powertrain.ElectricMotor.Number2.MaxTorque signal.</div><div class="ttdef"><b>Definition</b> <a href="electricmotor_2number2_2Signal__MaxTorque_8cc_source.html#l00026">Signal_MaxTorque.cc:26</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque_html_a09ae084c3a71f0cc2d686e1993f241d4"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#a09ae084c3a71f0cc2d686e1993f241d4">yoriito::vehicle::powertrain::electricmotor::number2::maxtorque::VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER2_MAXTORQUE</a></div><div class="ttdeci">constexpr const char * VEHICLE_POWERTRAIN_ELECTRICMOTOR_NUMBER2_MAXTORQUE</div><div class="ttdef"><b>Definition</b> <a href="electricmotor_2number2_2Signal__MaxTorque_8h_source.html#l00048">Signal_MaxTorque.h:48</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque_html_ad7ab36d9466d38b6f0ac69462c58f87c"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#ad7ab36d9466d38b6f0ac69462c58f87c">yoriito::vehicle::powertrain::electricmotor::number2::maxtorque::Get</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint16_t &gt; &gt; Get()</div><div class="ttdef"><b>Definition</b> <a href="electricmotor_2number2_2Signal__MaxTorque_8cc_source.html#l00029">Signal_MaxTorque.cc:29</a></div></div>
+<div class="ttc" id="anamespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque_html_ae14091fd0ef5e367c96eb6b1093eed5c"><div class="ttname"><a href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1electricmotor_1_1number2_1_1maxtorque.html#ae14091fd0ef5e367c96eb6b1093eed5c">yoriito::vehicle::powertrain::electricmotor::number2::maxtorque::Inspect</a></div><div class="ttdeci">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint16_t &gt; &gt; Inspect()</div><div class="ttdef"><b>Definition</b> <a href="electricmotor_2number2_2Signal__MaxTorque_8cc_source.html#l00063">Signal_MaxTorque.cc:63</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,8 +1,0 @@
-var Signal__Heading_8h =
-[
-    [ "Get", "Signal__Heading_8h.html#a1b369773adf7f9558c2aa091fd31c1fb", null ],
-    [ "Inspect", "Signal__Heading_8h.html#a007d04cf99a77d8767fd81a1c293b2b6", null ],
-    [ "Subscribe", "Signal__Heading_8h.html#a45120e1dc5f36d1d388d28aaadf16338", null ],
-    [ "UnSubscribe", "Signal__Heading_8h.html#a6119e344ec108eb548b701923c41769f", null ],
-    [ "VEHICLE_CURRENTLOCATION_VEHICLELOCATIONTYPE_HEADING", "Signal__Heading_8h.html#a7c3936b2b11aa4fcdf7797cae3659c8f", null ]
-];

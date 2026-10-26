@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/cabin/Signal_IsWindowChildLockEngaged.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/cabin/Signal_IsWindowChildLockEngaged.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,16 +106,20 @@ $(document).ready(function(){initNavTree('Signal__IsWindowChildLockEngaged_8h.ht
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsWindowChildLockEngaged.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__IsWindowChildLockEngaged_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__IsWindowChildLockEngaged_8h__dep__incl.svg" width="470" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__IsWindowChildLockEngaged_8h_source.html">Go to the source code of this file.</a></p>
@@ -134,16 +138,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a58abdfc6e4662c6f5c1e086c55dc496c" id="r_a58abdfc6e4662c6f5c1e086c55dc496c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1iswindowchildlockengaged.html#a58abdfc6e4662c6f5c1e086c55dc496c">yoriito::vehicle::cabin::iswindowchildlockengaged::Get</a> ()</td></tr>
-<tr class="separator:a58abdfc6e4662c6f5c1e086c55dc496c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f03dbdc22b4c71b7974ea0796b92adf" id="r_a7f03dbdc22b4c71b7974ea0796b92adf"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1iswindowchildlockengaged.html#a7f03dbdc22b4c71b7974ea0796b92adf">yoriito::vehicle::cabin::iswindowchildlockengaged::Get</a> ()</td></tr>
+<tr class="separator:a7f03dbdc22b4c71b7974ea0796b92adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd607c2e9754d36c0833597eb54b037" id="r_aafd607c2e9754d36c0833597eb54b037"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1iswindowchildlockengaged.html#aafd607c2e9754d36c0833597eb54b037">yoriito::vehicle::cabin::iswindowchildlockengaged::Set</a> (const bool &amp;value)</td></tr>
 <tr class="separator:aafd607c2e9754d36c0833597eb54b037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65f75daeb69cc96ced897d7706d9ff11" id="r_a65f75daeb69cc96ced897d7706d9ff11"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1iswindowchildlockengaged.html#a65f75daeb69cc96ced897d7706d9ff11">yoriito::vehicle::cabin::iswindowchildlockengaged::Subscribe</a> ()</td></tr>
-<tr class="separator:a65f75daeb69cc96ced897d7706d9ff11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d4da29330905448d8ea27b4ebd35799" id="r_a0d4da29330905448d8ea27b4ebd35799"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1iswindowchildlockengaged.html#a0d4da29330905448d8ea27b4ebd35799">yoriito::vehicle::cabin::iswindowchildlockengaged::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a0d4da29330905448d8ea27b4ebd35799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a0129ae2f6d1de45392344fb55d09d" id="r_ab8a0129ae2f6d1de45392344fb55d09d"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1iswindowchildlockengaged.html#ab8a0129ae2f6d1de45392344fb55d09d">yoriito::vehicle::cabin::iswindowchildlockengaged::Inspect</a> ()</td></tr>
-<tr class="separator:ab8a0129ae2f6d1de45392344fb55d09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec604a23f195a37892cf03390098abef" id="r_aec604a23f195a37892cf03390098abef"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1iswindowchildlockengaged.html#aec604a23f195a37892cf03390098abef">yoriito::vehicle::cabin::iswindowchildlockengaged::Subscribe</a> ()</td></tr>
+<tr class="separator:aec604a23f195a37892cf03390098abef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115a2c2bf2ec30d7256fa3aeb12f3f9b" id="r_a115a2c2bf2ec30d7256fa3aeb12f3f9b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1iswindowchildlockengaged.html#a115a2c2bf2ec30d7256fa3aeb12f3f9b">yoriito::vehicle::cabin::iswindowchildlockengaged::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:a115a2c2bf2ec30d7256fa3aeb12f3f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f26b79c8f80585908507b5f6e67bf3" id="r_a67f26b79c8f80585908507b5f6e67bf3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1iswindowchildlockengaged.html#a67f26b79c8f80585908507b5f6e67bf3">yoriito::vehicle::cabin::iswindowchildlockengaged::Inspect</a> ()</td></tr>
+<tr class="separator:a67f26b79c8f80585908507b5f6e67bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

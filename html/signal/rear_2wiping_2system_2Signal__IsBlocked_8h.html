@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/body/windshield/rear/wiping/system/Signal_IsBlocked.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/body/windshield/rear/wiping/system/Signal_IsBlocked.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('rear_2wiping_2system_2Signal__IsBlocke
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsBlocked.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="rear_2wiping_2system_2Signal__IsBlocked_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="rear_2wiping_2system_2Signal__IsBlocked_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="rear_2wiping_2system_2Signal__IsBlocked_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked.html">yoriito::vehicle::body::windshield::rear::wiping::system::isblocked</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Body.Windshield.Rear.Wiping.System.IsBlocked signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -138,17 +139,19 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system.html">yoriito::vehicle::body::windshield::rear::wiping::system</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked.html">yoriito::vehicle::body::windshield::rear::wiping::system::isblocked</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a44122535cb2984ac9c465ad1bc249e58" id="r_a44122535cb2984ac9c465ad1bc249e58"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked.html#a44122535cb2984ac9c465ad1bc249e58">yoriito::vehicle::body::windshield::rear::wiping::system::isblocked::Get</a> ()</td></tr>
-<tr class="separator:a44122535cb2984ac9c465ad1bc249e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d237d10e975e0759bc0acab524bb9e2" id="r_a0d237d10e975e0759bc0acab524bb9e2"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked.html#a0d237d10e975e0759bc0acab524bb9e2">yoriito::vehicle::body::windshield::rear::wiping::system::isblocked::Subscribe</a> ()</td></tr>
-<tr class="separator:a0d237d10e975e0759bc0acab524bb9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13913fd79a6d10ce9a3ca759e3429c99" id="r_a13913fd79a6d10ce9a3ca759e3429c99"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked.html#a13913fd79a6d10ce9a3ca759e3429c99">yoriito::vehicle::body::windshield::rear::wiping::system::isblocked::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a13913fd79a6d10ce9a3ca759e3429c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a9b46a5df16d071ab7dcc3103142b20" id="r_a1a9b46a5df16d071ab7dcc3103142b20"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked.html#a1a9b46a5df16d071ab7dcc3103142b20">yoriito::vehicle::body::windshield::rear::wiping::system::isblocked::Inspect</a> ()</td></tr>
-<tr class="separator:a1a9b46a5df16d071ab7dcc3103142b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804fdacb418cef0487f9ec43ad0e24b1" id="r_a804fdacb418cef0487f9ec43ad0e24b1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked.html#a804fdacb418cef0487f9ec43ad0e24b1">yoriito::vehicle::body::windshield::rear::wiping::system::isblocked::Get</a> ()</td></tr>
+<tr class="separator:a804fdacb418cef0487f9ec43ad0e24b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857bd24c5374df1f77d80161fc7579a0" id="r_a857bd24c5374df1f77d80161fc7579a0"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked.html#a857bd24c5374df1f77d80161fc7579a0">yoriito::vehicle::body::windshield::rear::wiping::system::isblocked::Subscribe</a> ()</td></tr>
+<tr class="separator:a857bd24c5374df1f77d80161fc7579a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30631c26ac92baebf346435458cae06d" id="r_a30631c26ac92baebf346435458cae06d"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked.html#a30631c26ac92baebf346435458cae06d">yoriito::vehicle::body::windshield::rear::wiping::system::isblocked::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:a30631c26ac92baebf346435458cae06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbdc76a18ed4df16805ec03b0e67c7e" id="r_a7bbdc76a18ed4df16805ec03b0e67c7e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1rear_1_1wiping_1_1system_1_1isblocked.html#a7bbdc76a18ed4df16805ec03b0e67c7e">yoriito::vehicle::body::windshield::rear::wiping::system::isblocked::Inspect</a> ()</td></tr>
+<tr class="separator:a7bbdc76a18ed4df16805ec03b0e67c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

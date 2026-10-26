@@ -1,8 +1,8 @@
 var totalstateofcharge_2Signal__Displayed_8h =
 [
-    [ "Get", "totalstateofcharge_2Signal__Displayed_8h.html#ad4f68f704251f713a70a18f82a20ea82", null ],
-    [ "Inspect", "totalstateofcharge_2Signal__Displayed_8h.html#a6aec6e97748c1a55aeb94376b9695126", null ],
-    [ "Subscribe", "totalstateofcharge_2Signal__Displayed_8h.html#a0a579d30cc15bd1fc29091451006fc5f", null ],
-    [ "UnSubscribe", "totalstateofcharge_2Signal__Displayed_8h.html#ae12b3072961e9957a5a680de59a2947b", null ],
-    [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_TOTALSTATEOFCHARGE_DISPLAYED", "totalstateofcharge_2Signal__Displayed_8h.html#a98533bf366d54bd831388e4775ba2f8b", null ]
+    [ "Get", "totalstateofcharge_2Signal__Displayed_8h.html#a907ed007636860a20e39e3cbf1e1c6cd", null ],
+    [ "Inspect", "totalstateofcharge_2Signal__Displayed_8h.html#a71f567896108cf067fe615f36e9104f8", null ],
+    [ "Subscribe", "totalstateofcharge_2Signal__Displayed_8h.html#ab4151c51b3c16d678e362cb9fefa2599", null ],
+    [ "UnSubscribe", "totalstateofcharge_2Signal__Displayed_8h.html#a1feb7428841cebb6e3432e558d34035a", null ],
+    [ "VEHICLE_POWERTRAIN_TRACTIONBATTERY_TOTALSTATEOFCHARGE_DISPLAYED", "totalstateofcharge_2Signal__Displayed_8h.html#a676d2aa6077e19d536b88057d78178d3", null ]
 ];

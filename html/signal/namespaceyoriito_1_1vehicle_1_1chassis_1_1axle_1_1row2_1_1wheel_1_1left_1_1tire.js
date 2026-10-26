@@ -1,50 +1,31 @@
 var namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire =
 [
-    [ " ispressurelow", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow.html#abfaf7ded5bc9e58bcabdecccea809828", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow.html#ae411eec0cbe3ad2107a928e099427ac0", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow.html#a7d68e8f0128b9bedb5e8676313a3ffe3", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow.html#a0b554c2e5ceccd5713f42c11dbf6b697", null ],
-      [ "VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_LEFT_TIRE_ISPRESSURELOW", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow.html#a349bf66cf2ec0b6962008ce07faaa811", null ]
+    [ "airtemperature", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1airtemperature.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1airtemperature.html#a43ca28898203e9c06fd8a92ebfcfffd3", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1airtemperature.html#a93b45eee0f97ab560b8c9c75581f83d8", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1airtemperature.html#a9f7e45b95e90d360438c7a627e5573b4", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1airtemperature.html#a9d167293cb519633dcfd5c628b12d43a", null ],
+      [ "VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_LEFT_TIRE_AIRTEMPERATURE", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1airtemperature.html#ab6b034fbcabc635c413945958f6c53c8", null ]
     ] ],
-    [ " ispressurelow_availability_sensor", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow__availability__sensor.html#a52570c0e995614ab0315d8275f35d1bd", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow__availability__sensor.html#a6fdd9d465046cdeb82bec8917462e157", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow__availability__sensor.html#a141a1f3c47451d6d60c63a19f4cdd2c7", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow__availability__sensor.html#aeed9bf57b4cabef256e7b1a576a86ddd", null ],
-      [ "VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_LEFT_TIRE_ISPRESSURELOW_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01ispressurelow__availability__sensor.html#af5861a4054b9e8fff8b98ae70ae2b90f", null ]
+    [ "ispressurelow", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1ispressurelow.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1ispressurelow.html#a2050fd4e7bb5a0ccfbc39699dafdc940", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1ispressurelow.html#a0b59ea0b8642fdb4cd40f2baf54fae1a", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1ispressurelow.html#ac8a78b67be9c89602c4cf2dbdc5ec68e", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1ispressurelow.html#a5663ff093ca801ee99dab707b6dd9cee", null ],
+      [ "VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_LEFT_TIRE_ISPRESSURELOW", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1ispressurelow.html#a7f5b50e28e25b2cf06df2613c15d9d06", null ]
     ] ],
-    [ " pressure_availability_sensor", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01pressure__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01pressure__availability__sensor.html#a9fe9d52149e67c472189c5b3d325c41a", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01pressure__availability__sensor.html#a59779c7a6d9077cb5510ad97a0bbc80a", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01pressure__availability__sensor.html#a305a140f03ebc1d04ba5b9d6ad801980", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01pressure__availability__sensor.html#a29b91877b84829743fb152eeb697b150", null ],
-      [ "VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_LEFT_TIRE_PRESSURE_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01pressure__availability__sensor.html#a0876e26f52da9bcc012a125f1d74d7da", null ]
-    ] ],
-    [ " temperature", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature.html#a06acc97a602bcf9f40b5416154f8cdd7", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature.html#a2aee58daee638486769758c5b9578f89", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature.html#a4c43fe2c064b4b8d129782dc5c24b2cd", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature.html#ab51d521dca08ad03961148df1d78aa3e", null ],
-      [ "VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_LEFT_TIRE_TEMPERATURE", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature.html#aed78ee08c870e2a2fafafb78548679c4", null ]
-    ] ],
-    [ " temperature_availability_sensor", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature__availability__sensor.html#a3e3dffae9c49c5d4d9b4f2b9cc69b6ec", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature__availability__sensor.html#a635606f8453e43ced1879e80ff112a08", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature__availability__sensor.html#a0d5dd9ca1de65f03a8227f2b43446405", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature__availability__sensor.html#afb1a0565843cbe5a1036c6ed04f94e8b", null ],
-      [ "VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_LEFT_TIRE_TEMPERATURE_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1_01temperature__availability__sensor.html#ad8cbf18b6f726ae0ee679d376c5eddae", null ]
-    ] ],
-    [ "ispressurelow", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1ispressurelow.html", null ],
-    [ "ispressurelow_availability_sensor", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1ispressurelow__availability__sensor.html", null ],
     [ "pressure", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1pressure.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1pressure.html#a31a8b6c10816d69f23ed85eecfe3892c", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1pressure.html#a23fa16b5f4e68e867515aef2db0d59ea", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1pressure.html#a4c99c82612b2d6e119effb152fdda3ac", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1pressure.html#a72f90d918408ca6549f83227fd4f3e6a", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1pressure.html#a79722cae9947cdd2decde65495f0465c", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1pressure.html#a924749a4de24a2e4f6e9fe3e08f563d0", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1pressure.html#a18b9bf51454657877f9b81c250bdced9", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1pressure.html#af786b283290508c31015616a75ebe792", null ],
       [ "VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_LEFT_TIRE_PRESSURE", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1pressure.html#a117a3a006d96472dbe251b736039130b", null ]
     ] ],
-    [ "pressure_availability_sensor", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1pressure__availability__sensor.html", null ],
-    [ "temperature", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1temperature.html", null ],
-    [ "temperature_availability_sensor", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1temperature__availability__sensor.html", null ]
+    [ "rubbertemperature", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1rubbertemperature.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1rubbertemperature.html#ace519f97c0ab042b2cd51eb1352bd9df", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1rubbertemperature.html#a0c705f4f43c357ad2e8367b2db49659c", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1rubbertemperature.html#a6dad743cf6713e7baf52f78986c6daab", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1rubbertemperature.html#a3dc1186c0d2f05d52dc2f548af6caafd", null ],
+      [ "VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_LEFT_TIRE_RUBBERTEMPERATURE", "namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row2_1_1wheel_1_1left_1_1tire_1_1rubbertemperature.html#a00fe3f67622e6a80c0fc082c7d9043e7", null ]
+    ] ]
 ];

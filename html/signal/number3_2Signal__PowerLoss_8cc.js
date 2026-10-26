@@ -1,7 +1,7 @@
 var number3_2Signal__PowerLoss_8cc =
 [
-    [ "Get", "number3_2Signal__PowerLoss_8cc.html#a94f8bbb244868f81ba34efdeec2d6335", null ],
-    [ "Inspect", "number3_2Signal__PowerLoss_8cc.html#a56325455b9ed6ad7bef3dbc7dedcc90a", null ],
-    [ "Subscribe", "number3_2Signal__PowerLoss_8cc.html#a32db6824a4e04cdb1adcb42ef3a11409", null ],
-    [ "UnSubscribe", "number3_2Signal__PowerLoss_8cc.html#a961ae3a5b1a730d39b6c3718895b7a3b", null ]
+    [ "Get", "number3_2Signal__PowerLoss_8cc.html#a9fcf2e06a6cfaccaba00755fbfa6f4db", null ],
+    [ "Inspect", "number3_2Signal__PowerLoss_8cc.html#ab7215a5b2c7ef65254a71ca49d2da8c4", null ],
+    [ "Subscribe", "number3_2Signal__PowerLoss_8cc.html#ac3149da4c2777cd122703c9905f9495c", null ],
+    [ "UnSubscribe", "number3_2Signal__PowerLoss_8cc.html#af19847ac3453ad8d43436ec8df385f17", null ]
 ];

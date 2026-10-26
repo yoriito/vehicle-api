@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['comment_0',['comment',['../classyoriito_1_1databroker_1_1BaseInspectData.html#acb6e8d147442113d994e95fd39ecb5a3',1,'yoriito::databroker::BaseInspectData']]],
-  ['custom_5fattributes_1',['custom_attributes',['../classyoriito_1_1databroker_1_1BaseInspectData.html#ac51f6e4a45111423f69eb135465685e4',1,'yoriito::databroker::BaseInspectData']]]
+  ['kdefaultdltid_0',['kDefaultDltID',['../namespaceyoriito.html#a53e27939a9496534ec01793434642233',1,'yoriito']]],
+  ['kdltidmaxlength_1',['kDltIdMaxLength',['../namespaceyoriito.html#a608f1c40988656e09be005c94708dc3b',1,'yoriito']]],
+  ['kiscustomstruct_2',['kIsCustomStruct',['../namespaceyoriito_1_1signal.html#aa5a3c93920955592d7c11e42b111e17c',1,'yoriito::signal']]]
 ];

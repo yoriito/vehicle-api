@@ -1,0 +1,13 @@
+digraph "/work/signal/cabin/rearshade"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_b5d29ba8edcaab16158b51e1b8055f0b {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="cabin", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_b5d29ba8edcaab16158b51e1b8055f0b.html",tooltip=""]
+  dir_669249481beb83a1727ef4fe978e0ad3 [label="rearshade", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_669249481beb83a1727ef4fe978e0ad3.html",tooltip=""];
+  }
+}

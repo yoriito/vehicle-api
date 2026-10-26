@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/fuelsystem/Signal_IsFuelLevelLow.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/fuelsystem/Signal_IsFuelLevelLow.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('Signal__IsFuelLevelLow_8h.html',''); i
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsFuelLevelLow.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__IsFuelLevelLow_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__IsFuelLevelLow_8h__dep__incl.svg" width="518" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__IsFuelLevelLow_8h_source.html">Go to the source code of this file.</a></p>
@@ -135,14 +139,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8c0386c8e2a411eecd7a4dd4285923bb" id="r_a8c0386c8e2a411eecd7a4dd4285923bb"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#a8c0386c8e2a411eecd7a4dd4285923bb">yoriito::vehicle::powertrain::fuelsystem::isfuellevellow::Get</a> ()</td></tr>
-<tr class="separator:a8c0386c8e2a411eecd7a4dd4285923bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a032510676405dfeb09716ab2527472ab" id="r_a032510676405dfeb09716ab2527472ab"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#a032510676405dfeb09716ab2527472ab">yoriito::vehicle::powertrain::fuelsystem::isfuellevellow::Subscribe</a> ()</td></tr>
-<tr class="separator:a032510676405dfeb09716ab2527472ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312a45071e297e84704d4d3b08fa7abf" id="r_a312a45071e297e84704d4d3b08fa7abf"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#a312a45071e297e84704d4d3b08fa7abf">yoriito::vehicle::powertrain::fuelsystem::isfuellevellow::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a312a45071e297e84704d4d3b08fa7abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b42a5f161325e015e8271e9b3cb751" id="r_a19b42a5f161325e015e8271e9b3cb751"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#a19b42a5f161325e015e8271e9b3cb751">yoriito::vehicle::powertrain::fuelsystem::isfuellevellow::Inspect</a> ()</td></tr>
-<tr class="separator:a19b42a5f161325e015e8271e9b3cb751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f14f87078329c677dd8b7aed57d24f" id="r_ab6f14f87078329c677dd8b7aed57d24f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#ab6f14f87078329c677dd8b7aed57d24f">yoriito::vehicle::powertrain::fuelsystem::isfuellevellow::Get</a> ()</td></tr>
+<tr class="separator:ab6f14f87078329c677dd8b7aed57d24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c48227cca1e44c908df7d49e333f8c" id="r_a55c48227cca1e44c908df7d49e333f8c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#a55c48227cca1e44c908df7d49e333f8c">yoriito::vehicle::powertrain::fuelsystem::isfuellevellow::Subscribe</a> ()</td></tr>
+<tr class="separator:a55c48227cca1e44c908df7d49e333f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbc8072c85170f655186b195cbfd675" id="r_abcbc8072c85170f655186b195cbfd675"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#abcbc8072c85170f655186b195cbfd675">yoriito::vehicle::powertrain::fuelsystem::isfuellevellow::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:abcbc8072c85170f655186b195cbfd675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7da947c247170a853e8500f70e0921" id="r_aba7da947c247170a853e8500f70e0921"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1isfuellevellow.html#aba7da947c247170a853e8500f70e0921">yoriito::vehicle::powertrain::fuelsystem::isfuellevellow::Inspect</a> ()</td></tr>
+<tr class="separator:aba7da947c247170a853e8500f70e0921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

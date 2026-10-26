@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/body/windshield/front/wiping/system/Signal_IsWiperError.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/body/windshield/front/wiping/system/Signal_IsWiperError.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('front_2wiping_2system_2Signal__IsWiper
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsWiperError.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="front_2wiping_2system_2Signal__IsWiperError_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="front_2wiping_2system_2Signal__IsWiperError_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="front_2wiping_2system_2Signal__IsWiperError_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror.html">yoriito::vehicle::body::windshield::front::wiping::system::iswipererror</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Body.Windshield.Front.Wiping.System.IsWiperError signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -138,24 +139,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system.html">yoriito::vehicle::body::windshield::front::wiping::system</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01iswipererror" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01iswipererror"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01iswipererror.html">yoriito::vehicle::body::windshield::front::wiping::system:: iswipererror</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror" id="r_namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror.html">yoriito::vehicle::body::windshield::front::wiping::system::iswipererror</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad7e55dbc0a1a6d520efbc88dc0501057" id="r_ad7e55dbc0a1a6d520efbc88dc0501057"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01iswipererror.html#ad7e55dbc0a1a6d520efbc88dc0501057">yoriito::vehicle::body::windshield::front::wiping::system:: iswipererror::Get</a> ()</td></tr>
-<tr class="separator:ad7e55dbc0a1a6d520efbc88dc0501057"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74fa8a4819fbb43fe0e057f8ba847c12" id="r_a74fa8a4819fbb43fe0e057f8ba847c12"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01iswipererror.html#a74fa8a4819fbb43fe0e057f8ba847c12">yoriito::vehicle::body::windshield::front::wiping::system:: iswipererror::Subscribe</a> ()</td></tr>
-<tr class="separator:a74fa8a4819fbb43fe0e057f8ba847c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5487ca14956ef476e1bf4b5e2362e444" id="r_a5487ca14956ef476e1bf4b5e2362e444"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01iswipererror.html#a5487ca14956ef476e1bf4b5e2362e444">yoriito::vehicle::body::windshield::front::wiping::system:: iswipererror::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a5487ca14956ef476e1bf4b5e2362e444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6dde2756e4c24b280ae84e142169aeb" id="r_ae6dde2756e4c24b280ae84e142169aeb"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01iswipererror.html#ae6dde2756e4c24b280ae84e142169aeb">yoriito::vehicle::body::windshield::front::wiping::system:: iswipererror::Inspect</a> ()</td></tr>
-<tr class="separator:ae6dde2756e4c24b280ae84e142169aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefff114b695895f11c6255003ea7e40f" id="r_aefff114b695895f11c6255003ea7e40f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror.html#aefff114b695895f11c6255003ea7e40f">yoriito::vehicle::body::windshield::front::wiping::system::iswipererror::Get</a> ()</td></tr>
+<tr class="separator:aefff114b695895f11c6255003ea7e40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808b3a8f0d35467e983a0d67317ec9aa" id="r_a808b3a8f0d35467e983a0d67317ec9aa"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror.html#a808b3a8f0d35467e983a0d67317ec9aa">yoriito::vehicle::body::windshield::front::wiping::system::iswipererror::Subscribe</a> ()</td></tr>
+<tr class="separator:a808b3a8f0d35467e983a0d67317ec9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d55aab10de25c97f624cf8595d5510" id="r_ae4d55aab10de25c97f624cf8595d5510"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror.html#ae4d55aab10de25c97f624cf8595d5510">yoriito::vehicle::body::windshield::front::wiping::system::iswipererror::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:ae4d55aab10de25c97f624cf8595d5510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f2c0b4654ec0f5200f1968a199c08c3" id="r_a1f2c0b4654ec0f5200f1968a199c08c3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror.html#a1f2c0b4654ec0f5200f1968a199c08c3">yoriito::vehicle::body::windshield::front::wiping::system::iswipererror::Inspect</a> ()</td></tr>
+<tr class="separator:a1f2c0b4654ec0f5200f1968a199c08c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a1c4dab109c7f919126d05731ebd8085e" id="r_a1c4dab109c7f919126d05731ebd8085e"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1_01iswipererror.html#a1c4dab109c7f919126d05731ebd8085e">yoriito::vehicle::body::windshield::front::wiping::system:: iswipererror::VEHICLE_BODY_WINDSHIELD_FRONT_WIPING_SYSTEM_ISWIPERERROR</a></td></tr>
-<tr class="separator:a1c4dab109c7f919126d05731ebd8085e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aada4b4fced1a7b54fcf71ca52dd6ec" id="r_a6aada4b4fced1a7b54fcf71ca52dd6ec"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1body_1_1windshield_1_1front_1_1wiping_1_1system_1_1iswipererror.html#a6aada4b4fced1a7b54fcf71ca52dd6ec">yoriito::vehicle::body::windshield::front::wiping::system::iswipererror::VEHICLE_BODY_WINDSHIELD_FRONT_WIPING_SYSTEM_ISWIPERERROR</a></td></tr>
+<tr class="separator:a6aada4b4fced1a7b54fcf71ca52dd6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

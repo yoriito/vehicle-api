@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/chassis/parkingbrake/Signal_IsEngaged.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/chassis/parkingbrake/Signal_IsEngaged.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,16 +106,20 @@ $(document).ready(function(){initNavTree('chassis_2parkingbrake_2Signal__IsEngag
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsEngaged.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="chassis_2parkingbrake_2Signal__IsEngaged_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="chassis_2parkingbrake_2Signal__IsEngaged_8h__dep__incl.svg" width="507" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="chassis_2parkingbrake_2Signal__IsEngaged_8h_source.html">Go to the source code of this file.</a></p>
@@ -136,16 +140,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5c92ceb2a9a414e5209123ce7c68fbd3" id="r_a5c92ceb2a9a414e5209123ce7c68fbd3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1parkingbrake_1_1isengaged.html#a5c92ceb2a9a414e5209123ce7c68fbd3">yoriito::vehicle::chassis::parkingbrake::isengaged::Get</a> ()</td></tr>
-<tr class="separator:a5c92ceb2a9a414e5209123ce7c68fbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d6d1e626e7602cf03c0bd396a51e28" id="r_a44d6d1e626e7602cf03c0bd396a51e28"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1parkingbrake_1_1isengaged.html#a44d6d1e626e7602cf03c0bd396a51e28">yoriito::vehicle::chassis::parkingbrake::isengaged::Get</a> ()</td></tr>
+<tr class="separator:a44d6d1e626e7602cf03c0bd396a51e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ba2b490eed3ead2c280d8d2d7e9bc73" id="r_a0ba2b490eed3ead2c280d8d2d7e9bc73"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1parkingbrake_1_1isengaged.html#a0ba2b490eed3ead2c280d8d2d7e9bc73">yoriito::vehicle::chassis::parkingbrake::isengaged::Set</a> (const bool &amp;value)</td></tr>
 <tr class="separator:a0ba2b490eed3ead2c280d8d2d7e9bc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae816084b1d6308cdd093d0b2f1473795" id="r_ae816084b1d6308cdd093d0b2f1473795"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1parkingbrake_1_1isengaged.html#ae816084b1d6308cdd093d0b2f1473795">yoriito::vehicle::chassis::parkingbrake::isengaged::Subscribe</a> ()</td></tr>
-<tr class="separator:ae816084b1d6308cdd093d0b2f1473795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdaf7009cd40018d46915b8d74df5636" id="r_afdaf7009cd40018d46915b8d74df5636"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1parkingbrake_1_1isengaged.html#afdaf7009cd40018d46915b8d74df5636">yoriito::vehicle::chassis::parkingbrake::isengaged::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:afdaf7009cd40018d46915b8d74df5636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa50a4d3054325b321af109bbccb736ed" id="r_aa50a4d3054325b321af109bbccb736ed"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1parkingbrake_1_1isengaged.html#aa50a4d3054325b321af109bbccb736ed">yoriito::vehicle::chassis::parkingbrake::isengaged::Inspect</a> ()</td></tr>
-<tr class="separator:aa50a4d3054325b321af109bbccb736ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac89b67ddf3cf3c4e4312600d7ab6f56" id="r_aac89b67ddf3cf3c4e4312600d7ab6f56"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1parkingbrake_1_1isengaged.html#aac89b67ddf3cf3c4e4312600d7ab6f56">yoriito::vehicle::chassis::parkingbrake::isengaged::Subscribe</a> ()</td></tr>
+<tr class="separator:aac89b67ddf3cf3c4e4312600d7ab6f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d7d2150cc5efef25d20e45680744a0" id="r_a25d7d2150cc5efef25d20e45680744a0"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1parkingbrake_1_1isengaged.html#a25d7d2150cc5efef25d20e45680744a0">yoriito::vehicle::chassis::parkingbrake::isengaged::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:a25d7d2150cc5efef25d20e45680744a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eec1038b00445ad55b0046d290eb26d" id="r_a1eec1038b00445ad55b0046d290eb26d"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1parkingbrake_1_1isengaged.html#a1eec1038b00445ad55b0046d290eb26d">yoriito::vehicle::chassis::parkingbrake::isengaged::Inspect</a> ()</td></tr>
+<tr class="separator:a1eec1038b00445ad55b0046d290eb26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/number4/Signal_IsGroundConnected.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/number4/Signal_IsGroundConnected.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('number4_2Signal__IsGroundConnected_8h.
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsGroundConnected.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="number4_2Signal__IsGroundConnected_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="number4_2Signal__IsGroundConnected_8h__dep__incl.svg" width="512" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="number4_2Signal__IsGroundConnected_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected.html">yoriito::vehicle::powertrain::tractionbattery::number4::isgroundconnected</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.TractionBattery.Number4.IsGroundConnected signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -134,24 +135,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4.html">yoriito::vehicle::powertrain::tractionbattery::number4</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01isgroundconnected" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01isgroundconnected"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01isgroundconnected.html">yoriito::vehicle::powertrain::tractionbattery::number4:: isgroundconnected</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected.html">yoriito::vehicle::powertrain::tractionbattery::number4::isgroundconnected</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a80222d95c82a40e3141eeb6647f205d1" id="r_a80222d95c82a40e3141eeb6647f205d1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01isgroundconnected.html#a80222d95c82a40e3141eeb6647f205d1">yoriito::vehicle::powertrain::tractionbattery::number4:: isgroundconnected::Get</a> ()</td></tr>
-<tr class="separator:a80222d95c82a40e3141eeb6647f205d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af189c05a1c2df47ee6132d552d24e86f" id="r_af189c05a1c2df47ee6132d552d24e86f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01isgroundconnected.html#af189c05a1c2df47ee6132d552d24e86f">yoriito::vehicle::powertrain::tractionbattery::number4:: isgroundconnected::Subscribe</a> ()</td></tr>
-<tr class="separator:af189c05a1c2df47ee6132d552d24e86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3974a3ab78f4f54cd9fcdf5528516c9a" id="r_a3974a3ab78f4f54cd9fcdf5528516c9a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01isgroundconnected.html#a3974a3ab78f4f54cd9fcdf5528516c9a">yoriito::vehicle::powertrain::tractionbattery::number4:: isgroundconnected::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a3974a3ab78f4f54cd9fcdf5528516c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53d618310a527ce8551ccd29a86419b3" id="r_a53d618310a527ce8551ccd29a86419b3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01isgroundconnected.html#a53d618310a527ce8551ccd29a86419b3">yoriito::vehicle::powertrain::tractionbattery::number4:: isgroundconnected::Inspect</a> ()</td></tr>
-<tr class="separator:a53d618310a527ce8551ccd29a86419b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bee2ee135cae9577b454892c887c845" id="r_a5bee2ee135cae9577b454892c887c845"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected.html#a5bee2ee135cae9577b454892c887c845">yoriito::vehicle::powertrain::tractionbattery::number4::isgroundconnected::Get</a> ()</td></tr>
+<tr class="separator:a5bee2ee135cae9577b454892c887c845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed94c579fac041a8fcc4072c52c1ce05" id="r_aed94c579fac041a8fcc4072c52c1ce05"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected.html#aed94c579fac041a8fcc4072c52c1ce05">yoriito::vehicle::powertrain::tractionbattery::number4::isgroundconnected::Subscribe</a> ()</td></tr>
+<tr class="separator:aed94c579fac041a8fcc4072c52c1ce05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2584e218437149a65151332867c54b91" id="r_a2584e218437149a65151332867c54b91"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected.html#a2584e218437149a65151332867c54b91">yoriito::vehicle::powertrain::tractionbattery::number4::isgroundconnected::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:a2584e218437149a65151332867c54b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64de8ed985f9d5410f73402e5a1e6be" id="r_aa64de8ed985f9d5410f73402e5a1e6be"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected.html#aa64de8ed985f9d5410f73402e5a1e6be">yoriito::vehicle::powertrain::tractionbattery::number4::isgroundconnected::Inspect</a> ()</td></tr>
+<tr class="separator:aa64de8ed985f9d5410f73402e5a1e6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a6c3b5ade84701ed14f80931916ed0c3f" id="r_a6c3b5ade84701ed14f80931916ed0c3f"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1_01isgroundconnected.html#a6c3b5ade84701ed14f80931916ed0c3f">yoriito::vehicle::powertrain::tractionbattery::number4:: isgroundconnected::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER4_ISGROUNDCONNECTED</a></td></tr>
-<tr class="separator:a6c3b5ade84701ed14f80931916ed0c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5268aa7a2759f95f8f01c28d3b33e00" id="r_ab5268aa7a2759f95f8f01c28d3b33e00"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1isgroundconnected.html#ab5268aa7a2759f95f8f01c28d3b33e00">yoriito::vehicle::powertrain::tractionbattery::number4::isgroundconnected::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER4_ISGROUNDCONNECTED</a></td></tr>
+<tr class="separator:ab5268aa7a2759f95f8f01c28d3b33e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/chassis/axle/row1/Signal_SteeringAngle.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/chassis/axle/row1/Signal_SteeringAngle.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('row1_2Signal__SteeringAngle_8h.html','
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_SteeringAngle.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="row1_2Signal__SteeringAngle_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="row1_2Signal__SteeringAngle_8h__dep__incl.svg" width="427" height="506"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="row1_2Signal__SteeringAngle_8h_source.html">Go to the source code of this file.</a></p>
@@ -137,14 +141,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0fd4a8a69b127d8a6e3cda8c461f66ea" id="r_a0fd4a8a69b127d8a6e3cda8c461f66ea"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row1_1_1steeringangle.html#a0fd4a8a69b127d8a6e3cda8c461f66ea">yoriito::vehicle::chassis::axle::row1::steeringangle::Get</a> ()</td></tr>
-<tr class="separator:a0fd4a8a69b127d8a6e3cda8c461f66ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18737f5e22edb5fa192290fe11db279f" id="r_a18737f5e22edb5fa192290fe11db279f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row1_1_1steeringangle.html#a18737f5e22edb5fa192290fe11db279f">yoriito::vehicle::chassis::axle::row1::steeringangle::Subscribe</a> ()</td></tr>
-<tr class="separator:a18737f5e22edb5fa192290fe11db279f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9386523988345871e613643cf441d87e" id="r_a9386523988345871e613643cf441d87e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row1_1_1steeringangle.html#a9386523988345871e613643cf441d87e">yoriito::vehicle::chassis::axle::row1::steeringangle::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a9386523988345871e613643cf441d87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96e8f10109dbdd5f12b2e9f0910ac7c8" id="r_a96e8f10109dbdd5f12b2e9f0910ac7c8"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row1_1_1steeringangle.html#a96e8f10109dbdd5f12b2e9f0910ac7c8">yoriito::vehicle::chassis::axle::row1::steeringangle::Inspect</a> ()</td></tr>
-<tr class="separator:a96e8f10109dbdd5f12b2e9f0910ac7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e09a2cc1bfe7280a523e143faa92b23" id="r_a9e09a2cc1bfe7280a523e143faa92b23"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row1_1_1steeringangle.html#a9e09a2cc1bfe7280a523e143faa92b23">yoriito::vehicle::chassis::axle::row1::steeringangle::Get</a> ()</td></tr>
+<tr class="separator:a9e09a2cc1bfe7280a523e143faa92b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ba0338c32f3096f37dc2f50a6aba44" id="r_ab5ba0338c32f3096f37dc2f50a6aba44"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row1_1_1steeringangle.html#ab5ba0338c32f3096f37dc2f50a6aba44">yoriito::vehicle::chassis::axle::row1::steeringangle::Subscribe</a> ()</td></tr>
+<tr class="separator:ab5ba0338c32f3096f37dc2f50a6aba44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4ed2d7a45569f3c0c40c9b5dbb8a2d" id="r_a6f4ed2d7a45569f3c0c40c9b5dbb8a2d"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row1_1_1steeringangle.html#a6f4ed2d7a45569f3c0c40c9b5dbb8a2d">yoriito::vehicle::chassis::axle::row1::steeringangle::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:a6f4ed2d7a45569f3c0c40c9b5dbb8a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4734ec20004461b9115e4989192ea341" id="r_a4734ec20004461b9115e4989192ea341"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1axle_1_1row1_1_1steeringangle.html#a4734ec20004461b9115e4989192ea341">yoriito::vehicle::chassis::axle::row1::steeringangle::Inspect</a> ()</td></tr>
+<tr class="separator:a4734ec20004461b9115e4989192ea341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

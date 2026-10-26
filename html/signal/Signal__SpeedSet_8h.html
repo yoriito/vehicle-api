@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/adas/adaptivecruisecontrol/Signal_SpeedSet.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/adas/cruisecontrol/Signal_SpeedSet.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,24 +106,28 @@ $(document).ready(function(){initNavTree('Signal__SpeedSet_8h.html',''); initRes
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_SpeedSet.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__SpeedSet_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__SpeedSet_8h__dep__incl.svg" width="440" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__SpeedSet_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol_1_1speedset" id="r_namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol_1_1speedset"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol_1_1speedset.html">yoriito::vehicle::adas::adaptivecruisecontrol::speedset</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol_1_1speedset"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.ADAS.AdaptiveCruiseControl.SpeedSet signal. <br /></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol_1_1speedset" id="r_namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol_1_1speedset"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol_1_1speedset.html">yoriito::vehicle::adas::cruisecontrol::speedset</a></td></tr>
+<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol_1_1speedset"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.ADAS.CruiseControl.SpeedSet signal. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,33 +135,33 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1adas" id="r_namespaceyoriito_1_1vehicle_1_1adas"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas.html">yoriito::vehicle::adas</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol" id="r_namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol.html">yoriito::vehicle::adas::adaptivecruisecontrol</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol" id="r_namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol.html">yoriito::vehicle::adas::cruisecontrol</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2cc88b3e5164b0b69f3633fdbaa7262f" id="r_a2cc88b3e5164b0b69f3633fdbaa7262f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol_1_1speedset.html#a2cc88b3e5164b0b69f3633fdbaa7262f">yoriito::vehicle::adas::adaptivecruisecontrol::speedset::Get</a> ()</td></tr>
-<tr class="separator:a2cc88b3e5164b0b69f3633fdbaa7262f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad985028ed95ed439c04ca712911a49df" id="r_ad985028ed95ed439c04ca712911a49df"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol_1_1speedset.html#ad985028ed95ed439c04ca712911a49df">yoriito::vehicle::adas::adaptivecruisecontrol::speedset::Set</a> (const float &amp;value)</td></tr>
-<tr class="separator:ad985028ed95ed439c04ca712911a49df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb721d4aa186d4eb05e65a32d5750c73" id="r_acb721d4aa186d4eb05e65a32d5750c73"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol_1_1speedset.html#acb721d4aa186d4eb05e65a32d5750c73">yoriito::vehicle::adas::adaptivecruisecontrol::speedset::Subscribe</a> ()</td></tr>
-<tr class="separator:acb721d4aa186d4eb05e65a32d5750c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef5b2a6b03073208f501db0f5e91cbc" id="r_aaef5b2a6b03073208f501db0f5e91cbc"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol_1_1speedset.html#aaef5b2a6b03073208f501db0f5e91cbc">yoriito::vehicle::adas::adaptivecruisecontrol::speedset::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:aaef5b2a6b03073208f501db0f5e91cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5260db658cf05c0c7af9d74224545873" id="r_a5260db658cf05c0c7af9d74224545873"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol_1_1speedset.html#a5260db658cf05c0c7af9d74224545873">yoriito::vehicle::adas::adaptivecruisecontrol::speedset::Inspect</a> ()</td></tr>
-<tr class="separator:a5260db658cf05c0c7af9d74224545873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592decd7f13cb3576089caad8aac27c1" id="r_a592decd7f13cb3576089caad8aac27c1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol_1_1speedset.html#a592decd7f13cb3576089caad8aac27c1">yoriito::vehicle::adas::cruisecontrol::speedset::Get</a> ()</td></tr>
+<tr class="separator:a592decd7f13cb3576089caad8aac27c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1336371f010e260b1e5f6aa45de2177" id="r_ae1336371f010e260b1e5f6aa45de2177"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol_1_1speedset.html#ae1336371f010e260b1e5f6aa45de2177">yoriito::vehicle::adas::cruisecontrol::speedset::Set</a> (const float &amp;value)</td></tr>
+<tr class="separator:ae1336371f010e260b1e5f6aa45de2177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2c527654c4def826abde9e97cd1ba4" id="r_a9d2c527654c4def826abde9e97cd1ba4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol_1_1speedset.html#a9d2c527654c4def826abde9e97cd1ba4">yoriito::vehicle::adas::cruisecontrol::speedset::Subscribe</a> ()</td></tr>
+<tr class="separator:a9d2c527654c4def826abde9e97cd1ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68dfaaa5c2876eceb73ec4f78ee7d87f" id="r_a68dfaaa5c2876eceb73ec4f78ee7d87f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol_1_1speedset.html#a68dfaaa5c2876eceb73ec4f78ee7d87f">yoriito::vehicle::adas::cruisecontrol::speedset::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:a68dfaaa5c2876eceb73ec4f78ee7d87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348182e93629b2f9f5c85cd4146bf1e0" id="r_a348182e93629b2f9f5c85cd4146bf1e0"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol_1_1speedset.html#a348182e93629b2f9f5c85cd4146bf1e0">yoriito::vehicle::adas::cruisecontrol::speedset::Inspect</a> ()</td></tr>
+<tr class="separator:a348182e93629b2f9f5c85cd4146bf1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a05119ad6ad7bb501353988b800a94ef9" id="r_a05119ad6ad7bb501353988b800a94ef9"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1adaptivecruisecontrol_1_1speedset.html#a05119ad6ad7bb501353988b800a94ef9">yoriito::vehicle::adas::adaptivecruisecontrol::speedset::VEHICLE_ADAS_ADAPTIVECRUISECONTROL_SPEEDSET</a></td></tr>
-<tr class="separator:a05119ad6ad7bb501353988b800a94ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3964cc657a5a4071631d10c925c31102" id="r_a3964cc657a5a4071631d10c925c31102"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1adas_1_1cruisecontrol_1_1speedset.html#a3964cc657a5a4071631d10c925c31102">yoriito::vehicle::adas::cruisecontrol::speedset::VEHICLE_ADAS_CRUISECONTROL_SPEEDSET</a></td></tr>
+<tr class="separator:a3964cc657a5a4071631d10c925c31102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_7a55ace4aeba6e11c0edd380c8a601cc.html">signal</a></li><li class="navelem"><a class="el" href="dir_5b0ef1eba39c32bbe4fdc1a14681796b.html">adas</a></li><li class="navelem"><a class="el" href="dir_7e83587cbf443085bc6b6d1ffd9cafc1.html">adaptivecruisecontrol</a></li><li class="navelem"><a class="el" href="Signal__SpeedSet_8h.html">Signal_SpeedSet.h</a></li>
+    <li class="navelem"><a class="el" href="dir_7a55ace4aeba6e11c0edd380c8a601cc.html">signal</a></li><li class="navelem"><a class="el" href="dir_5b0ef1eba39c32bbe4fdc1a14681796b.html">adas</a></li><li class="navelem"><a class="el" href="dir_1e38b878cbdbe953e4253f169146555d.html">cruisecontrol</a></li><li class="navelem"><a class="el" href="Signal__SpeedSet_8h.html">Signal_SpeedSet.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

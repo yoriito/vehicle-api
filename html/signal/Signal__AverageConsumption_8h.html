@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/fuelsystem/Signal_AverageConsumption.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/fuelsystem/Signal_AverageConsumption.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('Signal__AverageConsumption_8h.html',''
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_AverageConsumption.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__AverageConsumption_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__AverageConsumption_8h__dep__incl.svg" width="518" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__AverageConsumption_8h_source.html">Go to the source code of this file.</a></p>
@@ -135,14 +139,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a66a3fab329dcabb847ce75eba962e47c" id="r_a66a3fab329dcabb847ce75eba962e47c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#a66a3fab329dcabb847ce75eba962e47c">yoriito::vehicle::powertrain::fuelsystem::averageconsumption::Get</a> ()</td></tr>
-<tr class="separator:a66a3fab329dcabb847ce75eba962e47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af44cbbd1264efc994d0824ec5f1ddaea" id="r_af44cbbd1264efc994d0824ec5f1ddaea"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#af44cbbd1264efc994d0824ec5f1ddaea">yoriito::vehicle::powertrain::fuelsystem::averageconsumption::Subscribe</a> ()</td></tr>
-<tr class="separator:af44cbbd1264efc994d0824ec5f1ddaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9fdc1d9cb94f2dd3959467aa5be401a" id="r_ab9fdc1d9cb94f2dd3959467aa5be401a"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#ab9fdc1d9cb94f2dd3959467aa5be401a">yoriito::vehicle::powertrain::fuelsystem::averageconsumption::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:ab9fdc1d9cb94f2dd3959467aa5be401a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87fb53fa77832507f7762e521d2b35a3" id="r_a87fb53fa77832507f7762e521d2b35a3"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#a87fb53fa77832507f7762e521d2b35a3">yoriito::vehicle::powertrain::fuelsystem::averageconsumption::Inspect</a> ()</td></tr>
-<tr class="separator:a87fb53fa77832507f7762e521d2b35a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6629fcff3efc52a73133dec343d33825" id="r_a6629fcff3efc52a73133dec343d33825"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#a6629fcff3efc52a73133dec343d33825">yoriito::vehicle::powertrain::fuelsystem::averageconsumption::Get</a> ()</td></tr>
+<tr class="separator:a6629fcff3efc52a73133dec343d33825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb517dbc0371321a37710e2747f67354" id="r_aeb517dbc0371321a37710e2747f67354"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#aeb517dbc0371321a37710e2747f67354">yoriito::vehicle::powertrain::fuelsystem::averageconsumption::Subscribe</a> ()</td></tr>
+<tr class="separator:aeb517dbc0371321a37710e2747f67354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddd0d129ea35c3d6d27509370ba57fc" id="r_a2ddd0d129ea35c3d6d27509370ba57fc"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#a2ddd0d129ea35c3d6d27509370ba57fc">yoriito::vehicle::powertrain::fuelsystem::averageconsumption::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:a2ddd0d129ea35c3d6d27509370ba57fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890168674fef607466212ea02702bebe" id="r_a890168674fef607466212ea02702bebe"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1fuelsystem_1_1averageconsumption.html#a890168674fef607466212ea02702bebe">yoriito::vehicle::powertrain::fuelsystem::averageconsumption::Inspect</a> ()</td></tr>
+<tr class="separator:a890168674fef607466212ea02702bebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

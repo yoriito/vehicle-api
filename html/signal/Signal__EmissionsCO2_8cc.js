@@ -1,5 +1,5 @@
 var Signal__EmissionsCO2_8cc =
 [
-    [ "Get", "Signal__EmissionsCO2_8cc.html#ab198002ec1dcd0099b7b4394fcf76dcc", null ],
-    [ "Inspect", "Signal__EmissionsCO2_8cc.html#accd8b512dfaae12d292787bc96145ae4", null ]
+    [ "Get", "Signal__EmissionsCO2_8cc.html#aaa1e13c2b0f6b7b545c244b95fe68761", null ],
+    [ "Inspect", "Signal__EmissionsCO2_8cc.html#a254fb6e2eca80104ccabce6403bb31a1", null ]
 ];

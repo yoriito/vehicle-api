@@ -1,5 +1,5 @@
 var number4_2Signal__Id_8cc =
 [
-    [ "Get", "number4_2Signal__Id_8cc.html#aa9a721666fc4ef591d33972e7730cbc3", null ],
-    [ "Inspect", "number4_2Signal__Id_8cc.html#a16b099700593c00cb909b20fe4155030", null ]
+    [ "Get", "number4_2Signal__Id_8cc.html#a2780965607ff42d1e2be5fb380964a75", null ],
+    [ "Inspect", "number4_2Signal__Id_8cc.html#a78f35fc7eb556717a1d19b9aacb4d5a3", null ]
 ];

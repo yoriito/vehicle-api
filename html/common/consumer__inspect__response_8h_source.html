@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - common: /home/runner/work/vehicle-api/vehicle-api/common/databroker/consumer_inspect_response.h Source File</title>
+<title>Yoriito Vehicle API - common: /work/common/databroker/consumer_inspect_response.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,47 +117,73 @@ $(document).ready(function(){initNavTree('consumer__inspect__response_8h_source.
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef COMMON_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define COMMON_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="consumer__inspect__data_8h.html">databroker/consumer_inspect_data.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1databroker.html">yoriito::databroker</a> {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html">   43</a></span><span class="keyword">class </span><a class="code hl_class" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html">ConsumerInspectResponse</a> {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a34097f686d5da18f79bf7bf03c39f06d">   57</a></span>  <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a34097f686d5da18f79bf7bf03c39f06d">ConsumerInspectResponse</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a00f64303cd3233466598040858ecf2a0">   73</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a00f64303cd3233466598040858ecf2a0">ConsumerInspectResponse</a>(std::vector&lt;ConsumerInspectData&gt;&amp;&amp; datas)</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      : datas_(std::move(datas)) {}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="consumer__inspect__data_8h.html">databroker/consumer_inspect_data.h</a>&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceyoriito_1_1databroker.html">yoriito::databroker</a> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html">   45</a></span><span class="keyword">class </span><a class="code hl_class" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html">ConsumerInspectResponse</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a34097f686d5da18f79bf7bf03c39f06d">   59</a></span>  <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a34097f686d5da18f79bf7bf03c39f06d">ConsumerInspectResponse</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#afd5abef05ed7882eafbbd96c8ce24b8c">   75</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#afd5abef05ed7882eafbbd96c8ce24b8c">ConsumerInspectResponse</a>(std::vector&lt;ConsumerInspectData&gt; datas)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      : datas_(std::move(datas)) {}</div>
 </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#ac2ca5cfbbeb15bf7257ac0ce00c2daea">   89</a></span>  <span class="keyword">const</span> std::vector&lt;ConsumerInspectData&gt;&amp; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#ac2ca5cfbbeb15bf7257ac0ce00c2daea">GetDataPoints</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> datas_;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="}">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#af42c0af677430ffc692c465fddd05e29">   94</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#af42c0af677430ffc692c465fddd05e29">ConsumerInspectResponse</a>(</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    std::vector&lt;ConsumerInspectData&gt; datas,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    std::vector&lt;std::shared_ptr&lt;StructType&gt;&gt; struct_types)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      : datas_(std::move(datas)), struct_types_(std::move(struct_types)) {}</div>
 </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  std::vector&lt;ConsumerInspectData&gt; datas_;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
-</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}  <span class="comment">// namespace yoriito::databroker</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#endif  </span><span class="comment">// YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_</span></div>
-<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerInspectResponse_html"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html">yoriito::databroker::ConsumerInspectResponse</a></div><div class="ttdoc">Response class for inspecting datapoint metadata in the DataBroker.</div><div class="ttdef"><b>Definition</b> <a href="consumer__inspect__response_8h_source.html#l00043">consumer_inspect_response.h:43</a></div></div>
-<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerInspectResponse_html_a00f64303cd3233466598040858ecf2a0"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a00f64303cd3233466598040858ecf2a0">yoriito::databroker::ConsumerInspectResponse::ConsumerInspectResponse</a></div><div class="ttdeci">ConsumerInspectResponse(std::vector&lt; ConsumerInspectData &gt; &amp;&amp;datas)</div><div class="ttdef"><b>Definition</b> <a href="consumer__inspect__response_8h_source.html#l00073">consumer_inspect_response.h:73</a></div></div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a0ca032925395edfa582b2adea9b55d77">  112</a></span>  <span class="keyword">const</span> std::vector&lt;ConsumerInspectData&gt;&amp; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a0ca032925395edfa582b2adea9b55d77">GetDataPoints</a>() const&amp; {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">return</span> datas_;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a0b3c7ff5d45facb10ff4844edba5e57e">  115</a></span>  std::vector&lt;ConsumerInspectData&gt; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a0b3c7ff5d45facb10ff4844edba5e57e">GetDataPoints</a>() const&amp;&amp; { <span class="keywordflow">return</span> datas_; }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a69df7d9b2b5226431e89b05afcff9317">  130</a></span>  <span class="keyword">const</span> std::vector&lt;std::shared_ptr&lt;StructType&gt;&gt;&amp; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a69df7d9b2b5226431e89b05afcff9317">GetStructTypes</a>() const&amp; {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">return</span> struct_types_;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  }</div>
+</div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#ab70f0ad855002f9d944740418f1e6b53">  133</a></span>  std::vector&lt;std::shared_ptr&lt;StructType&gt;&gt; <a class="code hl_function" href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#ab70f0ad855002f9d944740418f1e6b53">GetStructTypes</a>() const&amp;&amp; {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span> struct_types_;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  }</div>
+</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  std::vector&lt;ConsumerInspectData&gt; datas_;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  std::vector&lt;std::shared_ptr&lt;StructType&gt;&gt; struct_types_;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>};</div>
+</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>}  <span class="comment">// namespace yoriito::databroker</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">#endif  </span><span class="comment">// COMMON_DATABROKER_CONSUMER_INSPECT_RESPONSE_H_</span></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerInspectResponse_html"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html">yoriito::databroker::ConsumerInspectResponse</a></div><div class="ttdoc">Response class for inspecting datapoint metadata in the DataBroker.</div><div class="ttdef"><b>Definition</b> <a href="consumer__inspect__response_8h_source.html#l00045">consumer_inspect_response.h:45</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerInspectResponse_html_a0b3c7ff5d45facb10ff4844edba5e57e"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a0b3c7ff5d45facb10ff4844edba5e57e">yoriito::databroker::ConsumerInspectResponse::GetDataPoints</a></div><div class="ttdeci">std::vector&lt; ConsumerInspectData &gt; GetDataPoints() const &amp;&amp;</div><div class="ttdef"><b>Definition</b> <a href="consumer__inspect__response_8h_source.html#l00115">consumer_inspect_response.h:115</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerInspectResponse_html_a0ca032925395edfa582b2adea9b55d77"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a0ca032925395edfa582b2adea9b55d77">yoriito::databroker::ConsumerInspectResponse::GetDataPoints</a></div><div class="ttdeci">const std::vector&lt; ConsumerInspectData &gt; &amp; GetDataPoints() const &amp;</div><div class="ttdef"><b>Definition</b> <a href="consumer__inspect__response_8h_source.html#l00112">consumer_inspect_response.h:112</a></div></div>
 <div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerInspectResponse_html_a34097f686d5da18f79bf7bf03c39f06d"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a34097f686d5da18f79bf7bf03c39f06d">yoriito::databroker::ConsumerInspectResponse::ConsumerInspectResponse</a></div><div class="ttdeci">ConsumerInspectResponse()=delete</div><div class="ttdoc">Deleted default constructor.</div></div>
-<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerInspectResponse_html_ac2ca5cfbbeb15bf7257ac0ce00c2daea"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#ac2ca5cfbbeb15bf7257ac0ce00c2daea">yoriito::databroker::ConsumerInspectResponse::GetDataPoints</a></div><div class="ttdeci">const std::vector&lt; ConsumerInspectData &gt; &amp; GetDataPoints() const</div><div class="ttdef"><b>Definition</b> <a href="consumer__inspect__response_8h_source.html#l00089">consumer_inspect_response.h:89</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerInspectResponse_html_a69df7d9b2b5226431e89b05afcff9317"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#a69df7d9b2b5226431e89b05afcff9317">yoriito::databroker::ConsumerInspectResponse::GetStructTypes</a></div><div class="ttdeci">const std::vector&lt; std::shared_ptr&lt; StructType &gt; &gt; &amp; GetStructTypes() const &amp;</div><div class="ttdef"><b>Definition</b> <a href="consumer__inspect__response_8h_source.html#l00130">consumer_inspect_response.h:130</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerInspectResponse_html_ab70f0ad855002f9d944740418f1e6b53"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#ab70f0ad855002f9d944740418f1e6b53">yoriito::databroker::ConsumerInspectResponse::GetStructTypes</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; StructType &gt; &gt; GetStructTypes() const &amp;&amp;</div><div class="ttdef"><b>Definition</b> <a href="consumer__inspect__response_8h_source.html#l00133">consumer_inspect_response.h:133</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerInspectResponse_html_af42c0af677430ffc692c465fddd05e29"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#af42c0af677430ffc692c465fddd05e29">yoriito::databroker::ConsumerInspectResponse::ConsumerInspectResponse</a></div><div class="ttdeci">ConsumerInspectResponse(std::vector&lt; ConsumerInspectData &gt; datas, std::vector&lt; std::shared_ptr&lt; StructType &gt; &gt; struct_types)</div><div class="ttdef"><b>Definition</b> <a href="consumer__inspect__response_8h_source.html#l00094">consumer_inspect_response.h:94</a></div></div>
+<div class="ttc" id="aclassyoriito_1_1databroker_1_1ConsumerInspectResponse_html_afd5abef05ed7882eafbbd96c8ce24b8c"><div class="ttname"><a href="classyoriito_1_1databroker_1_1ConsumerInspectResponse.html#afd5abef05ed7882eafbbd96c8ce24b8c">yoriito::databroker::ConsumerInspectResponse::ConsumerInspectResponse</a></div><div class="ttdeci">ConsumerInspectResponse(std::vector&lt; ConsumerInspectData &gt; datas)</div><div class="ttdef"><b>Definition</b> <a href="consumer__inspect__response_8h_source.html#l00075">consumer_inspect_response.h:75</a></div></div>
 <div class="ttc" id="aconsumer__inspect__data_8h_html"><div class="ttname"><a href="consumer__inspect__data_8h.html">consumer_inspect_data.h</a></div></div>
 <div class="ttc" id="anamespaceyoriito_1_1databroker_html"><div class="ttname"><a href="namespaceyoriito_1_1databroker.html">yoriito::databroker</a></div><div class="ttdoc">Namespace for DataBroker common interfaces and types.</div></div>
 </div><!-- fragment --></div><!-- contents -->

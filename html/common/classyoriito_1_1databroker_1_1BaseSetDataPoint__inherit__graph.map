@@ -1,7 +1,0 @@
-<map id="yoriito::databroker::BaseSetDataPoint" name="yoriito::databroker::BaseSetDataPoint">
-<area shape="rect" id="Node000001" title="Base class for setting datapoint values in the DataBroker." alt="" coords="5,37,152,77"/>
-<area shape="rect" id="Node000002" href="$classyoriito_1_1databroker_1_1ConsumerSetDataPoint.html" title="Class representing a datapoint to be set by a DataBroker consumer." alt="" coords="200,5,381,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,42,199,36,200,42,166,47"/>
-<area shape="rect" id="Node000003" href="$classyoriito_1_1databroker_1_1ProducerSetDataPoint.html" title="Class representing a datapoint to be set by a DataBroker producer." alt="" coords="205,69,377,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,68,205,74,204,79,165,73"/>
-</map>

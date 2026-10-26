@@ -1,9 +1,0 @@
-<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/occupant/row2/middle/Middle.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/occupant/row2/middle/Middle.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,236,60"/>
-<area shape="rect" id="Node000002" href="$occupant_2row2_2Row2_8h.html" title=" " alt="" coords="23,108,219,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,74,123,108,118,108,118,74"/>
-<area shape="rect" id="Node000003" href="$Occupant_8h.html" title=" " alt="" coords="23,211,219,265"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,176,123,211,118,211,118,176"/>
-<area shape="rect" id="Node000004" href="$Vehicle_8h.html" title=" " alt="" coords="23,313,219,368"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,279,123,313,118,313,118,279"/>
-</map>

@@ -1,0 +1,4 @@
+var structyoriito_1_1types_1_1internal_1_1StructUtilityTraits_3_01yoriito_1_1types_1_1VehicleLocation_01_4 =
+[
+    [ "Utility", "structyoriito_1_1types_1_1internal_1_1StructUtilityTraits_3_01yoriito_1_1types_1_1VehicleLocation_01_4.html#a4a26d4531f1856b5a502921e27b3e911", null ]
+];

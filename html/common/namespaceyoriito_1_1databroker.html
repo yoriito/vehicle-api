@@ -93,7 +93,8 @@ $(document).ready(function(){initNavTree('namespaceyoriito_1_1databroker.html','
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">yoriito::databroker Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -199,10 +200,115 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoriito_1_1databroker_1_1ProducerSubscribeRequest.html">ProducerSubscribeRequest</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class representing a request to subscribe to datapoints by a DataBroker producer.  <a href="classyoriito_1_1databroker_1_1ProducerSubscribeRequest.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoriito_1_1databroker_1_1PropertyType.html">PropertyType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class representing a property definition of <a class="el" href="classyoriito_1_1databroker_1_1StructType.html" title="Class representing a struct type definition in the DataBroker.">StructType</a>.  <a href="classyoriito_1_1databroker_1_1PropertyType.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoriito_1_1databroker_1_1StructType.html">StructType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class representing a struct type definition in the DataBroker.  <a href="classyoriito_1_1databroker_1_1StructType.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoriito_1_1databroker_1_1StructTypeRef.html">StructTypeRef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class representing a reference to <a class="el" href="classyoriito_1_1databroker_1_1StructType.html" title="Class representing a struct type definition in the DataBroker.">StructType</a>.  <a href="classyoriito_1_1databroker_1_1StructTypeRef.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a9b57e064ad621887e20bdc77cd398696" id="r_a9b57e064ad621887e20bdc77cd398696"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696">DataType</a> { <br />
+&#160;&#160;<a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a7b5938aaadfccbff9b34e4e49be2bf4d">DATA_TYPE_UNSPECIFIED</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696aac92e59604775c40171c1af1604ac08e">DATA_TYPE_STRING</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a2d4e6e52a910630a4bd0ec761765883c">DATA_TYPE_BOOLEAN</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a47be4c5edc86bb0361278c81706bf664">DATA_TYPE_INT8</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a5219d459055e41e4bbbb72c477c80ce6">DATA_TYPE_INT16</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a3721a35f557fc93642cbaac9cf71808f">DATA_TYPE_INT32</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a9d0467fa2becb3eeb76b7f3a63aea606">DATA_TYPE_INT64</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a5ab55d9e2a8bd3897e493e81fcd1e6d7">DATA_TYPE_UINT8</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696ac6151d3a8d6c587643b7e0b3a3ff6511">DATA_TYPE_UINT16</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a56134599e37c6d2bc8df74adc632219f">DATA_TYPE_UINT32</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a804d7d0fbf8838bc3c53f9cbdde60757">DATA_TYPE_UINT64</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a7bc7695b72d96af41cc2e997e3ea3e4e">DATA_TYPE_FLOAT</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a2909e9f39d5a541090ec95edf6d4354d">DATA_TYPE_DOUBLE</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a7ba45b992bd03b8051fc45d639eb74e1">DATA_TYPE_TIMESTAMP</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a5dd192742457c00c255a20c5e09b2fe1">DATA_TYPE_STRING_ARRAY</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a8eba022f06bbc5fbbf6d64accf82343e">DATA_TYPE_BOOLEAN_ARRAY</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a7e0c88c1cffede636f138a2b996c5300">DATA_TYPE_INT8_ARRAY</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a77b7531d9c33f8943a889ca3a7362918">DATA_TYPE_INT16_ARRAY</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a1a54e83a60ee6527ca5e5d8b92154dc8">DATA_TYPE_INT32_ARRAY</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a49b741aa83a6a93bd026aec3abf83452">DATA_TYPE_INT64_ARRAY</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a8fc1619e6bc896b0e84470298e7a7222">DATA_TYPE_UINT8_ARRAY</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a5bcdf9312fd233bca0fbe57a191d8558">DATA_TYPE_UINT16_ARRAY</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a5556473f6f4d4398ccfcf1da09665b36">DATA_TYPE_UINT32_ARRAY</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a7cce0cefe7ccb536358924846b0f7da4">DATA_TYPE_UINT64_ARRAY</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a2fde271068cc6628296b9e3216643ce5">DATA_TYPE_FLOAT_ARRAY</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696afc682ee977b71fafaa9c9e6ce1009f91">DATA_TYPE_DOUBLE_ARRAY</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696aa2dad4666de8c175496e4ed531b0c193">DATA_TYPE_STRUCT</a>
+, <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696a396ca290236d0cb8fe679dbcd7000339">DATA_TYPE_STRUCT_ARRAY</a>
+<br />
+ }</td></tr>
+<tr class="separator:a9b57e064ad621887e20bdc77cd398696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Namespace for DataBroker common interfaces and types. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a9b57e064ad621887e20bdc77cd398696" name="a9b57e064ad621887e20bdc77cd398696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b57e064ad621887e20bdc77cd398696">&#9670;&#160;</a></span>DataType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespaceyoriito_1_1databroker.html#a9b57e064ad621887e20bdc77cd398696">yoriito::databroker::DataType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a7b5938aaadfccbff9b34e4e49be2bf4d" name="a9b57e064ad621887e20bdc77cd398696a7b5938aaadfccbff9b34e4e49be2bf4d"></a>DATA_TYPE_UNSPECIFIED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696aac92e59604775c40171c1af1604ac08e" name="a9b57e064ad621887e20bdc77cd398696aac92e59604775c40171c1af1604ac08e"></a>DATA_TYPE_STRING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a2d4e6e52a910630a4bd0ec761765883c" name="a9b57e064ad621887e20bdc77cd398696a2d4e6e52a910630a4bd0ec761765883c"></a>DATA_TYPE_BOOLEAN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a47be4c5edc86bb0361278c81706bf664" name="a9b57e064ad621887e20bdc77cd398696a47be4c5edc86bb0361278c81706bf664"></a>DATA_TYPE_INT8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a5219d459055e41e4bbbb72c477c80ce6" name="a9b57e064ad621887e20bdc77cd398696a5219d459055e41e4bbbb72c477c80ce6"></a>DATA_TYPE_INT16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a3721a35f557fc93642cbaac9cf71808f" name="a9b57e064ad621887e20bdc77cd398696a3721a35f557fc93642cbaac9cf71808f"></a>DATA_TYPE_INT32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a9d0467fa2becb3eeb76b7f3a63aea606" name="a9b57e064ad621887e20bdc77cd398696a9d0467fa2becb3eeb76b7f3a63aea606"></a>DATA_TYPE_INT64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a5ab55d9e2a8bd3897e493e81fcd1e6d7" name="a9b57e064ad621887e20bdc77cd398696a5ab55d9e2a8bd3897e493e81fcd1e6d7"></a>DATA_TYPE_UINT8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696ac6151d3a8d6c587643b7e0b3a3ff6511" name="a9b57e064ad621887e20bdc77cd398696ac6151d3a8d6c587643b7e0b3a3ff6511"></a>DATA_TYPE_UINT16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a56134599e37c6d2bc8df74adc632219f" name="a9b57e064ad621887e20bdc77cd398696a56134599e37c6d2bc8df74adc632219f"></a>DATA_TYPE_UINT32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a804d7d0fbf8838bc3c53f9cbdde60757" name="a9b57e064ad621887e20bdc77cd398696a804d7d0fbf8838bc3c53f9cbdde60757"></a>DATA_TYPE_UINT64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a7bc7695b72d96af41cc2e997e3ea3e4e" name="a9b57e064ad621887e20bdc77cd398696a7bc7695b72d96af41cc2e997e3ea3e4e"></a>DATA_TYPE_FLOAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a2909e9f39d5a541090ec95edf6d4354d" name="a9b57e064ad621887e20bdc77cd398696a2909e9f39d5a541090ec95edf6d4354d"></a>DATA_TYPE_DOUBLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a7ba45b992bd03b8051fc45d639eb74e1" name="a9b57e064ad621887e20bdc77cd398696a7ba45b992bd03b8051fc45d639eb74e1"></a>DATA_TYPE_TIMESTAMP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a5dd192742457c00c255a20c5e09b2fe1" name="a9b57e064ad621887e20bdc77cd398696a5dd192742457c00c255a20c5e09b2fe1"></a>DATA_TYPE_STRING_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a8eba022f06bbc5fbbf6d64accf82343e" name="a9b57e064ad621887e20bdc77cd398696a8eba022f06bbc5fbbf6d64accf82343e"></a>DATA_TYPE_BOOLEAN_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a7e0c88c1cffede636f138a2b996c5300" name="a9b57e064ad621887e20bdc77cd398696a7e0c88c1cffede636f138a2b996c5300"></a>DATA_TYPE_INT8_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a77b7531d9c33f8943a889ca3a7362918" name="a9b57e064ad621887e20bdc77cd398696a77b7531d9c33f8943a889ca3a7362918"></a>DATA_TYPE_INT16_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a1a54e83a60ee6527ca5e5d8b92154dc8" name="a9b57e064ad621887e20bdc77cd398696a1a54e83a60ee6527ca5e5d8b92154dc8"></a>DATA_TYPE_INT32_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a49b741aa83a6a93bd026aec3abf83452" name="a9b57e064ad621887e20bdc77cd398696a49b741aa83a6a93bd026aec3abf83452"></a>DATA_TYPE_INT64_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a8fc1619e6bc896b0e84470298e7a7222" name="a9b57e064ad621887e20bdc77cd398696a8fc1619e6bc896b0e84470298e7a7222"></a>DATA_TYPE_UINT8_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a5bcdf9312fd233bca0fbe57a191d8558" name="a9b57e064ad621887e20bdc77cd398696a5bcdf9312fd233bca0fbe57a191d8558"></a>DATA_TYPE_UINT16_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a5556473f6f4d4398ccfcf1da09665b36" name="a9b57e064ad621887e20bdc77cd398696a5556473f6f4d4398ccfcf1da09665b36"></a>DATA_TYPE_UINT32_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a7cce0cefe7ccb536358924846b0f7da4" name="a9b57e064ad621887e20bdc77cd398696a7cce0cefe7ccb536358924846b0f7da4"></a>DATA_TYPE_UINT64_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a2fde271068cc6628296b9e3216643ce5" name="a9b57e064ad621887e20bdc77cd398696a2fde271068cc6628296b9e3216643ce5"></a>DATA_TYPE_FLOAT_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696afc682ee977b71fafaa9c9e6ce1009f91" name="a9b57e064ad621887e20bdc77cd398696afc682ee977b71fafaa9c9e6ce1009f91"></a>DATA_TYPE_DOUBLE_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696aa2dad4666de8c175496e4ed531b0c193" name="a9b57e064ad621887e20bdc77cd398696aa2dad4666de8c175496e4ed531b0c193"></a>DATA_TYPE_STRUCT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b57e064ad621887e20bdc77cd398696a396ca290236d0cb8fe679dbcd7000339" name="a9b57e064ad621887e20bdc77cd398696a396ca290236d0cb8fe679dbcd7000339"></a>DATA_TYPE_STRUCT_ARRAY&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="data__type_8h_source.html#l00024">24</a> of file <a class="el" href="data__type_8h_source.html">data_type.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

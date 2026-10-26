@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/fuelsystem/FuelSystem.h Source File</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/fuelsystem/FuelSystem.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,59 +117,49 @@ $(document).ready(function(){initNavTree('FuelSystem_8h_source.html',''); initRe
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef VEHICLE_POWERTRAIN_FUELSYSTEM_H</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define VEHICLE_POWERTRAIN_FUELSYSTEM_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef SIGNAL_POWERTRAIN_FUELSYSTEM_FUELSYSTEM_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define SIGNAL_POWERTRAIN_FUELSYSTEM_FUELSYSTEM_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__AbsoluteLevel_8h.html">Signal_AbsoluteLevel.h</a>&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__AbsoluteLevel__Availability__Sensor_8h.html">Signal_AbsoluteLevel_Availability_Sensor.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__AfterRefuelingFuelEconomy_8h.html">Signal_AfterRefuelingFuelEconomy.h</a>&quot;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__AverageConsumption_8h.html">Signal_AverageConsumption.h</a>&quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__AverageConsumption__Availability__Sensor_8h.html">Signal_AverageConsumption_Availability_Sensor.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__ConsumptionSinceLastRefuel_8h.html">Signal_ConsumptionSinceLastRefuel.h</a>&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__ConsumptionSinceStart_8h.html">Signal_ConsumptionSinceStart.h</a>&quot;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__ConsumptionSinceStart__Availability__Sensor_8h.html">Signal_ConsumptionSinceStart_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__InstantConsumption_8h.html">Signal_InstantConsumption.h</a>&quot;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__InstantConsumption__Availability__Sensor_8h.html">Signal_InstantConsumption_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsEngineStopStartEnabled_8h.html">Signal_IsEngineStopStartEnabled.h</a>&quot;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsEngineStopStartEnabled__Availability__Sensor_8h.html">Signal_IsEngineStopStartEnabled_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsFuelLevelLow_8h.html">Signal_IsFuelLevelLow.h</a>&quot;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsFuelLevelLow__Availability__Sensor_8h.html">Signal_IsFuelLevelLow_Availability_Sensor.h</a>&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__CumulativeFuelEconomy_8h.html">Signal_CumulativeFuelEconomy.h</a>&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__DriveFuelEconomy_8h.html">Signal_DriveFuelEconomy.h</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__InstantConsumption_8h.html">Signal_InstantConsumption.h</a>&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__InstantFuelEconomy_8h.html">Signal_InstantFuelEconomy.h</a>&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsEngineStopStartEnabled_8h.html">Signal_IsEngineStopStartEnabled.h</a>&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsFuelLevelEmpty_8h.html">Signal_IsFuelLevelEmpty.h</a>&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsFuelLevelLow_8h.html">Signal_IsFuelLevelLow.h</a>&quot;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsFuelPortFlapOpen_8h.html">Signal_IsFuelPortFlapOpen.h</a>&quot;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsFuelPortFlapOpen__Availability__Actuator_8h.html">Signal_IsFuelPortFlapOpen_Availability_Actuator.h</a>&quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__IsFuelPortFlapOpen__Availability__Sensor_8h.html">Signal_IsFuelPortFlapOpen_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="tractionbattery_2Signal__Range_8h.html">Signal_Range.h</a>&quot;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="tractionbattery_2Signal__Range__Availability__Sensor_8h.html">Signal_Range_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__RefuelPortPosition_8h.html">Signal_RefuelPortPosition.h</a>&quot;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__RelativeLevel_8h.html">Signal_RelativeLevel.h</a>&quot;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__RelativeLevel__Availability__Sensor_8h.html">Signal_RelativeLevel_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__SupportedFuel_8h.html">Signal_SupportedFuel.h</a>&quot;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TankCapacity_8h.html">Signal_TankCapacity.h</a>&quot;</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &quot;<a class="code" href="tractionbattery_2Signal__TimeRemaining_8h.html">Signal_TimeRemaining.h</a>&quot;</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &quot;<a class="code" href="tractionbattery_2Signal__TimeRemaining__Availability__Sensor_8h.html">Signal_TimeRemaining_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif  </span><span class="comment">// VEHICLE_POWERTRAIN_FUELSYSTEM_H</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="tractionbattery_2Signal__Range_8h.html">Signal_Range.h</a>&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__RefuelPortPosition_8h.html">Signal_RefuelPortPosition.h</a>&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__RelativeLevel_8h.html">Signal_RelativeLevel.h</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__SupportedFuel_8h.html">Signal_SupportedFuel.h</a>&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="Signal__TankCapacity_8h.html">Signal_TankCapacity.h</a>&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="tractionbattery_2Signal__TimeRemaining_8h.html">Signal_TimeRemaining.h</a>&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif  </span><span class="comment">// SIGNAL_POWERTRAIN_FUELSYSTEM_FUELSYSTEM_H_</span></div>
 <div class="ttc" id="aSignal__AbsoluteLevel_8h_html"><div class="ttname"><a href="Signal__AbsoluteLevel_8h.html">Signal_AbsoluteLevel.h</a></div></div>
-<div class="ttc" id="aSignal__AbsoluteLevel__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__AbsoluteLevel__Availability__Sensor_8h.html">Signal_AbsoluteLevel_Availability_Sensor.h</a></div></div>
+<div class="ttc" id="aSignal__AfterRefuelingFuelEconomy_8h_html"><div class="ttname"><a href="Signal__AfterRefuelingFuelEconomy_8h.html">Signal_AfterRefuelingFuelEconomy.h</a></div></div>
 <div class="ttc" id="aSignal__AverageConsumption_8h_html"><div class="ttname"><a href="Signal__AverageConsumption_8h.html">Signal_AverageConsumption.h</a></div></div>
-<div class="ttc" id="aSignal__AverageConsumption__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__AverageConsumption__Availability__Sensor_8h.html">Signal_AverageConsumption_Availability_Sensor.h</a></div></div>
+<div class="ttc" id="aSignal__ConsumptionSinceLastRefuel_8h_html"><div class="ttname"><a href="Signal__ConsumptionSinceLastRefuel_8h.html">Signal_ConsumptionSinceLastRefuel.h</a></div></div>
 <div class="ttc" id="aSignal__ConsumptionSinceStart_8h_html"><div class="ttname"><a href="Signal__ConsumptionSinceStart_8h.html">Signal_ConsumptionSinceStart.h</a></div></div>
-<div class="ttc" id="aSignal__ConsumptionSinceStart__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__ConsumptionSinceStart__Availability__Sensor_8h.html">Signal_ConsumptionSinceStart_Availability_Sensor.h</a></div></div>
+<div class="ttc" id="aSignal__CumulativeFuelEconomy_8h_html"><div class="ttname"><a href="Signal__CumulativeFuelEconomy_8h.html">Signal_CumulativeFuelEconomy.h</a></div></div>
+<div class="ttc" id="aSignal__DriveFuelEconomy_8h_html"><div class="ttname"><a href="Signal__DriveFuelEconomy_8h.html">Signal_DriveFuelEconomy.h</a></div></div>
 <div class="ttc" id="aSignal__InstantConsumption_8h_html"><div class="ttname"><a href="Signal__InstantConsumption_8h.html">Signal_InstantConsumption.h</a></div></div>
-<div class="ttc" id="aSignal__InstantConsumption__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__InstantConsumption__Availability__Sensor_8h.html">Signal_InstantConsumption_Availability_Sensor.h</a></div></div>
+<div class="ttc" id="aSignal__InstantFuelEconomy_8h_html"><div class="ttname"><a href="Signal__InstantFuelEconomy_8h.html">Signal_InstantFuelEconomy.h</a></div></div>
 <div class="ttc" id="aSignal__IsEngineStopStartEnabled_8h_html"><div class="ttname"><a href="Signal__IsEngineStopStartEnabled_8h.html">Signal_IsEngineStopStartEnabled.h</a></div></div>
-<div class="ttc" id="aSignal__IsEngineStopStartEnabled__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__IsEngineStopStartEnabled__Availability__Sensor_8h.html">Signal_IsEngineStopStartEnabled_Availability_Sensor.h</a></div></div>
+<div class="ttc" id="aSignal__IsFuelLevelEmpty_8h_html"><div class="ttname"><a href="Signal__IsFuelLevelEmpty_8h.html">Signal_IsFuelLevelEmpty.h</a></div></div>
 <div class="ttc" id="aSignal__IsFuelLevelLow_8h_html"><div class="ttname"><a href="Signal__IsFuelLevelLow_8h.html">Signal_IsFuelLevelLow.h</a></div></div>
-<div class="ttc" id="aSignal__IsFuelLevelLow__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__IsFuelLevelLow__Availability__Sensor_8h.html">Signal_IsFuelLevelLow_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__IsFuelPortFlapOpen_8h_html"><div class="ttname"><a href="Signal__IsFuelPortFlapOpen_8h.html">Signal_IsFuelPortFlapOpen.h</a></div></div>
-<div class="ttc" id="aSignal__IsFuelPortFlapOpen__Availability__Actuator_8h_html"><div class="ttname"><a href="Signal__IsFuelPortFlapOpen__Availability__Actuator_8h.html">Signal_IsFuelPortFlapOpen_Availability_Actuator.h</a></div></div>
-<div class="ttc" id="aSignal__IsFuelPortFlapOpen__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__IsFuelPortFlapOpen__Availability__Sensor_8h.html">Signal_IsFuelPortFlapOpen_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__RefuelPortPosition_8h_html"><div class="ttname"><a href="Signal__RefuelPortPosition_8h.html">Signal_RefuelPortPosition.h</a></div></div>
 <div class="ttc" id="aSignal__RelativeLevel_8h_html"><div class="ttname"><a href="Signal__RelativeLevel_8h.html">Signal_RelativeLevel.h</a></div></div>
-<div class="ttc" id="aSignal__RelativeLevel__Availability__Sensor_8h_html"><div class="ttname"><a href="Signal__RelativeLevel__Availability__Sensor_8h.html">Signal_RelativeLevel_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="aSignal__SupportedFuel_8h_html"><div class="ttname"><a href="Signal__SupportedFuel_8h.html">Signal_SupportedFuel.h</a></div></div>
 <div class="ttc" id="aSignal__TankCapacity_8h_html"><div class="ttname"><a href="Signal__TankCapacity_8h.html">Signal_TankCapacity.h</a></div></div>
 <div class="ttc" id="atractionbattery_2Signal__Range_8h_html"><div class="ttname"><a href="tractionbattery_2Signal__Range_8h.html">Signal_Range.h</a></div></div>
-<div class="ttc" id="atractionbattery_2Signal__Range__Availability__Sensor_8h_html"><div class="ttname"><a href="tractionbattery_2Signal__Range__Availability__Sensor_8h.html">Signal_Range_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="atractionbattery_2Signal__TimeRemaining_8h_html"><div class="ttname"><a href="tractionbattery_2Signal__TimeRemaining_8h.html">Signal_TimeRemaining.h</a></div></div>
-<div class="ttc" id="atractionbattery_2Signal__TimeRemaining__Availability__Sensor_8h_html"><div class="ttname"><a href="tractionbattery_2Signal__TimeRemaining__Availability__Sensor_8h.html">Signal_TimeRemaining_Availability_Sensor.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

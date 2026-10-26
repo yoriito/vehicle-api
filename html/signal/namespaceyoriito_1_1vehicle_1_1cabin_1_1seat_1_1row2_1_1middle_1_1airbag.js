@@ -1,18 +1,18 @@
 var namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag =
 [
-    [ " isdeployed_availability_sensor", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1_01isdeployed__availability__sensor.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1_01isdeployed__availability__sensor.html#aeef89c6d6ed051e96cc1f0f629d75f75", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1_01isdeployed__availability__sensor.html#aa7045d656161877ad4c42845b9d43f9b", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1_01isdeployed__availability__sensor.html#ab39e25c8dc7b3267734266cc4eb578b9", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1_01isdeployed__availability__sensor.html#a4707464b84ba5a8ae1fa5c5fd9385ebe", null ],
-      [ "VEHICLE_CABIN_SEAT_ROW2_MIDDLE_AIRBAG_ISDEPLOYED_AVAILABILITY_SENSOR", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1_01isdeployed__availability__sensor.html#a2f201de830682c9750925dae5a5e6a65", null ]
-    ] ],
     [ "isdeployed", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isdeployed.html", [
-      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isdeployed.html#a405f0ad65e566378e4d09634cf0236a6", null ],
-      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isdeployed.html#afb8fdbf7d56a32ab9b441a0ac158001d", null ],
-      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isdeployed.html#abbbc91a3ab8ceab397f240a3dbd432a2", null ],
-      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isdeployed.html#a04073a4e4a96e8cbdc23d3cbd5c7c830", null ],
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isdeployed.html#a5ce4db0005bb748a48d808370a416a58", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isdeployed.html#a06775922119b7f95dc270b9d035b2080", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isdeployed.html#aebb9b40b9d0b786e8823843abfecfd91", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isdeployed.html#a16d7718e9620ecaf9b05c55e8de5254a", null ],
       [ "VEHICLE_CABIN_SEAT_ROW2_MIDDLE_AIRBAG_ISDEPLOYED", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isdeployed.html#afcda6d5c8a89aff34350c9c210863657", null ]
     ] ],
-    [ "isdeployed_availability_sensor", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isdeployed__availability__sensor.html", null ]
+    [ "isenabled", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isenabled.html", [
+      [ "Get", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isenabled.html#a21dee8a260bbc0638e20a9e627bc545f", null ],
+      [ "Inspect", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isenabled.html#acf8e898fd5f68218ff13952bdc1aaef0", null ],
+      [ "Set", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isenabled.html#ac0863242ccef49d79c0205da992e7b27", null ],
+      [ "Subscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isenabled.html#a15024032cce8ad3c9daf5588132295c9", null ],
+      [ "UnSubscribe", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isenabled.html#a9cfdcab4d9669514806164ec3f434e99", null ],
+      [ "VEHICLE_CABIN_SEAT_ROW2_MIDDLE_AIRBAG_ISENABLED", "namespaceyoriito_1_1vehicle_1_1cabin_1_1seat_1_1row2_1_1middle_1_1airbag_1_1isenabled.html#a2413cd06306405470b708151b0a9bc40", null ]
+    ] ]
 ];

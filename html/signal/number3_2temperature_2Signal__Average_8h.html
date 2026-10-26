@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/number3/temperature/Signal_Average.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/number3/temperature/Signal_Average.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('number3_2temperature_2Signal__Average_
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Average.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="number3_2temperature_2Signal__Average_8h__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="number3_2temperature_2Signal__Average_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="number3_2temperature_2Signal__Average_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average.html">yoriito::vehicle::powertrain::tractionbattery::number3::temperature::average</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.TractionBattery.Number3.Temperature.Average signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -136,24 +137,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature.html">yoriito::vehicle::powertrain::tractionbattery::number3::temperature</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1_01average" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1_01average"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1_01average.html">yoriito::vehicle::powertrain::tractionbattery::number3::temperature:: average</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average.html">yoriito::vehicle::powertrain::tractionbattery::number3::temperature::average</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a94f503b1ca8f49a395cd7f5e50119ef1" id="r_a94f503b1ca8f49a395cd7f5e50119ef1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1_01average.html#a94f503b1ca8f49a395cd7f5e50119ef1">yoriito::vehicle::powertrain::tractionbattery::number3::temperature:: average::Get</a> ()</td></tr>
-<tr class="separator:a94f503b1ca8f49a395cd7f5e50119ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a351c884f6c8fe8952ebb5e16ddca0f" id="r_a8a351c884f6c8fe8952ebb5e16ddca0f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1_01average.html#a8a351c884f6c8fe8952ebb5e16ddca0f">yoriito::vehicle::powertrain::tractionbattery::number3::temperature:: average::Subscribe</a> ()</td></tr>
-<tr class="separator:a8a351c884f6c8fe8952ebb5e16ddca0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2af471d5fdbf3a00405b73fa6c5c75f1" id="r_a2af471d5fdbf3a00405b73fa6c5c75f1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1_01average.html#a2af471d5fdbf3a00405b73fa6c5c75f1">yoriito::vehicle::powertrain::tractionbattery::number3::temperature:: average::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a2af471d5fdbf3a00405b73fa6c5c75f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20166f401ca7c207e2405c83ac9b5202" id="r_a20166f401ca7c207e2405c83ac9b5202"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1_01average.html#a20166f401ca7c207e2405c83ac9b5202">yoriito::vehicle::powertrain::tractionbattery::number3::temperature:: average::Inspect</a> ()</td></tr>
-<tr class="separator:a20166f401ca7c207e2405c83ac9b5202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42eb8482ce582bba662296b961e5a236" id="r_a42eb8482ce582bba662296b961e5a236"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average.html#a42eb8482ce582bba662296b961e5a236">yoriito::vehicle::powertrain::tractionbattery::number3::temperature::average::Get</a> ()</td></tr>
+<tr class="separator:a42eb8482ce582bba662296b961e5a236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6fec778debffad1858fd12248665f5f" id="r_ae6fec778debffad1858fd12248665f5f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average.html#ae6fec778debffad1858fd12248665f5f">yoriito::vehicle::powertrain::tractionbattery::number3::temperature::average::Subscribe</a> ()</td></tr>
+<tr class="separator:ae6fec778debffad1858fd12248665f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e46b7182d65084c7265fb0cc82aeb1" id="r_a22e46b7182d65084c7265fb0cc82aeb1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average.html#a22e46b7182d65084c7265fb0cc82aeb1">yoriito::vehicle::powertrain::tractionbattery::number3::temperature::average::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:a22e46b7182d65084c7265fb0cc82aeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a725d8af99adb3e8d4fa8c1ce0ca21" id="r_ae2a725d8af99adb3e8d4fa8c1ce0ca21"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average.html#ae2a725d8af99adb3e8d4fa8c1ce0ca21">yoriito::vehicle::powertrain::tractionbattery::number3::temperature::average::Inspect</a> ()</td></tr>
+<tr class="separator:ae2a725d8af99adb3e8d4fa8c1ce0ca21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a7c6f2fc1d97f71fc3ddb930da075bd85" id="r_a7c6f2fc1d97f71fc3ddb930da075bd85"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1_01average.html#a7c6f2fc1d97f71fc3ddb930da075bd85">yoriito::vehicle::powertrain::tractionbattery::number3::temperature:: average::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_TEMPERATURE_AVERAGE</a></td></tr>
-<tr class="separator:a7c6f2fc1d97f71fc3ddb930da075bd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aec888d510f878abe122267681abf28" id="r_a2aec888d510f878abe122267681abf28"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number3_1_1temperature_1_1average.html#a2aec888d510f878abe122267681abf28">yoriito::vehicle::powertrain::tractionbattery::number3::temperature::average::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_TEMPERATURE_AVERAGE</a></td></tr>
+<tr class="separator:a2aec888d510f878abe122267681abf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

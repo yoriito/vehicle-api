@@ -1,9 +1,0 @@
-<map id="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/Signal_DoorCount.h" name="/home/runner/work/vehicle&#45;api/vehicle&#45;api/signal/cabin/Signal_DoorCount.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="116,5,312,60"/>
-<area shape="rect" id="Node000002" href="$Cabin_8h.html" title=" " alt="" coords="5,108,201,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,71,134,110,130,106,173,67"/>
-<area shape="rect" id="Node000004" href="$Signal__DoorCount_8cc.html" title=" " alt="" coords="225,108,424,163"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="255,67,298,106,294,110,251,71"/>
-<area shape="rect" id="Node000003" href="$Vehicle_8h.html" title=" " alt="" coords="5,211,201,265"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,176,106,211,101,211,101,176"/>
-</map>

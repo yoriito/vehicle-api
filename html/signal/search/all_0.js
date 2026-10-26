@@ -1,12 +1,15 @@
 var searchData=
 [
   ['abs_2eh_0',['ABS.h',['../ABS_8h.html',1,'']]],
-  ['acceleration_2eh_1',['Acceleration.h',['../Acceleration_8h.html',1,'']]],
-  ['accelerator_2eh_2',['Accelerator.h',['../Accelerator_8h.html',1,'']]],
-  ['adaptivecruisecontrol_2eh_3',['AdaptiveCruiseControl.h',['../AdaptiveCruiseControl_8h.html',1,'']]],
+  ['acceleration_1',['acceleration',['../structyoriito_1_1types_1_1Acceleration.html#ad1f50243e2046ce543190e81802ed628',1,'yoriito::types::Acceleration::Acceleration()'],['../structyoriito_1_1types_1_1Acceleration.html',1,'yoriito::types::Acceleration'],['../namespaceyoriito_1_1vehicle_1_1acceleration.html#a38783c69931d0f088b761c4e50b428e5',1,'yoriito::vehicle::acceleration::Acceleration'],['../structyoriito_1_1types_1_1Acceleration.html#ab83150d8d5deab6c3e32d534fd8898a2',1,'yoriito::types::Acceleration::Acceleration()']]],
+  ['accelerationutility_2',['AccelerationUtility',['../classyoriito_1_1types_1_1internal_1_1AccelerationUtility.html',1,'yoriito::types::internal']]],
+  ['accelerator_2eh_3',['Accelerator.h',['../Accelerator_8h.html',1,'']]],
   ['adas_2eh_4',['ADAS.h',['../ADAS_8h.html',1,'']]],
   ['airbag_2eh_5',['airbag.h',['../row1_2driverside_2airbag_2Airbag_8h.html',1,'(Global Namespace)'],['../row1_2middle_2airbag_2Airbag_8h.html',1,'(Global Namespace)'],['../row1_2passengerside_2airbag_2Airbag_8h.html',1,'(Global Namespace)'],['../row2_2driverside_2airbag_2Airbag_8h.html',1,'(Global Namespace)'],['../row2_2middle_2airbag_2Airbag_8h.html',1,'(Global Namespace)'],['../row2_2passengerside_2airbag_2Airbag_8h.html',1,'(Global Namespace)']]],
-  ['angularvelocity_2eh_6',['AngularVelocity.h',['../AngularVelocity_8h.html',1,'']]],
-  ['anyposition_2eh_7',['AnyPosition.h',['../AnyPosition_8h.html',1,'']]],
-  ['axle_2eh_8',['Axle.h',['../Axle_8h.html',1,'']]]
+  ['altitude_6',['altitude',['../structyoriito_1_1types_1_1VehicleLocation.html#aeefe7262411d98cfbf342e6806b0ceaf',1,'yoriito::types::VehicleLocation::altitude'],['../structyoriito_1_1types_1_1Location.html#a071a20a825557cd82489e8b38238e4b0',1,'yoriito::types::Location::altitude'],['../structyoriito_1_1types_1_1GNSSLocation.html#a76dfde19b324b9936105b3047ef771f5',1,'yoriito::types::GNSSLocation::altitude']]],
+  ['angularvelocity_7',['angularvelocity',['../structyoriito_1_1types_1_1AngularVelocity.html#ac79c1925bdb5abd36e6dc535aaebb2fa',1,'yoriito::types::AngularVelocity::AngularVelocity(float roll, float pitch, float yaw)'],['../structyoriito_1_1types_1_1AngularVelocity.html#a87b4483cba36d92359a67f49932c16b8',1,'yoriito::types::AngularVelocity::AngularVelocity()'],['../namespaceyoriito_1_1vehicle_1_1angularvelocity.html#a6c4cce1f8d5eb7254ed987b5fe4b268a',1,'yoriito::vehicle::angularvelocity::AngularVelocity'],['../structyoriito_1_1types_1_1AngularVelocity.html',1,'yoriito::types::AngularVelocity']]],
+  ['angularvelocityutility_8',['AngularVelocityUtility',['../classyoriito_1_1types_1_1internal_1_1AngularVelocityUtility.html',1,'yoriito::types::internal']]],
+  ['anyposition_2eh_9',['AnyPosition.h',['../AnyPosition_8h.html',1,'']]],
+  ['axle_2eh_10',['axle.h',['../motionmanagement_2suspension_2axle_2Axle_8h.html',1,'(Global Namespace)'],['../motionmanagement_2steering_2axle_2Axle_8h.html',1,'(Global Namespace)'],['../motionmanagement_2brake_2axle_2Axle_8h.html',1,'(Global Namespace)'],['../chassis_2axle_2Axle_8h.html',1,'(Global Namespace)']]],
+  ['azimuth_11',['azimuth',['../structyoriito_1_1types_1_1PointingDirection.html#a4bde531992eed4b272620952d0246cba',1,'yoriito::types::PointingDirection']]]
 ];

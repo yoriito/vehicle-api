@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/charging/timer/Signal_Mode.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/charging/timer/Signal_Mode.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,25 +108,26 @@ $(document).ready(function(){initNavTree('powertrain_2tractionbattery_2charging_
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Mode.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="powertrain_2tractionbattery_2charging_2timer_2Signal__Mode_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="powertrain_2tractionbattery_2charging_2timer_2Signal__Mode_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="powertrain_2tractionbattery_2charging_2timer_2Signal__Mode_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode.html">yoriito::vehicle::powertrain::tractionbattery::charging::timer::mode</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.TractionBattery.Charging.Timer.Mode signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -139,19 +140,21 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer.html">yoriito::vehicle::powertrain::tractionbattery::charging::timer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode.html">yoriito::vehicle::powertrain::tractionbattery::charging::timer::mode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ada24ba1ce2d89ebf1844f18caa18c636" id="r_ada24ba1ce2d89ebf1844f18caa18c636"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode.html#ada24ba1ce2d89ebf1844f18caa18c636">yoriito::vehicle::powertrain::tractionbattery::charging::timer::mode::Get</a> ()</td></tr>
-<tr class="separator:ada24ba1ce2d89ebf1844f18caa18c636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bd102e81a57c4575a20601e602f0454" id="r_a3bd102e81a57c4575a20601e602f0454"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode.html#a3bd102e81a57c4575a20601e602f0454">yoriito::vehicle::powertrain::tractionbattery::charging::timer::mode::Get</a> ()</td></tr>
+<tr class="separator:a3bd102e81a57c4575a20601e602f0454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc7e37d345d331045d22978463a00070" id="r_abc7e37d345d331045d22978463a00070"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode.html#abc7e37d345d331045d22978463a00070">yoriito::vehicle::powertrain::tractionbattery::charging::timer::mode::Set</a> (const std::string &amp;value)</td></tr>
 <tr class="separator:abc7e37d345d331045d22978463a00070"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab41538020a4c70391e4b34ff7142cf7c" id="r_ab41538020a4c70391e4b34ff7142cf7c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode.html#ab41538020a4c70391e4b34ff7142cf7c">yoriito::vehicle::powertrain::tractionbattery::charging::timer::mode::Subscribe</a> ()</td></tr>
-<tr class="separator:ab41538020a4c70391e4b34ff7142cf7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8089e72fca1d76e23c69d1d653c7e395" id="r_a8089e72fca1d76e23c69d1d653c7e395"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode.html#a8089e72fca1d76e23c69d1d653c7e395">yoriito::vehicle::powertrain::tractionbattery::charging::timer::mode::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a8089e72fca1d76e23c69d1d653c7e395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9369013e06565117866f2f1bb35c823" id="r_ae9369013e06565117866f2f1bb35c823"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode.html#ae9369013e06565117866f2f1bb35c823">yoriito::vehicle::powertrain::tractionbattery::charging::timer::mode::Inspect</a> ()</td></tr>
-<tr class="separator:ae9369013e06565117866f2f1bb35c823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebc86cdeedc5a43467d8f8fc242c1cc" id="r_a4ebc86cdeedc5a43467d8f8fc242c1cc"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode.html#a4ebc86cdeedc5a43467d8f8fc242c1cc">yoriito::vehicle::powertrain::tractionbattery::charging::timer::mode::Subscribe</a> ()</td></tr>
+<tr class="separator:a4ebc86cdeedc5a43467d8f8fc242c1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1d0aca4d12aaec29c94991444c95ec" id="r_a7d1d0aca4d12aaec29c94991444c95ec"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode.html#a7d1d0aca4d12aaec29c94991444c95ec">yoriito::vehicle::powertrain::tractionbattery::charging::timer::mode::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; std::string &gt; subscription_context)</td></tr>
+<tr class="separator:a7d1d0aca4d12aaec29c94991444c95ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc69b44db55ce406c640a0a8b7d58ec" id="r_a0dc69b44db55ce406c640a0a8b7d58ec"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1charging_1_1timer_1_1mode.html#a0dc69b44db55ce406c640a0a8b7d58ec">yoriito::vehicle::powertrain::tractionbattery::charging::timer::mode::Inspect</a> ()</td></tr>
+<tr class="separator:a0dc69b44db55ce406c640a0a8b7d58ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

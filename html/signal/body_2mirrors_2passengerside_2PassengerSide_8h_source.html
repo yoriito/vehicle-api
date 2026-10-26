@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/body/mirrors/passengerside/PassengerSide.h Source File</title>
+<title>Yoriito Vehicle API - signal: /work/signal/body/mirrors/passengerside/PassengerSide.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,41 +117,21 @@ $(document).ready(function(){initNavTree('body_2mirrors_2passengerside_2Passenge
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef VEHICLE_BODY_MIRRORS_PASSENGERSIDE_H</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define VEHICLE_BODY_MIRRORS_PASSENGERSIDE_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef SIGNAL_BODY_MIRRORS_PASSENGERSIDE_PASSENGERSIDE_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define SIGNAL_BODY_MIRRORS_PASSENGERSIDE_PASSENGERSIDE_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="passengerside_2Signal__IsFolded_8h.html">Signal_IsFolded.h</a>&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="passengerside_2Signal__IsFolded__Availability__Actuator_8h.html">Signal_IsFolded_Availability_Actuator.h</a>&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="passengerside_2Signal__IsFolded__Availability__Sensor_8h.html">Signal_IsFolded_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="windshield_2rear_2Signal__IsHeatingOn_8h.html">Signal_IsHeatingOn.h</a>&quot;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="windshield_2rear_2Signal__IsHeatingOn__Availability__Actuator_8h.html">Signal_IsHeatingOn_Availability_Actuator.h</a>&quot;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="windshield_2rear_2Signal__IsHeatingOn__Availability__Sensor_8h.html">Signal_IsHeatingOn_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="cabin_2door_2row2_2passengerside_2Signal__IsLocked_8h.html">Signal_IsLocked.h</a>&quot;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="cabin_2door_2row2_2passengerside_2Signal__IsLocked__Availability__Actuator_8h.html">Signal_IsLocked_Availability_Actuator.h</a>&quot;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="cabin_2door_2row2_2passengerside_2Signal__IsLocked__Availability__Sensor_8h.html">Signal_IsLocked_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="passengerside_2Signal__Pan_8h.html">Signal_Pan.h</a>&quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="passengerside_2Signal__Pan__Availability__Actuator_8h.html">Signal_Pan_Availability_Actuator.h</a>&quot;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="passengerside_2Signal__Pan__Availability__Sensor_8h.html">Signal_Pan_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="chassis_2steeringwheel_2Signal__Tilt_8h.html">Signal_Tilt.h</a>&quot;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="chassis_2steeringwheel_2Signal__Tilt__Availability__Actuator_8h.html">Signal_Tilt_Availability_Actuator.h</a>&quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="chassis_2steeringwheel_2Signal__Tilt__Availability__Sensor_8h.html">Signal_Tilt_Availability_Sensor.h</a>&quot;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif  </span><span class="comment">// VEHICLE_BODY_MIRRORS_PASSENGERSIDE_H</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="windshield_2rear_2Signal__IsHeatingOn_8h.html">Signal_IsHeatingOn.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="cabin_2door_2row2_2passengerside_2Signal__IsLocked_8h.html">Signal_IsLocked.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="chassis_2steeringwheel_2Signal__Tilt_8h.html">Signal_Tilt.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="passengerside_2Signal__Yaw_8h.html">Signal_Yaw.h</a>&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif  </span><span class="comment">// SIGNAL_BODY_MIRRORS_PASSENGERSIDE_PASSENGERSIDE_H_</span></div>
 <div class="ttc" id="acabin_2door_2row2_2passengerside_2Signal__IsLocked_8h_html"><div class="ttname"><a href="cabin_2door_2row2_2passengerside_2Signal__IsLocked_8h.html">Signal_IsLocked.h</a></div></div>
-<div class="ttc" id="acabin_2door_2row2_2passengerside_2Signal__IsLocked__Availability__Actuator_8h_html"><div class="ttname"><a href="cabin_2door_2row2_2passengerside_2Signal__IsLocked__Availability__Actuator_8h.html">Signal_IsLocked_Availability_Actuator.h</a></div></div>
-<div class="ttc" id="acabin_2door_2row2_2passengerside_2Signal__IsLocked__Availability__Sensor_8h_html"><div class="ttname"><a href="cabin_2door_2row2_2passengerside_2Signal__IsLocked__Availability__Sensor_8h.html">Signal_IsLocked_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="achassis_2steeringwheel_2Signal__Tilt_8h_html"><div class="ttname"><a href="chassis_2steeringwheel_2Signal__Tilt_8h.html">Signal_Tilt.h</a></div></div>
-<div class="ttc" id="achassis_2steeringwheel_2Signal__Tilt__Availability__Actuator_8h_html"><div class="ttname"><a href="chassis_2steeringwheel_2Signal__Tilt__Availability__Actuator_8h.html">Signal_Tilt_Availability_Actuator.h</a></div></div>
-<div class="ttc" id="achassis_2steeringwheel_2Signal__Tilt__Availability__Sensor_8h_html"><div class="ttname"><a href="chassis_2steeringwheel_2Signal__Tilt__Availability__Sensor_8h.html">Signal_Tilt_Availability_Sensor.h</a></div></div>
 <div class="ttc" id="apassengerside_2Signal__IsFolded_8h_html"><div class="ttname"><a href="passengerside_2Signal__IsFolded_8h.html">Signal_IsFolded.h</a></div></div>
-<div class="ttc" id="apassengerside_2Signal__IsFolded__Availability__Actuator_8h_html"><div class="ttname"><a href="passengerside_2Signal__IsFolded__Availability__Actuator_8h.html">Signal_IsFolded_Availability_Actuator.h</a></div></div>
-<div class="ttc" id="apassengerside_2Signal__IsFolded__Availability__Sensor_8h_html"><div class="ttname"><a href="passengerside_2Signal__IsFolded__Availability__Sensor_8h.html">Signal_IsFolded_Availability_Sensor.h</a></div></div>
-<div class="ttc" id="apassengerside_2Signal__Pan_8h_html"><div class="ttname"><a href="passengerside_2Signal__Pan_8h.html">Signal_Pan.h</a></div></div>
-<div class="ttc" id="apassengerside_2Signal__Pan__Availability__Actuator_8h_html"><div class="ttname"><a href="passengerside_2Signal__Pan__Availability__Actuator_8h.html">Signal_Pan_Availability_Actuator.h</a></div></div>
-<div class="ttc" id="apassengerside_2Signal__Pan__Availability__Sensor_8h_html"><div class="ttname"><a href="passengerside_2Signal__Pan__Availability__Sensor_8h.html">Signal_Pan_Availability_Sensor.h</a></div></div>
+<div class="ttc" id="apassengerside_2Signal__Yaw_8h_html"><div class="ttname"><a href="passengerside_2Signal__Yaw_8h.html">Signal_Yaw.h</a></div></div>
 <div class="ttc" id="awindshield_2rear_2Signal__IsHeatingOn_8h_html"><div class="ttname"><a href="windshield_2rear_2Signal__IsHeatingOn_8h.html">Signal_IsHeatingOn.h</a></div></div>
-<div class="ttc" id="awindshield_2rear_2Signal__IsHeatingOn__Availability__Actuator_8h_html"><div class="ttname"><a href="windshield_2rear_2Signal__IsHeatingOn__Availability__Actuator_8h.html">Signal_IsHeatingOn_Availability_Actuator.h</a></div></div>
-<div class="ttc" id="awindshield_2rear_2Signal__IsHeatingOn__Availability__Sensor_8h_html"><div class="ttname"><a href="windshield_2rear_2Signal__IsHeatingOn__Availability__Sensor_8h.html">Signal_IsHeatingOn_Availability_Sensor.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

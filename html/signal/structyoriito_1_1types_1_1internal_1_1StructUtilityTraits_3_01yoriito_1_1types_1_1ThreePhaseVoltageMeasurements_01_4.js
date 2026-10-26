@@ -1,0 +1,4 @@
+var structyoriito_1_1types_1_1internal_1_1StructUtilityTraits_3_01yoriito_1_1types_1_1ThreePhaseVoltageMeasurements_01_4 =
+[
+    [ "Utility", "structyoriito_1_1types_1_1internal_1_1StructUtilityTraits_3_01yoriito_1_1types_1_1ThreePhaseVoltageMeasurements_01_4.html#a9e76dbf06b4f612b056be2143e3b3e3e", null ]
+];

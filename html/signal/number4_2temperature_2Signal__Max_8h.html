@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/powertrain/tractionbattery/number4/temperature/Signal_Max.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/powertrain/tractionbattery/number4/temperature/Signal_Max.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,26 @@ $(document).ready(function(){initNavTree('number4_2temperature_2Signal__Max_8h.h
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_Max.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="number4_2temperature_2Signal__Max_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="number4_2temperature_2Signal__Max_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="number4_2temperature_2Signal__Max_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max.html">yoriito::vehicle::powertrain::tractionbattery::number4::temperature::max</a></td></tr>
-<tr class="memdesc:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the Vehicle.Powertrain.TractionBattery.Number4.Temperature.Max signal. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito" id="r_namespaceyoriito"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito.html">yoriito</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle" id="r_namespaceyoriito_1_1vehicle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle.html">yoriito::vehicle</a></td></tr>
@@ -136,24 +137,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature.html">yoriito::vehicle::powertrain::tractionbattery::number4::temperature</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1_01max" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1_01max"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1_01max.html">yoriito::vehicle::powertrain::tractionbattery::number4::temperature:: max</a></td></tr>
+<tr class="memitem:namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max" id="r_namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max.html">yoriito::vehicle::powertrain::tractionbattery::number4::temperature::max</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a20aa78b5b6b519c2a995df2a584ec7a0" id="r_a20aa78b5b6b519c2a995df2a584ec7a0"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1_01max.html#a20aa78b5b6b519c2a995df2a584ec7a0">yoriito::vehicle::powertrain::tractionbattery::number4::temperature:: max::Get</a> ()</td></tr>
-<tr class="separator:a20aa78b5b6b519c2a995df2a584ec7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af20c15553b93899ec17a1ea113938d57" id="r_af20c15553b93899ec17a1ea113938d57"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1_01max.html#af20c15553b93899ec17a1ea113938d57">yoriito::vehicle::powertrain::tractionbattery::number4::temperature:: max::Subscribe</a> ()</td></tr>
-<tr class="separator:af20c15553b93899ec17a1ea113938d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63deb2625d52f8b67931c455634c7f81" id="r_a63deb2625d52f8b67931c455634c7f81"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1_01max.html#a63deb2625d52f8b67931c455634c7f81">yoriito::vehicle::powertrain::tractionbattery::number4::temperature:: max::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a63deb2625d52f8b67931c455634c7f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b3017b0bd97845ea85961bc656e22b6" id="r_a4b3017b0bd97845ea85961bc656e22b6"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1_01max.html#a4b3017b0bd97845ea85961bc656e22b6">yoriito::vehicle::powertrain::tractionbattery::number4::temperature:: max::Inspect</a> ()</td></tr>
-<tr class="separator:a4b3017b0bd97845ea85961bc656e22b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b89bd8b52b1517b8c74dc7d93ef488" id="r_a08b89bd8b52b1517b8c74dc7d93ef488"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max.html#a08b89bd8b52b1517b8c74dc7d93ef488">yoriito::vehicle::powertrain::tractionbattery::number4::temperature::max::Get</a> ()</td></tr>
+<tr class="separator:a08b89bd8b52b1517b8c74dc7d93ef488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b095ccc4700b79e0f363f48df1411e4" id="r_a5b095ccc4700b79e0f363f48df1411e4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max.html#a5b095ccc4700b79e0f363f48df1411e4">yoriito::vehicle::powertrain::tractionbattery::number4::temperature::max::Subscribe</a> ()</td></tr>
+<tr class="separator:a5b095ccc4700b79e0f363f48df1411e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470ac5981f5e57763488989344ca75f4" id="r_a470ac5981f5e57763488989344ca75f4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max.html#a470ac5981f5e57763488989344ca75f4">yoriito::vehicle::powertrain::tractionbattery::number4::temperature::max::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; float &gt; subscription_context)</td></tr>
+<tr class="separator:a470ac5981f5e57763488989344ca75f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07ad5e03ab991bcbab5986b853aacea" id="r_aa07ad5e03ab991bcbab5986b853aacea"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max.html#aa07ad5e03ab991bcbab5986b853aacea">yoriito::vehicle::powertrain::tractionbattery::number4::temperature::max::Inspect</a> ()</td></tr>
+<tr class="separator:aa07ad5e03ab991bcbab5986b853aacea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a7d01f0a46e9ea38b3b971a11377f68e8" id="r_a7d01f0a46e9ea38b3b971a11377f68e8"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1_01max.html#a7d01f0a46e9ea38b3b971a11377f68e8">yoriito::vehicle::powertrain::tractionbattery::number4::temperature:: max::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER4_TEMPERATURE_MAX</a></td></tr>
-<tr class="separator:a7d01f0a46e9ea38b3b971a11377f68e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaee0eb226b7751cd063fdc6ebb58fd9" id="r_aeaee0eb226b7751cd063fdc6ebb58fd9"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1powertrain_1_1tractionbattery_1_1number4_1_1temperature_1_1max.html#aeaee0eb226b7751cd063fdc6ebb58fd9">yoriito::vehicle::powertrain::tractionbattery::number4::temperature::max::VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER4_TEMPERATURE_MAX</a></td></tr>
+<tr class="separator:aeaee0eb226b7751cd063fdc6ebb58fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

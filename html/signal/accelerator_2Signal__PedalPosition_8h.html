@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/chassis/accelerator/Signal_PedalPosition.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/chassis/accelerator/Signal_PedalPosition.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,16 +105,20 @@ $(document).ready(function(){initNavTree('accelerator_2Signal__PedalPosition_8h.
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_PedalPosition.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="accelerator_2Signal__PedalPosition_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="accelerator_2Signal__PedalPosition_8h__dep__incl.svg" width="472" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="accelerator_2Signal__PedalPosition_8h_source.html">Go to the source code of this file.</a></p>
@@ -135,14 +139,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a10e8770f6899379a0c9929f83e8757c8" id="r_a10e8770f6899379a0c9929f83e8757c8"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1accelerator_1_1pedalposition.html#a10e8770f6899379a0c9929f83e8757c8">yoriito::vehicle::chassis::accelerator::pedalposition::Get</a> ()</td></tr>
-<tr class="separator:a10e8770f6899379a0c9929f83e8757c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae18f28b847a2c79a3989db885cded80b" id="r_ae18f28b847a2c79a3989db885cded80b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1accelerator_1_1pedalposition.html#ae18f28b847a2c79a3989db885cded80b">yoriito::vehicle::chassis::accelerator::pedalposition::Subscribe</a> ()</td></tr>
-<tr class="separator:ae18f28b847a2c79a3989db885cded80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b1735f803c6dad4a25dc282fa858f4c" id="r_a9b1735f803c6dad4a25dc282fa858f4c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1accelerator_1_1pedalposition.html#a9b1735f803c6dad4a25dc282fa858f4c">yoriito::vehicle::chassis::accelerator::pedalposition::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:a9b1735f803c6dad4a25dc282fa858f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ff6ebf0f73721690e3c12166feb89ce" id="r_a9ff6ebf0f73721690e3c12166feb89ce"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1accelerator_1_1pedalposition.html#a9ff6ebf0f73721690e3c12166feb89ce">yoriito::vehicle::chassis::accelerator::pedalposition::Inspect</a> ()</td></tr>
-<tr class="separator:a9ff6ebf0f73721690e3c12166feb89ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3865ae7d737f240a1e0fe468d3334a5b" id="r_a3865ae7d737f240a1e0fe468d3334a5b"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1accelerator_1_1pedalposition.html#a3865ae7d737f240a1e0fe468d3334a5b">yoriito::vehicle::chassis::accelerator::pedalposition::Get</a> ()</td></tr>
+<tr class="separator:a3865ae7d737f240a1e0fe468d3334a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a55bca0f8c0acac9413bc0da2c7d0f" id="r_ab2a55bca0f8c0acac9413bc0da2c7d0f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1accelerator_1_1pedalposition.html#ab2a55bca0f8c0acac9413bc0da2c7d0f">yoriito::vehicle::chassis::accelerator::pedalposition::Subscribe</a> ()</td></tr>
+<tr class="separator:ab2a55bca0f8c0acac9413bc0da2c7d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e461a6c1056853b878c46ab7549a3f" id="r_a13e461a6c1056853b878c46ab7549a3f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1accelerator_1_1pedalposition.html#a13e461a6c1056853b878c46ab7549a3f">yoriito::vehicle::chassis::accelerator::pedalposition::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; uint8_t &gt; subscription_context)</td></tr>
+<tr class="separator:a13e461a6c1056853b878c46ab7549a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b279f1ed31e2381c5a62133da4501c" id="r_a15b279f1ed31e2381c5a62133da4501c"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1chassis_1_1accelerator_1_1pedalposition.html#a15b279f1ed31e2381c5a62133da4501c">yoriito::vehicle::chassis::accelerator::pedalposition::Inspect</a> ()</td></tr>
+<tr class="separator:a15b279f1ed31e2381c5a62133da4501c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

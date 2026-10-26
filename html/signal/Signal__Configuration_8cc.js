@@ -1,5 +1,5 @@
 var Signal__Configuration_8cc =
 [
-    [ "Get", "Signal__Configuration_8cc.html#ad491a9277af191a399bee7f9a5adcd14", null ],
-    [ "Inspect", "Signal__Configuration_8cc.html#a2ff8bc9b856d507c9607fd5ffdf91cdd", null ]
+    [ "Get", "Signal__Configuration_8cc.html#a43c0b92ae1f860a733b61448ad7f1b5b", null ],
+    [ "Inspect", "Signal__Configuration_8cc.html#a97953475a2e49444adbe7e700e6caf0d", null ]
 ];

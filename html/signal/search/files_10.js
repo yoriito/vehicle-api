@@ -8,5 +8,6 @@ var searchData=
   ['tractionbattery_2eh_5',['TractionBattery.h',['../TractionBattery_8h.html',1,'']]],
   ['trailer_2eh_6',['Trailer.h',['../Trailer_8h.html',1,'']]],
   ['transmission_2eh_7',['Transmission.h',['../Transmission_8h.html',1,'']]],
-  ['trunk_2eh_8',['Trunk.h',['../Trunk_8h.html',1,'']]]
+  ['tripmeter_2eh_8',['TripMeter.h',['../TripMeter_8h.html',1,'']]],
+  ['trunk_2eh_9',['Trunk.h',['../Trunk_8h.html',1,'']]]
 ];

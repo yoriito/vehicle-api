@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yoriito Vehicle API - signal: /home/runner/work/vehicle-api/vehicle-api/signal/cabin/hvac/Signal_IsAirConditioningActive.h File Reference</title>
+<title>Yoriito Vehicle API - signal: /work/signal/cabin/hvac/Signal_IsAirConditioningActive.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,16 +106,20 @@ $(document).ready(function(){initNavTree('Signal__IsAirConditioningActive_8h.htm
 <code>#include &quot;databroker/databroker_consumer_factory.h&quot;</code><br />
 <code>#include &quot;error.h&quot;</code><br />
 <code>#include &quot;result.h&quot;</code><br />
+<code>#include &quot;signal/signal_get_datapoint.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_data.h&quot;</code><br />
+<code>#include &quot;signal/signal_inspect_response.h&quot;</code><br />
+<code>#include &quot;signal/signal_subscribe_context.h&quot;</code><br />
 <code>#include &quot;yoriito_log.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Signal_IsAirConditioningActive.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Signal__IsAirConditioningActive_8h__incl.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><!-- SVG 0 --></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Signal__IsAirConditioningActive_8h__dep__incl.svg" width="491" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 --></div>
 </div>
 </div>
 <p><a href="Signal__IsAirConditioningActive_8h_source.html">Go to the source code of this file.</a></p>
@@ -136,16 +140,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab294d29593a97f805b0a48d9c5783160" id="r_ab294d29593a97f805b0a48d9c5783160"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1isairconditioningactive.html#ab294d29593a97f805b0a48d9c5783160">yoriito::vehicle::cabin::hvac::isairconditioningactive::Get</a> ()</td></tr>
-<tr class="separator:ab294d29593a97f805b0a48d9c5783160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69d51d23a7eff8bc0be6938795a5e98" id="r_af69d51d23a7eff8bc0be6938795a5e98"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalGetDataPoint&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1isairconditioningactive.html#af69d51d23a7eff8bc0be6938795a5e98">yoriito::vehicle::cabin::hvac::isairconditioningactive::Get</a> ()</td></tr>
+<tr class="separator:af69d51d23a7eff8bc0be6938795a5e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9fdf2f6ac3257a5306ad2a442cec104" id="r_aa9fdf2f6ac3257a5306ad2a442cec104"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1isairconditioningactive.html#aa9fdf2f6ac3257a5306ad2a442cec104">yoriito::vehicle::cabin::hvac::isairconditioningactive::Set</a> (const bool &amp;value)</td></tr>
 <tr class="separator:aa9fdf2f6ac3257a5306ad2a442cec104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a068fb6409d0b0fd4e84b3c30326d7f" id="r_a8a068fb6409d0b0fd4e84b3c30326d7f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1isairconditioningactive.html#a8a068fb6409d0b0fd4e84b3c30326d7f">yoriito::vehicle::cabin::hvac::isairconditioningactive::Subscribe</a> ()</td></tr>
-<tr class="separator:a8a068fb6409d0b0fd4e84b3c30326d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee54cc60f099bf41933f7c19229cd1f4" id="r_aee54cc60f099bf41933f7c19229cd1f4"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1isairconditioningactive.html#aee54cc60f099bf41933f7c19229cd1f4">yoriito::vehicle::cabin::hvac::isairconditioningactive::UnSubscribe</a> (std::unique_ptr&lt; yoriito::databroker::ConsumerSubscribeContext &gt; subscription_context)</td></tr>
-<tr class="separator:aee54cc60f099bf41933f7c19229cd1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bc5e1e8bb991257873d9736578fa764" id="r_a1bc5e1e8bb991257873d9736578fa764"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::databroker::ConsumerInspectResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1isairconditioningactive.html#a1bc5e1e8bb991257873d9736578fa764">yoriito::vehicle::cabin::hvac::isairconditioningactive::Inspect</a> ()</td></tr>
-<tr class="separator:a1bc5e1e8bb991257873d9736578fa764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5364f19dfb840923a04c906ddeb19a6f" id="r_a5364f19dfb840923a04c906ddeb19a6f"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalSubscribeContext&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1isairconditioningactive.html#a5364f19dfb840923a04c906ddeb19a6f">yoriito::vehicle::cabin::hvac::isairconditioningactive::Subscribe</a> ()</td></tr>
+<tr class="separator:a5364f19dfb840923a04c906ddeb19a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0955c5c46f338c60fbcf81a185e8b1" id="r_acf0955c5c46f338c60fbcf81a185e8b1"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1isairconditioningactive.html#acf0955c5c46f338c60fbcf81a185e8b1">yoriito::vehicle::cabin::hvac::isairconditioningactive::UnSubscribe</a> (yoriito::signal::SignalSubscribeContext&lt; bool &gt; subscription_context)</td></tr>
+<tr class="separator:acf0955c5c46f338c60fbcf81a185e8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca0936242d82fb26b77c7093ee7b79e" id="r_a3ca0936242d82fb26b77c7093ee7b79e"><td class="memItemLeft" align="right" valign="top">yoriito::Result&lt; yoriito::signal::SignalInspectResponse&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyoriito_1_1vehicle_1_1cabin_1_1hvac_1_1isairconditioningactive.html#a3ca0936242d82fb26b77c7093ee7b79e">yoriito::vehicle::cabin::hvac::isairconditioningactive::Inspect</a> ()</td></tr>
+<tr class="separator:a3ca0936242d82fb26b77c7093ee7b79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

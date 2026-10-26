@@ -1,7 +1,7 @@
 var number4_2stateofcharge_2Signal__Displayed_8cc =
 [
-    [ "Get", "number4_2stateofcharge_2Signal__Displayed_8cc.html#adb0c009c7fe3892f1b17d5309fee33b6", null ],
-    [ "Inspect", "number4_2stateofcharge_2Signal__Displayed_8cc.html#abee301fd4ec68abbe80ef58ac5be8ee6", null ],
-    [ "Subscribe", "number4_2stateofcharge_2Signal__Displayed_8cc.html#a48cf5f9ba617f6f05c39cb5994b33638", null ],
-    [ "UnSubscribe", "number4_2stateofcharge_2Signal__Displayed_8cc.html#a335b9bc7c2166d5c3ed2edb2f0cca8f2", null ]
+    [ "Get", "number4_2stateofcharge_2Signal__Displayed_8cc.html#a69004a380c61cc68704b7c1fe2d5cad4", null ],
+    [ "Inspect", "number4_2stateofcharge_2Signal__Displayed_8cc.html#abc874ce585cef5bb4ed55bb84b92ce94", null ],
+    [ "Subscribe", "number4_2stateofcharge_2Signal__Displayed_8cc.html#afb93d76869fa810a5f9bee3754be041b", null ],
+    [ "UnSubscribe", "number4_2stateofcharge_2Signal__Displayed_8cc.html#a564cc8fa5411ebc44d707fb39da3c319", null ]
 ];

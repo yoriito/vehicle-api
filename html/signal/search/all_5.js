@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['fog_2eh_0',['Fog.h',['../Fog_8h.html',1,'']]],
-  ['footwelllight_2eh_1',['FootwellLight.h',['../FootwellLight_8h.html',1,'']]],
-  ['front_2eh_2',['front.h',['../lights_2fog_2front_2Front_8h.html',1,'(Global Namespace)'],['../trunk_2front_2Front_8h.html',1,'(Global Namespace)'],['../windshield_2front_2Front_8h.html',1,'(Global Namespace)']]],
-  ['frontleft_2eh_3',['FrontLeft.h',['../FrontLeft_8h.html',1,'']]],
-  ['frontmiddle_2eh_4',['FrontMiddle.h',['../FrontMiddle_8h.html',1,'']]],
-  ['frontright_2eh_5',['FrontRight.h',['../FrontRight_8h.html',1,'']]],
-  ['fuelsystem_2eh_6',['FuelSystem.h',['../FuelSystem_8h.html',1,'']]]
+  ['fix_5ftype_0',['fix_type',['../structyoriito_1_1types_1_1GNSSLocation.html#a2d955ef3765b11369141f3d82e1f11f2',1,'yoriito::types::GNSSLocation']]],
+  ['fog_2eh_1',['Fog.h',['../Fog_8h.html',1,'']]],
+  ['footwelllight_2eh_2',['FootwellLight.h',['../FootwellLight_8h.html',1,'']]],
+  ['fromstructdata_3',['fromstructdata',['../classyoriito_1_1types_1_1internal_1_1AccelerationUtility.html#ac11e33148cae9436ad786865f8a62961',1,'yoriito::types::internal::AccelerationUtility::FromStructData()'],['../namespaceyoriito_1_1types_1_1internal.html#ae1886dc7602189147e496c6bc2675ceb',1,'yoriito::types::internal::FromStructData()'],['../classyoriito_1_1types_1_1internal_1_1VehicleLocationUtility.html#ae39a5ae0ab3b95cd91a895ffa0c0ac24',1,'yoriito::types::internal::VehicleLocationUtility::FromStructData()'],['../classyoriito_1_1types_1_1internal_1_1ThreePhaseVoltageMeasurementsUtility.html#a7f36628e27023c3139b133e3cc12ecdf',1,'yoriito::types::internal::ThreePhaseVoltageMeasurementsUtility::FromStructData()'],['../classyoriito_1_1types_1_1internal_1_1ThreePhaseCurrentMeasurementsUtility.html#a3a93e6894747ff3ffbe444e98aa8bb27',1,'yoriito::types::internal::ThreePhaseCurrentMeasurementsUtility::FromStructData()'],['../classyoriito_1_1types_1_1internal_1_1RoadFrictionRangeUtility.html#a0aa99b4c7e9410544d7d0dabb95ac278',1,'yoriito::types::internal::RoadFrictionRangeUtility::FromStructData()'],['../classyoriito_1_1types_1_1internal_1_1PoseUtility.html#a82b48ed5a477d1715b76a4491c9592a2',1,'yoriito::types::internal::PoseUtility::FromStructData()'],['../classyoriito_1_1types_1_1internal_1_1PointingDirectionUtility.html#ab56d570c47c1a84fed25bf743ad03275',1,'yoriito::types::internal::PointingDirectionUtility::FromStructData()'],['../classyoriito_1_1types_1_1internal_1_1LocationUtility.html#a218a016a25f34d43ccc9c2deffb12eb9',1,'yoriito::types::internal::LocationUtility::FromStructData()'],['../classyoriito_1_1types_1_1internal_1_1GNSSLocationUtility.html#ae0bc0ea6c969568ae0c701d67572e69c',1,'yoriito::types::internal::GNSSLocationUtility::FromStructData()'],['../classyoriito_1_1types_1_1internal_1_1ElectricityUtility.html#a086c414b30abdcaf7ee7e892098e9766',1,'yoriito::types::internal::ElectricityUtility::FromStructData()'],['../classyoriito_1_1types_1_1internal_1_1AngularVelocityUtility.html#a5adbe6974553fd15633bd3f07736ea67',1,'yoriito::types::internal::AngularVelocityUtility::FromStructData()']]],
+  ['front_2eh_4',['front.h',['../body_2windshield_2front_2Front_8h.html',1,'(Global Namespace)'],['../body_2trunk_2front_2Front_8h.html',1,'(Global Namespace)'],['../body_2lights_2fog_2front_2Front_8h.html',1,'(Global Namespace)'],['../adas_2obstacledetection_2front_2Front_8h.html',1,'(Global Namespace)']]],
+  ['frontleft_2eh_5',['FrontLeft.h',['../FrontLeft_8h.html',1,'']]],
+  ['frontmiddle_2eh_6',['FrontMiddle.h',['../FrontMiddle_8h.html',1,'']]],
+  ['frontright_2eh_7',['FrontRight.h',['../FrontRight_8h.html',1,'']]],
+  ['fuelsystem_2eh_8',['FuelSystem.h',['../FuelSystem_8h.html',1,'']]]
 ];

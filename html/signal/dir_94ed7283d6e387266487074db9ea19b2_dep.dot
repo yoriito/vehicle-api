@@ -1,0 +1,20 @@
+digraph "/work/signal/motionmanagement/steering/axle"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_3b1b227be2d2e9f857cae07692d19119 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="steering", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_3b1b227be2d2e9f857cae07692d19119.html",tooltip=""]
+  subgraph clusterdir_94ed7283d6e387266487074db9ea19b2 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_94ed7283d6e387266487074db9ea19b2.html",tooltip=""]
+    dir_94ed7283d6e387266487074db9ea19b2 [shape=plaintext, label="axle"];
+  dir_2d98cdaede275231d072c142d100b211 [label="row1", fillcolor="#c8d2e7", color="grey25", style="filled", URL="dir_2d98cdaede275231d072c142d100b211.html",tooltip=""];
+  dir_0964b949a2da2f275bc6ca2bf1af0fec [label="row2", fillcolor="#c8d2e7", color="grey25", style="filled", URL="dir_0964b949a2da2f275bc6ca2bf1af0fec.html",tooltip=""];
+  }
+  }
+  dir_94ed7283d6e387266487074db9ea19b2->dir_0964b949a2da2f275bc6ca2bf1af0fec [headlabel="1", labeldistance=1.5 headhref="dir_000012_000273.html" href="dir_000012_000273.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_94ed7283d6e387266487074db9ea19b2->dir_2d98cdaede275231d072c142d100b211 [headlabel="1", labeldistance=1.5 headhref="dir_000012_000262.html" href="dir_000012_000262.html" color="steelblue1" fontcolor="steelblue1"];
+}

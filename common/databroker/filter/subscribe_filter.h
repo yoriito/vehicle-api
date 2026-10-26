@@ -16,8 +16,9 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_SUBSCRIBE_FILTER_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_SUBSCRIBE_FILTER_H_
+#ifndef COMMON_DATABROKER_FILTER_SUBSCRIBE_FILTER_H_
+#define COMMON_DATABROKER_FILTER_SUBSCRIBE_FILTER_H_
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -35,10 +36,10 @@
 namespace yoriito::databroker::filter {
 
 using MiscFilterVariant =
-    std::variant<std::monostate,
-                 yoriito::databroker::filter::RangeFilter,   //
-                 yoriito::databroker::filter::ChangeFilter,  //
-                 yoriito::databroker::filter::TimeBasedFilter>;
+  std::variant<std::monostate,
+               yoriito::databroker::filter::RangeFilter,   //
+               yoriito::databroker::filter::ChangeFilter,  //
+               yoriito::databroker::filter::TimeBasedFilter>;
 
 /**
  * @ingroup common
@@ -138,9 +139,10 @@ class SubscribeFilter {
    * @code -
    * @endcode -
    */
-  const std::optional<PathsFilter>& GetPathsFilter() const {
+  const std::optional<PathsFilter>& GetPathsFilter() const& {
     return paths_filter_;
   }
+  std::optional<PathsFilter> GetPathsFilter() const&& { return paths_filter_; }
 
   /**
    * @ingroup common
@@ -154,7 +156,10 @@ class SubscribeFilter {
    * @code -
    * @endcode -
    */
-  const MiscFilterVariant& GetMiscFilter() const { return misc_filter_; }
+  const MiscFilterVariant& GetMiscFilter() const& { return misc_filter_; }
+  // RangeFilter/ChangeFilter/TimeBasedFilter are move-only, so move rather than
+  // copy.
+  MiscFilterVariant GetMiscFilter() && { return std::move(misc_filter_); }
 
   /**
    * @ingroup common
@@ -182,4 +187,4 @@ class SubscribeFilter {
   MiscFilterVariant misc_filter_;
 };
 }  // namespace yoriito::databroker::filter
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_SUBSCRIBE_FILTER_H_
+#endif  // COMMON_DATABROKER_FILTER_SUBSCRIBE_FILTER_H_

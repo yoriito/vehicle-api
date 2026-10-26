@@ -15,29 +15,37 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE ADAS_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_ADAS_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_adas SHARED ${ADAS_SRC})
-target_include_directories(yoriito_vehicle_api_adas PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_adas PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_adas"
+    SOURCES
+        Signal_ActiveAutonomyLevel.cc
+        Signal_IsAutoPowerOptimize.cc
+        Signal_PowerOptimizeLevel.cc
+        Signal_SupportedAutonomyLevel.cc
+    INSTALL_SUBDIR
+        "signal/adas"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/adas"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_adas LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)
+# ---- subdirectories ----
+add_subdirectory(cruisecontrol)
+
+add_subdirectory(lanedeparturedetection)
+
+add_subdirectory(obstacledetection)
+
+add_subdirectory(abs)
+
+add_subdirectory(tcs)
+
+add_subdirectory(esc)
+
+add_subdirectory(ebd)
+
+add_subdirectory(eba)
+
+add_subdirectory(dms)
+
+
+

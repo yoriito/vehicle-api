@@ -15,10 +15,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+#include <memory>
+#include <mutex>
 #include "yoriito_log.h"
 #include "logger/base_logbackend.h"
-#include <mutex>
-#include <memory>
 
 namespace yoriito {
 
@@ -34,10 +34,10 @@ Log::LoggerBackendManager& Log::BackendManager() {
 
 void Log::Initialize(const char* name) {
   std::lock_guard<std::mutex> lock(BackendManager().backend_mutex_);
-  if (!BackendManager().backend_){
+  if (!BackendManager().backend_) {
     BackendManager().backend_ = ILogBackend::GetLogBackend();
   }
-  if (BackendManager().backend_->IsInitialized()){
+  if (BackendManager().backend_->IsInitialized()) {
     return;  // Already initialized
   }
   BackendManager().backend_->Initialize(name);
@@ -45,25 +45,37 @@ void Log::Initialize(const char* name) {
 
 void Log::Finalize() {
   std::lock_guard<std::mutex> lock(BackendManager().backend_mutex_);
-  if (!BackendManager().backend_) return;
-  if (!BackendManager().backend_->IsInitialized()) return;
+  if (!BackendManager().backend_) {
+    return;
+  }
+  if (!BackendManager().backend_->IsInitialized()) {
+    return;
+  }
   BackendManager().backend_->Finalize();
 }
 
 void Log::SetLogLevel(LogLevel level) {
   std::lock_guard<std::mutex> lock(BackendManager().backend_mutex_);
-  if (!BackendManager().backend_) return;
-  if (!BackendManager().backend_->IsInitialized()) return;
+  if (!BackendManager().backend_) {
+    return;
+  }
+  if (!BackendManager().backend_->IsInitialized()) {
+    return;
+  }
   BackendManager().backend_->SetLogLevel(level);
 }
 
-void Log::Output(std::string_view tag, std::string_view msg, 
+void Log::Output(std::string_view tag, std::string_view msg,
                      LogLevel level) {
   // Do not output logs if not initialized or backend is not created
   std::lock_guard<std::mutex> lock(BackendManager().backend_mutex_);
-  if (!BackendManager().backend_) return;
-  if (!BackendManager().backend_->IsInitialized()) return;
+  if (!BackendManager().backend_) {
+    return;
+  }
+  if (!BackendManager().backend_->IsInitialized()) {
+    return;
+  }
   BackendManager().backend_->Output(tag, msg, level);
 }
 
-} // namespace yoriito
+}  // namespace yoriito

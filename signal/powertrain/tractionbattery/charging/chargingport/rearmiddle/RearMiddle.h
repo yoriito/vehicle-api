@@ -16,17 +16,12 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGINGPORT_REARMIDDLE_H
-#define VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGINGPORT_REARMIDDLE_H
+#ifndef SIGNAL_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGINGPORT_REARMIDDLE_REARMIDDLE_H_
+#define SIGNAL_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGINGPORT_REARMIDDLE_REARMIDDLE_H_
 
 #include "Signal_IsChargingCableConnected.h"
-#include "Signal_IsChargingCableConnected_Availability_Sensor.h"
 #include "Signal_IsChargingCableLocked.h"
-#include "Signal_IsChargingCableLocked_Availability_Actuator.h"
-#include "Signal_IsChargingCableLocked_Availability_Sensor.h"
 #include "Signal_IsFlapOpen.h"
-#include "Signal_IsFlapOpen_Availability_Actuator.h"
-#include "Signal_IsFlapOpen_Availability_Sensor.h"
 #include "Signal_SupportedInletTypes.h"
 
-#endif  // VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGINGPORT_REARMIDDLE_H
+#endif  // SIGNAL_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGINGPORT_REARMIDDLE_REARMIDDLE_H_

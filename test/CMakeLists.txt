@@ -20,6 +20,9 @@ set(EXECUTABLE_NAME "test_signal")
 
 set(MOCK_DATABROKER_PATH ${CMAKE_SOURCE_DIR}/../mock/databroker/inc)
 
+# clear compiler options for test directory
+set_directory_properties(PROPERTIES COMPILE_OPTIONS "")
+
 include(FetchContent)
 FetchContent_Declare(
   googletest

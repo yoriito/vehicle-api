@@ -16,18 +16,13 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_LIGHT_H
-#define VEHICLE_CABIN_LIGHT_H
+#ifndef SIGNAL_CABIN_LIGHT_LIGHT_H_
+#define SIGNAL_CABIN_LIGHT_LIGHT_H_
 
-#include "Signal_IsDomeOn_Availability_Actuator.h"
-#include "Signal_IsDomeOn_Availability_Sensor.h"
 #include "Signal_IsGloveBoxOn.h"
-#include "Signal_IsGloveBoxOn_Availability_Actuator.h"
-#include "Signal_IsGloveBoxOn_Availability_Sensor.h"
 #include "Signal_PerceivedAmbientLight.h"
-#include "Signal_PerceivedAmbientLight_Availability_Sensor.h"
 #include "domelight/DomeLight.h"
 #include "footwelllight/FootwellLight.h"
 #include "spotlight/Spotlight.h"
 
-#endif  // VEHICLE_CABIN_LIGHT_H
+#endif  // SIGNAL_CABIN_LIGHT_LIGHT_H_

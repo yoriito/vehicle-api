@@ -12,11 +12,11 @@ This repository provides a unified access method to vehicle data based on VSS (V
 - **Simulation & Testing**: Testing in development environments that simulate vehicle data
 - **Data Broker Integration**: Subscribing to and publishing signals via Yoriito Vehicle API
 
-For detailed API reference, please refer to the [documentation](https://potential-eureka-qj4zqq8.pages.github.io/main/apirefguide/).
+For detailed API reference, please refer to the [documentation](https://docs.yoriito.dev/apirefguide/).
 
-# Getting Started
+## Getting Started
 
-## Prerequisites
+### Prerequisites
 
 - CMake 3.28 or later
 - C++ compiler (GCC or Clang)
@@ -26,7 +26,7 @@ We recommend using DevContainer as the development environment. Install the VS C
 
 **Note**: DevContainer comes with all necessary dependencies pre-installed, including kura-client.
 
-## Build Instructions
+### Build Instructions
 
 ```bash
 mkdir build && cd build
@@ -40,7 +40,37 @@ To install:
 make install
 ```
 
-## Unit Test Build & Execution
+#### Division Build
+You can build only target Domain with the option.
+- Valid Domain option name is the following:
+  - ENABLE_POWERTRAIN
+  - ENABLE_BODY
+  - ENABLE_CABIN
+  - ENABLE_ADAS
+  - ENABLE_CHASSIS
+  - ENABLE_DRIVER
+  - ENABLE_OCCUPANT
+  - ENABLE_EXTERIOR
+  - ENABLE_VERSIONVSS
+  - ENABLE_VEHICLEIDENTIFICATION
+  - ENABLE_LOWVOLTAGEBATTERY
+  - ENABLE_ACCELERATION
+  - ENABLE_ANGULARVELOCITY
+  - ENABLE_TRAILER
+  - ENABLE_CURRENTLOCATION
+  - ENABLE_VERSIONYORIITOVSS
+  - ENABLE_MOTIONMANAGEMENT
+  - ENABLE_CONTROLUNIT
+
+For example, the following command build only BODY domain.
+```bash
+mkdir build && cd build
+cmake -DENABLE_BODY=ON ..
+make
+```
+**Note**: For build all the domain, no domain option is required. Without domain option, it is treated all the domain are enabled internally.
+
+### Unit Test Build & Execution
 
 Unit tests use Google Test.
 
@@ -53,7 +83,7 @@ ctest
 
 **Note**: Unit tests require `BUILD_COMMON=ON` and `BUILD_SIGNAL=ON` (enabled by default).
 
-### Testing with Coverage Report
+#### Testing with Coverage Report
 
 ```bash
 mkdir build && cd build
@@ -63,32 +93,7 @@ ctest
 # Generate coverage report (requires tools like gcovr)
 ```
 
-## Integration Test Build & Execution
-
-Integration tests are BDD-style tests using Cucumber-cpp.
-
-**Important**: Integration tests depend on kura-client. You must build and install kura-client before building integration tests. If you are using DevContainer, kura-client is already installed.
-
-Due to the dependency on kura-client, integration tests must be explicitly enabled separately from normal builds.
-
-```bash
-mkdir build && cd build
-cmake -DENABLE_INTEGRATION_TESTS=ON ..
-make
-
-# Start the integration test server
-./test_integration/test_integration &
-SERVER_PID=$!
-
-# Run Cucumber tests
-cd ../test_integration
-cucumber --format progress features/get.feature
-
-# Stop the server
-kill $SERVER_PID
-```
-
-# Build Options
+## Build Options
 
 | Option | Default | Description |
 |--------|---------|-------------|
@@ -96,36 +101,39 @@ kill $SERVER_PID
 | `BUILD_SIGNAL` | ON | Build signal API library |
 | `ENABLE_DOCS` | OFF | Generate Doxygen documentation |
 | `ENABLE_TESTS` | OFF | Build unit tests (requires BUILD_COMMON and BUILD_SIGNAL) |
-| `ENABLE_INTEGRATION_TESTS` | OFF | Build integration tests (requires kura-client) |
 | `CODE_COVERAGE` | OFF | Enable coverage reporting (GCC/Clang only) |
+| `ENABLE_FUZZ_TESTS` | OFF | Build AFL++ fuzz harnesses (requires AFL++ compiler) |
+| `ENABLE_LOG_BACKEND_DLT` | ON | Enable DLT log backend (set OFF for fuzz testing environments without libdlt) |
 
-API documentation is published on [GitHub Pages](https://stunning-broccoli-l12ygv6.pages.github.io/).
+API documentation is published on [GitHub Pages](https://docs.yoriito.dev/).
 
-# Commit Message Guidelines
+## Commit Message Guidelines
 
 This project follows [Conventional Commits](https://www.conventionalcommits.org/).
 
-# Versioning
+## Versioning
 
 This project follows [Semantic Versioning](https://semver.org/).
 
-The version of vehicle-api is managed independently from the overall Yoriito version.
+The version is managed independently from the overall Yoriito version.
 
-# Quality Assessment
+## Quality Assessment
  
 This repository contains quality assessment results for this project.
 Please refer to the [quality assessment page](./quality/quality-assessment.md).
 
 The results are provided for transparency and reference purposes and do not constitute any warranty or guarantee of quality.
 
-## Contents
- 
-- Unit Test
-- Integration Test
+### Contents
+
+ - Unit Test
 - Coding Style
 - Code Metrics
 - Static Analysis
- 
-## Notes
+- Dynamic Analysis
+- SCA
+- SBOM
+
+### Notes
  
 Some files in this directory may be generated automatically by CI tools.

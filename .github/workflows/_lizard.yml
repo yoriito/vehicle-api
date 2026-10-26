@@ -42,8 +42,8 @@ jobs:
         run: |
           cd ${{github.workspace}}
           source .venv/bin/activate
-          lizard -l cpp -C 25 -L 100 -a 10 -w -x "./test/*" -x "./test_integration/*" -x "./access/*" -x "./common/databroker/base_inspect_data.h"
-          lizard -l cpp -C 25 -L 100 -a 10 -x "./test/*" -x "./test_integration/*" -x "./access/*" -x "./common/databroker/base_inspect_data.h" --html > lizard_result.html
+          lizard -l cpp -C 25 -L 100 -a 10 -w -x "./test/*" -x "./access/*" -x "./common/databroker/base_inspect_data.h"
+          lizard -l cpp -C 25 -L 100 -a 10 -x "./test/*" -x "./access/*" -x "./common/databroker/base_inspect_data.h" --html > lizard_result.html
           deactivate
 
       - name: Upload result

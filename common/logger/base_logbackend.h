@@ -16,21 +16,28 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_COMMON_LOGGER_BASE_LOGBACKEND_H_
-#define YORIITO_VEHICLE_API_UTILITY_COMMON_LOGGER_BASE_LOGBACKEND_H_
+#ifndef COMMON_LOGGER_BASE_LOGBACKEND_H_
+#define COMMON_LOGGER_BASE_LOGBACKEND_H_
+
+#include <memory>
+#include <string_view>
 
 #include "yoriito_log.h"
-#include <string_view>
-#include <memory>
 
 namespace yoriito {
 
 class ILogBackend {
-public:
+ public:
+  ILogBackend() = default;
   virtual ~ILogBackend() = default;
+  ILogBackend(const ILogBackend&) = delete;
+  ILogBackend& operator=(const ILogBackend&) = delete;
+  ILogBackend(ILogBackend&&) = delete;
+  ILogBackend& operator=(ILogBackend&&) = delete;
   virtual void Initialize(const char* name) = 0;
   virtual void Finalize() = 0;
-  virtual void Output(std::string_view tag, std::string_view msg, LogLevel level) = 0;
+  virtual void Output(std::string_view tag, std::string_view msg,
+                      LogLevel level) = 0;
   virtual bool IsInitialized() const = 0;
 
   virtual void SetLogLevel(LogLevel level) = 0;
@@ -39,7 +46,7 @@ public:
 };
 
 class BaseLogBackend : public ILogBackend {
-public:
+ public:
   void Initialize(const char* name) final;
 
   void Finalize() final;
@@ -49,17 +56,20 @@ public:
   bool IsInitialized() const final;
   void SetLogLevel(LogLevel level) final;
 
-protected:
+ protected:
   virtual void DoInitialize(const char* name) = 0;
   virtual void DoFinalize() = 0;
-  virtual void DoOutput(std::string_view tag, std::string_view msg, LogLevel level) = 0;
+  virtual void DoOutput(std::string_view tag, std::string_view msg,
+                        LogLevel level) = 0;
   virtual void DoSetLogLevel(LogLevel level) = 0;
+  LogLevel GetLogLevelThreshold() const noexcept {
+    return log_level_threshold_;
+  }
 
-  LogLevel log_level_threshold_ = LogLevel::kInfo;
-
-private:
+ private:
   bool initialized_ = false;
+  LogLevel log_level_threshold_ = LogLevel::kInfo;
 };
 
-}
-#endif  // YORIITO_VEHICLE_API_UTILITY_COMMON_LOGGER_BASE_LOGBACKEND_H_
+}  // namespace yoriito
+#endif  // COMMON_LOGGER_BASE_LOGBACKEND_H_

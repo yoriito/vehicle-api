@@ -41,28 +41,36 @@ std::shared_ptr<ILogBackend> ILogBackend::GetLogBackend() {
 }
 
 void BaseLogBackend::Initialize(const char* name) {
-  if (initialized_) return;
+  if (initialized_) {
+    return;
+  }
   DoInitialize(name);
   initialized_ = true;
 }
 
 void BaseLogBackend::Finalize() {
-  if (!initialized_) return;
+  if (!initialized_) {
+    return;
+  }
   DoFinalize();
   initialized_ = false;
 }
 
-void BaseLogBackend::Output(std::string_view tag, std::string_view msg, LogLevel level) {
-  if (!initialized_) return;  // Do not output log if not initialized
+void BaseLogBackend::Output(std::string_view tag, std::string_view msg,
+                            LogLevel level) {
+  if (!initialized_) {
+    return;  // Do not output log if not initialized
+  }
   DoOutput(tag, msg, level);
 }
 
-bool BaseLogBackend::IsInitialized() const {
-  return initialized_;
-}
+bool BaseLogBackend::IsInitialized() const { return initialized_; }
 
 void BaseLogBackend::SetLogLevel(LogLevel level) {
-  if (!initialized_) return;  // Do not set log level if not initialized
+  if (!initialized_) {
+    return;  // Do not set log level if not initialized
+  }
+  log_level_threshold_ = level;
   DoSetLogLevel(level);
 }
-}
+}  // namespace yoriito

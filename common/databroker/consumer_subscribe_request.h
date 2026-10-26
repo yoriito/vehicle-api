@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_SUBSCRIBE_REQUEST_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_SUBSCRIBE_REQUEST_H_
+#ifndef COMMON_DATABROKER_CONSUMER_SUBSCRIBE_REQUEST_H_
+#define COMMON_DATABROKER_CONSUMER_SUBSCRIBE_REQUEST_H_
 
 #include <string>
 
@@ -68,7 +68,7 @@ class ConsumerSubscribeRequest {
    * @endcode -
    */
   explicit ConsumerSubscribeRequest(
-      std::string path, yoriito::databroker::filter::SubscribeFilter&& filter)
+    std::string path, yoriito::databroker::filter::SubscribeFilter filter)
       : path_(std::move(path)), filter_(std::move(filter)) {}
 
   ConsumerSubscribeRequest(const ConsumerSubscribeRequest&) = delete;
@@ -89,7 +89,8 @@ class ConsumerSubscribeRequest {
    * @code -
    * @endcode -
    */
-  const std::string& GetPath() const { return path_; }
+  const std::string& GetPath() const& { return path_; }
+  std::string GetPath() const&& { return path_; }
   /**
    * @ingroup consumer
    * @fn const std::optional<yoriito::databroker::filter::SubscribeFilter>&
@@ -104,8 +105,13 @@ class ConsumerSubscribeRequest {
    * @endcode -
    */
   const std::optional<yoriito::databroker::filter::SubscribeFilter>& GetFilter()
-      const {
+    const& {
     return filter_;
+  }
+  // SubscribeFilter is move-only, so the rvalue overload moves rather than
+  // copies.
+  std::optional<yoriito::databroker::filter::SubscribeFilter> GetFilter() && {
+    return std::move(filter_);
   }
 
   /**
@@ -135,4 +141,4 @@ class ConsumerSubscribeRequest {
 
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_CONSUMER_SUBSCRIBE_REQUEST_H_
+#endif  // COMMON_DATABROKER_CONSUMER_SUBSCRIBE_REQUEST_H_

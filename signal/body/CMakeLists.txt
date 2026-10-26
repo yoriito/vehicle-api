@@ -15,29 +15,32 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE BODY_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_BODY_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_body SHARED ${BODY_SRC})
-target_include_directories(yoriito_vehicle_api_body PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_body PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_body"
+    SOURCES
+        Signal_IsAutoPowerOptimize.cc
+        Signal_PowerOptimizeLevel.cc
+        Signal_RearMainSpoilerPosition.cc
+    INSTALL_SUBDIR
+        "signal/body"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/body"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_body LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)
+# ---- subdirectories ----
+add_subdirectory(hood)
+
+add_subdirectory(trunk)
+
+add_subdirectory(horn)
+
+add_subdirectory(raindetection)
+
+add_subdirectory(windshield)
+
+add_subdirectory(lights)
+
+add_subdirectory(mirrors)
+
+
+

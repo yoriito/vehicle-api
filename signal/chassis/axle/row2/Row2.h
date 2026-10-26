@@ -16,12 +16,11 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CHASSIS_AXLE_ROW2_H
-#define VEHICLE_CHASSIS_AXLE_ROW2_H
+#ifndef SIGNAL_CHASSIS_AXLE_ROW2_ROW2_H_
+#define SIGNAL_CHASSIS_AXLE_ROW2_ROW2_H_
 
 #include "Signal_AxleWidth.h"
 #include "Signal_SteeringAngle.h"
-#include "Signal_SteeringAngle_Availability_Sensor.h"
 #include "Signal_TireAspectRatio.h"
 #include "Signal_TireWidth.h"
 #include "Signal_TrackWidth.h"
@@ -31,4 +30,4 @@
 #include "Signal_WheelWidth.h"
 #include "wheel/Wheel.h"
 
-#endif  // VEHICLE_CHASSIS_AXLE_ROW2_H
+#endif  // SIGNAL_CHASSIS_AXLE_ROW2_ROW2_H_

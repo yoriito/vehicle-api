@@ -16,15 +16,12 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_POWERTRAIN_COMBUSTIONENGINE_ENGINECOOLANT_H
-#define VEHICLE_POWERTRAIN_COMBUSTIONENGINE_ENGINECOOLANT_H
+#ifndef SIGNAL_POWERTRAIN_COMBUSTIONENGINE_ENGINECOOLANT_ENGINECOOLANT_H_
+#define SIGNAL_POWERTRAIN_COMBUSTIONENGINE_ENGINECOOLANT_ENGINECOOLANT_H_
 
 #include "Signal_Capacity.h"
 #include "Signal_Level.h"
-#include "Signal_Level_Availability_Sensor.h"
 #include "Signal_LifeRemaining.h"
-#include "Signal_LifeRemaining_Availability_Sensor.h"
 #include "Signal_Temperature.h"
-#include "Signal_Temperature_Availability_Sensor.h"
 
-#endif  // VEHICLE_POWERTRAIN_COMBUSTIONENGINE_ENGINECOOLANT_H
+#endif  // SIGNAL_POWERTRAIN_COMBUSTIONENGINE_ENGINECOOLANT_ENGINECOOLANT_H_

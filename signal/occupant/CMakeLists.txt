@@ -15,29 +15,19 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE OCCUPANT_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_OCCUPANT_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_occupant SHARED ${OCCUPANT_SRC})
-target_include_directories(yoriito_vehicle_api_occupant PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_occupant PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_occupant"
+    SOURCES
+    INSTALL_SUBDIR
+        "signal/occupant"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/occupant"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_occupant LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)
+# ---- subdirectories ----
+add_subdirectory(row1)
+
+add_subdirectory(row2)
+
+
+

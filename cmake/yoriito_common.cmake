@@ -52,7 +52,21 @@ set(BIN_INSTALL_DIR ${CMAKE_INSTALL_BINDIR})
 set(DATA_INSTALL_DIR ${CMAKE_INSTALL_DATADIR}/${YORIITO})
 
 # Compile Option
-add_compile_options(-Wall)
+add_compile_options(
+    -std=c++17
+    -Wall
+    -Wextra
+    -Wconversion
+    -Wzero-as-null-pointer-constant
+    -Wcast-qual
+    -Wswitch-default
+    -Wimplicit-fallthrough
+    -Wvla
+    -Wsuggest-override
+    -Wundef
+    -Wformat=2
+    -Wfloat-equal
+)
 # add_compile_options(-g)
 
 # Absl and gRPC use __FILE__ macro a lot,

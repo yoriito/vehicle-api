@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_HVAC_STATION_ROW2_H
-#define VEHICLE_CABIN_HVAC_STATION_ROW2_H
+#ifndef SIGNAL_CABIN_HVAC_STATION_ROW2_ROW2_H_
+#define SIGNAL_CABIN_HVAC_STATION_ROW2_ROW2_H_
 
-#include "driver/Driver.h"
-#include "passenger/Passenger.h"
+#include "driverside/DriverSide.h"
+#include "passengerside/PassengerSide.h"
 
-#endif  // VEHICLE_CABIN_HVAC_STATION_ROW2_H
+#endif  // SIGNAL_CABIN_HVAC_STATION_ROW2_ROW2_H_

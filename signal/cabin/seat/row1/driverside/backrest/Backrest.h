@@ -16,13 +16,20 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_SEAT_ROW1_DRIVERSIDE_BACKREST_H
-#define VEHICLE_CABIN_SEAT_ROW1_DRIVERSIDE_BACKREST_H
+#ifndef SIGNAL_CABIN_SEAT_ROW1_DRIVERSIDE_BACKREST_BACKREST_H_
+#define SIGNAL_CABIN_SEAT_ROW1_DRIVERSIDE_BACKREST_BACKREST_H_
 
+#include "Signal_BottomLumbarSupport.h"
+#include "Signal_HeatingCooling.h"
+#include "Signal_LumbarHeight.h"
+#include "Signal_LumbarSupport.h"
+#include "Signal_MidLumbarSupport.h"
 #include "Signal_Recline.h"
-#include "Signal_Recline_Availability_Actuator.h"
-#include "Signal_Recline_Availability_Sensor.h"
-#include "lumbar/Lumbar.h"
-#include "sidebolster/SideBolster.h"
+#include "Signal_SideBolsterSupport.h"
+#include "Signal_SideBolsterSupportLeft.h"
+#include "Signal_SideBolsterSupportRight.h"
+#include "Signal_TopLumbarSupport.h"
+#include "Signal_UpperShoulderSupport.h"
+#include "Signal_Ventilator.h"
 
-#endif  // VEHICLE_CABIN_SEAT_ROW1_DRIVERSIDE_BACKREST_H
+#endif  // SIGNAL_CABIN_SEAT_ROW1_DRIVERSIDE_BACKREST_BACKREST_H_

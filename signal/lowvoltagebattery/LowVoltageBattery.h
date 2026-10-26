@@ -16,14 +16,11 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_LOWVOLTAGEBATTERY_H
-#define VEHICLE_LOWVOLTAGEBATTERY_H
+#ifndef SIGNAL_LOWVOLTAGEBATTERY_LOWVOLTAGEBATTERY_H_
+#define SIGNAL_LOWVOLTAGEBATTERY_LOWVOLTAGEBATTERY_H_
 
-#include "Signal_CurrentCurrent.h"
-#include "Signal_CurrentCurrent_Availability_Sensor.h"
-#include "Signal_CurrentVoltage.h"
-#include "Signal_CurrentVoltage_Availability_Sensor.h"
+#include "Signal_CurrentElectricity.h"
 #include "Signal_NominalCapacity.h"
 #include "Signal_NominalVoltage.h"
 
-#endif  // VEHICLE_LOWVOLTAGEBATTERY_H
+#endif  // SIGNAL_LOWVOLTAGEBATTERY_LOWVOLTAGEBATTERY_H_

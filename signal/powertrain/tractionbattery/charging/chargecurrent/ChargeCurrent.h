@@ -16,16 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGECURRENT_H
-#define VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGECURRENT_H
+#ifndef SIGNAL_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGECURRENT_CHARGECURRENT_H_
+#define SIGNAL_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGECURRENT_CHARGECURRENT_H_
 
 #include "Signal_DC.h"
-#include "Signal_DC_Availability_Sensor.h"
-#include "Signal_Phase1.h"
-#include "Signal_Phase1_Availability_Sensor.h"
-#include "Signal_Phase2.h"
-#include "Signal_Phase2_Availability_Sensor.h"
-#include "Signal_Phase3.h"
-#include "Signal_Phase3_Availability_Sensor.h"
+#include "Signal_ThreePhaseCurrentMeasurements.h"
 
-#endif  // VEHICLE_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGECURRENT_H
+#endif  // SIGNAL_POWERTRAIN_TRACTIONBATTERY_CHARGING_CHARGECURRENT_CHARGECURRENT_H_

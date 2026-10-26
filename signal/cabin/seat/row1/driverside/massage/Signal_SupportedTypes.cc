@@ -1,0 +1,101 @@
+// SPDX-License-Identifier: Apache-2.0
+//
+// Copyright 2026 JASPAR
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#include "Signal_SupportedTypes.h"
+
+//-------------------------------------------------------------------------------------
+// VSS Signal: Vehicle.Cabin.Seat.Row1.DriverSide.Massage.SupportedTypes
+// Type      : attribute
+// DataType  : string[]
+// Unit      : None
+//-------------------------------------------------------------------------------------
+// clang-format off
+namespace yoriito::vehicle::cabin::seat::row1::driverside::massage::supportedtypes {
+// clang-format on
+
+yoriito::Result<yoriito::signal::SignalGetDataPoint<std::vector<std::string>>>
+Get() {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Get].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
+      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
+  yoriito::databroker::ConsumerGetRequest request(
+      VEHICLE_CABIN_SEAT_ROW1_DRIVERSIDE_MASSAGE_SUPPORTEDTYPES);
+  yoriito::Result<yoriito::databroker::ConsumerGetResponse> ret =
+      consumer->Get(request);
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::Result<yoriito::signal::SignalGetDataPoint<
+        std::vector<std::string>>>::Err(std::move(err_ptr));
+  }
+  auto response = ret.TakeOk().value();
+  if (response.GetDataPoints().empty()) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", std::string(yoriito::ErrorType::to_msg(
+                                            yoriito::ErrorCode::ERROR_NODATA)));
+    return yoriito::Result<
+        yoriito::signal::SignalGetDataPoint<std::vector<std::string>>>::
+        Err(std::make_unique<yoriito::CommonError>(
+            yoriito::ErrorCode::ERROR_NODATA));
+  }
+  const auto& data_point = response.GetDataPoints().front();
+  if (!std::holds_alternative<std::vector<std::string>>(data_point.GetData())) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", "Unexpected data type");
+    return yoriito::Result<
+        yoriito::signal::SignalGetDataPoint<std::vector<std::string>>>::
+        Err(std::make_unique<yoriito::CommonError>(
+            yoriito::ErrorCode::ERROR_BADMSG));
+  }
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Get].");
+  return yoriito::
+      Result<yoriito::signal::SignalGetDataPoint<std::vector<std::string>>>::Ok(
+          data_point);
+}
+
+yoriito::Result<
+    yoriito::signal::SignalInspectResponse<std::vector<std::string>>>
+Inspect() {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Inspect].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
+      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
+  yoriito::databroker::ConsumerInspectRequest request(
+      VEHICLE_CABIN_SEAT_ROW1_DRIVERSIDE_MASSAGE_SUPPORTEDTYPES);
+  yoriito::Result<yoriito::databroker::ConsumerInspectResponse> ret =
+      consumer->Inspect(request);
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::Result<yoriito::signal::SignalInspectResponse<
+        std::vector<std::string>>>::Err(std::move(err_ptr));
+  }
+  auto response = ret.TakeOk();
+  if (response.value().GetDataPoints().empty()) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", std::string(yoriito::ErrorType::to_msg(
+                                            yoriito::ErrorCode::ERROR_NODATA)));
+    return yoriito::Result<
+        yoriito::signal::SignalInspectResponse<std::vector<std::string>>>::
+        Err(std::make_unique<yoriito::CommonError>(
+            yoriito::ErrorCode::ERROR_NODATA));
+  }
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Inspect].");
+  return yoriito::Result<
+      yoriito::signal::SignalInspectResponse<std::vector<std::string>>>::
+      Ok(yoriito::signal::SignalInspectResponse<std::vector<std::string>>(
+          std::move(response.value())));
+}
+
+// clang-format off
+}  // namespace yoriito::vehicle::cabin::seat::row1::driverside::massage::supportedtypes
+// clang-format on

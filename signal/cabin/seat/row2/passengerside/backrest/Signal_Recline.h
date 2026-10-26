@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_SEAT_ROW2_PASSENGERSIDE_BACKREST_RECLINE_H
-#define VEHICLE_CABIN_SEAT_ROW2_PASSENGERSIDE_BACKREST_RECLINE_H
+#ifndef SIGNAL_CABIN_SEAT_ROW2_PASSENGERSIDE_BACKREST_SIGNAL_RECLINE_H_
+#define SIGNAL_CABIN_SEAT_ROW2_PASSENGERSIDE_BACKREST_SIGNAL_RECLINE_H_
 
 #include <cstdint>
 #include <memory>
@@ -28,163 +28,134 @@
 #include "databroker/databroker_consumer_factory.h"
 #include "error.h"
 #include "result.h"
+#include "signal/signal_get_datapoint.h"
+#include "signal/signal_inspect_data.h"
+#include "signal/signal_inspect_response.h"
+#include "signal/signal_subscribe_context.h"
 #include "yoriito_log.h"
 
 /**
  * @ingroup Cabin
- * @namespace yoriito::vehicle::cabin::seat::row2::passengerside::backrest::recline
- * @brief Indicates the Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline signal.
+ * @namespace
+ * yoriito::vehicle::cabin::seat::row2::passengerside::backrest::recline
+ * @brief Indicates the Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline
+ * signal.
  * @deprecated -
  * @version main
  */
-namespace yoriito::vehicle::cabin::seat::row2::passengerside::backrest::
-  recline {
+// clang-format off
+namespace yoriito::vehicle::cabin::seat::row2::passengerside::backrest::recline {
+// clang-format on
 
-  constexpr const char* VEHICLE_CABIN_SEAT_ROW2_PASSENGERSIDE_BACKREST_RECLINE =
+constexpr const char* VEHICLE_CABIN_SEAT_ROW2_PASSENGERSIDE_BACKREST_RECLINE =
     "Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline";
 
-  /**
-   * @ingroup Get
-   * @fn yoriito::Result<float> Get()
-   * @brief Retrieves the current value for Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline
-   * @deprecated -
-   * @pre Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline is available.
-   * @param -
-   * @retval Ok(<float>): The result indicates success and the value.
-   * @retval Err(UnsetValueError): The result indicates the value has been not set.
-   * @retval Err(NotAvailableError): The result indicates an unavailable value.
-   * @retval Err(UnknownError): The result indicates an unknown error.
-   * @note Thread safe.
-   * @code
-   * -
-   * @endcode
-   */
-  yoriito::Result<float> Get();
+/**
+ * @ingroup Get
+ * @fn yoriito::Result<yoriito::signal::SignalGetDataPoint<float>> Get()
+ * @brief Retrieves the datapoint for
+ * Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline
+ * @deprecated -
+ * @pre Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline is capable.
+ * @param -
+ * @retval Ok(yoriito::signal::SignalGetDataPoint<float>): The result indicates
+ * success.
+ * @retval Err(UnsetValueError): The result indicates the value has been not
+ * set.
+ * @retval Err(UnknownError): The result indicates an unknown error.
+ * @note Thread safe.
+ * @code
+ * -
+ * @endcode
+ */
+yoriito::Result<yoriito::signal::SignalGetDataPoint<float>> Get();
 
-  /**
-   * @ingroup Set
-   * @fn yoriito::Result<void> Set(const float& value)
-   * @brief Sets the target value for Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline.
-   * @deprecated -
-   * @pre Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline is available.
-   * @param value: The value to set.
-   * @retval Ok(): The result indicates success.
-   * @retval Err(ParameterError): The result indicates a parameter error.
-   * @retval Err(InvalidValueError): The result indicates an invalid value.
-   * @retval Err(NotAvailableError): The result indicates an unavailable value.
-   * @retval Err(UnknownError): The result indicates an unknown error.
-   * @note Thread safe. Last-come, first-served.
-   * @code
-   * -
-   * @endcode
-   */
-  yoriito::Result<void> Set(const float& value);
+/**
+ * @ingroup Set
+ * @fn yoriito::Result<void> Set(const float& value)
+ * @brief Sets the target value for
+ * Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline.
+ * @deprecated -
+ * @pre Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline is available.
+ * @param value: The value to set.
+ * @retval Ok(): The result indicates success.
+ * @retval Err(ParameterError): The result indicates a parameter error.
+ * @retval Err(InvalidValueError): The result indicates an invalid value.
+ * @retval Err(NotAvailableError): The result indicates an unavailable value.
+ * @retval Err(UnknownError): The result indicates an unknown error.
+ * @note Thread safe. Last-come, first-served.
+ * @code
+ * -
+ * @endcode
+ */
+yoriito::Result<void> Set(const float& value);
 
-  /**
-   * @ingroup Subscribe
-   * @fn yoriito::Result<std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>> Subscribe()
-   * @brief Subscribes to changes in the current value for Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline.
-   * @deprecated -
-   * @pre Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline is available.
-   * @param -
-   * @retval Ok(std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>): The result containing a subscription context.
-   * @retval Err(NotAvailableError): The result indicates an unavailable value.
-   * @retval Err(UnknownError): The result indicates an unknown error.
-   * @note Thread safe.
-   * @code
-   * -
-   * @endcode
-   */
-  yoriito::Result<
-    std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>>
-  Subscribe();
+/**
+ * @ingroup Subscribe
+ * @fn yoriito::Result<yoriito::signal::SignalSubscribeContext<float>
+ * Subscribe()
+ * @brief Subscribes to changes in the datapoint for
+ * Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline.
+ * @deprecated -
+ * @pre Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline is capable.
+ * @param -
+ * @retval Ok(yoriito::signal::SignalSubscribeContext<float>): The result
+ * containing a subscription context.
+ * @retval Err(UnknownError): The result indicates an unknown error.
+ * @note Thread safe.
+ * @code
+ * -
+ * @endcode
+ */
+yoriito::Result<yoriito::signal::SignalSubscribeContext<float>> Subscribe();
 
-  /**
-   * @ingroup UnSubscribe
-   * @fn yoriito::Result<void> UnSubscribe(std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext> subscription_context)
-   * @brief UnSubscribes from the current value for Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline.
-   * @deprecated -
-   * @pre The subscription to Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline has already been called.
-   * @param -
-   * @retval Ok(): The result indicates success or failure.
-   * @retval Err(NotSubscribeError): The result indicates that it has not been subscribed.
-   * @retval Err(NotAvailableError): The result indicates an unavailable value.
-   * @retval Err(UnknownError): The result indicates an unknown error.
-   * @note Thread safe.
-   * @code
-   * -
-   * @endcode
-   */
-  yoriito::Result<void> UnSubscribe(
-    std::unique_ptr<yoriito::databroker::ConsumerSubscribeContext>
-      subscription_context);
+/**
+ * @ingroup UnSubscribe
+ * @fn yoriito::Result<void>
+ * UnSubscribe(yoriito::signal::SignalSubscribeContext<float
+ * subscription_context)
+ * @brief UnSubscribes from the datapoint for
+ * Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline.
+ * @deprecated -
+ * @pre The subscription to
+ * Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline has already been
+ * called.
+ * @param -
+ * @retval Ok(): The result indicates success.
+ * @retval Err(NotSubscribeError): The result indicates that it has not been
+ * subscribed.
+ * @retval Err(UnknownError): The result indicates an unknown error.
+ * @note Thread safe.
+ * @code
+ * -
+ * @endcode
+ */
+yoriito::Result<void> UnSubscribe(
+    yoriito::signal::SignalSubscribeContext<float> subscription_context);
 
-  /**
-   * @ingroup Inspect
-   * @fn yoriito::Result<yoriito::databroker::ConsumerInspectResponse> Inspect()
-   * @brief Retrieves the metadata for Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline
-   * @deprecated -
-   * @pre Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline is available.
-   * @param -
-   * @retval Ok(<yoriito::databroker::ConsumerInspectResponse>): The result indicates success and the inspect response.
-   * @retval Err(UnsetValueError): The result indicates the value has been not set.
-   * @retval Err(NotAvailableError): The result indicates an unavailable value.
-   * @retval Err(UnknownError): The result indicates an unknown error.
-   * @note Thread safe.
-   * @code
-   * yoriito::Result<yoriito::databroker::ConsumerInspectResponse> inspect_ret = Inspect();
-   * yoriito::databroker::ConsumerInspectResponse inspect_response = inspect_ret.TakeOk().value();
-   * if (inspect_response.GetDataPoints().empty()) {
-   *   return yoriito::Result<yoriito::databroker::ConsumerInspectResponse>::Err(
-   *     std::make_shared<yoriito::CommonError>(
-   *       0, "No data points returned."));
-   * }
-   * const yoriito::databroker::ConsumerInspectData& inspect_data = response.GetDataPoints().front();
-   *
-   * // Returns the path of the component.
-   * const auto& path = inspect_data.GetPath();
-   *
-   * // Returns the data type of the component.
-   * const auto& data_type = inspect_data.GetDataType();
-   *
-   * // Returns the entry type of the component.
-   * const auto& entry_type = inspect_data.GetEntryType();
-   *
-   * //Returns the deprecation information of the component.
-   * const auto& deprecation = inspect_data.GetDeprecation();
-   *
-   * // Returns the unit of the component.
-   * const auto& unit = inspect_data.GetUnit();
-   *
-   * // Returns the minimum value of the component.
-   * const auto& min = inspect_data.GetMin();
-   *
-   * // Returns the maximum value of the component.
-   * const auto& max = inspect_data.GetMax();
-   *
-   * // Returns the comment of the component.
-   * const auto& comment = inspect_data.GetComment();
-   *
-   * // Returns the allowed values of the component.
-   * const auto& allowed = inspect_data.GetAllowed();
-   *
-   * // Returns the default value of the component.
-   * const auto& default_value = inspect_data.GetDefaultValue();
-   *
-   * // Returns the description of the component.
-   * const auto& description = inspect_data.GetDescription();
-   *
-   * // Returns the array size of the component.
-   * const auto& array_size = inspect_data.GetArraySize();
-   *
-   * // Returns the pattern of the component.
-   * const auto& pattern = inspect_data.GetPattern();
-   *
-   * // Returns the custom attributes of the component.
-   * const auto& custom_attributes = inspect_data.GetCustomAttributes();
-   * @endcode
-   */
-  yoriito::Result<yoriito::databroker::ConsumerInspectResponse> Inspect();
+/**
+ * @ingroup Inspect
+ * @fn yoriito::Result<yoriito::signal::SignalInspecResponse<float>> Inspect()
+ * @brief Retrieves the metadata for
+ * Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline
+ * @deprecated -
+ * @pre Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline is capable.
+ * @param -
+ * @retval Ok(yoriito::signal::SignalInspectResponse<float>): The result
+ * indicates success and the inspect response.
+ * @retval Err(UnsetValueError): The result indicates the value has been not
+ * set.
+ * @retval Err(UnknownError): The result indicates an unknown error.
+ * @note Thread safe.
+ * @code
+ * yoriito::Result<yoriito::signal::SignalInspectResponse<float>> ret =
+ * Inspect(); yoriito::signal::SignalInspectResponse<float> metadata =
+ * ret.TakeOk().value();
+ * @endcode
+ */
+yoriito::Result<yoriito::signal::SignalInspectResponse<float>> Inspect();
 
+// clang-format off
 }  // namespace yoriito::vehicle::cabin::seat::row2::passengerside::backrest::recline
-#endif  // VEHICLE_CABIN_SEAT_ROW2_PASSENGERSIDE_BACKREST_RECLINE_H
+// clang-format on
+#endif  // SIGNAL_CABIN_SEAT_ROW2_PASSENGERSIDE_BACKREST_SIGNAL_RECLINE_H_

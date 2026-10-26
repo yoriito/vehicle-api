@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_OCCUPANT_ROW1_H
-#define VEHICLE_OCCUPANT_ROW1_H
+#ifndef SIGNAL_OCCUPANT_ROW1_ROW1_H_
+#define SIGNAL_OCCUPANT_ROW1_ROW1_H_
 
 #include "driverside/DriverSide.h"
 #include "middle/Middle.h"
 #include "passengerside/PassengerSide.h"
 
-#endif  // VEHICLE_OCCUPANT_ROW1_H
+#endif  // SIGNAL_OCCUPANT_ROW1_ROW1_H_

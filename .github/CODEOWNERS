@@ -6,5 +6,4 @@
 cmake/  @yoriito/build-maintenance-team
 signal/ @yoriito/functional-enhancement-team
 test/   @yoriito/qa-team
-test_integration/ @yoriito/integration-test-team
 common/ @yoriito/api-core-reviewers @yoriito/signal-api-lead @yoriito/architects

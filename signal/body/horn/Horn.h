@@ -16,11 +16,9 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_HORN_H
-#define VEHICLE_BODY_HORN_H
+#ifndef SIGNAL_BODY_HORN_HORN_H_
+#define SIGNAL_BODY_HORN_HORN_H_
 
 #include "Signal_IsActive.h"
-#include "Signal_IsActive_Availability_Actuator.h"
-#include "Signal_IsActive_Availability_Sensor.h"
 
-#endif  // VEHICLE_BODY_HORN_H
+#endif  // SIGNAL_BODY_HORN_HORN_H_

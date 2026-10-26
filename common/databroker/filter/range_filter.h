@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_FILTER_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_FILTER_H_
+#ifndef COMMON_DATABROKER_FILTER_RANGE_FILTER_H_
+#define COMMON_DATABROKER_FILTER_RANGE_FILTER_H_
 
 #include <utility>
 #include <variant>
@@ -55,22 +55,22 @@ class RangeFilter {
    * @code -
    * @endcode -
    */
-  explicit RangeFilter(RangeFilterType&& filter) : filter_(std::move(filter)) {}
+  explicit RangeFilter(RangeFilterType filter) : filter_(std::move(filter)) {}
 
   /**
    * @ingroup common
-   * @fn explicit RangeFilter(OperatorType op, double boundary)
+   * @fn explicit RangeFilter(OperatorType op, int32_t boundary)
    * @brief Constructs a RangeFilter with a single RangeCondition.
    * @deprecated -
    * @pre -
    * @param op The operator type for the condition.
-   * @param boundary The boundary value (double).
+   * @param boundary The boundary value (int32_t).
    * @retval -
    * @note -
    * @code -
    * @endcode -
    */
-  explicit RangeFilter(OperatorType op, double boundary)
+  explicit RangeFilter(OperatorType op, int32_t boundary)
       : filter_(RangeCondition(op, boundary)) {}
 
   /**
@@ -218,4 +218,4 @@ class RangeFilter {
 
 }  // namespace yoriito::databroker::filter
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_FILTER_H_
+#endif  // COMMON_DATABROKER_FILTER_RANGE_FILTER_H_

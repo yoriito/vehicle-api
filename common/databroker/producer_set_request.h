@@ -16,8 +16,9 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_SET_REQUEST_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_SET_REQUEST_H_
+#ifndef COMMON_DATABROKER_PRODUCER_SET_REQUEST_H_
+#define COMMON_DATABROKER_PRODUCER_SET_REQUEST_H_
+
 #include <string>
 #include <string_view>
 #include <utility>
@@ -146,4 +147,4 @@ class ProducerSetRequest {
 
 }  // namespace yoriito::databroker
 
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_PRODUCER_SET_REQUEST_H_
+#endif  // COMMON_DATABROKER_PRODUCER_SET_REQUEST_H_

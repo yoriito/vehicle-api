@@ -1,0 +1,198 @@
+s6-rc: info: service kura: starting
+s6-rc: info: service dlt-daemon: starting
+s6-rc: info: service s6rc-oneshot-runner: starting
+s6-rc: info: service kura successfully started
+s6-rc: info: service dlt-daemon successfully started
+[ 1017.450301]~DLT~   43~NOTICE   ~Starting DLT Daemon; DLT Package Version: 3.0.1 STABLE, Package Revision: v3.0.0, build on Oct  1 2026 17:14:24
+-SYSTEMD -SYSTEMD_WATCHDOG -TEST -SHM
+
+[ 1017.450310]~DLT~   43~INFO     ~DLT protocol version: 1 (DLTv1)
+s6-rc: info: service s6rc-oneshot-runner successfully started
+s6-rc: info: service fix-attrs: starting
+[ 1017.450401]~DLT~   43~INFO     ~FIFO size: 65536
+[ 1017.450412]~DLT~   43~WARNING  ~Unable to set send timeout Socket operation on non-socket.
+[ 1017.450414]~DLT~   43~INFO     ~Activate connection type: 5
+[ 1017.450424]~DLT~   43~INFO     ~dlt_daemon_socket_open: Socket created
+[ 1017.450433]~DLT~   43~INFO     ~dlt_daemon_socket_open: Listening on ip 0.0.0.0 and port: 3490
+[ 1017.450438]~DLT~   43~INFO     ~dlt_daemon_socket_open: Socket send queue size: 16384
+[ 1017.450448]~DLT~   43~INFO     ~Activate connection type: 1
+[ 1017.450464]~DLT~   43~WARNING  ~dlt_daemon_unix_socket_open: unlink() failed: No such file or directory
+[ 1017.450512]~DLT~   43~INFO     ~Activate connection type: 9
+[ 1017.450534]~DLT~   43~INFO     ~Runtime Option: LoggingMode=3
+[ 1017.450542]~DLT~   43~INFO     ~Ringbuffer configuration: 500000/10000000/500000
+[ 1017.450843]~DLT~   43~NOTICE   ~Failed to open ECU Software version file.
+[ 1017.450855]~DLT~   43~WARNING  ~Unable to set send timeout Socket operation on non-socket.
+[ 1017.450856]~DLT~   43~INFO     ~Activate connection type: 6
+[ 1017.450857]~DLT~   43~INFO     ~Switched to buffer state for socket connections.
+[ 1017.450865]~DLT~   43~WARNING  ~dlt_daemon_applications_load: cannot open file /tmp/dlt-runtime-application.cfg: No such file or directory
+s6-rc: info: service fix-attrs successfully started
+s6-rc: info: service legacy-cont-init: starting
+s6-rc: info: service legacy-cont-init successfully started
+s6-rc: info: service legacy-services: starting
+s6-rc: info: service legacy-services successfully started
+[START] FuzzGet_ThreePhaseCurrentMeasurements (corpus: struct_three_phase_current_measurements, duration: 300s)
+[START] FuzzGet_Int8 (corpus: int8, duration: 300s)
+[START] FuzzSet_Int8 (corpus: int8, duration: 300s)
+[START] FuzzGet_Float (corpus: float, duration: 300s)
+[START] FuzzGet_Uint32 (corpus: uint32, duration: 300s)
+[START] FuzzGet_Pose (corpus: struct_pose, duration: 300s)
+[START] FuzzGet_Bool (corpus: boolean, duration: 300s)
+[START] FuzzSet_String (corpus: string, duration: 300s)
+[START] FuzzGet_Location (corpus: struct_location, duration: 300s)
+[START] FuzzGet_PointingDirection (corpus: struct_pointing_direction, duration: 300s)
+[START] FuzzGet_RoadFrictionRange (corpus: struct_road_friction_range, duration: 300s)
+[START] FuzzSet_Uint8 (corpus: uint8, duration: 300s)
+[START] FuzzGet_GNSSLocation (corpus: struct_gnss_location, duration: 300s)
+[START] FuzzGet_Int32 (corpus: int32, duration: 300s)
+[START] FuzzGet_Uint8 (corpus: uint8, duration: 300s)
+[START] FuzzSet_Float (corpus: float, duration: 300s)
+[START] FuzzGet_VehicleLocation (corpus: struct_vehicle_location, duration: 300s)
+[START] FuzzGet_AngularVelocity (corpus: struct_angular_velocity, duration: 300s)
+[START] FuzzGet_Electricity (corpus: struct_electricity, duration: 300s)
+[START] FuzzGet_String (corpus: string, duration: 300s)
+[START] FuzzGet_ThreePhaseVoltageMeasurements (corpus: struct_three_phase_voltage_measurements, duration: 300s)
+[START] FuzzGet_Acceleration (corpus: struct_acceleration, duration: 300s)
+[START] FuzzSet_Uint16 (corpus: uint16, duration: 300s)
+[START] FuzzGet_Int16 (corpus: int16, duration: 300s)
+[START] FuzzGet_Uint16 (corpus: uint16, duration: 300s)
+
+Started 25 harnesses. Waiting up to 330s...
+
+=== Results ===
+  FuzzGet_ThreePhaseCurrentMeasurements: crashes=0, hangs=0
+  FuzzGet_Int8: crashes=0, hangs=0
+  FuzzSet_Int8: crashes=0, hangs=0
+  FuzzGet_Float: crashes=0, hangs=0
+  FuzzGet_Uint32: crashes=0, hangs=0
+  FuzzGet_Pose: crashes=0, hangs=0
+  FuzzGet_Bool: crashes=0, hangs=0
+  FuzzSet_String: crashes=0, hangs=0
+  FuzzGet_Location: crashes=0, hangs=0
+  FuzzGet_PointingDirection: crashes=0, hangs=0
+  FuzzGet_RoadFrictionRange: crashes=0, hangs=0
+  FuzzSet_Uint8: crashes=0, hangs=0
+  FuzzGet_GNSSLocation: crashes=0, hangs=0
+  FuzzGet_Int32: crashes=0, hangs=0
+  FuzzGet_Uint8: crashes=0, hangs=0
+  FuzzSet_Float: crashes=0, hangs=0
+  FuzzGet_VehicleLocation: crashes=0, hangs=0
+  FuzzGet_AngularVelocity: crashes=0, hangs=0
+  FuzzGet_Electricity: crashes=0, hangs=0
+  FuzzGet_String: crashes=0, hangs=0
+  FuzzGet_ThreePhaseVoltageMeasurements: crashes=0, hangs=0
+  FuzzGet_Acceleration: crashes=0, hangs=0
+  FuzzSet_Uint16: crashes=0, hangs=0
+  FuzzGet_Int16: crashes=0, hangs=0
+  FuzzGet_Uint16: crashes=0, hangs=0
+s6-rc: info: service legacy-services: stopping
+s6-rc: info: service legacy-services successfully stopped
+s6-rc: info: service legacy-cont-init: stopping
+s6-rc: info: service kura: stopping
+s6-rc: info: service dlt-daemon: stopping
+kura finished: 0
+dlt-daemon finished: 0
+s6-rc: info: service kura successfully stopped
+s6-rc: info: service dlt-daemon successfully stopped
+s6-rc: info: service legacy-cont-init successfully stopped
+s6-rc: info: service fix-attrs: stopping
+s6-rc: info: service fix-attrs successfully stopped
+s6-rc: info: service s6rc-oneshot-runner: stopping
+s6-rc: info: service s6rc-oneshot-runner successfully stopped
+[ 1318.877025]~DLT~   43~NOTICE   ~Exiting DLT daemon due to signal: Terminated
+[ 1318.877072]~DLT~   43~NOTICE   ~Exiting DLT daemon... [15]
+[ 1318.877185]~DLT~   43~NOTICE   ~Leaving DLT daemon
+
+=== AFL++ statistics per target ===
+
+--- FuzzGet_Acceleration ---
+  (no statistics recorded)
+
+--- FuzzGet_AngularVelocity ---
+  (no statistics recorded)
+
+--- FuzzGet_Bool ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 129 new corpus items found, 0.35% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_Electricity ---
+  (no statistics recorded)
+
+--- FuzzGet_Float ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 127 new corpus items found, 0.35% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_GNSSLocation ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 12 new corpus items found, 0.05% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_Int16 ---
+  (no statistics recorded)
+
+--- FuzzGet_Int32 ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 126 new corpus items found, 0.35% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_Int8 ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 129 new corpus items found, 0.35% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_Location ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 3 new corpus items found, 0.04% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_PointingDirection ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 2 new corpus items found, 0.05% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_Pose ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 6 new corpus items found, 0.05% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_RoadFrictionRange ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 3 new corpus items found, 0.04% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_String ---
+  (no statistics recorded)
+
+--- FuzzGet_ThreePhaseCurrentMeasurements ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 3 new corpus items found, 0.04% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_ThreePhaseVoltageMeasurements ---
+  (no statistics recorded)
+
+--- FuzzGet_Uint16 ---
+  (no statistics recorded)
+
+--- FuzzGet_Uint32 ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 125 new corpus items found, 0.35% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_Uint8 ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 123 new corpus items found, 0.35% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzGet_VehicleLocation ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 8 new corpus items found, 0.05% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzSet_Float ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 429 new corpus items found, 0.35% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzSet_Int8 ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 374 new corpus items found, 0.34% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzSet_String ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 4 new corpus items found, 0.03% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+
+--- FuzzSet_Uint16 ---
+  (no statistics recorded)
+
+--- FuzzSet_Uint8 ---
+[0m[1;93m[!] [0mTime limit was reached
+[1;94m[*] [0mStatistics: 391 new corpus items found, 0.34% coverage achieved, 0 crashes saved, 0 timeouts saved, total runtime 0 days, 0 hrs, 5 min, 0 sec[0m
+=== Result: No crashes found. ===

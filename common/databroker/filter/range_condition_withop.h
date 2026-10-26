@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_CONDITION_WITHOP_H_
-#define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_CONDITION_WITHOP_H_
+#ifndef COMMON_DATABROKER_FILTER_RANGE_CONDITION_WITHOP_H_
+#define COMMON_DATABROKER_FILTER_RANGE_CONDITION_WITHOP_H_
 
 #include "databroker/filter/operator_type.h"
 #include "databroker/filter/range_condition.h"
@@ -39,14 +39,14 @@ class RangeConditionWithOp : public RangeCondition {
  public:
   /**
    * @ingroup common
-   * @fn RangeConditionWithOp(OperatorType boundary_operator, double boundary,
+   * @fn RangeConditionWithOp(OperatorType boundary_operator, int32_t boundary,
    * std::optional<LogicalOperatorType> logical_op = std::nullopt)
    * @brief Constructs a RangeConditionWithOp with the specified boundary and
    * logical operator.
    * @deprecated -
    * @pre -
    * @param boundary_operator The boundary operator type.
-   * @param boundary The boundary value (double).
+   * @param boundary The boundary value (int32_t).
    * @param logical_op Optional logical operator type.
    * @retval -
    * @note -
@@ -54,7 +54,7 @@ class RangeConditionWithOp : public RangeCondition {
    * @endcode -
    */
   RangeConditionWithOp(
-      OperatorType boundary_operator, double boundary,
+      OperatorType boundary_operator, int32_t boundary,
       std::optional<LogicalOperatorType> logical_op = std::nullopt)
       : RangeCondition(boundary_operator, boundary), logical_op_(logical_op) {}
 
@@ -114,4 +114,4 @@ class RangeConditionWithOp : public RangeCondition {
 };
 
 }  // namespace yoriito::databroker::filter
-#endif  // YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_RANGE_CONDITION_WITHOP_H_
+#endif  // COMMON_DATABROKER_FILTER_RANGE_CONDITION_WITHOP_H_

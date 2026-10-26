@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CABIN_LIGHT_FOOTWELLLIGHT_ROW3_H
-#define VEHICLE_CABIN_LIGHT_FOOTWELLLIGHT_ROW3_H
+#ifndef SIGNAL_CABIN_LIGHT_FOOTWELLLIGHT_ROW3_ROW3_H_
+#define SIGNAL_CABIN_LIGHT_FOOTWELLLIGHT_ROW3_ROW3_H_
 
 #include "driverside/DriverSide.h"
 #include "passengerside/PassengerSide.h"
 
-#endif  // VEHICLE_CABIN_LIGHT_FOOTWELLLIGHT_ROW3_H
+#endif  // SIGNAL_CABIN_LIGHT_FOOTWELLLIGHT_ROW3_ROW3_H_

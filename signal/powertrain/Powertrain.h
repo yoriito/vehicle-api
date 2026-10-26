@@ -16,26 +16,20 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_POWERTRAIN_H
-#define VEHICLE_POWERTRAIN_H
+#ifndef SIGNAL_POWERTRAIN_POWERTRAIN_H_
+#define SIGNAL_POWERTRAIN_POWERTRAIN_H_
 
 #include "Signal_AccumulatedBrakingEnergy.h"
-#include "Signal_AccumulatedBrakingEnergy_Availability_Sensor.h"
 #include "Signal_IsAutoPowerOptimize.h"
-#include "Signal_IsAutoPowerOptimize_Availability_Actuator.h"
-#include "Signal_IsAutoPowerOptimize_Availability_Sensor.h"
 #include "Signal_PowerOptimizeLevel.h"
-#include "Signal_PowerOptimizeLevel_Availability_Actuator.h"
-#include "Signal_PowerOptimizeLevel_Availability_Sensor.h"
 #include "Signal_Range.h"
-#include "Signal_Range_Availability_Sensor.h"
 #include "Signal_TimeRemaining.h"
-#include "Signal_TimeRemaining_Availability_Sensor.h"
 #include "Signal_Type.h"
 #include "combustionengine/CombustionEngine.h"
 #include "electricmotor/ElectricMotor.h"
 #include "fuelsystem/FuelSystem.h"
+#include "rangeextender/RangeExtender.h"
 #include "tractionbattery/TractionBattery.h"
 #include "transmission/Transmission.h"
 
-#endif  // VEHICLE_POWERTRAIN_H
+#endif  // SIGNAL_POWERTRAIN_POWERTRAIN_H_

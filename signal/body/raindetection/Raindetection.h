@@ -16,10 +16,9 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_RAINDETECTION_H
-#define VEHICLE_BODY_RAINDETECTION_H
+#ifndef SIGNAL_BODY_RAINDETECTION_RAINDETECTION_H_
+#define SIGNAL_BODY_RAINDETECTION_RAINDETECTION_H_
 
 #include "Signal_Intensity.h"
-#include "Signal_Intensity_Availability_Sensor.h"
 
-#endif  // VEHICLE_BODY_RAINDETECTION_H
+#endif  // SIGNAL_BODY_RAINDETECTION_RAINDETECTION_H_

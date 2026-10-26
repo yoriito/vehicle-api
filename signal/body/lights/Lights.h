@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_BODY_LIGHTS_H
-#define VEHICLE_BODY_LIGHTS_H
+#ifndef SIGNAL_BODY_LIGHTS_LIGHTS_H_
+#define SIGNAL_BODY_LIGHTS_LIGHTS_H_
 
 #include "backup/Backup.h"
 #include "beam/Beam.h"
@@ -29,4 +29,4 @@
 #include "parking/Parking.h"
 #include "running/Running.h"
 
-#endif  // VEHICLE_BODY_LIGHTS_H
+#endif  // SIGNAL_BODY_LIGHTS_LIGHTS_H_

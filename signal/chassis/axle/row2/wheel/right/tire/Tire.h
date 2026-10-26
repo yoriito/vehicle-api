@@ -16,14 +16,12 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_RIGHT_TIRE_H
-#define VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_RIGHT_TIRE_H
+#ifndef SIGNAL_CHASSIS_AXLE_ROW2_WHEEL_RIGHT_TIRE_TIRE_H_
+#define SIGNAL_CHASSIS_AXLE_ROW2_WHEEL_RIGHT_TIRE_TIRE_H_
 
+#include "Signal_AirTemperature.h"
 #include "Signal_IsPressureLow.h"
-#include "Signal_IsPressureLow_Availability_Sensor.h"
 #include "Signal_Pressure.h"
-#include "Signal_Pressure_Availability_Sensor.h"
-#include "Signal_Temperature.h"
-#include "Signal_Temperature_Availability_Sensor.h"
+#include "Signal_RubberTemperature.h"
 
-#endif  // VEHICLE_CHASSIS_AXLE_ROW2_WHEEL_RIGHT_TIRE_H
+#endif  // SIGNAL_CHASSIS_AXLE_ROW2_WHEEL_RIGHT_TIRE_TIRE_H_

@@ -16,16 +16,12 @@
  * limitations under the License.
  */
 
-#ifndef VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLVOLTAGE_H
-#define VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLVOLTAGE_H
+#ifndef SIGNAL_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLVOLTAGE_CELLVOLTAGE_H_
+#define SIGNAL_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLVOLTAGE_CELLVOLTAGE_H_
 
 #include "Signal_IdMax.h"
-#include "Signal_IdMax_Availability_Sensor.h"
 #include "Signal_IdMin.h"
-#include "Signal_IdMin_Availability_Sensor.h"
 #include "Signal_Max.h"
-#include "Signal_Max_Availability_Sensor.h"
 #include "Signal_Min.h"
-#include "Signal_Min_Availability_Sensor.h"
 
-#endif  // VEHICLE_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLVOLTAGE_H
+#endif  // SIGNAL_POWERTRAIN_TRACTIONBATTERY_NUMBER3_CELLVOLTAGE_CELLVOLTAGE_H_

@@ -1,0 +1,177 @@
+// SPDX-License-Identifier: Apache-2.0
+//
+// Copyright 2026 JASPAR
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#include "Signal_RoadFriction.h"
+
+//-------------------------------------------------------------------------------------
+// VSS Signal: Vehicle.ADAS.ESC.RoadFriction
+// Type      : sensor
+// DataType  : Types.RoadFrictionRange
+// Unit      : None
+//-------------------------------------------------------------------------------------
+// clang-format off
+namespace yoriito::vehicle::adas::esc::roadfriction {
+// clang-format on
+namespace internal = yoriito::types::internal;
+
+yoriito::Result<yoriito::signal::SignalGetDataPoint<RoadFrictionRange>> Get() {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Get].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
+      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
+  yoriito::databroker::ConsumerGetRequest request(
+      VEHICLE_ADAS_ESC_ROADFRICTION);
+  yoriito::Result<yoriito::databroker::ConsumerGetResponse> ret =
+      consumer->Get(request);
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::
+        Result<yoriito::signal::SignalGetDataPoint<RoadFrictionRange>>::Err(
+            std::move(err_ptr));
+  }
+  auto response = ret.TakeOk().value();
+  if (response.GetDataPoints().empty()) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", std::string(yoriito::ErrorType::to_msg(
+                                            yoriito::ErrorCode::ERROR_NODATA)));
+    return yoriito::
+        Result<yoriito::signal::SignalGetDataPoint<RoadFrictionRange>>::Err(
+            std::make_unique<yoriito::CommonError>(
+                yoriito::ErrorCode::ERROR_NODATA));
+  }
+  const auto& data_point = response.GetDataPoints().front();
+  const auto& data = data_point.GetData();
+
+  // Extract StructDataPtr from ValueType
+  if (!std::holds_alternative<yoriito::StructDataPtr>(data)) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", "Unexpected data type");
+    return yoriito::
+        Result<yoriito::signal::SignalGetDataPoint<RoadFrictionRange>>::Err(
+            std::make_unique<yoriito::CommonError>(
+                yoriito::ErrorCode::ERROR_BADMSG));
+  }
+
+  const auto& struct_data_ptr = std::get<yoriito::StructDataPtr>(data);
+  if (!struct_data_ptr) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", "Data pointer is null");
+    return yoriito::
+        Result<yoriito::signal::SignalGetDataPoint<RoadFrictionRange>>::Err(
+            std::make_unique<yoriito::CommonError>(
+                yoriito::ErrorCode::ERROR_NODATA));
+  }
+
+  // Load RoadFrictionRange data from StructData
+  RoadFrictionRange result;
+  if (!internal::FromStructData(*struct_data_ptr, &result)) {
+    YORIITO_LOG_ERROR(
+        "SAPI_SignalAPI",
+        "Failed to extract RoadFrictionRange data from StructData");
+    return yoriito::
+        Result<yoriito::signal::SignalGetDataPoint<RoadFrictionRange>>::Err(
+            std::make_unique<yoriito::CommonError>(
+                yoriito::ErrorCode::ERROR_NODATA));
+  }
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Get].");
+  return yoriito::
+      Result<yoriito::signal::SignalGetDataPoint<RoadFrictionRange>>::Ok(
+          yoriito::signal::SignalGetDataPoint<RoadFrictionRange>(
+              data_point.GetPath(), result, data_point.IsAvailableSensor(),
+              data_point.IsAvailableActuator(), data_point.GetStoredTimestamp(),
+              data_point.GetProducedTimestamp()));
+}
+
+yoriito::Result<yoriito::signal::SignalSubscribeContext<RoadFrictionRange>>
+Subscribe() {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Subscribe].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
+      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
+  yoriito::databroker::ConsumerSubscribeRequest request(
+      VEHICLE_ADAS_ESC_ROADFRICTION);
+  auto ret = consumer->Subscribe(request);
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::
+        Result<yoriito::signal::SignalSubscribeContext<RoadFrictionRange>>::Err(
+            std::move(err_ptr));
+  }
+  auto subscription_context = ret.TakeOk().value();
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Subscribe].");
+  return yoriito::
+      Result<yoriito::signal::SignalSubscribeContext<RoadFrictionRange>>::Ok(
+          yoriito::signal::SignalSubscribeContext<RoadFrictionRange>(
+              std::move(subscription_context)));
+}
+
+yoriito::Result<void> UnSubscribe(
+    yoriito::signal::SignalSubscribeContext<RoadFrictionRange>
+        subscription_context) {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [UnSubscribe].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
+      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
+  auto internal_ctx =
+      yoriito::signal::SubscribeContextAccess::Release(&subscription_context);
+  if (!internal_ctx) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI",
+                      std::string(yoriito::ErrorType::to_msg(
+                          yoriito::ErrorCode::ERROR_UNSUBSCRIBE)));
+    return yoriito::Result<void>::Err(std::make_unique<yoriito::CommonError>(
+        yoriito::ErrorCode::ERROR_UNSUBSCRIBE));
+  }
+  auto ret = consumer->UnSubscribe(std::move(internal_ctx));
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::Result<void>::Err(std::move(err_ptr));
+  }
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [UnSubscribe].");
+  return ret;
+}
+
+yoriito::Result<yoriito::signal::SignalInspectResponse<RoadFrictionRange>>
+Inspect() {
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Entering function [Inspect].");
+  yoriito::databroker::DataBrokerConsumer* consumer =
+      yoriito::databroker::DataBrokerConsumerFactory::GetInstance();
+  yoriito::databroker::ConsumerInspectRequest request(
+      VEHICLE_ADAS_ESC_ROADFRICTION);
+  yoriito::Result<yoriito::databroker::ConsumerInspectResponse> ret =
+      consumer->Inspect(request);
+  if (!ret.IsOk()) {
+    std::unique_ptr<yoriito::ErrorType> err_ptr = ret.TakeErr();
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", err_ptr->Message());
+    return yoriito::
+        Result<yoriito::signal::SignalInspectResponse<RoadFrictionRange>>::Err(
+            std::move(err_ptr));
+  }
+  auto response = ret.TakeOk();
+  if (response.value().GetDataPoints().empty()) {
+    YORIITO_LOG_ERROR("SAPI_SignalAPI", std::string(yoriito::ErrorType::to_msg(
+                                            yoriito::ErrorCode::ERROR_NODATA)));
+    return yoriito::
+        Result<yoriito::signal::SignalInspectResponse<RoadFrictionRange>>::Err(
+            std::make_unique<yoriito::CommonError>(
+                yoriito::ErrorCode::ERROR_NODATA));
+  }
+  YORIITO_LOG_DEBUG("SAPI_SignalAPI", "Exiting function [Inspect].");
+  return yoriito::
+      Result<yoriito::signal::SignalInspectResponse<RoadFrictionRange>>::Ok(
+          yoriito::signal::SignalInspectResponse<RoadFrictionRange>(
+              std::move(response.value())));
+}
+
+// clang-format off
+}  // namespace yoriito::vehicle::adas::esc::roadfriction
+// clang-format on

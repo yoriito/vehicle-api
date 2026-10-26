@@ -15,29 +15,33 @@
 # limitations under the License.
 
 
-file(GLOB_RECURSE POWERTRAIN_SRC LIST_DIRECTORIES false *.cc)
-file(GLOB_RECURSE PUBLIC_POWERTRAIN_HEADERS LIST_DIRECTORIES false *.h)
-
-add_library(yoriito_vehicle_api_powertrain SHARED ${POWERTRAIN_SRC})
-target_include_directories(yoriito_vehicle_api_powertrain PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_precompile_headers(yoriito_vehicle_api_powertrain PRIVATE
-  <vector>
-  <algorithm>
-  <cstdint>
-  <memory>
-  <set>
-  <string>
-  <variant>
-  <databroker/databroker_consumer.h>
-  <databroker/databroker_consumer_factory.h>
-  <result.h>
+yoriito_add_library(
+    NAME
+        "yoriito_vehicle_api_powertrain"
+    SOURCES
+        Signal_AccumulatedBrakingEnergy.cc
+        Signal_IsAutoPowerOptimize.cc
+        Signal_PowerOptimizeLevel.cc
+        Signal_Range.cc
+        Signal_TimeRemaining.cc
+        Signal_Type.cc
+    INSTALL_SUBDIR
+        "signal/powertrain"
 )
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/"
- DESTINATION "${INCLUDE_INSTALL_DIR}/signal/powertrain"
- FILES_MATCHING PATTERN "*.h"
-)
 
-install(
-  TARGETS yoriito_vehicle_api_powertrain LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
-)
+# ---- subdirectories ----
+add_subdirectory(combustionengine)
+
+add_subdirectory(transmission)
+
+add_subdirectory(electricmotor)
+
+add_subdirectory(tractionbattery)
+
+add_subdirectory(fuelsystem)
+
+add_subdirectory(rangeextender)
+
+
+
